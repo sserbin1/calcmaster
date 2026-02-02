@@ -1,0 +1,1114 @@
+{
+  "math/percent": {
+    "slug": "percent",
+    "name": "Percentage",
+    "category": "math",
+    "primaryKeyword": "percentage calculator",
+    "secondaryKeywords": ["percent calculator", "calculate percentage", "percentage increase calculator", "what percent calculator"],
+    "metaTitle": "Percentage Calculator - Calculate %, Increase, Decrease | CalcMaster",
+    "metaDescription": "Free percentage calculator with 5 calculation modes. Find what percent X is of Y, calculate increases/decreases, and see step-by-step solutions.",
+    "heroTitle": "Percentage Calculator",
+    "heroSubtitle": "Calculate any percentage problem",
+    "introText": "Need to calculate percentages? Our all-in-one calculator handles five types of percentage calculations with step-by-step explanations.",
+    "formula": "Percentage = (Part / Whole) × 100",
+    "benefits": [
+      {"icon": "🔢", "title": "5-in-1 Calculator", "description": "All percentage calculations in one tool"},
+      {"icon": "📝", "title": "Step-by-Step", "description": "See the formula and calculation steps"},
+      {"icon": "📊", "title": "Visual Chart", "description": "Pie chart visualization of results"},
+      {"icon": "💰", "title": "Tip & Discount", "description": "Built-in practical calculations"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate percentage?", "answer": "Divide the part by the whole and multiply by 100. Example: 25/50 × 100 = 50%."},
+      {"question": "What is X% of Y?", "answer": "Multiply Y by X and divide by 100. Example: 15% of 200 = (15 × 200) / 100 = 30."},
+      {"question": "How do I calculate percentage increase?", "answer": "((New - Old) / Old) × 100. From $50 to $60 = ((60-50)/50) × 100 = 20% increase."},
+      {"question": "How do I reverse a percentage?", "answer": "To find original before X% increase: Current ÷ (1 + X/100)."},
+      {"question": "What's percentage points vs percentage?", "answer": "5% to 8% = 3 percentage points increase, but 60% relative increase."}
+    ],
+    "relatedCalculators": ["tip", "discount", "fraction", "ratio", "gpa"],
+    "longTailVariants": [
+      {"slug": "increase", "title": "Percentage Increase Calculator", "keyword": "percentage increase calculator"},
+      {"slug": "decrease", "title": "Percentage Decrease Calculator", "keyword": "percentage decrease calculator"},
+      {"slug": "difference", "title": "Percentage Difference Calculator", "keyword": "percentage difference calculator"},
+      {"slug": "of-number", "title": "Percent of Number Calculator", "keyword": "what is percent of"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/scientific": {
+    "slug": "scientific",
+    "name": "Scientific",
+    "category": "math",
+    "primaryKeyword": "scientific calculator",
+    "secondaryKeywords": ["online scientific calculator", "advanced calculator", "scientific calculator online free"],
+    "metaTitle": "Scientific Calculator - Free Online Advanced Calculator | CalcMaster",
+    "metaDescription": "Free online scientific calculator with trigonometry, logarithms, exponents, and more. Full-featured calculator for students and professionals.",
+    "heroTitle": "Scientific Calculator",
+    "heroSubtitle": "Full-featured calculator for advanced math",
+    "introText": "A complete scientific calculator with trigonometric functions, logarithms, exponents, factorials, and more. Perfect for students and professionals.",
+    "formula": "Supports: sin, cos, tan, log, ln, √, x², xⁿ, n!, π, e",
+    "benefits": [
+      {"icon": "🔬", "title": "Full Functions", "description": "Trig, log, exponential, and more"},
+      {"icon": "📝", "title": "Memory Functions", "description": "Store and recall values"},
+      {"icon": "📊", "title": "History", "description": "See previous calculations"},
+      {"icon": "⌨️", "title": "Keyboard Support", "description": "Use keyboard for fast input"}
+    ],
+    "faqs": [
+      {"question": "What functions does this calculator have?", "answer": "Trig (sin, cos, tan), inverse trig, logs (log, ln), powers, roots, factorial, constants (π, e)."},
+      {"question": "How do I use degrees vs radians?", "answer": "Toggle DEG/RAD mode. Use degrees for most practical problems, radians for calculus."},
+      {"question": "What is the order of operations?", "answer": "PEMDAS: Parentheses, Exponents, Multiplication/Division, Addition/Subtraction."},
+      {"question": "Can I use this for exams?", "answer": "Check your exam rules. This is equivalent to a TI-30X or Casio fx-300."},
+      {"question": "How do I calculate square root?", "answer": "Use the √ button or enter the number and press √."}
+    ],
+    "relatedCalculators": ["fraction", "percent", "quadratic", "statistics", "matrix"],
+    "longTailVariants": [
+      {"slug": "graphing", "title": "Graphing Calculator", "keyword": "graphing calculator online"},
+      {"slug": "fraction", "title": "Scientific Calculator with Fractions", "keyword": "scientific calculator with fractions"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/fraction": {
+    "slug": "fraction",
+    "name": "Fraction",
+    "category": "math",
+    "primaryKeyword": "fraction calculator",
+    "secondaryKeywords": ["fractions calculator", "add fractions calculator", "mixed number calculator"],
+    "metaTitle": "Fraction Calculator - Add, Subtract, Multiply, Divide | CalcMaster",
+    "metaDescription": "Free fraction calculator for all operations. Add, subtract, multiply, and divide fractions and mixed numbers with step-by-step solutions.",
+    "heroTitle": "Fraction Calculator",
+    "heroSubtitle": "Calculate fractions and mixed numbers",
+    "introText": "Add, subtract, multiply, and divide fractions with ease. Our calculator handles proper fractions, improper fractions, and mixed numbers with detailed steps.",
+    "formula": "a/b + c/d = (ad + bc) / bd",
+    "benefits": [
+      {"icon": "➕", "title": "All Operations", "description": "Add, subtract, multiply, divide"},
+      {"icon": "📝", "title": "Step-by-Step", "description": "Learn how to solve fraction problems"},
+      {"icon": "🔄", "title": "Mixed Numbers", "description": "Works with mixed numbers too"},
+      {"icon": "✂️", "title": "Simplify", "description": "Automatically reduces to lowest terms"}
+    ],
+    "faqs": [
+      {"question": "How do I add fractions?", "answer": "Find common denominator, add numerators, keep denominator, simplify. 1/2 + 1/4 = 2/4 + 1/4 = 3/4."},
+      {"question": "How do I multiply fractions?", "answer": "Multiply numerators, multiply denominators. 2/3 × 3/4 = 6/12 = 1/2."},
+      {"question": "How do I divide fractions?", "answer": "Flip the second fraction and multiply. 1/2 ÷ 1/4 = 1/2 × 4/1 = 4/2 = 2."},
+      {"question": "What's a mixed number?", "answer": "A whole number plus a fraction, like 2½. Convert: 2½ = 5/2."},
+      {"question": "How do I simplify fractions?", "answer": "Divide numerator and denominator by their greatest common factor. 6/8 = 3/4."}
+    ],
+    "relatedCalculators": ["percent", "scientific", "ratio", "decimal"],
+    "longTailVariants": [
+      {"slug": "simplify", "title": "Simplify Fractions Calculator", "keyword": "simplify fractions calculator"},
+      {"slug": "to-decimal", "title": "Fraction to Decimal Calculator", "keyword": "fraction to decimal calculator"},
+      {"slug": "mixed-numbers", "title": "Mixed Number Calculator", "keyword": "mixed number calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/gpa": {
+    "slug": "gpa",
+    "name": "GPA",
+    "category": "math",
+    "primaryKeyword": "gpa calculator",
+    "secondaryKeywords": ["grade point average calculator", "college gpa calculator", "high school gpa calculator"],
+    "metaTitle": "GPA Calculator - Calculate Your Grade Point Average | CalcMaster",
+    "metaDescription": "Free GPA calculator for high school and college. Calculate cumulative GPA, semester GPA, and see what grades you need to reach your goal.",
+    "heroTitle": "GPA Calculator",
+    "heroSubtitle": "Calculate your Grade Point Average",
+    "introText": "Calculate your GPA for high school or college. Enter your grades and credits to see your cumulative GPA, semester GPA, and what you need to improve.",
+    "formula": "GPA = Σ(Grade Points × Credits) / Σ Credits",
+    "benefits": [
+      {"icon": "🎓", "title": "Any Scale", "description": "4.0, 5.0, or weighted scale"},
+      {"icon": "📊", "title": "Cumulative GPA", "description": "Add existing GPA to new semester"},
+      {"icon": "🎯", "title": "Goal Calculator", "description": "What grades do you need?"},
+      {"icon": "📝", "title": "Transcript Export", "description": "Save or print your GPA report"}
+    ],
+    "faqs": [
+      {"question": "How is GPA calculated?", "answer": "Multiply each grade's point value by its credits, sum them up, divide by total credits."},
+      {"question": "What is a good GPA?", "answer": "3.5+ is excellent, 3.0-3.5 is good, 2.5-3.0 is average. Requirements vary by goal."},
+      {"question": "What's weighted vs unweighted GPA?", "answer": "Weighted gives extra points for AP/honors. Unweighted maxes at 4.0 for all classes."},
+      {"question": "How do I calculate cumulative GPA?", "answer": "Include all semesters. Total grade points ÷ total credits across all courses."},
+      {"question": "Can I raise a 2.0 to 3.0?", "answer": "Yes, but it takes time. Use our goal calculator to see what grades you need."}
+    ],
+    "relatedCalculators": ["grade", "final-grade", "weighted-gpa", "college-gpa", "percent"],
+    "longTailVariants": [
+      {"slug": "high-school", "title": "High School GPA Calculator", "keyword": "high school gpa calculator"},
+      {"slug": "college", "title": "College GPA Calculator", "keyword": "college gpa calculator"},
+      {"slug": "weighted", "title": "Weighted GPA Calculator", "keyword": "weighted gpa calculator"},
+      {"slug": "cumulative", "title": "Cumulative GPA Calculator", "keyword": "cumulative gpa calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/grade": {
+    "slug": "grade",
+    "name": "Grade",
+    "category": "math",
+    "primaryKeyword": "grade calculator",
+    "secondaryKeywords": ["test grade calculator", "final grade calculator", "what grade do i need"],
+    "metaTitle": "Grade Calculator - Calculate Test & Final Grades | CalcMaster",
+    "metaDescription": "Free grade calculator shows your test score percentage and letter grade. Calculate what you need on finals to get your target grade.",
+    "heroTitle": "Grade Calculator",
+    "heroSubtitle": "Calculate your test and final grades",
+    "introText": "Calculate your grade on any test, see what letter grade you earned, and figure out what you need on the final to reach your goal.",
+    "formula": "Grade % = (Points Earned / Total Points) × 100",
+    "benefits": [
+      {"icon": "📝", "title": "Test Grader", "description": "Enter points, get percentage and letter"},
+      {"icon": "🎯", "title": "Final Calculator", "description": "What do you need on the final?"},
+      {"icon": "📊", "title": "Weighted Categories", "description": "Calculate with different weights"},
+      {"icon": "📈", "title": "Grade Tracker", "description": "Monitor progress through semester"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate my grade?", "answer": "Points earned ÷ total points × 100. Got 45 out of 50? That's 90%."},
+      {"question": "What grade do I need on my final?", "answer": "Use our final grade calculator. Enter current grade, final weight, and desired grade."},
+      {"question": "How do weighted grades work?", "answer": "Different categories count differently. Tests 40%, homework 30%, final 30%."},
+      {"question": "What's the grading scale?", "answer": "Typically: A=90-100, B=80-89, C=70-79, D=60-69, F=below 60."},
+      {"question": "How do I recover from a bad grade?", "answer": "Calculate what you need on remaining assignments. Focus on heavily weighted items."}
+    ],
+    "relatedCalculators": ["gpa", "final-grade", "percent", "test-score", "weighted-gpa"],
+    "longTailVariants": [
+      {"slug": "final", "title": "Final Grade Calculator", "keyword": "final grade calculator"},
+      {"slug": "what-do-i-need", "title": "What Grade Do I Need Calculator", "keyword": "what grade do i need on my final"},
+      {"slug": "weighted", "title": "Weighted Grade Calculator", "keyword": "weighted grade calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/quadratic": {
+    "slug": "quadratic",
+    "name": "Quadratic Formula",
+    "category": "math",
+    "primaryKeyword": "quadratic formula calculator",
+    "secondaryKeywords": ["quadratic equation solver", "solve quadratic equation", "quadratic calculator"],
+    "metaTitle": "Quadratic Formula Calculator - Solve ax² + bx + c = 0 | CalcMaster",
+    "metaDescription": "Free quadratic formula calculator solves any quadratic equation. Enter a, b, and c to find both solutions with step-by-step explanation.",
+    "heroTitle": "Quadratic Formula Calculator",
+    "heroSubtitle": "Solve any quadratic equation",
+    "introText": "Solve any quadratic equation of the form ax² + bx + c = 0. Our calculator shows both solutions (real or complex) with complete step-by-step work.",
+    "formula": "x = (-b ± √(b²-4ac)) / 2a",
+    "benefits": [
+      {"icon": "✓", "title": "Both Solutions", "description": "Find x₁ and x₂ instantly"},
+      {"icon": "📝", "title": "Full Steps", "description": "Complete worked solution"},
+      {"icon": "📈", "title": "Graph", "description": "See the parabola visualization"},
+      {"icon": "🔢", "title": "Complex Numbers", "description": "Handles imaginary solutions"}
+    ],
+    "faqs": [
+      {"question": "What is the quadratic formula?", "answer": "x = (-b ± √(b²-4ac)) / 2a. Solves any equation of form ax² + bx + c = 0."},
+      {"question": "What is the discriminant?", "answer": "b² - 4ac. Positive = 2 real solutions. Zero = 1 solution. Negative = complex solutions."},
+      {"question": "How do I identify a, b, c?", "answer": "In ax² + bx + c = 0: a is the x² coefficient, b is the x coefficient, c is the constant."},
+      {"question": "What if a = 0?", "answer": "Then it's not quadratic, it's linear. Use simple algebra instead."},
+      {"question": "Can there be no solution?", "answer": "Every quadratic has solutions, but they may be complex (imaginary) numbers."}
+    ],
+    "relatedCalculators": ["scientific", "slope", "statistics", "polynomial", "equation-solver"],
+    "longTailVariants": [
+      {"slug": "with-steps", "title": "Quadratic Formula with Steps", "keyword": "quadratic formula calculator with steps"},
+      {"slug": "graph", "title": "Quadratic Graph Calculator", "keyword": "quadratic equation graph calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/slope": {
+    "slug": "slope",
+    "name": "Slope",
+    "category": "math",
+    "primaryKeyword": "slope calculator",
+    "secondaryKeywords": ["find slope calculator", "slope of a line calculator", "rise over run calculator"],
+    "metaTitle": "Slope Calculator - Find Slope of a Line | CalcMaster",
+    "metaDescription": "Free slope calculator finds the slope between two points. Get slope, y-intercept, and equation of line with graph visualization.",
+    "heroTitle": "Slope Calculator",
+    "heroSubtitle": "Find the slope between two points",
+    "introText": "Calculate the slope of a line given two points. Our calculator also gives you the y-intercept, slope-intercept equation, and a visual graph.",
+    "formula": "Slope (m) = (y₂ - y₁) / (x₂ - x₁)",
+    "benefits": [
+      {"icon": "📐", "title": "From Two Points", "description": "Enter (x₁,y₁) and (x₂,y₂)"},
+      {"icon": "📈", "title": "Full Equation", "description": "Get y = mx + b form"},
+      {"icon": "📊", "title": "Graph", "description": "See the line visualized"},
+      {"icon": "🔢", "title": "All Forms", "description": "Slope-intercept, point-slope, standard"}
+    ],
+    "faqs": [
+      {"question": "What is slope?", "answer": "The steepness of a line. Rise over run, or change in y divided by change in x."},
+      {"question": "What does positive/negative slope mean?", "answer": "Positive slopes go up (↗). Negative slopes go down (↘). Zero is horizontal."},
+      {"question": "What is undefined slope?", "answer": "Vertical lines have undefined slope (divide by zero). Written as x = constant."},
+      {"question": "How do I find y-intercept?", "answer": "Use one point and slope in y = mx + b. Solve for b."},
+      {"question": "What is slope-intercept form?", "answer": "y = mx + b, where m is slope and b is y-intercept."}
+    ],
+    "relatedCalculators": ["quadratic", "line", "distance", "midpoint", "scientific"],
+    "longTailVariants": [
+      {"slug": "from-two-points", "title": "Slope from Two Points", "keyword": "find slope from two points calculator"},
+      {"slug": "intercept", "title": "Slope Intercept Calculator", "keyword": "slope intercept form calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/std-dev": {
+    "slug": "std-dev",
+    "name": "Standard Deviation",
+    "category": "math",
+    "primaryKeyword": "standard deviation calculator",
+    "secondaryKeywords": ["std dev calculator", "calculate standard deviation", "variance calculator"],
+    "metaTitle": "Standard Deviation Calculator - Statistics Made Easy | CalcMaster",
+    "metaDescription": "Free standard deviation calculator with step-by-step solution. Calculate population or sample standard deviation, variance, and mean.",
+    "heroTitle": "Standard Deviation Calculator",
+    "heroSubtitle": "Calculate variability in your data",
+    "introText": "Standard deviation measures how spread out numbers are from the average. Enter your data and we'll calculate mean, variance, and standard deviation.",
+    "formula": "σ = √(Σ(x - μ)² / N)",
+    "benefits": [
+      {"icon": "📊", "title": "Population & Sample", "description": "Both calculation methods"},
+      {"icon": "📝", "title": "Step-by-Step", "description": "See every calculation step"},
+      {"icon": "📈", "title": "Visualization", "description": "See data distribution"},
+      {"icon": "📋", "title": "All Stats", "description": "Mean, variance, count included"}
+    ],
+    "faqs": [
+      {"question": "What is standard deviation?", "answer": "A measure of how spread out numbers are. Low = clustered near mean. High = spread out."},
+      {"question": "Population vs sample standard deviation?", "answer": "Population (σ): divide by N. Sample (s): divide by N-1. Use sample for most real-world data."},
+      {"question": "What is variance?", "answer": "Standard deviation squared. Measures spread, but in squared units."},
+      {"question": "What's a 'good' standard deviation?", "answer": "Depends on context. Compare to mean: if SD is small relative to mean, data is consistent."},
+      {"question": "How do I interpret standard deviation?", "answer": "68% of data falls within 1 SD of mean. 95% within 2 SD. 99.7% within 3 SD."}
+    ],
+    "relatedCalculators": ["statistics", "mean", "variance", "probability", "z-score"],
+    "longTailVariants": [
+      {"slug": "sample", "title": "Sample Standard Deviation", "keyword": "sample standard deviation calculator"},
+      {"slug": "population", "title": "Population Standard Deviation", "keyword": "population standard deviation calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/statistics": {
+    "slug": "statistics",
+    "name": "Statistics",
+    "category": "math",
+    "primaryKeyword": "statistics calculator",
+    "secondaryKeywords": ["mean median mode calculator", "stats calculator", "descriptive statistics calculator"],
+    "metaTitle": "Statistics Calculator - Mean, Median, Mode, Range | CalcMaster",
+    "metaDescription": "Free statistics calculator finds mean, median, mode, range, and more. Enter your data for complete descriptive statistics with visualization.",
+    "heroTitle": "Statistics Calculator",
+    "heroSubtitle": "Calculate all descriptive statistics",
+    "introText": "Enter a data set to calculate mean, median, mode, range, variance, standard deviation, and more. Complete statistical analysis in seconds.",
+    "formula": "Mean = Σx/n | Median = middle value | Mode = most frequent",
+    "benefits": [
+      {"icon": "📊", "title": "All Statistics", "description": "Mean, median, mode, range, SD, variance"},
+      {"icon": "📈", "title": "Visualization", "description": "Histogram and box plot"},
+      {"icon": "📝", "title": "Frequency Table", "description": "See data distribution"},
+      {"icon": "📋", "title": "Summary Report", "description": "Exportable statistics summary"}
+    ],
+    "faqs": [
+      {"question": "What's the difference between mean, median, and mode?", "answer": "Mean = average. Median = middle value. Mode = most frequent value."},
+      {"question": "When should I use median instead of mean?", "answer": "Use median when data has outliers. Mean is skewed by extreme values."},
+      {"question": "What is range?", "answer": "Highest value minus lowest value. Simple measure of spread."},
+      {"question": "What if there's no mode?", "answer": "If all values appear equally, there is no mode (or all values are modes)."},
+      {"question": "How do I find median with even numbers?", "answer": "Average the two middle values. For 2, 4, 6, 8: median = (4+6)/2 = 5."}
+    ],
+    "relatedCalculators": ["std-dev", "mean", "probability", "z-score", "confidence-interval"],
+    "longTailVariants": [
+      {"slug": "mean-median-mode", "title": "Mean Median Mode Calculator", "keyword": "mean median mode range calculator"},
+      {"slug": "descriptive", "title": "Descriptive Statistics Calculator", "keyword": "descriptive statistics calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "math/probability": {
+    "slug": "probability",
+    "name": "Probability",
+    "category": "math",
+    "primaryKeyword": "probability calculator",
+    "secondaryKeywords": ["probability calculator statistics", "odds calculator", "chance calculator"],
+    "metaTitle": "Probability Calculator - Calculate Odds & Chance | CalcMaster",
+    "metaDescription": "Free probability calculator for single events, multiple events, and conditional probability. Calculate odds with step-by-step explanations.",
+    "heroTitle": "Probability Calculator",
+    "heroSubtitle": "Calculate odds and probability",
+    "introText": "Calculate the probability of events occurring. Our calculator handles single events, multiple events (AND/OR), and conditional probability.",
+    "formula": "P(A) = Favorable Outcomes / Total Outcomes",
+    "benefits": [
+      {"icon": "🎲", "title": "Multiple Modes", "description": "Single, combined, conditional probability"},
+      {"icon": "📝", "title": "Step-by-Step", "description": "Understand probability concepts"},
+      {"icon": "🔄", "title": "AND/OR Events", "description": "Calculate combined probabilities"},
+      {"icon": "📊", "title": "Visual", "description": "See probability distributions"}
+    ],
+    "faqs": [
+      {"question": "What is probability?", "answer": "The likelihood of an event occurring, from 0 (impossible) to 1 (certain)."},
+      {"question": "How do I calculate probability?", "answer": "Favorable outcomes ÷ total possible outcomes. Coin flip heads = 1/2 = 0.5."},
+      {"question": "What is P(A AND B)?", "answer": "Probability both occur. For independent events: P(A) × P(B)."},
+      {"question": "What is P(A OR B)?", "answer": "Probability either occurs. P(A) + P(B) - P(A AND B)."},
+      {"question": "What's the difference between odds and probability?", "answer": "Probability = favorable/total. Odds = favorable/unfavorable. 1/4 probability = 1:3 odds."}
+    ],
+    "relatedCalculators": ["statistics", "permutation", "combination", "random-number", "z-score"],
+    "longTailVariants": [
+      {"slug": "multiple-events", "title": "Multiple Event Probability", "keyword": "probability calculator multiple events"},
+      {"slug": "conditional", "title": "Conditional Probability Calculator", "keyword": "conditional probability calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/age": {
+    "slug": "age",
+    "name": "Age",
+    "category": "date-time",
+    "primaryKeyword": "age calculator",
+    "secondaryKeywords": ["calculate age", "age in days", "how old am i", "birthday calculator"],
+    "metaTitle": "Age Calculator - Exact Age in Years, Months, Days | CalcMaster",
+    "metaDescription": "Free age calculator shows your exact age in years, months, days, hours, and minutes. See life statistics and upcoming milestones.",
+    "heroTitle": "Age Calculator",
+    "heroSubtitle": "Calculate your exact age",
+    "introText": "Want to know exactly how old you are? Our calculator shows your precise age plus fun statistics like total days lived and upcoming milestones.",
+    "formula": "Age = Current Date - Birth Date",
+    "benefits": [
+      {"icon": "🎂", "title": "Precise Age", "description": "Years, months, days, hours, minutes"},
+      {"icon": "📊", "title": "Life Statistics", "description": "Days lived, heartbeats, breaths"},
+      {"icon": "🌟", "title": "Milestones", "description": "Upcoming special dates"},
+      {"icon": "📅", "title": "Age at Date", "description": "How old on any date"}
+    ],
+    "faqs": [
+      {"question": "How do you calculate exact age?", "answer": "Subtract birthdate from today, accounting for leap years and varying month lengths."},
+      {"question": "What is Korean age?", "answer": "In Korean age, you're 1 at birth and gain a year each New Year's Day."},
+      {"question": "How many days old am I?", "answer": "Enter your birthdate to see exact days, hours, minutes, and even seconds."},
+      {"question": "How do leap years affect age?", "answer": "If born Feb 29, celebrate on Feb 28 or Mar 1 in non-leap years."},
+      {"question": "Can I calculate age between two dates?", "answer": "Yes, enter any two dates to find the age difference."}
+    ],
+    "relatedCalculators": ["date", "time", "day-counter", "countdown", "hours"],
+    "longTailVariants": [
+      {"slug": "in-days", "title": "Age in Days Calculator", "keyword": "age in days calculator"},
+      {"slug": "between-dates", "title": "Age Between Dates", "keyword": "calculate age between two dates"},
+      {"slug": "korean", "title": "Korean Age Calculator", "keyword": "korean age calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/date": {
+    "slug": "date",
+    "name": "Date",
+    "category": "date-time",
+    "primaryKeyword": "date calculator",
+    "secondaryKeywords": ["days between dates calculator", "add days to date", "date difference calculator"],
+    "metaTitle": "Date Calculator - Days Between Dates & Add/Subtract | CalcMaster",
+    "metaDescription": "Free date calculator finds days between dates or adds/subtracts days from a date. Include or exclude weekends and holidays.",
+    "heroTitle": "Date Calculator",
+    "heroSubtitle": "Calculate days between dates",
+    "introText": "Find the number of days between two dates, or add/subtract days from a date. Options for working days, weekends, and holidays.",
+    "formula": "Days = End Date - Start Date",
+    "benefits": [
+      {"icon": "📅", "title": "Days Between", "description": "Find duration between any dates"},
+      {"icon": "➕", "title": "Add/Subtract", "description": "Add or remove days from a date"},
+      {"icon": "🏢", "title": "Working Days", "description": "Exclude weekends and holidays"},
+      {"icon": "⚡", "title": "Instant Results", "description": "Calculates as you type"}
+    ],
+    "faqs": [
+      {"question": "How do I count days between dates?", "answer": "Enter start and end dates. We calculate total days including both dates."},
+      {"question": "Can I exclude weekends?", "answer": "Yes, toggle 'Working days only' to count only Monday-Friday."},
+      {"question": "Can I exclude holidays?", "answer": "Yes, select your country to exclude national holidays."},
+      {"question": "How do I add days to a date?", "answer": "Enter a start date and number of days. We show the resulting date."},
+      {"question": "Does it account for leap years?", "answer": "Yes, all calculations correctly handle leap years."}
+    ],
+    "relatedCalculators": ["age", "time", "day-counter", "hours", "countdown"],
+    "longTailVariants": [
+      {"slug": "days-between", "title": "Days Between Dates", "keyword": "days between two dates calculator"},
+      {"slug": "add-days", "title": "Add Days to Date", "keyword": "add days to date calculator"},
+      {"slug": "working-days", "title": "Working Days Calculator", "keyword": "working days calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/time": {
+    "slug": "time",
+    "name": "Time",
+    "category": "date-time",
+    "primaryKeyword": "time calculator",
+    "secondaryKeywords": ["time duration calculator", "add time calculator", "time difference calculator"],
+    "metaTitle": "Time Calculator - Add, Subtract, Calculate Duration | CalcMaster",
+    "metaDescription": "Free time calculator adds, subtracts, and finds duration between times. Works with hours, minutes, seconds in any format.",
+    "heroTitle": "Time Calculator",
+    "heroSubtitle": "Add, subtract, and calculate time",
+    "introText": "Calculate time duration, add or subtract time, or find the difference between two times. Handles hours, minutes, and seconds.",
+    "formula": "Duration = End Time - Start Time",
+    "benefits": [
+      {"icon": "⏱️", "title": "Duration", "description": "Time between two times"},
+      {"icon": "➕", "title": "Add/Subtract", "description": "Add or remove hours/minutes"},
+      {"icon": "🔄", "title": "Convert Formats", "description": "12-hour ↔ 24-hour conversion"},
+      {"icon": "🌍", "title": "Timezone Support", "description": "Calculate across timezones"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate time duration?", "answer": "Enter start and end times. We show hours, minutes, and seconds between them."},
+      {"question": "Can I add hours and minutes?", "answer": "Yes, enter a start time and add any amount of hours, minutes, or seconds."},
+      {"question": "How do I handle times crossing midnight?", "answer": "Our calculator correctly handles overnight durations."},
+      {"question": "Can I convert 12-hour to 24-hour format?", "answer": "Yes, we show results in both formats automatically."},
+      {"question": "How do I calculate time across timezones?", "answer": "Select timezones for start and end times. We handle the conversion."}
+    ],
+    "relatedCalculators": ["hours", "date", "timezone", "age", "countdown"],
+    "longTailVariants": [
+      {"slug": "duration", "title": "Time Duration Calculator", "keyword": "time duration calculator"},
+      {"slug": "add-subtract", "title": "Add Time Calculator", "keyword": "add hours and minutes calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/hours": {
+    "slug": "hours",
+    "name": "Hours",
+    "category": "date-time",
+    "primaryKeyword": "hours calculator",
+    "secondaryKeywords": ["work hours calculator", "time card calculator", "hours worked calculator"],
+    "metaTitle": "Hours Calculator - Calculate Work Hours & Time | CalcMaster",
+    "metaDescription": "Free hours calculator for work hours and time tracking. Calculate hours between times, total weekly hours, and overtime.",
+    "heroTitle": "Hours Calculator",
+    "heroSubtitle": "Calculate work hours and time",
+    "introText": "Calculate hours worked, total time between clock-in and clock-out, and weekly totals. Perfect for tracking work hours and overtime.",
+    "formula": "Hours = (End Time - Start Time) - Breaks",
+    "benefits": [
+      {"icon": "⏰", "title": "Clock In/Out", "description": "Simple start and end time entry"},
+      {"icon": "☕", "title": "Break Deduction", "description": "Subtract lunch and breaks"},
+      {"icon": "📊", "title": "Weekly Total", "description": "Sum multiple days"},
+      {"icon": "💰", "title": "Pay Calculator", "description": "Multiply by hourly rate"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate hours worked?", "answer": "Enter start time, end time, and any break time. We calculate net hours."},
+      {"question": "How do I calculate overtime?", "answer": "We show hours over 8/day or 40/week as overtime."},
+      {"question": "Can I calculate weekly hours?", "answer": "Yes, enter each day's hours and we sum the total."},
+      {"question": "How do I convert hours to decimal?", "answer": "30 minutes = 0.5 hours. We show both formats."},
+      {"question": "Can I calculate pay from hours?", "answer": "Yes, enter your hourly rate to see total pay."}
+    ],
+    "relatedCalculators": ["time", "timecard", "salary", "date", "countdown"],
+    "longTailVariants": [
+      {"slug": "work", "title": "Work Hours Calculator", "keyword": "work hours calculator"},
+      {"slug": "weekly", "title": "Weekly Hours Calculator", "keyword": "weekly hours calculator"},
+      {"slug": "overtime", "title": "Overtime Calculator", "keyword": "overtime hours calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/day-counter": {
+    "slug": "day-counter",
+    "name": "Day Counter",
+    "category": "date-time",
+    "primaryKeyword": "day counter",
+    "secondaryKeywords": ["days until calculator", "countdown days", "how many days until"],
+    "metaTitle": "Day Counter - How Many Days Until? | CalcMaster",
+    "metaDescription": "Free day counter shows how many days until any date. Countdown to holidays, birthdays, vacations, or any special event.",
+    "heroTitle": "Day Counter",
+    "heroSubtitle": "Count days until any date",
+    "introText": "How many days until your next birthday, holiday, or special event? Our day counter shows the exact countdown.",
+    "formula": "Days Until = Target Date - Today",
+    "benefits": [
+      {"icon": "📅", "title": "Any Date", "description": "Count to any future date"},
+      {"icon": "🎄", "title": "Holiday Presets", "description": "Quick buttons for holidays"},
+      {"icon": "📊", "title": "Multiple Units", "description": "Days, weeks, months, hours"},
+      {"icon": "🔗", "title": "Shareable", "description": "Create shareable countdown links"}
+    ],
+    "faqs": [
+      {"question": "How many days until Christmas?", "answer": "Enter December 25 or use our holiday preset for instant answer."},
+      {"question": "Can I count days from a past date?", "answer": "Yes, we show days since past dates as well as days until future dates."},
+      {"question": "Does it include today?", "answer": "By default, no. Toggle option to include today in count."},
+      {"question": "Can I see weeks and months too?", "answer": "Yes, we show days, weeks, months, and even hours/minutes."},
+      {"question": "Can I share my countdown?", "answer": "Yes, create a shareable link to your specific countdown."}
+    ],
+    "relatedCalculators": ["date", "age", "countdown", "time", "hours"],
+    "longTailVariants": [
+      {"slug": "until-christmas", "title": "Days Until Christmas", "keyword": "how many days until christmas"},
+      {"slug": "until-new-year", "title": "Days Until New Year", "keyword": "how many days until new year"},
+      {"slug": "until-birthday", "title": "Days Until Birthday", "keyword": "how many days until my birthday"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "construction/concrete": {
+    "slug": "concrete",
+    "name": "Concrete",
+    "category": "construction",
+    "primaryKeyword": "concrete calculator",
+    "secondaryKeywords": ["concrete yardage calculator", "how much concrete do i need", "cement calculator"],
+    "metaTitle": "Concrete Calculator - How Much Concrete Do I Need? | CalcMaster",
+    "metaDescription": "Free concrete calculator estimates cubic yards needed for slabs, footings, and columns. Include waste factor and see number of bags needed.",
+    "heroTitle": "Concrete Calculator",
+    "heroSubtitle": "Calculate how much concrete you need",
+    "introText": "Planning a concrete project? Our calculator estimates the cubic yards of concrete needed for slabs, footings, walls, and columns.",
+    "formula": "Volume = Length × Width × Depth (convert to cubic yards ÷ 27)",
+    "benefits": [
+      {"icon": "📐", "title": "Multiple Shapes", "description": "Slabs, footings, columns, stairs"},
+      {"icon": "📊", "title": "Waste Factor", "description": "Add percentage for waste"},
+      {"icon": "🛒", "title": "Bag Count", "description": "See number of 60 or 80 lb bags"},
+      {"icon": "💰", "title": "Cost Estimate", "description": "Approximate material cost"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate concrete for a slab?", "answer": "Length × Width × Depth (in feet), then divide by 27 for cubic yards."},
+      {"question": "How much extra should I order?", "answer": "Order 10-15% extra for waste, spillage, and uneven surfaces."},
+      {"question": "How many bags of concrete per cubic yard?", "answer": "About 45 bags of 80 lb concrete or 60 bags of 60 lb per cubic yard."},
+      {"question": "What's the minimum concrete truck delivery?", "answer": "Usually 1 cubic yard minimum. Under that, bags may be more economical."},
+      {"question": "How thick should a concrete slab be?", "answer": "4 inches for patios/sidewalks. 6 inches for driveways. Check local codes."}
+    ],
+    "relatedCalculators": ["sqft", "gravel", "sand", "paver", "block"],
+    "longTailVariants": [
+      {"slug": "slab", "title": "Concrete Slab Calculator", "keyword": "concrete slab calculator"},
+      {"slug": "footing", "title": "Concrete Footing Calculator", "keyword": "concrete footing calculator"},
+      {"slug": "bags", "title": "Concrete Bags Calculator", "keyword": "how many bags of concrete do i need"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "construction/sqft": {
+    "slug": "sqft",
+    "name": "Square Footage",
+    "category": "construction",
+    "primaryKeyword": "square footage calculator",
+    "secondaryKeywords": ["sq ft calculator", "area calculator", "room size calculator"],
+    "metaTitle": "Square Footage Calculator - Calculate Area | CalcMaster",
+    "metaDescription": "Free square footage calculator for any room or space. Calculate area for flooring, painting, landscaping, and more.",
+    "heroTitle": "Square Footage Calculator",
+    "heroSubtitle": "Calculate area in square feet",
+    "introText": "Calculate the square footage of rooms, walls, floors, or any rectangular space. Essential for flooring, painting, and construction projects.",
+    "formula": "Square Feet = Length × Width",
+    "benefits": [
+      {"icon": "📐", "title": "Multiple Shapes", "description": "Rectangle, circle, triangle, irregular"},
+      {"icon": "🏠", "title": "Room Calculator", "description": "Calculate multi-room totals"},
+      {"icon": "🔄", "title": "Unit Conversion", "description": "Convert to/from square meters"},
+      {"icon": "🎨", "title": "Material Estimate", "description": "Flooring, paint, tile needed"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate square footage?", "answer": "Multiply length by width. 10 ft × 12 ft = 120 square feet."},
+      {"question": "How do I convert square feet to square yards?", "answer": "Divide by 9. 180 sq ft = 20 square yards."},
+      {"question": "How do I calculate irregular rooms?", "answer": "Break into rectangles, calculate each, and add them together."},
+      {"question": "How much flooring do I need?", "answer": "Calculate square footage and add 10% for waste and cuts."},
+      {"question": "How do I calculate wall square footage?", "answer": "Height × Width for each wall. Subtract windows and doors."}
+    ],
+    "relatedCalculators": ["tile", "paint", "flooring", "concrete", "mulch"],
+    "longTailVariants": [
+      {"slug": "room", "title": "Room Square Footage Calculator", "keyword": "room square footage calculator"},
+      {"slug": "wall", "title": "Wall Square Footage Calculator", "keyword": "wall square footage calculator"},
+      {"slug": "flooring", "title": "Flooring Square Footage", "keyword": "flooring square footage calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "fun/love": {
+    "slug": "love",
+    "name": "Love",
+    "category": "fun",
+    "primaryKeyword": "love calculator",
+    "secondaryKeywords": ["love compatibility calculator", "love test", "are we compatible calculator"],
+    "metaTitle": "Love Calculator - Test Your Compatibility | CalcMaster",
+    "metaDescription": "Fun love calculator tests compatibility between two names. See your love percentage and share results with friends!",
+    "heroTitle": "Love Calculator",
+    "heroSubtitle": "Test your compatibility",
+    "introText": "Enter two names to calculate your love compatibility! This fun calculator generates a percentage based on the letters in your names.",
+    "formula": "Compatibility = Algorithm based on name letters (for fun only!)",
+    "benefits": [
+      {"icon": "💕", "title": "Name Compatibility", "description": "Calculate love percentage"},
+      {"icon": "📱", "title": "Share Results", "description": "Send to friends and crushes"},
+      {"icon": "🎮", "title": "Just for Fun", "description": "Entertainment purposes only"},
+      {"icon": "✨", "title": "Instant Results", "description": "Get your score immediately"}
+    ],
+    "faqs": [
+      {"question": "Is this calculator accurate?", "answer": "No! This is purely for entertainment. Real compatibility can't be calculated by an algorithm."},
+      {"question": "How does it calculate compatibility?", "answer": "It uses a fun algorithm based on the letters in both names. Not scientifically valid."},
+      {"question": "Can I share my results?", "answer": "Yes! Generate a shareable image or link to send to friends."},
+      {"question": "Does name order matter?", "answer": "Yes, you might get different results if you swap the names."},
+      {"question": "Why did I get a low score?", "answer": "It's random! Don't take it seriously. True love can't be measured by a calculator."}
+    ],
+    "relatedCalculators": ["random-number", "dice", "name-generator", "zodiac"],
+    "longTailVariants": [
+      {"slug": "compatibility", "title": "Love Compatibility Test", "keyword": "love compatibility calculator"},
+      {"slug": "flame", "title": "FLAMES Calculator", "keyword": "flames calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "fun/random-number": {
+    "slug": "random-number",
+    "name": "Random Number",
+    "category": "fun",
+    "primaryKeyword": "random number generator",
+    "secondaryKeywords": ["rng", "random number picker", "random number between"],
+    "metaTitle": "Random Number Generator - Pick Random Numbers | CalcMaster",
+    "metaDescription": "Free random number generator picks numbers in any range. Generate single numbers, multiple numbers, or lottery-style combinations.",
+    "heroTitle": "Random Number Generator",
+    "heroSubtitle": "Generate truly random numbers",
+    "introText": "Generate random numbers for any purpose - games, decisions, statistics, or just fun. Set your range and let randomness decide.",
+    "formula": "Cryptographically secure random number generation",
+    "benefits": [
+      {"icon": "🎲", "title": "Any Range", "description": "Set minimum and maximum"},
+      {"icon": "📊", "title": "Multiple Numbers", "description": "Generate several at once"},
+      {"icon": "🔒", "title": "Truly Random", "description": "Cryptographically secure"},
+      {"icon": "📝", "title": "History", "description": "See previous generations"}
+    ],
+    "faqs": [
+      {"question": "How random are these numbers?", "answer": "We use cryptographically secure random generation - as random as computers can get."},
+      {"question": "Can I generate numbers without repeats?", "answer": "Yes, toggle 'unique only' to prevent duplicates when generating multiple."},
+      {"question": "Can I generate lottery numbers?", "answer": "Yes, use our lottery preset or set your own range and count."},
+      {"question": "Is this good for statistics?", "answer": "Yes, our RNG is suitable for statistical sampling and simulations."},
+      {"question": "Can I generate decimal numbers?", "answer": "Yes, enable decimals and set precision level."}
+    ],
+    "relatedCalculators": ["dice", "coin-flip", "lottery", "probability", "statistics"],
+    "longTailVariants": [
+      {"slug": "between", "title": "Random Number Between", "keyword": "random number generator between two numbers"},
+      {"slug": "lottery", "title": "Lottery Number Generator", "keyword": "lottery number generator"},
+      {"slug": "list", "title": "Random Number List Generator", "keyword": "random number list generator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "fun/dice": {
+    "slug": "dice",
+    "name": "Dice Roller",
+    "category": "fun",
+    "primaryKeyword": "dice roller",
+    "secondaryKeywords": ["online dice roller", "roll dice", "virtual dice", "d20 roller"],
+    "metaTitle": "Dice Roller - Roll Virtual Dice Online | CalcMaster",
+    "metaDescription": "Free online dice roller for any number of dice. Roll standard 6-sided or custom dice (d4, d8, d10, d12, d20) with animations.",
+    "heroTitle": "Dice Roller",
+    "heroSubtitle": "Roll virtual dice online",
+    "introText": "Roll dice for board games, RPGs, or any decision. Choose from standard 6-sided dice or gaming dice like d4, d8, d10, d12, or d20.",
+    "formula": "Random 1 to N for N-sided die",
+    "benefits": [
+      {"icon": "🎲", "title": "Any Dice", "description": "d4, d6, d8, d10, d12, d20, d100"},
+      {"icon": "🎮", "title": "Multiple Dice", "description": "Roll up to 10 dice at once"},
+      {"icon": "✨", "title": "Animation", "description": "Satisfying rolling animation"},
+      {"icon": "📊", "title": "History", "description": "Track your roll history"}
+    ],
+    "faqs": [
+      {"question": "What dice types are available?", "answer": "Standard d6, plus gaming dice: d4, d8, d10, d12, d20, d100."},
+      {"question": "Can I roll multiple dice?", "answer": "Yes, roll up to 10 dice at once and see the total."},
+      {"question": "Is this fair for games?", "answer": "Yes, we use cryptographically secure random numbers for fair rolls."},
+      {"question": "Can I roll custom dice?", "answer": "Yes, create dice with any number of sides."},
+      {"question": "What is a d20?", "answer": "A 20-sided die commonly used in tabletop RPGs like Dungeons & Dragons."}
+    ],
+    "relatedCalculators": ["random-number", "coin-flip", "probability", "lottery"],
+    "longTailVariants": [
+      {"slug": "d20", "title": "D20 Roller", "keyword": "d20 roller online"},
+      {"slug": "d6", "title": "D6 Dice Roller", "keyword": "roll 6 sided dice"},
+      {"slug": "multiple", "title": "Roll Multiple Dice", "keyword": "roll multiple dice online"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "tools/password": {
+    "slug": "password",
+    "name": "Password Generator",
+    "category": "fun",
+    "primaryKeyword": "password generator",
+    "secondaryKeywords": ["random password generator", "secure password generator", "strong password generator"],
+    "metaTitle": "Password Generator - Create Strong Passwords | CalcMaster",
+    "metaDescription": "Free password generator creates strong, random passwords. Customize length, characters, and get passwords that are secure yet memorable.",
+    "heroTitle": "Password Generator",
+    "heroSubtitle": "Create strong, secure passwords",
+    "introText": "Generate strong, random passwords instantly. Customize length and character types to create passwords that meet any security requirements.",
+    "formula": "Cryptographically secure random character selection",
+    "benefits": [
+      {"icon": "🔒", "title": "Secure", "description": "Cryptographically random generation"},
+      {"icon": "⚙️", "title": "Customizable", "description": "Set length and character types"},
+      {"icon": "📋", "title": "One-Click Copy", "description": "Copy password instantly"},
+      {"icon": "💪", "title": "Strength Meter", "description": "See password security level"}
+    ],
+    "faqs": [
+      {"question": "How long should my password be?", "answer": "At least 12 characters. 16+ is even better for important accounts."},
+      {"question": "Are these passwords really random?", "answer": "Yes, we use cryptographically secure random number generation."},
+      {"question": "Should I use special characters?", "answer": "Yes, mixing uppercase, lowercase, numbers, and symbols is most secure."},
+      {"question": "Can I make a memorable password?", "answer": "Try our 'passphrase' option - random words that are easier to remember."},
+      {"question": "Is my password stored?", "answer": "No! Passwords are generated locally and never sent to our servers."}
+    ],
+    "relatedCalculators": ["random-number", "encryption", "hash"],
+    "longTailVariants": [
+      {"slug": "strong", "title": "Strong Password Generator", "keyword": "strong password generator"},
+      {"slug": "memorable", "title": "Memorable Password Generator", "keyword": "memorable password generator"},
+      {"slug": "passphrase", "title": "Passphrase Generator", "keyword": "random passphrase generator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "tools/converter": {
+    "slug": "converter",
+    "name": "Unit Converter",
+    "category": "fun",
+    "primaryKeyword": "unit converter",
+    "secondaryKeywords": ["conversion calculator", "metric converter", "unit conversion"],
+    "metaTitle": "Unit Converter - Convert Any Units Free | CalcMaster",
+    "metaDescription": "Free unit converter for length, weight, temperature, volume, and more. Convert between metric and imperial units instantly.",
+    "heroTitle": "Unit Converter",
+    "heroSubtitle": "Convert any units instantly",
+    "introText": "Convert between units of length, weight, temperature, volume, area, speed, and more. Quick conversions between metric and imperial systems.",
+    "formula": "Various conversion factors",
+    "benefits": [
+      {"icon": "📏", "title": "All Categories", "description": "Length, weight, temp, volume, more"},
+      {"icon": "🔄", "title": "Bidirectional", "description": "Convert either direction"},
+      {"icon": "⚡", "title": "Instant", "description": "Results as you type"},
+      {"icon": "📊", "title": "Common Presets", "description": "Quick conversions available"}
+    ],
+    "faqs": [
+      {"question": "How do I convert kg to lbs?", "answer": "Multiply by 2.205. Or use our converter for exact results."},
+      {"question": "How do I convert Celsius to Fahrenheit?", "answer": "°F = (°C × 9/5) + 32. Or use our temperature converter."},
+      {"question": "What units are supported?", "answer": "Length, weight, volume, area, temperature, speed, time, digital storage, and more."},
+      {"question": "Can I convert between metric and imperial?", "answer": "Yes, convert any unit to any other unit in the same category."},
+      {"question": "Are conversions accurate?", "answer": "Yes, we use precise conversion factors for accurate results."}
+    ],
+    "relatedCalculators": ["temperature", "length", "weight", "volume", "area"],
+    "longTailVariants": [
+      {"slug": "kg-to-lbs", "title": "Kg to Lbs Converter", "keyword": "kg to lbs converter"},
+      {"slug": "cm-to-inches", "title": "Cm to Inches Converter", "keyword": "cm to inches converter"},
+      {"slug": "celsius-fahrenheit", "title": "Celsius to Fahrenheit", "keyword": "celsius to fahrenheit converter"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "education/final-grade": {
+    "slug": "final-grade",
+    "name": "Final Grade",
+    "category": "education",
+    "primaryKeyword": "final grade calculator",
+    "secondaryKeywords": ["what grade do i need on my final", "final exam calculator", "grade needed calculator"],
+    "metaTitle": "Final Grade Calculator - What Do I Need? | CalcMaster",
+    "metaDescription": "Free final grade calculator tells you what score you need on your final exam to get your target grade. Plan your study time wisely.",
+    "heroTitle": "Final Grade Calculator",
+    "heroSubtitle": "Find out what you need on your final",
+    "introText": "Stressed about finals? Enter your current grade, final exam weight, and desired grade to see exactly what score you need to achieve your goal.",
+    "formula": "Required = (Desired - Current × (1 - Weight)) / Weight",
+    "benefits": [
+      {"icon": "🎯", "title": "Target Grade", "description": "See exact score needed"},
+      {"icon": "📊", "title": "Multiple Scenarios", "description": "What if I want an A? B? C?"},
+      {"icon": "💡", "title": "Realistic Check", "description": "Is your goal achievable?"},
+      {"icon": "📝", "title": "Study Planning", "description": "Prioritize your study time"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate what I need on my final?", "answer": "Enter current grade, final weight, and target. We calculate the required score."},
+      {"question": "What if I need over 100%?", "answer": "That grade may not be achievable. Consider a lower target or extra credit."},
+      {"question": "Does extra credit count?", "answer": "If your class offers extra credit, factor it into your current grade first."},
+      {"question": "What if my final replaces lowest test?", "answer": "Recalculate your current grade assuming the lowest test is dropped."},
+      {"question": "How accurate is this?", "answer": "Accurate if you know exact current grade and final weight. Check your syllabus."}
+    ],
+    "relatedCalculators": ["grade", "gpa", "weighted-gpa", "test-score", "percent"],
+    "longTailVariants": [
+      {"slug": "what-do-i-need", "title": "What Do I Need on My Final", "keyword": "what grade do i need on my final"},
+      {"slug": "pass", "title": "Grade to Pass Calculator", "keyword": "what do i need to pass my class"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "education/weighted-gpa": {
+    "slug": "weighted-gpa",
+    "name": "Weighted GPA",
+    "category": "education",
+    "primaryKeyword": "weighted gpa calculator",
+    "secondaryKeywords": ["weighted grade calculator", "honors gpa calculator", "ap gpa calculator"],
+    "metaTitle": "Weighted GPA Calculator - AP & Honors Classes | CalcMaster",
+    "metaDescription": "Free weighted GPA calculator adds extra points for AP, IB, and honors classes. See how advanced courses boost your GPA.",
+    "heroTitle": "Weighted GPA Calculator",
+    "heroSubtitle": "Calculate GPA with AP & honors boost",
+    "introText": "Taking AP, IB, or honors classes? Our weighted GPA calculator adds the extra grade points so you see your true competitive GPA.",
+    "formula": "Weighted GPA = Σ(Weighted Points × Credits) / Σ Credits",
+    "benefits": [
+      {"icon": "📈", "title": "AP/IB Boost", "description": "+1 point for AP/IB courses"},
+      {"icon": "⭐", "title": "Honors Weight", "description": "+0.5 for honors courses"},
+      {"icon": "🎓", "title": "College-Ready", "description": "See your competitive GPA"},
+      {"icon": "📊", "title": "Comparison", "description": "Weighted vs unweighted view"}
+    ],
+    "faqs": [
+      {"question": "What is weighted GPA?", "answer": "GPA that adds extra points for harder classes. AP/IB adds +1, Honors adds +0.5 to the grade points."},
+      {"question": "Why is weighted GPA higher than 4.0?", "answer": "Because advanced classes earn 5.0 for an A. A 4.5 weighted GPA means you have A's in hard classes."},
+      {"question": "Do colleges prefer weighted or unweighted?", "answer": "Both. They recalculate using their own scale, but see weighted shows course rigor."},
+      {"question": "How do I calculate weighted GPA?", "answer": "Add weight to each grade (A in AP = 5.0), multiply by credits, sum, divide by total credits."},
+      {"question": "What's a good weighted GPA?", "answer": "4.0+ is strong. Top universities see 4.3-4.5+ weighted GPAs."}
+    ],
+    "relatedCalculators": ["gpa", "college-gpa", "grade", "final-grade", "percent"],
+    "longTailVariants": [
+      {"slug": "ap", "title": "AP GPA Calculator", "keyword": "ap weighted gpa calculator"},
+      {"slug": "ib", "title": "IB GPA Calculator", "keyword": "ib weighted gpa calculator"},
+      {"slug": "honors", "title": "Honors GPA Calculator", "keyword": "honors weighted gpa calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "education/college-gpa": {
+    "slug": "college-gpa",
+    "name": "College GPA",
+    "category": "education",
+    "primaryKeyword": "college gpa calculator",
+    "secondaryKeywords": ["university gpa calculator", "semester gpa calculator", "cumulative gpa calculator"],
+    "metaTitle": "College GPA Calculator - Semester & Cumulative | CalcMaster",
+    "metaDescription": "Free college GPA calculator for semester and cumulative GPA. Track your university grades and plan what you need to graduate.",
+    "heroTitle": "College GPA Calculator",
+    "heroSubtitle": "Calculate your university GPA",
+    "introText": "Track your college GPA by semester and cumulatively. Enter credit hours and grades to see where you stand and what you need to reach your goals.",
+    "formula": "GPA = Σ(Grade Points × Credit Hours) / Σ Credit Hours",
+    "benefits": [
+      {"icon": "🎓", "title": "Semester GPA", "description": "Calculate each term separately"},
+      {"icon": "📊", "title": "Cumulative", "description": "Track overall GPA progress"},
+      {"icon": "🎯", "title": "Goal Planner", "description": "What grades to reach target GPA"},
+      {"icon": "📝", "title": "Credit Hours", "description": "Accurate credit-weighted calculation"}
+    ],
+    "faqs": [
+      {"question": "How is college GPA calculated?", "answer": "Multiply each grade's points by credit hours, sum all, divide by total credit hours."},
+      {"question": "Is college GPA on a 4.0 scale?", "answer": "Usually yes. A=4.0, B=3.0, C=2.0, D=1.0, F=0. Some use A+=4.33."},
+      {"question": "How do I calculate cumulative GPA?", "answer": "Include all semesters. Total grade points ÷ total credit hours."},
+      {"question": "What GPA do I need for grad school?", "answer": "Generally 3.0+ minimum, 3.5+ for competitive programs."},
+      {"question": "Can I improve a low GPA?", "answer": "Yes, but it takes time. Use our goal calculator to plan needed grades."}
+    ],
+    "relatedCalculators": ["gpa", "weighted-gpa", "grade", "final-grade", "percent"],
+    "longTailVariants": [
+      {"slug": "semester", "title": "Semester GPA Calculator", "keyword": "semester gpa calculator college"},
+      {"slug": "cumulative", "title": "Cumulative GPA Calculator", "keyword": "cumulative gpa calculator college"},
+      {"slug": "goal", "title": "GPA Goal Calculator", "keyword": "what gpa do i need"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "education/test-score": {
+    "slug": "test-score",
+    "name": "Test Score",
+    "category": "education",
+    "primaryKeyword": "test score calculator",
+    "secondaryKeywords": ["test grade calculator", "points to percentage calculator", "exam score calculator"],
+    "metaTitle": "Test Score Calculator - Points to Percentage | CalcMaster",
+    "metaDescription": "Free test score calculator converts points to percentage and letter grade. See what you scored and what it means.",
+    "heroTitle": "Test Score Calculator",
+    "heroSubtitle": "Calculate your test grade",
+    "introText": "Got your test back? Enter points earned and total points to see your percentage and letter grade instantly.",
+    "formula": "Score % = (Points Earned / Total Points) × 100",
+    "benefits": [
+      {"icon": "📝", "title": "Quick Conversion", "description": "Points to percentage instantly"},
+      {"icon": "🔤", "title": "Letter Grade", "description": "See your A, B, C, D, or F"},
+      {"icon": "📊", "title": "Grading Scales", "description": "Standard or custom scales"},
+      {"icon": "📈", "title": "Track Progress", "description": "Log scores over time"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate my test score?", "answer": "Points earned ÷ total points × 100. Got 42 out of 50? That's 84%."},
+      {"question": "What letter grade is 85%?", "answer": "On standard scale, 85% is a B. Ranges vary by school."},
+      {"question": "How do I find total points if I only know percentage?", "answer": "If you know points earned and percentage, divide points by percentage."},
+      {"question": "What if my teacher uses a curve?", "answer": "Enter curved score, or calculate raw score first then apply curve."},
+      {"question": "How do I calculate weighted test score?", "answer": "Multiply score by test weight, then add to other weighted components."}
+    ],
+    "relatedCalculators": ["grade", "final-grade", "gpa", "percent", "weighted-gpa"],
+    "longTailVariants": [
+      {"slug": "percentage", "title": "Test Percentage Calculator", "keyword": "test percentage calculator"},
+      {"slug": "points", "title": "Points to Grade Calculator", "keyword": "points to grade calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "education/study-timer": {
+    "slug": "study-timer",
+    "name": "Study Timer",
+    "category": "education",
+    "primaryKeyword": "study timer",
+    "secondaryKeywords": ["pomodoro timer", "study session timer", "focus timer for studying"],
+    "metaTitle": "Study Timer - Pomodoro & Focus Sessions | CalcMaster",
+    "metaDescription": "Free study timer with Pomodoro technique. Boost focus with timed study sessions and breaks. Track your study hours.",
+    "heroTitle": "Study Timer",
+    "heroSubtitle": "Focus better with timed sessions",
+    "introText": "Boost your study efficiency with our Pomodoro-style timer. Set focused study sessions with breaks to maximize retention and avoid burnout.",
+    "formula": "Pomodoro: 25 min study + 5 min break × 4, then 15-30 min long break",
+    "benefits": [
+      {"icon": "⏱️", "title": "Pomodoro Mode", "description": "25/5 minute sessions"},
+      {"icon": "🎯", "title": "Custom Timer", "description": "Set your own intervals"},
+      {"icon": "📊", "title": "Session Tracker", "description": "Log total study time"},
+      {"icon": "🔔", "title": "Notifications", "description": "Audio and visual alerts"}
+    ],
+    "faqs": [
+      {"question": "What is the Pomodoro technique?", "answer": "Study for 25 minutes, take 5 minute break. After 4 cycles, take a longer 15-30 minute break."},
+      {"question": "Why are timed sessions effective?", "answer": "Short focused bursts prevent fatigue and improve concentration. Breaks help consolidate learning."},
+      {"question": "How many Pomodoros should I do?", "answer": "Depends on your schedule. 4-8 pomodoros (2-4 hours) is a productive day for most."},
+      {"question": "Can I customize the times?", "answer": "Yes, set any work/break intervals that suit your focus style."},
+      {"question": "Does this track total study time?", "answer": "Yes, we log completed sessions so you can see daily and weekly totals."}
+    ],
+    "relatedCalculators": ["time", "hours", "countdown", "gpa", "final-grade"],
+    "longTailVariants": [
+      {"slug": "pomodoro", "title": "Pomodoro Timer", "keyword": "pomodoro timer online"},
+      {"slug": "focus", "title": "Focus Timer", "keyword": "focus timer for studying"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/timezone": {
+    "slug": "timezone",
+    "name": "Time Zone",
+    "category": "date-time",
+    "primaryKeyword": "time zone converter",
+    "secondaryKeywords": ["timezone converter", "world clock converter", "time difference calculator"],
+    "metaTitle": "Time Zone Converter - World Clock & Time Difference | CalcMaster",
+    "metaDescription": "Free time zone converter shows time across all zones. Convert between any cities and see time differences for scheduling meetings.",
+    "heroTitle": "Time Zone Converter",
+    "heroSubtitle": "Convert time across the world",
+    "introText": "Convert time between any time zones instantly. Perfect for scheduling international meetings, calls, or planning travel.",
+    "formula": "Local Time = UTC ± Time Zone Offset",
+    "benefits": [
+      {"icon": "🌍", "title": "All Zones", "description": "Every time zone worldwide"},
+      {"icon": "🏙️", "title": "City Search", "description": "Search by city name"},
+      {"icon": "📅", "title": "Meeting Planner", "description": "Find overlapping work hours"},
+      {"icon": "⏰", "title": "Multi-Clock", "description": "Compare up to 4 times"}
+    ],
+    "faqs": [
+      {"question": "How do I convert time zones?", "answer": "Select source city/zone, enter time, select destination zone. We show converted time."},
+      {"question": "What is UTC?", "answer": "Coordinated Universal Time - the reference time zone (GMT+0). All zones are offsets from UTC."},
+      {"question": "Does it handle daylight saving?", "answer": "Yes, we automatically account for DST in all locations that observe it."},
+      {"question": "How do I find meeting time for multiple people?", "answer": "Add multiple time zones to see overlapping business hours."},
+      {"question": "What time zone am I in?", "answer": "We detect your local time zone automatically. You can also search by city."}
+    ],
+    "relatedCalculators": ["time", "hours", "date", "countdown", "age"],
+    "longTailVariants": [
+      {"slug": "est-to-pst", "title": "EST to PST Converter", "keyword": "est to pst time converter"},
+      {"slug": "gmt-to-est", "title": "GMT to EST Converter", "keyword": "gmt to est time converter"},
+      {"slug": "meeting-planner", "title": "World Meeting Planner", "keyword": "international meeting time planner"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/timecard": {
+    "slug": "timecard",
+    "name": "Time Card",
+    "category": "date-time",
+    "primaryKeyword": "time card calculator",
+    "secondaryKeywords": ["timesheet calculator", "clock in clock out calculator", "weekly hours calculator"],
+    "metaTitle": "Time Card Calculator - Weekly Hours & Pay | CalcMaster",
+    "metaDescription": "Free time card calculator for weekly hours and pay. Enter clock in/out times, calculate total hours, overtime, and gross pay.",
+    "heroTitle": "Time Card Calculator",
+    "heroSubtitle": "Calculate weekly hours and pay",
+    "introText": "Track your work hours like a pro. Enter daily clock in/out times to calculate total hours, overtime, and total pay for the week.",
+    "formula": "Total Hours = Σ(Clock Out - Clock In - Breaks) per day",
+    "benefits": [
+      {"icon": "📅", "title": "Full Week", "description": "Enter all 7 days at once"},
+      {"icon": "☕", "title": "Break Deduction", "description": "Subtract lunch and breaks"},
+      {"icon": "⏰", "title": "Overtime Calc", "description": "Track hours over 40/week"},
+      {"icon": "💰", "title": "Pay Calculator", "description": "Enter rate for gross pay"}
+    ],
+    "faqs": [
+      {"question": "How do I fill out a time card?", "answer": "Enter start time, end time, and break time for each day worked."},
+      {"question": "How is overtime calculated?", "answer": "Hours over 8/day or 40/week are overtime. We show regular and OT hours separately."},
+      {"question": "Can I calculate bi-weekly hours?", "answer": "Yes, fill in two weeks of data for bi-weekly pay periods."},
+      {"question": "How do I convert time to decimal?", "answer": "We show hours in both HH:MM and decimal format. 7:30 = 7.5 hours."},
+      {"question": "Can I print my timecard?", "answer": "Yes, print or export your completed timecard."}
+    ],
+    "relatedCalculators": ["hours", "time", "salary", "overtime", "date"],
+    "longTailVariants": [
+      {"slug": "weekly", "title": "Weekly Time Card", "keyword": "weekly time card calculator"},
+      {"slug": "biweekly", "title": "Bi-Weekly Time Card", "keyword": "biweekly time card calculator"},
+      {"slug": "with-lunch", "title": "Time Card with Lunch", "keyword": "time card calculator with lunch break"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "date-time/countdown": {
+    "slug": "countdown",
+    "name": "Countdown",
+    "category": "date-time",
+    "primaryKeyword": "countdown timer",
+    "secondaryKeywords": ["countdown clock", "event countdown", "days hours minutes seconds countdown"],
+    "metaTitle": "Countdown Timer - Live Event Countdown | CalcMaster",
+    "metaDescription": "Free countdown timer shows days, hours, minutes, seconds until any event. Create shareable countdowns for weddings, birthdays, and more.",
+    "heroTitle": "Countdown Timer",
+    "heroSubtitle": "Count down to any event",
+    "introText": "Create a live countdown to your special event. See days, hours, minutes, and seconds ticking away in real-time.",
+    "formula": "Time Remaining = Event Date/Time - Current Date/Time",
+    "benefits": [
+      {"icon": "⏱️", "title": "Live Counter", "description": "Seconds tick in real-time"},
+      {"icon": "🎉", "title": "Event Presets", "description": "Quick setup for holidays"},
+      {"icon": "🔗", "title": "Shareable", "description": "Create links to share"},
+      {"icon": "🎨", "title": "Customizable", "description": "Themes and display options"}
+    ],
+    "faqs": [
+      {"question": "How do I create a countdown?", "answer": "Enter your event date and time. The countdown starts automatically."},
+      {"question": "Can I share my countdown?", "answer": "Yes, create a unique link to share with friends and family."},
+      {"question": "Does it work across time zones?", "answer": "Yes, specify your event's time zone for accurate countdown anywhere."},
+      {"question": "Can I embed the countdown on my site?", "answer": "Yes, we provide embed code for websites and blogs."},
+      {"question": "What happens when it hits zero?", "answer": "Celebration animation! Then it shows time since the event."}
+    ],
+    "relatedCalculators": ["day-counter", "date", "time", "age", "hours"],
+    "longTailVariants": [
+      {"slug": "wedding", "title": "Wedding Countdown", "keyword": "wedding countdown timer"},
+      {"slug": "birthday", "title": "Birthday Countdown", "keyword": "birthday countdown timer"},
+      {"slug": "new-year", "title": "New Year Countdown", "keyword": "new year countdown timer"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "construction/tile": {
+    "slug": "tile",
+    "name": "Tile",
+    "category": "construction",
+    "primaryKeyword": "tile calculator",
+    "secondaryKeywords": ["tile needed calculator", "floor tile calculator", "how many tiles do i need"],
+    "metaTitle": "Tile Calculator - How Many Tiles Do I Need? | CalcMaster",
+    "metaDescription": "Free tile calculator estimates tiles needed for floors, walls, and backsplashes. Account for waste and see cost estimates.",
+    "heroTitle": "Tile Calculator",
+    "heroSubtitle": "Calculate how many tiles you need",
+    "introText": "Planning a tile project? Our calculator estimates the number of tiles needed for floors, walls, showers, or backsplashes with waste factor included.",
+    "formula": "Tiles Needed = (Area ÷ Tile Area) × (1 + Waste %)",
+    "benefits": [
+      {"icon": "📐", "title": "Any Tile Size", "description": "Works with all tile dimensions"},
+      {"icon": "📊", "title": "Waste Factor", "description": "Add 10-15% for cuts and breaks"},
+      {"icon": "🏠", "title": "Multiple Areas", "description": "Calculate room by room"},
+      {"icon": "💰", "title": "Cost Estimate", "description": "Enter price per tile or sqft"}
+    ],
+    "faqs": [
+      {"question": "How do I calculate tiles needed?", "answer": "Measure area in sqft, divide by tile area in sqft, add 10-15% for waste."},
+      {"question": "How much extra tile should I buy?", "answer": "10% for simple layouts, 15% for diagonal or complex patterns, 20% for large format."},
+      {"question": "How do I calculate tile for a wall?", "answer": "Height × Width for each wall. Subtract windows and doors."},
+      {"question": "What size tile is best?", "answer": "Depends on room size. Large tiles make small rooms look bigger but need more cuts."},
+      {"question": "How do I account for grout lines?", "answer": "Our calculator includes standard grout spacing. Adjust for thick grout lines."}
+    ],
+    "relatedCalculators": ["sqft", "paint", "grout", "flooring", "concrete"],
+    "longTailVariants": [
+      {"slug": "floor", "title": "Floor Tile Calculator", "keyword": "floor tile calculator"},
+      {"slug": "shower", "title": "Shower Tile Calculator", "keyword": "shower tile calculator"},
+      {"slug": "backsplash", "title": "Backsplash Tile Calculator", "keyword": "backsplash tile calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "construction/paint": {
+    "slug": "paint",
+    "name": "Paint",
+    "category": "construction",
+    "primaryKeyword": "paint calculator",
+    "secondaryKeywords": ["how much paint do i need", "paint coverage calculator", "wall paint calculator"],
+    "metaTitle": "Paint Calculator - How Much Paint Do I Need? | CalcMaster",
+    "metaDescription": "Free paint calculator estimates gallons needed for any room. Factor in doors, windows, and number of coats for accurate coverage.",
+    "heroTitle": "Paint Calculator",
+    "heroSubtitle": "Calculate how much paint you need",
+    "introText": "Painting a room? Our calculator estimates gallons of paint needed based on wall area, coats, and paint coverage rate.",
+    "formula": "Gallons = (Wall Area × Coats) ÷ Coverage Rate",
+    "benefits": [
+      {"icon": "🏠", "title": "Room Calculator", "description": "Enter room dimensions"},
+      {"icon": "🚪", "title": "Subtract Openings", "description": "Deduct doors and windows"},
+      {"icon": "🎨", "title": "Multiple Coats", "description": "Calculate for 1, 2, or 3 coats"},
+      {"icon": "💰", "title": "Cost Estimate", "description": "Enter price per gallon"}
+    ],
+    "faqs": [
+      {"question": "How much paint do I need?", "answer": "One gallon covers about 350-400 sqft per coat. Measure walls and divide."},
+      {"question": "How many coats of paint?", "answer": "Usually 2 coats. 1 coat if same color, 3 if covering dark with light."},
+      {"question": "Should I subtract doors and windows?", "answer": "Yes, we automatically deduct standard sizes. Enter actual sizes for accuracy."},
+      {"question": "How do I calculate for textured walls?", "answer": "Reduce coverage by 20-25% for textured surfaces."},
+      {"question": "How much primer do I need?", "answer": "Same calculation as paint. One coat primer for new drywall or major color change."}
+    ],
+    "relatedCalculators": ["sqft", "tile", "wallpaper", "concrete", "flooring"],
+    "longTailVariants": [
+      {"slug": "room", "title": "Room Paint Calculator", "keyword": "paint calculator by room size"},
+      {"slug": "wall", "title": "Wall Paint Calculator", "keyword": "wall paint calculator"},
+      {"slug": "exterior", "title": "Exterior Paint Calculator", "keyword": "exterior paint calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "construction/btu": {
+    "slug": "btu",
+    "name": "BTU",
+    "category": "construction",
+    "primaryKeyword": "btu calculator",
+    "secondaryKeywords": ["btu calculator for room", "ac btu calculator", "hvac sizing calculator"],
+    "metaTitle": "BTU Calculator - AC & Heating Size for Room | CalcMaster",
+    "metaDescription": "Free BTU calculator sizes air conditioners and heaters for any room. Enter dimensions and get the right BTU rating for comfort.",
+    "heroTitle": "BTU Calculator",
+    "heroSubtitle": "Size your AC or heater correctly",
+    "introText": "Get the right size AC or heater for your room. Our BTU calculator considers room size, ceiling height, insulation, and climate for accurate sizing.",
+    "formula": "Base BTU = Room Sqft × 20, adjusted for factors",
+    "benefits": [
+      {"icon": "❄️", "title": "AC Sizing", "description": "Right-size your air conditioner"},
+      {"icon": "🔥", "title": "Heater Sizing", "description": "Calculate heating BTUs needed"},
+      {"icon": "🏠", "title": "Room Factors", "description": "Ceiling, windows, insulation"},
+      {"icon": "💡", "title": "Energy Efficiency", "description": "Avoid over/under sizing"}
+    ],
+    "faqs": [
+      {"question": "What is BTU?", "answer": "British Thermal Unit - measures heating/cooling capacity. Higher BTU = more powerful."},
+      {"question": "How many BTUs per square foot?", "answer": "General rule: 20 BTU per sqft for AC. Varies by climate and room factors."},
+      {"question": "What happens if AC is too small?", "answer": "Won't cool adequately, runs constantly, higher energy bills, reduced lifespan."},
+      {"question": "What if AC is too big?", "answer": "Short cycles, poor humidity control, uneven cooling, wasted energy."},
+      {"question": "How do windows affect BTU?", "answer": "More/larger windows increase BTU needs by 10-20%. South-facing adds more."}
+    ],
+    "relatedCalculators": ["sqft", "hvac", "energy", "insulation", "electric"],
+    "longTailVariants": [
+      {"slug": "air-conditioner", "title": "AC BTU Calculator", "keyword": "air conditioner btu calculator"},
+      {"slug": "heater", "title": "Heater BTU Calculator", "keyword": "heater btu calculator"},
+      {"slug": "room", "title": "Room BTU Calculator", "keyword": "btu calculator for room size"}
+    ],
+    "lastUpdated": "2026-02-02"
+  }
+}

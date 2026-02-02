@@ -1,0 +1,503 @@
+{
+  "finance/mortgage": {
+    "slug": "mortgage",
+    "name": "Mortgage",
+    "category": "finance",
+    "primaryKeyword": "mortgage calculator",
+    "secondaryKeywords": ["home loan calculator", "mortgage payment calculator", "house payment calculator", "home mortgage calculator"],
+    "metaTitle": "Mortgage Calculator - Estimate Monthly Payments | CalcMaster",
+    "metaDescription": "Free mortgage calculator with taxes, insurance, and PMI. Calculate your monthly payment, see amortization schedule, and get AI-powered home buying advice.",
+    "heroTitle": "Mortgage Calculator",
+    "heroSubtitle": "Calculate your monthly payment with taxes, insurance, and PMI",
+    "introText": "Planning to buy a home? Our mortgage calculator estimates your monthly payment including principal, interest, property taxes, insurance, and PMI.",
+    "formula": "M = P[r(1+r)^n]/[(1+r)^n-1]",
+    "benefits": [
+      {"icon": "📊", "title": "Complete PITI", "description": "Includes taxes, insurance, HOA, and PMI"},
+      {"icon": "📈", "title": "Amortization Schedule", "description": "See month-by-month payment breakdown"},
+      {"icon": "💰", "title": "Extra Payments", "description": "Calculate savings from extra payments"},
+      {"icon": "🤖", "title": "AI Advisor", "description": "Get personalized mortgage insights"}
+    ],
+    "faqs": [
+      {"question": "How much house can I afford?", "answer": "Housing costs should not exceed 28% of gross income. Total debt should stay under 36%."},
+      {"question": "What's included in a mortgage payment?", "answer": "Principal, Interest, Taxes, Insurance (PITI). Plus PMI if down payment is under 20%."},
+      {"question": "How do extra payments help?", "answer": "Extra payments reduce principal faster, cutting total interest and loan term."},
+      {"question": "What credit score do I need?", "answer": "Conventional: 620+. FHA: 580+ (3.5% down). VA: typically 620+."},
+      {"question": "Should I get pre-approved?", "answer": "Yes, pre-approval shows sellers you're serious and helps set your budget."}
+    ],
+    "relatedCalculators": ["loan", "amortization", "refinance", "down-payment", "rent-vs-buy"],
+    "longTailVariants": [
+      {"slug": "with-pmi", "title": "Mortgage Calculator with PMI", "keyword": "mortgage calculator with pmi"},
+      {"slug": "with-taxes", "title": "Mortgage with Taxes & Insurance", "keyword": "mortgage calculator with taxes and insurance"},
+      {"slug": "15-year", "title": "15-Year Mortgage Calculator", "keyword": "15 year mortgage calculator"},
+      {"slug": "fha", "title": "FHA Loan Calculator", "keyword": "fha loan calculator"},
+      {"slug": "va", "title": "VA Loan Calculator", "keyword": "va loan calculator"},
+      {"slug": "how-much-afford", "title": "How Much House Can I Afford", "keyword": "how much house can i afford"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/loan": {
+    "slug": "loan",
+    "name": "Loan",
+    "category": "finance",
+    "primaryKeyword": "loan calculator",
+    "secondaryKeywords": ["loan payment calculator", "loan amortization calculator", "personal loan calculator"],
+    "metaTitle": "Loan Calculator - Calculate Monthly Payments | CalcMaster",
+    "metaDescription": "Free loan calculator for any type of loan. Calculate monthly payments, total interest, and see full amortization schedule with payoff date.",
+    "heroTitle": "Loan Calculator",
+    "heroSubtitle": "Calculate payments for any loan amount",
+    "introText": "Whether it's a personal loan, car loan, or any other installment loan, our calculator shows your monthly payment, total interest, and payoff timeline.",
+    "formula": "Monthly Payment = P × [r(1+r)^n] / [(1+r)^n – 1]",
+    "benefits": [
+      {"icon": "💳", "title": "Any Loan Type", "description": "Works for personal, auto, student, or any loan"},
+      {"icon": "📊", "title": "Full Breakdown", "description": "See principal vs interest each month"},
+      {"icon": "📅", "title": "Payoff Date", "description": "Know exactly when you'll be debt-free"},
+      {"icon": "💰", "title": "Extra Payments", "description": "See how extra payments shorten your loan"}
+    ],
+    "faqs": [
+      {"question": "How is monthly payment calculated?", "answer": "Using the loan amount, interest rate, and term in the standard amortization formula."},
+      {"question": "What's the difference between APR and interest rate?", "answer": "APR includes fees and reflects true cost. Interest rate is just the rate charged on principal."},
+      {"question": "Should I choose a longer or shorter term?", "answer": "Shorter terms have higher payments but less total interest. Longer terms are more affordable monthly."},
+      {"question": "How do I calculate total interest paid?", "answer": "Total Interest = (Monthly Payment × Number of Payments) - Principal"},
+      {"question": "Can I pay off my loan early?", "answer": "Usually yes, but check for prepayment penalties. Extra payments save significant interest."}
+    ],
+    "relatedCalculators": ["mortgage", "auto-loan", "personal-loan", "debt-payoff", "interest"],
+    "longTailVariants": [
+      {"slug": "amortization", "title": "Loan Amortization Calculator", "keyword": "loan amortization calculator"},
+      {"slug": "payoff", "title": "Loan Payoff Calculator", "keyword": "loan payoff calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/auto-loan": {
+    "slug": "auto-loan",
+    "name": "Auto Loan",
+    "category": "finance",
+    "primaryKeyword": "auto loan calculator",
+    "secondaryKeywords": ["car loan calculator", "car payment calculator", "auto financing calculator", "vehicle loan calculator"],
+    "metaTitle": "Auto Loan Calculator - Calculate Car Payments | CalcMaster",
+    "metaDescription": "Free auto loan calculator shows your monthly car payment. Include trade-in value, down payment, and see total cost of financing your vehicle.",
+    "heroTitle": "Auto Loan Calculator",
+    "heroSubtitle": "Calculate your monthly car payment",
+    "introText": "Buying a car? Our auto loan calculator helps you estimate monthly payments, compare loan terms, and understand the true cost of financing.",
+    "formula": "Monthly Payment = (Vehicle Price - Down Payment - Trade-In) × [r(1+r)^n] / [(1+r)^n – 1]",
+    "benefits": [
+      {"icon": "🚗", "title": "Trade-In Value", "description": "Factor in your current vehicle's value"},
+      {"icon": "📊", "title": "Compare Terms", "description": "See 36, 48, 60, 72 month options"},
+      {"icon": "💰", "title": "True Cost", "description": "Total price including all interest"},
+      {"icon": "📈", "title": "Affordability Check", "description": "Is this car within your budget?"}
+    ],
+    "faqs": [
+      {"question": "What's a good interest rate for a car loan?", "answer": "New cars: 4-7%. Used cars: 5-10%. Excellent credit gets the lowest rates."},
+      {"question": "How much should I put down on a car?", "answer": "Ideally 20% for new cars, 10% for used. More down payment = less interest paid."},
+      {"question": "Should I choose a longer loan term?", "answer": "Longer terms have lower payments but cost more in interest. Try to keep it under 60 months."},
+      {"question": "How does trade-in affect my loan?", "answer": "Trade-in reduces the amount financed, lowering your payment and total interest."},
+      {"question": "Is 0% financing really free?", "answer": "Usually yes, but you might get a better deal with cash rebate + regular financing."}
+    ],
+    "relatedCalculators": ["loan", "lease", "mortgage", "budget", "debt-payoff"],
+    "longTailVariants": [
+      {"slug": "with-trade-in", "title": "Auto Loan with Trade-In", "keyword": "car payment calculator with trade in"},
+      {"slug": "used-car", "title": "Used Car Loan Calculator", "keyword": "used car loan calculator"},
+      {"slug": "refinance", "title": "Auto Loan Refinance Calculator", "keyword": "auto loan refinance calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/interest": {
+    "slug": "interest",
+    "name": "Interest",
+    "category": "finance",
+    "primaryKeyword": "interest calculator",
+    "secondaryKeywords": ["interest rate calculator", "simple interest calculator", "calculate interest"],
+    "metaTitle": "Interest Calculator - Simple & Compound Interest | CalcMaster",
+    "metaDescription": "Free interest calculator for simple and compound interest. Calculate how much interest you'll earn or pay on any amount over time.",
+    "heroTitle": "Interest Calculator",
+    "heroSubtitle": "Calculate simple or compound interest",
+    "introText": "Whether you're earning interest on savings or paying interest on a loan, our calculator shows exactly how interest accumulates over time.",
+    "formula": "Simple: I = P×r×t | Compound: A = P(1 + r/n)^(nt)",
+    "benefits": [
+      {"icon": "📊", "title": "Both Types", "description": "Calculate simple or compound interest"},
+      {"icon": "📈", "title": "Growth Chart", "description": "Visualize how your money grows"},
+      {"icon": "🔄", "title": "Compounding Periods", "description": "Daily, monthly, quarterly, or annual"},
+      {"icon": "💰", "title": "Final Amount", "description": "See total value at end of term"}
+    ],
+    "faqs": [
+      {"question": "What's the difference between simple and compound interest?", "answer": "Simple interest is calculated only on principal. Compound interest is calculated on principal plus accumulated interest."},
+      {"question": "How does compounding frequency affect earnings?", "answer": "More frequent compounding = more interest. Daily compounding earns more than monthly."},
+      {"question": "What is APY vs APR?", "answer": "APY includes compounding effect, showing true annual return. APR doesn't account for compounding."},
+      {"question": "How do I calculate interest for any period?", "answer": "For partial periods, use the daily rate (annual ÷ 365) times number of days."},
+      {"question": "Why does compound interest matter?", "answer": "Over long periods, compound interest grows exponentially, making huge differences."}
+    ],
+    "relatedCalculators": ["compound", "savings", "loan", "cd", "investment"],
+    "longTailVariants": [
+      {"slug": "simple", "title": "Simple Interest Calculator", "keyword": "simple interest calculator"},
+      {"slug": "monthly", "title": "Monthly Interest Calculator", "keyword": "monthly interest calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/compound": {
+    "slug": "compound",
+    "name": "Compound Interest",
+    "category": "finance",
+    "primaryKeyword": "compound interest calculator",
+    "secondaryKeywords": ["compound interest formula", "interest compounding calculator", "compound growth calculator"],
+    "metaTitle": "Compound Interest Calculator - Watch Your Money Grow | CalcMaster",
+    "metaDescription": "Free compound interest calculator shows how your money grows over time. Visualize the power of compounding with contributions and see your wealth grow.",
+    "heroTitle": "Compound Interest Calculator",
+    "heroSubtitle": "See the power of compound growth",
+    "introText": "Albert Einstein reportedly called compound interest the eighth wonder of the world. Our calculator shows exactly how powerful compounding can be for your savings.",
+    "formula": "A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)]",
+    "benefits": [
+      {"icon": "📈", "title": "Visual Growth Chart", "description": "Watch your wealth compound over time"},
+      {"icon": "💵", "title": "Regular Contributions", "description": "Add monthly or annual deposits"},
+      {"icon": "🔄", "title": "Compounding Options", "description": "Daily, monthly, quarterly, annually"},
+      {"icon": "📊", "title": "Year-by-Year Table", "description": "See balance growth each year"}
+    ],
+    "faqs": [
+      {"question": "What is compound interest?", "answer": "Interest calculated on initial principal AND accumulated interest. Your money earns money on its earnings."},
+      {"question": "How often should interest compound?", "answer": "More frequent is better. Daily compounding earns more than monthly or annual."},
+      {"question": "What's the Rule of 72?", "answer": "Divide 72 by interest rate to estimate years to double. At 8%, money doubles in ~9 years."},
+      {"question": "How much difference does compound interest make?", "answer": "$10,000 at 7% for 30 years: Simple = $31,000. Compound = $76,123."},
+      {"question": "When should I start investing?", "answer": "As early as possible. Time is the most powerful factor in compound growth."}
+    ],
+    "relatedCalculators": ["interest", "savings", "investment", "retirement", "401k"],
+    "longTailVariants": [
+      {"slug": "with-contributions", "title": "Compound Interest with Monthly Contributions", "keyword": "compound interest calculator with contributions"},
+      {"slug": "daily", "title": "Daily Compound Interest", "keyword": "daily compound interest calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/tip": {
+    "slug": "tip",
+    "name": "Tip",
+    "category": "finance",
+    "primaryKeyword": "tip calculator",
+    "secondaryKeywords": ["gratuity calculator", "tip percentage calculator", "restaurant tip calculator"],
+    "metaTitle": "Tip Calculator - Calculate Gratuity & Split Bills | CalcMaster",
+    "metaDescription": "Free tip calculator for restaurants. Calculate tip amount, split the bill between people, and see total per person including tip.",
+    "heroTitle": "Tip Calculator",
+    "heroSubtitle": "Calculate tips and split bills easily",
+    "introText": "Calculate the perfect tip for any service. Our calculator handles custom tip percentages, bill splitting, and shows exactly what everyone owes.",
+    "formula": "Tip = Bill × (Tip% / 100) | Per Person = (Bill + Tip) / People",
+    "benefits": [
+      {"icon": "💵", "title": "Quick Presets", "description": "15%, 18%, 20%, 25% one-click options"},
+      {"icon": "👥", "title": "Bill Splitting", "description": "Divide equally among any number of people"},
+      {"icon": "🧮", "title": "Custom Tip", "description": "Enter any percentage you want"},
+      {"icon": "📊", "title": "Total Breakdown", "description": "See tip, total, and per-person amounts"}
+    ],
+    "faqs": [
+      {"question": "How much should I tip at a restaurant?", "answer": "Standard is 15-20% of pre-tax bill. 20%+ for excellent service."},
+      {"question": "Do I tip on tax?", "answer": "Technically tip on pre-tax amount, but tipping on total is common and generous."},
+      {"question": "What about tipping for takeout?", "answer": "10-15% is appreciated for takeout, especially for large orders."},
+      {"question": "How do I calculate 20% quickly?", "answer": "Move decimal one place left (10%), then double it. $50 bill = $5 × 2 = $10 tip."},
+      {"question": "Should I tip on alcohol?", "answer": "Yes, include full food and beverage total when calculating tip."}
+    ],
+    "relatedCalculators": ["percent", "budget", "discount", "sales-tax"],
+    "longTailVariants": [
+      {"slug": "split-bill", "title": "Bill Splitter Calculator", "keyword": "split bill calculator"},
+      {"slug": "restaurant", "title": "Restaurant Tip Calculator", "keyword": "restaurant tip calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/salary": {
+    "slug": "salary",
+    "name": "Salary",
+    "category": "finance",
+    "primaryKeyword": "salary calculator",
+    "secondaryKeywords": ["paycheck calculator", "hourly to salary calculator", "take home pay calculator", "net salary calculator"],
+    "metaTitle": "Salary Calculator - Convert Hourly to Annual & Net Pay | CalcMaster",
+    "metaDescription": "Free salary calculator converts hourly to annual salary. See your take-home pay after taxes and deductions. Works for any pay frequency.",
+    "heroTitle": "Salary Calculator",
+    "heroSubtitle": "Calculate your annual salary and take-home pay",
+    "introText": "Convert between hourly, weekly, monthly, and annual salary. Our calculator also estimates your take-home pay after federal and state taxes.",
+    "formula": "Annual = Hourly × Hours/Week × 52 | Take-Home = Gross - Taxes - Deductions",
+    "benefits": [
+      {"icon": "🔄", "title": "Any Conversion", "description": "Hourly ↔ Weekly ↔ Monthly ↔ Annual"},
+      {"icon": "💰", "title": "Take-Home Pay", "description": "See actual pay after deductions"},
+      {"icon": "📊", "title": "Tax Breakdown", "description": "Federal, state, FICA itemized"},
+      {"icon": "📈", "title": "Raise Calculator", "description": "See impact of salary increases"}
+    ],
+    "faqs": [
+      {"question": "How do I convert hourly to annual salary?", "answer": "Multiply hourly rate × hours per week × 52 weeks. $20/hr × 40 × 52 = $41,600/year."},
+      {"question": "What is take-home pay?", "answer": "Gross salary minus all deductions: federal tax, state tax, Social Security, Medicare, benefits."},
+      {"question": "How much of my salary goes to taxes?", "answer": "Typically 20-35% depending on income and location. Our calculator estimates this."},
+      {"question": "How do I calculate my effective tax rate?", "answer": "Total taxes paid ÷ gross income × 100. This is usually lower than your marginal bracket."},
+      {"question": "Should I negotiate salary or hourly?", "answer": "Salary provides stability, hourly may pay more with overtime. Consider your work patterns."}
+    ],
+    "relatedCalculators": ["tax", "budget", "paycheck", "hourly-to-salary", "retirement"],
+    "longTailVariants": [
+      {"slug": "hourly-to-annual", "title": "Hourly to Annual Salary", "keyword": "hourly to salary calculator"},
+      {"slug": "take-home", "title": "Take Home Pay Calculator", "keyword": "take home pay calculator"},
+      {"slug": "after-taxes", "title": "Salary After Taxes", "keyword": "salary after tax calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/tax": {
+    "slug": "tax",
+    "name": "Tax",
+    "category": "finance",
+    "primaryKeyword": "tax calculator",
+    "secondaryKeywords": ["income tax calculator", "federal tax calculator", "tax estimator", "tax return calculator"],
+    "metaTitle": "Tax Calculator - Estimate Your Tax Refund | CalcMaster",
+    "metaDescription": "Free income tax calculator for 2026. Estimate federal and state taxes, see your tax bracket, and calculate your potential refund or amount owed.",
+    "heroTitle": "Income Tax Calculator",
+    "heroSubtitle": "Estimate your taxes and potential refund",
+    "introText": "Estimate your federal and state income tax for 2026. Our calculator shows your tax bracket, effective rate, and whether you'll get a refund.",
+    "formula": "Tax = Σ(Income in Bracket × Bracket Rate) - Credits - Withholdings",
+    "benefits": [
+      {"icon": "📊", "title": "Bracket Breakdown", "description": "See exactly how each bracket applies"},
+      {"icon": "💵", "title": "Refund Estimate", "description": "Will you owe or get money back?"},
+      {"icon": "🏠", "title": "Deductions", "description": "Standard vs itemized comparison"},
+      {"icon": "📈", "title": "Effective Rate", "description": "Your true tax percentage"}
+    ],
+    "faqs": [
+      {"question": "What are the 2026 tax brackets?", "answer": "10%, 12%, 22%, 24%, 32%, 35%, 37% for federal. Brackets adjust annually for inflation."},
+      {"question": "What's the difference between marginal and effective tax rate?", "answer": "Marginal is your highest bracket. Effective is total tax ÷ total income (always lower)."},
+      {"question": "Should I take standard or itemized deduction?", "answer": "Take whichever is higher. In 2026, standard is $14,600 single, $29,200 married."},
+      {"question": "How do tax credits work?", "answer": "Credits reduce tax directly, dollar for dollar. More valuable than deductions."},
+      {"question": "When are taxes due?", "answer": "April 15th for most. Extensions give until October 15th to file (not pay)."}
+    ],
+    "relatedCalculators": ["salary", "paycheck", "sales-tax", "retirement", "budget"],
+    "longTailVariants": [
+      {"slug": "2026", "title": "2026 Tax Calculator", "keyword": "2026 tax calculator"},
+      {"slug": "refund", "title": "Tax Refund Calculator", "keyword": "tax refund calculator"},
+      {"slug": "bracket", "title": "Tax Bracket Calculator", "keyword": "tax bracket calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/inflation": {
+    "slug": "inflation",
+    "name": "Inflation",
+    "category": "finance",
+    "primaryKeyword": "inflation calculator",
+    "secondaryKeywords": ["inflation rate calculator", "purchasing power calculator", "cpi calculator"],
+    "metaTitle": "Inflation Calculator - See Purchasing Power Over Time | CalcMaster",
+    "metaDescription": "Free inflation calculator shows how money's value changes over time. Calculate purchasing power, inflation-adjusted amounts, and historical price changes.",
+    "heroTitle": "Inflation Calculator",
+    "heroSubtitle": "See how purchasing power changes over time",
+    "introText": "What was $100 worth in 1990? What will $100 be worth in 2030? Our inflation calculator shows how the value of money changes over time.",
+    "formula": "Future Value = Present Value × (1 + Inflation Rate)^Years",
+    "benefits": [
+      {"icon": "📊", "title": "Historical Data", "description": "CPI data from 1913 to present"},
+      {"icon": "🔄", "title": "Both Directions", "description": "Past-to-present or present-to-future"},
+      {"icon": "📈", "title": "Rate Chart", "description": "Visualize inflation rates over time"},
+      {"icon": "💰", "title": "Real Value", "description": "Understand purchasing power changes"}
+    ],
+    "faqs": [
+      {"question": "What is inflation?", "answer": "The rate at which prices increase over time, reducing purchasing power of money."},
+      {"question": "What's the average inflation rate?", "answer": "Historically about 3% per year in the US, though it varies significantly year to year."},
+      {"question": "How does inflation affect savings?", "answer": "If your savings earn less than inflation, you're losing purchasing power."},
+      {"question": "What is CPI?", "answer": "Consumer Price Index - measures average change in prices paid by consumers over time."},
+      {"question": "Why do I need to account for inflation?", "answer": "For retirement planning, investments, and understanding true salary growth."}
+    ],
+    "relatedCalculators": ["compound", "retirement", "investment", "savings", "salary"],
+    "longTailVariants": [
+      {"slug": "historical", "title": "Historical Inflation Calculator", "keyword": "historical inflation calculator"},
+      {"slug": "future", "title": "Future Inflation Calculator", "keyword": "future inflation calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/budget": {
+    "slug": "budget",
+    "name": "Budget",
+    "category": "finance",
+    "primaryKeyword": "budget calculator",
+    "secondaryKeywords": ["monthly budget calculator", "50 30 20 budget calculator", "budget planner"],
+    "metaTitle": "Budget Calculator - Plan Your Monthly Budget | CalcMaster",
+    "metaDescription": "Free budget calculator using the 50/30/20 rule. Plan your monthly budget, track expenses by category, and see where your money goes.",
+    "heroTitle": "Budget Calculator",
+    "heroSubtitle": "Plan your monthly budget the smart way",
+    "introText": "Take control of your finances with our budget calculator. We use the proven 50/30/20 rule to help you allocate income to needs, wants, and savings.",
+    "formula": "50% Needs + 30% Wants + 20% Savings = 100% Income",
+    "benefits": [
+      {"icon": "📊", "title": "50/30/20 Rule", "description": "Proven budgeting framework"},
+      {"icon": "📁", "title": "Category Breakdown", "description": "See spending by category"},
+      {"icon": "💰", "title": "Savings Target", "description": "Build emergency fund and investments"},
+      {"icon": "📈", "title": "Surplus Check", "description": "Are you living within your means?"}
+    ],
+    "faqs": [
+      {"question": "What is the 50/30/20 rule?", "answer": "50% of income to needs (housing, food), 30% to wants (entertainment), 20% to savings/debt."},
+      {"question": "What counts as needs vs wants?", "answer": "Needs: housing, utilities, food, insurance, minimum debt payments. Wants: everything else."},
+      {"question": "How do I stick to a budget?", "answer": "Track spending, automate savings, review monthly, and adjust as needed."},
+      {"question": "What if I can't do 50/30/20?", "answer": "Adjust ratios to your situation. 60/20/20 or 70/20/10 are okay while building income."},
+      {"question": "How much emergency fund do I need?", "answer": "3-6 months of expenses. Start with $1,000 then build from there."}
+    ],
+    "relatedCalculators": ["salary", "savings", "debt-payoff", "retirement", "tax"],
+    "longTailVariants": [
+      {"slug": "50-30-20", "title": "50/30/20 Budget Calculator", "keyword": "50 30 20 budget calculator"},
+      {"slug": "monthly", "title": "Monthly Budget Calculator", "keyword": "monthly budget calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/retirement": {
+    "slug": "retirement",
+    "name": "Retirement",
+    "category": "finance",
+    "primaryKeyword": "retirement calculator",
+    "secondaryKeywords": ["retirement savings calculator", "when can i retire calculator", "retirement planning calculator"],
+    "metaTitle": "Retirement Calculator - How Much Do You Need? | CalcMaster",
+    "metaDescription": "Free retirement calculator shows if you're on track. Calculate how much you need to retire, when you can retire, and how long savings will last.",
+    "heroTitle": "Retirement Calculator",
+    "heroSubtitle": "Plan your retirement with confidence",
+    "introText": "Will you have enough to retire? Our calculator projects your retirement savings, shows if you're on track, and helps you plan for the future you want.",
+    "formula": "Retirement Need = Annual Expenses × 25 (4% Rule)",
+    "benefits": [
+      {"icon": "📈", "title": "Projection Chart", "description": "See your wealth grow to retirement"},
+      {"icon": "🎯", "title": "Gap Analysis", "description": "Are you saving enough?"},
+      {"icon": "📊", "title": "Withdrawal Rate", "description": "How long will money last?"},
+      {"icon": "🔄", "title": "Scenario Testing", "description": "What if you retire earlier/later?"}
+    ],
+    "faqs": [
+      {"question": "How much do I need to retire?", "answer": "Rule of thumb: 25× your annual expenses. $50K/year expenses = $1.25M needed."},
+      {"question": "What is the 4% rule?", "answer": "Withdraw 4% of savings in year 1, then adjust for inflation. Historically lasts 30 years."},
+      {"question": "When can I retire?", "answer": "When investments can cover expenses. Earlier requires more savings or lower expenses."},
+      {"question": "Should I include Social Security?", "answer": "Yes, but don't rely on it fully. It replaces about 40% of pre-retirement income."},
+      {"question": "What's a good retirement savings rate?", "answer": "15-20% of income including employer match. More if starting late."}
+    ],
+    "relatedCalculators": ["401k", "compound", "investment", "savings", "inflation"],
+    "longTailVariants": [
+      {"slug": "early", "title": "Early Retirement Calculator", "keyword": "early retirement calculator"},
+      {"slug": "how-much-need", "title": "How Much to Retire", "keyword": "how much do i need to retire"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/401k": {
+    "slug": "401k",
+    "name": "401k",
+    "category": "finance",
+    "primaryKeyword": "401k calculator",
+    "secondaryKeywords": ["401k retirement calculator", "401k growth calculator", "401k contribution calculator"],
+    "metaTitle": "401k Calculator - Maximize Your Retirement | CalcMaster",
+    "metaDescription": "Free 401k calculator shows your retirement balance. Factor in employer match, see tax benefits, and project growth to retirement age.",
+    "heroTitle": "401k Calculator",
+    "heroSubtitle": "Maximize your 401k for retirement",
+    "introText": "Your 401k is one of the best retirement tools. Our calculator shows how contributions, employer match, and compound growth build your nest egg.",
+    "formula": "Future Value = Contributions × (1 + r)^n + Employer Match × (1 + r)^n",
+    "benefits": [
+      {"icon": "🏢", "title": "Employer Match", "description": "Don't leave free money on the table"},
+      {"icon": "📈", "title": "Growth Projection", "description": "See your 401k at retirement"},
+      {"icon": "💰", "title": "Tax Savings", "description": "Understand pre-tax benefits"},
+      {"icon": "📊", "title": "Catch-Up Contributions", "description": "Extra contributions after 50"}
+    ],
+    "faqs": [
+      {"question": "How much should I contribute to my 401k?", "answer": "At minimum, enough to get full employer match. Ideally 15-20% of salary total."},
+      {"question": "What is employer matching?", "answer": "Free money! Common match is 50% of first 6% you contribute = 3% extra salary."},
+      {"question": "What's the 401k limit?", "answer": "2026: $23,000 under 50, $30,500 if 50+. Limits increase annually."},
+      {"question": "Traditional vs Roth 401k?", "answer": "Traditional = tax deduction now, taxed at withdrawal. Roth = no deduction, tax-free withdrawal."},
+      {"question": "When can I withdraw from 401k?", "answer": "59½ without penalty. Early withdrawal has 10% penalty plus taxes (with some exceptions)."}
+    ],
+    "relatedCalculators": ["retirement", "compound", "roth-ira", "investment", "salary"],
+    "longTailVariants": [
+      {"slug": "employer-match", "title": "401k Match Calculator", "keyword": "401k employer match calculator"},
+      {"slug": "contribution", "title": "401k Contribution Calculator", "keyword": "401k contribution calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/roi": {
+    "slug": "roi",
+    "name": "ROI",
+    "category": "finance",
+    "primaryKeyword": "roi calculator",
+    "secondaryKeywords": ["return on investment calculator", "investment return calculator", "roi formula"],
+    "metaTitle": "ROI Calculator - Calculate Return on Investment | CalcMaster",
+    "metaDescription": "Free ROI calculator shows your return on investment. Calculate percentage return, annualized ROI, and compare different investment options.",
+    "heroTitle": "ROI Calculator",
+    "heroSubtitle": "Calculate your Return on Investment",
+    "introText": "ROI (Return on Investment) measures how much money you made relative to what you invested. Essential for comparing investment opportunities.",
+    "formula": "ROI = (Gain from Investment - Cost of Investment) / Cost × 100%",
+    "benefits": [
+      {"icon": "📊", "title": "Percentage Return", "description": "See ROI as a clear percentage"},
+      {"icon": "📅", "title": "Annualized ROI", "description": "Compare investments of different lengths"},
+      {"icon": "📈", "title": "Total Gain", "description": "See absolute dollar profit"},
+      {"icon": "🔄", "title": "Compare Options", "description": "Which investment is better?"}
+    ],
+    "faqs": [
+      {"question": "What is ROI?", "answer": "Return on Investment - the percentage gain or loss relative to the amount invested."},
+      {"question": "What is a good ROI?", "answer": "Depends on investment type. Stock market average is ~10%/year. Real estate often 8-12%."},
+      {"question": "How do I calculate annualized ROI?", "answer": "Annualized ROI = ((1 + ROI)^(1/years) - 1) × 100. Allows fair comparison across time periods."},
+      {"question": "Does ROI include dividends?", "answer": "Yes, total return includes capital gains plus any income like dividends or rent."},
+      {"question": "What's the difference between ROI and profit?", "answer": "Profit is the dollar amount. ROI is the percentage, which lets you compare different sized investments."}
+    ],
+    "relatedCalculators": ["investment", "compound", "retirement", "401k", "savings"],
+    "longTailVariants": [
+      {"slug": "real-estate", "title": "Real Estate ROI Calculator", "keyword": "real estate roi calculator"},
+      {"slug": "annualized", "title": "Annualized ROI Calculator", "keyword": "annualized roi calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/amortization": {
+    "slug": "amortization",
+    "name": "Amortization",
+    "category": "finance",
+    "primaryKeyword": "amortization calculator",
+    "secondaryKeywords": ["amortization schedule calculator", "loan amortization", "mortgage amortization calculator"],
+    "metaTitle": "Amortization Calculator - Full Payment Schedule | CalcMaster",
+    "metaDescription": "Free amortization calculator shows your complete payment schedule. See principal vs interest breakdown for every payment of your loan.",
+    "heroTitle": "Amortization Calculator",
+    "heroSubtitle": "See your complete loan payment schedule",
+    "introText": "Amortization is how loan payments are split between principal and interest over time. Our calculator shows you exactly where every payment goes.",
+    "formula": "Interest = Balance × Monthly Rate | Principal = Payment - Interest",
+    "benefits": [
+      {"icon": "📊", "title": "Full Schedule", "description": "Every payment for the life of the loan"},
+      {"icon": "📈", "title": "Visual Breakdown", "description": "Chart showing principal vs interest"},
+      {"icon": "💰", "title": "Extra Payments", "description": "See impact of paying extra"},
+      {"icon": "📅", "title": "Payoff Date", "description": "Know exactly when you're debt-free"}
+    ],
+    "faqs": [
+      {"question": "What is amortization?", "answer": "The process of paying off a loan through regular payments that cover both principal and interest."},
+      {"question": "Why does so much go to interest early on?", "answer": "Interest is calculated on remaining balance. Higher balance = more interest. As you pay down, more goes to principal."},
+      {"question": "How do extra payments help?", "answer": "Extra payments go directly to principal, reducing interest charged and shortening the loan term."},
+      {"question": "What's negative amortization?", "answer": "When payments don't cover interest, so balance grows. Avoid loans with this feature."},
+      {"question": "Can I get an amortization schedule from my lender?", "answer": "Yes, lenders must provide this. Our calculator helps you understand it and plan extra payments."}
+    ],
+    "relatedCalculators": ["mortgage", "loan", "auto-loan", "refinance", "debt-payoff"],
+    "longTailVariants": [
+      {"slug": "mortgage", "title": "Mortgage Amortization Schedule", "keyword": "mortgage amortization calculator"},
+      {"slug": "extra-payments", "title": "Amortization with Extra Payments", "keyword": "amortization calculator with extra payments"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "finance/debt-payoff": {
+    "slug": "debt-payoff",
+    "name": "Debt Payoff",
+    "category": "finance",
+    "primaryKeyword": "debt payoff calculator",
+    "secondaryKeywords": ["debt free calculator", "debt snowball calculator", "debt avalanche calculator"],
+    "metaTitle": "Debt Payoff Calculator - Snowball vs Avalanche | CalcMaster",
+    "metaDescription": "Free debt payoff calculator compares snowball vs avalanche methods. See how long to become debt-free and how much interest you'll save.",
+    "heroTitle": "Debt Payoff Calculator",
+    "heroSubtitle": "Create your debt-free plan",
+    "introText": "Multiple debts? Our calculator compares the debt snowball and avalanche methods to help you find the fastest, cheapest path to becoming debt-free.",
+    "formula": "Snowball: Smallest balance first | Avalanche: Highest interest first",
+    "benefits": [
+      {"icon": "🏔️", "title": "Snowball Method", "description": "Pay smallest debts first for quick wins"},
+      {"icon": "🏔️", "title": "Avalanche Method", "description": "Pay highest interest first to save money"},
+      {"icon": "📊", "title": "Side-by-Side", "description": "Compare both strategies"},
+      {"icon": "📅", "title": "Debt-Free Date", "description": "See when you'll be free of debt"}
+    ],
+    "faqs": [
+      {"question": "What is the debt snowball method?", "answer": "Pay minimums on all debts, throw extra at the smallest balance. Quick wins build momentum."},
+      {"question": "What is the debt avalanche method?", "answer": "Pay minimums on all debts, throw extra at highest interest rate. Saves the most money."},
+      {"question": "Which method is better?", "answer": "Avalanche saves more money. Snowball has psychological wins. Choose what you'll stick with."},
+      {"question": "How much extra should I pay toward debt?", "answer": "As much as possible while maintaining emergency fund. Even $50 extra makes a difference."},
+      {"question": "Should I save or pay off debt first?", "answer": "Build $1,000 emergency fund first, then attack debt aggressively."}
+    ],
+    "relatedCalculators": ["loan", "credit-card", "amortization", "budget", "savings"],
+    "longTailVariants": [
+      {"slug": "snowball", "title": "Debt Snowball Calculator", "keyword": "debt snowball calculator"},
+      {"slug": "avalanche", "title": "Debt Avalanche Calculator", "keyword": "debt avalanche calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "health/bmi": {
+    "slug": "bmi",
+    "name": "BMI",
+    "category": "health",
+    "primaryKeyword": "bmi calculator",
+    "secondaryKeywords": ["body mass index calculator", "check bmi", "bmi checker", "calculate bmi"],
+    "heroTitle": "BMI Calculator - Body Mass Index",
+    "heroSubtitle": "Calculate your BMI instantly and get AI-powered health insights",
+    "metaTitle": "BMI Calculator - Check Your Body Mass Index Free | CalcMaster",
+    "metaDescription": "Free BMI calculator with instant results. Calculate your Body Mass Index, see your health category, and get AI-powered personalized recommendations.",
+    "introText": "Your Body Mass Index (BMI) is a simple measure that uses your height and weight to determine if you're at a healthy weight. Enter your measurements below to calculate your BMI and receive personalized recommendations.",
+    "howItWorks": [
+      {"step": 1, "title": "Enter Your Measurements", "description": "Input your height and weight in metric or imperial units."},
+      {"step": 2, "title": "Get Instant Results", "description": "See your BMI score, category, and position on our visual scale."},
+      {"step": 3, "title": "Understand Your Results", "description": "Our AI explains what your BMI means and suggests actionable steps."}
+    ],
+    "benefits": [
+      {"title": "AI-Powered Explanations", "description": "Get personalized insights about your BMI results.", "icon": "🤖"},
+      {"title": "Track Your Progress", "description": "Save calculations and monitor changes over time.", "icon": "📈"},
+      {"title": "Multiple Modes", "description": "Switch between Adult and Kids modes with age-adjusted percentiles.", "icon": "👶"},
+      {"title": "Athlete Adjustment", "description": "Special mode for those with higher muscle mass.", "icon": "🏋️"}
+    ],
+    "educationalContent": {
+      "title": "What is BMI?",
+      "paragraphs": [
+        "Body Mass Index (BMI) is a numerical value calculated from your weight and height. Developed by Belgian mathematician Adolphe Quetelet in the 1830s, it has become one of the most widely used screening tools for potential weight-related health issues.",
+        "The formula is: BMI = weight (kg) / height (m)². For example, a person weighing 70 kg and 1.75 m tall has a BMI of 22.9.",
+        "The World Health Organization classifies BMI into categories: Underweight (below 18.5), Normal (18.5-24.9), Overweight (25-29.9), and Obese (30+).",
+        "While BMI is useful for screening, it has limitations. It doesn't distinguish between muscle and fat mass, which means athletes may have a high BMI despite being healthy. It also doesn't account for fat distribution or age-related changes in body composition."
+      ],
+      "tables": [
+        {
+          "headers": ["BMI Range", "Category"],
+          "rows": [
+            ["Below 18.5", "Underweight"],
+            ["18.5 - 24.9", "Normal weight"],
+            ["25.0 - 29.9", "Overweight"],
+            ["30.0 - 34.9", "Obesity Class I"],
+            ["35.0 - 39.9", "Obesity Class II"],
+            ["40.0+", "Obesity Class III"]
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "What is a healthy BMI?", "answer": "A healthy BMI for adults is typically between 18.5 and 24.9. However, 'healthy' can vary based on age, muscle mass, ethnicity, and individual factors."},
+      {"question": "How accurate is BMI?", "answer": "BMI is reasonably accurate for most people but can be misleading for athletes, pregnant women, elderly individuals, and those with high muscle mass."},
+      {"question": "How often should I check my BMI?", "answer": "For most adults, monthly checks are sufficient. If actively trying to change weight, weekly monitoring can help track progress."},
+      {"question": "Does BMI differ for men and women?", "answer": "The calculation and categories are the same, but women typically have more body fat than men at the same BMI."},
+      {"question": "How do I calculate BMI for children?", "answer": "Children's BMI uses the same formula but is interpreted using age and sex-specific growth charts as percentiles."}
+    ],
+    "relatedCalculators": ["calories", "tdee", "body-fat", "ideal-weight", "bmr"],
+    "longTailVariants": [
+      {"slug": "children", "title": "BMI Calculator for Kids", "keyword": "bmi calculator for kids"},
+      {"slug": "athletes", "title": "BMI Calculator for Athletes", "keyword": "bmi calculator for athletes"},
+      {"slug": "metric", "title": "BMI Calculator (kg/cm)", "keyword": "bmi calculator kg cm"},
+      {"slug": "pregnancy", "title": "BMI Calculator for Pregnancy", "keyword": "bmi calculator pregnancy"}
+    ],
+    "formula": "BMI = weight (kg) / height² (m²)",
+    "lastUpdated": "2026-02-02"
+  },
+  "finance/mortgage": {
+    "slug": "mortgage",
+    "name": "Mortgage",
+    "category": "finance",
+    "primaryKeyword": "mortgage calculator",
+    "secondaryKeywords": ["home loan calculator", "mortgage payment calculator", "house payment calculator"],
+    "heroTitle": "Mortgage Calculator",
+    "heroSubtitle": "Calculate your monthly payment with taxes, insurance, and PMI included",
+    "metaTitle": "Mortgage Calculator - Estimate Monthly Payments | CalcMaster",
+    "metaDescription": "Free mortgage calculator with taxes, insurance, and PMI. Calculate your monthly payment, see amortization schedule, and get AI-powered home buying advice.",
+    "introText": "Planning to buy a home? Our free mortgage calculator helps you estimate your monthly mortgage payment including principal, interest, property taxes, homeowner's insurance, and PMI.",
+    "howItWorks": [
+      {"step": 1, "title": "Enter Loan Details", "description": "Input home price, down payment, interest rate, and loan term."},
+      {"step": 2, "title": "See Payment Breakdown", "description": "View your estimated monthly payment with visual breakdown of PITI."},
+      {"step": 3, "title": "Explore Scenarios", "description": "Use AI to understand affordability and compare mortgage options."}
+    ],
+    "benefits": [
+      {"title": "Complete Payment Picture", "description": "Includes taxes, insurance, HOA fees, and PMI for true monthly cost.", "icon": "📊"},
+      {"title": "Interactive Amortization", "description": "See month-by-month breakdown of principal vs. interest.", "icon": "📈"},
+      {"title": "Extra Payment Calculator", "description": "See how much you'd save with extra monthly or annual payments.", "icon": "💰"},
+      {"title": "AI Financial Advisor", "description": "Get personalized insights about your mortgage options.", "icon": "🤖"}
+    ],
+    "educationalContent": {
+      "title": "How Mortgage Payments Work",
+      "paragraphs": [
+        "Your monthly mortgage payment (PITI) consists of four main components: Principal (loan repayment), Interest (cost of borrowing), Taxes (property taxes), and Insurance (homeowner's insurance).",
+        "Early in your mortgage, most of your payment goes toward interest. As you pay down the balance, more goes to principal. This is why extra payments early in your loan have the biggest impact.",
+        "Private Mortgage Insurance (PMI) is required when your down payment is less than 20%. It typically costs 0.5% to 1% of your loan amount annually.",
+        "When comparing 15-year vs 30-year mortgages: 15-year loans have higher monthly payments but significantly lower total interest. A $400,000 loan at 7% (30-year) vs 6.5% (15-year) saves over $330,000 in interest."
+      ],
+      "tables": [
+        {
+          "headers": ["Year", "Principal %", "Interest %"],
+          "rows": [
+            ["Year 1", "25%", "75%"],
+            ["Year 10", "40%", "60%"],
+            ["Year 20", "60%", "40%"],
+            ["Year 30", "90%", "10%"]
+          ]
+        }
+      ]
+    },
+    "faqs": [
+      {"question": "How much house can I afford?", "answer": "A general rule is that monthly housing costs shouldn't exceed 28% of gross income. Total debt payments shouldn't exceed 36%."},
+      {"question": "What's included in a mortgage payment?", "answer": "Principal, Interest, Taxes, and Insurance (PITI). If your down payment is under 20%, you may also pay PMI."},
+      {"question": "How do extra payments affect my mortgage?", "answer": "Extra payments go directly toward principal, reducing the amount that accrues interest and shortening your payoff date."},
+      {"question": "What credit score do I need?", "answer": "Conventional loans typically require 620+, FHA loans accept 580+ (3.5% down). Higher scores get better rates."},
+      {"question": "Should I get pre-approved first?", "answer": "Yes! Pre-approval shows sellers you're serious and helps you understand your budget before house hunting."}
+    ],
+    "relatedCalculators": ["loan", "amortization", "refinance", "down-payment", "rent-vs-buy"],
+    "longTailVariants": [
+      {"slug": "with-pmi", "title": "Mortgage Calculator with PMI", "keyword": "mortgage calculator with pmi"},
+      {"slug": "with-taxes", "title": "Mortgage Calculator with Taxes", "keyword": "mortgage calculator with taxes and insurance"},
+      {"slug": "15-year", "title": "15-Year Mortgage Calculator", "keyword": "15 year mortgage calculator"},
+      {"slug": "fha", "title": "FHA Loan Calculator", "keyword": "fha loan calculator"},
+      {"slug": "how-much-afford", "title": "How Much House Can I Afford", "keyword": "how much house can i afford"}
+    ],
+    "formula": "M = P[r(1+r)^n]/[(1+r)^n-1]",
+    "lastUpdated": "2026-02-02"
+  },
+  "health/calories": {
+    "slug": "calories",
+    "name": "Calorie",
+    "category": "health",
+    "primaryKeyword": "calorie calculator",
+    "secondaryKeywords": ["daily calorie calculator", "calories needed calculator", "calorie intake calculator"],
+    "heroTitle": "Calorie Calculator",
+    "heroSubtitle": "Calculate your daily calorie needs for weight loss, gain, or maintenance",
+    "metaTitle": "Calorie Calculator - Daily Calorie Needs for Weight Loss | CalcMaster",
+    "metaDescription": "Free calorie calculator to find your daily calorie needs. Get personalized recommendations for weight loss, muscle gain, or maintenance with AI insights.",
+    "introText": "How many calories should you eat per day? Our calorie calculator uses your age, height, weight, gender, and activity level to estimate your daily calorie needs for your specific goal.",
+    "howItWorks": [
+      {"step": 1, "title": "Enter Your Details", "description": "Input age, gender, height, weight, and activity level."},
+      {"step": 2, "title": "Choose Your Goal", "description": "Select weight loss, maintenance, or muscle gain."},
+      {"step": 3, "title": "Get Your Plan", "description": "See daily calories plus optional macro breakdown."}
+    ],
+    "benefits": [
+      {"title": "Goal-Based Results", "description": "Customized calories for losing, gaining, or maintaining weight.", "icon": "🎯"},
+      {"title": "Macro Split", "description": "Automatic calculation of proteins, fats, and carbs.", "icon": "📊"},
+      {"title": "AI Meal Suggestions", "description": "Get example meal plans that fit your calorie target.", "icon": "🍽️"},
+      {"title": "Progress Projection", "description": "See how your weight will change over time.", "icon": "📈"}
+    ],
+    "educationalContent": {
+      "title": "Understanding Calories",
+      "paragraphs": [
+        "A calorie is a unit of energy. Your body needs a certain number of calories each day to function—this is your Total Daily Energy Expenditure (TDEE). Eating fewer calories than your TDEE creates a deficit and leads to weight loss.",
+        "The Mifflin-St Jeor equation is considered the most accurate for estimating Basal Metabolic Rate (BMR). Your TDEE is then calculated by multiplying BMR by an activity factor.",
+        "For weight loss, a deficit of 500 calories per day typically results in about 1 pound of weight loss per week. For muscle gain, a surplus of 250-500 calories supports growth without excessive fat gain.",
+        "Quality of calories matters too. 2000 calories from whole foods provides different nutrition than 2000 calories from processed foods. Focus on protein, fiber, and micronutrients alongside your calorie target."
+      ]
+    },
+    "faqs": [
+      {"question": "How many calories should I eat to lose weight?", "answer": "For safe weight loss, eat 500 fewer calories than your TDEE. This typically results in 1 pound of weight loss per week."},
+      {"question": "What's the minimum calories I should eat?", "answer": "Women should generally eat at least 1200 calories; men at least 1500. Going below this can cause nutrient deficiencies."},
+      {"question": "How accurate are calorie calculators?", "answer": "Calculators provide estimates. Individual metabolism varies. Track your intake and weight for 2-3 weeks to find your true needs."},
+      {"question": "Should I eat back exercise calories?", "answer": "Generally, eat back about half of exercise calories. Fitness trackers often overestimate calorie burn."},
+      {"question": "Do calories matter more than macros?", "answer": "For weight change, total calories are most important. For body composition and health, macro balance matters too."}
+    ],
+    "relatedCalculators": ["tdee", "bmr", "macro", "protein", "ideal-weight"],
+    "longTailVariants": [
+      {"slug": "weight-loss", "title": "Calorie Calculator for Weight Loss", "keyword": "calorie calculator to lose weight"},
+      {"slug": "muscle-gain", "title": "Calorie Calculator for Muscle Gain", "keyword": "calorie calculator for bulking"},
+      {"slug": "maintenance", "title": "Maintenance Calorie Calculator", "keyword": "maintenance calorie calculator"}
+    ],
+    "formula": "BMR × Activity Factor = TDEE",
+    "lastUpdated": "2026-02-02"
+  },
+  "date-time/age": {
+    "slug": "age",
+    "name": "Age",
+    "category": "date-time",
+    "primaryKeyword": "age calculator",
+    "secondaryKeywords": ["calculate age", "age in days", "how old am i", "birthday calculator"],
+    "heroTitle": "Age Calculator",
+    "heroSubtitle": "Calculate your exact age in years, months, days, hours, and more",
+    "metaTitle": "Age Calculator - Calculate Exact Age in Years, Months, Days | CalcMaster",
+    "metaDescription": "Free age calculator shows your exact age in years, months, days, hours, and minutes. Calculate age between dates, see life statistics, and upcoming milestones.",
+    "introText": "Want to know exactly how old you are? Our age calculator shows your precise age down to the second, plus fun statistics like total days lived, heartbeats, and upcoming milestones.",
+    "howItWorks": [
+      {"step": 1, "title": "Enter Your Birthdate", "description": "Input your date of birth using our date picker."},
+      {"step": 2, "title": "Get Exact Age", "description": "See your age in years, months, days, hours, and minutes."},
+      {"step": 3, "title": "Explore Statistics", "description": "Discover life stats and upcoming milestones."}
+    ],
+    "benefits": [
+      {"title": "Life Statistics", "description": "See total days lived, hours, heartbeats, and breaths.", "icon": "🎂"},
+      {"title": "Celebrity Age Match", "description": "Learn what celebrities accomplished at your current age.", "icon": "🌟"},
+      {"title": "Upcoming Milestones", "description": "Know when you'll reach 10,000 days or your next birthday.", "icon": "📅"},
+      {"title": "Age at Any Date", "description": "Calculate how old you were or will be on any date.", "icon": "🔮"}
+    ],
+    "educationalContent": {
+      "title": "About Age Calculation",
+      "paragraphs": [
+        "Age calculation seems simple but has interesting nuances. In most Western countries, you're considered 0 years old at birth and turn 1 on your first birthday.",
+        "Some cultures count age differently. In traditional Korean age counting, babies are 1 at birth and everyone gains a year on New Year's Day. This means you could be up to 2 years 'older' in Korean age.",
+        "The exact age calculation accounts for leap years, varying month lengths, and time zones. Our calculator handles all these complexities to give you precise results.",
+        "Age milestones vary by culture. While 18 or 21 often marks adulthood in Western countries, other cultures celebrate different ages as significant transitions."
+      ]
+    },
+    "faqs": [
+      {"question": "How do you calculate exact age?", "answer": "We subtract your birthdate from today, accounting for leap years and varying month lengths to give years, months, and days."},
+      {"question": "What is Korean age?", "answer": "In Korean age, you're 1 at birth and gain a year each New Year's Day. You can be up to 2 years older in Korean age."},
+      {"question": "How many days old am I?", "answer": "Enter your birthdate and we'll calculate your exact age in days, along with hours, minutes, and seconds."},
+      {"question": "What is my age in months?", "answer": "Our calculator shows your total age in months, accounting for different month lengths throughout your life."},
+      {"question": "How do leap years affect age?", "answer": "If born on Feb 29, some celebrate on Feb 28 or Mar 1 in non-leap years. Our calculator handles this correctly."}
+    ],
+    "relatedCalculators": ["date", "time", "day-counter", "countdown", "hours"],
+    "longTailVariants": [
+      {"slug": "in-days", "title": "Age Calculator in Days", "keyword": "age in days calculator"},
+      {"slug": "between-dates", "title": "Age Between Two Dates", "keyword": "calculate age between two dates"},
+      {"slug": "korean", "title": "Korean Age Calculator", "keyword": "korean age calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+  "math/percent": {
+    "slug": "percent",
+    "name": "Percentage",
+    "category": "math",
+    "primaryKeyword": "percentage calculator",
+    "secondaryKeywords": ["percent calculator", "calculate percentage", "percentage increase calculator"],
+    "heroTitle": "Percentage Calculator",
+    "heroSubtitle": "Calculate percentages, increases, decreases, and more",
+    "metaTitle": "Percentage Calculator - Calculate %, Increase, Decrease | CalcMaster",
+    "metaDescription": "Free percentage calculator with 5 calculation modes. Find what percent X is of Y, calculate percentage increase/decrease, and see step-by-step solutions.",
+    "introText": "Need to calculate percentages? Our all-in-one percentage calculator handles five different types of percentage calculations with step-by-step explanations.",
+    "howItWorks": [
+      {"step": 1, "title": "Choose Calculation Type", "description": "Select from 5 different percentage calculation modes."},
+      {"step": 2, "title": "Enter Your Numbers", "description": "Input the values you want to calculate."},
+      {"step": 3, "title": "See Results & Steps", "description": "Get the answer plus the formula and calculation steps."}
+    ],
+    "benefits": [
+      {"title": "5-in-1 Calculator", "description": "All percentage calculations in one tool.", "icon": "🔢"},
+      {"title": "Step-by-Step Solutions", "description": "See the formula and learn how to calculate yourself.", "icon": "📝"},
+      {"title": "Visual Results", "description": "Pie chart visualization of percentage results.", "icon": "📊"},
+      {"title": "Tip Calculator", "description": "Built-in tip and discount calculations.", "icon": "💰"}
+    ],
+    "educationalContent": {
+      "title": "Understanding Percentages",
+      "paragraphs": [
+        "A percentage is a number expressed as a fraction of 100. The word 'percent' comes from Latin 'per centum' meaning 'by the hundred.' So 50% means 50 per 100, or half.",
+        "To find X% of Y: multiply Y by X and divide by 100. For example, 20% of 80 = (20 × 80) / 100 = 16.",
+        "Percentage increase formula: ((New - Old) / Old) × 100. If a price goes from $50 to $60, that's ((60-50)/50) × 100 = 20% increase.",
+        "A common mistake: percentage points vs percentages. If interest rates go from 5% to 7%, that's a 2 percentage point increase, but a 40% increase in the rate itself."
+      ]
+    },
+    "faqs": [
+      {"question": "How do I calculate percentage?", "answer": "Divide the part by the whole and multiply by 100. For example, 25/50 × 100 = 50%."},
+      {"question": "What is X% of Y?", "answer": "Multiply Y by X and divide by 100. Example: 15% of 200 = (15 × 200) / 100 = 30."},
+      {"question": "How do I calculate percentage increase?", "answer": "Subtract the old value from new, divide by old value, multiply by 100. Formula: ((New-Old)/Old) × 100."},
+      {"question": "How do I calculate percentage decrease?", "answer": "Same formula as increase: ((Old-New)/Old) × 100. The result will show the decrease."},
+      {"question": "What's the difference between percentage and percentage points?", "answer": "Percentage points measure absolute difference (5% to 8% = 3 points). Percentage measures relative change (5% to 8% = 60% increase)."}
+    ],
+    "relatedCalculators": ["tip", "discount", "fraction", "ratio", "gpa"],
+    "longTailVariants": [
+      {"slug": "increase", "title": "Percentage Increase Calculator", "keyword": "percentage increase calculator"},
+      {"slug": "decrease", "title": "Percentage Decrease Calculator", "keyword": "percentage decrease calculator"},
+      {"slug": "difference", "title": "Percentage Difference Calculator", "keyword": "percentage difference calculator"}
+    ],
+    "formula": "Percentage = (Part / Whole) × 100",
+    "lastUpdated": "2026-02-02"
+  }
+}

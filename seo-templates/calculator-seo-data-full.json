@@ -1,0 +1,411 @@
+{
+  "_metadata": {
+    "version": "1.0",
+    "totalCalculators": 60,
+    "categories": ["health", "finance", "math", "date-time", "construction", "fun", "education"],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/bmi": {
+    "slug": "bmi",
+    "name": "BMI",
+    "category": "health",
+    "primaryKeyword": "bmi calculator",
+    "secondaryKeywords": ["body mass index calculator", "check bmi", "bmi checker", "calculate bmi", "what is my bmi"],
+    "metaTitle": "BMI Calculator - Check Your Body Mass Index Free | CalcMaster",
+    "metaDescription": "Free BMI calculator with AI-powered health insights. Calculate your Body Mass Index, see your category, and get personalized recommendations instantly.",
+    "heroTitle": "BMI Calculator",
+    "heroSubtitle": "Calculate your Body Mass Index and understand what it means for your health",
+    "introText": "Your Body Mass Index (BMI) is a simple measure using your height and weight to assess if you're at a healthy weight. Get instant results with AI-powered explanations.",
+    "formula": "BMI = weight (kg) / height² (m²)",
+    "benefits": [
+      {"icon": "🤖", "title": "AI Health Insights", "description": "Get personalized explanations of what your BMI means"},
+      {"icon": "📈", "title": "Track Progress", "description": "Save calculations and monitor changes over time"},
+      {"icon": "👶", "title": "Kids Mode", "description": "CDC percentiles for children and teens"},
+      {"icon": "🏋️", "title": "Athlete Adjustment", "description": "Account for higher muscle mass"}
+    ],
+    "faqs": [
+      {"question": "What is a healthy BMI?", "answer": "A healthy BMI for adults is typically between 18.5 and 24.9."},
+      {"question": "How accurate is BMI?", "answer": "BMI is a useful screening tool but can be misleading for athletes or elderly individuals."},
+      {"question": "How often should I check my BMI?", "answer": "Monthly checks are sufficient for most adults."},
+      {"question": "Does BMI differ for men and women?", "answer": "The calculation is the same, but women typically have more body fat at the same BMI."},
+      {"question": "How do I calculate BMI for children?", "answer": "Children's BMI uses age and sex-specific growth charts as percentiles."}
+    ],
+    "relatedCalculators": ["calories", "tdee", "body-fat", "ideal-weight", "bmr"],
+    "longTailVariants": [
+      {"slug": "children", "title": "BMI Calculator for Kids", "keyword": "bmi calculator for kids"},
+      {"slug": "athletes", "title": "BMI Calculator for Athletes", "keyword": "bmi calculator for athletes"},
+      {"slug": "women", "title": "BMI Calculator for Women", "keyword": "bmi calculator for women"},
+      {"slug": "metric", "title": "BMI Calculator (kg/cm)", "keyword": "bmi calculator kg cm"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/calories": {
+    "slug": "calories",
+    "name": "Calorie",
+    "category": "health",
+    "primaryKeyword": "calorie calculator",
+    "secondaryKeywords": ["daily calorie calculator", "calories needed", "how many calories should i eat", "calorie intake calculator"],
+    "metaTitle": "Calorie Calculator - Daily Calorie Needs for Weight Loss | CalcMaster",
+    "metaDescription": "Free calorie calculator to find your daily calorie needs. Get personalized recommendations for weight loss, muscle gain, or maintenance with AI insights.",
+    "heroTitle": "Calorie Calculator",
+    "heroSubtitle": "Calculate your daily calorie needs for any goal",
+    "introText": "How many calories should you eat per day? Our calculator uses your age, height, weight, gender, and activity level to estimate your daily calorie needs.",
+    "formula": "BMR × Activity Factor = Daily Calories",
+    "benefits": [
+      {"icon": "🎯", "title": "Goal-Based Results", "description": "Calories for losing, gaining, or maintaining weight"},
+      {"icon": "📊", "title": "Macro Split", "description": "Automatic protein, carbs, and fat breakdown"},
+      {"icon": "🍽️", "title": "AI Meal Suggestions", "description": "Example meal plans for your calorie target"},
+      {"icon": "📈", "title": "Progress Projection", "description": "See how your weight will change over time"}
+    ],
+    "faqs": [
+      {"question": "How many calories should I eat to lose weight?", "answer": "Eat 500 fewer calories than your TDEE for about 1 pound loss per week."},
+      {"question": "What's the minimum calories I should eat?", "answer": "Women: at least 1200. Men: at least 1500 calories."},
+      {"question": "How accurate are calorie calculators?", "answer": "They provide estimates. Track intake for 2-3 weeks to find your true needs."},
+      {"question": "Should I eat back exercise calories?", "answer": "Generally, eat back about half of exercise calories."},
+      {"question": "Do calories matter more than macros?", "answer": "For weight change, total calories are most important. For body composition, macros matter too."}
+    ],
+    "relatedCalculators": ["tdee", "bmr", "macro", "protein", "ideal-weight"],
+    "longTailVariants": [
+      {"slug": "weight-loss", "title": "Calorie Calculator for Weight Loss", "keyword": "calorie calculator to lose weight"},
+      {"slug": "muscle-gain", "title": "Calorie Calculator for Bulking", "keyword": "calorie calculator for muscle gain"},
+      {"slug": "maintenance", "title": "Maintenance Calorie Calculator", "keyword": "maintenance calories calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/tdee": {
+    "slug": "tdee",
+    "name": "TDEE",
+    "category": "health",
+    "primaryKeyword": "tdee calculator",
+    "secondaryKeywords": ["total daily energy expenditure", "tdee calculation", "how many calories do i burn"],
+    "metaTitle": "TDEE Calculator - Total Daily Energy Expenditure | CalcMaster",
+    "metaDescription": "Free TDEE calculator shows your Total Daily Energy Expenditure. Learn exactly how many calories you burn per day based on your activity level.",
+    "heroTitle": "TDEE Calculator",
+    "heroSubtitle": "Calculate your Total Daily Energy Expenditure",
+    "introText": "TDEE (Total Daily Energy Expenditure) is the total calories you burn per day. Knowing your TDEE is essential for weight management.",
+    "formula": "TDEE = BMR × Activity Multiplier",
+    "benefits": [
+      {"icon": "🔥", "title": "Accurate Burn Estimate", "description": "Based on Mifflin-St Jeor equation"},
+      {"icon": "⚡", "title": "Activity Levels", "description": "5 activity presets from sedentary to athlete"},
+      {"icon": "🔄", "title": "Sync with Calories", "description": "Use TDEE for precise calorie targets"},
+      {"icon": "📊", "title": "Deficit/Surplus Guide", "description": "See targets for any goal"}
+    ],
+    "faqs": [
+      {"question": "What is TDEE?", "answer": "Total Daily Energy Expenditure - the total calories you burn in a day including all activities."},
+      {"question": "How is TDEE different from BMR?", "answer": "BMR is calories at rest. TDEE includes BMR plus activity calories."},
+      {"question": "Which activity level should I choose?", "answer": "Be honest - most people overestimate. Sedentary if desk job, lightly active if exercise 1-3x/week."},
+      {"question": "How do I use TDEE for weight loss?", "answer": "Eat 500 below TDEE to lose ~1 lb/week."},
+      {"question": "Should I recalculate TDEE as I lose weight?", "answer": "Yes, recalculate every 10-15 lbs lost."}
+    ],
+    "relatedCalculators": ["calories", "bmr", "macro", "body-fat", "ideal-weight"],
+    "longTailVariants": [
+      {"slug": "weight-loss", "title": "TDEE for Weight Loss", "keyword": "tdee calculator for weight loss"},
+      {"slug": "bulking", "title": "TDEE for Bulking", "keyword": "tdee calculator for bulking"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/bmr": {
+    "slug": "bmr",
+    "name": "BMR",
+    "category": "health",
+    "primaryKeyword": "bmr calculator",
+    "secondaryKeywords": ["basal metabolic rate", "resting metabolic rate", "bmr calculation"],
+    "metaTitle": "BMR Calculator - Basal Metabolic Rate | CalcMaster",
+    "metaDescription": "Free BMR calculator using the Mifflin-St Jeor equation. Calculate your Basal Metabolic Rate - calories your body burns at complete rest.",
+    "heroTitle": "BMR Calculator",
+    "heroSubtitle": "Calculate your Basal Metabolic Rate",
+    "introText": "BMR (Basal Metabolic Rate) is the number of calories your body burns at complete rest. It's the foundation for calculating your total daily calorie needs.",
+    "formula": "Men: 10×weight + 6.25×height - 5×age + 5 | Women: 10×weight + 6.25×height - 5×age - 161",
+    "benefits": [
+      {"icon": "🧬", "title": "Scientific Formula", "description": "Uses accurate Mifflin-St Jeor equation"},
+      {"icon": "📊", "title": "Multiple Formulas", "description": "Compare Harris-Benedict and Katch-McArdle"},
+      {"icon": "🔬", "title": "Detailed Breakdown", "description": "See what affects your BMR"},
+      {"icon": "🔗", "title": "TDEE Integration", "description": "Easily calculate total daily burn"}
+    ],
+    "faqs": [
+      {"question": "What is BMR?", "answer": "Basal Metabolic Rate - calories burned at complete rest for basic body functions."},
+      {"question": "Why is BMR important?", "answer": "BMR accounts for 60-75% of daily calories. It's the base for calculating calorie needs."},
+      {"question": "Can I increase my BMR?", "answer": "Yes - building muscle increases BMR. Each pound of muscle burns ~6 calories/day at rest."},
+      {"question": "Which BMR formula is most accurate?", "answer": "Mifflin-St Jeor is considered most accurate for most people."},
+      {"question": "Is BMR the same as RMR?", "answer": "Similar but RMR (Resting Metabolic Rate) is slightly higher as it includes minimal activity."}
+    ],
+    "relatedCalculators": ["tdee", "calories", "macro", "body-fat", "ideal-weight"],
+    "longTailVariants": [
+      {"slug": "mifflin-st-jeor", "title": "BMR Mifflin-St Jeor Calculator", "keyword": "mifflin st jeor calculator"},
+      {"slug": "harris-benedict", "title": "Harris-Benedict Calculator", "keyword": "harris benedict calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/macro": {
+    "slug": "macro",
+    "name": "Macro",
+    "category": "health",
+    "primaryKeyword": "macro calculator",
+    "secondaryKeywords": ["macros calculator", "macronutrient calculator", "calculate macros", "iifym calculator"],
+    "metaTitle": "Macro Calculator - Calculate Your Macros Free | CalcMaster",
+    "metaDescription": "Free macro calculator for any diet goal. Calculate your daily protein, carbs, and fat needs for weight loss, muscle gain, or maintenance.",
+    "heroTitle": "Macro Calculator",
+    "heroSubtitle": "Calculate your daily protein, carbs, and fat",
+    "introText": "Macros (macronutrients) are protein, carbohydrates, and fat. Getting the right balance is key for your fitness goals, whether losing fat or building muscle.",
+    "formula": "Protein: 0.8-1g per lb bodyweight | Carbs & Fat: remaining calories split by goal",
+    "benefits": [
+      {"icon": "🎯", "title": "Goal-Specific Ratios", "description": "Presets for cutting, bulking, maintenance"},
+      {"icon": "🥗", "title": "Diet Presets", "description": "Keto, low-carb, balanced, high-carb options"},
+      {"icon": "📊", "title": "Visual Breakdown", "description": "See your macros in grams and percentages"},
+      {"icon": "🍽️", "title": "Food Examples", "description": "Learn what foods hit your targets"}
+    ],
+    "faqs": [
+      {"question": "What are macros?", "answer": "Macronutrients: protein, carbohydrates, and fat. They provide calories and serve different body functions."},
+      {"question": "How much protein do I need?", "answer": "0.7-1g per pound of bodyweight for most active people. More if building muscle."},
+      {"question": "What macro ratio is best for weight loss?", "answer": "Higher protein (30-40%), moderate carbs (30-40%), moderate fat (20-30%) works for most."},
+      {"question": "Do I need to track macros?", "answer": "Not required, but helpful for optimizing body composition and performance."},
+      {"question": "What's the difference between macros and calories?", "answer": "Calories measure energy. Macros are the nutrients that provide those calories."}
+    ],
+    "relatedCalculators": ["calories", "tdee", "protein", "bmr", "body-fat"],
+    "longTailVariants": [
+      {"slug": "weight-loss", "title": "Macro Calculator for Weight Loss", "keyword": "macro calculator for cutting"},
+      {"slug": "muscle-gain", "title": "Macro Calculator for Bulking", "keyword": "macro calculator for bulking"},
+      {"slug": "keto", "title": "Keto Macro Calculator", "keyword": "keto macro calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/body-fat": {
+    "slug": "body-fat",
+    "name": "Body Fat",
+    "category": "health",
+    "primaryKeyword": "body fat calculator",
+    "secondaryKeywords": ["body fat percentage calculator", "body fat estimate", "calculate body fat"],
+    "metaTitle": "Body Fat Calculator - Estimate Body Fat Percentage | CalcMaster",
+    "metaDescription": "Free body fat calculator using the Navy method. Estimate your body fat percentage with just a few measurements. More accurate than BMI alone.",
+    "heroTitle": "Body Fat Calculator",
+    "heroSubtitle": "Estimate your body fat percentage",
+    "introText": "Body fat percentage is a more accurate measure of health than BMI alone. Our calculator uses the U.S. Navy method, which requires only a few simple measurements.",
+    "formula": "Navy Method: 495 / (1.0324 - 0.19077×log(waist-neck) + 0.15456×log(height)) - 450",
+    "benefits": [
+      {"icon": "📏", "title": "Navy Method", "description": "Scientifically validated measurement approach"},
+      {"icon": "📸", "title": "Visual Guide", "description": "Photo references for different body fat levels"},
+      {"icon": "🎯", "title": "Health Ranges", "description": "See where you fall on the healthy spectrum"},
+      {"icon": "📊", "title": "Lean Mass Estimate", "description": "Calculate your lean body mass too"}
+    ],
+    "faqs": [
+      {"question": "What is a healthy body fat percentage?", "answer": "Men: 10-20% is healthy, 6-13% is athletic. Women: 18-28% is healthy, 14-20% is athletic."},
+      {"question": "How accurate is this calculator?", "answer": "The Navy method is within 3-4% of more precise methods like DEXA scans."},
+      {"question": "Is body fat percentage better than BMI?", "answer": "Yes, body fat percentage distinguishes between muscle and fat mass, unlike BMI."},
+      {"question": "How do I measure my waist correctly?", "answer": "Measure at the narrowest point, usually at the navel level. Relax and don't suck in."},
+      {"question": "How often should I check body fat?", "answer": "Monthly is sufficient. Body fat changes slowly."}
+    ],
+    "relatedCalculators": ["bmi", "ideal-weight", "calories", "tdee", "lean-mass"],
+    "longTailVariants": [
+      {"slug": "navy-method", "title": "Navy Body Fat Calculator", "keyword": "navy body fat calculator"},
+      {"slug": "men", "title": "Body Fat Calculator for Men", "keyword": "body fat calculator men"},
+      {"slug": "women", "title": "Body Fat Calculator for Women", "keyword": "body fat calculator women"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/ideal-weight": {
+    "slug": "ideal-weight",
+    "name": "Ideal Weight",
+    "category": "health",
+    "primaryKeyword": "ideal weight calculator",
+    "secondaryKeywords": ["healthy weight calculator", "ideal body weight", "what should i weigh"],
+    "metaTitle": "Ideal Weight Calculator - Find Your Target Weight | CalcMaster",
+    "metaDescription": "Free ideal weight calculator shows your healthy weight range based on height, age, and gender. Multiple formulas compared for accuracy.",
+    "heroTitle": "Ideal Weight Calculator",
+    "heroSubtitle": "Find your healthy weight range",
+    "introText": "What should you weigh? Our calculator uses multiple scientific formulas to give you a healthy weight range based on your height, gender, and frame size.",
+    "formula": "Multiple formulas: Devine, Robinson, Miller, Hamwi",
+    "benefits": [
+      {"icon": "📊", "title": "Multiple Formulas", "description": "Compare 4 different scientific formulas"},
+      {"icon": "📏", "title": "Frame Size Adjustment", "description": "Account for small, medium, or large frame"},
+      {"icon": "🎯", "title": "Realistic Range", "description": "Get a healthy range, not just one number"},
+      {"icon": "🔗", "title": "Goal Integration", "description": "Use with calorie calculator for a plan"}
+    ],
+    "faqs": [
+      {"question": "How is ideal weight calculated?", "answer": "Multiple formulas use height as the base, adjusted for gender. We show results from 4 methods."},
+      {"question": "Why do different formulas give different results?", "answer": "Each formula was developed for different populations. The range between them is your healthy zone."},
+      {"question": "Does frame size matter?", "answer": "Yes, people with larger bone structures can be healthy at higher weights."},
+      {"question": "Is ideal weight the same as goal weight?", "answer": "Ideal weight is a healthy range. Goal weight is personal and may differ based on your preferences."},
+      {"question": "Should I aim for the lowest ideal weight?", "answer": "Not necessarily. The middle of your healthy range is often most sustainable."}
+    ],
+    "relatedCalculators": ["bmi", "body-fat", "calories", "tdee", "macro"],
+    "longTailVariants": [
+      {"slug": "by-height", "title": "Ideal Weight by Height", "keyword": "ideal weight by height"},
+      {"slug": "women", "title": "Ideal Weight for Women", "keyword": "ideal weight for women"},
+      {"slug": "men", "title": "Ideal Weight for Men", "keyword": "ideal weight for men"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/protein": {
+    "slug": "protein",
+    "name": "Protein",
+    "category": "health",
+    "primaryKeyword": "protein calculator",
+    "secondaryKeywords": ["protein intake calculator", "how much protein do i need", "daily protein calculator"],
+    "metaTitle": "Protein Calculator - Daily Protein Needs | CalcMaster",
+    "metaDescription": "Free protein calculator shows how much protein you need daily. Calculate based on your weight, activity level, and fitness goals.",
+    "heroTitle": "Protein Calculator",
+    "heroSubtitle": "Calculate your daily protein needs",
+    "introText": "Protein is essential for muscle growth, recovery, and overall health. Our calculator determines your optimal daily protein intake based on your goals.",
+    "formula": "Sedentary: 0.8g/kg | Active: 1.2-1.7g/kg | Athlete: 1.6-2.2g/kg",
+    "benefits": [
+      {"icon": "🏋️", "title": "Goal-Based", "description": "Different targets for muscle gain vs maintenance"},
+      {"icon": "📊", "title": "Per Meal Breakdown", "description": "See how to split protein across meals"},
+      {"icon": "🥩", "title": "Food Sources", "description": "Learn high-protein food options"},
+      {"icon": "⏰", "title": "Timing Tips", "description": "When to eat protein for best results"}
+    ],
+    "faqs": [
+      {"question": "How much protein do I need daily?", "answer": "0.8g per kg minimum. For muscle building, aim for 1.6-2.2g per kg of bodyweight."},
+      {"question": "Can I eat too much protein?", "answer": "For healthy individuals, up to 2g/kg is safe. Excess protein is used for energy or excreted."},
+      {"question": "When should I eat protein?", "answer": "Spread intake across 3-5 meals. Post-workout protein is beneficial but not required immediately."},
+      {"question": "Is protein powder necessary?", "answer": "No, but it's a convenient way to meet protein targets if you can't get enough from food."},
+      {"question": "Does protein help weight loss?", "answer": "Yes, protein increases satiety and preserves muscle during calorie deficit."}
+    ],
+    "relatedCalculators": ["macro", "calories", "tdee", "bmr", "body-fat"],
+    "longTailVariants": [
+      {"slug": "muscle-gain", "title": "Protein for Muscle Gain", "keyword": "protein calculator for muscle gain"},
+      {"slug": "weight-loss", "title": "Protein for Weight Loss", "keyword": "protein calculator for weight loss"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/ovulation": {
+    "slug": "ovulation",
+    "name": "Ovulation",
+    "category": "health",
+    "primaryKeyword": "ovulation calculator",
+    "secondaryKeywords": ["fertility calculator", "ovulation calendar", "when am i ovulating", "fertile days calculator"],
+    "metaTitle": "Ovulation Calculator - Find Your Fertile Days | CalcMaster",
+    "metaDescription": "Free ovulation calculator predicts your most fertile days. Track your cycle, find your ovulation date, and increase chances of conception.",
+    "heroTitle": "Ovulation Calculator",
+    "heroSubtitle": "Find your most fertile days",
+    "introText": "Ovulation typically occurs 14 days before your next period. Our calculator predicts your fertile window to help with family planning or conception.",
+    "formula": "Ovulation Day = Last Period Start + Cycle Length - 14 days",
+    "benefits": [
+      {"icon": "📅", "title": "Fertile Window", "description": "Shows your 6 most fertile days"},
+      {"icon": "🔄", "title": "Cycle Tracking", "description": "Track multiple cycles for accuracy"},
+      {"icon": "📊", "title": "Calendar View", "description": "Visual monthly fertility calendar"},
+      {"icon": "🔔", "title": "Reminders", "description": "Optional fertile day notifications"}
+    ],
+    "faqs": [
+      {"question": "When do I ovulate?", "answer": "Typically 14 days before your next period. For a 28-day cycle, around day 14."},
+      {"question": "What is the fertile window?", "answer": "The 5 days before ovulation plus ovulation day - when pregnancy is possible."},
+      {"question": "How accurate is this calculator?", "answer": "Good estimate for regular cycles. For irregular cycles, consider ovulation tests."},
+      {"question": "Can I get pregnant outside the fertile window?", "answer": "Very unlikely. Sperm survives 5 days, egg survives 12-24 hours."},
+      {"question": "What are signs of ovulation?", "answer": "Cervical mucus changes, slight temperature rise, mild cramping (mittelschmerz)."}
+    ],
+    "relatedCalculators": ["due-date", "pregnancy", "period", "conception"],
+    "longTailVariants": [
+      {"slug": "irregular-periods", "title": "Ovulation Calculator Irregular Periods", "keyword": "ovulation calculator irregular period"},
+      {"slug": "to-conceive", "title": "Ovulation Calculator to Get Pregnant", "keyword": "ovulation calculator to conceive"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/due-date": {
+    "slug": "due-date",
+    "name": "Due Date",
+    "category": "health",
+    "primaryKeyword": "due date calculator",
+    "secondaryKeywords": ["pregnancy due date calculator", "when is my baby due", "due date by lmp"],
+    "metaTitle": "Due Date Calculator - When Is My Baby Due? | CalcMaster",
+    "metaDescription": "Free pregnancy due date calculator. Calculate your baby's due date based on last period or conception date. See week-by-week pregnancy timeline.",
+    "heroTitle": "Due Date Calculator",
+    "heroSubtitle": "Calculate when your baby is due",
+    "introText": "Pregnancy typically lasts 40 weeks from the first day of your last menstrual period. Our calculator estimates your due date and shows your pregnancy timeline.",
+    "formula": "Due Date = LMP + 280 days (40 weeks)",
+    "benefits": [
+      {"icon": "📅", "title": "Multiple Methods", "description": "Calculate by LMP, conception, or ultrasound"},
+      {"icon": "📊", "title": "Week-by-Week", "description": "See what's happening each week"},
+      {"icon": "🗓️", "title": "Key Dates", "description": "Trimester dates and milestones"},
+      {"icon": "👶", "title": "Baby Development", "description": "Track your baby's growth"}
+    ],
+    "faqs": [
+      {"question": "How is due date calculated?", "answer": "Add 280 days (40 weeks) to the first day of your last menstrual period."},
+      {"question": "How accurate is the due date?", "answer": "Only 5% of babies arrive on their due date. Most arrive within 2 weeks before or after."},
+      {"question": "What if I don't know my last period?", "answer": "An ultrasound can estimate due date based on baby's measurements."},
+      {"question": "When does each trimester start?", "answer": "1st: weeks 1-12. 2nd: weeks 13-26. 3rd: weeks 27-40."},
+      {"question": "Can my due date change?", "answer": "Yes, ultrasound measurements may adjust the due date, especially in early pregnancy."}
+    ],
+    "relatedCalculators": ["pregnancy", "ovulation", "conception", "pregnancy-weight"],
+    "longTailVariants": [
+      {"slug": "by-conception", "title": "Due Date by Conception", "keyword": "due date calculator by conception"},
+      {"slug": "by-ultrasound", "title": "Due Date by Ultrasound", "keyword": "due date calculator by ultrasound"},
+      {"slug": "ivf", "title": "IVF Due Date Calculator", "keyword": "ivf due date calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/pregnancy": {
+    "slug": "pregnancy",
+    "name": "Pregnancy",
+    "category": "health",
+    "primaryKeyword": "pregnancy calculator",
+    "secondaryKeywords": ["pregnancy week calculator", "how many weeks pregnant am i", "pregnancy tracker"],
+    "metaTitle": "Pregnancy Calculator - How Many Weeks Pregnant? | CalcMaster",
+    "metaDescription": "Free pregnancy calculator tells you how many weeks pregnant you are. Track your pregnancy week by week with development milestones and tips.",
+    "heroTitle": "Pregnancy Calculator",
+    "heroSubtitle": "Track your pregnancy week by week",
+    "introText": "Find out exactly how far along you are in your pregnancy. Our calculator shows your current week, trimester, and what's happening with your baby's development.",
+    "formula": "Weeks Pregnant = (Today - LMP) / 7",
+    "benefits": [
+      {"icon": "📅", "title": "Exact Week Count", "description": "Know your precise weeks and days"},
+      {"icon": "👶", "title": "Development Updates", "description": "What's happening with baby this week"},
+      {"icon": "📊", "title": "Trimester Tracker", "description": "See your progress through pregnancy"},
+      {"icon": "✅", "title": "Milestone Checklist", "description": "Important appointments and tests"}
+    ],
+    "faqs": [
+      {"question": "How do I count pregnancy weeks?", "answer": "Pregnancy is counted from the first day of your last menstrual period, not conception."},
+      {"question": "Why am I 4 weeks pregnant if I conceived 2 weeks ago?", "answer": "Pregnancy counting includes the 2 weeks before conception when dating from LMP."},
+      {"question": "How big is my baby at X weeks?", "answer": "Our calculator shows size comparisons for each week (poppy seed at 4 weeks, blueberry at 8 weeks, etc)."},
+      {"question": "When should I see a doctor?", "answer": "First prenatal visit is typically at 8-10 weeks. Call earlier if you have concerns."},
+      {"question": "Is pregnancy 9 or 10 months?", "answer": "It's about 9 calendar months or 10 lunar months (40 weeks)."}
+    ],
+    "relatedCalculators": ["due-date", "ovulation", "pregnancy-weight", "conception"],
+    "longTailVariants": [
+      {"slug": "week-by-week", "title": "Pregnancy Week by Week", "keyword": "pregnancy calculator week by week"},
+      {"slug": "trimester", "title": "Pregnancy Trimester Calculator", "keyword": "pregnancy trimester calculator"}
+    ],
+    "lastUpdated": "2026-02-02"
+  },
+
+  "health/sleep": {
+    "slug": "sleep",
+    "name": "Sleep",
+    "category": "health",
+    "primaryKeyword": "sleep calculator",
+    "secondaryKeywords": ["sleep cycle calculator", "when to wake up", "bedtime calculator", "best time to sleep"],
+    "metaTitle": "Sleep Calculator - Find Your Optimal Bedtime | CalcMaster",
+    "metaDescription": "Free sleep calculator finds your optimal bedtime or wake time based on sleep cycles. Wake up feeling refreshed by timing your sleep right.",
+    "heroTitle": "Sleep Calculator",
+    "heroSubtitle": "Find your optimal sleep and wake times",
+    "introText": "Sleep cycles last about 90 minutes. Waking up between cycles helps you feel more refreshed. Our calculator finds the best times to sleep and wake.",
+    "formula": "Optimal Sleep = Wake Time - (90 min × Number of Cycles) - 15 min to fall asleep",
+    "benefits": [
+      {"icon": "😴", "title": "Sleep Cycles", "description": "Time sleep to complete 90-minute cycles"},
+      {"icon": "⏰", "title": "Dual Mode", "description": "Calculate bedtime OR wake time"},
+      {"icon": "📊", "title": "Multiple Options", "description": "See 4-6 cycle options"},
+      {"icon": "💡", "title": "Sleep Tips", "description": "Improve your sleep quality"}
+    ],
+    "faqs": [
+      {"question": "How many hours of sleep do I need?", "answer": "Most adults need 7-9 hours. That's 5-6 complete sleep cycles."},
+      {"question": "What is a sleep cycle?", "answer": "A 90-minute pattern of light sleep, deep sleep, and REM. You go through 4-6 per night."},
+      {"question": "Why does waking between cycles matter?", "answer": "Waking during deep sleep causes grogginess. Between cycles, you wake more easily and feel refreshed."},
+      {"question": "Why is 15 minutes added?", "answer": "Average time to fall asleep. Adjust if you fall asleep faster or slower."},
+      {"question": "Is it better to get less sleep or wake mid-cycle?", "answer": "Often better to sleep one less cycle than wake during deep sleep."}
+    ],
+    "relatedCalculators": ["calories", "tdee", "bmi"],
+    "longTailVariants": [
+      {"slug": "wake-time", "title": "Wake Time Calculator", "keyword": "when should i wake up calculator"},
+      {"slug": "bedtime", "title": "Bedtime Calculator", "keyword": "what time should i go to bed"}
+    ],
+    "lastUpdated": "2026-02-02"
+  }
+}
