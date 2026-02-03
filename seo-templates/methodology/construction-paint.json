@@ -1,0 +1,36 @@
+{
+  "calculatorId": "construction/paint",
+  "title": "Paint Coverage Methodology",
+  "overview": "Paint calculations estimate gallons needed based on surface area and coverage rate. Multiple coats and surface texture significantly affect requirements.",
+  "methods": [
+    {
+      "id": "standard-coverage",
+      "name": "Standard Coverage Rate",
+      "description": "Most interior paints cover 350-400 sq ft per gallon on smooth surfaces.",
+      "formula": {
+        "name": "Paint Calculation",
+        "expression": "Gallons = (Wall Area × Coats) / Coverage Rate\nWall Area = Perimeter × Height - Openings",
+        "variables": [
+          { "symbol": "Coverage Rate", "meaning": "sq ft per gallon (typically 350-400)", "unit": "sq ft/gal" },
+          { "symbol": "Coats", "meaning": "Number of coats (usually 2)", "unit": "" }
+        ]
+      },
+      "accuracy": "±10-15%",
+      "limitations": [
+        "Textured surfaces use 20-30% more",
+        "Primer may be needed separately"
+      ],
+      "bestFor": "Standard interior walls",
+      "isDefault": true
+    }
+  ],
+  "sources": [
+    { "name": "Paint Quality Institute", "type": "organization" }
+  ],
+  "footnotes": [
+    "Dark to light color changes may need 3+ coats",
+    "Exterior paint: 250-350 sq ft/gallon",
+    "Add 10% for waste and touch-ups"
+  ],
+  "lastReviewed": "2026-02-03"
+}

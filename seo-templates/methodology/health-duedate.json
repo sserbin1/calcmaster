@@ -1,0 +1,115 @@
+{
+  "calculatorId": "health/due-date",
+  "title": "Pregnancy Due Date Methodology",
+  "overview": "Due date calculation estimates when a baby will be born. The standard method is Naegele's Rule, but modern ultrasound dating is more accurate. Only about 5% of babies are born on their due date.",
+  "methods": [
+    {
+      "id": "naegele",
+      "name": "Naegele's Rule",
+      "description": "Standard method developed by German obstetrician Franz Naegele in 1812. Assumes a 28-day cycle with ovulation on day 14.",
+      "formula": {
+        "name": "Naegele's Rule",
+        "expression": "Due Date = LMP + 280 days\nOr: LMP + 1 year - 3 months + 7 days",
+        "variables": [
+          { "symbol": "LMP", "meaning": "First day of Last Menstrual Period", "unit": "date" },
+          { "symbol": "280", "meaning": "Average pregnancy length", "unit": "days" }
+        ]
+      },
+      "accuracy": "±2 weeks for 80% of pregnancies",
+      "limitations": [
+        "Assumes 28-day cycle",
+        "Assumes ovulation on day 14",
+        "Not accurate for irregular cycles",
+        "Does not account for conception date"
+      ],
+      "bestFor": "Standard clinical estimation with regular cycles",
+      "isDefault": true,
+      "yearIntroduced": 1812,
+      "author": "Franz Naegele"
+    },
+    {
+      "id": "cycle-adjusted",
+      "name": "Cycle-Adjusted Calculation",
+      "description": "Adjusts for actual cycle length by accounting for variation in follicular phase length.",
+      "formula": {
+        "name": "Adjusted Naegele's",
+        "expression": "Due Date = LMP + 280 + (Cycle Length - 28)",
+        "variables": [
+          { "symbol": "LMP", "meaning": "Last Menstrual Period", "unit": "date" },
+          { "symbol": "Cycle Length", "meaning": "Usual menstrual cycle length", "unit": "days" }
+        ]
+      },
+      "accuracy": "Better than standard for irregular cycles",
+      "limitations": [
+        "Requires knowing actual cycle length",
+        "Still assumes consistent cycles"
+      ],
+      "bestFor": "Those with cycles longer or shorter than 28 days",
+      "isDefault": false
+    },
+    {
+      "id": "conception-based",
+      "name": "Conception Date Method",
+      "description": "If conception date is known (via IVF, tracked ovulation), this provides the most accurate LMP-independent estimate.",
+      "formula": {
+        "name": "Conception-Based",
+        "expression": "Due Date = Conception Date + 266 days",
+        "variables": [
+          { "symbol": "Conception Date", "meaning": "Known or estimated conception date", "unit": "date" },
+          { "symbol": "266", "meaning": "Average gestational period from conception", "unit": "days" }
+        ]
+      },
+      "accuracy": "Most accurate when conception date is certain",
+      "limitations": [
+        "Requires knowing conception date",
+        "Usually only available with IVF or careful tracking"
+      ],
+      "bestFor": "IVF pregnancies, tracked ovulation",
+      "isDefault": false
+    },
+    {
+      "id": "ultrasound",
+      "name": "Ultrasound Dating (Reference)",
+      "description": "First-trimester ultrasound measures crown-rump length to estimate gestational age with high accuracy.",
+      "formula": {
+        "name": "Crown-Rump Length Dating",
+        "expression": "Gestational Age ≈ CRL (mm) + 42 days\n(Multiple regression equations used clinically)",
+        "description": "Most accurate between 8-12 weeks"
+      },
+      "accuracy": "±3-5 days in first trimester",
+      "limitations": [
+        "Requires ultrasound equipment",
+        "Accuracy decreases after first trimester"
+      ],
+      "bestFor": "Clinical confirmation of dates",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "ACOG Committee Opinion - Methods for Estimating Due Date",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date",
+      "year": 2017,
+      "type": "organization"
+    },
+    {
+      "name": "Naegele, F.K. - Lehrbuch der Geburtshilfe",
+      "year": 1812,
+      "type": "book"
+    },
+    {
+      "name": "Mongelli et al. - Pregnancy Dating",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8751753/",
+      "year": 1996,
+      "type": "study"
+    }
+  ],
+  "footnotes": [
+    "Only 4-5% of babies are born on their exact due date",
+    "Full-term range: 37-42 weeks gestation",
+    "First-trimester ultrasound is now standard for dating confirmation",
+    "Due date may be adjusted after early ultrasound"
+  ],
+  "disclaimer": "This calculator provides an estimate only. Your healthcare provider will confirm your due date, often using ultrasound. Pregnancy can safely extend 2 weeks past the due date.",
+  "lastReviewed": "2026-02-03"
+}

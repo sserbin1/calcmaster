@@ -1,0 +1,95 @@
+{
+  "calculatorId": "finance/mortgage",
+  "title": "Mortgage Calculation Methodology",
+  "overview": "Mortgage calculations determine monthly payments based on loan principal, interest rate, and term. Understanding PMT formula, amortization, and total interest helps borrowers make informed decisions.",
+  "methods": [
+    {
+      "id": "pmt-formula",
+      "name": "PMT Formula (Standard Amortization)",
+      "description": "The standard formula for calculating fixed monthly payments on a fully amortizing loan. This is used by virtually all lenders.",
+      "formula": {
+        "name": "PMT Formula",
+        "expression": "M = P × [r(1+r)^n] / [(1+r)^n - 1]",
+        "variables": [
+          { "symbol": "M", "meaning": "Monthly payment", "unit": "$" },
+          { "symbol": "P", "meaning": "Principal (loan amount)", "unit": "$" },
+          { "symbol": "r", "meaning": "Monthly interest rate (annual rate / 12)", "unit": "decimal" },
+          { "symbol": "n", "meaning": "Total number of payments (years × 12)", "unit": "months" }
+        ]
+      },
+      "accuracy": "Exact for fixed-rate mortgages",
+      "limitations": [
+        "Does not include property taxes and insurance (escrow)",
+        "Does not account for PMI (private mortgage insurance)",
+        "Assumes fixed interest rate"
+      ],
+      "bestFor": "Principal and interest calculation",
+      "isDefault": true
+    },
+    {
+      "id": "piti",
+      "name": "PITI (Full Housing Payment)",
+      "description": "Complete monthly housing cost including Principal, Interest, Taxes, and Insurance. This represents the true monthly obligation.",
+      "formula": {
+        "name": "PITI Calculation",
+        "expression": "PITI = P&I + Taxes/12 + Insurance/12 + PMI (if applicable)",
+        "variables": [
+          { "symbol": "P&I", "meaning": "Principal and Interest from PMT formula", "unit": "$/month" },
+          { "symbol": "Taxes", "meaning": "Annual property taxes", "unit": "$/year" },
+          { "symbol": "Insurance", "meaning": "Annual homeowners insurance", "unit": "$/year" },
+          { "symbol": "PMI", "meaning": "Private mortgage insurance if down payment < 20%", "unit": "$/month" }
+        ]
+      },
+      "accuracy": "More realistic total housing cost",
+      "limitations": [
+        "Taxes and insurance are estimates",
+        "HOA fees not included",
+        "Maintenance costs not included"
+      ],
+      "bestFor": "Budget planning",
+      "isDefault": false
+    },
+    {
+      "id": "apr-vs-apy",
+      "name": "APR vs APY Understanding",
+      "description": "APR (Annual Percentage Rate) includes fees, while APY (Annual Percentage Yield) accounts for compounding. For mortgages, APR is the regulated disclosure rate.",
+      "formula": {
+        "name": "APR Calculation",
+        "expression": "APR = [(Fees + Interest) / Principal] / n × 365 × 100",
+        "description": "APR includes points, origination fees, and other costs spread over loan term"
+      },
+      "accuracy": "Standardized for comparison",
+      "limitations": [
+        "Different lenders may include different fees",
+        "Assumes loan is held full term"
+      ],
+      "bestFor": "Comparing loan offers",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Consumer Financial Protection Bureau - Mortgage Guide",
+      "url": "https://www.consumerfinance.gov/owning-a-home/",
+      "type": "government"
+    },
+    {
+      "name": "Truth in Lending Act (TILA)",
+      "url": "https://www.ftc.gov/legal-library/browse/statutes/truth-lending-act",
+      "type": "government"
+    },
+    {
+      "name": "Freddie Mac - Understanding Mortgages",
+      "url": "https://www.freddiemac.com/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "28% rule: Housing should be ≤28% of gross monthly income",
+    "36% rule: Total debt should be ≤36% of gross monthly income",
+    "Total interest paid often exceeds original loan amount on 30-year mortgages",
+    "Biweekly payments can save years of interest and thousands of dollars"
+  ],
+  "disclaimer": "Mortgage calculations are estimates. Actual payments depend on your credit score, down payment, and lender terms. Always get official loan estimates from lenders.",
+  "lastReviewed": "2026-02-03"
+}

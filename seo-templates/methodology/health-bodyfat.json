@@ -1,0 +1,116 @@
+{
+  "calculatorId": "health/body-fat",
+  "title": "Body Fat Percentage Methodology",
+  "overview": "Body fat percentage measures the proportion of fat mass to total body weight. Unlike BMI, it distinguishes between fat and lean mass, providing a more accurate picture of body composition.",
+  "methods": [
+    {
+      "id": "navy-method",
+      "name": "US Navy Method",
+      "description": "Developed by Hodgdon and Beckett in 1984 for the US Navy. Uses circumference measurements and has been validated in multiple studies with ±3-4% accuracy.",
+      "formula": {
+        "name": "US Navy Circumference Method",
+        "expression": "Men: BF% = 86.010 × log10(waist - neck) - 70.041 × log10(height) + 36.76\nWomen: BF% = 163.205 × log10(waist + hip - neck) - 97.684 × log10(height) - 78.387",
+        "variables": [
+          { "symbol": "waist", "meaning": "Waist circumference at navel", "unit": "cm" },
+          { "symbol": "neck", "meaning": "Neck circumference below larynx", "unit": "cm" },
+          { "symbol": "hip", "meaning": "Hip circumference at widest point (women)", "unit": "cm" },
+          { "symbol": "height", "meaning": "Standing height", "unit": "cm" }
+        ]
+      },
+      "accuracy": "±3-4% compared to hydrostatic weighing",
+      "limitations": [
+        "Measurement technique affects accuracy",
+        "Less accurate at extreme body compositions",
+        "Water retention can affect measurements"
+      ],
+      "bestFor": "Quick, equipment-free estimation",
+      "isDefault": true,
+      "yearIntroduced": 1984,
+      "author": "Hodgdon & Beckett"
+    },
+    {
+      "id": "ymca",
+      "name": "YMCA Method",
+      "description": "Simpler formula using only waist measurement and body weight. Less accurate but more practical for quick estimates.",
+      "formula": {
+        "name": "YMCA Formula",
+        "expression": "Men: BF% = (-98.42 + 4.15 × waist - 0.082 × weight) / weight × 100\nWomen: BF% = (-76.76 + 4.15 × waist - 0.082 × weight) / weight × 100",
+        "variables": [
+          { "symbol": "waist", "meaning": "Waist circumference", "unit": "inches" },
+          { "symbol": "weight", "meaning": "Body weight", "unit": "lbs" }
+        ]
+      },
+      "accuracy": "±5-6%",
+      "limitations": [
+        "Less accurate than Navy method",
+        "Only uses waist measurement"
+      ],
+      "bestFor": "Quick rough estimate",
+      "isDefault": false
+    },
+    {
+      "id": "deurenberg",
+      "name": "Deurenberg BMI-Based Method",
+      "description": "Estimates body fat from BMI, age, and sex. Useful when circumference measurements aren't available.",
+      "formula": {
+        "name": "Deurenberg Formula",
+        "expression": "BF% = (1.20 × BMI) + (0.23 × age) - (10.8 × sex) - 5.4",
+        "variables": [
+          { "symbol": "BMI", "meaning": "Body Mass Index", "unit": "kg/m²" },
+          { "symbol": "age", "meaning": "Age in years", "unit": "years" },
+          { "symbol": "sex", "meaning": "1 for male, 0 for female", "unit": "" }
+        ]
+      },
+      "accuracy": "±4% for normal BMI range",
+      "limitations": [
+        "Inherits BMI limitations",
+        "Not accurate for athletes",
+        "Based on Caucasian populations"
+      ],
+      "bestFor": "When only BMI is available",
+      "isDefault": false,
+      "yearIntroduced": 1991,
+      "author": "Deurenberg, P. et al."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Hodgdon & Beckett - Navy Health Research Center",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4020106/",
+      "year": 1984,
+      "type": "study"
+    },
+    {
+      "name": "ACSM Body Composition Guidelines",
+      "url": "https://www.acsm.org/",
+      "type": "organization"
+    },
+    {
+      "name": "Deurenberg et al. - British Journal of Nutrition",
+      "year": 1991,
+      "type": "study"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 5,
+    "max": 40,
+    "unit": "%",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "Essential", "min": 5, "max": 13, "color": "#3b82f6", "description": "Minimum for function" },
+      { "label": "Athletic", "min": 13, "max": 17, "color": "#22c55e", "description": "Athletic range" },
+      { "label": "Fitness", "min": 17, "max": 22, "color": "#10b981", "description": "Fit range" },
+      { "label": "Average", "min": 22, "max": 28, "color": "#eab308", "description": "Acceptable" },
+      { "label": "Obese", "min": 28, "max": 40, "color": "#ef4444", "description": "Above healthy range" }
+    ]
+  },
+  "footnotes": [
+    "Essential fat: 2-5% (men), 10-13% (women) - minimum for survival",
+    "Body fat distribution matters more than total percentage for health",
+    "DEXA scan is the gold standard for accurate body composition"
+  ],
+  "disclaimer": "Body fat calculations are estimates. For accurate measurement, consider DEXA, hydrostatic weighing, or professional assessment.",
+  "lastReviewed": "2026-02-03"
+}

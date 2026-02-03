@@ -1,0 +1,98 @@
+{
+  "calculatorId": "math/probability",
+  "title": "Probability Calculation Methodology",
+  "overview": "Probability measures the likelihood of events occurring, ranging from 0 (impossible) to 1 (certain). Fundamental concepts include combinations, permutations, and the rules of probability.",
+  "methods": [
+    {
+      "id": "basic-probability",
+      "name": "Basic Probability",
+      "description": "The ratio of favorable outcomes to total possible outcomes for equally likely events.",
+      "formula": {
+        "name": "Classical Probability",
+        "expression": "P(A) = Number of favorable outcomes / Total possible outcomes",
+        "variables": [
+          { "symbol": "P(A)", "meaning": "Probability of event A", "unit": "0 to 1" }
+        ]
+      },
+      "accuracy": "Exact for equally likely outcomes",
+      "limitations": [
+        "Requires equally likely outcomes",
+        "Outcomes must be mutually exclusive"
+      ],
+      "bestFor": "Dice, cards, simple random events",
+      "isDefault": true
+    },
+    {
+      "id": "combinations",
+      "name": "Combinations (nCr)",
+      "description": "Number of ways to choose r items from n items where order doesn't matter.",
+      "formula": {
+        "name": "Combination Formula",
+        "expression": "C(n,r) = n! / (r! × (n-r)!)",
+        "variables": [
+          { "symbol": "n", "meaning": "Total items available", "unit": "" },
+          { "symbol": "r", "meaning": "Items to choose", "unit": "" },
+          { "symbol": "!", "meaning": "Factorial (n! = n × (n-1) × ... × 1)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Factorial grows extremely fast",
+        "Requires n ≥ r ≥ 0"
+      ],
+      "bestFor": "Lottery odds, committee selection, card hands",
+      "isDefault": false
+    },
+    {
+      "id": "permutations",
+      "name": "Permutations (nPr)",
+      "description": "Number of ways to arrange r items from n items where order matters.",
+      "formula": {
+        "name": "Permutation Formula",
+        "expression": "P(n,r) = n! / (n-r)!",
+        "variables": [
+          { "symbol": "n", "meaning": "Total items", "unit": "" },
+          { "symbol": "r", "meaning": "Items to arrange", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Rankings, arrangements, passwords",
+      "isDefault": false
+    },
+    {
+      "id": "probability-rules",
+      "name": "Probability Rules",
+      "description": "Rules for combining probabilities of multiple events.",
+      "formula": {
+        "name": "Addition and Multiplication Rules",
+        "expression": "Addition (OR): P(A or B) = P(A) + P(B) - P(A and B)\nMutually exclusive: P(A or B) = P(A) + P(B)\n\nMultiplication (AND): P(A and B) = P(A) × P(B|A)\nIndependent events: P(A and B) = P(A) × P(B)",
+        "variables": [
+          { "symbol": "P(B|A)", "meaning": "Probability of B given A occurred", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Compound events, sequential events",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Khan Academy - Probability",
+      "url": "https://www.khanacademy.org/math/statistics-probability/probability-library",
+      "type": "organization"
+    },
+    {
+      "name": "Kolmogorov, A.N. - Foundations of Probability Theory",
+      "year": 1933,
+      "type": "book"
+    }
+  ],
+  "footnotes": [
+    "Complement rule: P(not A) = 1 - P(A)",
+    "Expected value: E(X) = Σ(xᵢ × P(xᵢ))",
+    "Lottery odds: Powerball is ~1 in 292 million",
+    "Gambler's fallacy: past outcomes don't affect independent future events"
+  ],
+  "disclaimer": "Probability calculations assume specified conditions hold. Real-world outcomes may be affected by factors not captured in the model.",
+  "lastReviewed": "2026-02-03"
+}

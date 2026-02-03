@@ -1,0 +1,113 @@
+{
+  "calculatorId": "finance/interest",
+  "title": "Interest & Compound Interest Methodology",
+  "overview": "Understanding the difference between simple and compound interest is fundamental to financial planning. Compound interest is the 'eighth wonder of the world' - it can work for you (savings) or against you (debt).",
+  "methods": [
+    {
+      "id": "compound-interest",
+      "name": "Compound Interest Formula",
+      "description": "Interest calculated on both the initial principal and accumulated interest from previous periods. The standard for most savings and investment accounts.",
+      "formula": {
+        "name": "Compound Interest",
+        "expression": "A = P(1 + r/n)^(nt)",
+        "variables": [
+          { "symbol": "A", "meaning": "Final amount", "unit": "$" },
+          { "symbol": "P", "meaning": "Principal (initial investment)", "unit": "$" },
+          { "symbol": "r", "meaning": "Annual interest rate", "unit": "decimal" },
+          { "symbol": "n", "meaning": "Compounding frequency per year", "unit": "" },
+          { "symbol": "t", "meaning": "Time", "unit": "years" }
+        ]
+      },
+      "accuracy": "Exact for discrete compounding",
+      "limitations": [
+        "Assumes constant rate",
+        "Doesn't account for fees",
+        "Real returns affected by inflation"
+      ],
+      "bestFor": "Savings, CDs, investments",
+      "isDefault": true
+    },
+    {
+      "id": "simple-interest",
+      "name": "Simple Interest Formula",
+      "description": "Interest calculated only on the original principal. Less common but used in some bonds and short-term loans.",
+      "formula": {
+        "name": "Simple Interest",
+        "expression": "A = P(1 + rt)\nI = Prt",
+        "variables": [
+          { "symbol": "A", "meaning": "Final amount", "unit": "$" },
+          { "symbol": "P", "meaning": "Principal", "unit": "$" },
+          { "symbol": "r", "meaning": "Annual interest rate", "unit": "decimal" },
+          { "symbol": "t", "meaning": "Time in years", "unit": "years" },
+          { "symbol": "I", "meaning": "Interest earned", "unit": "$" }
+        ]
+      },
+      "accuracy": "Exact for simple interest products",
+      "limitations": [
+        "Lower returns than compound",
+        "Less common in practice"
+      ],
+      "bestFor": "Short-term loans, some bonds",
+      "isDefault": false
+    },
+    {
+      "id": "continuous-compounding",
+      "name": "Continuous Compounding",
+      "description": "The mathematical limit of compounding as frequency approaches infinity. Used in financial modeling and some sophisticated products.",
+      "formula": {
+        "name": "Continuous Compounding",
+        "expression": "A = Pe^(rt)",
+        "variables": [
+          { "symbol": "e", "meaning": "Euler's number (~2.71828)", "unit": "" },
+          { "symbol": "P", "meaning": "Principal", "unit": "$" },
+          { "symbol": "r", "meaning": "Annual rate", "unit": "decimal" },
+          { "symbol": "t", "meaning": "Time in years", "unit": "years" }
+        ]
+      },
+      "accuracy": "Maximum theoretical return",
+      "limitations": [
+        "Rarely used in consumer products",
+        "Difference from daily compounding is minimal"
+      ],
+      "bestFor": "Financial modeling, theoretical calculations",
+      "isDefault": false
+    },
+    {
+      "id": "rule-of-72",
+      "name": "Rule of 72 (Quick Estimation)",
+      "description": "A mental math shortcut to estimate how long it takes to double your money at a given interest rate.",
+      "formula": {
+        "name": "Rule of 72",
+        "expression": "Years to Double ≈ 72 / Interest Rate (%)",
+        "description": "Example: At 8% interest, money doubles in ~9 years (72/8=9)"
+      },
+      "accuracy": "Within 1% for rates 6-10%",
+      "limitations": [
+        "Approximation only",
+        "Less accurate at extreme rates"
+      ],
+      "bestFor": "Quick mental calculations",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "SEC - Compound Interest Calculator",
+      "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator",
+      "type": "government"
+    },
+    {
+      "name": "Federal Reserve Education",
+      "url": "https://www.federalreserveeducation.org/",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "Compounding frequency: Daily > Monthly > Quarterly > Annually",
+    "APY (Annual Percentage Yield) accounts for compounding; APR does not",
+    "The difference between daily and continuous compounding is negligible",
+    "Real return = Nominal return - Inflation rate"
+  ],
+  "disclaimer": "Interest calculations assume constant rates and don't account for taxes or fees. Actual investment returns vary and past performance doesn't guarantee future results.",
+  "lastReviewed": "2026-02-03"
+}

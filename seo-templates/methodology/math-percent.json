@@ -1,0 +1,93 @@
+{
+  "calculatorId": "math/percent",
+  "title": "Percentage Calculation Methodology",
+  "overview": "Percentage calculations are fundamental to math and everyday life. Understanding the three main percentage problems (finding percentage, finding the whole, finding the part) enables quick mental math and accurate calculations.",
+  "methods": [
+    {
+      "id": "find-percentage",
+      "name": "X% of Y (Find the Part)",
+      "description": "The most common calculation: finding a percentage of a number. Used for discounts, tips, taxes, and more.",
+      "formula": {
+        "name": "Finding X% of Y",
+        "expression": "Part = (Percentage / 100) × Whole\nOr: Part = Percentage × Whole / 100",
+        "variables": [
+          { "symbol": "Percentage", "meaning": "The percent value", "unit": "%" },
+          { "symbol": "Whole", "meaning": "The base number", "unit": "any" },
+          { "symbol": "Part", "meaning": "The resulting value", "unit": "same as whole" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Discounts, tips, portions",
+      "isDefault": true
+    },
+    {
+      "id": "find-percent",
+      "name": "X is What % of Y (Find the Percentage)",
+      "description": "Finding what percentage one number is of another. Used for comparisons, statistics, and data analysis.",
+      "formula": {
+        "name": "Finding the Percentage",
+        "expression": "Percentage = (Part / Whole) × 100",
+        "variables": [
+          { "symbol": "Part", "meaning": "The numerator", "unit": "any" },
+          { "symbol": "Whole", "meaning": "The denominator/base", "unit": "same as part" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Statistics, comparisons, grades",
+      "isDefault": false
+    },
+    {
+      "id": "percent-change",
+      "name": "Percentage Change (Increase/Decrease)",
+      "description": "Calculating the percentage difference between two values. Essential for tracking growth, inflation, and performance.",
+      "formula": {
+        "name": "Percentage Change",
+        "expression": "% Change = ((New - Old) / Old) × 100\n\nPositive = Increase\nNegative = Decrease",
+        "variables": [
+          { "symbol": "New", "meaning": "Current/final value", "unit": "any" },
+          { "symbol": "Old", "meaning": "Original/starting value", "unit": "same" }
+        ]
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Division by zero if old value is 0",
+        "Not symmetric (50% increase ≠ 50% decrease to return)"
+      ],
+      "bestFor": "Growth rates, inflation, performance tracking",
+      "isDefault": false
+    },
+    {
+      "id": "reverse-percentage",
+      "name": "Reverse Percentage (Find Original)",
+      "description": "Finding the original value before a percentage increase or decrease was applied.",
+      "formula": {
+        "name": "Reverse Calculation",
+        "expression": "For increase: Original = Final / (1 + %/100)\nFor decrease: Original = Final / (1 - %/100)",
+        "description": "Example: Price after 20% off is $80. Original = $80 / 0.8 = $100"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Finding pre-discount prices, original values",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Khan Academy - Percentages",
+      "url": "https://www.khanacademy.org/math/pre-algebra/xb4832e56:percentages",
+      "type": "organization"
+    },
+    {
+      "name": "NCTM Math Standards",
+      "url": "https://www.nctm.org/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Per cent means 'per hundred' (Latin: per centum)",
+    "100% increase doubles a value; 50% decrease halves it",
+    "Percentage points ≠ percent (5% to 6% is 1 percentage point but 20% increase)",
+    "Quick mental math: 10% = divide by 10, 5% = half of 10%, 1% = divide by 100"
+  ],
+  "disclaimer": "Percentage calculations assume accurate input values. For financial decisions, verify calculations independently.",
+  "lastReviewed": "2026-02-03"
+}

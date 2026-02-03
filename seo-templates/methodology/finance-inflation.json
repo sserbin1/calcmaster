@@ -1,0 +1,87 @@
+{
+  "calculatorId": "finance/inflation",
+  "title": "Inflation Calculation Methodology",
+  "overview": "Inflation measures how purchasing power changes over time. The Consumer Price Index (CPI) is the standard measure. Understanding inflation is crucial for long-term financial planning and salary negotiations.",
+  "methods": [
+    {
+      "id": "cpi-based",
+      "name": "CPI-Based Inflation Calculation",
+      "description": "Uses the Consumer Price Index published by the Bureau of Labor Statistics. CPI tracks price changes for a basket of consumer goods and services.",
+      "formula": {
+        "name": "Purchasing Power Adjustment",
+        "expression": "Future Value = Present Value × (CPI_future / CPI_past)\nReal Value = Nominal Value / (1 + inflation rate)^years",
+        "variables": [
+          { "symbol": "CPI", "meaning": "Consumer Price Index value", "unit": "index" },
+          { "symbol": "inflation rate", "meaning": "Annual inflation rate", "unit": "decimal" }
+        ]
+      },
+      "accuracy": "Standard government measure",
+      "limitations": [
+        "CPI basket may not reflect individual spending",
+        "Housing costs use 'rental equivalent', not home prices",
+        "Quality improvements difficult to measure"
+      ],
+      "bestFor": "General purchasing power comparisons",
+      "isDefault": true
+    },
+    {
+      "id": "core-inflation",
+      "name": "Core Inflation (CPI minus Food & Energy)",
+      "description": "Excludes volatile food and energy prices to show underlying inflation trend. Often used by Federal Reserve for policy decisions.",
+      "formula": {
+        "name": "Core CPI",
+        "expression": "Core CPI = CPI - Food component - Energy component",
+        "description": "Less volatile, better for trend analysis"
+      },
+      "accuracy": "Better for trend analysis",
+      "limitations": [
+        "Food and energy are real expenses",
+        "May understate inflation impact on lower-income households"
+      ],
+      "bestFor": "Economic analysis, Fed policy",
+      "isDefault": false
+    },
+    {
+      "id": "pce-index",
+      "name": "PCE Price Index",
+      "description": "Personal Consumption Expenditures index, the Federal Reserve's preferred inflation measure. Broader than CPI and accounts for substitution behavior.",
+      "formula": {
+        "name": "PCE Index",
+        "expression": "PCE tracks spending patterns more dynamically than CPI",
+        "description": "Accounts for consumers switching to cheaper alternatives"
+      },
+      "accuracy": "Fed's preferred measure",
+      "limitations": [
+        "Less familiar to general public",
+        "Published monthly with revisions"
+      ],
+      "bestFor": "Federal Reserve analysis",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Bureau of Labor Statistics - CPI",
+      "url": "https://www.bls.gov/cpi/",
+      "type": "government"
+    },
+    {
+      "name": "Federal Reserve Economic Data (FRED)",
+      "url": "https://fred.stlouisfed.org/",
+      "type": "government"
+    },
+    {
+      "name": "Bureau of Economic Analysis - PCE",
+      "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "Historical US average inflation: ~3% per year",
+    "Federal Reserve target inflation rate: 2%",
+    "Rule of 72 for inflation: 72/inflation rate = years for prices to double",
+    "Deflation (negative inflation) can be economically harmful"
+  ],
+  "disclaimer": "Inflation calculations use historical CPI data. Future inflation is unpredictable. Personal inflation may differ based on spending patterns.",
+  "lastReviewed": "2026-02-03"
+}

@@ -1,0 +1,106 @@
+{
+  "calculatorId": "finance/budget",
+  "title": "Budget Planning Methodology",
+  "overview": "Budget methodologies provide frameworks for allocating income across spending categories. The 50/30/20 rule is popular for its simplicity, while zero-based budgeting offers more control.",
+  "methods": [
+    {
+      "id": "50-30-20",
+      "name": "50/30/20 Rule",
+      "description": "Popularized by Senator Elizabeth Warren in 'All Your Worth' (2005). Divides after-tax income into three categories: needs, wants, and savings/debt.",
+      "formula": {
+        "name": "50/30/20 Allocation",
+        "expression": "Needs: 50% (housing, utilities, groceries, insurance, minimum debt payments)\nWants: 30% (entertainment, dining out, subscriptions, hobbies)\nSavings/Debt: 20% (emergency fund, retirement, extra debt payments)",
+        "variables": [
+          { "symbol": "After-tax income", "meaning": "Net take-home pay", "unit": "$" }
+        ]
+      },
+      "accuracy": "General guideline",
+      "limitations": [
+        "May not work in high-cost-of-living areas",
+        "Doesn't account for irregular income",
+        "Needs vs wants can be subjective"
+      ],
+      "bestFor": "Simple budgeting for steady income",
+      "isDefault": true
+    },
+    {
+      "id": "zero-based",
+      "name": "Zero-Based Budgeting",
+      "description": "Every dollar is assigned a job. Income minus all allocated expenses equals zero. Provides maximum control and awareness.",
+      "formula": {
+        "name": "Zero-Based Principle",
+        "expression": "Income - All Expenses - Savings = $0\n\nEvery category funded intentionally",
+        "description": "No 'leftover' money - all is allocated"
+      },
+      "accuracy": "Most detailed and accurate",
+      "limitations": [
+        "Time-intensive to maintain",
+        "Requires tracking all spending",
+        "Less flexible for irregular expenses"
+      ],
+      "bestFor": "Detailed financial control",
+      "isDefault": false
+    },
+    {
+      "id": "pay-yourself-first",
+      "name": "Pay Yourself First",
+      "description": "Prioritizes savings by automatically transferring a percentage to savings before other spending. The remainder is used for expenses.",
+      "formula": {
+        "name": "Reverse Budgeting",
+        "expression": "1. Set savings goal (10-20% of income)\n2. Automate transfer to savings\n3. Live on remainder",
+        "description": "Savings becomes a non-negotiable expense"
+      },
+      "accuracy": "Effective for savings goals",
+      "limitations": [
+        "May overspend remaining funds",
+        "Requires income stability",
+        "Emergency expenses can derail"
+      ],
+      "bestFor": "Building savings habit",
+      "isDefault": false
+    },
+    {
+      "id": "envelope-system",
+      "name": "Envelope System (Cash-Based)",
+      "description": "Physical or digital 'envelopes' for each spending category. When envelope is empty, no more spending in that category until next period.",
+      "formula": {
+        "name": "Category Limits",
+        "expression": "Allocate cash/budget to categories\nSpend only from designated envelope\nNo borrowing between envelopes",
+        "description": "Forces spending within limits"
+      },
+      "accuracy": "High control",
+      "limitations": [
+        "Impractical with mostly cashless transactions",
+        "Requires discipline",
+        "Doesn't work well for irregular expenses"
+      ],
+      "bestFor": "Overspenders needing hard limits",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Warren & Tyagi - All Your Worth",
+      "year": 2005,
+      "type": "book"
+    },
+    {
+      "name": "Consumer Financial Protection Bureau - Budgeting",
+      "url": "https://www.consumerfinance.gov/consumer-tools/money-as-you-grow/",
+      "type": "government"
+    },
+    {
+      "name": "Dave Ramsey - Zero-Based Budget",
+      "url": "https://www.ramseysolutions.com/budgeting",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Emergency fund goal: 3-6 months of expenses",
+    "Recommended savings rate: 15-20% minimum for retirement",
+    "Housing should not exceed 28% of gross income (lender guideline)",
+    "Total debt payments should not exceed 36% of gross income"
+  ],
+  "disclaimer": "Budget frameworks are guidelines. Adjust percentages based on your income, location, and financial goals. What matters most is that you spend less than you earn.",
+  "lastReviewed": "2026-02-03"
+}

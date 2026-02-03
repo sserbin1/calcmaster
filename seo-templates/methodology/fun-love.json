@@ -1,0 +1,35 @@
+{
+  "calculatorId": "fun/love",
+  "title": "Love Calculator Methodology",
+  "overview": "Love calculators are entertainment tools that generate compatibility scores. They have no scientific basis and are purely for fun.",
+  "methods": [
+    {
+      "id": "name-based",
+      "name": "Name-Based Algorithm",
+      "description": "A novelty algorithm that generates a score based on the characters in two names. Results are deterministic but meaningless.",
+      "formula": {
+        "name": "Example Algorithm",
+        "expression": "Count letters L-O-V-E-S in both names\nCombine digits and sum pairs repeatedly\nFinal 2-digit number = compatibility %",
+        "description": "Many variations exist, all arbitrary"
+      },
+      "accuracy": "None - entertainment only",
+      "limitations": [
+        "No scientific basis whatsoever",
+        "Results are random/arbitrary",
+        "Different calculators give different results"
+      ],
+      "bestFor": "Party games, entertainment",
+      "isDefault": true
+    }
+  ],
+  "sources": [
+    { "name": "No scientific sources - entertainment only", "type": "organization" }
+  ],
+  "footnotes": [
+    "Love compatibility cannot be measured by an algorithm",
+    "Relationship success depends on communication, values, effort",
+    "This calculator is for entertainment purposes only"
+  ],
+  "disclaimer": "This is purely for entertainment. No algorithm can predict relationship compatibility. Real relationships require effort, communication, and mutual respect.",
+  "lastReviewed": "2026-02-03"
+}

@@ -1,0 +1,42 @@
+{
+  "calculatorId": "date-time/timecard",
+  "title": "Timecard Calculation Methodology",
+  "overview": "Timecard calculations sum work hours across multiple days for payroll purposes. Proper rounding rules and overtime calculations are essential for compliance.",
+  "methods": [
+    {
+      "id": "weekly-timecard",
+      "name": "Weekly Timecard Totals",
+      "description": "Sum daily hours for weekly totals, applying overtime rules as appropriate.",
+      "formula": {
+        "name": "Weekly Hours",
+        "expression": "Weekly Total = Σ(Daily Hours)\nRegular = min(Weekly Total, 40)\nOvertime = max(0, Weekly Total - 40)",
+        "description": "FLSA defines workweek for overtime"
+      },
+      "accuracy": "Depends on rounding method",
+      "bestFor": "Weekly payroll processing",
+      "isDefault": true
+    },
+    {
+      "id": "rounding-rules",
+      "name": "Time Rounding (7-Minute Rule)",
+      "description": "FLSA allows rounding to nearest quarter hour. The 7-minute rule rounds down 1-7 minutes, up 8-14 minutes.",
+      "formula": {
+        "name": "Quarter-Hour Rounding",
+        "expression": "1-7 minutes → round down\n8-14 minutes → round up to 15\n16-22 minutes → round down to 15\n23-29 minutes → round up to 30",
+        "description": "Must average out fairly over time"
+      },
+      "accuracy": "Approximate, but legal",
+      "bestFor": "Simplifying payroll calculations",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "DOL Wage and Hour Division", "url": "https://www.dol.gov/agencies/whd", "type": "government" }
+  ],
+  "footnotes": [
+    "Employers must keep time records for 3 years",
+    "Meal breaks (30+ min) typically unpaid, rest breaks (< 20 min) typically paid",
+    "Some states require paid sick leave tracking"
+  ],
+  "lastReviewed": "2026-02-03"
+}

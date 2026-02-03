@@ -1,0 +1,45 @@
+{
+  "calculatorId": "date-time/date",
+  "title": "Date Calculation Methodology",
+  "overview": "Date calculations determine the difference between dates or find future/past dates. Business day calculations exclude weekends and optionally holidays.",
+  "methods": [
+    {
+      "id": "calendar-days",
+      "name": "Calendar Days Difference",
+      "description": "Simple count of all days between two dates, including weekends and holidays.",
+      "formula": {
+        "name": "Days Between Dates",
+        "expression": "Days = End Date - Start Date (in days)",
+        "description": "Includes or excludes end date based on context"
+      },
+      "accuracy": "Exact",
+      "bestFor": "General date counting, rental periods",
+      "isDefault": true
+    },
+    {
+      "id": "business-days",
+      "name": "Business Days (Working Days)",
+      "description": "Counts only weekdays (Monday-Friday), excluding weekends.",
+      "formula": {
+        "name": "Business Days",
+        "expression": "Business Days = Total Days - Weekend Days\nWeekend Days ≈ Total Days × 2/7",
+        "description": "Exact calculation iterates through each day"
+      },
+      "accuracy": "Exact for weekends, approximate for holidays",
+      "limitations": [
+        "Holidays vary by country/region",
+        "Some industries have different working days"
+      ],
+      "bestFor": "Shipping estimates, project timelines",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "ISO 8601 Date Standards", "type": "standard" }
+  ],
+  "footnotes": [
+    "Julian Day Number: continuous day count since Jan 1, 4713 BC",
+    "Unix timestamp: seconds since Jan 1, 1970 UTC"
+  ],
+  "lastReviewed": "2026-02-03"
+}

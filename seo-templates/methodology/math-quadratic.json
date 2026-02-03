@@ -1,0 +1,93 @@
+{
+  "calculatorId": "math/quadratic",
+  "title": "Quadratic Equation Methodology",
+  "overview": "Quadratic equations (ax² + bx + c = 0) appear throughout mathematics, physics, and engineering. The quadratic formula provides exact solutions, while the discriminant reveals the nature of the roots.",
+  "methods": [
+    {
+      "id": "quadratic-formula",
+      "name": "Quadratic Formula",
+      "description": "The universal solution method for any quadratic equation. Derived by completing the square on the general form.",
+      "formula": {
+        "name": "Quadratic Formula",
+        "expression": "x = (-b ± √(b² - 4ac)) / (2a)",
+        "variables": [
+          { "symbol": "a", "meaning": "Coefficient of x² (a ≠ 0)", "unit": "" },
+          { "symbol": "b", "meaning": "Coefficient of x", "unit": "" },
+          { "symbol": "c", "meaning": "Constant term", "unit": "" },
+          { "symbol": "±", "meaning": "Gives two solutions (+ and -)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact (within floating-point precision)",
+      "limitations": [
+        "Requires a ≠ 0 (otherwise linear)",
+        "Complex roots when discriminant < 0"
+      ],
+      "bestFor": "Any quadratic equation",
+      "isDefault": true
+    },
+    {
+      "id": "discriminant",
+      "name": "Discriminant Analysis",
+      "description": "The discriminant (b² - 4ac) determines the nature of the roots without solving the full equation.",
+      "formula": {
+        "name": "Discriminant",
+        "expression": "D = b² - 4ac\n\nIf D > 0: Two distinct real roots\nIf D = 0: One repeated real root (vertex touches x-axis)\nIf D < 0: Two complex conjugate roots",
+        "variables": [
+          { "symbol": "D", "meaning": "Discriminant value", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact classification",
+      "bestFor": "Determining root type before solving",
+      "isDefault": false
+    },
+    {
+      "id": "factoring",
+      "name": "Factoring Method",
+      "description": "If the quadratic factors nicely, this method is faster than the formula. Works when roots are rational.",
+      "formula": {
+        "name": "Factoring",
+        "expression": "ax² + bx + c = a(x - r₁)(x - r₂)\n\nFind two numbers that:\n- Multiply to ac\n- Add to b",
+        "description": "Example: x² + 5x + 6 = (x + 2)(x + 3), so x = -2, -3"
+      },
+      "accuracy": "Exact when factorization exists",
+      "limitations": [
+        "Not all quadratics factor nicely",
+        "Complex roots can't be found this way"
+      ],
+      "bestFor": "Simple integer solutions",
+      "isDefault": false
+    },
+    {
+      "id": "completing-square",
+      "name": "Completing the Square",
+      "description": "Transform the equation into vertex form by adding and subtracting the square of half the linear coefficient.",
+      "formula": {
+        "name": "Completing the Square",
+        "expression": "ax² + bx + c = 0\n→ a(x + b/2a)² + c - b²/4a = 0\n\nVertex form: a(x - h)² + k\nWhere h = -b/2a, k = c - b²/4a",
+        "description": "Reveals vertex at (h, k)"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Finding vertex form, deriving quadratic formula",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Wolfram MathWorld - Quadratic Equation",
+      "url": "https://mathworld.wolfram.com/QuadraticEquation.html",
+      "type": "organization"
+    },
+    {
+      "name": "Historical: Babylonians (1800 BCE) solved quadratics",
+      "type": "standard"
+    }
+  ],
+  "footnotes": [
+    "Sum of roots: r₁ + r₂ = -b/a",
+    "Product of roots: r₁ × r₂ = c/a",
+    "Vertex x-coordinate: x = -b/(2a)",
+    "Parabola opens up if a > 0, down if a < 0"
+  ],
+  "disclaimer": "Complex roots are provided when the discriminant is negative. These involve the imaginary unit i where i² = -1.",
+  "lastReviewed": "2026-02-03"
+}

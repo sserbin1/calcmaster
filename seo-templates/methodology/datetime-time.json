@@ -1,0 +1,42 @@
+{
+  "calculatorId": "date-time/time",
+  "title": "Time Calculation Methodology",
+  "overview": "Time calculations add, subtract, or convert between time units. Understanding 12-hour vs 24-hour formats and time zone considerations is essential for accuracy.",
+  "methods": [
+    {
+      "id": "time-arithmetic",
+      "name": "Time Addition/Subtraction",
+      "description": "Add or subtract hours, minutes, and seconds with proper carry-over between units.",
+      "formula": {
+        "name": "Time Arithmetic",
+        "expression": "Convert all to smallest unit (seconds)\nPerform operation\nConvert back to hours:minutes:seconds",
+        "description": "60 seconds = 1 minute, 60 minutes = 1 hour"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Duration calculations, time tracking",
+      "isDefault": true
+    },
+    {
+      "id": "12-24-conversion",
+      "name": "12/24 Hour Conversion",
+      "description": "Convert between 12-hour (AM/PM) and 24-hour (military) time formats.",
+      "formula": {
+        "name": "Hour Conversion",
+        "expression": "12h to 24h: Add 12 to PM hours (except 12 PM)\n24h to 12h: Subtract 12 from hours > 12, add PM",
+        "description": "12:00 AM = 00:00, 12:00 PM = 12:00"
+      },
+      "accuracy": "Exact",
+      "bestFor": "International communication, military/aviation",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "ISO 8601 Time Representation", "type": "standard" }
+  ],
+  "footnotes": [
+    "24-hour time eliminates AM/PM ambiguity",
+    "Midnight: 00:00 (24h) or 12:00 AM",
+    "Noon: 12:00 (24h) or 12:00 PM"
+  ],
+  "lastReviewed": "2026-02-03"
+}

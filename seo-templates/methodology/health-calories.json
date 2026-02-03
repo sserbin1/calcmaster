@@ -1,0 +1,106 @@
+{
+  "calculatorId": "health/calories",
+  "title": "Calorie & TDEE Calculation Methodology",
+  "overview": "Total Daily Energy Expenditure (TDEE) represents the total calories your body burns daily. It's calculated by first determining Basal Metabolic Rate (BMR), then multiplying by an activity factor.",
+  "methods": [
+    {
+      "id": "mifflin-st-jeor",
+      "name": "Mifflin-St Jeor Equation",
+      "description": "Developed in 1990, this is considered the gold standard for BMR estimation by the Academy of Nutrition and Dietetics. It's approximately 5% more accurate than older formulas.",
+      "formula": {
+        "name": "Mifflin-St Jeor",
+        "expression": "Men: BMR = (10 × weight) + (6.25 × height) - (5 × age) + 5\nWomen: BMR = (10 × weight) + (6.25 × height) - (5 × age) - 161",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Height", "unit": "cm" },
+          { "symbol": "age", "meaning": "Age", "unit": "years" }
+        ]
+      },
+      "accuracy": "Within 10% for ~82% of individuals",
+      "limitations": [
+        "May underestimate needs for very muscular individuals",
+        "May overestimate for elderly or sedentary populations",
+        "Does not account for body composition"
+      ],
+      "bestFor": "General adult population",
+      "isDefault": true,
+      "yearIntroduced": 1990,
+      "author": "Mifflin, M.D. et al."
+    },
+    {
+      "id": "harris-benedict",
+      "name": "Harris-Benedict Equation",
+      "description": "One of the earliest BMR equations, developed in 1918 and revised in 1984. Still widely used but generally considered less accurate than Mifflin-St Jeor.",
+      "formula": {
+        "name": "Harris-Benedict (Revised)",
+        "expression": "Men: BMR = 88.362 + (13.397 × weight) + (4.799 × height) - (5.677 × age)\nWomen: BMR = 447.593 + (9.247 × weight) + (3.098 × height) - (4.330 × age)",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Height", "unit": "cm" },
+          { "symbol": "age", "meaning": "Age", "unit": "years" }
+        ]
+      },
+      "accuracy": "Within 10% for ~69% of individuals",
+      "limitations": [
+        "Tends to overestimate caloric needs",
+        "Original formula from 1918 is outdated",
+        "Less accurate for obese individuals"
+      ],
+      "bestFor": "Historical comparison, some clinical settings",
+      "isDefault": false,
+      "yearIntroduced": 1918,
+      "author": "Harris, J.A. & Benedict, F.G."
+    },
+    {
+      "id": "katch-mcardle",
+      "name": "Katch-McArdle Equation",
+      "description": "Uses lean body mass (LBM) instead of total weight, making it more accurate for individuals who know their body fat percentage.",
+      "formula": {
+        "name": "Katch-McArdle",
+        "expression": "BMR = 370 + (21.6 × LBM)\nLBM = weight × (1 - body fat %)",
+        "variables": [
+          { "symbol": "LBM", "meaning": "Lean Body Mass", "unit": "kg" },
+          { "symbol": "weight", "meaning": "Total body weight", "unit": "kg" },
+          { "symbol": "body fat %", "meaning": "Body fat percentage", "unit": "%" }
+        ]
+      },
+      "accuracy": "Most accurate when body fat is known",
+      "limitations": [
+        "Requires body fat percentage measurement",
+        "Body fat measurement methods vary in accuracy"
+      ],
+      "bestFor": "Athletes, bodybuilders, those with body fat data",
+      "isDefault": false,
+      "yearIntroduced": 1996,
+      "author": "Katch, F.I. & McArdle, W.D."
+    }
+  ],
+  "sources": [
+    {
+      "name": "Mifflin et al. - Am J Clin Nutr",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+      "year": 1990,
+      "type": "study",
+      "citation": "Mifflin MD, et al. A new predictive equation for resting energy expenditure in healthy individuals. Am J Clin Nutr. 1990;51(2):241-247."
+    },
+    {
+      "name": "Academy of Nutrition and Dietetics Evidence Analysis Library",
+      "url": "https://www.andeal.org/",
+      "year": 2023,
+      "type": "organization"
+    },
+    {
+      "name": "Harris & Benedict Original Study",
+      "year": 1918,
+      "type": "study",
+      "citation": "Harris JA, Benedict FG. A Biometric Study of Human Basal Metabolism. PNAS. 1918;4(12):370-373."
+    }
+  ],
+  "footnotes": [
+    "TDEE = BMR × Activity Factor (1.2 to 1.9)",
+    "Activity factors: Sedentary (1.2), Light (1.375), Moderate (1.55), Active (1.725), Very Active (1.9)",
+    "Individual variation can be ±200-300 calories"
+  ],
+  "disclaimer": "Calorie calculations are estimates. Actual needs vary based on genetics, hormones, and metabolic adaptations. Monitor progress and adjust accordingly.",
+  "lastReviewed": "2026-02-03"
+}

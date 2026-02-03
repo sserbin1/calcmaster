@@ -1,0 +1,118 @@
+{
+  "calculatorId": "health/ideal-weight",
+  "title": "Ideal Body Weight Methodology",
+  "overview": "Ideal body weight (IBW) formulas estimate a healthy weight range based on height and sex. These formulas were originally developed for drug dosing and clinical settings, not as strict weight goals.",
+  "methods": [
+    {
+      "id": "devine",
+      "name": "Devine Formula",
+      "description": "Developed by Dr. B.J. Devine in 1974 for calculating medication dosages. The most widely used IBW formula in clinical settings.",
+      "formula": {
+        "name": "Devine (1974)",
+        "expression": "Men: IBW = 50 kg + 2.3 kg × (height in inches - 60)\nWomen: IBW = 45.5 kg + 2.3 kg × (height in inches - 60)",
+        "variables": [
+          { "symbol": "height", "meaning": "Height above 5 feet (60 inches)", "unit": "inches" }
+        ]
+      },
+      "accuracy": "Clinical standard, but not validated for actual ideal weight",
+      "limitations": [
+        "Originally for drug dosing, not weight goals",
+        "Assumes medium frame",
+        "May underestimate for taller individuals"
+      ],
+      "bestFor": "Clinical/medical calculations",
+      "isDefault": true,
+      "yearIntroduced": 1974,
+      "author": "Dr. B.J. Devine"
+    },
+    {
+      "id": "robinson",
+      "name": "Robinson Formula",
+      "description": "Modified version of Devine's formula developed by Robinson et al. in 1983 with slightly different coefficients.",
+      "formula": {
+        "name": "Robinson (1983)",
+        "expression": "Men: IBW = 52 kg + 1.9 kg × (height in inches - 60)\nWomen: IBW = 49 kg + 1.7 kg × (height in inches - 60)",
+        "variables": [
+          { "symbol": "height", "meaning": "Height above 5 feet", "unit": "inches" }
+        ]
+      },
+      "accuracy": "Similar to Devine",
+      "limitations": [
+        "Also derived for clinical use",
+        "Not validated in diverse populations"
+      ],
+      "bestFor": "Alternative clinical calculation",
+      "isDefault": false,
+      "yearIntroduced": 1983,
+      "author": "Robinson et al."
+    },
+    {
+      "id": "miller",
+      "name": "Miller Formula",
+      "description": "Developed by Miller et al. in 1983. Produces higher estimates than Devine for taller individuals.",
+      "formula": {
+        "name": "Miller (1983)",
+        "expression": "Men: IBW = 56.2 kg + 1.41 kg × (height in inches - 60)\nWomen: IBW = 53.1 kg + 1.36 kg × (height in inches - 60)",
+        "variables": [
+          { "symbol": "height", "meaning": "Height above 5 feet", "unit": "inches" }
+        ]
+      },
+      "accuracy": "Better for taller individuals",
+      "limitations": [
+        "Less commonly used",
+        "Same fundamental limitations as other formulas"
+      ],
+      "bestFor": "Taller individuals",
+      "isDefault": false,
+      "yearIntroduced": 1983,
+      "author": "Miller et al."
+    },
+    {
+      "id": "hamwi",
+      "name": "Hamwi Formula",
+      "description": "Developed by Dr. G.J. Hamwi in 1964 for dietetic purposes. Popular in nutrition counseling.",
+      "formula": {
+        "name": "Hamwi (1964)",
+        "expression": "Men: IBW = 48 kg + 2.7 kg × (height in inches - 60)\nWomen: IBW = 45.5 kg + 2.2 kg × (height in inches - 60)",
+        "variables": [
+          { "symbol": "height", "meaning": "Height above 5 feet", "unit": "inches" }
+        ]
+      },
+      "accuracy": "Nutrition-focused estimation",
+      "limitations": [
+        "Developed before modern research on body composition",
+        "Assumes medium frame size"
+      ],
+      "bestFor": "Nutrition counseling",
+      "isDefault": false,
+      "yearIntroduced": 1964,
+      "author": "Dr. G.J. Hamwi"
+    }
+  ],
+  "sources": [
+    {
+      "name": "Pai & Paloucek - Ann Pharmacother Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10811243/",
+      "year": 2000,
+      "type": "study"
+    },
+    {
+      "name": "Devine, B.J. - Drug Intelligence Clin Pharm",
+      "year": 1974,
+      "type": "study"
+    },
+    {
+      "name": "Peterson et al. - Ideal body weight equations comparison",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27208386/",
+      "year": 2016,
+      "type": "study"
+    }
+  ],
+  "footnotes": [
+    "All formulas assume medium body frame",
+    "Frame size adjustment: ±10% for small/large frames",
+    "Modern approach: focus on body composition, not just weight"
+  ],
+  "disclaimer": "Ideal weight formulas provide rough estimates. Healthy weight depends on many factors including muscle mass, bone density, and overall health. Consult a healthcare provider for personalized guidance.",
+  "lastReviewed": "2026-02-03"
+}

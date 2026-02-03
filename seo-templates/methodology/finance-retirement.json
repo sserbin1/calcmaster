@@ -1,0 +1,111 @@
+{
+  "calculatorId": "finance/retirement",
+  "title": "Retirement Planning Methodology",
+  "overview": "Retirement calculations estimate how much to save and how long savings will last. The 4% rule from the Trinity Study is the most cited guideline, though modern research suggests adjustments may be needed.",
+  "methods": [
+    {
+      "id": "4-percent-rule",
+      "name": "4% Rule (Trinity Study)",
+      "description": "Withdraw 4% of your portfolio in year one, then adjust for inflation annually. Based on the 1998 Trinity Study, this had 95% success rate over 30-year periods in backtesting.",
+      "formula": {
+        "name": "4% Safe Withdrawal Rate",
+        "expression": "Annual Withdrawal = Portfolio × 4%\nRequired Savings = Annual Expenses × 25",
+        "variables": [
+          { "symbol": "Portfolio", "meaning": "Total retirement savings", "unit": "$" },
+          { "symbol": "25", "meaning": "Inverse of 4% (1/0.04)", "unit": "multiplier" }
+        ]
+      },
+      "accuracy": "95% historical success for 30 years",
+      "limitations": [
+        "Based on US market history (1926-1995)",
+        "May not account for current low yields",
+        "Assumes 50/50 to 75/25 stock/bond allocation",
+        "30-year horizon may be too short for early retirees"
+      ],
+      "bestFor": "Traditional retirement age (60-65)",
+      "isDefault": true,
+      "yearIntroduced": 1998
+    },
+    {
+      "id": "variable-withdrawal",
+      "name": "Variable Percentage Withdrawal",
+      "description": "Adjust withdrawal rate based on market performance and remaining portfolio. Spend more in good years, less in bad years.",
+      "formula": {
+        "name": "Dynamic Withdrawal",
+        "expression": "Base: 4-5%\nGood year (portfolio up 10%+): Up to 5.5%\nBad year (portfolio down 10%+): Reduce to 3.5%",
+        "description": "Flexible spending based on market conditions"
+      },
+      "accuracy": "Higher success rates but variable income",
+      "limitations": [
+        "Requires spending flexibility",
+        "Income uncertainty may be stressful",
+        "More complex to implement"
+      ],
+      "bestFor": "Flexible retirees willing to adjust spending",
+      "isDefault": false
+    },
+    {
+      "id": "monte-carlo",
+      "name": "Monte Carlo Simulation",
+      "description": "Runs thousands of random market scenarios to calculate probability of success. More sophisticated than simple rules but requires assumptions about future returns.",
+      "formula": {
+        "name": "Monte Carlo Method",
+        "expression": "Run 1000+ simulations with random returns\nSuccess Rate = Scenarios where money lasts / Total scenarios",
+        "description": "Typically uses historical return distributions"
+      },
+      "accuracy": "More nuanced probability analysis",
+      "limitations": [
+        "Garbage in, garbage out - depends on assumptions",
+        "Past returns don't guarantee future",
+        "May give false precision"
+      ],
+      "bestFor": "Detailed retirement planning",
+      "isDefault": false
+    },
+    {
+      "id": "fire-method",
+      "name": "FIRE (Financial Independence) Method",
+      "description": "Uses more conservative 3-3.5% withdrawal rate for early retirees who need funds to last 40-50+ years.",
+      "formula": {
+        "name": "FIRE Calculation",
+        "expression": "Required Savings = Annual Expenses × 28-33\n(Based on 3-3.5% withdrawal rate)",
+        "description": "More conservative for longer retirement periods"
+      },
+      "accuracy": "Higher safety margin for long retirements",
+      "limitations": [
+        "Requires more savings",
+        "May be overly conservative",
+        "Assumes no other income sources"
+      ],
+      "bestFor": "Early retirement (before 50)",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Trinity Study - AAII Journal",
+      "url": "https://www.aaii.com/files/pdf/6794_retirement-702702.pdf",
+      "year": 1998,
+      "type": "study",
+      "citation": "Cooley, Hubbard, Walz. Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable."
+    },
+    {
+      "name": "Bengen, William - Original 4% Research",
+      "year": 1994,
+      "type": "study"
+    },
+    {
+      "name": "Kitces Research on Safe Withdrawal Rates",
+      "url": "https://www.kitces.com/blog/category/safe-withdrawal-rates/",
+      "type": "study"
+    }
+  ],
+  "footnotes": [
+    "Social Security can significantly reduce required savings",
+    "Healthcare costs are often underestimated in retirement planning",
+    "Sequence of returns risk: early bad years hurt more than later bad years",
+    "Consider bucket strategy: short-term (cash), medium-term (bonds), long-term (stocks)"
+  ],
+  "disclaimer": "Retirement calculations are projections based on assumptions. Actual results depend on market performance, inflation, and personal circumstances. Consider working with a financial advisor.",
+  "lastReviewed": "2026-02-03"
+}

@@ -1,0 +1,106 @@
+{
+  "calculatorId": "math/grade",
+  "title": "Grade Calculation Methodology",
+  "overview": "Grade calculations convert raw scores to letter grades or determine what score is needed on remaining work to achieve a target grade. Different institutions use different grading scales.",
+  "methods": [
+    {
+      "id": "standard-scale",
+      "name": "Standard US Grading Scale",
+      "description": "The most common grading scale in US education, mapping percentage scores to letter grades.",
+      "formula": {
+        "name": "Standard Scale",
+        "expression": "A: 90-100%\nB: 80-89%\nC: 70-79%\nD: 60-69%\nF: Below 60%",
+        "description": "Plus/minus grades divide each range into thirds"
+      },
+      "accuracy": "Institution-specific",
+      "limitations": [
+        "Cutoffs vary by school",
+        "Some use 93%+ for A",
+        "Plus/minus availability varies"
+      ],
+      "bestFor": "Most US schools",
+      "isDefault": true
+    },
+    {
+      "id": "plus-minus",
+      "name": "Plus/Minus Grading Scale",
+      "description": "Further divides letter grades to provide more precision. Typically adds ±3% from letter grade boundaries.",
+      "formula": {
+        "name": "Plus/Minus Scale",
+        "expression": "A: 93-100 | A-: 90-92\nB+: 87-89 | B: 83-86 | B-: 80-82\nC+: 77-79 | C: 73-76 | C-: 70-72\nD+: 67-69 | D: 63-66 | D-: 60-62\nF: Below 60",
+        "description": "Note: A+ is often 97+ when used"
+      },
+      "accuracy": "More granular",
+      "bestFor": "Precise grade differentiation",
+      "isDefault": false
+    },
+    {
+      "id": "curved-grading",
+      "name": "Curved Grading",
+      "description": "Adjusts grades based on class performance. Can be additive (add points to all) or normative (grade on distribution).",
+      "formula": {
+        "name": "Curve Methods",
+        "expression": "Additive: Final = Raw + Curve Points\n\nNormative: A = top 10-15%, B = next 20-25%, etc.\n\nSquare Root: Final = √(Raw × 100)",
+        "description": "Curve method varies by instructor"
+      },
+      "accuracy": "Depends on method and class distribution",
+      "limitations": [
+        "Normative curves pit students against each other",
+        "May inflate or deflate grades unfairly"
+      ],
+      "bestFor": "Difficult courses, standardizing across sections",
+      "isDefault": false
+    },
+    {
+      "id": "needed-score",
+      "name": "Required Score Calculation",
+      "description": "Calculate what score is needed on remaining assignments to achieve a target final grade.",
+      "formula": {
+        "name": "Needed Score Formula",
+        "expression": "Needed = (Target × Total Weight - Current × Earned Weight) / Remaining Weight",
+        "variables": [
+          { "symbol": "Target", "meaning": "Desired final grade (%)", "unit": "%" },
+          { "symbol": "Current", "meaning": "Current grade earned", "unit": "%" },
+          { "symbol": "Weight", "meaning": "Assignment/category weights", "unit": "%" }
+        ]
+      },
+      "accuracy": "Exact for weighted calculations",
+      "bestFor": "Planning study effort",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "AACRAO - Grading Practices",
+      "url": "https://www.aacrao.org/",
+      "type": "organization"
+    },
+    {
+      "name": "Carnegie Foundation - Educational Standards",
+      "type": "organization"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 0,
+    "max": 100,
+    "unit": "%",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "F", "min": 0, "max": 60, "color": "#ef4444" },
+      { "label": "D", "min": 60, "max": 70, "color": "#f97316" },
+      { "label": "C", "min": 70, "max": 80, "color": "#eab308" },
+      { "label": "B", "min": 80, "max": 90, "color": "#10b981" },
+      { "label": "A", "min": 90, "max": 100, "color": "#22c55e" }
+    ]
+  },
+  "footnotes": [
+    "Letter grades date back to Harvard in 1883",
+    "Pass/Fail (P/F) is common for electives and pandemic semesters",
+    "Medical schools often use Pass/Fail or Honors/Pass/Fail",
+    "UK/Europe use different systems (First Class, 2:1, 2:2, Third, Fail)"
+  ],
+  "disclaimer": "Grading scales vary by institution and instructor. Check your syllabus for the specific scale used in your course.",
+  "lastReviewed": "2026-02-03"
+}

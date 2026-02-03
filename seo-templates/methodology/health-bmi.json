@@ -1,0 +1,123 @@
+{
+  "calculatorId": "health/bmi",
+  "title": "BMI Calculation Methodology",
+  "overview": "Body Mass Index (BMI) is a simple calculation using height and weight to estimate body fat. While widely used for population-level health screening, it has limitations for individual assessment.",
+  "methods": [
+    {
+      "id": "quetelet",
+      "name": "Standard BMI (Quetelet Index)",
+      "description": "The original BMI formula developed by Belgian mathematician Adolphe Quetelet between 1830-1850. It divides weight in kilograms by height in meters squared.",
+      "formula": {
+        "name": "Quetelet Index",
+        "expression": "BMI = weight (kg) / height² (m²)",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Standing height", "unit": "m" }
+        ]
+      },
+      "accuracy": "Population-level screening",
+      "limitations": [
+        "Does not distinguish between muscle and fat mass",
+        "May overestimate body fat in athletes",
+        "May underestimate body fat in elderly",
+        "Does not account for fat distribution"
+      ],
+      "bestFor": "General population screening",
+      "isDefault": true,
+      "yearIntroduced": 1832,
+      "author": "Adolphe Quetelet"
+    },
+    {
+      "id": "new-bmi",
+      "name": "New BMI (Trefethen)",
+      "description": "A revised formula proposed by Oxford mathematician Nick Trefethen in 2013 that better accounts for the relationship between height and weight across different heights.",
+      "formula": {
+        "name": "Trefethen Formula",
+        "expression": "BMI = 1.3 × weight (kg) / height^2.5 (m)",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Standing height", "unit": "m" }
+        ]
+      },
+      "accuracy": "Better for very tall/short individuals",
+      "limitations": [
+        "Not yet widely adopted clinically",
+        "Same fundamental limitations as standard BMI"
+      ],
+      "bestFor": "Very tall or very short individuals",
+      "isDefault": false,
+      "yearIntroduced": 2013,
+      "author": "Nick Trefethen"
+    },
+    {
+      "id": "asian-adjusted",
+      "name": "Asian-Adjusted BMI",
+      "description": "WHO recommends lower BMI thresholds for Asian populations due to higher health risks at lower BMI levels. Overweight starts at 23 kg/m² instead of 25 kg/m².",
+      "formula": {
+        "name": "Standard Formula, Adjusted Thresholds",
+        "expression": "BMI = weight (kg) / height² (m²)",
+        "description": "Same formula, different category thresholds"
+      },
+      "accuracy": "Better risk prediction for Asian populations",
+      "limitations": [
+        "May not apply uniformly to all Asian ethnicities",
+        "Not universally adopted"
+      ],
+      "bestFor": "Asian populations",
+      "isDefault": false,
+      "yearIntroduced": 2004
+    }
+  ],
+  "sources": [
+    {
+      "name": "World Health Organization",
+      "url": "https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations",
+      "year": 2024,
+      "type": "organization"
+    },
+    {
+      "name": "CDC Adult BMI Guidelines",
+      "url": "https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html",
+      "year": 2024,
+      "type": "government"
+    },
+    {
+      "name": "Quetelet, A. - Sur l'homme et le développement de ses facultés",
+      "year": 1835,
+      "type": "book"
+    },
+    {
+      "name": "Trefethen, N. - BMI improvement proposal",
+      "url": "https://people.maths.ox.ac.uk/trefethen/bmi.html",
+      "year": 2013,
+      "type": "study"
+    },
+    {
+      "name": "WHO Expert Consultation - Asian BMI cutoffs",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14726171/",
+      "year": 2004,
+      "type": "study"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 10,
+    "max": 45,
+    "unit": "kg/m²",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "Underweight", "min": 10, "max": 18.5, "color": "#3b82f6", "description": "BMI below 18.5" },
+      { "label": "Normal", "min": 18.5, "max": 25, "color": "#22c55e", "description": "BMI 18.5-24.9" },
+      { "label": "Overweight", "min": 25, "max": 30, "color": "#eab308", "description": "BMI 25-29.9" },
+      { "label": "Obese", "min": 30, "max": 45, "color": "#ef4444", "description": "BMI 30+" }
+    ]
+  },
+  "footnotes": [
+    "BMI is a screening tool, not a diagnostic measure",
+    "Consult a healthcare provider for comprehensive health assessment",
+    "Athletes and muscular individuals may have high BMI with low body fat"
+  ],
+  "disclaimer": "BMI is intended for screening purposes only. It does not diagnose body fatness or health status. Consult a healthcare professional for medical advice.",
+  "lastReviewed": "2026-02-03"
+}

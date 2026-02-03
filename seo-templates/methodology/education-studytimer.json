@@ -1,0 +1,66 @@
+{
+  "calculatorId": "education/study-timer",
+  "title": "Study Timer Methodology",
+  "overview": "Study timer techniques like Pomodoro improve focus and retention through structured work/break intervals. Spaced repetition optimizes long-term memory formation.",
+  "methods": [
+    {
+      "id": "pomodoro",
+      "name": "Pomodoro Technique",
+      "description": "Work in 25-minute focused sessions with 5-minute breaks. After 4 sessions, take a longer 15-30 minute break.",
+      "formula": {
+        "name": "Pomodoro Cycle",
+        "expression": "1 Pomodoro = 25 min work + 5 min break\n4 Pomodoros = 2 hours + 15-30 min long break",
+        "description": "Named after tomato-shaped kitchen timer"
+      },
+      "accuracy": "Evidence-based productivity method",
+      "limitations": [
+        "25 minutes may be too short for complex tasks",
+        "Interruptions reset the timer",
+        "May not suit all learning styles"
+      ],
+      "bestFor": "General studying, avoiding burnout",
+      "isDefault": true,
+      "yearIntroduced": 1987,
+      "author": "Francesco Cirillo"
+    },
+    {
+      "id": "spaced-repetition",
+      "name": "Spaced Repetition",
+      "description": "Review material at increasing intervals to optimize long-term retention. The spacing effect is well-documented in cognitive psychology.",
+      "formula": {
+        "name": "Review Intervals",
+        "expression": "After initial learning:\nReview 1: 1 day later\nReview 2: 3 days later\nReview 3: 7 days later\nReview 4: 14 days later\n...",
+        "description": "Intervals increase with each successful recall"
+      },
+      "accuracy": "Evidence-based memory technique",
+      "bestFor": "Memorization, vocabulary, facts",
+      "isDefault": false
+    },
+    {
+      "id": "active-recall",
+      "name": "Active Recall",
+      "description": "Test yourself instead of passively re-reading. The act of retrieving information strengthens memory.",
+      "formula": {
+        "name": "Active Recall Principles",
+        "expression": "1. Read/study material\n2. Close book, recall from memory\n3. Check accuracy\n4. Focus on gaps\n5. Repeat",
+        "description": "Testing effect: retrieval practice strengthens memory"
+      },
+      "accuracy": "Evidence-based",
+      "bestFor": "Deep learning, exam preparation",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "Cirillo, F. - The Pomodoro Technique", "year": 2006, "type": "book" },
+    { "name": "Ebbinghaus Forgetting Curve Research", "year": 1885, "type": "study" },
+    { "name": "Roediger & Karpicke - Testing Effect", "year": 2006, "type": "study" }
+  ],
+  "footnotes": [
+    "Ebbinghaus: we forget 70% within 24 hours without review",
+    "Sleep consolidates memories - don't study all night",
+    "Interleaving (mixing topics) beats blocked practice",
+    "Apps like Anki implement spaced repetition automatically"
+  ],
+  "disclaimer": "Study techniques work differently for different people. Experiment to find what works best for your learning style.",
+  "lastReviewed": "2026-02-03"
+}

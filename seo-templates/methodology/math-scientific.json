@@ -1,0 +1,96 @@
+{
+  "calculatorId": "math/scientific",
+  "title": "Scientific Calculator Methodology",
+  "overview": "Scientific calculators extend basic arithmetic with trigonometry, logarithms, exponents, and other advanced functions. Understanding order of operations and function behavior is essential for accurate calculations.",
+  "methods": [
+    {
+      "id": "order-of-operations",
+      "name": "Order of Operations (PEMDAS/BODMAS)",
+      "description": "The standard mathematical convention for evaluating expressions. Parentheses/Brackets first, then Exponents/Orders, then Multiplication/Division (left to right), then Addition/Subtraction (left to right).",
+      "formula": {
+        "name": "PEMDAS",
+        "expression": "P - Parentheses first\nE - Exponents second\nM/D - Multiply/Divide left to right\nA/S - Add/Subtract left to right",
+        "description": "Example: 2 + 3 × 4 = 2 + 12 = 14 (not 20)"
+      },
+      "accuracy": "Mathematical standard",
+      "bestFor": "All expressions",
+      "isDefault": true
+    },
+    {
+      "id": "trigonometry",
+      "name": "Trigonometric Functions",
+      "description": "Functions relating angles to ratios in right triangles. Available in degrees or radians mode.",
+      "formula": {
+        "name": "Trig Functions",
+        "expression": "sin(θ) = opposite / hypotenuse\ncos(θ) = adjacent / hypotenuse\ntan(θ) = opposite / adjacent = sin(θ) / cos(θ)",
+        "variables": [
+          { "symbol": "θ", "meaning": "Angle", "unit": "degrees or radians" }
+        ]
+      },
+      "accuracy": "Limited by floating-point precision",
+      "limitations": [
+        "tan(90°) is undefined",
+        "Inverse functions have restricted domains"
+      ],
+      "bestFor": "Geometry, physics, engineering",
+      "isDefault": false
+    },
+    {
+      "id": "logarithms",
+      "name": "Logarithmic Functions",
+      "description": "The inverse of exponentiation. Natural log (ln) uses base e ≈ 2.718; common log (log) uses base 10.",
+      "formula": {
+        "name": "Logarithm Properties",
+        "expression": "log_b(x) = y means b^y = x\nln(x) = log_e(x)\nlog(x) = log_10(x)\n\nlog(a×b) = log(a) + log(b)\nlog(a/b) = log(a) - log(b)\nlog(a^n) = n × log(a)",
+        "variables": [
+          { "symbol": "e", "meaning": "Euler's number ≈ 2.71828", "unit": "" },
+          { "symbol": "b", "meaning": "Base of logarithm", "unit": "" }
+        ]
+      },
+      "accuracy": "Limited by floating-point precision",
+      "limitations": [
+        "log(x) undefined for x ≤ 0",
+        "Log of negative numbers requires complex numbers"
+      ],
+      "bestFor": "Exponential growth, scientific notation, sound/earthquake scales",
+      "isDefault": false
+    },
+    {
+      "id": "powers-roots",
+      "name": "Powers and Roots",
+      "description": "Exponentiation and root extraction, including fractional exponents.",
+      "formula": {
+        "name": "Power Rules",
+        "expression": "x^n × x^m = x^(n+m)\n(x^n)^m = x^(n×m)\nx^(1/n) = ⁿ√x\nx^(-n) = 1/x^n",
+        "description": "Fractional exponents represent roots"
+      },
+      "accuracy": "Exact for integers; approximation for irrationals",
+      "limitations": [
+        "Even roots of negative numbers require complex numbers",
+        "Very large exponents may overflow"
+      ],
+      "bestFor": "Growth calculations, physics, engineering",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Wolfram MathWorld",
+      "url": "https://mathworld.wolfram.com/",
+      "type": "organization"
+    },
+    {
+      "name": "IEEE 754 Floating-Point Standard",
+      "url": "https://ieeexplore.ieee.org/document/8766229",
+      "type": "standard"
+    }
+  ],
+  "footnotes": [
+    "π ≈ 3.14159265358979... (irrational)",
+    "e ≈ 2.71828182845904... (irrational)",
+    "Radians: 180° = π rad; 1 rad ≈ 57.3°",
+    "Scientific notation: 1.23 × 10^6 = 1,230,000"
+  ],
+  "disclaimer": "Calculator results are limited by floating-point precision (typically 15-17 significant digits). For critical calculations, verify independently.",
+  "lastReviewed": "2026-02-03"
+}

@@ -2,6 +2,7 @@
 import healthData from '../../seo-templates/calculator-seo-data-full.json'
 import financeData from '../../seo-templates/seo-data-finance.json'
 import otherData from '../../seo-templates/seo-data-math-datetime-other.json'
+import type { MethodologyData, VisualScaleConfig } from '@/types/methodology'
 
 export interface CalculatorFAQ {
   question: string
@@ -37,6 +38,9 @@ export interface CalculatorData {
   relatedCalculators: string[]
   longTailVariants: LongTailVariant[]
   lastUpdated: string
+  // Methodology fields (optional, loaded separately)
+  methodology?: MethodologyData
+  visualScale?: VisualScaleConfig
 }
 
 // Category configuration

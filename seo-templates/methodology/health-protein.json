@@ -1,0 +1,131 @@
+{
+  "calculatorId": "health/protein",
+  "title": "Protein Requirements Methodology",
+  "overview": "Protein requirements vary significantly based on activity level, age, and health goals. The RDA is a minimum to prevent deficiency, not optimal for health or performance.",
+  "methods": [
+    {
+      "id": "rda",
+      "name": "RDA (Recommended Dietary Allowance)",
+      "description": "The minimum protein intake to prevent deficiency in 97-98% of healthy individuals. Set by the Institute of Medicine.",
+      "formula": {
+        "name": "RDA Standard",
+        "expression": "Protein = 0.8 g × body weight (kg)",
+        "variables": [
+          { "symbol": "body weight", "meaning": "Total body weight", "unit": "kg" }
+        ]
+      },
+      "accuracy": "Prevents deficiency, not optimal",
+      "limitations": [
+        "Based on nitrogen balance studies",
+        "May be insufficient for active individuals",
+        "Does not account for muscle building goals"
+      ],
+      "bestFor": "Sedentary adults maintaining weight",
+      "isDefault": true,
+      "yearIntroduced": 2005
+    },
+    {
+      "id": "issn-athletic",
+      "name": "ISSN Athletic Guidelines",
+      "description": "International Society of Sports Nutrition recommendations for athletes and those engaged in regular exercise.",
+      "formula": {
+        "name": "ISSN Range",
+        "expression": "Protein = 1.4-2.0 g × body weight (kg)\n\nEndurance: 1.2-1.4 g/kg\nStrength: 1.6-2.0 g/kg\nRestricted Calories: Up to 2.3-3.1 g/kg",
+        "variables": [
+          { "symbol": "body weight", "meaning": "Total body weight", "unit": "kg" }
+        ]
+      },
+      "accuracy": "Evidence-based for athletic populations",
+      "limitations": [
+        "Higher cost for protein foods",
+        "May be unnecessary for sedentary individuals"
+      ],
+      "bestFor": "Athletes, regular exercisers",
+      "isDefault": false
+    },
+    {
+      "id": "elderly",
+      "name": "PROT-AGE (Elderly Guidelines)",
+      "description": "Higher protein recommendations for adults over 65 to prevent sarcopenia and maintain muscle mass.",
+      "formula": {
+        "name": "PROT-AGE Recommendation",
+        "expression": "Healthy elderly: 1.0-1.2 g/kg/day\nWith illness/injury: 1.2-1.5 g/kg/day",
+        "variables": [
+          { "symbol": "body weight", "meaning": "Actual or adjusted body weight", "unit": "kg" }
+        ]
+      },
+      "accuracy": "Evidence-based for sarcopenia prevention",
+      "limitations": [
+        "May need adjustment for kidney disease",
+        "Quality and distribution matter too"
+      ],
+      "bestFor": "Adults over 65",
+      "isDefault": false
+    },
+    {
+      "id": "per-meal",
+      "name": "Per-Meal Distribution",
+      "description": "Research suggests spreading protein across meals (20-40g per meal) maximizes muscle protein synthesis.",
+      "formula": {
+        "name": "Meal Distribution",
+        "expression": "Per meal: 0.4-0.55 g/kg or 20-40g\n3-4 meals evenly distributed",
+        "description": "Leucine threshold: ~2.5g per meal for MPS"
+      },
+      "accuracy": "Optimizes muscle protein synthesis",
+      "limitations": [
+        "May be impractical for some schedules",
+        "Total daily intake still most important"
+      ],
+      "bestFor": "Muscle building optimization",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "ISSN Position Stand on Protein",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+      "year": 2017,
+      "type": "study"
+    },
+    {
+      "name": "Institute of Medicine DRI",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK56068/",
+      "year": 2005,
+      "type": "organization"
+    },
+    {
+      "name": "PROT-AGE Study Group",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23867520/",
+      "year": 2013,
+      "type": "study"
+    },
+    {
+      "name": "Schoenfeld & Aragon - Protein Timing Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24299050/",
+      "year": 2013,
+      "type": "study"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 0.5,
+    "max": 2.5,
+    "unit": "g/kg",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "Low", "min": 0.5, "max": 0.8, "color": "#ef4444", "description": "Below RDA" },
+      { "label": "RDA", "min": 0.8, "max": 1.2, "color": "#eab308", "description": "Minimum adequate" },
+      { "label": "Active", "min": 1.2, "max": 1.6, "color": "#22c55e", "description": "Active adults" },
+      { "label": "Athletic", "min": 1.6, "max": 2.2, "color": "#10b981", "description": "Athletes" },
+      { "label": "Max", "min": 2.2, "max": 2.5, "color": "#3b82f6", "description": "Upper limit" }
+    ]
+  },
+  "footnotes": [
+    "Protein quality matters: prioritize complete proteins with all essential amino acids",
+    "Plant-based diets may need 10-20% more total protein",
+    "Spread intake across 3-4 meals for optimal muscle protein synthesis"
+  ],
+  "disclaimer": "Higher protein intake may need adjustment for kidney disease or other health conditions. Consult a healthcare provider if you have medical concerns.",
+  "lastReviewed": "2026-02-03"
+}

@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCalculator, getAllCalculatorPaths, getRelatedCalculators, categories, type CategorySlug } from '@/data/calculators'
+import { loadMethodology } from '@/data/methodology-loader'
 import GenericCalculator from '@/components/calculators/GenericCalculator'
+import MethodologySection from '@/components/ui/MethodologySection'
 import Link from 'next/link'
 
 interface PageProps {
@@ -46,6 +48,9 @@ export default async function CalculatorPage({ params }: PageProps) {
   const categoryInfo = categories[category as CategorySlug]
   const relatedCalcs = getRelatedCalculators(calculator.relatedCalculators, slug)
 
+  // Load methodology data
+  const methodology = await loadMethodology(category, slug)
+
   return (
     <div className="max-w-4xl mx-auto">
       {/* Breadcrumb */}
@@ -74,8 +79,18 @@ export default async function CalculatorPage({ params }: PageProps) {
         <GenericCalculator type={slug} name={calculator.name} category={category} />
       </div>
 
-      {/* Formula */}
-      {calculator.formula && (
+      {/* Methodology Section */}
+      {methodology && (
+        <MethodologySection
+          title={methodology.title}
+          methods={methodology.methods}
+          sources={methodology.sources}
+          footnotes={methodology.footnotes}
+        />
+      )}
+
+      {/* Formula (fallback if no methodology) */}
+      {!methodology && calculator.formula && (
         <div className="p-4 bg-[var(--muted)] rounded-xl mb-8">
           <h3 className="font-bold mb-2">Formula</h3>
           <code className="text-[var(--primary)]">{calculator.formula}</code>

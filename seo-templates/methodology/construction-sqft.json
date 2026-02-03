@@ -1,0 +1,48 @@
+{
+  "calculatorId": "construction/sqft",
+  "title": "Square Footage Calculation Methodology",
+  "overview": "Square footage measures area for flooring, roofing, painting, and property valuation. Different shapes require different formulas.",
+  "methods": [
+    {
+      "id": "rectangle",
+      "name": "Rectangle/Square Area",
+      "description": "The most common calculation: length times width.",
+      "formula": {
+        "name": "Rectangular Area",
+        "expression": "Area = Length × Width",
+        "variables": [
+          { "symbol": "Length", "meaning": "Longest side", "unit": "ft" },
+          { "symbol": "Width", "meaning": "Perpendicular side", "unit": "ft" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Rooms, lots, rectangular spaces",
+      "isDefault": true
+    },
+    {
+      "id": "triangle",
+      "name": "Triangle Area",
+      "description": "Half of base times height.",
+      "formula": { "name": "Triangle", "expression": "Area = ½ × Base × Height" },
+      "bestFor": "Gabled areas, odd corners",
+      "isDefault": false
+    },
+    {
+      "id": "circle",
+      "name": "Circle Area",
+      "description": "Pi times radius squared.",
+      "formula": { "name": "Circle", "expression": "Area = π × r² ≈ 3.14159 × radius²" },
+      "bestFor": "Round rooms, pools, tanks",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "ANSI Z765 - Square Footage Standard", "type": "standard" }
+  ],
+  "footnotes": [
+    "1 sq ft = 144 sq inches = 0.0929 sq meters",
+    "Real estate often excludes unfinished spaces",
+    "Gross vs net area may differ by 15-20% for commercial"
+  ],
+  "lastReviewed": "2026-02-03"
+}

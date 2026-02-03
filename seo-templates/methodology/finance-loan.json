@@ -1,0 +1,87 @@
+{
+  "calculatorId": "finance/loan",
+  "title": "Loan & Auto Loan Methodology",
+  "overview": "Loan calculations use the same PMT formula as mortgages but typically involve shorter terms and different rate structures. Auto loans commonly range from 24-84 months.",
+  "methods": [
+    {
+      "id": "standard-amortization",
+      "name": "Standard Amortizing Loan",
+      "description": "Fixed monthly payments where each payment covers interest first, then principal. The interest portion decreases over time while principal portion increases.",
+      "formula": {
+        "name": "PMT Formula",
+        "expression": "Payment = P × [r(1+r)^n] / [(1+r)^n - 1]",
+        "variables": [
+          { "symbol": "P", "meaning": "Principal (loan amount)", "unit": "$" },
+          { "symbol": "r", "meaning": "Monthly interest rate", "unit": "decimal" },
+          { "symbol": "n", "meaning": "Number of payments", "unit": "months" }
+        ]
+      },
+      "accuracy": "Exact for fixed-rate loans",
+      "limitations": [
+        "Does not include fees or add-ons",
+        "Assumes fixed rate"
+      ],
+      "bestFor": "Personal loans, auto loans, standard financing",
+      "isDefault": true
+    },
+    {
+      "id": "simple-interest",
+      "name": "Simple Interest Loan",
+      "description": "Interest calculated only on the outstanding principal, not compounded. Common for auto loans and some personal loans.",
+      "formula": {
+        "name": "Simple Interest",
+        "expression": "Interest = Principal × Rate × Time",
+        "variables": [
+          { "symbol": "Principal", "meaning": "Amount borrowed", "unit": "$" },
+          { "symbol": "Rate", "meaning": "Annual interest rate", "unit": "%" },
+          { "symbol": "Time", "meaning": "Loan term", "unit": "years" }
+        ]
+      },
+      "accuracy": "Exact for simple interest loans",
+      "limitations": [
+        "Payment amount may vary slightly",
+        "Less common than amortizing"
+      ],
+      "bestFor": "Short-term loans, some auto financing",
+      "isDefault": false
+    },
+    {
+      "id": "balloon-payment",
+      "name": "Balloon Payment Loan",
+      "description": "Lower monthly payments with a large lump sum due at the end. Risky but can work for those planning to refinance or sell.",
+      "formula": {
+        "name": "Balloon Loan Structure",
+        "expression": "Monthly Payment = Interest-only or reduced amortization\nBalloon = Remaining balance at term end",
+        "description": "Final payment can be 20-80% of original loan"
+      },
+      "accuracy": "Depends on terms",
+      "limitations": [
+        "Risk of not being able to pay balloon",
+        "May be difficult to refinance",
+        "Higher total cost if refinanced"
+      ],
+      "bestFor": "Short-term ownership, business financing",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Consumer Financial Protection Bureau - Auto Loans",
+      "url": "https://www.consumerfinance.gov/consumer-tools/auto-loans/",
+      "type": "government"
+    },
+    {
+      "name": "Federal Reserve - Consumer Credit",
+      "url": "https://www.federalreserve.gov/releases/g19/current/",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "Auto loan rates depend heavily on credit score and loan-to-value ratio",
+    "New car loans typically have lower rates than used car loans",
+    "Longer terms mean lower payments but more total interest",
+    "Consider gap insurance for new vehicles"
+  ],
+  "disclaimer": "Loan calculations are estimates. Actual rates depend on creditworthiness, vehicle age, and lender policies. Shop multiple lenders for best rates.",
+  "lastReviewed": "2026-02-03"
+}

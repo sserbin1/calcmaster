@@ -1,0 +1,46 @@
+{
+  "calculatorId": "date-time/timezone",
+  "title": "Timezone Conversion Methodology",
+  "overview": "Timezone conversions adjust times between different UTC offsets. Daylight Saving Time (DST) adds complexity as offsets change seasonally in many regions.",
+  "methods": [
+    {
+      "id": "utc-offset",
+      "name": "UTC Offset Conversion",
+      "description": "Convert times by adding or subtracting the difference in UTC offsets.",
+      "formula": {
+        "name": "Timezone Conversion",
+        "expression": "Target Time = Source Time + (Target Offset - Source Offset)",
+        "description": "Offsets are hours from UTC (e.g., EST = -5, CET = +1)"
+      },
+      "accuracy": "Exact for given offsets",
+      "limitations": [
+        "DST changes offsets seasonally",
+        "Must know current DST status"
+      ],
+      "bestFor": "One-time conversions",
+      "isDefault": true
+    },
+    {
+      "id": "dst-aware",
+      "name": "DST-Aware Conversion",
+      "description": "Accounts for Daylight Saving Time changes which vary by region and year.",
+      "formula": {
+        "name": "DST Rules",
+        "expression": "US DST: 2nd Sunday March - 1st Sunday November\nEU DST: Last Sunday March - Last Sunday October\nMany regions don't observe DST",
+        "description": "Rules can change - use timezone database"
+      },
+      "accuracy": "Requires current timezone database",
+      "bestFor": "Scheduling across time zones",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "IANA Time Zone Database", "url": "https://www.iana.org/time-zones", "type": "standard" }
+  ],
+  "footnotes": [
+    "UTC never changes for DST - it's the universal reference",
+    "Some zones have 30 or 45 minute offsets (India: +5:30)",
+    "Arizona (except Navajo) doesn't observe DST"
+  ],
+  "lastReviewed": "2026-02-03"
+}

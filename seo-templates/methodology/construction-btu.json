@@ -1,0 +1,47 @@
+{
+  "calculatorId": "construction/btu",
+  "title": "BTU Calculation Methodology",
+  "overview": "BTU (British Thermal Unit) calculations size HVAC equipment for heating and cooling. Proper sizing ensures comfort and energy efficiency.",
+  "methods": [
+    {
+      "id": "rule-of-thumb",
+      "name": "Rule of Thumb Estimation",
+      "description": "Quick estimate: 20 BTU per square foot for cooling. Actual needs vary by climate and building.",
+      "formula": {
+        "name": "Basic BTU Estimate",
+        "expression": "Cooling BTU ≈ Square Footage × 20\nTons of AC = BTU / 12,000",
+        "description": "1 ton AC = 12,000 BTU/hour"
+      },
+      "accuracy": "±30%",
+      "limitations": [
+        "Ignores insulation, windows, climate",
+        "Only for quick estimates"
+      ],
+      "bestFor": "Quick rough estimates",
+      "isDefault": true
+    },
+    {
+      "id": "manual-j",
+      "name": "Manual J (ACCA Standard)",
+      "description": "Industry standard load calculation considering all factors: windows, insulation, orientation, climate zone, occupancy.",
+      "formula": {
+        "name": "Manual J Factors",
+        "expression": "Load = Base × Climate × Insulation × Windows × ...",
+        "description": "Comprehensive engineering calculation"
+      },
+      "accuracy": "±10% when done properly",
+      "bestFor": "Professional HVAC sizing",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "ACCA Manual J", "url": "https://www.acca.org/standards/manual-j", "type": "standard" },
+    { "name": "ASHRAE Fundamentals Handbook", "type": "standard" }
+  ],
+  "footnotes": [
+    "Oversized AC cycles too frequently, increasing humidity",
+    "Undersized equipment runs constantly, never reaching setpoint",
+    "High ceilings, large windows, and poor insulation increase load"
+  ],
+  "lastReviewed": "2026-02-03"
+}

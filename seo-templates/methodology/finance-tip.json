@@ -1,0 +1,86 @@
+{
+  "calculatorId": "finance/tip",
+  "title": "Tip Calculation Methodology",
+  "overview": "Tipping customs vary by country, service type, and dining format. In the US, tipping is customary and often comprises a significant portion of service workers' income.",
+  "methods": [
+    {
+      "id": "percentage-based",
+      "name": "Standard Percentage Method",
+      "description": "The most common approach: multiply the bill by a percentage based on service quality. Pre-tax amount is traditional, though post-tax has become common.",
+      "formula": {
+        "name": "Percentage Tip",
+        "expression": "Tip = Bill Amount × Tip Percentage",
+        "variables": [
+          { "symbol": "Bill Amount", "meaning": "Pre-tax or post-tax total", "unit": "$" },
+          { "symbol": "Tip Percentage", "meaning": "15-25% for restaurants", "unit": "%" }
+        ]
+      },
+      "accuracy": "Standard practice",
+      "limitations": [
+        "Pre-tax vs post-tax debate",
+        "Doesn't account for party size"
+      ],
+      "bestFor": "Standard restaurant dining",
+      "isDefault": true
+    },
+    {
+      "id": "service-based",
+      "name": "Service-Based Guidelines",
+      "description": "Different tip percentages based on service quality and type of establishment.",
+      "formula": {
+        "name": "Service Tiers",
+        "expression": "Poor service: 10-15%\nAverage service: 15-18%\nGood service: 18-20%\nExcellent service: 20-25%",
+        "description": "US restaurant standards"
+      },
+      "accuracy": "Socially accepted norms",
+      "limitations": [
+        "Subjective quality assessment",
+        "Regional variations"
+      ],
+      "bestFor": "Adjusting for service quality",
+      "isDefault": false
+    },
+    {
+      "id": "split-bill",
+      "name": "Split Bill Calculation",
+      "description": "Dividing total (including tip) among multiple people. Can split evenly or calculate per-person consumption.",
+      "formula": {
+        "name": "Even Split",
+        "expression": "Per Person = (Bill + Tip) / Number of People",
+        "variables": [
+          { "symbol": "Bill", "meaning": "Total bill amount", "unit": "$" },
+          { "symbol": "Tip", "meaning": "Total tip amount", "unit": "$" },
+          { "symbol": "Number of People", "meaning": "People splitting", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact for even splits",
+      "limitations": [
+        "May feel unfair if consumption varied",
+        "Doesn't account for who ordered what"
+      ],
+      "bestFor": "Group dining with similar orders",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Emily Post Institute - Tipping Guidelines",
+      "url": "https://emilypost.com/advice/general-tipping-guide",
+      "type": "organization"
+    },
+    {
+      "name": "US Bureau of Labor Statistics - Food Service Workers",
+      "url": "https://www.bls.gov/ooh/food-preparation-and-serving/",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "US servers often earn $2.13/hour base wage (federal tipped minimum)",
+    "Many countries (Japan, Korea) do not have tipping culture",
+    "Some US restaurants have moved to no-tipping models with higher wages",
+    "Delivery drivers: 15-20% or $5 minimum suggested",
+    "Hair stylists, spa services: 15-20% standard"
+  ],
+  "disclaimer": "Tipping norms vary by region and establishment. When traveling, research local customs. Some restaurants include gratuity for large parties.",
+  "lastReviewed": "2026-02-03"
+}

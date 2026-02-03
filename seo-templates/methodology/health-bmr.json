@@ -1,0 +1,98 @@
+{
+  "calculatorId": "health/bmr",
+  "title": "Basal Metabolic Rate (BMR) Methodology",
+  "overview": "BMR represents the minimum calories your body needs at complete rest to maintain vital functions like breathing, circulation, and cell production. It typically accounts for 60-75% of daily energy expenditure.",
+  "methods": [
+    {
+      "id": "mifflin-st-jeor",
+      "name": "Mifflin-St Jeor Equation",
+      "description": "The most accurate predictive equation for BMR according to systematic reviews. Recommended by the Academy of Nutrition and Dietetics for healthy adults.",
+      "formula": {
+        "name": "Mifflin-St Jeor",
+        "expression": "Men: BMR = (10 × weight) + (6.25 × height) - (5 × age) + 5\nWomen: BMR = (10 × weight) + (6.25 × height) - (5 × age) - 161",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Height", "unit": "cm" },
+          { "symbol": "age", "meaning": "Age", "unit": "years" }
+        ]
+      },
+      "accuracy": "±10% for 82% of individuals",
+      "limitations": [
+        "Assumes normal body composition",
+        "Less accurate at extreme weights",
+        "Does not account for metabolic adaptations"
+      ],
+      "bestFor": "General adult population",
+      "isDefault": true,
+      "yearIntroduced": 1990
+    },
+    {
+      "id": "harris-benedict-revised",
+      "name": "Harris-Benedict (Revised 1984)",
+      "description": "Updated version of the classic 1918 formula with improved coefficients based on modern data.",
+      "formula": {
+        "name": "Harris-Benedict Revised",
+        "expression": "Men: BMR = 88.362 + (13.397 × weight) + (4.799 × height) - (5.677 × age)\nWomen: BMR = 447.593 + (9.247 × weight) + (3.098 × height) - (4.330 × age)",
+        "variables": [
+          { "symbol": "weight", "meaning": "Body weight", "unit": "kg" },
+          { "symbol": "height", "meaning": "Height", "unit": "cm" },
+          { "symbol": "age", "meaning": "Age", "unit": "years" }
+        ]
+      },
+      "accuracy": "±10% for 69% of individuals",
+      "limitations": [
+        "Tends to overestimate BMR",
+        "Original 1918 coefficients were for different population"
+      ],
+      "bestFor": "Clinical settings using historical protocols",
+      "isDefault": false,
+      "yearIntroduced": 1984
+    },
+    {
+      "id": "cunningham",
+      "name": "Cunningham Equation",
+      "description": "A lean body mass-based equation that's particularly accurate for athletic populations with higher muscle mass.",
+      "formula": {
+        "name": "Cunningham",
+        "expression": "BMR = 500 + (22 × LBM)",
+        "variables": [
+          { "symbol": "LBM", "meaning": "Lean Body Mass (fat-free mass)", "unit": "kg" }
+        ]
+      },
+      "accuracy": "Best for athletes with known body composition",
+      "limitations": [
+        "Requires accurate body fat measurement",
+        "Less validated in general population"
+      ],
+      "bestFor": "Athletes and fitness enthusiasts",
+      "isDefault": false,
+      "yearIntroduced": 1991
+    }
+  ],
+  "sources": [
+    {
+      "name": "Mifflin et al. - American Journal of Clinical Nutrition",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2305711/",
+      "year": 1990,
+      "type": "study"
+    },
+    {
+      "name": "Frankenfield et al. - Systematic Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15883556/",
+      "year": 2005,
+      "type": "study"
+    },
+    {
+      "name": "Academy of Nutrition and Dietetics",
+      "url": "https://www.eatright.org/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "BMR differs from RMR (Resting Metabolic Rate) which is slightly higher",
+    "BMR decreases approximately 1-2% per decade after age 20",
+    "Muscle mass is the primary driver of BMR variation"
+  ],
+  "disclaimer": "BMR is an estimate. True BMR can only be measured via indirect calorimetry. Use as a starting point and adjust based on results.",
+  "lastReviewed": "2026-02-03"
+}

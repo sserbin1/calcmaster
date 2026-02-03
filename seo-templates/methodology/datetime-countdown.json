@@ -1,0 +1,28 @@
+{
+  "calculatorId": "date-time/countdown",
+  "title": "Countdown Timer Methodology",
+  "overview": "Countdown timers calculate remaining time to a future event with precision down to seconds. Real-time display requires accounting for computational delays and timezone accuracy.",
+  "methods": [
+    {
+      "id": "standard-countdown",
+      "name": "Standard Countdown",
+      "description": "Calculate days, hours, minutes, seconds until a target date/time.",
+      "formula": {
+        "name": "Time Remaining",
+        "expression": "Remaining = Target DateTime - Current DateTime\nDays = floor(Remaining / 86400)\nHours = floor((Remaining % 86400) / 3600)\nMinutes = floor((Remaining % 3600) / 60)\nSeconds = Remaining % 60",
+        "description": "Using seconds as base unit"
+      },
+      "accuracy": "Depends on system clock accuracy",
+      "bestFor": "Event countdowns, deadlines",
+      "isDefault": true
+    }
+  ],
+  "sources": [
+    { "name": "W3C Date/Time Standards", "type": "standard" }
+  ],
+  "footnotes": [
+    "Browser timestamps may drift - sync with server for precision",
+    "Account for timezone of target event vs user timezone"
+  ],
+  "lastReviewed": "2026-02-03"
+}

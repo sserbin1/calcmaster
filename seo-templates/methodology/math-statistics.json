@@ -1,0 +1,94 @@
+{
+  "calculatorId": "math/statistics",
+  "title": "Descriptive Statistics Methodology",
+  "overview": "Descriptive statistics summarize and describe data through measures of central tendency (mean, median, mode) and spread (range, IQR, standard deviation). These form the foundation of statistical analysis.",
+  "methods": [
+    {
+      "id": "central-tendency",
+      "name": "Measures of Central Tendency",
+      "description": "Values that represent the 'center' of a data set. Each measure has different properties and use cases.",
+      "formula": {
+        "name": "Central Tendency Measures",
+        "expression": "Mean (x̄) = Σxᵢ / n (arithmetic average)\nMedian = Middle value when sorted (n+1)/2 position\nMode = Most frequently occurring value",
+        "variables": [
+          { "symbol": "x̄", "meaning": "Sample mean (x-bar)", "unit": "" },
+          { "symbol": "n", "meaning": "Number of data points", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact calculations",
+      "limitations": [
+        "Mean sensitive to outliers",
+        "Mode may not exist or be unique",
+        "Median requires sorting"
+      ],
+      "bestFor": "Summarizing typical values",
+      "isDefault": true
+    },
+    {
+      "id": "spread",
+      "name": "Measures of Spread (Dispersion)",
+      "description": "Quantify how spread out the data is around the center.",
+      "formula": {
+        "name": "Spread Measures",
+        "expression": "Range = Maximum - Minimum\nIQR = Q₃ - Q₁ (Interquartile Range)\nVariance = Σ(xᵢ - x̄)² / (n-1)\nStandard Deviation = √Variance",
+        "variables": [
+          { "symbol": "Q₁", "meaning": "First quartile (25th percentile)", "unit": "" },
+          { "symbol": "Q₃", "meaning": "Third quartile (75th percentile)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Understanding data variability",
+      "isDefault": false
+    },
+    {
+      "id": "five-number-summary",
+      "name": "Five-Number Summary",
+      "description": "The foundation for box plots: minimum, Q1, median (Q2), Q3, and maximum.",
+      "formula": {
+        "name": "Five-Number Summary",
+        "expression": "Min, Q₁, Median, Q₃, Max\n\nQ₁ = Value at 25th percentile\nQ₂ = Median = 50th percentile\nQ₃ = Value at 75th percentile",
+        "description": "Provides complete picture of distribution shape"
+      },
+      "accuracy": "Exact for discrete data",
+      "bestFor": "Box plots, distribution overview",
+      "isDefault": false
+    },
+    {
+      "id": "percentiles",
+      "name": "Percentiles and Quartiles",
+      "description": "Values below which a given percentage of observations fall. Quartiles divide data into four equal parts.",
+      "formula": {
+        "name": "Percentile Calculation",
+        "expression": "Percentile rank position = (P/100) × (n + 1)\n\nQuartiles:\nQ₁ = 25th percentile\nQ₂ = 50th percentile (median)\nQ₃ = 75th percentile",
+        "description": "Multiple methods exist for interpolation"
+      },
+      "accuracy": "Method-dependent",
+      "limitations": [
+        "Different software may use different interpolation methods",
+        "Results can vary slightly"
+      ],
+      "bestFor": "Relative standing, comparison to population",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "NIST Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/",
+      "type": "government"
+    },
+    {
+      "name": "Khan Academy - Statistics",
+      "url": "https://www.khanacademy.org/math/statistics-probability",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "For normal distribution: Mean = Median = Mode",
+    "Right-skewed (positive): Mean > Median > Mode",
+    "Left-skewed (negative): Mean < Median < Mode",
+    "Outliers are often defined as values beyond 1.5 × IQR from Q1 or Q3"
+  ],
+  "disclaimer": "Descriptive statistics describe only the data provided. Inferential conclusions about larger populations require additional statistical methods.",
+  "lastReviewed": "2026-02-03"
+}

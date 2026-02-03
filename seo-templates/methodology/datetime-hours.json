@@ -1,0 +1,46 @@
+{
+  "calculatorId": "date-time/hours",
+  "title": "Hours Calculation Methodology",
+  "overview": "Work hours calculations track time for payroll, project management, and productivity. Understanding overtime rules and break deductions is crucial for accurate calculations.",
+  "methods": [
+    {
+      "id": "standard-hours",
+      "name": "Standard Hours Calculation",
+      "description": "Calculate total hours worked from start and end times, with optional break deduction.",
+      "formula": {
+        "name": "Hours Worked",
+        "expression": "Hours = (End Time - Start Time) - Break Time",
+        "description": "Convert to decimal hours for payroll"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Daily time tracking",
+      "isDefault": true
+    },
+    {
+      "id": "overtime",
+      "name": "Overtime Calculation (FLSA)",
+      "description": "US Fair Labor Standards Act requires 1.5x pay for hours over 40/week for non-exempt employees.",
+      "formula": {
+        "name": "Overtime Pay",
+        "expression": "Regular Pay = min(Hours, 40) × Rate\nOvertime Pay = max(0, Hours - 40) × Rate × 1.5",
+        "description": "Some states have daily overtime rules (e.g., CA: > 8 hrs/day)"
+      },
+      "accuracy": "Depends on applicable laws",
+      "limitations": [
+        "Rules vary by state/country",
+        "Exempt employees not covered"
+      ],
+      "bestFor": "Payroll calculations",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "US DOL - FLSA Overtime", "url": "https://www.dol.gov/agencies/whd/overtime", "type": "government" }
+  ],
+  "footnotes": [
+    "Decimal hours: 15 min = 0.25, 30 min = 0.5, 45 min = 0.75",
+    "Standard full-time: 40 hours/week (US)",
+    "California: Overtime after 8 hours/day or 40 hours/week"
+  ],
+  "lastReviewed": "2026-02-03"
+}

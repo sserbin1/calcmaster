@@ -1,0 +1,37 @@
+{
+  "calculatorId": "construction/concrete",
+  "title": "Concrete Volume Methodology",
+  "overview": "Concrete is ordered in cubic yards. Accurate volume calculation prevents costly over-ordering or project delays from under-ordering.",
+  "methods": [
+    {
+      "id": "slab-calculation",
+      "name": "Slab/Foundation Volume",
+      "description": "Volume equals length times width times depth, converted to cubic yards.",
+      "formula": {
+        "name": "Cubic Yards",
+        "expression": "Volume (cu yd) = (L × W × D) / 27\nWhere L, W, D are in feet\n27 cubic feet = 1 cubic yard",
+        "variables": [
+          { "symbol": "L", "meaning": "Length", "unit": "ft" },
+          { "symbol": "W", "meaning": "Width", "unit": "ft" },
+          { "symbol": "D", "meaning": "Depth/thickness", "unit": "ft" }
+        ]
+      },
+      "accuracy": "Exact for regular shapes",
+      "limitations": [
+        "Irregular shapes need breaking into sections"
+      ],
+      "bestFor": "Slabs, footings, foundations",
+      "isDefault": true
+    }
+  ],
+  "sources": [
+    { "name": "Portland Cement Association", "url": "https://www.cement.org/", "type": "organization" }
+  ],
+  "footnotes": [
+    "Always order 10% extra for waste/spillage",
+    "Standard slab: 4 inches thick, reinforced with wire mesh",
+    "Minimum delivery: often 1 cubic yard",
+    "Ready-mix concrete: ~$125-150 per cubic yard (varies by region)"
+  ],
+  "lastReviewed": "2026-02-03"
+}

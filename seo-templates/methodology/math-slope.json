@@ -1,0 +1,98 @@
+{
+  "calculatorId": "math/slope",
+  "title": "Slope Calculation Methodology",
+  "overview": "Slope measures the steepness and direction of a line. It represents the rate of change between two variables and is fundamental to linear algebra, calculus, and data analysis.",
+  "methods": [
+    {
+      "id": "two-points",
+      "name": "Slope from Two Points",
+      "description": "The most common method: calculate rise over run between two coordinate pairs.",
+      "formula": {
+        "name": "Slope Formula",
+        "expression": "m = (y₂ - y₁) / (x₂ - x₁) = Δy / Δx = rise / run",
+        "variables": [
+          { "symbol": "m", "meaning": "Slope", "unit": "" },
+          { "symbol": "(x₁, y₁)", "meaning": "First point coordinates", "unit": "" },
+          { "symbol": "(x₂, y₂)", "meaning": "Second point coordinates", "unit": "" },
+          { "symbol": "Δ", "meaning": "Change (delta)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Undefined for vertical lines (x₁ = x₂)",
+        "Order of points doesn't matter (sign is preserved)"
+      ],
+      "bestFor": "Most slope calculations",
+      "isDefault": true
+    },
+    {
+      "id": "slope-intercept",
+      "name": "Slope-Intercept Form",
+      "description": "The standard form of a linear equation where slope and y-intercept are immediately visible.",
+      "formula": {
+        "name": "Slope-Intercept Form",
+        "expression": "y = mx + b",
+        "variables": [
+          { "symbol": "m", "meaning": "Slope", "unit": "" },
+          { "symbol": "b", "meaning": "y-intercept (where line crosses y-axis)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Cannot represent vertical lines",
+        "May need rearranging from other forms"
+      ],
+      "bestFor": "Graphing, quick identification of slope",
+      "isDefault": false
+    },
+    {
+      "id": "point-slope",
+      "name": "Point-Slope Form",
+      "description": "Useful when you know a point on the line and the slope. Easy to convert to slope-intercept.",
+      "formula": {
+        "name": "Point-Slope Form",
+        "expression": "y - y₁ = m(x - x₁)",
+        "variables": [
+          { "symbol": "m", "meaning": "Slope", "unit": "" },
+          { "symbol": "(x₁, y₁)", "meaning": "Known point on line", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Writing equation when slope and a point are known",
+      "isDefault": false
+    },
+    {
+      "id": "parallel-perpendicular",
+      "name": "Parallel & Perpendicular Slopes",
+      "description": "Parallel lines have equal slopes. Perpendicular lines have slopes that are negative reciprocals.",
+      "formula": {
+        "name": "Slope Relationships",
+        "expression": "Parallel: m₁ = m₂\nPerpendicular: m₁ × m₂ = -1 (or m₂ = -1/m₁)",
+        "description": "Example: If m₁ = 2, perpendicular slope is -1/2"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Geometry, finding related lines",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Khan Academy - Slope",
+      "url": "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:linear-equations-graphs",
+      "type": "organization"
+    },
+    {
+      "name": "Descartes - La Géométrie (1637)",
+      "type": "book"
+    }
+  ],
+  "footnotes": [
+    "Slope of 0 = horizontal line",
+    "Undefined slope = vertical line",
+    "Positive slope: line rises left to right",
+    "Negative slope: line falls left to right",
+    "Slope in calculus: derivative gives instantaneous slope"
+  ],
+  "disclaimer": "Slope calculations assume Cartesian coordinates on a flat plane. Results may differ in non-Euclidean geometry or with significant measurement error.",
+  "lastReviewed": "2026-02-03"
+}

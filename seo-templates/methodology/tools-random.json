@@ -1,0 +1,47 @@
+{
+  "calculatorId": "fun/random-number",
+  "title": "Random Number Generation Methodology",
+  "overview": "Random number generators produce unpredictable values for games, simulations, cryptography, and statistical sampling. Understanding the difference between pseudo-random and true random is important for security applications.",
+  "methods": [
+    {
+      "id": "prng",
+      "name": "Pseudo-Random Number Generator (PRNG)",
+      "description": "Algorithmic generators that produce sequences appearing random but are deterministic given the seed. Fast and suitable for most applications.",
+      "formula": {
+        "name": "Linear Congruential Generator (Example)",
+        "expression": "X(n+1) = (a × X(n) + c) mod m",
+        "description": "Many algorithms exist: LCG, Mersenne Twister, xorshift"
+      },
+      "accuracy": "Statistically random, not cryptographically secure",
+      "limitations": [
+        "Deterministic if seed is known",
+        "Not suitable for cryptography or gambling"
+      ],
+      "bestFor": "Games, simulations, non-security applications",
+      "isDefault": true
+    },
+    {
+      "id": "csprng",
+      "name": "Cryptographically Secure PRNG (CSPRNG)",
+      "description": "Generators designed for security applications where unpredictability is critical.",
+      "formula": {
+        "name": "CSPRNG Sources",
+        "expression": "Uses: Hardware entropy, OS random device (/dev/urandom)\nAlgorithms: ChaCha20, AES-CTR, SHA-256 based",
+        "description": "Passes all statistical tests + unpredictable"
+      },
+      "accuracy": "Cryptographically secure",
+      "bestFor": "Security keys, gambling, anything requiring true unpredictability",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "NIST SP 800-90A Random Number Generation", "type": "government" },
+    { "name": "Random.org - True Random Service", "url": "https://www.random.org/", "type": "organization" }
+  ],
+  "footnotes": [
+    "JavaScript Math.random() is PRNG, not cryptographically secure",
+    "crypto.getRandomValues() provides CSPRNG in browsers",
+    "True randomness requires physical processes (thermal noise, radioactive decay)"
+  ],
+  "lastReviewed": "2026-02-03"
+}

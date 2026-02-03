@@ -1,0 +1,101 @@
+{
+  "calculatorId": "math/std-dev",
+  "title": "Standard Deviation Methodology",
+  "overview": "Standard deviation measures how spread out data points are from the mean. It's the most common measure of variability in statistics, used in everything from quality control to financial analysis.",
+  "methods": [
+    {
+      "id": "population-sd",
+      "name": "Population Standard Deviation (σ)",
+      "description": "Used when you have data for the entire population of interest. Divides by N (the population size).",
+      "formula": {
+        "name": "Population SD",
+        "expression": "σ = √[Σ(xᵢ - μ)² / N]",
+        "variables": [
+          { "symbol": "σ", "meaning": "Population standard deviation", "unit": "" },
+          { "symbol": "xᵢ", "meaning": "Each data value", "unit": "" },
+          { "symbol": "μ", "meaning": "Population mean", "unit": "" },
+          { "symbol": "N", "meaning": "Population size", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact for populations",
+      "limitations": [
+        "Rarely have true complete population data",
+        "Underestimates variability when used on samples"
+      ],
+      "bestFor": "Census data, complete data sets",
+      "isDefault": false
+    },
+    {
+      "id": "sample-sd",
+      "name": "Sample Standard Deviation (s)",
+      "description": "Used when you have a sample from a larger population. Uses Bessel's correction (n-1) to provide an unbiased estimate.",
+      "formula": {
+        "name": "Sample SD",
+        "expression": "s = √[Σ(xᵢ - x̄)² / (n - 1)]",
+        "variables": [
+          { "symbol": "s", "meaning": "Sample standard deviation", "unit": "" },
+          { "symbol": "xᵢ", "meaning": "Each data value", "unit": "" },
+          { "symbol": "x̄", "meaning": "Sample mean", "unit": "" },
+          { "symbol": "n - 1", "meaning": "Degrees of freedom (Bessel's correction)", "unit": "" }
+        ]
+      },
+      "accuracy": "Unbiased estimator of population SD",
+      "limitations": [
+        "Less accurate with very small samples",
+        "Assumes random sampling"
+      ],
+      "bestFor": "Most real-world applications, samples from populations",
+      "isDefault": true
+    },
+    {
+      "id": "variance",
+      "name": "Variance (σ² or s²)",
+      "description": "The square of standard deviation. Useful in some statistical calculations but harder to interpret since units are squared.",
+      "formula": {
+        "name": "Variance",
+        "expression": "Variance = (Standard Deviation)²\nσ² = Σ(xᵢ - μ)² / N (population)\ns² = Σ(xᵢ - x̄)² / (n-1) (sample)",
+        "description": "Units are squared (e.g., dollars² for financial data)"
+      },
+      "accuracy": "Exact",
+      "bestFor": "ANOVA, mathematical derivations",
+      "isDefault": false
+    },
+    {
+      "id": "cv",
+      "name": "Coefficient of Variation (CV)",
+      "description": "Standard deviation relative to the mean, expressed as a percentage. Useful for comparing variability across data sets with different units or scales.",
+      "formula": {
+        "name": "CV Formula",
+        "expression": "CV = (Standard Deviation / Mean) × 100%",
+        "description": "Allows comparison of variability across different scales"
+      },
+      "accuracy": "Exact calculation",
+      "limitations": [
+        "Meaningless if mean is zero or near zero",
+        "Only valid for ratio scale data"
+      ],
+      "bestFor": "Comparing variability across different data sets",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "NIST/SEMATECH Statistics Handbook",
+      "url": "https://www.itl.nist.gov/div898/handbook/",
+      "type": "government"
+    },
+    {
+      "name": "Bessel, F.W. - Correction for Bias",
+      "year": 1827,
+      "type": "study"
+    }
+  ],
+  "footnotes": [
+    "68-95-99.7 rule: ~68% within 1 SD, ~95% within 2 SD, ~99.7% within 3 SD",
+    "This rule applies to normal (Gaussian) distributions",
+    "Bessel's correction (n-1) provides unbiased estimate of population variance",
+    "In finance, SD often called 'volatility'"
+  ],
+  "disclaimer": "Standard deviation assumes data follows certain patterns. For highly skewed data, consider median absolute deviation or interquartile range.",
+  "lastReviewed": "2026-02-03"
+}

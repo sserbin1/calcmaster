@@ -1,0 +1,90 @@
+{
+  "calculatorId": "health/ovulation",
+  "title": "Ovulation Calculation Methodology",
+  "overview": "Ovulation calculators estimate the fertile window based on menstrual cycle patterns. While useful for family planning, they are not reliable for contraception due to natural cycle variability.",
+  "methods": [
+    {
+      "id": "calendar-method",
+      "name": "Calendar Method (Rhythm Method)",
+      "description": "The standard calculation assumes ovulation occurs 14 days before the next expected period. The fertile window spans 5 days before ovulation through 1 day after.",
+      "formula": {
+        "name": "Standard Calendar Calculation",
+        "expression": "Ovulation Day = Cycle Start + (Cycle Length - 14)\nFertile Window = Ovulation Day - 5 to Ovulation Day + 1",
+        "variables": [
+          { "symbol": "Cycle Length", "meaning": "Days from first day of period to next period", "unit": "days" },
+          { "symbol": "14", "meaning": "Luteal phase length (fairly constant)", "unit": "days" }
+        ]
+      },
+      "accuracy": "±2-4 days in regular cycles",
+      "limitations": [
+        "Assumes consistent 14-day luteal phase",
+        "Does not account for cycle variability",
+        "Unreliable for irregular cycles",
+        "Not recommended for contraception"
+      ],
+      "bestFor": "Planning conception with regular cycles",
+      "isDefault": true
+    },
+    {
+      "id": "variable-luteal",
+      "name": "Variable Luteal Phase Method",
+      "description": "Accounts for the fact that luteal phase can vary between 10-16 days, creating a wider potential ovulation window.",
+      "formula": {
+        "name": "Variable Calculation",
+        "expression": "Earliest Ovulation = Cycle Length - 16\nLatest Ovulation = Cycle Length - 10\nExtended Fertile Window = Earliest - 5 to Latest + 1",
+        "description": "Creates wider window for more conservative estimate"
+      },
+      "accuracy": "More conservative but captures actual ovulation better",
+      "limitations": [
+        "Creates very wide fertile window",
+        "Still statistical, not biological detection"
+      ],
+      "bestFor": "Conservative family planning",
+      "isDefault": false
+    },
+    {
+      "id": "symptothermal",
+      "name": "Symptothermal Method (Reference)",
+      "description": "Combines calendar calculation with basal body temperature (BBT) and cervical mucus observations for higher accuracy.",
+      "formula": {
+        "name": "Multi-Factor Method",
+        "expression": "Calendar baseline + BBT shift confirmation + Cervical mucus changes",
+        "description": "Temperature rises 0.3-0.6°C after ovulation; mucus becomes clear and stretchy at peak fertility"
+      },
+      "accuracy": "95-99% with proper training",
+      "limitations": [
+        "Requires daily tracking",
+        "Needs training to interpret signs",
+        "This calculator provides calendar only"
+      ],
+      "bestFor": "Fertility awareness with full tracking",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "ACOG - American College of Obstetricians and Gynecologists",
+      "url": "https://www.acog.org/womens-health/faqs/fertility-awareness-based-methods-of-family-planning",
+      "type": "organization"
+    },
+    {
+      "name": "Wilcox et al. - Timing of Intercourse and Fertility",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJM199512073332301",
+      "year": 1995,
+      "type": "study"
+    },
+    {
+      "name": "Stanford et al. - Cervical Mucus Patterns",
+      "year": 2003,
+      "type": "study"
+    }
+  ],
+  "footnotes": [
+    "Sperm can survive up to 5 days in the reproductive tract",
+    "The egg is viable for only 12-24 hours after ovulation",
+    "Cycle length can vary month to month even in 'regular' cycles",
+    "For accurate tracking, consider BBT, OPK tests, or cervical mucus monitoring"
+  ],
+  "disclaimer": "This calculator provides estimates only and should NOT be used as a contraceptive method. It is not accurate enough to prevent pregnancy. For family planning, consult a healthcare provider.",
+  "lastReviewed": "2026-02-03"
+}

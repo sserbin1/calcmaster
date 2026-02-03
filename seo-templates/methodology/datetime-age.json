@@ -1,0 +1,60 @@
+{
+  "calculatorId": "date-time/age",
+  "title": "Age Calculation Methodology",
+  "overview": "Age calculation determines exact years, months, and days between two dates. While seemingly simple, accurate calculation must account for varying month lengths, leap years, and timezone considerations.",
+  "methods": [
+    {
+      "id": "standard-age",
+      "name": "Standard Age Calculation",
+      "description": "Calculates complete years since birth date. This is the social/legal definition of age - you turn a year older on your birthday.",
+      "formula": {
+        "name": "Year-Based Age",
+        "expression": "Age = Current Year - Birth Year - (if birthday hasn't occurred this year: 1, else: 0)",
+        "description": "Age increments on birthday anniversary"
+      },
+      "accuracy": "Standard social convention",
+      "bestFor": "Legal age, social contexts",
+      "isDefault": true
+    },
+    {
+      "id": "exact-age",
+      "name": "Exact Age (Years, Months, Days)",
+      "description": "Precise calculation of full years, remaining months, and remaining days.",
+      "formula": {
+        "name": "Exact Age Breakdown",
+        "expression": "Years = floor(total days / 365.25)\nMonths = floor(remaining days / 30.44)\nDays = remaining days after months",
+        "description": "Accounts for leap years (365.25 average)"
+      },
+      "accuracy": "Approximate due to variable month lengths",
+      "limitations": [
+        "Month lengths vary (28-31 days)",
+        "Feb 29 birthdays have special handling"
+      ],
+      "bestFor": "Detailed age breakdowns",
+      "isDefault": false
+    },
+    {
+      "id": "decimal-age",
+      "name": "Decimal Age",
+      "description": "Age as a single decimal number, useful for scientific and medical applications.",
+      "formula": {
+        "name": "Decimal Age",
+        "expression": "Decimal Age = Total Days Since Birth / 365.25",
+        "description": "Example: 30.5 years old"
+      },
+      "accuracy": "Precise for calculations",
+      "bestFor": "Scientific applications, pediatric growth charts",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "ISO 8601 Date Standard", "type": "standard" },
+    { "name": "CDC Pediatric Growth Charts", "url": "https://www.cdc.gov/growthcharts/", "type": "government" }
+  ],
+  "footnotes": [
+    "Leap years: divisible by 4, except centuries unless divisible by 400",
+    "Korean age system adds 1 year at birth and 1 year every Jan 1",
+    "Feb 29 birthdays: most celebrate on Feb 28 or Mar 1 in non-leap years"
+  ],
+  "lastReviewed": "2026-02-03"
+}

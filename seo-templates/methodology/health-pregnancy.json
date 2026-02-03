@@ -1,0 +1,90 @@
+{
+  "calculatorId": "health/pregnancy",
+  "title": "Pregnancy Week & Trimester Methodology",
+  "overview": "Pregnancy is divided into three trimesters spanning approximately 40 weeks (280 days). Understanding pregnancy stages helps track fetal development and anticipate milestones.",
+  "methods": [
+    {
+      "id": "standard-dating",
+      "name": "Standard Gestational Dating",
+      "description": "Pregnancy weeks are counted from the first day of the last menstrual period (LMP), even though conception typically occurs about 2 weeks later.",
+      "formula": {
+        "name": "Gestational Age Calculation",
+        "expression": "Gestational Age (weeks) = (Today - LMP) / 7",
+        "variables": [
+          { "symbol": "LMP", "meaning": "First day of Last Menstrual Period", "unit": "date" },
+          { "symbol": "Today", "meaning": "Current date", "unit": "date" }
+        ]
+      },
+      "accuracy": "Standard clinical convention",
+      "limitations": [
+        "Fetal age is ~2 weeks less than gestational age",
+        "Assumes conception 2 weeks after LMP"
+      ],
+      "bestFor": "Clinical pregnancy dating",
+      "isDefault": true
+    },
+    {
+      "id": "trimester-definition",
+      "name": "Trimester Definitions",
+      "description": "Standard trimester divisions used by ACOG and most healthcare providers.",
+      "formula": {
+        "name": "Trimester Weeks",
+        "expression": "First Trimester: Weeks 1-12 (Months 1-3)\nSecond Trimester: Weeks 13-26 (Months 4-6)\nThird Trimester: Weeks 27-40 (Months 7-9)",
+        "description": "Each trimester spans approximately 13-14 weeks"
+      },
+      "accuracy": "Clinical standard",
+      "limitations": [
+        "Some sources use slightly different week boundaries",
+        "WHO defines first trimester as weeks 1-14"
+      ],
+      "bestFor": "General pregnancy tracking",
+      "isDefault": false
+    },
+    {
+      "id": "fetal-age",
+      "name": "Fetal Age (Conceptional Age)",
+      "description": "The actual age of the developing baby from conception. Always about 2 weeks less than gestational age.",
+      "formula": {
+        "name": "Fetal Age Calculation",
+        "expression": "Fetal Age = Gestational Age - 2 weeks\nOr: (Today - Conception Date) / 7",
+        "variables": [
+          { "symbol": "Gestational Age", "meaning": "Weeks from LMP", "unit": "weeks" }
+        ]
+      },
+      "accuracy": "True developmental age",
+      "limitations": [
+        "Requires knowing conception date for accuracy",
+        "Not commonly used in clinical settings"
+      ],
+      "bestFor": "Understanding true fetal development stage",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "ACOG - Methods for Estimating the Due Date",
+      "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date",
+      "year": 2017,
+      "type": "organization"
+    },
+    {
+      "name": "WHO - Maternal and Perinatal Health",
+      "url": "https://www.who.int/health-topics/maternal-health",
+      "type": "organization"
+    },
+    {
+      "name": "Mayo Clinic Pregnancy Guide",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Week 1-2: Before conception actually occurs (dating convention)",
+    "Week 4: Missed period, earliest positive pregnancy test",
+    "Week 8-12: First ultrasound, heartbeat detection",
+    "Week 20: Anatomy scan, often gender determination",
+    "Week 37+: Considered full term"
+  ],
+  "disclaimer": "This calculator provides general information. Pregnancy milestones vary between individuals. Always consult your healthcare provider for personalized medical guidance.",
+  "lastReviewed": "2026-02-03"
+}

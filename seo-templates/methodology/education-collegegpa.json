@@ -1,0 +1,45 @@
+{
+  "calculatorId": "education/college-gpa",
+  "title": "College GPA Methodology",
+  "overview": "College GPA calculations are typically unweighted on a 4.0 scale, weighted by credit hours. Cumulative GPA spans all semesters, while semester GPA covers one term.",
+  "methods": [
+    {
+      "id": "cumulative-gpa",
+      "name": "Cumulative GPA",
+      "description": "Overall GPA across all completed coursework.",
+      "formula": {
+        "name": "Cumulative GPA",
+        "expression": "Cum GPA = Total Grade Points / Total Credit Hours\nGrade Points = Grade × Credit Hours per course",
+        "variables": [
+          { "symbol": "Grade", "meaning": "A=4, A-=3.7, B+=3.3, etc.", "unit": "points" },
+          { "symbol": "Credit Hours", "meaning": "Course weight (typically 1-5)", "unit": "hours" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Overall academic standing, graduation requirements",
+      "isDefault": true
+    },
+    {
+      "id": "semester-gpa",
+      "name": "Semester GPA",
+      "description": "GPA for a single term, used to track progress and academic standing.",
+      "formula": {
+        "name": "Term GPA",
+        "expression": "Semester GPA = Term Grade Points / Term Credit Hours",
+        "description": "Calculated fresh each semester"
+      },
+      "bestFor": "Term performance, probation evaluation",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "AACRAO Academic Standards", "url": "https://www.aacrao.org/", "type": "organization" }
+  ],
+  "footnotes": [
+    "Transfer credits may or may not factor into GPA",
+    "Plus/minus grading varies by institution",
+    "Graduate schools often require 3.0+ GPA",
+    "Dean's List typically requires 3.5+ semester GPA"
+  ],
+  "lastReviewed": "2026-02-03"
+}

@@ -1,0 +1,83 @@
+{
+  "calculatorId": "finance/tax",
+  "title": "Income Tax Calculation Methodology",
+  "overview": "US federal income tax uses a progressive bracket system where different portions of income are taxed at different rates. Understanding marginal vs effective tax rates is crucial for financial planning.",
+  "methods": [
+    {
+      "id": "progressive-brackets",
+      "name": "Progressive Tax Bracket System",
+      "description": "Income is taxed in tiers: each bracket applies only to income within that range. Your top bracket (marginal rate) is higher than your overall (effective) rate.",
+      "formula": {
+        "name": "2024 Federal Tax Brackets (Single)",
+        "expression": "10%: $0 - $11,600\n12%: $11,601 - $47,150\n22%: $47,151 - $100,525\n24%: $100,526 - $191,950\n32%: $191,951 - $243,725\n35%: $243,726 - $609,350\n37%: $609,351+",
+        "description": "Each bracket applies only to income in that range"
+      },
+      "accuracy": "Exact for federal tax before credits",
+      "limitations": [
+        "Doesn't include state/local taxes",
+        "Doesn't account for deductions or credits",
+        "Brackets change annually"
+      ],
+      "bestFor": "Federal income tax estimation",
+      "isDefault": true
+    },
+    {
+      "id": "effective-rate",
+      "name": "Effective Tax Rate Calculation",
+      "description": "Your actual tax burden as a percentage of total income. Always lower than your marginal rate due to progressive structure.",
+      "formula": {
+        "name": "Effective Tax Rate",
+        "expression": "Effective Rate = Total Tax Paid / Taxable Income × 100",
+        "variables": [
+          { "symbol": "Total Tax Paid", "meaning": "Sum of taxes across all brackets", "unit": "$" },
+          { "symbol": "Taxable Income", "meaning": "AGI minus deductions", "unit": "$" }
+        ]
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Varies significantly by deductions",
+        "Tax credits reduce further"
+      ],
+      "bestFor": "Understanding true tax burden",
+      "isDefault": false
+    },
+    {
+      "id": "standard-vs-itemized",
+      "name": "Standard vs Itemized Deduction",
+      "description": "Choose the higher of standard deduction or sum of itemized deductions. Most taxpayers (~90%) use standard deduction after 2017 tax law changes.",
+      "formula": {
+        "name": "2024 Standard Deductions",
+        "expression": "Single: $14,600\nMarried Filing Jointly: $29,200\nHead of Household: $21,900\nMarried Filing Separately: $14,600",
+        "description": "Additional $1,950 for 65+ or blind (single), $1,550 (married)"
+      },
+      "accuracy": "Fixed amounts",
+      "limitations": [
+        "Itemizing only benefits if deductions exceed standard",
+        "SALT deduction capped at $10,000"
+      ],
+      "bestFor": "Choosing deduction method",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "IRS - Tax Brackets and Rates",
+      "url": "https://www.irs.gov/newsroom/irs-provides-tax-inflation-adjustments-for-tax-year-2024",
+      "year": 2024,
+      "type": "government"
+    },
+    {
+      "name": "Tax Foundation - Tax Basics",
+      "url": "https://taxfoundation.org/taxedu/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Marginal rate: rate on your next dollar of income",
+    "Effective rate: actual percentage of income paid in taxes",
+    "AGI (Adjusted Gross Income) = Total income minus above-the-line deductions",
+    "Tax brackets are adjusted annually for inflation"
+  ],
+  "disclaimer": "Tax calculations are estimates for educational purposes. Your actual tax liability depends on many factors. Consult a qualified tax professional for personal tax advice.",
+  "lastReviewed": "2026-02-03"
+}

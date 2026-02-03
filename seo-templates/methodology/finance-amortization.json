@@ -1,0 +1,83 @@
+{
+  "calculatorId": "finance/amortization",
+  "title": "Amortization Schedule Methodology",
+  "overview": "Amortization schedules show how each loan payment is split between principal and interest over time. Understanding this helps borrowers see how extra payments can save interest.",
+  "methods": [
+    {
+      "id": "french-amortization",
+      "name": "French (Standard) Amortization",
+      "description": "Equal total payments throughout the loan term. Early payments are mostly interest; later payments are mostly principal. This is the standard method in the US.",
+      "formula": {
+        "name": "Standard Amortization",
+        "expression": "Payment = P × [r(1+r)^n] / [(1+r)^n - 1]\n\nInterest_t = Remaining Balance × Monthly Rate\nPrincipal_t = Payment - Interest_t",
+        "variables": [
+          { "symbol": "P", "meaning": "Original principal", "unit": "$" },
+          { "symbol": "r", "meaning": "Monthly interest rate", "unit": "decimal" },
+          { "symbol": "n", "meaning": "Total payments", "unit": "months" }
+        ]
+      },
+      "accuracy": "Exact standard calculation",
+      "limitations": [
+        "Higher interest cost in early years",
+        "Building equity is slow initially"
+      ],
+      "bestFor": "Standard mortgages and loans",
+      "isDefault": true
+    },
+    {
+      "id": "german-amortization",
+      "name": "German (Constant Principal) Amortization",
+      "description": "Equal principal payments plus declining interest. Total payment decreases over time. Common in some European countries and commercial loans.",
+      "formula": {
+        "name": "German Method",
+        "expression": "Principal_t = Original Principal / n (constant)\nInterest_t = Remaining Balance × Monthly Rate\nPayment_t = Principal_t + Interest_t (decreasing)",
+        "description": "Principal portion is constant; interest portion decreases"
+      },
+      "accuracy": "Exact for this method",
+      "limitations": [
+        "Higher initial payments",
+        "Less predictable budgeting early on"
+      ],
+      "bestFor": "Borrowers who can afford higher initial payments",
+      "isDefault": false
+    },
+    {
+      "id": "american-bullet",
+      "name": "American (Bullet/Interest-Only)",
+      "description": "Interest-only payments throughout the term, with entire principal due at maturity. High risk but can work for specific situations.",
+      "formula": {
+        "name": "Bullet Loan",
+        "expression": "Monthly Payment = Principal × Monthly Rate (interest only)\nFinal Payment = Full Principal + Last Interest",
+        "description": "No principal reduction until maturity"
+      },
+      "accuracy": "Exact for interest-only loans",
+      "limitations": [
+        "No equity built during loan term",
+        "Large balloon payment at end",
+        "Refinancing risk"
+      ],
+      "bestFor": "Short-term financing, bridge loans",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "CFPB - Understanding Loan Costs",
+      "url": "https://www.consumerfinance.gov/owning-a-home/loan-estimate/",
+      "type": "government"
+    },
+    {
+      "name": "Investopedia - Amortization",
+      "url": "https://www.investopedia.com/terms/a/amortization.asp",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Extra principal payments reduce total interest significantly",
+    "Biweekly payments (26 half-payments/year) = 13 monthly payments",
+    "Early payoff saves the most interest in the first half of the loan",
+    "Refinancing resets the amortization clock"
+  ],
+  "disclaimer": "Amortization schedules assume fixed interest rates and regular payments. Actual schedules may vary based on loan terms and payment timing.",
+  "lastReviewed": "2026-02-03"
+}

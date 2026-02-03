@@ -1,0 +1,33 @@
+{
+  "calculatorId": "education/weighted-gpa",
+  "title": "Weighted GPA Methodology",
+  "overview": "Weighted GPA adds bonus points for advanced courses (Honors, AP, IB) to recognize course rigor. Schools use this for class rank and college preparation assessment.",
+  "methods": [
+    {
+      "id": "standard-weighting",
+      "name": "Standard Weighting System",
+      "description": "Add 0.5 points for Honors courses and 1.0 points for AP/IB courses to the standard 4.0 scale.",
+      "formula": {
+        "name": "Course Weighting",
+        "expression": "Regular: A=4, B=3, C=2, D=1, F=0\nHonors: Add +0.5 (A=4.5)\nAP/IB: Add +1.0 (A=5.0)\n\nWeighted GPA = Σ(Weighted Grade × Credits) / Σ(Credits)",
+        "description": "Allows GPA above 4.0"
+      },
+      "accuracy": "School-specific",
+      "limitations": [
+        "Weighting policies vary by school",
+        "Colleges often recalculate on their own scale"
+      ],
+      "bestFor": "High school class rank, rigor recognition",
+      "isDefault": true
+    }
+  ],
+  "sources": [
+    { "name": "College Board - Weighted GPA", "url": "https://www.collegeboard.org/", "type": "organization" }
+  ],
+  "footnotes": [
+    "Not all schools weight grades - some use unweighted only",
+    "Taking harder classes with lower grades may hurt GPA but shows rigor",
+    "Colleges consider both weighted and unweighted GPA"
+  ],
+  "lastReviewed": "2026-02-03"
+}

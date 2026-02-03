@@ -1,0 +1,108 @@
+{
+  "calculatorId": "finance/roi",
+  "title": "Return on Investment (ROI) Methodology",
+  "overview": "ROI measures the profitability of an investment relative to its cost. While simple ROI is intuitive, annualized returns and IRR provide better comparisons across different time periods.",
+  "methods": [
+    {
+      "id": "simple-roi",
+      "name": "Simple ROI",
+      "description": "The basic formula showing total return as a percentage of initial investment. Easy to calculate but doesn't account for time.",
+      "formula": {
+        "name": "Simple ROI Formula",
+        "expression": "ROI = (Current Value - Cost) / Cost × 100\nOr: ROI = (Gain) / Cost × 100",
+        "variables": [
+          { "symbol": "Current Value", "meaning": "Current worth of investment", "unit": "$" },
+          { "symbol": "Cost", "meaning": "Initial investment amount", "unit": "$" },
+          { "symbol": "Gain", "meaning": "Profit (Current Value - Cost)", "unit": "$" }
+        ]
+      },
+      "accuracy": "Accurate for simple scenarios",
+      "limitations": [
+        "Ignores time period",
+        "Can't compare investments of different durations",
+        "Doesn't account for cash flows"
+      ],
+      "bestFor": "Quick, single-period calculations",
+      "isDefault": true
+    },
+    {
+      "id": "annualized-roi",
+      "name": "Annualized ROI (CAGR)",
+      "description": "Compound Annual Growth Rate shows the steady yearly return that would produce the same final result. Better for comparing investments over different time periods.",
+      "formula": {
+        "name": "CAGR Formula",
+        "expression": "CAGR = ((End Value / Start Value)^(1/years) - 1) × 100",
+        "variables": [
+          { "symbol": "End Value", "meaning": "Final investment value", "unit": "$" },
+          { "symbol": "Start Value", "meaning": "Initial investment", "unit": "$" },
+          { "symbol": "years", "meaning": "Investment holding period", "unit": "years" }
+        ]
+      },
+      "accuracy": "Good for comparing different duration investments",
+      "limitations": [
+        "Assumes reinvestment of returns",
+        "Doesn't show volatility",
+        "Ignores intermediate cash flows"
+      ],
+      "bestFor": "Comparing investments over different periods",
+      "isDefault": false
+    },
+    {
+      "id": "irr",
+      "name": "Internal Rate of Return (IRR)",
+      "description": "The discount rate that makes the net present value of all cash flows equal to zero. Essential for investments with multiple cash flows.",
+      "formula": {
+        "name": "IRR Calculation",
+        "expression": "NPV = Σ (Cash Flow_t / (1 + IRR)^t) = 0\nSolve for IRR",
+        "description": "Usually solved iteratively (no closed-form solution)"
+      },
+      "accuracy": "Most comprehensive for complex cash flows",
+      "limitations": [
+        "Assumes reinvestment at IRR rate",
+        "Multiple IRR solutions possible",
+        "Complex to calculate manually"
+      ],
+      "bestFor": "Real estate, business investments with cash flows",
+      "isDefault": false
+    },
+    {
+      "id": "total-return",
+      "name": "Total Return (Including Dividends)",
+      "description": "Includes both price appreciation and income (dividends, interest). Essential for fair comparison of stocks vs bonds.",
+      "formula": {
+        "name": "Total Return",
+        "expression": "Total Return = (End Price - Start Price + Income) / Start Price × 100",
+        "variables": [
+          { "symbol": "Income", "meaning": "Dividends, interest, distributions", "unit": "$" }
+        ]
+      },
+      "accuracy": "Complete picture of investment return",
+      "limitations": [
+        "Must track all income received",
+        "Tax treatment varies by income type"
+      ],
+      "bestFor": "Dividend stocks, bonds, REITs",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "CFA Institute - Return Calculation",
+      "url": "https://www.cfainstitute.org/",
+      "type": "organization"
+    },
+    {
+      "name": "SEC - Investor Education",
+      "url": "https://www.investor.gov/",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "Real return = Nominal return - Inflation",
+    "After-tax return matters more than pre-tax for taxable accounts",
+    "Risk-adjusted return (Sharpe ratio) accounts for volatility",
+    "Past performance doesn't guarantee future results"
+  ],
+  "disclaimer": "ROI calculations are based on provided data. Investment returns involve risk and can be negative. Consider fees, taxes, and inflation when evaluating investments.",
+  "lastReviewed": "2026-02-03"
+}

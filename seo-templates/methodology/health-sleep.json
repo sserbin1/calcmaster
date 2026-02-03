@@ -1,0 +1,105 @@
+{
+  "calculatorId": "health/sleep",
+  "title": "Sleep Calculation Methodology",
+  "overview": "Sleep calculators estimate optimal bedtime or wake time based on sleep cycles. Each sleep cycle lasts approximately 90 minutes, and waking between cycles (rather than during deep sleep) generally leads to feeling more refreshed.",
+  "methods": [
+    {
+      "id": "sleep-cycles",
+      "name": "90-Minute Sleep Cycle Method",
+      "description": "Sleep occurs in cycles of approximately 90 minutes (75-120 minutes). Each cycle progresses through light sleep, deep sleep, and REM sleep.",
+      "formula": {
+        "name": "Sleep Cycle Calculation",
+        "expression": "Optimal bedtimes = Wake Time - (n × 90 min) - 15 min\nWhere n = 4, 5, or 6 cycles",
+        "variables": [
+          { "symbol": "n", "meaning": "Number of complete sleep cycles", "unit": "cycles" },
+          { "symbol": "90 min", "meaning": "Average sleep cycle duration", "unit": "minutes" },
+          { "symbol": "15 min", "meaning": "Average time to fall asleep", "unit": "minutes" }
+        ]
+      },
+      "accuracy": "General guideline; individual cycles vary",
+      "limitations": [
+        "Individual cycle length varies (75-120 min)",
+        "Time to fall asleep varies significantly",
+        "First cycles have more deep sleep, later have more REM"
+      ],
+      "bestFor": "Planning optimal bedtime",
+      "isDefault": true
+    },
+    {
+      "id": "nsf-recommendations",
+      "name": "NSF Sleep Duration Guidelines",
+      "description": "National Sleep Foundation evidence-based recommendations for total sleep duration by age group.",
+      "formula": {
+        "name": "NSF Recommendations (2015)",
+        "expression": "Adults 18-64: 7-9 hours\nOlder Adults 65+: 7-8 hours\nTeenagers 14-17: 8-10 hours\nSchool age 6-13: 9-11 hours",
+        "description": "Optimal range for most individuals in each age group"
+      },
+      "accuracy": "Evidence-based population guidelines",
+      "limitations": [
+        "Individual needs vary",
+        "Quality matters as much as quantity",
+        "Some rare individuals are 'short sleepers'"
+      ],
+      "bestFor": "Understanding recommended sleep amounts",
+      "isDefault": false
+    },
+    {
+      "id": "chronotype",
+      "name": "Chronotype Consideration",
+      "description": "Individual circadian rhythm preferences (morningness-eveningness) affect optimal sleep timing. 'Night owls' and 'early birds' have different ideal sleep windows.",
+      "formula": {
+        "name": "Chronotype Adjustment",
+        "expression": "Early chronotype: Bedtime 9-10 PM, Wake 5-6 AM\nIntermediate: Bedtime 10-11 PM, Wake 6-7 AM\nLate chronotype: Bedtime 11 PM-12 AM, Wake 7-8 AM",
+        "description": "Approximate typical ranges"
+      },
+      "accuracy": "Genetic component; partially flexible",
+      "limitations": [
+        "Social and work schedules may not align",
+        "Chronotype can shift with age"
+      ],
+      "bestFor": "Aligning sleep with natural rhythm",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "National Sleep Foundation Sleep Duration Recommendations",
+      "url": "https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need",
+      "year": 2015,
+      "type": "organization"
+    },
+    {
+      "name": "Walker, M. - Why We Sleep",
+      "year": 2017,
+      "type": "book"
+    },
+    {
+      "name": "Ohayon et al. - Sleep Duration Guidelines Systematic Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28364486/",
+      "year": 2017,
+      "type": "study"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 4,
+    "max": 12,
+    "unit": "hours",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "Too Little", "min": 4, "max": 6, "color": "#ef4444", "description": "Sleep deprivation" },
+      { "label": "Short", "min": 6, "max": 7, "color": "#eab308", "description": "May need more" },
+      { "label": "Optimal", "min": 7, "max": 9, "color": "#22c55e", "description": "Recommended" },
+      { "label": "Long", "min": 9, "max": 12, "color": "#3b82f6", "description": "May indicate issues" }
+    ]
+  },
+  "footnotes": [
+    "Sleep efficiency (time asleep vs time in bed) typically 85-95%",
+    "Alcohol, caffeine, and blue light affect sleep quality",
+    "Consistent sleep schedule is as important as duration",
+    "Deep sleep decreases with age; this is normal"
+  ],
+  "disclaimer": "Sleep recommendations are general guidelines. Persistent sleep problems, excessive sleepiness, or sleep disorders should be evaluated by a healthcare provider or sleep specialist.",
+  "lastReviewed": "2026-02-03"
+}

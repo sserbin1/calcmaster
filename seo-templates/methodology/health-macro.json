@@ -1,0 +1,113 @@
+{
+  "calculatorId": "health/macro",
+  "title": "Macronutrient Calculation Methodology",
+  "overview": "Macronutrient distribution determines how your daily calories are split between protein, carbohydrates, and fats. Different ratios support different goals including weight loss, muscle building, and athletic performance.",
+  "methods": [
+    {
+      "id": "iifym",
+      "name": "IIFYM (If It Fits Your Macros)",
+      "description": "A flexible dieting approach that focuses on meeting macro targets regardless of food source. Popular for sustainability and adherence.",
+      "formula": {
+        "name": "Standard IIFYM Distribution",
+        "expression": "Protein: 25-30% of calories (1g = 4 cal)\nCarbs: 45-55% of calories (1g = 4 cal)\nFat: 20-30% of calories (1g = 9 cal)",
+        "variables": [
+          { "symbol": "Protein", "meaning": "Primary building block for muscle", "unit": "grams" },
+          { "symbol": "Carbs", "meaning": "Primary energy source", "unit": "grams" },
+          { "symbol": "Fat", "meaning": "Hormone production, nutrient absorption", "unit": "grams" }
+        ]
+      },
+      "accuracy": "Flexible, goal-dependent",
+      "limitations": [
+        "Doesn't emphasize food quality",
+        "Requires tracking",
+        "Individual response varies"
+      ],
+      "bestFor": "General fitness, sustainable dieting",
+      "isDefault": true
+    },
+    {
+      "id": "high-protein",
+      "name": "High-Protein Athletic",
+      "description": "Recommended by ISSN (International Society of Sports Nutrition) for athletes and those engaged in resistance training.",
+      "formula": {
+        "name": "Athletic Macro Distribution",
+        "expression": "Protein: 1.6-2.2 g/kg body weight\nCarbs: 3-7 g/kg (based on activity)\nFat: 0.5-1.5 g/kg (minimum 20% calories)",
+        "variables": [
+          { "symbol": "body weight", "meaning": "Total body weight for calculation base", "unit": "kg" }
+        ]
+      },
+      "accuracy": "Evidence-based for athletic performance",
+      "limitations": [
+        "May be excessive for sedentary individuals",
+        "Higher cost due to protein sources"
+      ],
+      "bestFor": "Athletes, bodybuilders, strength trainers",
+      "isDefault": false
+    },
+    {
+      "id": "keto",
+      "name": "Ketogenic (Keto)",
+      "description": "Very low carb, high fat approach that shifts the body into ketosis. Carbs typically limited to 20-50g daily.",
+      "formula": {
+        "name": "Ketogenic Ratio",
+        "expression": "Fat: 70-75% of calories\nProtein: 20-25% of calories\nCarbs: 5-10% of calories (20-50g max)",
+        "variables": [
+          { "symbol": "Net Carbs", "meaning": "Total carbs minus fiber", "unit": "grams" }
+        ]
+      },
+      "accuracy": "Effective for specific populations",
+      "limitations": [
+        "Difficult to sustain long-term",
+        "May impair high-intensity exercise",
+        "Requires adaptation period",
+        "Not suitable for everyone"
+      ],
+      "bestFor": "Weight loss, epilepsy management, metabolic conditions",
+      "isDefault": false
+    },
+    {
+      "id": "usda",
+      "name": "USDA Dietary Guidelines",
+      "description": "Official US government recommendations based on Dietary Guidelines for Americans.",
+      "formula": {
+        "name": "USDA AMDR",
+        "expression": "Protein: 10-35% of calories\nCarbs: 45-65% of calories\nFat: 20-35% of calories",
+        "description": "Acceptable Macronutrient Distribution Ranges"
+      },
+      "accuracy": "Population-level recommendations",
+      "limitations": [
+        "Very broad ranges",
+        "Not optimized for specific goals",
+        "One-size-fits-all approach"
+      ],
+      "bestFor": "General health maintenance",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "ISSN Position Stand on Protein",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+      "year": 2017,
+      "type": "study"
+    },
+    {
+      "name": "USDA Dietary Guidelines for Americans",
+      "url": "https://www.dietaryguidelines.gov/",
+      "year": 2020,
+      "type": "government"
+    },
+    {
+      "name": "Precision Nutrition Macros Guide",
+      "url": "https://www.precisionnutrition.com/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Protein: 4 calories per gram | Carbs: 4 calories per gram | Fat: 9 calories per gram",
+    "Fiber and alcohol have different caloric values (2 and 7 cal/g respectively)",
+    "Individual needs vary based on activity, goals, and metabolic factors"
+  ],
+  "disclaimer": "Macro recommendations are guidelines. Consult a registered dietitian for personalized nutrition advice, especially if you have health conditions.",
+  "lastReviewed": "2026-02-03"
+}

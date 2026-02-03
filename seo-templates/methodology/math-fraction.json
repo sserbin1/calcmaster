@@ -1,0 +1,86 @@
+{
+  "calculatorId": "math/fraction",
+  "title": "Fraction Calculation Methodology",
+  "overview": "Fractions represent parts of a whole. Understanding fraction operations, simplification using GCD, and conversion between formats is fundamental to mathematics.",
+  "methods": [
+    {
+      "id": "basic-operations",
+      "name": "Fraction Operations",
+      "description": "The four basic operations on fractions: addition, subtraction, multiplication, and division.",
+      "formula": {
+        "name": "Fraction Arithmetic",
+        "expression": "Addition: a/b + c/d = (ad + bc) / bd\nSubtraction: a/b - c/d = (ad - bc) / bd\nMultiplication: a/b × c/d = ac / bd\nDivision: a/b ÷ c/d = a/b × d/c = ad / bc",
+        "variables": [
+          { "symbol": "a, c", "meaning": "Numerators", "unit": "" },
+          { "symbol": "b, d", "meaning": "Denominators (≠ 0)", "unit": "" }
+        ]
+      },
+      "accuracy": "Exact (when kept as fractions)",
+      "bestFor": "All fraction calculations",
+      "isDefault": true
+    },
+    {
+      "id": "simplification",
+      "name": "Simplification (GCD Method)",
+      "description": "Reduce a fraction to lowest terms by dividing numerator and denominator by their Greatest Common Divisor.",
+      "formula": {
+        "name": "GCD Simplification",
+        "expression": "Simplified = (a ÷ GCD) / (b ÷ GCD)\n\nGCD found via Euclidean algorithm:\nGCD(a, b) = GCD(b, a mod b) until b = 0",
+        "description": "Example: 12/18 → GCD(12,18)=6 → 2/3"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Presenting results in simplest form",
+      "isDefault": false
+    },
+    {
+      "id": "mixed-numbers",
+      "name": "Mixed Numbers Conversion",
+      "description": "Converting between improper fractions and mixed numbers (whole number + proper fraction).",
+      "formula": {
+        "name": "Mixed Number Conversion",
+        "expression": "Improper to Mixed: a/b = (a÷b) + (a mod b)/b\nMixed to Improper: n + a/b = (n×b + a)/b",
+        "description": "Example: 7/3 = 2 + 1/3 = 2⅓"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Displaying results in readable form",
+      "isDefault": false
+    },
+    {
+      "id": "decimal-conversion",
+      "name": "Decimal Conversion",
+      "description": "Converting fractions to decimals and vice versa. Some fractions produce repeating decimals.",
+      "formula": {
+        "name": "Decimal Conversion",
+        "expression": "Fraction to Decimal: a/b = a ÷ b\n\nDecimal to Fraction:\n0.25 = 25/100 = 1/4\n0.333... = 1/3",
+        "description": "Terminating decimals have denominators with only factors of 2 and 5"
+      },
+      "accuracy": "May introduce rounding errors for repeating decimals",
+      "limitations": [
+        "Many fractions produce infinite repeating decimals",
+        "Decimal approximations lose precision"
+      ],
+      "bestFor": "Practical calculations, comparisons",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Khan Academy - Fractions",
+      "url": "https://www.khanacademy.org/math/arithmetic/fraction-arithmetic",
+      "type": "organization"
+    },
+    {
+      "name": "NCTM - Fraction Standards",
+      "url": "https://www.nctm.org/",
+      "type": "organization"
+    }
+  ],
+  "footnotes": [
+    "Euclidean algorithm: oldest algorithm still in common use (300 BC)",
+    "A fraction is in lowest terms when GCD(numerator, denominator) = 1",
+    "Fractions with denominators of 2, 4, 5, 8, 10, etc. terminate in decimal form",
+    "1/7 = 0.142857... (6-digit repeating cycle)"
+  ],
+  "disclaimer": "Fraction calculations are exact when kept in fraction form. Converting to decimal may introduce rounding errors for non-terminating decimals.",
+  "lastReviewed": "2026-02-03"
+}

@@ -1,0 +1,46 @@
+{
+  "calculatorId": "education/test-score",
+  "title": "Test Score Calculation Methodology",
+  "overview": "Test score calculations convert raw scores to percentages, letter grades, or curved scores. Understanding different scoring methods helps interpret results accurately.",
+  "methods": [
+    {
+      "id": "percentage",
+      "name": "Percentage Score",
+      "description": "Raw score divided by total possible points, expressed as a percentage.",
+      "formula": {
+        "name": "Percentage",
+        "expression": "Percentage = (Points Earned / Total Points) × 100",
+        "description": "Most straightforward scoring method"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Standard test scoring",
+      "isDefault": true
+    },
+    {
+      "id": "curve",
+      "name": "Curved Scoring",
+      "description": "Adjusts scores based on class performance. Several methods exist.",
+      "formula": {
+        "name": "Curve Methods",
+        "expression": "Additive: Everyone gets +X points\nSquare Root: Final = √(Raw × 100)\nNormal: Grade on distribution (A=top 10%, etc.)",
+        "description": "Method varies by instructor"
+      },
+      "accuracy": "Depends on method",
+      "limitations": [
+        "Normative curves create competition",
+        "May inflate or deflate grades"
+      ],
+      "bestFor": "Difficult tests, normalizing across sections",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "Educational Testing Service", "url": "https://www.ets.org/", "type": "organization" }
+  ],
+  "footnotes": [
+    "Standardized tests (SAT, ACT) use scaled scoring",
+    "IQ tests are normed to mean=100, SD=15",
+    "Raw scores alone don't indicate difficulty level"
+  ],
+  "lastReviewed": "2026-02-03"
+}

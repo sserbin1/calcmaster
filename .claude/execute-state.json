@@ -1,0 +1,31 @@
+{
+  "session_id": "exec-calcmaster-methodology-2026-02-03",
+  "plan_source": ".claude/kernel-outlines/outline-calcmaster-methodology-2026-02-03.md",
+  "started_at": "2026-02-03T12:00:00Z",
+  "status": "executing",
+  "current_batch": 2,
+  "current_task": null,
+  "tasks": [
+    {"id": "1", "name": "Create VisualScale component with color gradients and marker animation", "files": ["src/components/ui/VisualScale.tsx"], "deps": [], "batch": 1, "status": "complete"},
+    {"id": "2", "name": "Create MethodologySection component with expandable formulas and sources", "files": ["src/components/ui/MethodologySection.tsx"], "deps": [], "batch": 1, "status": "complete"},
+    {"id": "3", "name": "Create AnimatedNumber component with count-up effect", "files": ["src/components/ui/AnimatedNumber.tsx"], "deps": [], "batch": 1, "status": "complete"},
+    {"id": "4", "name": "Create GaugeChart component for risk/progress visualization", "files": ["src/components/ui/GaugeChart.tsx"], "deps": [], "batch": 1, "status": "complete"},
+    {"id": "5", "name": "Add Framer Motion for animations", "files": ["package.json"], "deps": [], "batch": 1, "status": "complete"},
+    {"id": "6", "name": "Extend CalculatorData interface with methodology fields", "files": ["src/data/calculators.ts"], "deps": ["1","2","3","4","5"], "batch": 2, "status": "pending"},
+    {"id": "7", "name": "Create methodology data types (Method, Source, VisualScaleConfig)", "files": ["src/types/methodology.ts"], "deps": [], "batch": 2, "status": "pending"},
+    {"id": "8", "name": "Create visual scale configuration types and presets", "files": ["src/lib/scale-presets.ts"], "deps": ["7"], "batch": 2, "status": "pending"}
+  ],
+  "batches": [
+    {"id": 1, "tasks": ["1","2","3","4","5"], "status": "complete"},
+    {"id": 2, "tasks": ["6","7","8"], "status": "pending"},
+    {"id": 3, "tasks": ["9","10","11","12","13","14","15","16","17","18","19","20"], "status": "pending"},
+    {"id": 4, "tasks": ["21","22","23","24","25","26","27","28","29","30","31","32","33"], "status": "pending"},
+    {"id": 5, "tasks": ["34","35","36","37","38","39","40","41","42","43","44"], "status": "pending"},
+    {"id": 6, "tasks": ["45","46","47","48","49","50","51","52"], "status": "pending"},
+    {"id": 7, "tasks": ["53","54","55","56","57","58","59","60","61"], "status": "pending"},
+    {"id": 8, "tasks": ["62","63","64","65","66"], "status": "pending"},
+    {"id": 9, "tasks": ["67","68","69","70"], "status": "pending"},
+    {"id": 10, "tasks": ["71","72","73"], "status": "pending"}
+  ],
+  "last_checkpoint": "batch-1-complete"
+}

@@ -1,0 +1,103 @@
+{
+  "calculatorId": "finance/debt-payoff",
+  "title": "Debt Payoff Strategy Methodology",
+  "overview": "Two primary strategies exist for paying off multiple debts: Avalanche (highest interest first) saves the most money, while Snowball (smallest balance first) provides psychological wins that help many people stay motivated.",
+  "methods": [
+    {
+      "id": "avalanche",
+      "name": "Debt Avalanche (Highest Interest First)",
+      "description": "Pay minimum on all debts, put extra money toward the highest interest rate debt. Mathematically optimal for minimizing total interest paid.",
+      "formula": {
+        "name": "Avalanche Strategy",
+        "expression": "1. List debts by interest rate (highest to lowest)\n2. Pay minimums on all debts\n3. Put all extra money to highest rate debt\n4. When paid off, roll payment to next highest",
+        "description": "Minimizes total interest paid"
+      },
+      "accuracy": "Mathematically optimal",
+      "limitations": [
+        "May take longer to see first debt eliminated",
+        "Can be demotivating if highest rate debt is large",
+        "Requires discipline without quick wins"
+      ],
+      "bestFor": "Financially disciplined, focused on minimizing cost",
+      "isDefault": true
+    },
+    {
+      "id": "snowball",
+      "name": "Debt Snowball (Smallest Balance First)",
+      "description": "Pay minimum on all debts, put extra money toward the smallest balance. Provides quick wins that build momentum and motivation.",
+      "formula": {
+        "name": "Snowball Strategy",
+        "expression": "1. List debts by balance (smallest to largest)\n2. Pay minimums on all debts\n3. Put all extra money to smallest balance\n4. When paid off, roll payment to next smallest",
+        "description": "Maximizes psychological wins"
+      },
+      "accuracy": "Sub-optimal mathematically but higher success rate",
+      "limitations": [
+        "Pays more total interest than avalanche",
+        "Small debts may have low rates anyway"
+      ],
+      "bestFor": "Those who need motivation, prone to giving up",
+      "isDefault": false
+    },
+    {
+      "id": "hybrid",
+      "name": "Hybrid Strategy",
+      "description": "Combine approaches: start with a quick snowball win for motivation, then switch to avalanche for efficiency.",
+      "formula": {
+        "name": "Hybrid Approach",
+        "expression": "1. Pay off 1-2 smallest debts for quick wins\n2. Switch to highest interest rate focus\n3. Maintain momentum with occasional balance wins",
+        "description": "Balance motivation and efficiency"
+      },
+      "accuracy": "Balances psychology and math",
+      "limitations": [
+        "Requires more active management",
+        "No single clear rule to follow"
+      ],
+      "bestFor": "Those who want both motivation and efficiency",
+      "isDefault": false
+    },
+    {
+      "id": "consolidation",
+      "name": "Debt Consolidation (Reference)",
+      "description": "Combine multiple debts into one loan, ideally at a lower interest rate. Simplifies payments but doesn't address spending behavior.",
+      "formula": {
+        "name": "Consolidation Math",
+        "expression": "New Payment = Consolidated Amount × [r(1+r)^n] / [(1+r)^n - 1]\nSavings = Old Total Interest - New Total Interest",
+        "description": "Compare total cost of consolidated vs original debts"
+      },
+      "accuracy": "Depends on new rate and terms",
+      "limitations": [
+        "May extend repayment timeline",
+        "Fees may offset interest savings",
+        "Secured consolidation risks collateral"
+      ],
+      "bestFor": "High-rate credit cards, good credit score",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Dave Ramsey - Debt Snowball",
+      "url": "https://www.ramseysolutions.com/debt/debt-snowball-vs-debt-avalanche",
+      "type": "organization"
+    },
+    {
+      "name": "Harvard Business Review - Debt Payoff Motivation",
+      "url": "https://hbr.org/2016/08/research-the-best-strategy-for-paying-off-credit-card-debt",
+      "year": 2016,
+      "type": "study"
+    },
+    {
+      "name": "CFPB - Paying Down Debt",
+      "url": "https://www.consumerfinance.gov/ask-cfpb/what-is-the-best-way-to-pay-off-multiple-credit-cards-en-1065/",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "Both strategies work better than minimum payments only",
+    "Research shows snowball has higher completion rates despite higher cost",
+    "Average credit card interest rate: ~20% (2024)",
+    "Consider balance transfer cards (0% intro APR) for short-term relief"
+  ],
+  "disclaimer": "Debt payoff strategies are general guidance. Consider your personal financial situation, motivation style, and debt amounts. Seek professional advice for significant debt burdens.",
+  "lastReviewed": "2026-02-03"
+}

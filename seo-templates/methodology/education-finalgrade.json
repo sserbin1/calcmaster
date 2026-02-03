@@ -1,0 +1,48 @@
+{
+  "calculatorId": "education/final-grade",
+  "title": "Final Grade Calculation Methodology",
+  "overview": "Final grade calculators determine what score is needed on remaining work to achieve a target grade, or calculate the final grade based on weighted category scores.",
+  "methods": [
+    {
+      "id": "weighted-average",
+      "name": "Weighted Average",
+      "description": "Calculate final grade as the weighted average of all categories (homework, exams, projects, etc.).",
+      "formula": {
+        "name": "Weighted Average",
+        "expression": "Final Grade = Σ(Category Score × Category Weight) / Σ(Weights)",
+        "variables": [
+          { "symbol": "Category Score", "meaning": "Percentage earned in category", "unit": "%" },
+          { "symbol": "Category Weight", "meaning": "Weight of category (from syllabus)", "unit": "%" }
+        ]
+      },
+      "accuracy": "Exact",
+      "bestFor": "Calculating current standing",
+      "isDefault": true
+    },
+    {
+      "id": "needed-score",
+      "name": "Required Score Calculation",
+      "description": "Calculate what score is needed on remaining work to reach a target final grade.",
+      "formula": {
+        "name": "Needed Score",
+        "expression": "Needed = (Target - Current × Completed) / Remaining\nWhere weights are decimals summing to 1.0",
+        "description": "May calculate impossible scores (>100%) if gap is too large"
+      },
+      "accuracy": "Exact",
+      "limitations": [
+        "Cannot exceed 100% (or extra credit limit)"
+      ],
+      "bestFor": "Planning study effort",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "Common academic grading practices", "type": "standard" }
+  ],
+  "footnotes": [
+    "Check syllabus for exact category weights",
+    "Some instructors drop lowest scores - factor this in",
+    "Participation and attendance may be separate categories"
+  ],
+  "lastReviewed": "2026-02-03"
+}

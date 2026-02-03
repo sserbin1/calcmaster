@@ -64,14 +64,14 @@ export function getCalculatorFields(type: string): CalculatorField[] {
   const fields: Record<string, CalculatorField[]> = {
     // Health calculators
     bmi: [
-      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
+      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg', default: 70 },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
     ],
     calories: [
-      { name: 'age', label: 'Age', type: 'number', placeholder: '25', unit: 'years' },
+      { name: 'age', label: 'Age', type: 'number', placeholder: '25', unit: 'years', default: 25 },
       { name: 'gender', label: 'Gender', type: 'radio', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }], default: 'male' },
-      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
+      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg', default: 70 },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
       { name: 'activity', label: 'Activity Level', type: 'select', options: [
         { value: '1.2', label: 'Sedentary' },
         { value: '1.375', label: 'Light (1-3 days/week)' },
@@ -86,10 +86,10 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: 'maintain' },
     ],
     tdee: [
-      { name: 'age', label: 'Age', type: 'number', placeholder: '25' },
+      { name: 'age', label: 'Age', type: 'number', placeholder: '25', default: 25 },
       { name: 'gender', label: 'Gender', type: 'radio', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }], default: 'male' },
-      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
+      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg', default: 70 },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
       { name: 'activity', label: 'Activity Level', type: 'select', options: [
         { value: '1.2', label: 'Sedentary' },
         { value: '1.375', label: 'Light' },
@@ -99,13 +99,13 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: '1.55' },
     ],
     bmr: [
-      { name: 'age', label: 'Age', type: 'number', placeholder: '25' },
+      { name: 'age', label: 'Age', type: 'number', placeholder: '25', default: 25 },
       { name: 'gender', label: 'Gender', type: 'radio', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }], default: 'male' },
-      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
+      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg', default: 70 },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
     ],
     macro: [
-      { name: 'calories', label: 'Daily Calories', type: 'number', placeholder: '2000', unit: 'kcal' },
+      { name: 'calories', label: 'Daily Calories', type: 'number', placeholder: '2000', unit: 'kcal', default: 2000 },
       { name: 'goal', label: 'Goal', type: 'select', options: [
         { value: 'balanced', label: 'Balanced (40/30/30)' },
         { value: 'lowcarb', label: 'Low Carb (25/40/35)' },
@@ -115,14 +115,14 @@ export function getCalculatorFields(type: string): CalculatorField[] {
     ],
     'body-fat': [
       { name: 'gender', label: 'Gender', type: 'radio', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }], default: 'male' },
-      { name: 'waist', label: 'Waist', type: 'number', placeholder: '85', unit: 'cm' },
-      { name: 'neck', label: 'Neck', type: 'number', placeholder: '38', unit: 'cm' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
-      { name: 'hip', label: 'Hip (women only)', type: 'number', placeholder: '95', unit: 'cm' },
+      { name: 'waist', label: 'Waist', type: 'number', placeholder: '85', unit: 'cm', default: 85 },
+      { name: 'neck', label: 'Neck', type: 'number', placeholder: '38', unit: 'cm', default: 38 },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
+      { name: 'hip', label: 'Hip (women only)', type: 'number', placeholder: '95', unit: 'cm', default: 95 },
     ],
     'ideal-weight': [
       { name: 'gender', label: 'Gender', type: 'radio', options: [{ value: 'male', label: 'Male' }, { value: 'female', label: 'Female' }], default: 'male' },
-      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm' },
+      { name: 'height', label: 'Height', type: 'number', placeholder: '175', unit: 'cm', default: 175 },
       { name: 'frame', label: 'Body Frame', type: 'select', options: [
         { value: 'small', label: 'Small' },
         { value: 'medium', label: 'Medium' },
@@ -130,7 +130,7 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: 'medium' },
     ],
     protein: [
-      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg' },
+      { name: 'weight', label: 'Weight', type: 'number', placeholder: '70', unit: 'kg', default: 70 },
       { name: 'activity', label: 'Activity Level', type: 'select', options: [
         { value: 'sedentary', label: 'Sedentary' },
         { value: 'moderate', label: 'Moderately Active' },
@@ -155,7 +155,7 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       { name: 'dueDate', label: 'Due Date', type: 'date' },
     ],
     sleep: [
-      { name: 'wakeTime', label: 'Wake Up Time', type: 'text', placeholder: '07:00' },
+      { name: 'wakeTime', label: 'Wake Up Time', type: 'text', placeholder: '07:00', default: '07:00' },
       { name: 'mode', label: 'Calculate', type: 'radio', options: [
         { value: 'bedtime', label: 'Bedtime' },
         { value: 'waketime', label: 'Wake Time' },
@@ -163,26 +163,26 @@ export function getCalculatorFields(type: string): CalculatorField[] {
     ],
     // Finance calculators
     mortgage: [
-      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '300000', unit: '$' },
-      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '6.5', unit: '%', step: 0.1 },
-      { name: 'years', label: 'Loan Term', type: 'number', placeholder: '30', unit: 'years' },
-      { name: 'downPayment', label: 'Down Payment', type: 'number', placeholder: '60000', unit: '$' },
+      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '300000', unit: '$', default: 300000 },
+      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '6.5', unit: '%', step: 0.1, default: 6.5 },
+      { name: 'years', label: 'Loan Term', type: 'number', placeholder: '30', unit: 'years', default: 30 },
+      { name: 'downPayment', label: 'Down Payment', type: 'number', placeholder: '60000', unit: '$', default: 60000 },
     ],
     loan: [
-      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '10000', unit: '$' },
-      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '8', unit: '%', step: 0.1 },
-      { name: 'months', label: 'Loan Term', type: 'number', placeholder: '36', unit: 'months' },
+      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '10000', unit: '$', default: 10000 },
+      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '8', unit: '%', step: 0.1, default: 8 },
+      { name: 'months', label: 'Loan Term', type: 'number', placeholder: '36', unit: 'months', default: 36 },
     ],
     tip: [
-      { name: 'bill', label: 'Bill Amount', type: 'number', placeholder: '50', unit: '$' },
-      { name: 'tipPercent', label: 'Tip Percentage', type: 'number', placeholder: '18', unit: '%' },
+      { name: 'bill', label: 'Bill Amount', type: 'number', placeholder: '50', unit: '$', default: 50 },
+      { name: 'tipPercent', label: 'Tip Percentage', type: 'number', placeholder: '18', unit: '%', default: 18 },
       { name: 'people', label: 'Split Between', type: 'number', placeholder: '1', default: 1 },
     ],
     'auto-loan': [
-      { name: 'price', label: 'Vehicle Price', type: 'number', placeholder: '35000', unit: '$' },
-      { name: 'downPayment', label: 'Down Payment', type: 'number', placeholder: '5000', unit: '$' },
-      { name: 'tradeIn', label: 'Trade-in Value', type: 'number', placeholder: '0', unit: '$' },
-      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '6.5', unit: '%', step: 0.1 },
+      { name: 'price', label: 'Vehicle Price', type: 'number', placeholder: '35000', unit: '$', default: 35000 },
+      { name: 'downPayment', label: 'Down Payment', type: 'number', placeholder: '5000', unit: '$', default: 5000 },
+      { name: 'tradeIn', label: 'Trade-in Value', type: 'number', placeholder: '0', unit: '$', default: 0 },
+      { name: 'rate', label: 'Interest Rate', type: 'number', placeholder: '6.5', unit: '%', step: 0.1, default: 6.5 },
       { name: 'months', label: 'Loan Term', type: 'select', options: [
         { value: '36', label: '36 months' },
         { value: '48', label: '48 months' },
@@ -191,15 +191,15 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: '60' },
     ],
     interest: [
-      { name: 'principal', label: 'Principal', type: 'number', placeholder: '10000', unit: '$' },
-      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '5', unit: '%', step: 0.1 },
-      { name: 'time', label: 'Time Period', type: 'number', placeholder: '5', unit: 'years' },
+      { name: 'principal', label: 'Principal', type: 'number', placeholder: '10000', unit: '$', default: 10000 },
+      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '5', unit: '%', step: 0.1, default: 5 },
+      { name: 'time', label: 'Time Period', type: 'number', placeholder: '5', unit: 'years', default: 5 },
     ],
     compound: [
-      { name: 'principal', label: 'Initial Investment', type: 'number', placeholder: '10000', unit: '$' },
-      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '7', unit: '%', step: 0.1 },
-      { name: 'years', label: 'Time Period', type: 'number', placeholder: '10', unit: 'years' },
-      { name: 'contribution', label: 'Monthly Contribution', type: 'number', placeholder: '500', unit: '$' },
+      { name: 'principal', label: 'Initial Investment', type: 'number', placeholder: '10000', unit: '$', default: 10000 },
+      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '7', unit: '%', step: 0.1, default: 7 },
+      { name: 'years', label: 'Time Period', type: 'number', placeholder: '10', unit: 'years', default: 10 },
+      { name: 'contribution', label: 'Monthly Contribution', type: 'number', placeholder: '500', unit: '$', default: 500 },
       { name: 'frequency', label: 'Compound Frequency', type: 'select', options: [
         { value: '1', label: 'Annually' },
         { value: '4', label: 'Quarterly' },
@@ -208,7 +208,7 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: '12' },
     ],
     salary: [
-      { name: 'amount', label: 'Amount', type: 'number', placeholder: '25', unit: '$' },
+      { name: 'amount', label: 'Amount', type: 'number', placeholder: '25', unit: '$', default: 25 },
       { name: 'type', label: 'Type', type: 'select', options: [
         { value: 'hourly', label: 'Hourly Rate' },
         { value: 'weekly', label: 'Weekly Salary' },
@@ -219,21 +219,21 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       { name: 'hoursPerWeek', label: 'Hours per Week', type: 'number', placeholder: '40', default: 40 },
     ],
     tax: [
-      { name: 'income', label: 'Annual Income', type: 'number', placeholder: '75000', unit: '$' },
+      { name: 'income', label: 'Annual Income', type: 'number', placeholder: '75000', unit: '$', default: 75000 },
       { name: 'filingStatus', label: 'Filing Status', type: 'select', options: [
         { value: 'single', label: 'Single' },
         { value: 'married', label: 'Married Filing Jointly' },
         { value: 'head', label: 'Head of Household' },
       ], default: 'single' },
-      { name: 'deductions', label: 'Deductions', type: 'number', placeholder: '14600', unit: '$' },
+      { name: 'deductions', label: 'Deductions', type: 'number', placeholder: '14600', unit: '$', default: 14600 },
     ],
     inflation: [
-      { name: 'amount', label: 'Current Amount', type: 'number', placeholder: '100', unit: '$' },
-      { name: 'rate', label: 'Inflation Rate', type: 'number', placeholder: '3', unit: '%', step: 0.1 },
-      { name: 'years', label: 'Years', type: 'number', placeholder: '10' },
+      { name: 'amount', label: 'Current Amount', type: 'number', placeholder: '100', unit: '$', default: 100 },
+      { name: 'rate', label: 'Inflation Rate', type: 'number', placeholder: '3', unit: '%', step: 0.1, default: 3 },
+      { name: 'years', label: 'Years', type: 'number', placeholder: '10', default: 10 },
     ],
     budget: [
-      { name: 'income', label: 'Monthly Income', type: 'number', placeholder: '5000', unit: '$' },
+      { name: 'income', label: 'Monthly Income', type: 'number', placeholder: '5000', unit: '$', default: 5000 },
       { name: 'method', label: 'Budget Method', type: 'select', options: [
         { value: '50-30-20', label: '50/30/20 Rule' },
         { value: '60-20-20', label: '60/20/20 Rule' },
@@ -241,40 +241,40 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: '50-30-20' },
     ],
     retirement: [
-      { name: 'currentAge', label: 'Current Age', type: 'number', placeholder: '30' },
-      { name: 'retireAge', label: 'Retirement Age', type: 'number', placeholder: '65' },
-      { name: 'currentSavings', label: 'Current Savings', type: 'number', placeholder: '50000', unit: '$' },
-      { name: 'monthlyContrib', label: 'Monthly Contribution', type: 'number', placeholder: '500', unit: '$' },
-      { name: 'returnRate', label: 'Expected Return', type: 'number', placeholder: '7', unit: '%', step: 0.1 },
+      { name: 'currentAge', label: 'Current Age', type: 'number', placeholder: '30', default: 30 },
+      { name: 'retireAge', label: 'Retirement Age', type: 'number', placeholder: '65', default: 65 },
+      { name: 'currentSavings', label: 'Current Savings', type: 'number', placeholder: '50000', unit: '$', default: 50000 },
+      { name: 'monthlyContrib', label: 'Monthly Contribution', type: 'number', placeholder: '500', unit: '$', default: 500 },
+      { name: 'returnRate', label: 'Expected Return', type: 'number', placeholder: '7', unit: '%', step: 0.1, default: 7 },
     ],
     '401k': [
-      { name: 'salary', label: 'Annual Salary', type: 'number', placeholder: '75000', unit: '$' },
-      { name: 'contribution', label: 'Your Contribution', type: 'number', placeholder: '6', unit: '%' },
-      { name: 'employerMatch', label: 'Employer Match', type: 'number', placeholder: '50', unit: '%' },
-      { name: 'matchLimit', label: 'Match Limit', type: 'number', placeholder: '6', unit: '%' },
-      { name: 'years', label: 'Years to Retirement', type: 'number', placeholder: '30' },
-      { name: 'returnRate', label: 'Expected Return', type: 'number', placeholder: '7', unit: '%', step: 0.1 },
+      { name: 'salary', label: 'Annual Salary', type: 'number', placeholder: '75000', unit: '$', default: 75000 },
+      { name: 'contribution', label: 'Your Contribution', type: 'number', placeholder: '6', unit: '%', default: 6 },
+      { name: 'employerMatch', label: 'Employer Match', type: 'number', placeholder: '50', unit: '%', default: 50 },
+      { name: 'matchLimit', label: 'Match Limit', type: 'number', placeholder: '6', unit: '%', default: 6 },
+      { name: 'years', label: 'Years to Retirement', type: 'number', placeholder: '30', default: 30 },
+      { name: 'returnRate', label: 'Expected Return', type: 'number', placeholder: '7', unit: '%', step: 0.1, default: 7 },
     ],
     roi: [
-      { name: 'initialInvestment', label: 'Initial Investment', type: 'number', placeholder: '10000', unit: '$' },
-      { name: 'finalValue', label: 'Final Value', type: 'number', placeholder: '15000', unit: '$' },
-      { name: 'years', label: 'Investment Period', type: 'number', placeholder: '5', unit: 'years' },
+      { name: 'initialInvestment', label: 'Initial Investment', type: 'number', placeholder: '10000', unit: '$', default: 10000 },
+      { name: 'finalValue', label: 'Final Value', type: 'number', placeholder: '15000', unit: '$', default: 15000 },
+      { name: 'years', label: 'Investment Period', type: 'number', placeholder: '5', unit: 'years', default: 5 },
     ],
     amortization: [
-      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '200000', unit: '$' },
-      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '6', unit: '%', step: 0.1 },
-      { name: 'years', label: 'Loan Term', type: 'number', placeholder: '30', unit: 'years' },
-      { name: 'extraPayment', label: 'Extra Monthly Payment', type: 'number', placeholder: '0', unit: '$' },
+      { name: 'principal', label: 'Loan Amount', type: 'number', placeholder: '200000', unit: '$', default: 200000 },
+      { name: 'rate', label: 'Annual Interest Rate', type: 'number', placeholder: '6', unit: '%', step: 0.1, default: 6 },
+      { name: 'years', label: 'Loan Term', type: 'number', placeholder: '30', unit: 'years', default: 30 },
+      { name: 'extraPayment', label: 'Extra Monthly Payment', type: 'number', placeholder: '0', unit: '$', default: 0 },
     ],
     'debt-payoff': [
-      { name: 'totalDebt', label: 'Total Debt', type: 'number', placeholder: '25000', unit: '$' },
-      { name: 'interestRate', label: 'Average Interest Rate', type: 'number', placeholder: '18', unit: '%', step: 0.1 },
-      { name: 'monthlyPayment', label: 'Monthly Payment', type: 'number', placeholder: '500', unit: '$' },
+      { name: 'totalDebt', label: 'Total Debt', type: 'number', placeholder: '25000', unit: '$', default: 25000 },
+      { name: 'interestRate', label: 'Average Interest Rate', type: 'number', placeholder: '18', unit: '%', step: 0.1, default: 18 },
+      { name: 'monthlyPayment', label: 'Monthly Payment', type: 'number', placeholder: '500', unit: '$', default: 500 },
     ],
     // Math calculators
     percent: [
-      { name: 'value', label: 'Number', type: 'number', placeholder: '50' },
-      { name: 'percent', label: 'Percentage', type: 'number', placeholder: '20', unit: '%' },
+      { name: 'value', label: 'Number', type: 'number', placeholder: '50', default: 50 },
+      { name: 'percent', label: 'Percentage', type: 'number', placeholder: '20', unit: '%', default: 20 },
       { name: 'mode', label: 'Calculation', type: 'select', options: [
         { value: 'of', label: 'X% of Y' },
         { value: 'is', label: 'X is what % of Y' },
@@ -282,11 +282,11 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       ], default: 'of' },
     ],
     scientific: [
-      { name: 'expression', label: 'Expression', type: 'text', placeholder: '2^10 or sqrt(144)' },
+      { name: 'expression', label: 'Expression', type: 'text', placeholder: '2^10 or sqrt(144)', default: '2^10' },
     ],
     fraction: [
-      { name: 'num1', label: 'Numerator 1', type: 'number', placeholder: '1' },
-      { name: 'den1', label: 'Denominator 1', type: 'number', placeholder: '2' },
+      { name: 'num1', label: 'Numerator 1', type: 'number', placeholder: '1', default: 1 },
+      { name: 'den1', label: 'Denominator 1', type: 'number', placeholder: '2', default: 2 },
       { name: 'operation', label: 'Operation', type: 'select', options: [
         { value: 'add', label: 'Add (+)' },
         { value: 'subtract', label: 'Subtract (-)' },
@@ -295,41 +295,41 @@ export function getCalculatorFields(type: string): CalculatorField[] {
         { value: 'simplify', label: 'Simplify' },
         { value: 'toDecimal', label: 'To Decimal' },
       ], default: 'add' },
-      { name: 'num2', label: 'Numerator 2', type: 'number', placeholder: '1' },
-      { name: 'den2', label: 'Denominator 2', type: 'number', placeholder: '4' },
+      { name: 'num2', label: 'Numerator 2', type: 'number', placeholder: '1', default: 1 },
+      { name: 'den2', label: 'Denominator 2', type: 'number', placeholder: '4', default: 4 },
     ],
     gpa: [
-      { name: 'grades', label: 'Grades (comma-separated)', type: 'text', placeholder: 'A, B+, A-, B, A' },
-      { name: 'credits', label: 'Credits (comma-separated)', type: 'text', placeholder: '3, 4, 3, 3, 4' },
+      { name: 'grades', label: 'Grades (comma-separated)', type: 'text', placeholder: 'A, B+, A-, B, A', default: 'A, B+, A-, B, A' },
+      { name: 'credits', label: 'Credits (comma-separated)', type: 'text', placeholder: '3, 4, 3, 3, 4', default: '3, 4, 3, 3, 4' },
     ],
     grade: [
-      { name: 'earned', label: 'Points Earned', type: 'number', placeholder: '85' },
-      { name: 'possible', label: 'Points Possible', type: 'number', placeholder: '100' },
+      { name: 'earned', label: 'Points Earned', type: 'number', placeholder: '85', default: 85 },
+      { name: 'possible', label: 'Points Possible', type: 'number', placeholder: '100', default: 100 },
     ],
     quadratic: [
-      { name: 'a', label: 'a (x² coefficient)', type: 'number', placeholder: '1' },
-      { name: 'b', label: 'b (x coefficient)', type: 'number', placeholder: '-5' },
-      { name: 'c', label: 'c (constant)', type: 'number', placeholder: '6' },
+      { name: 'a', label: 'a (x² coefficient)', type: 'number', placeholder: '1', default: 1 },
+      { name: 'b', label: 'b (x coefficient)', type: 'number', placeholder: '-5', default: -5 },
+      { name: 'c', label: 'c (constant)', type: 'number', placeholder: '6', default: 6 },
     ],
     slope: [
-      { name: 'x1', label: 'X₁', type: 'number', placeholder: '0' },
-      { name: 'y1', label: 'Y₁', type: 'number', placeholder: '0' },
-      { name: 'x2', label: 'X₂', type: 'number', placeholder: '4' },
-      { name: 'y2', label: 'Y₂', type: 'number', placeholder: '8' },
+      { name: 'x1', label: 'X₁', type: 'number', placeholder: '0', default: 0 },
+      { name: 'y1', label: 'Y₁', type: 'number', placeholder: '0', default: 0 },
+      { name: 'x2', label: 'X₂', type: 'number', placeholder: '4', default: 4 },
+      { name: 'y2', label: 'Y₂', type: 'number', placeholder: '8', default: 8 },
     ],
     'std-dev': [
-      { name: 'numbers', label: 'Numbers (comma-separated)', type: 'text', placeholder: '10, 12, 23, 23, 16, 23, 21, 16' },
+      { name: 'numbers', label: 'Numbers (comma-separated)', type: 'text', placeholder: '10, 12, 23, 23, 16, 23, 21, 16', default: '10, 12, 23, 23, 16, 23, 21, 16' },
       { name: 'type', label: 'Type', type: 'radio', options: [
         { value: 'sample', label: 'Sample (n-1)' },
         { value: 'population', label: 'Population (n)' },
       ], default: 'sample' },
     ],
     statistics: [
-      { name: 'numbers', label: 'Numbers (comma-separated)', type: 'text', placeholder: '10, 12, 23, 23, 16, 23, 21, 16' },
+      { name: 'numbers', label: 'Numbers (comma-separated)', type: 'text', placeholder: '10, 12, 23, 23, 16, 23, 21, 16', default: '10, 12, 23, 23, 16, 23, 21, 16' },
     ],
     probability: [
-      { name: 'favorable', label: 'Favorable Outcomes', type: 'number', placeholder: '3' },
-      { name: 'total', label: 'Total Outcomes', type: 'number', placeholder: '10' },
+      { name: 'favorable', label: 'Favorable Outcomes', type: 'number', placeholder: '3', default: 3 },
+      { name: 'total', label: 'Total Outcomes', type: 'number', placeholder: '10', default: 10 },
       { name: 'trials', label: 'Number of Trials', type: 'number', placeholder: '1', default: 1 },
     ],
     // Date calculators
@@ -353,8 +353,8 @@ export function getCalculatorFields(type: string): CalculatorField[] {
       { name: 'minutes2', label: 'Minutes to Add/Sub', type: 'number', placeholder: '45', default: 0 },
     ],
     hours: [
-      { name: 'startTime', label: 'Start Time', type: 'text', placeholder: '09:00' },
-      { name: 'endTime', label: 'End Time', type: 'text', placeholder: '17:00' },
+      { name: 'startTime', label: 'Start Time', type: 'text', placeholder: '09:00', default: '09:00' },
+      { name: 'endTime', label: 'End Time', type: 'text', placeholder: '17:00', default: '17:00' },
       { name: 'breakMinutes', label: 'Break Duration', type: 'number', placeholder: '30', unit: 'min', default: 0 },
     ],
     'day-counter': [

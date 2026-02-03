@@ -1,0 +1,41 @@
+{
+  "calculatorId": "date-time/day-counter",
+  "title": "Day Counter Methodology",
+  "overview": "Day counters track days until or since a specific date. Julian day numbers provide a continuous day count used in astronomy and computing.",
+  "methods": [
+    {
+      "id": "days-until",
+      "name": "Days Until/Since Date",
+      "description": "Simple count of calendar days from today to a target date.",
+      "formula": {
+        "name": "Day Count",
+        "expression": "Days = Target Date - Current Date",
+        "description": "Positive = future, Negative = past"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Countdowns, milestones",
+      "isDefault": true
+    },
+    {
+      "id": "julian-day",
+      "name": "Julian Day Number",
+      "description": "Continuous day count since January 1, 4713 BC (Julian calendar). Used in astronomy and some databases.",
+      "formula": {
+        "name": "Julian Day Number",
+        "expression": "JD = 367Y - INT(7(Y+INT((M+9)/12))/4) + INT(275M/9) + D + 1721013.5 + UT/24",
+        "description": "Complex formula accounting for calendar reforms"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Astronomical calculations, database timestamps",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "US Naval Observatory - Julian Date", "type": "government" }
+  ],
+  "footnotes": [
+    "Julian Day starts at noon UTC, not midnight",
+    "Modified Julian Day (MJD) = JD - 2400000.5"
+  ],
+  "lastReviewed": "2026-02-03"
+}

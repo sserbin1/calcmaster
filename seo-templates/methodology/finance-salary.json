@@ -1,0 +1,87 @@
+{
+  "calculatorId": "finance/salary",
+  "title": "Salary Conversion Methodology",
+  "overview": "Salary calculations convert between hourly, weekly, bi-weekly, monthly, and annual pay. Understanding gross vs net pay and effective hourly rate helps in job comparisons and budgeting.",
+  "methods": [
+    {
+      "id": "standard-conversion",
+      "name": "Standard Work Year Conversion",
+      "description": "Based on standard full-time work: 40 hours/week, 52 weeks/year = 2,080 hours/year. This is the most common calculation method.",
+      "formula": {
+        "name": "Annual ↔ Hourly Conversion",
+        "expression": "Hourly = Annual / 2080\nAnnual = Hourly × 2080\n\nMonthly = Annual / 12\nBi-weekly = Annual / 26\nWeekly = Annual / 52",
+        "variables": [
+          { "symbol": "2080", "meaning": "Standard work hours per year", "unit": "hours" },
+          { "symbol": "52", "meaning": "Weeks per year", "unit": "weeks" },
+          { "symbol": "26", "meaning": "Bi-weekly pay periods", "unit": "periods" }
+        ]
+      },
+      "accuracy": "Standard full-time equivalent",
+      "limitations": [
+        "Assumes no paid time off",
+        "Doesn't account for overtime",
+        "Part-time schedules vary"
+      ],
+      "bestFor": "Standard full-time positions",
+      "isDefault": true
+    },
+    {
+      "id": "adjusted-hours",
+      "name": "Adjusted Work Hours Method",
+      "description": "Accounts for actual working hours by subtracting paid time off (PTO), holidays, and sick days from the annual total.",
+      "formula": {
+        "name": "Adjusted Hours",
+        "expression": "Actual Hours = (52 weeks × Hours/week) - PTO Hours - Holiday Hours\nEffective Hourly = Annual Salary / Actual Hours",
+        "variables": [
+          { "symbol": "PTO Hours", "meaning": "Paid vacation time", "unit": "hours" },
+          { "symbol": "Holiday Hours", "meaning": "Paid company holidays", "unit": "hours" }
+        ]
+      },
+      "accuracy": "More realistic hourly rate",
+      "limitations": [
+        "Varies by employer",
+        "Requires knowing PTO package"
+      ],
+      "bestFor": "Comparing job offers with different PTO",
+      "isDefault": false
+    },
+    {
+      "id": "gross-to-net",
+      "name": "Gross to Net Estimation",
+      "description": "Estimates take-home pay after federal, state, and local taxes plus deductions. Actual take-home varies by location and individual circumstances.",
+      "formula": {
+        "name": "Net Pay Estimation",
+        "expression": "Net Pay ≈ Gross - Federal Tax - State Tax - FICA - Benefits\n\nFICA = 7.65% (Social Security 6.2% + Medicare 1.45%)",
+        "description": "Federal tax varies by bracket; state tax varies by state (0-13%)"
+      },
+      "accuracy": "Estimate only",
+      "limitations": [
+        "Tax brackets are progressive",
+        "Deductions and credits vary",
+        "State and local taxes vary significantly"
+      ],
+      "bestFor": "Budget planning",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "Bureau of Labor Statistics - Wages",
+      "url": "https://www.bls.gov/bls/wages.htm",
+      "type": "government"
+    },
+    {
+      "name": "IRS - Tax Withholding",
+      "url": "https://www.irs.gov/individuals/tax-withholding",
+      "type": "government"
+    }
+  ],
+  "footnotes": [
+    "2024 FICA rate: 7.65% employee, 7.65% employer (15.3% total)",
+    "Social Security wage base limit: $168,600 (2024)",
+    "Self-employed pay full 15.3% FICA (self-employment tax)",
+    "Benefits like 401k and health insurance are pre-tax deductions"
+  ],
+  "disclaimer": "Salary calculations are estimates. Actual take-home pay depends on your tax situation, deductions, and benefits. Consult a tax professional for accurate planning.",
+  "lastReviewed": "2026-02-03"
+}

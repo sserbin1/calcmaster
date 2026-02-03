@@ -1,0 +1,93 @@
+{
+  "calculatorId": "math/gpa",
+  "title": "GPA Calculation Methodology",
+  "overview": "Grade Point Average (GPA) measures academic performance by assigning numeric values to letter grades and computing a weighted average. Different scales (4.0, 5.0) and weighting methods exist.",
+  "methods": [
+    {
+      "id": "standard-4-0",
+      "name": "Standard 4.0 Scale",
+      "description": "The most common GPA scale in the US. Letter grades are converted to points (A=4, B=3, C=2, D=1, F=0) and averaged by credit hours.",
+      "formula": {
+        "name": "Weighted Average GPA",
+        "expression": "GPA = Σ(Grade Points × Credit Hours) / Σ(Credit Hours)",
+        "variables": [
+          { "symbol": "Grade Points", "meaning": "A=4, A-=3.7, B+=3.3, B=3, etc.", "unit": "points" },
+          { "symbol": "Credit Hours", "meaning": "Course weight (typically 1-5)", "unit": "hours" }
+        ]
+      },
+      "accuracy": "Standard academic calculation",
+      "limitations": [
+        "Plus/minus grading varies by institution",
+        "Doesn't account for course difficulty"
+      ],
+      "bestFor": "College GPA, unweighted high school GPA",
+      "isDefault": true
+    },
+    {
+      "id": "weighted-gpa",
+      "name": "Weighted GPA (5.0+ Scale)",
+      "description": "Adds bonus points for honors, AP, or IB courses. A in AP class might be worth 5.0 instead of 4.0.",
+      "formula": {
+        "name": "Weighted GPA",
+        "expression": "Regular: A=4, B=3, C=2, D=1, F=0\nHonors: +0.5 (A=4.5)\nAP/IB: +1.0 (A=5.0)",
+        "description": "Weighting varies by school district"
+      },
+      "accuracy": "School-specific",
+      "limitations": [
+        "Not standardized across schools",
+        "Can exceed 4.0, confusing for comparisons",
+        "Colleges often recalculate on their own scale"
+      ],
+      "bestFor": "High school rankings, course rigor recognition",
+      "isDefault": false
+    },
+    {
+      "id": "cumulative-gpa",
+      "name": "Cumulative GPA",
+      "description": "Overall GPA across all semesters/terms, accounting for varying credit loads.",
+      "formula": {
+        "name": "Cumulative Calculation",
+        "expression": "Cum. GPA = Σ(All Grade Points × All Credit Hours) / Σ(All Credit Hours)\n\nOr: New Cum. = (Old Cum. × Old Hours + New GPA × New Hours) / Total Hours",
+        "description": "Running total across academic career"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Overall academic standing",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    {
+      "name": "College Board - GPA Conversion",
+      "url": "https://www.collegeboard.org/",
+      "type": "organization"
+    },
+    {
+      "name": "US Department of Education - Academic Standards",
+      "url": "https://www.ed.gov/",
+      "type": "government"
+    }
+  ],
+  "visualScale": {
+    "type": "linear",
+    "min": 0,
+    "max": 4,
+    "unit": "GPA",
+    "showLabels": true,
+    "animate": true,
+    "segments": [
+      { "label": "Failing", "min": 0, "max": 1, "color": "#ef4444" },
+      { "label": "Below Avg", "min": 1, "max": 2, "color": "#f97316" },
+      { "label": "Average", "min": 2, "max": 3, "color": "#eab308" },
+      { "label": "Good", "min": 3, "max": 3.5, "color": "#10b981" },
+      { "label": "Excellent", "min": 3.5, "max": 4, "color": "#22c55e" }
+    ]
+  },
+  "footnotes": [
+    "Cum laude: ~3.5+, Magna cum laude: ~3.7+, Summa cum laude: ~3.9+",
+    "Some schools use 4.3 scale (A+ = 4.3)",
+    "International scales vary widely (UK, Europe use different systems)",
+    "Graduate schools often require 3.0+ GPA"
+  ],
+  "disclaimer": "GPA scales and weighting methods vary by institution. Check your school's specific policies for accurate calculation.",
+  "lastReviewed": "2026-02-03"
+}

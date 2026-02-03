@@ -1,0 +1,44 @@
+{
+  "calculatorId": "construction/tile",
+  "title": "Tile Calculation Methodology",
+  "overview": "Tile calculations estimate quantity needed including waste for cuts and pattern matching. Different patterns (straight, diagonal, herringbone) have different waste factors.",
+  "methods": [
+    {
+      "id": "straight-layout",
+      "name": "Straight Layout",
+      "description": "Standard grid pattern with minimal waste. Add 10% for cuts and breakage.",
+      "formula": {
+        "name": "Tile Count",
+        "expression": "Tiles = (Area / Tile Area) × 1.10\nTile Area = Tile Length × Tile Width",
+        "variables": [
+          { "symbol": "Area", "meaning": "Surface area to cover", "unit": "sq ft" },
+          { "symbol": "1.10", "meaning": "10% waste factor", "unit": "" }
+        ]
+      },
+      "accuracy": "±5%",
+      "bestFor": "Standard floor/wall installations",
+      "isDefault": true
+    },
+    {
+      "id": "diagonal",
+      "name": "Diagonal Pattern",
+      "description": "Tiles laid at 45° angle. More cuts required, typically 15% waste.",
+      "formula": {
+        "name": "Diagonal Tile Count",
+        "expression": "Tiles = (Area / Tile Area) × 1.15",
+        "description": "15% waste for diagonal cuts"
+      },
+      "bestFor": "Decorative patterns",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "Tile Council of North America", "url": "https://www.tcnatile.com/", "type": "organization" }
+  ],
+  "footnotes": [
+    "Larger tiles have fewer grout lines but more waste",
+    "Buy all tiles from same lot for color consistency",
+    "Keep extras (5-10%) for future repairs"
+  ],
+  "lastReviewed": "2026-02-03"
+}

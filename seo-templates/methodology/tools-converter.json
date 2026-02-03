@@ -1,0 +1,43 @@
+{
+  "calculatorId": "fun/converter",
+  "title": "Unit Conversion Methodology",
+  "overview": "Unit conversions translate measurements between different systems (metric, imperial) and scales. The SI system provides standardized base units with decimal prefixes.",
+  "methods": [
+    {
+      "id": "si-conversion",
+      "name": "SI (Metric) Conversions",
+      "description": "The International System of Units uses base units with decimal prefixes for easy conversion.",
+      "formula": {
+        "name": "SI Prefixes",
+        "expression": "kilo (k) = 1000\ncenti (c) = 0.01\nmilli (m) = 0.001\nmicro (μ) = 0.000001",
+        "description": "Multiply or divide by powers of 10"
+      },
+      "accuracy": "Exact",
+      "bestFor": "Scientific, international use",
+      "isDefault": true
+    },
+    {
+      "id": "imperial-metric",
+      "name": "Imperial ↔ Metric",
+      "description": "Conversion factors between US customary/Imperial and metric units.",
+      "formula": {
+        "name": "Common Conversions",
+        "expression": "1 inch = 2.54 cm (exact)\n1 mile = 1.609344 km\n1 pound = 0.453592 kg\n1 gallon (US) = 3.78541 liters\n°F = (°C × 9/5) + 32",
+        "description": "Most have irrational conversion factors"
+      },
+      "accuracy": "Exact with defined factors",
+      "bestFor": "US to international conversions",
+      "isDefault": false
+    }
+  ],
+  "sources": [
+    { "name": "NIST SI Guide", "url": "https://www.nist.gov/pml/weights-and-measures/metric-si/si-units", "type": "government" },
+    { "name": "BIPM - International Bureau of Weights and Measures", "type": "organization" }
+  ],
+  "footnotes": [
+    "The meter is defined by the speed of light",
+    "The kilogram is now defined by Planck's constant (2019)",
+    "US is one of 3 countries not using metric (with Myanmar, Liberia)"
+  ],
+  "lastReviewed": "2026-02-03"
+}
