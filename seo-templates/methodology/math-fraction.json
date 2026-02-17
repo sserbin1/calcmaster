@@ -17,7 +17,33 @@
       },
       "accuracy": "Exact (when kept as fractions)",
       "bestFor": "All fraction calculations",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Fractions are among humanity's oldest mathematical inventions. The Egyptians used unit fractions (numerator of 1) around 1800 BCE, expressing other fractions as sums: 2/3 was written as 1/2 + 1/6. The Rhind Mathematical Papyrus contains extensive fraction tables. Babylonians used a sexagesimal (base-60) system that influenced our 60-minute hour and 360-degree circle. The notation a/b emerged in India around 500 CE with Aryabhata and Brahmagupta, who also defined arithmetic operations on fractions. Medieval Islamic mathematicians transmitted this knowledge to Europe, where fraction notation stabilized into modern form by the 16th century. The vinculum (horizontal bar) separating numerator and denominator became standard, though the slash (/) notation emerged later for typographical convenience. Fraction arithmetic remains fundamental to mathematics education worldwide.",
+        "scientificBasis": "Fraction operations follow logically from the definition of a fraction as a ratio of integers. Addition/subtraction requires common denominators because fractions represent parts of different-sized wholes—you can only add like units. The formula a/b + c/d = (ad + bc)/bd creates a common denominator bd. Multiplication is more direct: (a/b) × (c/d) = (ac)/(bd)—if you take 'a out of b parts' of 'c out of d parts,' you get ac out of bd total parts. Division inverts and multiplies because dividing by a fraction asks 'how many times does c/d fit into a/b?' which equals (a/b) × (d/c). These operations preserve the exact ratio relationships that decimals can only approximate. Fractions form a mathematical structure called a field: closed under operations, with additive and multiplicative identities (0 and 1) and inverses.",
+        "examples": [
+          "Recipe scaling: Recipe calls for 3/4 cup flour, you want to make 1.5× the recipe. 3/4 × 3/2 = 9/8 = 1 1/8 cups flour needed.",
+          "Adding unlike fractions: 2/3 + 3/4 = 8/12 + 9/12 = 17/12 = 1 5/12. Find LCD (12), convert each fraction, add numerators.",
+          "Dividing fractions: 3/4 ÷ 2/5 = 3/4 × 5/2 = 15/8 = 1 7/8. 'How many 2/5 fit in 3/4?' Answer: almost 2."
+        ],
+        "comparison": "Fraction arithmetic maintains exact values that decimal arithmetic often cannot. 1/3 is exactly 1/3 as a fraction but approximately 0.333... as a decimal—computations introduce rounding errors. However, fraction arithmetic is more complex procedurally: finding common denominators, reducing results. Decimals are easier for quick estimation and comparison (is 7/9 or 5/7 larger?—requires calculation for fractions, immediate for decimals). In practical applications, fractions dominate in cooking, construction (1/4 inch), music (3/4 time), and any context involving parts of wholes. Decimals dominate in finance, science, and digital computation. Understanding both representations and converting between them is essential mathematical fluency.",
+        "prosAndCons": {
+          "pros": [
+            "Exact representation without rounding errors",
+            "Natural for expressing parts of wholes",
+            "Reveals relationships decimals obscure (2/3 vs 0.667)",
+            "Essential for algebra and higher mathematics",
+            "Cultural and practical applications (cooking, construction)"
+          ],
+          "cons": [
+            "Common denominator requirement adds procedural complexity",
+            "Comparison between fractions requires calculation",
+            "Improper fractions can be counterintuitive",
+            "More difficult for estimation than decimals",
+            "Finding LCD can be challenging for large denominators"
+          ]
+        }
+      }
     },
     {
       "id": "simplification",
@@ -30,7 +56,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Presenting results in simplest form",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The Greatest Common Divisor (GCD) and the Euclidean algorithm for finding it are among the oldest algorithms still in use. Euclid described the algorithm in his Elements around 300 BCE, though it was likely known earlier. The algorithm works by repeatedly replacing the larger number with the remainder when dividing larger by smaller: GCD(48, 18) → GCD(18, 12) → GCD(12, 6) → GCD(6, 0) → 6. This elegant recursive process always terminates because remainders decrease. The algorithm's efficiency (logarithmic in the size of the inputs) was proven by Gabriel Lamé in 1844. Beyond fractions, GCD has applications in cryptography (RSA algorithm), computer graphics (aspect ratio calculation), and music theory (rhythm patterns). The Extended Euclidean Algorithm, which also finds coefficients for Bézout's identity, underlies modular arithmetic in cryptography.",
+        "scientificBasis": "A fraction a/b is in lowest terms (simplest form) when gcd(a,b) = 1—when numerator and denominator share no common factors. Simplification divides both by their GCD, preserving the fraction's value while finding the unique simplest representation. Mathematically, the set of fractions equivalent to a/b is {(ka)/(kb) : k ∈ integers}; simplification finds the representative with smallest positive denominator. The Euclidean algorithm's correctness rests on the fact that gcd(a,b) = gcd(b, a mod b). This is because any common divisor of a and b also divides a - qb (where q = a ÷ b), which equals a mod b. The process terminates when the remainder is 0, at which point the other number is the GCD. Simplified fractions are essential for comparing fractions (3/4 = 6/8) and for clean mathematical expressions.",
+        "examples": [
+          "Simplify 24/36: GCD(24,36) → GCD(24,12) → GCD(12,0) → 12. So 24/36 = (24÷12)/(36÷12) = 2/3.",
+          "Simplify 91/143: GCD(91,143) → GCD(91,52) → GCD(52,39) → GCD(39,13) → GCD(13,0) → 13. Result: 7/11.",
+          "Already simplified: 17/31—both are prime, GCD=1, so it's already in lowest terms."
+        ],
+        "comparison": "The GCD method is the standard and most efficient approach for simplifying fractions. Alternative methods include prime factorization (factor both numbers, cancel common factors) and repeated division by common factors (divide by 2 while both even, then by 3 while both divisible by 3, etc.). Prime factorization reveals the structure but becomes tedious for large numbers. Repeated division works well for small numbers with obvious common factors but misses factors you don't check. The Euclidean algorithm works for any integers and always terminates in O(log(min(a,b))) steps. For computer implementation, the binary GCD algorithm (Stein's algorithm) is often faster by avoiding division operations. All methods produce the same unique simplified form.",
+        "prosAndCons": {
+          "pros": [
+            "Produces unique canonical representation",
+            "Euclidean algorithm is efficient and guaranteed to terminate",
+            "Simplified forms easier to compare and interpret",
+            "Essential for arithmetic operations on fractions",
+            "Foundation for modular arithmetic and cryptography"
+          ],
+          "cons": [
+            "Euclidean algorithm requires understanding of remainders",
+            "Prime factorization alternative is conceptually simpler but slower",
+            "For very large numbers, computation can be non-trivial",
+            "Students often struggle with the algorithm's recursive nature",
+            "Simplification step can be forgotten after operations"
+          ]
+        }
+      }
     },
     {
       "id": "mixed-numbers",
@@ -43,7 +95,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Displaying results in readable form",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Mixed numbers—a whole number combined with a proper fraction like 2⅓—developed for practical measurement and communication. Ancient Roman fractions used special symbols for common fractions (½, ¼), and combining whole units with fractional parts was natural in commerce. The notation n a/b (like 3½) became standard in medieval European mathematics. The concept addresses a cognitive tension: improper fractions (7/3) are easier for arithmetic but harder to visualize; mixed numbers (2⅓) are intuitive but require conversion for calculations. Different cultures favored different forms: Eastern mathematics often kept improper fractions, while Western education emphasized mixed numbers for practical applications. Today, both forms are taught, with emphasis on fluid conversion between them for different purposes.",
+        "scientificBasis": "The conversion between mixed numbers and improper fractions is based on the distributive property and the definition of fractions. A mixed number n + a/b represents n whole units plus a/b additional parts. Since one whole equals b/b parts, n wholes equal nb/b parts. Adding the fractional part: nb/b + a/b = (nb+a)/b. This gives the improper fraction form. Reversing: for improper fraction a/b, perform integer division a ÷ b = q remainder r. Then a/b = q + r/b, where q is the whole number part and r/b is the proper fraction part. Mathematically, a = bq + r (division algorithm), so a/b = (bq + r)/b = q + r/b. The proper fraction part always has a numerator less than the denominator (0 ≤ r < b).",
+        "examples": [
+          "Convert 17/5 to mixed: 17 ÷ 5 = 3 remainder 2. So 17/5 = 3 2/5.",
+          "Convert 4 3/8 to improper: (4 × 8 + 3)/8 = (32 + 3)/8 = 35/8.",
+          "Arithmetic with mixed: 2 1/3 + 1 3/4 → Convert to 7/3 + 7/4 = 28/12 + 21/12 = 49/12 = 4 1/12."
+        ],
+        "comparison": "Mixed numbers excel for communication and visualization—'2½ cups' is clearer than '5/2 cups' in a recipe. Improper fractions are better for arithmetic—multiplying 2½ × 3⅓ is easiest as 5/2 × 10/3 = 50/6 = 25/3 = 8⅓. The key skill is recognizing when to use each form. For addition/subtraction, either form works with common denominators, though improper fractions avoid carrying across whole numbers. For multiplication/division, improper fractions are clearly simpler—no distribution needed. For measurement and final answers, mixed numbers are often preferred. Calculator and computer implementations typically use improper fractions internally but can display mixed numbers. Educational emphasis on conversion fluency ensures students can work in whichever form is most appropriate.",
+        "prosAndCons": {
+          "pros": [
+            "Mixed numbers are intuitive for measurement and daily use",
+            "Easier to visualize magnitude (3½ vs 7/2)",
+            "Natural for communication ('two and a half hours')",
+            "Improper fractions simplify arithmetic",
+            "Conversion is straightforward with division algorithm"
+          ],
+          "cons": [
+            "Conversion step adds complexity to calculations",
+            "Mixed number arithmetic can be error-prone",
+            "Notation can be confused with multiplication (3½ vs 3×½)",
+            "Some contexts prefer one form exclusively",
+            "Negative mixed numbers are particularly confusing (-2½: is it -2.5 or -1.5?)"
+          ]
+        }
+      }
     },
     {
       "id": "decimal-conversion",
@@ -60,7 +138,33 @@
         "Decimal approximations lose precision"
       ],
       "bestFor": "Practical calculations, comparisons",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The decimal system has ancient origins but decimal fractions developed much later. The Babylonians used sexagesimal (base-60) fractions; medieval Europeans inherited awkward fractional notation. Simon Stevin's 'De Thiende' (The Tenth, 1585) advocated decimal fractions for practical calculations, demonstrating their superiority for commerce and measurement. John Napier's work on logarithms (1614) further popularized decimals. The decimal point notation (versus comma) became standard in English-speaking countries. Conversion between fractions and decimals became essential as decimal currency, metric measurement, and scientific calculation spread. Today, calculators and computers work primarily in decimal (or binary) representations, making fraction-decimal conversion a crucial skill. The relationship between fractions and repeating decimals reveals deep number theory: a fraction terminates if and only if its denominator has only 2 and 5 as prime factors.",
+        "scientificBasis": "Converting a fraction to a decimal is division: a/b = a ÷ b. The decimal terminates when the division ends (remainder becomes 0) or repeats when remainders cycle. A fraction p/q (in lowest terms) terminates if and only if q = 2ᵐ × 5ⁿ for some non-negative integers m, n. This is because decimal representation is base-10, and 10 = 2 × 5. When q has other prime factors, the division never ends cleanly, producing repeating decimals. The repeating block length divides φ(q) (Euler's totient function). For example, 1/7 = 0.142857142857... with a 6-digit repeat because the remainders cycle through 6 values before returning to 1. Converting repeating decimals to fractions uses algebra: if x = 0.333..., then 10x = 3.333..., so 9x = 3, thus x = 1/3.",
+        "examples": [
+          "Terminating: 3/8 = 0.375 exactly (8 = 2³, so terminates). Divide 3.000 by 8: 0.375.",
+          "Repeating: 5/11 = 0.454545... = 0.45̄. The bar indicates 45 repeats indefinitely.",
+          "Decimal to fraction: 0.125 = 125/1000 = 1/8. For 0.166... = 1/6, multiply equation technique works."
+        ],
+        "comparison": "Fractions provide exact representation for rational numbers; decimals approximate unless terminating. Operations differ: decimal addition/subtraction is straightforward (align decimal points); fraction operations require common denominators. Decimal comparison is immediate (0.75 > 0.72); fraction comparison requires conversion or cross-multiplication (3/4 vs 5/7). Scientific and financial applications favor decimals for computation and standardization. Educational and conceptual applications favor fractions for understanding ratios and proportions. The best practice is fluency in both: use fractions for exact intermediate calculations, convert to decimals for final answers when appropriate. Understanding that 0.333... = 1/3 exactly (not approximately) is a key insight many students miss.",
+        "prosAndCons": {
+          "pros": [
+            "Decimals enable easy comparison of magnitudes",
+            "Addition/subtraction simpler with decimals (align points)",
+            "Calculator and computer compatibility",
+            "Standard in science, finance, measurement",
+            "Terminating decimals are exact and practical"
+          ],
+          "cons": [
+            "Many fractions produce infinite repeating decimals",
+            "Rounding introduces accumulated errors",
+            "0.333... ≠ 0.333 (truncation loses precision)",
+            "Converting repeating decimals back to fractions is complex",
+            "Some relationships (1/3 + 2/3 = 1) less obvious in decimal form"
+          ]
+        }
+      }
     }
   ],
   "sources": [

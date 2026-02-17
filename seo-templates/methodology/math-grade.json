@@ -19,7 +19,33 @@
         "Plus/minus availability varies"
       ],
       "bestFor": "Most US schools",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Letter grades in American education trace back to the late 19th century. Mount Holyoke College used a letter system in 1887, and Harvard adopted a similar system around the same time. The A-F scale (skipping E to avoid confusion with 'Excellent') became standard by the early 20th century. Initially, scales varied widely: some institutions used 90-100% for A, others 93-100%. The 10-point scale (A: 90-100, B: 80-89, C: 70-79, D: 60-69, F: below 60) became the most common standard, though the 7-point scale (A: 93+) remains prevalent in some regions. The shift from percentage scores to letters was motivated by the difficulty of justifying precise percentage differences—is 87% meaningfully different from 88%? Letters provided broader, arguably more defensible categories.",
+        "scientificBasis": "Standard grading maps continuous percentage scores to discrete letter categories. The 10-point intervals (90-100 = A, etc.) are arbitrary but conventional. The scale implicitly assumes percentage scores are meaningful and roughly comparable across assignments and courses—a significant assumption. Psychometrically, the reliability of distinguishing 89% from 90% (B vs A) is questionable given measurement error in grading. Yet the consequences can be significant (Dean's List, scholarships, GPA). The pass/fail threshold at 60% (or sometimes 65% or 70%) represents a policy decision about minimum acceptable performance. These cutoffs have no scientific derivation—they're institutional conventions that have solidified through decades of practice.",
+        "examples": [
+          "Standard conversion: Score of 87% = B (in range 80-89%). GPA points: 3.0.",
+          "Borderline case: Score of 89.4% might round to 89% (B) or 90% (A) depending on rounding policy. Small differences, big consequences.",
+          "Failing threshold: Score of 58% = F. Many institutions require C (70%+) in major courses to pass toward the major."
+        ],
+        "comparison": "US grading differs significantly from other countries. UK universities use first-class (70%+), 2:1 (60-69%), 2:2 (50-59%), third (40-49%), fail (<40%)—much lower percentages for top grades. German grading uses 1-5 scale (1 = sehr gut, best). French uses 0-20 with 10 as passing. Japanese uses various scales. These differences reflect different testing philosophies: US tests often include questions most students can answer (inflating raw scores), while some European systems expect lower percentages with harder questions. Converting between systems is imprecise and often contentious for international applications.",
+        "prosAndCons": {
+          "pros": [
+            "Simple, widely understood categories",
+            "Avoids false precision of percentage points",
+            "Consistent interpretation across decades",
+            "Direct conversion to GPA points",
+            "Standard for US educational system"
+          ],
+          "cons": [
+            "Cutoffs are arbitrary (why 90%, not 88%?)",
+            "Borderline cases treated drastically differently",
+            "10-point intervals mask performance variation",
+            "Doesn't translate well internationally",
+            "Grade inflation has shifted meaning over time"
+          ]
+        }
+      }
     },
     {
       "id": "plus-minus",
@@ -32,7 +58,33 @@
       },
       "accuracy": "More granular",
       "bestFor": "Precise grade differentiation",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Plus/minus grading emerged to provide finer distinctions within letter grade categories. While some institutions used plus/minus informally for decades, widespread adoption came in the 1960s-1980s as faculty sought more precision. The typical system divides each letter into three ranges: the upper third (+), middle (plain), and lower third (-). There's no standard: some schools use 3-point divisions per letter (93-100 = A, 90-92 = A-), others use different splits. A+ is particularly inconsistent—some schools don't use it, some assign 4.0 (same as A), others 4.3 (boosting potential GPA above 4.0). The plus/minus system reflects ongoing tension between precision and the arbitrariness of small distinctions.",
+        "scientificBasis": "Plus/minus scales triple the number of grade categories, from 5 (A-F) to approximately 12 (A+, A, A-, B+, B, B-, C+, C, C-, D+, D, F, sometimes with D-). This finer granularity better distinguishes performance levels: 92% (A-) receives different credit than 98% (A+ or A), which the standard scale would both assign 'A.' The GPA conversion typically gives: A/A+ = 4.0, A- = 3.7, B+ = 3.3, B = 3.0, B- = 2.7, and so on. This changes GPA calculations significantly—a B+ student has 3.3 GPA, not 3.0. The added precision comes at the cost of potentially penalizing students near minus cutoffs (e.g., 90% = A- = 3.7 vs 93% = A = 4.0). Whether this precision is meaningful or just adds stress is debated.",
+        "examples": [
+          "With plus/minus: Scores of 95%, 92%, 88% become A, A-, B+ (GPA points 4.0, 3.7, 3.3). Without: all would be A, A, B (4.0, 4.0, 3.0).",
+          "GPA impact: Four courses with 92%, 92%, 85%, 85%. With plus/minus: (3.7+3.7+3.0+3.0)/4 = 3.35. Without: (4+4+3+3)/4 = 3.5. Plus/minus hurts this student.",
+          "Strategic implications: An 89% (B+, 3.3) is much closer to 90% (A-, 3.7) than to 83% (B, 3.0). Small improvements near boundaries yield large rewards."
+        ],
+        "comparison": "Plus/minus grading is more common in colleges than K-12 schools. Medical schools, law schools, and some graduate programs often use alternative systems (Pass/Fail, Honors/Pass/Fail, or strict curves). Research on plus/minus grading shows mixed results: it may reduce grade inflation, but it doesn't consistently improve learning outcomes. Students often prefer the standard scale because it's harder to get an A (4.0) with plus/minus (need 93%+ instead of 90%+). Faculty opinions vary: some value the precision, others find the distinctions arbitrary. Understanding your institution's specific scale and cutoffs is essential for academic planning.",
+        "prosAndCons": {
+          "pros": [
+            "More precise performance distinctions",
+            "Rewards high achievement within letter grades",
+            "May reduce some grade inflation",
+            "Provides more information in transcripts",
+            "Recognizes that 92% differs from 98%"
+          ],
+          "cons": [
+            "Harder to achieve 4.0 GPA",
+            "Borderline cases still arbitrary (92% vs 93%)",
+            "A+ treatment varies (4.0 or 4.3?)",
+            "Increases stakes of small score differences",
+            "Not standardized across institutions"
+          ]
+        }
+      }
     },
     {
       "id": "curved-grading",
@@ -49,7 +101,33 @@
         "May inflate or deflate grades unfairly"
       ],
       "bestFor": "Difficult courses, standardizing across sections",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Grade curving has been practiced since standardized testing emerged in the early 20th century. The concept became widespread with the belief that ability follows a normal distribution—the 'bell curve.' If test scores should reflect underlying ability, and ability is normally distributed, then grades should be assigned to match this distribution. Normative curves (fixed percentages get each grade) dominated mid-20th century education. However, research questioning the normal distribution of achievement, concerns about student-vs-student competition, and grade inflation pressures have reduced strict bell curve use. Today, most curves are 'additive' (everyone gets bonus points) rather than 'normative' (fixed grade distribution), though the terminology persists.",
+        "scientificBasis": "Curving adjusts grades based on class performance. Additive curves shift all scores: if the highest score was 85%, add 15 points so that becomes 100%, and a 60% becomes 75%. This assumes the test was harder than intended. Square root curves (new = √(old×100)) compress scores, helping low scores more than high scores. Normative curves assign grades by rank: top 15% get A, next 30% B, etc., regardless of raw scores. This guarantees grade distribution but means students compete against each other rather than against a standard. A class of exceptional students would still have C's; a weak class would still have A's. The normative approach is statistically problematic if classes don't represent random samples—which they rarely do.",
+        "examples": [
+          "Additive: Class average was 65%, target average is 75%. Add 10 points to all scores. A 70% becomes 80% (B instead of C).",
+          "Square root: Original 64% → √(64×100) = √6400 = 80%. Original 36% → √(36×100) = 60%. Helps lower scores more.",
+          "Normative: 30 students, grades assigned by rank. Top 4 (13%) get A, next 8 (27%) get B, next 10 (33%) get C, next 5 (17%) get D, bottom 3 (10%) fail—regardless of raw scores."
+        ],
+        "comparison": "Additive curves are more common and generally fairer—everyone benefits proportionally from an overly hard test. Normative curves create zero-sum competition, potentially harming collaboration and student well-being. Research shows normative grading can increase anxiety and decrease cooperation. Many institutions have moved away from strict curves, especially after studies showed they don't predict success better than absolute standards. Graduate schools often use different systems entirely. When curves are used, transparency about the method is important: students should know whether their grades depend on absolute performance or relative standing.",
+        "prosAndCons": {
+          "pros": [
+            "Adjusts for unexpectedly difficult tests",
+            "Can standardize across sections with different instructors",
+            "Additive curves help all students proportionally",
+            "May better reflect relative mastery",
+            "Addresses instructor bias in test difficulty"
+          ],
+          "cons": [
+            "Normative curves create unhealthy competition",
+            "Assumes class is representative sample (rarely true)",
+            "May hide genuine poor performance",
+            "Inconsistent application creates unfairness",
+            "Obscures absolute mastery of material"
+          ]
+        }
+      }
     },
     {
       "id": "needed-score",
@@ -66,7 +144,33 @@
       },
       "accuracy": "Exact for weighted calculations",
       "bestFor": "Planning study effort",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The 'what score do I need' calculation has been a staple of student life since grading systems were established. Before calculators, students and teachers worked through these calculations by hand. The formula became more complex as weighted grade systems (different percentages for exams, homework, participation) became standard in the late 20th century. Online grade calculators and learning management systems (Blackboard, Canvas) now often provide these calculations automatically, showing students their current standing and what final exam scores they need. This transparency can reduce anxiety (when targets are achievable) or create it (when targets are impossible). Understanding the calculation helps students prioritize effort strategically.",
+        "scientificBasis": "The needed score formula solves a weighted average equation. If Current Grade × Earned Weight + Needed Score × Remaining Weight = Target Grade × 100%, then Needed = (Target × 100 - Current × Earned) / Remaining. For example: current 85%, earned 70% of grade, target 90%, remaining 30%. Needed = (90×100 - 85×70) / 30 = (9000 - 5950) / 30 = 101.7%. The math reveals whether targets are achievable: scores above 100% are typically impossible, though extra credit may change this. The formula assumes remaining weights are accurate—if the final is worth exactly 30%, not 'approximately 30%.' Small weight variations can significantly affect needed scores.",
+        "examples": [
+          "Achievable goal: Current 82%, weights: homework (30%) = 95%, midterm (30%) = 75%, final (40%) = ?. To get B (80%): Current weighted = 0.95×30 + 0.75×30 = 51%. Need: (80 - 51)/40 = 72.5% on final.",
+          "Impossible goal: Current 70%, final worth 20%. To get A (90%): Need (90 - 70×0.8)/0.2 = (90-56)/0.2 = 170%. Impossible—time to adjust expectations.",
+          "Extra credit consideration: If 5% extra credit is possible, add to remaining weight denominator. This can make seemingly impossible scores achievable."
+        ],
+        "comparison": "The needed score calculation is deterministic—there's one right answer given the inputs. The uncertainty lies in: (1) accurate weight information, (2) whether remaining assessments include extra credit, (3) rounding policies, and (4) whether instructors adjust grades subjectively. Different courses use different weighting schemes: pure point-based (every assignment counts by points), weighted categories (exams 50%, homework 30%, participation 20%), or drop-lowest policies. Each requires slightly different calculations. Modern LMS platforms usually handle these automatically, but understanding the underlying math helps verify calculations and plan strategically.",
+        "prosAndCons": {
+          "pros": [
+            "Exact calculation when inputs are accurate",
+            "Enables realistic goal setting",
+            "Helps prioritize study time",
+            "Reduces anxiety when goals are achievable",
+            "Identifies when to adjust expectations"
+          ],
+          "cons": [
+            "Assumes accurate weight information",
+            "Doesn't account for instructor discretion",
+            "Can create unhealthy focus on minimum needed",
+            "May encourage 'just enough' mentality",
+            "Doesn't help if all work is already submitted"
+          ]
+        }
+      }
     }
   ],
   "sources": [

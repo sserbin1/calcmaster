@@ -22,7 +22,33 @@
         "Median requires sorting"
       ],
       "bestFor": "Summarizing typical values",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Measures of central tendency have ancient origins in practical problem-solving. The arithmetic mean appears in Babylonian clay tablets from 2000 BCE for averaging observations. The concept was formalized by Greek astronomers who averaged multiple celestial measurements to reduce observational error. The median emerged later—Francis Galton championed it in the 1880s as resistant to outliers, particularly for skewed income distributions. The mode, while conceptually simple, wasn't formally named until Karl Pearson coined the term in 1895. The choice between mean, median, and mode became a foundational topic in the emerging field of statistics during the early 20th century, with Ronald Fisher's work establishing when each measure was most appropriate. Today, these measures remain the first statistics computed when examining any dataset.",
+        "scientificBasis": "Each central tendency measure captures a different aspect of 'typical.' The arithmetic mean minimizes the sum of squared deviations—it's the balance point where data points 'average out.' Mathematically, Σ(xᵢ - x̄) = 0 always. The median, the middle value when data is sorted, minimizes the sum of absolute deviations and is robust to outliers—a single extreme value can dramatically shift the mean but barely affects the median. The mode identifies the most common value, useful for categorical data where numerical averaging is meaningless. For symmetric distributions (like the normal distribution), mean = median = mode. For skewed distributions, they diverge: in right-skewed data (income, housing prices), mean > median > mode. This relationship helps identify distribution shape without graphing.",
+        "examples": [
+          "Income comparison: In a company, 9 employees earn $50,000 and 1 executive earns $500,000. Mean = $95,000 (misleading), Median = $50,000 (representative), Mode = $50,000.",
+          "Test scores: Class scores are 70, 75, 75, 80, 85, 90, 95. Mean = 81.4, Median = 80, Mode = 75. The mode shows the most common performance.",
+          "Housing prices: Neighborhood home values: $200K, $220K, $230K, $240K, $250K, $1.2M. Mean = $390K (skewed by mansion), Median = $235K (better representation)."
+        ],
+        "comparison": "Mean is best when data is symmetric without outliers—it uses all data points and has desirable mathematical properties (unbiased estimation). Median is preferred for skewed data or when outliers are present—it's robust and represents the 'typical' value better when distributions are asymmetric. Mode is essential for categorical data (most popular color) and can reveal multimodal distributions (two peaks). The geometric mean is preferred for multiplicative processes (growth rates), while the harmonic mean is used for rates and ratios (average speed). Knowing which measure to use is more important than calculating them—using mean income instead of median income can dramatically misrepresent economic conditions.",
+        "prosAndCons": {
+          "pros": [
+            "Mean uses all data points and is mathematically tractable",
+            "Median provides resistance to outliers and extreme values",
+            "Mode works for categorical data where averaging is impossible",
+            "Together they reveal distribution shape (skewness)",
+            "Foundational concepts for all statistical analysis"
+          ],
+          "cons": [
+            "Mean is sensitive to outliers and skewed data",
+            "Median ignores magnitude of extreme values",
+            "Mode may not exist, not be unique, or be unrepresentative",
+            "No single measure captures complete picture",
+            "Choosing wrong measure can mislead interpretation"
+          ]
+        }
+      }
     },
     {
       "id": "spread",
@@ -38,7 +64,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Understanding data variability",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Measures of spread developed alongside probability theory in the 17th-18th centuries. Abraham de Moivre first described the normal distribution's spread in 1733. Carl Friedrich Gauss formalized the standard deviation concept while analyzing astronomical data, leading to the 'Gaussian' or normal distribution. The term 'standard deviation' was introduced by Karl Pearson in 1893, though the concept had been used by Gauss and others for nearly a century. Range, the simplest spread measure, has been used since antiquity. The interquartile range emerged from Francis Galton's work on percentiles and became standard for box plots introduced by John Tukey in 1977. These measures collectively answer a fundamental question statistics must address: how much do individual data points differ from the center?",
+        "scientificBasis": "Spread measures quantify dispersion differently. Range (max - min) is intuitive but uses only two data points and is extremely sensitive to outliers. Variance calculates the average squared deviation from the mean: σ² = Σ(xᵢ - μ)²/N. Squaring serves two purposes: it makes all deviations positive and penalizes larger deviations more heavily. Standard deviation is the square root of variance, returning to original units. The division by n-1 (Bessel's correction) for sample standard deviation provides an unbiased estimate of population variance. IQR (Q3 - Q1) measures the range of the middle 50% of data, ignoring the tails where outliers lurk. For normal distributions, approximately 68% of data falls within ±1 SD, 95% within ±2 SD, and 99.7% within ±3 SD.",
+        "examples": [
+          "Investment comparison: Fund A returns [-2%, +8%, +6%, +4%], Fund B returns [+3%, +4%, +5%, +4%]. Both average 4% but Fund B has much lower volatility (SD: 0.82% vs 4.24%).",
+          "Quality control: Manufacturing tolerance requires parts within ±0.5mm. Mean length 10.0mm with SD 0.15mm means ~99.7% of parts within 10±0.45mm (3 SD).",
+          "Outlier detection: Dataset with IQR of 10. Any value below Q1 - 15 (1.5×IQR) or above Q3 + 15 is flagged as a potential outlier."
+        ],
+        "comparison": "Range is quick to calculate but unreliable—a single outlier can make range enormous while the bulk of data clusters tightly. Standard deviation is the most commonly used measure, especially for normally distributed data, but it shares the mean's sensitivity to outliers. IQR is robust to outliers and pairs naturally with the median for describing skewed distributions. The coefficient of variation (CV = SD/mean × 100%) allows comparison of spread across datasets with different scales. For quality control, capability indices use standard deviation relative to specification limits. In finance, 'volatility' typically means standard deviation of returns. The choice of spread measure should match the chosen central tendency: mean with SD, median with IQR.",
+        "prosAndCons": {
+          "pros": [
+            "Standard deviation has well-understood properties for normal distributions",
+            "IQR provides robust measure unaffected by outliers",
+            "Range offers quick, intuitive understanding of data extent",
+            "Variance has desirable mathematical properties for further analysis",
+            "68-95-99.7 rule enables probability statements"
+          ],
+          "cons": [
+            "Range depends only on extreme values, ignoring all other data",
+            "Standard deviation sensitive to outliers like the mean",
+            "Variance has squared units making interpretation difficult",
+            "IQR ignores data outside middle 50%",
+            "Multiple measures can tell conflicting stories"
+          ]
+        }
+      }
     },
     {
       "id": "five-number-summary",
@@ -51,7 +103,33 @@
       },
       "accuracy": "Exact for discrete data",
       "bestFor": "Box plots, distribution overview",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The five-number summary gained prominence through John Tukey's 1977 book 'Exploratory Data Analysis' (EDA), which revolutionized how statisticians approach data. Tukey introduced the box plot (also called box-and-whisker plot) as a visual representation of the five-number summary. Before EDA, statistics focused on confirmatory analysis—testing predetermined hypotheses. Tukey advocated exploring data first without preconceptions, and the five-number summary became a key tool for this approach. The concept builds on earlier work by Francis Galton on quartiles and percentiles from the 1880s. Tukey's contribution was recognizing that these five numbers—minimum, Q1, median, Q3, maximum—provide a remarkably complete picture of a distribution's shape, center, and spread using only five values. Box plots became standard in scientific publications, software output, and data journalism.",
+        "scientificBasis": "The five-number summary divides ordered data into four equal-frequency groups. Each quartile boundary marks where 25% of cumulative data falls. The minimum and maximum show the data range; Q1 and Q3 mark the middle 50% (IQR); the median shows the center. Together, they reveal: central tendency (median position), spread (IQR = Q3-Q1), range (max-min), and skewness (comparing median position within the box and whisker lengths). A symmetric distribution has the median centered in the box with equal whiskers. Right-skewed data shows the median closer to Q1 with a longer upper whisker. The IQR defines outlier thresholds: points beyond Q1 - 1.5×IQR or Q3 + 1.5×IQR are flagged. This threshold captures approximately 99.3% of normal distribution data, making points beyond it unusual.",
+        "examples": [
+          "Test scores [55, 62, 68, 72, 75, 78, 82, 85, 88, 95]: Min=55, Q1=67, Median=76.5, Q3=85.75, Max=95. IQR=18.75. Outlier thresholds: <38.9 or >113.9—no outliers present.",
+          "Comparing groups: Class A five-number summary (50, 65, 75, 85, 100) vs Class B (60, 72, 78, 82, 90). Class B has higher median but less variability (IQR: 10 vs 20).",
+          "Skewness detection: Income data (20K, 35K, 45K, 80K, 500K). Median at 45K is much closer to Q1 than Q3, and the maximum is far above Q3—clearly right-skewed."
+        ],
+        "comparison": "The five-number summary provides distribution overview with remarkable efficiency—five numbers capture information that might otherwise require a histogram. Compared to mean and standard deviation, the five-number summary is robust to outliers and works for any distribution shape (not just symmetric). However, it loses information about distribution details within quartiles—a uniform and a bimodal distribution could have identical five-number summaries. Box plots enable visual comparison across groups that's harder with tables of means and SDs. For formal statistical tests, mean and SD often remain necessary (t-tests, ANOVA require them). The five-number summary excels in initial exploration, identifying outliers, and communicating distribution characteristics to non-statisticians.",
+        "prosAndCons": {
+          "pros": [
+            "Complete distribution overview in five numbers",
+            "Visual box plot representation aids intuition",
+            "Robust to outliers (based on median and quartiles)",
+            "Enables quick between-group comparisons",
+            "Reveals skewness and outliers naturally"
+          ],
+          "cons": [
+            "Loses within-quartile distribution information",
+            "Different quartile calculation methods exist",
+            "Sample size affects reliability of quartile estimates",
+            "Cannot detect bimodality or complex distribution shapes",
+            "Less familiar to general audiences than mean/SD"
+          ]
+        }
+      }
     },
     {
       "id": "percentiles",
@@ -68,7 +146,33 @@
         "Results can vary slightly"
       ],
       "bestFor": "Relative standing, comparison to population",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The percentile concept emerged from Francis Galton's work on human variation in the 1880s. Galton, studying height distributions, needed a way to express where individuals stood relative to the population. He developed the ogive curve and quartile concepts that underpin modern percentile calculations. The term 'percentile' itself came later, with standardized testing driving widespread adoption. The College Board began using percentiles for SAT score interpretation in the 1920s. Growth charts published by the CDC and WHO use percentiles to track child development—a baby in the 75th percentile for weight is heavier than 75% of babies the same age. Percentiles became the universal language for expressing relative standing, from academic achievement to income distribution to athletic performance.",
+        "scientificBasis": "A percentile represents the value below which a given percentage of observations fall. The kth percentile Pₖ satisfies: k% of data ≤ Pₖ. Calculating percentiles involves: (1) ordering the data, (2) determining the rank position R = (k/100)(n+1), and (3) interpolating if R is not an integer. Multiple interpolation methods exist (linear, nearest rank, exclusive/inclusive), causing slight variations across software. Quartiles are special percentiles: Q1 = P25, Q2 = P50 (median), Q3 = P75. Percentile rank reverses the question: given a value, what percentage of data falls below it? For normally distributed data, percentiles relate to z-scores: the 84th percentile is approximately one standard deviation above the mean. The 50th percentile always equals the median, regardless of distribution shape.",
+        "examples": [
+          "Standardized testing: SAT score of 1200 is at the 74th percentile—74% of test-takers scored below 1200, 26% scored higher.",
+          "Pediatric growth: A 2-year-old at 50th percentile for height (34.5 inches) is average—half of children that age are shorter, half are taller.",
+          "Network latency: 95th percentile response time of 200ms means 95% of requests complete within 200ms; only 5% are slower."
+        ],
+        "comparison": "Percentiles and percentile ranks serve different purposes. Percentiles answer 'what value is at this position?' Percentile ranks answer 'what position is this value at?' Both differ from percentage calculations—confusing these causes errors. Percentiles are resistant to outliers (like the median) because they're based on rank position, not magnitude. Z-scores transform data to standard deviation units but assume normality; percentiles work for any distribution. For reporting, percentiles communicate relative standing intuitively: '90th percentile income' is immediately understood. However, percentiles compress differences at the tails: the difference between 98th and 99th percentiles may be larger than between 50th and 60th in absolute terms. Software variation in calculation methods can cause discrepancies in percentile values at the margins.",
+        "prosAndCons": {
+          "pros": [
+            "Intuitive interpretation as 'percent below'",
+            "Works for any distribution shape",
+            "Robust to outliers like other rank-based measures",
+            "Universal language for relative standing",
+            "Enables fair comparison across different tests or scales"
+          ],
+          "cons": [
+            "Multiple calculation methods produce different results",
+            "Compress absolute differences at distribution tails",
+            "Percentile gain isn't uniform (50th to 60th ≠ 90th to 100th)",
+            "Small samples produce unstable percentile estimates",
+            "Converting between percentiles and raw scores requires distribution data"
+          ]
+        }
+      }
     }
   ],
   "sources": [

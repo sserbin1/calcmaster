@@ -21,7 +21,33 @@
         "Doesn't account for course difficulty"
       ],
       "bestFor": "College GPA, unweighted high school GPA",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The 4.0 GPA scale emerged from the letter grade system that became standard in American education in the late 19th and early 20th centuries. Yale University is often credited with introducing letter grades around 1785, though the practice spread slowly. By the 1940s, most US institutions used A-through-F letter grades. Converting letters to numbers (A=4, B=3, C=2, D=1, F=0) enabled averaging grades across courses of different credit weights. The weighted average formula—sum of (grade points × credit hours) divided by total credit hours—gave appropriate influence to courses based on their academic workload. This system became the standard measure of academic performance for college admissions, graduate school applications, and academic honors. International students often must convert their country's grading system to the 4.0 scale for US applications.",
+        "scientificBasis": "The 4.0 scale is a weighted mean calculation. Each course contributes grade points multiplied by credit hours. Dividing by total credit hours normalizes for courseload. Mathematically: GPA = Σ(GP × CH) / Σ(CH). A 4-credit A (4×4=16 grade points) contributes twice as much as a 2-credit A (4×2=8 grade points). Plus/minus grades add granularity: typical conversions are A+=4.0 (or 4.3), A=4.0, A-=3.7, B+=3.3, B=3.0, etc. Some institutions cap at 4.0 (no A+); others allow A+=4.3. The 4.0 max makes interpretation simpler: 4.0 = all A's, 3.0 = B average, 2.0 = C average. Transfer students' GPAs may be recalculated; many grad schools recalculate undergraduate GPAs using their own scales.",
+        "examples": [
+          "Basic GPA: Three courses—A (4 credits), B (3 credits), C (3 credits). Total points = 4×4 + 3×3 + 2×3 = 16 + 9 + 6 = 31. Total hours = 10. GPA = 3.1.",
+          "With plus/minus: A- (3.7, 4 cr), B+ (3.3, 3 cr), B (3.0, 3 cr). Points = 14.8 + 9.9 + 9 = 33.7. Hours = 10. GPA = 3.37.",
+          "Dean's List check: Need 3.5 GPA with 12+ credits. Current: 15 credits, GPA = 3.67. Qualifies for Dean's List (and likely cum laude at graduation)."
+        ],
+        "comparison": "The 4.0 scale is simple but obscures important distinctions. An A in organic chemistry and an A in an easy elective both contribute 4.0 per credit. Weighted GPAs (5.0 scale for AP courses) attempt to address course difficulty in high school. Colleges often recalculate high school GPAs on their own scale during admissions. International comparisons are complex: UK first-class honours (~70%+), German 1.0-4.0 (1.0 = best, inverted from US), French 10-20 scale—none maps cleanly to US 4.0. Graduate school admissions increasingly rely on multiple factors (GRE, research, recommendations) rather than GPA alone. Despite limitations, GPA remains a primary metric for scholarships, honors, and academic standing.",
+        "prosAndCons": {
+          "pros": [
+            "Universal standard in US education",
+            "Simple interpretation (4.0 = all A's)",
+            "Weights by credit hours appropriately",
+            "Enables comparison across courses and semesters",
+            "Foundation for honors designations"
+          ],
+          "cons": [
+            "Doesn't account for course difficulty",
+            "Plus/minus systems vary by institution",
+            "Transfer credits may be recalculated differently",
+            "International conversion is imprecise",
+            "A single number obscures rich academic record"
+          ]
+        }
+      }
     },
     {
       "id": "weighted-gpa",
@@ -39,7 +65,33 @@
         "Colleges often recalculate on their own scale"
       ],
       "bestFor": "High school rankings, course rigor recognition",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Weighted GPAs emerged as high schools developed honors, Advanced Placement (AP), and International Baccalaureate (IB) programs in the mid-20th century. The College Board introduced AP courses in 1955. As rigorous courses became common, schools sought ways to recognize students who challenged themselves academically. Adding extra points for difficult courses (typically +0.5 for honors, +1.0 for AP/IB) allowed class rankings to reward rigor. However, no national standard exists: some districts add +0.5 across the board, others +1.0 for AP only, some use different scales entirely. This variability means weighted GPAs are not directly comparable across schools—a 4.8 at one school may represent different achievement than 4.8 at another. Colleges are well aware of this and often recalculate on their own scale.",
+        "scientificBasis": "Weighted GPA adds bonus points to the standard 4.0 scale for advanced courses. Typical weighting: Regular A = 4.0, Honors A = 4.5, AP/IB A = 5.0. The calculation is otherwise identical: sum of (weighted grade points × credit hours) / total credit hours. This creates a scale where exceeding 4.0 is possible, with theoretical maximums around 5.0 or higher depending on courseload. The rationale: an A in AP Chemistry demonstrates more achievement than an A in regular chemistry. The counterargument: a B in AP Chemistry might demonstrate more learning than an A in regular chemistry, yet weighted systems still penalize the B. The weighting attempts to quantify 'course rigor' but does so imperfectly.",
+        "examples": [
+          "All AP student: 5 AP courses, all A's, 4 credits each. Weighted GPA = (5.0 × 20) / 20 = 5.0. Unweighted GPA = 4.0.",
+          "Mixed courseload: 2 AP A's (4 cr each), 2 Regular B's (3 cr each). Weighted: (5×8 + 3×6)/14 = (40 + 18)/14 = 4.14. Unweighted: (4×8 + 3×6)/14 = 3.57.",
+          "Class rank consideration: Student A has 4.5 weighted (some AP, some B's). Student B has 4.2 weighted (fewer AP, all A's). Weighted GPA favors course rigor; unweighted favors grades."
+        ],
+        "comparison": "Weighted vs unweighted GPA presents trade-offs. Weighted GPA incentivizes taking challenging courses, preventing students from gaming class rank with easy A's. However, it can discourage risk-taking in genuinely difficult subjects if a B hurts class rank. Colleges typically receive both weighted and unweighted GPAs plus course rigor information, making their own judgments. Some admissions offices value unweighted GPA in context of course difficulty over weighted GPA. International programs (IB) have their own complexity with predicted grades and diploma points. Many high schools have moved away from class rank entirely due to weighted GPA variability and competitive stress.",
+        "prosAndCons": {
+          "pros": [
+            "Recognizes students who take challenging courses",
+            "Incentivizes academic rigor over easy A's",
+            "Helps differentiate students in competitive applications",
+            "Reflects real achievement differences between course levels",
+            "Standard practice at most US high schools"
+          ],
+          "cons": [
+            "No standardization across schools (4.8 ≠ 4.8)",
+            "Colleges must recalculate for fair comparison",
+            "May discourage risk-taking (fear of B in hard class)",
+            "Creates confusion about 'real' GPA",
+            "Favors schools offering more AP/honors courses"
+          ]
+        }
+      }
     },
     {
       "id": "cumulative-gpa",
@@ -52,7 +104,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Overall academic standing",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Cumulative GPA emerged as American higher education grew and students spent multiple years accumulating credits. Unlike semester or term GPAs, cumulative GPA tracks the full academic record, becoming the definitive measure of performance. Graduate school applications typically require cumulative undergraduate GPA. Honors designations (cum laude, magna cum laude, summa cum laude) are based on cumulative GPA at graduation. The running nature of cumulative GPA means early performance affects final standing: a poor freshman year can drag down cumulative GPA even after substantial improvement. Some graduate programs allow focus on 'last 60 credits' or major GPA to account for early struggles and later growth.",
+        "scientificBasis": "Cumulative GPA is a weighted mean across all terms. Total grade points (all courses, all semesters) divided by total credit hours. An alternative formula updates cumulatively: New_Cum = (Old_Cum × Old_Hours + Term_GPA × Term_Hours) / Total_Hours. This produces identical results but enables updating without recalculating from scratch. The cumulative calculation naturally weights later semesters more heavily simply because they add more hours: a 4.0 semester on 15 hours affects cumulative GPA more than a 4.0 on 12 hours. Early poor performance becomes proportionally less influential as more credits accumulate, but it never disappears—every grade contributes to the final number.",
+        "examples": [
+          "After freshman year: 30 credits, GPA 2.8. After sophomore year: 32 more credits, GPA 3.4. Cumulative: (2.8×30 + 3.4×32)/(62) = (84 + 108.8)/62 = 3.11.",
+          "Improvement trajectory: Start with 60 credits at 2.5 GPA. Final 60 credits at 3.8 GPA. Cumulative: (2.5×60 + 3.8×60)/120 = 3.15. The strong finish helps but doesn't fully overcome the slow start.",
+          "Honors threshold: Need 3.9 cumulative for summa cum laude. After 100 credits at 3.85, need final 20 credits at: (Target × 120 - 3.85 × 100) / 20 = (468 - 385) / 20 = 4.15 needed—impossible without extra quality points."
+        ],
+        "comparison": "Cumulative GPA provides the comprehensive picture; term GPA shows recent performance. Graduate admissions may weight recent performance more heavily (recognizing maturation) while still considering cumulative GPA. Major GPA (courses in the major only) is often reported separately. Some fields care more about specific coursework: medical schools scrutinize science GPA separately. Repeated courses may or may not replace previous grades depending on institutional policy. Understanding how your institution calculates cumulative GPA—including repeat policies, transfer credits, and withdrawn courses—is essential for academic planning.",
+        "prosAndCons": {
+          "pros": [
+            "Comprehensive measure of overall performance",
+            "Standard metric for honors and graduate admissions",
+            "Fair weighting by credit hours",
+            "Early struggles become proportionally smaller over time",
+            "Comparable across students at same institution"
+          ],
+          "cons": [
+            "Early poor performance permanently affects record",
+            "Cannot fully recover from bad freshman year",
+            "Doesn't show improvement trajectory",
+            "Transfer credit policies vary",
+            "May not reflect current ability level"
+          ]
+        }
+      }
     }
   ],
   "sources": [

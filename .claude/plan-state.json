@@ -1,16 +1,13 @@
 {
-  "session_id": "plan-calcmaster-methodology-2026-02-03",
-  "started_at": "2026-02-03T10:00:00Z",
-  "completed_at": "2026-02-03T11:00:00Z",
-  "project_hash": "calcmaster-60-calculators",
-  "phase": "completed",
+  "session_id": "plan-calcmaster-phase0-ship-2026-02-17",
+  "started_at": "2026-02-17T14:00:00Z",
+  "phase": "review",
   "research_complete": true,
   "human_decisions": [
-    {"question": "detail_level", "answer": "maximum"},
-    {"question": "visual_elements", "answer": "all"},
-    {"question": "grouping", "answer": "by_category"},
-    {"question": "approach", "answer": "component_first"}
+    {"question": "scope", "answer": "full_phase0"},
+    {"question": "domain", "answer": "vercel_default_for_now"},
+    {"question": "approach", "answer": "B_complete_phase0"}
   ],
   "abandoned": false,
-  "output_path": ".claude/kernel-outlines/outline-calcmaster-methodology-2026-02-03.md"
+  "output_path": ".claude/kernel-outlines/outline-calcmaster-phase0-ship-2026-02-17.md"
 }

@@ -23,7 +23,33 @@
         "Part-time schedules vary"
       ],
       "bestFor": "Standard full-time positions",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The 40-hour work week became standard in the United States through decades of labor struggle and legislative action. In the 19th century, 10-14 hour days, 6-7 days per week were common in industrial settings. Labor activists championed the 'Eight-Hour Day' movement, with the slogan 'Eight hours for work, eight hours for rest, eight hours for what you will.' Ford Motor Company voluntarily adopted the 40-hour week in 1926, finding that productivity actually increased. The Fair Labor Standards Act of 1938 codified the 40-hour week nationally, establishing overtime pay requirements beyond 40 hours. The resulting 2,080 hours per year (40 × 52) became the standard denominator for salary-to-hourly conversions. This number appears throughout HR systems, government statistics, and compensation analyses. While many workers today work more or fewer than 40 hours, and some countries have adopted shorter standard weeks (France's 35 hours, for example), the 2,080-hour assumption remains the global benchmark for full-time equivalent calculations.",
+        "scientificBasis": "The standard conversion assumes 40 hours per week for 52 weeks, yielding 2,080 annual hours. However, this doesn't reflect actual hours worked for most employees. Average Americans take 10-15 paid holidays and 10-20 vacation days, reducing actual work to approximately 1,900-1,950 hours annually. Exempt salaried employees often work more than 40 hours without additional compensation—surveys suggest many work 45-50+ hours weekly. The Bureau of Labor Statistics tracks actual hours worked: in 2024, full-time workers averaged 42.4 hours per week. For accurate comparison between salaried and hourly positions, consider: effective hourly rate = annual salary / actual hours worked. A $75,000 salary with 50 hours/week equals $28.85/hour effective rate; at 40 hours it's $36.06/hour. This 20% difference significantly affects job comparison, especially when evaluating positions that require extensive overtime.",
+        "examples": [
+          "$75,000 annual salary: Hourly = $75,000 / 2,080 = $36.06/hour. Monthly = $6,250. Bi-weekly = $2,885. Weekly = $1,442.",
+          "$25/hour full-time: Annual = $25 × 2,080 = $52,000. This helps compare hourly jobs to salaried positions.",
+          "Part-time comparison: 30 hours/week at $20/hour = $20 × 30 × 52 = $31,200 annual. Compare to full-time offer at $35,000 for effective rate."
+        ],
+        "comparison": "The standard 2,080-hour assumption works well for comparing like-to-like: two full-time salaried positions with similar hour expectations. It becomes problematic when comparing salaried positions with different hour norms (tech startup vs government job) or when comparing salary to hourly with overtime potential. For accurate comparison, calculate effective hourly rate using realistic hour estimates. Some employers use 2,000 hours (40 hours × 50 weeks, assuming 2 weeks unpaid time off) or 1,920 hours (treating 8 holidays as non-work). The 26 bi-weekly periods create an interesting quirk: in some years, there are 27 pay periods, giving employees an 'extra' paycheck (though annual salary doesn't change). For budgeting, understanding your specific pay frequency matters more than theoretical annual amounts.",
+        "prosAndCons": {
+          "pros": [
+            "Universal standard enables consistent comparisons",
+            "Simple calculation: annual ÷ 2080 = hourly",
+            "Matches HR systems and government statistics",
+            "Easy conversion between pay frequencies",
+            "Provides common baseline for job offers"
+          ],
+          "cons": [
+            "Assumes exactly 40 hours/week (rarely accurate)",
+            "Ignores paid time off (inflates hourly rate)",
+            "Doesn't reflect actual hours for exempt employees",
+            "Comparing salaried to hourly can be misleading",
+            "26 bi-weekly periods don't perfectly divide year"
+          ]
+        }
+      }
     },
     {
       "id": "adjusted-hours",
@@ -43,7 +69,33 @@
         "Requires knowing PTO package"
       ],
       "bestFor": "Comparing job offers with different PTO",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Adjusted hours calculations gained prominence as employee benefits became a larger component of total compensation during the mid-20th century. After World War II, when wage controls limited salary increases, employers competed for workers by expanding benefits including paid time off. By the 1970s and 1980s, total compensation analysis—including the value of PTO—became standard in HR and recruiting. Today, with some companies offering 'unlimited PTO' and others providing minimal vacation, understanding the dollar value of time off is essential for job comparison. A job paying $5,000 less but offering 10 extra vacation days (worth perhaps $2,400 at that salary's hourly rate) is actually closer than it appears. The adjusted hours method quantifies these differences. Modern compensation analysis frameworks like 'total rewards' go even further, monetizing health insurance, retirement contributions, and other benefits to compare offers holistically.",
+        "scientificBasis": "The adjusted calculation reduces the 2,080-hour denominator by paid non-working time. Standard adjustments include: holidays (average 10-12 days = 80-96 hours), vacation (10-25 days = 80-200 hours), and sick leave (if separate from PTO). A typical package with 10 holidays and 15 vacation days reduces annual hours from 2,080 to 1,880—a 10% difference that makes the effective hourly rate 10% higher than standard calculation suggests. For comparing job offers: $80,000 with 10 PTO days at Company A versus $75,000 with 25 PTO days at Company B. Adjusted: A = $80,000 / 1,960 hours = $40.82/hour; B = $75,000 / 1,840 hours = $40.76/hour. Despite $5,000 salary difference, effective rates are nearly identical, and Company B provides 15 more days of personal time. This framework reveals the true cost comparison.",
+        "examples": [
+          "$65,000 salary, 10 holidays + 15 PTO days: Actual hours = 2,080 - (10×8) - (15×8) = 1,880. Effective hourly = $65,000 / 1,880 = $34.57 (vs $31.25 standard).",
+          "Comparing offers: Job A: $70,000 + 10 PTO days. Job B: $65,000 + 25 PTO days. A: $70,000/1,960 = $35.71/hr. B: $65,000/1,840 = $35.33/hr. Almost equal effective rates.",
+          "Contract vs full-time: $50/hr contract (no PTO, no benefits) vs $85,000 salary with 20 PTO days and benefits worth $15,000. Total comp A: $50 × 2,080 = $104,000. Total comp B: $100,000. Contractor earns more but no PTO and buys own benefits."
+        ],
+        "comparison": "The adjusted method provides a more accurate comparison between jobs with different PTO packages but still doesn't capture all differences. It doesn't account for: overtime expectations (salaried exempt employees often work 45+ hours), flexibility (remote work's value), commute costs, benefits (health insurance varies dramatically in value), retirement matching, or career growth potential. For a complete comparison, create a total compensation spreadsheet including: base salary, effective hourly rate (adjusted), annual bonus potential, benefit values (health insurance, retirement match), and intangibles (commute, flexibility, growth). The adjusted hourly rate is one important metric but shouldn't be the sole decision factor. That said, it's far more accurate than simple salary comparison when PTO packages differ significantly.",
+        "prosAndCons": {
+          "pros": [
+            "Accurately compares jobs with different PTO",
+            "Reveals true value of generous time-off policies",
+            "Exposes effective hourly rate reality",
+            "Helps negotiate: 'Your offer is X% lower effective rate'",
+            "Essential for salaried vs hourly comparisons"
+          ],
+          "cons": [
+            "Requires knowing specific PTO and holiday details",
+            "Doesn't capture overtime hours for exempt employees",
+            "Still ignores benefit value differences",
+            "Complicated to calculate precisely",
+            "Assumes all PTO is actually used"
+          ]
+        }
+      }
     },
     {
       "id": "gross-to-net",
@@ -61,7 +113,33 @@
         "State and local taxes vary significantly"
       ],
       "bestFor": "Budget planning",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The modern U.S. payroll tax system emerged gradually through the 20th century. Federal income tax withholding became mandatory in 1943 with the Current Tax Payment Act, enacted to fund World War II by collecting taxes throughout the year rather than annually. Social Security withholding (FICA) began with the Social Security Act of 1935, initially at 1% on the first $3,000 of wages. Medicare payroll tax was added in 1966. Over time, these rates increased: FICA now totals 7.65% (6.2% Social Security on wages up to $168,600 in 2024, plus 1.45% Medicare on all wages, plus an additional 0.9% Medicare on wages above $200,000). State income taxes, where they exist, add complexity—rates range from 0% (Texas, Florida, Nevada, and others) to over 13% (California's top bracket). The result is that gross-to-net calculations require location-specific and situation-specific analysis, making precise estimation challenging without payroll software.",
+        "scientificBasis": "Net pay calculation involves sequential deductions from gross pay. FICA (7.65%) is flat up to the Social Security wage base, then drops to 1.45% Medicare only. Federal income tax uses progressive brackets: in 2024, 10% on first $11,600 (single), 12% on $11,601-$47,150, 22% on $47,151-$100,525, and so on up to 37%. Effective federal tax rate is always lower than marginal rate due to progressive structure. State taxes add 0-13%+ depending on location and income. Pre-tax deductions (401k contributions, health insurance premiums) reduce taxable income, sometimes significantly—a $6,000 401k contribution saves $1,320-$2,220 in federal taxes depending on bracket. A rough rule of thumb: for middle-income earners, expect to take home 70-80% of gross salary. Higher earners take home a smaller percentage; lower earners take home a higher percentage due to progressive taxation and standard deduction effects.",
+        "examples": [
+          "$75,000 single filer in Texas (no state tax): FICA = $5,738 (7.65%). Federal ~$8,500 (effective ~11%). Net ≈ $60,762 (81%). Monthly take-home ≈ $5,064.",
+          "$75,000 in California: FICA = $5,738. Federal ~$8,500. State ~$3,400 (4.5% effective). Net ≈ $57,362 (76%). California costs ~$3,400/year vs Texas.",
+          "$100,000 in New York City: FICA = $7,650. Federal ~$13,000. State ~$5,000. NYC local ~$3,000. Net ≈ $71,350 (71%). NYC's combined state+local bite is significant."
+        ],
+        "comparison": "Gross-to-net varies dramatically by location and personal circumstances. State tax differences alone can equal $5,000-$10,000+ annually on the same salary. Cost of living complicates comparisons further: $100,000 in Austin, TX (no state tax, moderate cost of living) provides more purchasing power than $120,000 in San Francisco, CA (high state tax, extremely high cost of living). For job comparisons across locations, calculate: (1) net pay after all taxes, (2) after-housing disposable income (using local housing costs), and (3) quality of life factors. Online gross-to-net calculators (PaycheckCity, SmartAsset, ADP) provide accurate estimates with location-specific state and local tax calculations. For financial planning, use your actual paystub data rather than estimates—even small differences in deductions can affect take-home significantly.",
+        "prosAndCons": {
+          "pros": [
+            "Essential for realistic budget planning",
+            "Reveals impact of progressive taxation",
+            "Highlights state and local tax burden differences",
+            "Helps compare job offers across different states",
+            "Necessary for understanding actual financial situation"
+          ],
+          "cons": [
+            "Highly complex with many variables",
+            "Estimates can be significantly off without full details",
+            "Tax law changes frequently",
+            "Pre-tax deductions dramatically affect results",
+            "Online calculators may miss local taxes or specific circumstances"
+          ]
+        }
+      }
     }
   ],
   "sources": [

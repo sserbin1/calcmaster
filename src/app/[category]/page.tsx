@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { categories, getCalculatorsByCategory, type CategorySlug } from '@/data/calculators'
+import { generateCollectionPageSchema, generateBreadcrumbSchema } from '@/lib/schema-generators'
 
 interface PageProps {
   params: Promise<{ category: string }>
@@ -118,6 +119,22 @@ export default async function CategoryPage({ params }: PageProps) {
             ))}
         </div>
       </section>
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              generateCollectionPageSchema(categoryInfo.name, category, calculators),
+              generateBreadcrumbSchema([
+                { name: 'Home', url: 'https://calcmaster.vercel.app/' },
+                { name: categoryInfo.name, url: `https://calcmaster.vercel.app/${category}/` },
+              ]),
+            ],
+          }),
+        }}
+      />
     </div>
   )
 }

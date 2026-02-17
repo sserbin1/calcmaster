@@ -25,7 +25,33 @@
       "bestFor": "General adult population",
       "isDefault": true,
       "yearIntroduced": 1990,
-      "author": "Mifflin, M.D. et al."
+      "author": "Mifflin, M.D. et al.",
+      "expandedContent": {
+        "history": "The Mifflin-St Jeor equation emerged from research conducted at the University of Nevada, Reno in the late 1980s. Lead researcher Mark D. Mifflin, along with Sachiko T. St Jeor and colleagues, set out to develop a more accurate prediction equation for resting energy expenditure in modern populations. The researchers recognized that the then-dominant Harris-Benedict equation, developed in 1918, was systematically overestimating caloric needs in contemporary American adults. Using indirect calorimetry measurements from 498 healthy subjects (247 women and 251 men) ranging in age from 19 to 78 years, they derived new regression equations that accounted for changes in body composition and lifestyle since the early 20th century. Published in the American Journal of Clinical Nutrition in 1990, their work demonstrated a 5% improvement in accuracy over previous methods. The Academy of Nutrition and Dietetics (formerly the American Dietetic Association) subsequently endorsed the Mifflin-St Jeor equation as the preferred method for estimating resting metabolic rate in their 2005 Evidence Analysis Library review, cementing its status as the clinical gold standard.",
+        "scientificBasis": "The Mifflin-St Jeor equation is grounded in the principles of human energetics and the relationship between body size, composition, and metabolic rate. The formula's coefficients reflect the metabolic cost of maintaining different tissue types: the weight coefficient (10 kcal/kg) accounts for the energy required to maintain body mass, with muscle being more metabolically active than fat. The height coefficient (6.25 kcal/cm) adjusts for body surface area, which influences heat loss and thus metabolic requirements. The age coefficient (-5 kcal/year) accounts for the well-documented decline in metabolic rate with aging, primarily due to loss of lean mass and decreased cellular metabolic activity. The sex-specific constants (+5 for men, -161 for women) reflect inherent differences in body composition between sexes—men typically have more metabolically active lean mass at any given height and weight. The equation predicts basal metabolic rate (BMR), which represents the energy needed for essential physiological functions at rest: cellular maintenance, circulation, respiration, temperature regulation, and basic brain function. This constitutes approximately 60-75% of total daily energy expenditure for most individuals.",
+        "examples": [
+          "A 30-year-old man weighing 80 kg at 180 cm: BMR = (10 × 80) + (6.25 × 180) - (5 × 30) + 5 = 800 + 1125 - 150 + 5 = 1,780 kcal/day. With moderate activity (factor 1.55), TDEE = 2,759 kcal/day.",
+          "A 45-year-old woman weighing 65 kg at 165 cm: BMR = (10 × 65) + (6.25 × 165) - (5 × 45) - 161 = 650 + 1031 - 225 - 161 = 1,295 kcal/day. With light activity (factor 1.375), TDEE = 1,781 kcal/day.",
+          "A 25-year-old athletic man at 95 kg and 188 cm: BMR = (10 × 95) + (6.25 × 188) - (5 × 25) + 5 = 950 + 1175 - 125 + 5 = 2,005 kcal/day. This may underestimate needs due to high muscle mass."
+        ],
+        "comparison": "Compared to Harris-Benedict, Mifflin-St Jeor typically yields lower BMR estimates—approximately 5% lower on average. This difference is clinically significant: for someone with a BMR around 1,600 kcal/day, Harris-Benedict might suggest 80 extra calories daily, which compounds to over 8 lbs of potential weight gain per year if followed. The Katch-McArdle equation may be more accurate for individuals with known body composition, as it accounts for lean mass directly. However, Mifflin-St Jeor remains preferred when body fat percentage is unknown, which is the typical clinical scenario.",
+        "prosAndCons": {
+          "pros": [
+            "Endorsed by Academy of Nutrition and Dietetics as the gold standard",
+            "Validated across diverse populations and age groups",
+            "Requires only basic measurements: height, weight, age, sex",
+            "Consistently more accurate than older Harris-Benedict equation",
+            "Well-suited for most healthy adults without body composition data"
+          ],
+          "cons": [
+            "Does not account for body composition—may underestimate for muscular individuals",
+            "Less accurate at BMI extremes (underweight or severely obese)",
+            "May overestimate needs in elderly populations",
+            "Assumes normal metabolic function—less accurate with thyroid conditions",
+            "Population-specific coefficients may not perfectly fit all ethnicities"
+          ]
+        }
+      }
     },
     {
       "id": "harris-benedict",
@@ -49,7 +75,33 @@
       "bestFor": "Historical comparison, some clinical settings",
       "isDefault": false,
       "yearIntroduced": 1918,
-      "author": "Harris, J.A. & Benedict, F.G."
+      "author": "Harris, J.A. & Benedict, F.G.",
+      "expandedContent": {
+        "history": "The Harris-Benedict equation represents a landmark achievement in nutritional science, born from meticulous research at the Carnegie Institution of Washington's Nutrition Laboratory in Boston. James Arthur Harris, a biometrician, and Francis Gano Benedict, a renowned physiologist, conducted what was then the most comprehensive study of human basal metabolism ever undertaken. Between 1909 and 1917, they measured the oxygen consumption (and thus energy expenditure) of 239 subjects using direct and indirect calorimetry—sophisticated techniques for the era. Their 1918 publication, 'A Biometric Study of Human Basal Metabolism,' introduced sex-specific regression equations that became the foundation of clinical nutrition for over seven decades. The original equations used imperial units and were based on a relatively homogeneous population of early 20th-century Americans. In 1984, researchers Roza and Shizgal published revised coefficients converted to metric units, which are the versions commonly used today. Despite being superseded by Mifflin-St Jeor for accuracy, Harris-Benedict remains widely referenced due to its historical significance and continued use in certain clinical and research contexts.",
+        "scientificBasis": "Harris and Benedict approached basal metabolism from a rigorous biometric perspective, seeking to quantify the relationship between body dimensions and energy expenditure through regression analysis. Their foundational insight was that metabolic rate could be predicted from readily measurable physical characteristics without requiring expensive calorimetry equipment. The equation's structure reflects early 20th-century understanding of metabolism: the weight coefficient captures the metabolic demand of total body mass, the height coefficient (which is notably smaller than in Mifflin-St Jeor) accounts for body surface area and heat dissipation, and the age coefficient reflects metabolic decline with aging. The sex-specific intercepts and coefficients reflect both compositional differences between men and women and statistical fitting to their respective samples. However, the equation was derived from a population that was leaner and less sedentary than modern populations, which explains its tendency to overestimate caloric needs in contemporary users. The subjects were also predominantly young adults, limiting the equation's accuracy at age extremes.",
+        "examples": [
+          "A 30-year-old man at 80 kg and 180 cm: BMR = 88.362 + (13.397 × 80) + (4.799 × 180) - (5.677 × 30) = 88 + 1072 + 864 - 170 = 1,854 kcal/day (compare to 1,780 kcal from Mifflin-St Jeor—74 kcal higher).",
+          "A 45-year-old woman at 65 kg and 165 cm: BMR = 447.593 + (9.247 × 65) + (3.098 × 165) - (4.330 × 45) = 448 + 601 + 511 - 195 = 1,365 kcal/day (70 kcal higher than Mifflin-St Jeor).",
+          "A 60-year-old sedentary woman at 75 kg and 160 cm: BMR = 447.593 + (9.247 × 75) + (3.098 × 160) - (4.330 × 60) = 448 + 694 + 496 - 260 = 1,378 kcal/day. The overestimation may be more pronounced in elderly, sedentary individuals."
+        ],
+        "comparison": "When compared head-to-head with Mifflin-St Jeor, Harris-Benedict consistently produces higher BMR estimates. In the original validation study, Mifflin-St Jeor was accurate within 10% for 82% of subjects, compared to only 69% for Harris-Benedict. The practical impact: if following Harris-Benedict for weight loss, individuals may consume 50-100 extra calories daily, significantly slowing progress. For weight gain or maintenance in clinical settings (e.g., hospital nutrition), the slight overestimation may actually be preferable as a safety margin. Harris-Benedict also differs from Katch-McArdle in that it does not require body fat data, making it more practical but less precise for lean or muscular individuals.",
+        "prosAndCons": {
+          "pros": [
+            "Longest track record of any metabolic equation—over 100 years of use",
+            "Extensively validated and referenced in scientific literature",
+            "Slight overestimation may provide safety margin in clinical nutrition",
+            "Familiar to older clinicians and embedded in legacy medical systems",
+            "Simple to calculate with basic anthropometric data"
+          ],
+          "cons": [
+            "Systematically overestimates caloric needs by approximately 5%",
+            "Derived from early 20th-century population—less relevant today",
+            "Less accurate than Mifflin-St Jeor across all validation studies",
+            "May significantly overestimate needs in obese individuals",
+            "Can impede weight loss progress when used for calorie targets"
+          ]
+        }
+      }
     },
     {
       "id": "katch-mcardle",
@@ -72,7 +124,33 @@
       "bestFor": "Athletes, bodybuilders, those with body fat data",
       "isDefault": false,
       "yearIntroduced": 1996,
-      "author": "Katch, F.I. & McArdle, W.D."
+      "author": "Katch, F.I. & McArdle, W.D.",
+      "expandedContent": {
+        "history": "The Katch-McArdle equation emerged from the exercise physiology research of Frank I. Katch and William D. McArdle, two prominent figures in the field of sports science and exercise nutrition. Their work built upon decades of research demonstrating that lean body mass (LBM)—not total body weight—is the primary determinant of resting metabolic rate. The equation was developed and refined through studies of athletes and physically active individuals, populations for whom traditional BMR equations were often inaccurate due to atypical body compositions. Katch and McArdle recognized that a 200-pound athlete with 10% body fat has fundamentally different metabolic needs than a sedentary person of the same weight with 30% body fat. Their formula, published in various forms in their textbooks on exercise physiology starting in the 1970s and refined through the 1990s, provided a way to account for this difference. The equation gained popularity in bodybuilding and fitness communities where body fat measurement is routine, and has since been validated as the most accurate method for individuals who have reliable body composition data.",
+        "scientificBasis": "The physiological rationale for the Katch-McArdle equation is elegantly simple: metabolically active tissue (primarily skeletal muscle, but also organs and other lean tissue) consumes energy, while adipose tissue is relatively inert. At rest, skeletal muscle accounts for approximately 20-25% of basal metabolic rate despite comprising about 40% of body mass, while fat tissue contributes only about 5% of BMR despite potentially representing a significant portion of body weight. The equation's coefficient of 21.6 kcal per kilogram of lean mass represents the average metabolic rate of fat-free tissue at rest. The intercept of 370 kcal accounts for the baseline metabolic activity of organs (brain, heart, liver, kidneys) which remains relatively constant regardless of body size. By focusing on lean mass, the equation inherently adjusts for age and sex differences—older individuals and women typically have less lean mass, resulting in appropriately lower BMR predictions without explicit age or sex coefficients. This also makes the equation uniquely accurate for athletes and bodybuilders whose muscle mass far exceeds population averages.",
+        "examples": [
+          "A male bodybuilder at 95 kg with 12% body fat: LBM = 95 × (1 - 0.12) = 83.6 kg. BMR = 370 + (21.6 × 83.6) = 2,176 kcal/day. Mifflin-St Jeor (assuming 185 cm, 30 years) would give only 2,005 kcal—a 171 kcal underestimate.",
+          "A female athlete at 65 kg with 18% body fat: LBM = 65 × (1 - 0.18) = 53.3 kg. BMR = 370 + (21.6 × 53.3) = 1,521 kcal/day. This accounts for her above-average muscle mass.",
+          "A sedentary individual at 90 kg with 35% body fat: LBM = 90 × (1 - 0.35) = 58.5 kg. BMR = 370 + (21.6 × 58.5) = 1,634 kcal/day. This is likely lower than Mifflin-St Jeor would predict, reflecting the lower metabolic demand of their higher fat mass."
+        ],
+        "comparison": "The Katch-McArdle equation differs fundamentally from Mifflin-St Jeor and Harris-Benedict in that it doesn't use height, age, or sex directly—all of these factors are implicitly captured by the lean body mass measurement. For individuals of average body composition (men ~15-20% body fat, women ~22-28%), all three equations produce similar results. The divergence becomes significant at composition extremes: Katch-McArdle more accurately predicts the elevated metabolism of lean, muscular individuals (where other equations underestimate) and the reduced metabolism of individuals with high body fat percentages (where other equations overestimate). The equation's main limitation is its dependency on accurate body fat measurement, which itself has measurement error depending on the method used (DEXA, bioimpedance, calipers, etc.).",
+        "prosAndCons": {
+          "pros": [
+            "Most accurate for individuals with known body composition",
+            "Properly accounts for variations in muscle vs fat mass",
+            "Sex-neutral—works equally well for men and women",
+            "Age-neutral—lean mass implicitly captures age-related metabolic decline",
+            "Ideal for athletes, bodybuilders, and fitness enthusiasts tracking body composition"
+          ],
+          "cons": [
+            "Requires body fat percentage measurement, which isn't always available",
+            "Accuracy depends entirely on the accuracy of body fat measurement",
+            "Body fat measurement methods have their own error margins (2-5%)",
+            "Not practical for general clinical use without body composition data",
+            "May be unnecessarily complex for average individuals"
+          ]
+        }
+      }
     }
   ],
   "sources": [

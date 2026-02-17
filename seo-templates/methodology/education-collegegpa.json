@@ -17,7 +17,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Overall academic standing, graduation requirements",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The Grade Point Average system was pioneered at Yale University in 1785 with a simple scale, but the modern 4.0 GPA scale was developed at several institutions in the early 20th century. Mount Holyoke College is often credited with establishing the letter grade system in 1897, and by the 1940s most American colleges had adopted the A-F scale mapped to a 4.0 numeric equivalent. The credit hour system, developed alongside the Carnegie Unit in 1906, provided the weighting mechanism for GPA calculations across courses of different loads. The American Association of Collegiate Registrars and Admissions Officers (AACRAO) standardized GPA calculation practices during the mid-20th century. Cumulative GPA became the universal metric for academic standing, graduation eligibility, and graduate school admissions across the United States.",
+        "scientificBasis": "Cumulative GPA is a credit-weighted arithmetic mean that aggregates performance across all completed coursework. For each course, grade points are calculated by multiplying the numeric grade value by the credit hours. The cumulative GPA is the sum of all grade points divided by the sum of all credit hours attempted. This weighting by credit hours ensures that a 4-credit course contributes proportionally more to GPA than a 1-credit course, reflecting the greater time and effort invested. Research by Kuncel, Crede, and Thomas (2005) in a meta-analysis published in the Journal of Applied Psychology found that college GPA is a valid predictor of job performance, graduate school success, and salary, with correlations ranging from 0.30 to 0.35. However, GPA suffers from grade inflation, with the average college GPA rising from 2.52 in the 1950s to approximately 3.15 by 2020 according to research by Stuart Rojstaczer, making historical comparisons problematic. The plus/minus grading system adds granularity, with institutions varying in whether they assign 4.0 or 4.3 to an A+.",
+        "examples": [
+          "Example 1: A student completes 4 courses in their first year: Biology (A, 4 credits) = 16 grade points, English (B+, 3 credits) = 9.9, Calculus (B, 4 credits) = 12, History (A-, 3 credits) = 11.1. Cumulative GPA = (16 + 9.9 + 12 + 11.1) / (4 + 3 + 4 + 3) = 49 / 14 = 3.5.",
+          "Example 2: After sophomore year, a student has accumulated 240 grade points over 72 credit hours. Their cumulative GPA = 240/72 = 3.33. To raise it to 3.5 over 30 more credits, they need 3.5 x 102 - 240 = 117 grade points in 30 credits, requiring a 3.9 average.",
+          "Example 3: A transfer student has 45 credits at a 3.2 GPA (144 grade points) and completes 75 credits at the new school with a 3.6 GPA (270 grade points). If transfer credits count: cumulative GPA = (144 + 270) / (45 + 75) = 414 / 120 = 3.45."
+        ],
+        "comparison": "Cumulative GPA provides a comprehensive view of academic performance but differs from semester GPA in that it smooths out term-to-term variations. Compared to European grading systems like the ECTS (European Credit Transfer System), the US 4.0 scale is less granular. Many countries use percentage-based systems (India), 10-point scales (France), or descriptive classifications (UK's First, 2:1, 2:2, Third). The GPA system treats all courses equally within their credit weight, unlike some international systems that weight courses by year or level. Graduate school admissions often look at both cumulative and major-specific GPA to get a more targeted view of relevant preparation.",
+        "prosAndCons": {
+          "pros": [
+            "Provides a single comprehensive metric for overall academic performance",
+            "Credit-hour weighting ensures proportional representation of course effort",
+            "Universally understood across American higher education institutions",
+            "Enables objective comparison for scholarships and academic honors",
+            "Validated as a predictor of graduate school and career success"
+          ],
+          "cons": [
+            "Grade inflation has eroded the discriminating power of GPA over decades",
+            "Does not distinguish between difficulty levels of different courses",
+            "Early poor performance is difficult to overcome even with later improvement",
+            "Plus/minus grading policies vary between institutions complicating comparison",
+            "Does not capture important skills like leadership creativity or collaboration"
+          ]
+        }
+      }
     },
     {
       "id": "semester-gpa",
@@ -29,7 +55,33 @@
         "description": "Calculated fresh each semester"
       },
       "bestFor": "Term performance, probation evaluation",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Semester GPA emerged as a distinct metric alongside the semester system that most American colleges adopted in the early 20th century. Originally, institutions reported only annual or cumulative standings. The semester GPA became important with the formalization of academic probation and dismissal policies in the 1950s and 1960s, as universities needed a way to evaluate recent performance separately from cumulative records. The GI Bill's influx of returning World War II veterans in the late 1940s prompted colleges to develop more systematic enrollment management, including term-by-term academic progress monitoring. Modern student information systems like Banner (1980s) and PeopleSoft (1990s) automated semester GPA calculation and made it a standard part of every academic transcript, enabling rapid identification of students who might need academic support.",
+        "scientificBasis": "Semester GPA is calculated identically to cumulative GPA but is scoped to a single academic term. It captures performance in a specific time window, making it sensitive to recent changes in study habits, course difficulty, or external circumstances. Statistical analysis shows that semester GPA has higher variance than cumulative GPA because it is based on fewer data points, typically 4-6 courses per term versus 30-40 courses for cumulative. This makes it a more responsive but less reliable indicator. Research on academic momentum theory by Adelman (2006) found that first-year semester GPAs are the strongest single predictor of degree completion, particularly the first semester. Academic probation thresholds, typically triggered when semester GPA falls below 2.0, use the term GPA specifically because it reflects current performance trajectory rather than historical average. The relationship between semester and cumulative GPA follows a running average pattern where each additional semester has diminishing marginal impact on the cumulative figure.",
+        "examples": [
+          "Example 1: In Spring semester, a student takes 3 courses: Chemistry (B, 4 credits) = 12 points, Psychology (A, 3 credits) = 12 points, Literature (A-, 3 credits) = 11.1 points. Semester GPA = (12 + 12 + 11.1) / (4 + 3 + 3) = 35.1 / 10 = 3.51.",
+          "Example 2: A student on academic probation (cumulative 1.85) earns a 3.2 semester GPA. The dean evaluates the semester GPA to confirm they are making progress, even though cumulative GPA may still be below 2.0.",
+          "Example 3: A senior compares semester GPAs across 8 semesters: 2.8, 3.0, 3.2, 3.3, 3.5, 3.4, 3.6, 3.7 showing clear upward trend. Graduate schools often note this improvement trajectory even if cumulative GPA is moderate."
+        ],
+        "comparison": "Semester GPA and cumulative GPA serve complementary purposes. Semester GPA is like a snapshot while cumulative GPA is like a long-exposure photograph. Quarter-system schools calculate quarterly GPAs with similar methodology but over shorter 10-week periods, leading to even higher variance. Some institutions calculate a 'trend GPA' using only the most recent 2-3 semesters for academic standing decisions, acknowledging that recent performance better reflects current ability. European universities using the ECTS system report annual averages rather than semester-by-semester figures. Some professional schools weight recent semester performance more heavily in admissions decisions, recognizing student growth over time.",
+        "prosAndCons": {
+          "pros": [
+            "Reflects current academic performance rather than historical average",
+            "Enables early identification of students needing academic support",
+            "Reveals performance trends and growth over time",
+            "Useful for academic probation and Dean's List determinations",
+            "Helps students understand the impact of specific term decisions"
+          ],
+          "cons": [
+            "Higher variance due to fewer courses makes it less statistically reliable",
+            "One difficult course or personal crisis can dramatically impact term GPA",
+            "Does not reflect overall academic trajectory or sustained achievement",
+            "May create anxiety if students fixate on term-to-term fluctuations",
+            "Credit load variations between semesters complicate comparisons"
+          ]
+        }
+      }
     }
   ],
   "sources": [

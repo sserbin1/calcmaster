@@ -24,7 +24,33 @@
       ],
       "bestFor": "General adult population",
       "isDefault": true,
-      "yearIntroduced": 1990
+      "yearIntroduced": 1990,
+      "expandedContent": {
+        "history": "The Mifflin-St Jeor equation was developed through research conducted at the University of Nevada, Reno, published in the American Journal of Clinical Nutrition in 1990. Lead researcher Mark D. Mifflin and colleague Sachiko T. St Jeor recognized that existing BMR prediction equations, particularly the Harris-Benedict equation from 1918, were systematically overestimating the resting energy expenditure of modern Americans. The research team measured the actual metabolic rates of 498 healthy adults aged 19 to 78 using indirect calorimetry—a technique that calculates energy expenditure from oxygen consumption and carbon dioxide production. Through regression analysis, they derived new equations that accounted for changes in body composition and lifestyle between early 20th-century and late 20th-century populations. Subsequent validation studies confirmed the superiority of Mifflin-St Jeor, and in 2005, the Academy of Nutrition and Dietetics (then the American Dietetic Association) officially endorsed it as the preferred method for BMR estimation in their Evidence Analysis Library, cementing its status as the clinical gold standard.",
+        "scientificBasis": "Basal metabolic rate represents the energy required to maintain essential physiological functions when the body is at complete rest in a thermally neutral environment. These functions include cellular respiration, circulation of blood, respiration, maintenance of ion gradients across cell membranes, and basic brain activity. The Mifflin-St Jeor equation captures this through its coefficients: the weight coefficient (10 kcal/kg) reflects the metabolic cost of maintaining body tissue, the height coefficient (6.25 kcal/cm) adjusts for body surface area which affects heat loss and temperature regulation, and the age coefficient (-5 kcal/year) accounts for the well-documented decline in metabolic rate with aging—approximately 1-2% per decade after age 20, primarily due to loss of metabolically active lean tissue. The sex constants (+5 for men, -161 for women) reflect inherent differences in body composition between sexes, with men typically having more metabolically demanding lean mass at any given height and weight. BMR typically constitutes 60-75% of total daily energy expenditure, making its accurate prediction critical for nutrition planning.",
+        "examples": [
+          "A 35-year-old man at 75 kg and 175 cm: BMR = (10 × 75) + (6.25 × 175) - (5 × 35) + 5 = 750 + 1094 - 175 + 5 = 1,674 kcal/day. This represents the calories needed just to stay alive at complete rest.",
+          "A 50-year-old woman at 60 kg and 162 cm: BMR = (10 × 60) + (6.25 × 162) - (5 × 50) - 161 = 600 + 1013 - 250 - 161 = 1,202 kcal/day. Note how the older age and female sex result in a lower BMR.",
+          "A 22-year-old man at 90 kg and 185 cm: BMR = (10 × 90) + (6.25 × 185) - (5 × 22) + 5 = 900 + 1156 - 110 + 5 = 1,951 kcal/day. Young age and larger body size yield higher BMR."
+        ],
+        "comparison": "When compared to Harris-Benedict, Mifflin-St Jeor typically predicts BMR values approximately 5% lower, which better reflects the metabolic rates measured in contemporary populations. The Cunningham equation may be more accurate for athletic individuals with above-average muscle mass, as it uses lean body mass rather than total weight. However, Mifflin-St Jeor remains the preferred equation when body composition data is not available, which is the common clinical scenario. All predictive equations have inherent limitations—true BMR can only be measured directly through indirect calorimetry or doubly labeled water techniques.",
+        "prosAndCons": {
+          "pros": [
+            "Validated as the most accurate predictive equation for healthy adults",
+            "Endorsed by Academy of Nutrition and Dietetics as the gold standard",
+            "Requires only basic anthropometric measurements",
+            "Well-suited for most healthy adults in clinical and personal use",
+            "Extensive validation across diverse age groups and populations"
+          ],
+          "cons": [
+            "Does not account for individual variation in body composition",
+            "May underestimate BMR in highly muscular individuals",
+            "May overestimate BMR in individuals with high body fat percentage",
+            "Less accurate at BMI extremes (very underweight or obese)",
+            "Cannot account for metabolic adaptations from dieting or illness"
+          ]
+        }
+      }
     },
     {
       "id": "harris-benedict-revised",
@@ -46,7 +72,33 @@
       ],
       "bestFor": "Clinical settings using historical protocols",
       "isDefault": false,
-      "yearIntroduced": 1984
+      "yearIntroduced": 1984,
+      "expandedContent": {
+        "history": "The original Harris-Benedict equations were published in 1918 by James Arthur Harris and Francis Gano Benedict, researchers at the Carnegie Institution's Nutrition Laboratory in Boston. Their monumental work, 'A Biometric Study of Human Basal Metabolism,' represented the most comprehensive study of human metabolic rate ever undertaken at that time. Using direct and indirect calorimetry on 239 subjects between 1909 and 1917, they developed regression equations that became the foundation of clinical nutrition for over six decades. However, by the 1980s, evidence suggested the original equations were overestimating BMR in modern populations—likely due to changes in body composition and activity patterns since the early 20th century. In 1984, researchers Roza and Shizgal published revised coefficients that converted the formulas to metric units and attempted to improve accuracy based on newer data. Despite this revision, the Mifflin-St Jeor equation published in 1990 proved more accurate in head-to-head comparisons, leading the Academy of Nutrition and Dietetics to recommend it over Harris-Benedict.",
+        "scientificBasis": "The Harris-Benedict equation was developed using direct and indirect calorimetry—sophisticated measurement techniques that assess energy expenditure through heat production or gas exchange (oxygen consumption and carbon dioxide production). Harris and Benedict recognized that metabolic rate could be predicted from physical characteristics through statistical regression, eliminating the need for expensive calorimetry equipment in routine clinical practice. Their equation structure reflects early 20th-century understanding: weight contributes to metabolic demand through tissue maintenance, height accounts for body surface area and heat regulation, and age reflects metabolic decline with aging. The 1984 revision updated coefficients to metric units but retained the fundamental structure. The equation tends to overestimate BMR in modern populations because its derivation sample consisted of relatively lean, active early 20th-century Americans whose metabolic rates were higher than contemporary sedentary populations.",
+        "examples": [
+          "A 35-year-old man at 75 kg and 175 cm: BMR = 88.362 + (13.397 × 75) + (4.799 × 175) - (5.677 × 35) = 88 + 1005 + 840 - 199 = 1,734 kcal/day (compare to Mifflin-St Jeor: 1,674 kcal—60 kcal higher).",
+          "A 50-year-old woman at 60 kg and 162 cm: BMR = 447.593 + (9.247 × 60) + (3.098 × 162) - (4.330 × 50) = 448 + 555 + 502 - 217 = 1,288 kcal/day (86 kcal higher than Mifflin-St Jeor).",
+          "A 65-year-old man at 80 kg and 170 cm: BMR = 88.362 + (13.397 × 80) + (4.799 × 170) - (5.677 × 65) = 88 + 1072 + 816 - 369 = 1,607 kcal/day."
+        ],
+        "comparison": "The revised Harris-Benedict typically yields BMR estimates approximately 5-7% higher than Mifflin-St Jeor. This overestimation is clinically significant: following Harris-Benedict for weight loss might result in consuming 50-100 extra calories daily, potentially eliminating the intended caloric deficit. In hospital settings where caloric needs must err on the side of adequacy rather than deficit, Harris-Benedict's slight overestimation may be preferred as a safety margin. The equation remains embedded in many older clinical protocols and medical calculators, explaining its continued use despite evidence favoring Mifflin-St Jeor.",
+        "prosAndCons": {
+          "pros": [
+            "Over 100 years of clinical use and extensive literature references",
+            "Familiar to clinicians trained before Mifflin-St Jeor adoption",
+            "Embedded in many legacy clinical protocols and calculators",
+            "Slight overestimation may provide safety margin in hospital nutrition",
+            "Well-documented derivation and methodology"
+          ],
+          "cons": [
+            "Systematically overestimates BMR in modern populations by ~5%",
+            "Original population differs significantly from contemporary subjects",
+            "Less accurate than Mifflin-St Jeor in validation studies",
+            "Overestimation can impede weight loss when used for calorie targets",
+            "No longer recommended as first-line equation by major organizations"
+          ]
+        }
+      }
     },
     {
       "id": "cunningham",
@@ -66,7 +118,33 @@
       ],
       "bestFor": "Athletes and fitness enthusiasts",
       "isDefault": false,
-      "yearIntroduced": 1991
+      "yearIntroduced": 1991,
+      "expandedContent": {
+        "history": "The Cunningham equation was developed by John Cunningham and published in 1991, building on the growing body of research demonstrating that lean body mass—not total body weight—is the primary determinant of resting metabolic rate. Cunningham recognized that traditional BMR equations using total weight systematically underestimate metabolic rates in muscular individuals and overestimate them in those with high body fat percentages. His research focused on athletic populations, where the discrepancy between predicted and measured BMR was most pronounced. The equation's simplicity—using only lean body mass as a predictor—reflects the fundamental physiological principle that metabolically active tissue (muscle, organs, bone) drives energy expenditure, while adipose tissue contributes minimally to resting metabolism. The Cunningham equation gained particular popularity in sports nutrition and bodybuilding communities, where accurate BMR estimation is critical for optimizing training and nutrition periodization.",
+        "scientificBasis": "The physiological rationale for the Cunningham equation is straightforward: metabolically active tissue consumes energy, while fat tissue is relatively inert. At rest, skeletal muscle accounts for approximately 20-25% of total energy expenditure despite comprising about 40% of body mass in healthy adults, while adipose tissue contributes only about 5% of resting metabolism regardless of how much is present. The coefficient of 22 kcal per kilogram of lean mass represents the average metabolic rate of fat-free tissue at rest, accounting for the combined contributions of skeletal muscle, organs, bone, and other non-fat tissues. The intercept of 500 kcal provides a baseline that accounts for the relatively constant metabolic contribution of vital organs (brain, heart, liver, kidneys) regardless of overall body size. By using lean mass directly, the equation automatically adjusts for age, sex, and fitness level—factors that primarily affect BMR through their influence on body composition.",
+        "examples": [
+          "A male bodybuilder at 90 kg with 10% body fat: LBM = 90 × (1 - 0.10) = 81 kg. BMR = 500 + (22 × 81) = 2,282 kcal/day. Mifflin-St Jeor might predict only ~1,950 kcal for this individual.",
+          "A female athlete at 60 kg with 18% body fat: LBM = 60 × (1 - 0.18) = 49.2 kg. BMR = 500 + (22 × 49.2) = 1,582 kcal/day. This accounts for her above-average muscle mass.",
+          "A sedentary individual at 85 kg with 32% body fat: LBM = 85 × (1 - 0.32) = 57.8 kg. BMR = 500 + (22 × 57.8) = 1,772 kcal/day. This may be lower than weight-based equations predict."
+        ],
+        "comparison": "The Cunningham equation fundamentally differs from Mifflin-St Jeor and Harris-Benedict in that it doesn't use height, age, or sex as direct predictors—all of these factors influence BMR primarily through their effect on lean body mass, which Cunningham measures directly. For individuals of average body composition (men ~15-20% body fat, women ~22-28%), all equations produce similar results. The divergence becomes significant at composition extremes: Cunningham more accurately predicts the elevated metabolism of lean, muscular athletes (where weight-based equations underestimate) and the reduced metabolism of individuals with high body fat (where weight-based equations overestimate). The main limitation is the requirement for body fat measurement, which introduces its own measurement error.",
+        "prosAndCons": {
+          "pros": [
+            "Most accurate for athletes and individuals with known body composition",
+            "Accounts for muscle mass directly rather than inferring from weight",
+            "Sex-neutral—works equally well for men and women",
+            "Elegant simplicity—only one input variable required",
+            "Validated in athletic and fitness populations"
+          ],
+          "cons": [
+            "Requires body fat percentage measurement to calculate LBM",
+            "Accuracy depends on the accuracy of body fat assessment method",
+            "Less validated in general population compared to Mifflin-St Jeor",
+            "Not practical when body composition data is unavailable",
+            "Body fat measurement methods have their own error margins (2-5%)"
+          ]
+        }
+      }
     }
   ],
   "sources": [

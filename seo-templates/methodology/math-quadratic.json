@@ -23,7 +23,33 @@
         "Complex roots when discriminant < 0"
       ],
       "bestFor": "Any quadratic equation",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Quadratic equations have been solved for over 4,000 years. Babylonian clay tablets from 1800 BCE show solutions to quadratic problems, though using geometric rather than algebraic methods. Indian mathematician Brahmagupta (628 CE) gave an explicit formula for quadratics. Islamic mathematicians, particularly al-Khwarizmi (830 CE), whose book 'al-Kitab al-mukhtasar fi hisab al-jabr wal-muqabala' gave us the word 'algebra,' systematized solution methods. The modern formula using symbolic notation emerged in European mathematics during the 16th-17th centuries with Cardano, Viète, and Descartes. The quadratic formula's elegant form x = (-b ± √(b² - 4ac))/(2a) became a cornerstone of algebra education. Today, quadratics appear in physics (projectile motion), engineering (optimization), and finance (compound interest problems).",
+        "scientificBasis": "The quadratic formula solves ax² + bx + c = 0 by completing the square algebraically. Starting from ax² + bx + c = 0, divide by a: x² + (b/a)x + c/a = 0. Add and subtract (b/2a)² to complete the square: (x + b/2a)² = b²/4a² - c/a = (b² - 4ac)/4a². Taking the square root: x + b/2a = ±√(b² - 4ac)/2a, giving x = (-b ± √(b² - 4ac))/2a. The ± yields two solutions because both +√D and -√D satisfy (x + b/2a)² = D. The discriminant D = b² - 4ac determines root nature: D > 0 gives two real roots, D = 0 gives one repeated root, D < 0 gives complex conjugate roots. Every quadratic has exactly two roots (counting multiplicity) by the Fundamental Theorem of Algebra.",
+        "examples": [
+          "Projectile: When does a ball reach 20 meters if h(t) = -5t² + 30t? Solve -5t² + 30t - 20 = 0. Using formula: t = (−30 ± √(900−400))/(−10) = (−30 ± √500)/(−10) ≈ 0.76 and 5.24 seconds.",
+          "Simple quadratic: x² - 5x + 6 = 0. Formula gives x = (5 ± √(25-24))/2 = (5 ± 1)/2 = 3 or 2.",
+          "Complex roots: x² + 4 = 0. Formula gives x = (0 ± √(-16))/2 = ±4i/2 = ±2i."
+        ],
+        "comparison": "The quadratic formula always works, making it the 'universal' method. Factoring is faster when it works (integer roots), but many quadratics don't factor nicely—the formula handles irrational and complex roots that factoring cannot. Completing the square is the foundation that derives the formula; it's useful for converting to vertex form but tedious for just finding roots. Graphing provides visual insight (x-intercepts are roots) but lacks precision. Numerical methods (Newton's method) are overkill for quadratics but essential for higher-degree polynomials. For cubic and quartic equations, similar formulas exist (Cardano's, Ferrari's) but are much more complex. For degree 5+, no general formula exists (Abel-Ruffini theorem), requiring numerical methods.",
+        "prosAndCons": {
+          "pros": [
+            "Works for ALL quadratic equations",
+            "Provides exact solutions (including complex)",
+            "Systematic and reliable procedure",
+            "Well-suited for calculator/computer implementation",
+            "Reveals root structure through discriminant"
+          ],
+          "cons": [
+            "More complex than factoring for simple cases",
+            "Requires careful arithmetic (easy to make sign errors)",
+            "Doesn't reveal factors directly",
+            "May produce irrational or complex numbers",
+            "Less intuitive than geometric interpretations"
+          ]
+        }
+      }
     },
     {
       "id": "discriminant",
@@ -38,7 +64,33 @@
       },
       "accuracy": "Exact classification",
       "bestFor": "Determining root type before solving",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The discriminant as a tool for classifying roots emerged with the development of symbolic algebra in the 16th-17th centuries. While earlier mathematicians understood that some quadratics had no (real) solutions, the systematic use of b² - 4ac to classify root types was formalized during this period. The term 'discriminant' was introduced later as the concept was generalized to higher-degree polynomials. For cubics and quartics, discriminants exist but are more complex expressions. The discriminant's power lies in revealing root nature without finding the roots themselves—useful in theoretical mathematics, engineering design constraints, and optimization problems where one needs to know if solutions exist before computing them.",
+        "scientificBasis": "The discriminant D = b² - 4ac is the expression under the square root in the quadratic formula. Its sign determines whether the square root yields real or imaginary results. When D > 0, √D is real and positive, giving two distinct real roots: x = (-b + √D)/(2a) and x = (-b - √D)/(2a). When D = 0, √D = 0, giving one repeated root x = -b/(2a)—the parabola is tangent to the x-axis. When D < 0, √D is imaginary (√D = i√|D|), giving complex conjugate roots: x = (-b ± i√|D|)/(2a). The discriminant connects algebra to geometry: D > 0 means two x-intercepts, D = 0 means one x-intercept (tangent), D < 0 means no real x-intercepts (parabola doesn't cross x-axis).",
+        "examples": [
+          "Two real roots: x² - 5x + 6 = 0. D = 25 - 24 = 1 > 0. Confirms two distinct real roots (in fact 2 and 3).",
+          "One repeated root: x² - 6x + 9 = 0. D = 36 - 36 = 0. One root: x = 3 (double root). Parabola touches x-axis at vertex.",
+          "Complex roots: x² + 2x + 5 = 0. D = 4 - 20 = -16 < 0. No real roots; complex roots are -1 ± 2i."
+        ],
+        "comparison": "The discriminant offers quick classification without full solution. Before investing effort in the quadratic formula, checking D reveals what to expect. In applications, discriminant analysis answers existence questions: 'Does this projectile ever reach height h?' (does the equation h = -5t² + v₀t have real positive solutions?). The discriminant extends to higher polynomials but becomes more complex: cubic discriminants involve 18 terms, quartic 16 terms. For quadratics, the discriminant is simple enough to compute mentally for many cases. The technique of analyzing existence/uniqueness before solving is fundamental to mathematical thinking and engineering problem-solving.",
+        "prosAndCons": {
+          "pros": [
+            "Quick determination of root nature",
+            "No need to complete the full solution",
+            "Connects algebra to geometry (parabola-axis intersections)",
+            "Essential for theoretical analysis",
+            "Helps predict solution complexity"
+          ],
+          "cons": [
+            "Doesn't give the actual roots",
+            "Only classifies, doesn't solve",
+            "Still requires computing b² - 4ac",
+            "Complex root classification says nothing about magnitude",
+            "Doesn't extend as cleanly to degree > 4"
+          ]
+        }
+      }
     },
     {
       "id": "factoring",
@@ -55,7 +107,33 @@
         "Complex roots can't be found this way"
       ],
       "bestFor": "Simple integer solutions",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Factoring quadratics is an ancient technique, with roots in Babylonian mathematics where geometric methods were used to find values that satisfied quadratic relationships. The algebraic factoring approach developed alongside symbolic algebra in medieval Islamic mathematics and Renaissance Europe. Factoring became a standard part of algebra education because it reveals the structure of quadratic expressions and connects multiplication and division of polynomials. The method relies on the zero product property: if (x - r₁)(x - r₂) = 0, then x = r₁ or x = r₂. While limited to cases with 'nice' factors, factoring builds mathematical intuition and remains a quick mental math technique for simple quadratics.",
+        "scientificBasis": "Factoring uses the relationship between roots and coefficients: if r₁ and r₂ are roots of ax² + bx + c, then ax² + bx + c = a(x - r₁)(x - r₂). Expanding: a(x² - (r₁+r₂)x + r₁r₂). Matching coefficients: r₁ + r₂ = -b/a (sum of roots) and r₁ × r₂ = c/a (product of roots). For monic quadratics (a=1), finding factors means finding two numbers that add to b and multiply to c. For a ≠ 1, the 'ac method' finds two numbers that multiply to ac and add to b, then splits the middle term. Factoring only yields rational roots—when roots are irrational (like 1 + √2) or complex, factoring over integers fails. The Rational Root Theorem limits possible rational roots to factors of c divided by factors of a.",
+        "examples": [
+          "Simple factoring: x² + 5x + 6. Need two numbers that add to 5 and multiply to 6: that's 2 and 3. Factor: (x + 2)(x + 3) = 0, so x = -2 or -3.",
+          "AC method: 2x² + 7x + 3. ac = 6. Find factors of 6 that add to 7: 1 and 6. Rewrite: 2x² + x + 6x + 3 = x(2x+1) + 3(2x+1) = (x+3)(2x+1). Roots: x = -3 or -1/2.",
+          "Doesn't factor nicely: x² + x - 1. Sum = 1, product = -1. No integer pairs work. Use quadratic formula: x = (-1 ± √5)/2 (irrational)."
+        ],
+        "comparison": "Factoring is the fastest method when it works—for x² + 5x + 6, spotting (x+2)(x+3) is immediate. But most quadratics with random coefficients don't factor over integers. The quadratic formula always works but involves more computation. Completing the square is more general than factoring and derives the quadratic formula. For standardized tests and competition math, recognizing factorable quadratics quickly is valuable. For practical applications, the quadratic formula is more reliable. Computer algebra systems can factor quadratics symbolically when possible, defaulting to the formula otherwise. The key skill is recognizing when factoring is likely to work (small integer coefficients, obvious factor pairs) versus when to proceed directly to the formula.",
+        "prosAndCons": {
+          "pros": [
+            "Fastest method for simple integer solutions",
+            "Builds algebraic intuition",
+            "Reveals factor structure of expression",
+            "Good for mental math with practice",
+            "Connects multiplication and roots"
+          ],
+          "cons": [
+            "Only works when roots are rational",
+            "Most 'random' quadratics don't factor nicely",
+            "Can be time-consuming to search for factors",
+            "Doesn't find irrational or complex roots",
+            "AC method is cumbersome for large coefficients"
+          ]
+        }
+      }
     },
     {
       "id": "completing-square",
@@ -68,7 +146,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Finding vertex form, deriving quadratic formula",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Completing the square originated in Babylonian mathematics around 1800 BCE, where geometric problems were solved by manipulating squares and rectangles. The technique was used to solve what we now call quadratic equations. Al-Khwarizmi's 9th-century algebra text includes completing the square as a primary solution method, explained geometrically. The technique gained algebraic form in European mathematics and became the standard method for deriving the quadratic formula. Beyond solving equations, completing the square transforms quadratics to vertex form, revealing the parabola's vertex—essential for optimization problems, graphing, and applications in physics and engineering.",
+        "scientificBasis": "Completing the square transforms ax² + bx + c into vertex form a(x - h)² + k. The process: (1) Factor out a from the x terms: a(x² + (b/a)x) + c. (2) Take half of b/a, square it: (b/2a)². (3) Add and subtract this inside: a(x² + (b/a)x + (b/2a)² - (b/2a)²) + c. (4) Factor the perfect square: a(x + b/2a)² - b²/4a + c. (5) Combine constants: a(x + b/2a)² + (c - b²/4a). The vertex is at h = -b/2a, k = c - b²/4a. Setting equal to zero and solving gives the quadratic formula. Geometrically, we're adding a rectangle to make a perfect square, then compensating by subtracting the same area elsewhere.",
+        "examples": [
+          "Find vertex: y = x² - 6x + 11. Complete: x² - 6x + 9 - 9 + 11 = (x - 3)² + 2. Vertex at (3, 2). Minimum value is 2.",
+          "Solve by completing: x² + 4x - 5 = 0. Complete: (x + 2)² - 4 - 5 = 0. So (x + 2)² = 9, x + 2 = ±3, x = 1 or -5.",
+          "Harder example: 2x² + 12x + 7 = 0. Factor: 2(x² + 6x) + 7. Complete: 2(x² + 6x + 9 - 9) + 7 = 2(x + 3)² - 11. Vertex at (-3, -11)."
+        ],
+        "comparison": "Completing the square is more versatile than factoring (works for all quadratics) but more laborious than the quadratic formula (which completes the square once-and-for-all). Its unique value is producing vertex form, essential for graphing and optimization. Neither factoring nor the quadratic formula directly reveals the vertex. For calculus, completing the square appears in integration of rational functions. For conic sections, it converts general form to standard form, identifying centers and radii of circles, vertices of parabolas, etc. The technique extends to quadratic forms in multiple variables, fundamental to linear algebra and multivariable optimization.",
+        "prosAndCons": {
+          "pros": [
+            "Reveals vertex (maximum/minimum) of parabola",
+            "Works for all quadratics (rational, irrational, complex roots)",
+            "Foundation for deriving the quadratic formula",
+            "Essential for graphing and optimization",
+            "Extends to conic sections and multivariable calculus"
+          ],
+          "cons": [
+            "More steps than applying quadratic formula directly",
+            "Requires careful algebra (fractions, negative signs)",
+            "Not as quick for just finding roots",
+            "Less intuitive than factoring for simple cases",
+            "Process can be error-prone without practice"
+          ]
+        }
+      }
     }
   ],
   "sources": [

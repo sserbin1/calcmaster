@@ -14,7 +14,33 @@
       },
       "accuracy": "Mathematical standard",
       "bestFor": "All expressions",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Order of operations conventions developed gradually as mathematical notation evolved. Medieval mathematicians often used verbal descriptions or context to indicate operation order. As symbolic notation emerged (16th-17th centuries), ambiguities arose: does 2 + 3 × 4 equal 20 or 14? Conventions solidified in the 18th-19th centuries, with multiplication and division taking precedence over addition and subtraction. The acronym PEMDAS (Parentheses, Exponents, Multiplication, Division, Addition, Subtraction) emerged in American education; British and Commonwealth countries use BODMAS (Brackets, Orders, Division, Multiplication, Addition, Subtraction) or BIDMAS. Despite different acronyms, the rules are identical. Modern calculators and programming languages follow these conventions, though some early calculators processed operations left-to-right, causing historical errors.",
+        "scientificBasis": "Order of operations is a convention, not a mathematical truth—but it's a universal convention that prevents ambiguity. The hierarchy (parentheses > exponents > multiplication/division > addition/subtraction) reflects mathematical structure: exponentiation is repeated multiplication, multiplication is repeated addition. Higher-level operations bind more tightly. Within the same precedence level (multiplication and division, or addition and subtraction), operations are performed left to right. A common misconception: PEMDAS doesn't mean multiplication always before division; M/D and A/S are processed left-to-right within their level. For example: 8 ÷ 2 × 4 = 4 × 4 = 16, not 8 ÷ 8 = 1. When in doubt, parentheses make intent explicit and are always evaluated first.",
+        "examples": [
+          "Classic: 2 + 3 × 4 = 2 + 12 = 14. Multiplication before addition. NOT (2 + 3) × 4 = 20.",
+          "Division and multiplication: 24 ÷ 6 × 2 = 4 × 2 = 8. Left to right for same-level operations. NOT 24 ÷ 12 = 2.",
+          "Exponents: 2 + 3² = 2 + 9 = 11. Exponent before addition. The square applies only to 3."
+        ],
+        "comparison": "All scientific calculators, computers, spreadsheets, and programming languages follow these conventions (with minor variations for implicit multiplication or function notation). Some older basic calculators evaluated left-to-right, producing different results. When writing expressions, excessive parentheses can clarify intent but reduce readability. Mathematical convention minimizes parentheses by agreeing on precedence. RPN (Reverse Polish Notation) calculators, popular among engineers, eliminate the need for parentheses entirely by using postfix notation. Understanding order of operations is essential for interpreting formulas, writing code, and using any computational tool correctly.",
+        "prosAndCons": {
+          "pros": [
+            "Universal convention preventing ambiguity",
+            "Matches mathematical hierarchy (higher operations first)",
+            "Minimizes need for parentheses",
+            "Consistent across calculators, computers, languages",
+            "Essential foundation for mathematical literacy"
+          ],
+          "cons": [
+            "PEMDAS acronym can mislead (M before D confusion)",
+            "Some expressions still require careful parsing",
+            "Different notations (÷ vs /) can confuse",
+            "Implicit multiplication creates edge cases",
+            "Non-standard calculators may cause errors"
+          ]
+        }
+      }
     },
     {
       "id": "trigonometry",
@@ -33,7 +59,33 @@
         "Inverse functions have restricted domains"
       ],
       "bestFor": "Geometry, physics, engineering",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Trigonometry ('triangle measurement') originated in ancient astronomy and surveying. Babylonian astronomers used angle calculations around 1900 BCE. Greek mathematician Hipparchus (190-120 BCE) compiled the first known trigonometric table, relating arc lengths to chord lengths. Ptolemy's Almagest (150 CE) refined these tables for astronomical calculations. Indian mathematicians introduced the sine function (from Sanskrit 'jya,' bow-string), which was later transmitted to Islamic scholars. The modern terms sine, cosine, and tangent were standardized in European mathematics by the 16th-17th centuries. Scientific calculators, first appearing in the 1970s, made trigonometric calculations accessible to students and professionals alike, replacing printed tables that had been essential for centuries.",
+        "scientificBasis": "Trigonometric functions relate angles to side ratios in right triangles: sin(θ) = opposite/hypotenuse, cos(θ) = adjacent/hypotenuse, tan(θ) = opposite/adjacent = sin/cos. These ratios depend only on the angle, not the triangle's size—the foundation of similarity. On the unit circle, sin(θ) is the y-coordinate, cos(θ) the x-coordinate of the point at angle θ. Key identities: sin²θ + cos²θ = 1 (Pythagorean), sin(A+B) = sinA cosB + cosA sinB (addition formulas). Inverse functions (arcsin, arccos, arctan) return angles from ratios but have restricted ranges: arcsin and arctan return angles in [-90°, 90°], arccos in [0°, 180°]. Calculator mode (degrees vs radians) matters: 180° = π radians. Most programming and scientific contexts use radians.",
+        "examples": [
+          "Height calculation: Looking up at a 60° angle from 20 meters away, building height h = 20 × tan(60°) = 20 × 1.732 ≈ 34.6 meters.",
+          "Angle finding: If opposite = 3 and hypotenuse = 5, then sin(θ) = 0.6, so θ = arcsin(0.6) ≈ 36.87°.",
+          "Radian mode: sin(π/6) = sin(30°) = 0.5. If calculator is in wrong mode, sin(π/6 radians) ≈ sin(30°) is correct, but sin(30 radians) ≈ -0.988 is nonsense for degrees."
+        ],
+        "comparison": "Trigonometric functions extend beyond triangles to periodic phenomena: waves, oscillations, rotations. Sin and cos describe circular motion; their derivatives (in calculus) produce each other. Hyperbolic functions (sinh, cosh) parallel trig functions for hyperbolas rather than circles. Engineering applications include AC circuit analysis (phasors use complex exponentials connecting to trig), signal processing (Fourier transforms decompose signals into sinusoids), and mechanics (resolving forces, rotational motion). The choice of degrees vs radians affects calculations: calculus formulas assume radians (d/dx sin(x) = cos(x) only for radians). Scientific calculators typically offer both modes; checking the mode is essential before calculations.",
+        "prosAndCons": {
+          "pros": [
+            "Essential for geometry, physics, engineering",
+            "Describes all periodic/oscillatory phenomena",
+            "Calculator makes complex angle calculations instant",
+            "Well-developed mathematical theory (identities)",
+            "Foundation for advanced mathematics (complex numbers, Fourier)"
+          ],
+          "cons": [
+            "Mode confusion (degrees vs radians) causes errors",
+            "Inverse functions have restricted domains",
+            "Some values undefined (tan 90°)",
+            "Identities must be memorized for advanced work",
+            "Calculator precision limited for very small angles"
+          ]
+        }
+      }
     },
     {
       "id": "logarithms",
@@ -53,7 +105,33 @@
         "Log of negative numbers requires complex numbers"
       ],
       "bestFor": "Exponential growth, scientific notation, sound/earthquake scales",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Logarithms were invented by John Napier (Scotland) in 1614, with independent development by Joost Bürgi. Napier's logarithm tables transformed computation: multiplication became addition, division became subtraction. Henry Briggs standardized common logarithms (base 10) in 1624. For over three centuries, logarithm tables and slide rules were essential tools for scientists, engineers, and navigators. The natural logarithm (base e ≈ 2.718) emerged from compound interest analysis and became central to calculus through Euler's work in the 18th century. Electronic calculators made log tables obsolete by the 1980s, but logarithms remain essential in mathematics, science, and engineering. Logarithmic scales (decibels, pH, Richter) make vast ranges comprehensible.",
+        "scientificBasis": "A logarithm is an exponent: logₐ(x) = y means aʸ = x. The logarithm answers 'to what power must the base be raised to get x?' Natural logarithm (ln) uses base e, where e is defined by lim(1 + 1/n)ⁿ as n→∞. Common logarithm (log₁₀) relates to powers of 10 and scientific notation. Key properties derive from exponent rules: log(ab) = log(a) + log(b) (product rule), log(a/b) = log(a) - log(b) (quotient rule), log(aⁿ) = n·log(a) (power rule). These properties made multiplication/division manageable before calculators. The derivative d/dx ln(x) = 1/x makes natural log central to calculus. The change of base formula logₐ(x) = ln(x)/ln(a) converts between bases.",
+        "examples": [
+          "Decibel calculation: Sound intensity ratio 1,000,000:1. Decibels = 10 × log₁₀(1,000,000) = 10 × 6 = 60 dB.",
+          "Solving exponentials: 2ˣ = 100. Take log: x × log(2) = log(100) = 2. So x = 2/log(2) ≈ 6.64.",
+          "pH: [H⁺] = 0.0001 M. pH = -log₁₀(0.0001) = -log₁₀(10⁻⁴) = 4. Neutral pH 7 corresponds to [H⁺] = 10⁻⁷."
+        ],
+        "comparison": "Natural log (ln) is preferred in calculus and theoretical work because d/dx ln(x) = 1/x (the simplest derivative formula). Common log (log₁₀) is preferred for orders of magnitude and engineering scales. In many programming languages, 'log' means natural log (ln), while log₁₀ is specified separately—source of common errors. Logarithms only exist for positive arguments: log(-5) is undefined in real numbers (requires complex numbers). The inverse functions are exponentials: eˡⁿ⁽ˣ⁾ = x and 10ˡᵒᵍ⁽ˣ⁾ = x. Semi-log and log-log plots reveal exponential and power-law relationships, essential in data analysis.",
+        "prosAndCons": {
+          "pros": [
+            "Converts multiplication to addition (simplifies complex calculations)",
+            "Makes exponential growth/decay linear (semi-log plots)",
+            "Essential for scientific scales (dB, pH, Richter)",
+            "Central to calculus (derivative of ln is 1/x)",
+            "Solves exponential equations"
+          ],
+          "cons": [
+            "Only defined for positive numbers",
+            "ln vs log notation varies by field/software",
+            "Counterintuitive for those unfamiliar",
+            "Log of numbers < 1 is negative (can confuse)",
+            "Requires understanding of exponents to interpret"
+          ]
+        }
+      }
     },
     {
       "id": "powers-roots",
@@ -70,7 +148,33 @@
         "Very large exponents may overflow"
       ],
       "bestFor": "Growth calculations, physics, engineering",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Powers and roots have ancient origins. The Babylonians approximated square roots around 1800 BCE. Greek mathematics formalized squares and cubes geometrically. The notation xⁿ for powers was introduced by René Descartes in 1637, replacing cumbersome verbal expressions. Extending exponents to fractions (x^(1/2) = √x) and negatives (x⁻¹ = 1/x) came later, requiring conceptual leaps from 'repeated multiplication.' Euler unified the theory of exponents and logarithms in the 18th century, including the famous e^(iπ) + 1 = 0. Scientific calculators implemented power functions using logarithms internally: xʸ = e^(y·ln(x)). This explains why (-2)^(1/3) can be problematic on calculators even though the cube root of -8 is -2.",
+        "scientificBasis": "Powers follow the rules: xᵃ × xᵇ = x^(a+b), (xᵃ)ᵇ = x^(ab), x⁰ = 1, x⁻ⁿ = 1/xⁿ. Fractional exponents: x^(1/n) = ⁿ√x (nth root), x^(m/n) = (ⁿ√x)ᵐ = ⁿ√(xᵐ). These definitions extend 'repeated multiplication' consistently. For real bases x > 0, xʸ is defined for all real y via xʸ = e^(y·ln(x)). For negative bases, fractional or irrational exponents become complex: (-1)^(1/2) = i. Calculators typically return errors or unexpected results for negative base with non-integer exponent. The key special values: x¹ = x, x⁰ = 1 (for x ≠ 0), 0⁰ is conventionally 1 in combinatorics but undefined in analysis. Large exponents cause overflow; very small fractional exponents approach 1.",
+        "examples": [
+          "Compound interest: $1000 at 5% for 10 years. Amount = 1000 × (1.05)¹⁰ ≈ $1628.89.",
+          "Negative exponent: 2⁻³ = 1/2³ = 1/8 = 0.125.",
+          "Fractional exponent: 27^(2/3) = (³√27)² = 3² = 9. Or equivalently (27²)^(1/3) = 729^(1/3) = 9."
+        ],
+        "comparison": "Powers and roots are inverse operations: if y = xⁿ, then x = y^(1/n). Logarithms provide the inverse in the exponent: if y = bˣ, then x = logᵦ(y). Understanding all three—powers, roots, logarithms—is essential for working with exponential and growth models. Calculator implementations using xʸ = e^(y·ln(x)) work well for positive bases but fail for negative bases with non-integer exponents. Direct nth root functions (∛x) avoid this for specific roots. Scientific notation (6.022 × 10²³) uses powers of 10 for very large or small numbers. Engineering notation uses powers of 10 in multiples of 3 (10³, 10⁶, 10⁹) matching SI prefixes (kilo, mega, giga).",
+        "prosAndCons": {
+          "pros": [
+            "Fundamental to exponential growth/decay models",
+            "Unified theory for integer, fractional, negative exponents",
+            "Essential for scientific notation",
+            "Calculator handles large range of values",
+            "Connects algebra, calculus, and physics"
+          ],
+          "cons": [
+            "Negative base with fractional exponent is problematic",
+            "Very large exponents overflow",
+            "0⁰ and ∞⁰ are ambiguous",
+            "Irrational exponents require approximation",
+            "Sign errors common with negative exponents"
+          ]
+        }
+      }
     }
   ],
   "sources": [

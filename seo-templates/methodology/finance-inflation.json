@@ -22,7 +22,33 @@
         "Quality improvements difficult to measure"
       ],
       "bestFor": "General purchasing power comparisons",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The Consumer Price Index was first calculated by the Bureau of Labor Statistics in 1919, initially to help set fair wages during World War I. The methodology has evolved significantly: the original 'market basket' tracked prices for a fixed set of goods, but modern CPI uses a dynamic basket updated biennially through the Consumer Expenditure Survey. Major revisions occurred in 1940 (wartime cost-of-living index), 1978 (introduction of rental equivalence for housing), and 1999 (geometric mean formula to account for substitution). The BLS publishes both CPI-U (all urban consumers, 93% of US population) and CPI-W (urban wage earners and clerical workers, used for Social Security adjustments). Critics have argued that CPI overstates or understates true inflation depending on methodology choices, leading to alternative measures like the Chained CPI (C-CPI-U) adopted for tax bracket adjustments in 2018.",
+        "scientificBasis": "CPI measurement relies on the Laspeyres index methodology, which compares the cost of purchasing a fixed basket of goods at current prices versus base-period prices. The basket includes approximately 80,000 items in 8 major categories: food and beverages, housing, apparel, transportation, medical care, recreation, education and communication, and other goods and services. Each item is weighted by its share of average consumer expenditure. The formula CPI = (Cost of Basket in Current Period / Cost of Basket in Base Period) × 100 produces an index number where the base period equals 100. For purchasing power calculations, the ratio of two CPI values converts nominal dollars between time periods. The BLS collects approximately 94,000 price quotes monthly from 23,000 retail establishments. 'Hedonic adjustments' attempt to separate price increases from quality improvements—a computer that costs the same but is twice as fast represents a price decrease in quality-adjusted terms.",
+        "examples": [
+          "$100 in 1990 (CPI: 130.7) to 2024 dollars (CPI: 314.5): Adjusted value = $100 × (314.5 / 130.7) = $240.63. Your $100 would need to be $240.63 to buy the same goods.",
+          "Salary negotiation: If inflation averaged 3.5% last year and your salary is $80,000, you'd need $82,800 just to maintain purchasing power. A 2% raise is actually a 1.5% pay cut in real terms.",
+          "Retirement planning: $1 million today at 3% average inflation becomes equivalent to ~$553,000 in purchasing power after 20 years. Real returns (after inflation) matter more than nominal returns."
+        ],
+        "comparison": "CPI is the most widely used inflation measure but has alternatives. The Personal Consumption Expenditures (PCE) index, preferred by the Federal Reserve, uses a different methodology that accounts for substitution effects. The GDP Deflator captures all domestic production, not just consumer goods. The Producer Price Index (PPI) tracks wholesale prices before they reach consumers, serving as a leading indicator. For personal financial planning, CPI-U is typically most relevant, but individual inflation rates vary significantly—seniors experience higher healthcare cost increases, while renters aren't affected by home prices. The MIT Billion Prices Project and Truflation provide alternative real-time inflation measures using web-scraped prices, sometimes showing different trends than official statistics.",
+        "prosAndCons": {
+          "pros": [
+            "Official government measure with consistent methodology since 1978",
+            "Widely available historical data back to 1913",
+            "Used for Social Security adjustments and tax bracket indexing",
+            "Detailed subcategories allow analysis of specific sectors",
+            "Monthly updates provide timely information"
+          ],
+          "cons": [
+            "May not reflect individual spending patterns",
+            "Housing methodology (rental equivalence) is controversial",
+            "Quality adjustments are subjective",
+            "Geographic variations not captured in national figures",
+            "Substitution bias may understate cost-of-living impact"
+          ]
+        }
+      }
     },
     {
       "id": "core-inflation",
@@ -39,7 +65,33 @@
         "May understate inflation impact on lower-income households"
       ],
       "bestFor": "Economic analysis, Fed policy",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The concept of core inflation emerged in the 1970s during the oil crisis era, when energy price spikes distorted overall inflation readings. Economist Robert Gordon at Northwestern University was among the first to systematically analyze inflation excluding food and energy. The Federal Reserve began focusing on core inflation under Chairman Paul Volcker in the early 1980s as a guide for monetary policy. The logic was that monetary policy cannot and should not respond to supply shocks in volatile commodity markets—doing so would create unnecessary economic disruption. By the 1990s, core CPI became the standard 'underlying inflation' measure for central banks worldwide. However, the Fed has increasingly moved toward Core PCE (Personal Consumption Expenditures excluding food and energy) as its preferred measure, as announced in 2012 with the formal 2% inflation target.",
+        "scientificBasis": "Core inflation attempts to identify the 'trend' component of inflation by removing volatile elements. Food and energy prices are excluded because they're heavily influenced by supply factors (weather, geopolitics, commodity speculation) rather than monetary conditions. Statistically, food and energy components show 2-3 times higher month-to-month volatility than other categories. Core inflation exhibits 'persistence'—past core inflation strongly predicts future core inflation—making it a better guide for long-term expectations. The Fed's logic: if oil prices spike temporarily, raising interest rates would cause unnecessary economic pain, and prices would return to trend anyway. However, if core inflation rises, it likely reflects genuine demand pressures requiring policy response. Critics argue that excluding food and energy ignores what households actually spend money on, particularly lower-income households where these categories represent 25-30% of budgets.",
+        "examples": [
+          "2022 inflation divergence: Headline CPI reached 9.1% in June 2022, largely driven by energy. Core CPI was 5.9%. By late 2023, headline fell to 3.2% while core remained at 4.0%—showing underlying pressures persisted.",
+          "Fed policy decision: With headline at 3.4% and core at 3.9%, the Fed focuses on core because energy deflation is temporary. Policy targets core returning to 2%.",
+          "Wage negotiation insight: If headline inflation is 4% but core is 3%, a 3.5% raise roughly maintains real purchasing power—energy prices will likely normalize."
+        ],
+        "comparison": "Core CPI differs from headline CPI by excluding roughly 22% of the consumption basket (food ~14%, energy ~8%). Alternative 'trimmed mean' measures, used by the Cleveland Fed and Dallas Fed, exclude the most volatile components regardless of category—potentially removing shelter costs in some months but keeping food in others. The Atlanta Fed's 'Sticky CPI' focuses on prices that change infrequently (like rent and services) versus flexible prices. Each measure serves different analytical purposes: core for policy guidance, trimmed mean for reducing outlier impact, sticky for expectations analysis. For personal financial planning, headline CPI is typically more relevant because you actually pay for food and energy, but understanding core helps predict whether current inflation will persist.",
+        "prosAndCons": {
+          "pros": [
+            "Removes volatile components for clearer trend analysis",
+            "Better predictor of future inflation than headline",
+            "Guides monetary policy decisions effectively",
+            "Less influenced by temporary supply shocks",
+            "Useful for understanding persistent inflationary pressures"
+          ],
+          "cons": [
+            "Ignores real expenses that households must pay",
+            "Particularly understates inflation for lower-income households",
+            "Can miss important early warning signals",
+            "Food and energy exclusion is somewhat arbitrary",
+            "Extended energy or food shocks do affect core eventually"
+          ]
+        }
+      }
     },
     {
       "id": "pce-index",
@@ -56,7 +108,33 @@
         "Published monthly with revisions"
       ],
       "bestFor": "Federal Reserve analysis",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The Personal Consumption Expenditures Price Index was developed by the Bureau of Economic Analysis (BEA) as part of the National Income and Product Accounts. Unlike CPI, which was designed to measure cost of living for households, PCE emerged from the need to track inflation across the entire economy for GDP calculations. The Federal Reserve officially adopted PCE as its preferred inflation measure in 2000, and in January 2012, the FOMC explicitly stated its 2% inflation target in terms of the annual change in Core PCE. Chairman Alan Greenspan championed the switch, arguing that PCE's Fisher-ideal index methodology better captured true cost of living by accounting for consumer substitution. The distinction became particularly important during the 2021-2023 inflation surge, when CPI and PCE diverged significantly, with CPI running 0.3-0.5 percentage points higher on average.",
+        "scientificBasis": "PCE differs from CPI in several methodologically important ways. First, weighting: CPI uses a fixed basket updated biennially, while PCE uses chain-weighted methodology that adjusts for substitution continuously. If beef prices rise and consumers switch to chicken, CPI still measures beef prices, but PCE reflects actual spending shifting to chicken. Second, scope: CPI measures out-of-pocket expenses by urban households; PCE includes spending on behalf of households (employer-provided health insurance, Medicare/Medicaid). Third, housing: both use rental equivalence, but with different weight (CPI: ~33% housing, PCE: ~18%). Fourth, formula: CPI uses Laspeyres (base-period weights), while PCE uses Fisher-ideal (geometric mean of current and base-period weights). These differences cause PCE to typically run 0.3-0.4 percentage points lower than CPI over time.",
+        "examples": [
+          "Fed target interpretation: When the Fed targets 2% inflation, they mean Core PCE of 2%. In 2024, Core PCE at 2.8% means policy is still restrictive because the target isn't reached.",
+          "CPI vs PCE divergence: December 2023 CPI was 3.4%, PCE was 2.6%. The 0.8pp difference largely reflects housing weights—CPI's 33% versus PCE's 18% shelter weight amplified housing cost increases.",
+          "Healthcare inflation: PCE includes Medicare/Medicaid spending, so healthcare has a higher weight in PCE (~22%) versus CPI (~8%). A healthcare cost surge affects PCE more significantly."
+        ],
+        "comparison": "PCE and CPI serve different purposes: CPI for cost-of-living adjustments (Social Security, tax brackets), PCE for monetary policy. PCE is considered more comprehensive because it includes all consumption, not just out-of-pocket. The substitution effect in PCE is both a strength (reflects actual behavior) and potential weakness (doesn't fully capture welfare loss from switching to inferior goods). For personal finance, CPI remains more relevant because it measures what you actually pay out of pocket. But understanding PCE helps interpret Fed statements and predict policy direction. When Fed officials discuss inflation targets, they're invariably referencing Core PCE. During periods of high housing cost increases, the gap between CPI and PCE widens because of different shelter weights.",
+        "prosAndCons": {
+          "pros": [
+            "Fed's official target measure, so crucial for policy interpretation",
+            "Accounts for substitution behavior (chain-weighting)",
+            "Broader coverage including employer-provided benefits",
+            "Less housing-cost dominated than CPI",
+            "More methodologically sophisticated (Fisher-ideal index)"
+          ],
+          "cons": [
+            "Less intuitive for personal cost-of-living analysis",
+            "Published with a lag and subject to revision",
+            "May understate welfare loss from forced substitution",
+            "Includes spending not controlled by consumers",
+            "Healthcare weight can distort for those without employer coverage"
+          ]
+        }
+      }
     }
   ],
   "sources": [

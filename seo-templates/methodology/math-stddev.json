@@ -23,7 +23,33 @@
         "Underestimates variability when used on samples"
       ],
       "bestFor": "Census data, complete data sets",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Standard deviation has roots in the work of Carl Friedrich Gauss and the development of error analysis in astronomical observation. The concept emerged from attempts to describe the spread of measurement errors around the true value. Abraham de Moivre first described the normal curve in 1733, and Gauss applied it to errors in astronomical measurements around 1800, leading to the 'Gaussian' distribution. Karl Pearson introduced the term 'standard deviation' in 1893, though the concept had been in use for nearly a century. Population standard deviation (dividing by N) represents the exact spread when all members of a population are measured. The Greek letter sigma (σ) for population SD became standard notation. In practice, true population data is rare outside census contexts, making sample SD more commonly used.",
+        "scientificBasis": "Population standard deviation measures the exact spread of a complete data set. The formula σ = √[Σ(xᵢ - μ)²/N] computes the root-mean-square deviation from the mean. Each observation's deviation (xᵢ - μ) is squared (making all terms positive and penalizing larger deviations more), averaged over all N observations, then square-rooted to return to original units. The result has the same units as the original data. For a normal distribution, about 68% of values fall within ±1σ, 95% within ±2σ, and 99.7% within ±3σ (the empirical rule). This relationship makes standard deviation interpretable: 'about 2/3 of observations are within one SD of the mean.' Population SD is the parameter we typically want to know; sample SD estimates it.",
+        "examples": [
+          "Complete class grades: All 30 students in a class took a test with scores: mean = 75, SD = 8. σ = 8 because this is the entire population of interest, not a sample.",
+          "Manufacturing lot: Every widget in a production batch (all 1,000) is measured. If mean length = 10.0mm and σ = 0.15mm, then 99.7% are within 10.0 ± 0.45mm.",
+          "Census data: Average household income in a city is $65,000 with σ = $25,000. These are population parameters, not estimates, because every household was counted."
+        ],
+        "comparison": "Population SD (σ) vs sample SD (s): population SD uses N in the denominator; sample SD uses (n-1). When we have the complete population, there's no uncertainty about the SD—it's exactly σ. Sample SD estimates population SD and uses Bessel's correction to be unbiased. For large samples, the difference is negligible (1000 vs 999 in denominator). For small samples, it matters: using N instead of n-1 systematically underestimates population variability. Calculators and software often distinguish: Excel's STDEV.P and STDEV.S, for example. When in doubt, use sample SD (n-1) unless you're certain you have complete population data—which is rare outside controlled experiments, censuses, or manufacturing quality control of complete lots.",
+        "prosAndCons": {
+          "pros": [
+            "Exact measure when entire population is available",
+            "No estimation uncertainty involved",
+            "Well-understood relationship to normal distribution",
+            "Units match original data",
+            "Forms basis for probability statements (68-95-99.7 rule)"
+          ],
+          "cons": [
+            "Rarely have true complete population data",
+            "Underestimates variability if mistakenly used on samples",
+            "Sensitive to outliers like the mean",
+            "Requires normal distribution for empirical rule",
+            "Squared deviations can be dominated by extreme values"
+          ]
+        }
+      }
     },
     {
       "id": "sample-sd",
@@ -45,7 +71,33 @@
         "Assumes random sampling"
       ],
       "bestFor": "Most real-world applications, samples from populations",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Sample standard deviation with Bessel's correction (dividing by n-1 instead of n) was introduced by Friedrich Bessel in 1827 while analyzing astronomical observations. Bessel discovered that using n in the denominator when computing variance from a sample systematically underestimated the true population variance. The (n-1) correction provides an unbiased estimate, meaning that the expected value of the sample variance equals the population variance. This subtle point became foundational to inferential statistics—the entire enterprise of drawing conclusions about populations from samples. Ronald Fisher further developed the theory of estimation in the early 20th century, establishing s² as the unbiased estimator of σ². Today, sample SD with n-1 is the default in statistical software and the standard taught in statistics courses.",
+        "scientificBasis": "Sample standard deviation uses n-1 (degrees of freedom) instead of n in the denominator. The mathematical justification: when calculating deviations from the sample mean x̄ (itself estimated from the data), we lose one degree of freedom—the deviations sum to zero, so knowing n-1 deviations determines the last one. Using n would systematically underestimate population variance by a factor of (n-1)/n. The bias correction: E[s²] = σ² when we use n-1, but E[Σ(xᵢ-x̄)²/n] = ((n-1)/n)σ². For large n, the difference is negligible; for n=10, using n underestimates by 10%. Technically, s is still slightly biased as an estimator of σ (the square root doesn't preserve unbiasedness), but it's consistent—it converges to σ as n increases.",
+        "examples": [
+          "Survey data: Sample of 50 customers shows satisfaction scores with mean 7.2 and s = 1.8. This estimates population SD using n-1 = 49 in denominator.",
+          "Quality sample: Test 25 products from a batch. Weights: mean = 100g, s = 2.1g. We use s (not σ) because this is a sample, not the entire batch.",
+          "Small vs large sample: With n=5, using n vs n-1 differs by 25% (divide by 4 vs 5). With n=100, it's only 1% (divide by 99 vs 100)."
+        ],
+        "comparison": "Sample SD (s) is preferred for almost all real-world applications because we rarely have complete population data. The choice matters most for small samples: with n=5, the bias from using n instead of n-1 is significant. Sample SD is also the basis for confidence intervals, hypothesis tests, and other inferential procedures. Standard error of the mean (SEM = s/√n) quantifies uncertainty in the sample mean estimate. In finance, sample SD of returns measures 'historical volatility.' Scientific publications always report sample SD with its degrees of freedom or sample size. The relationship to t-distributions (used instead of normal distribution for small samples) further depends on using s with n-1 degrees of freedom.",
+        "prosAndCons": {
+          "pros": [
+            "Unbiased estimate of population variance",
+            "Appropriate for virtually all sample-based analyses",
+            "Forms basis for confidence intervals and hypothesis tests",
+            "Default in all major statistical software",
+            "Explicitly acknowledges sampling uncertainty"
+          ],
+          "cons": [
+            "s itself is slightly biased estimator of σ (square root issue)",
+            "Less reliable for very small samples (n < 10)",
+            "Assumes random sampling from population",
+            "Sensitive to outliers like population SD",
+            "Common confusion about when to use n vs n-1"
+          ]
+        }
+      }
     },
     {
       "id": "variance",
@@ -58,7 +110,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "ANOVA, mathematical derivations",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Variance as the square of standard deviation was formalized alongside the development of mathematical statistics in the late 19th and early 20th centuries. While standard deviation has more intuitive interpretation (same units as data), variance has superior mathematical properties that make it central to statistical theory. Ronald Fisher's development of analysis of variance (ANOVA) in the 1920s demonstrated variance's importance: total variance can be partitioned into components attributable to different sources. This additive property—that variances add when combining independent random variables—made variance the natural choice for theoretical developments. In portfolio theory, Harry Markowitz used variance as the measure of investment risk, establishing it as central to modern finance. Despite its less intuitive squared units, variance remains fundamental to statistical analysis.",
+        "scientificBasis": "Variance is the expected squared deviation from the mean: σ² = E[(X - μ)²]. The key mathematical property is additivity: for independent random variables X and Y, Var(X + Y) = Var(X) + Var(Y). Standard deviations don't add this simply. This additivity underlies central limit theorem derivations, ANOVA decompositions, and portfolio variance calculations. Variance is also the second moment about the mean, relating it to moment-generating functions and theoretical probability. The squared units (dollars², cm², etc.) make direct interpretation difficult—what does 'variance = 16 inches²' mean? Standard deviation (4 inches) is clearer. However, in mathematical manipulations—taking derivatives, combining sources of variation, deriving sampling distributions—variance's properties make it essential.",
+        "examples": [
+          "ANOVA decomposition: Total SS = 1000. Between-group SS = 600, within-group SS = 400. The SS terms are variance-based, enabling this additive partition.",
+          "Portfolio variance: Stock A variance = 0.04, Stock B variance = 0.09, correlation = 0.3. Portfolio variance for 50/50 mix involves weighting by squared weights plus covariance.",
+          "Combining uncertainties: Measurement variance = 0.01, environmental variance = 0.04. Total variance = 0.05 (they add); SD = √0.05 = 0.22."
+        ],
+        "comparison": "Variance vs standard deviation: variance has squared units but additive properties; SD has same units as data but complex combination rules. The relationship is simply SD = √Variance. In reporting results, SD is almost always preferred for interpretability. In calculations—hypothesis tests, ANOVA, regression analysis, portfolio optimization—variance appears in the formulas. Software often calculates variance internally then reports SD. Variance is essential for: (1) partitioning variability in ANOVA, (2) combining independent sources of error, (3) portfolio risk calculations, (4) deriving sampling distributions. The choice isn't really 'variance OR standard deviation' but knowing when each form is appropriate for the task at hand.",
+        "prosAndCons": {
+          "pros": [
+            "Additive for independent variables (variances sum)",
+            "Central to ANOVA and partitioning variation",
+            "Essential for portfolio theory and risk calculations",
+            "Better mathematical properties for derivations",
+            "Foundation for theoretical statistics"
+          ],
+          "cons": [
+            "Squared units make interpretation difficult",
+            "Not intuitive for communication",
+            "Large values when data spread is moderate",
+            "Less commonly reported in research results",
+            "Requires square root for interpretable measure"
+          ]
+        }
+      }
     },
     {
       "id": "cv",
@@ -75,7 +153,33 @@
         "Only valid for ratio scale data"
       ],
       "bestFor": "Comparing variability across different data sets",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The coefficient of variation was introduced by Karl Pearson in the early 1900s as a dimensionless measure of relative variability. Pearson recognized that comparing standard deviations directly is misleading when means differ substantially or when data are on different scales. A SD of 10 means something different for heights (mean ~170 cm) than for weights (mean ~70 kg). By expressing SD relative to the mean, CV enables cross-variable comparisons. The concept proved especially valuable in biology (comparing variability across species of different sizes), finance (comparing volatility of securities at different price levels), and quality control (comparing process variability across products). CV remains the standard measure for relative dispersion in many fields.",
+        "scientificBasis": "CV = (SD / Mean) × 100% normalizes the standard deviation by the mean, producing a unitless ratio. This ratio measures the 'relative spread' of data around the mean. Mathematically, CV is scale-invariant: multiplying all data by a constant doesn't change CV (both SD and mean scale equally). This enables meaningful comparison of variability across: (1) variables with different units (comparing height variability to weight variability), (2) variables with different magnitudes (comparing low-priced vs high-priced stocks), (3) studies using different measurement scales. CV is only meaningful for ratio data (where zero means 'none')—for interval data like temperature in Celsius, the mean can be arbitrary, making CV meaningless. CV is typically undefined or very large when the mean approaches zero.",
+        "examples": [
+          "Finance: Stock A (price $50, SD $5) has CV = 10%. Stock B (price $200, SD $15) has CV = 7.5%. Despite higher absolute SD, Stock B is less volatile relative to price.",
+          "Manufacturing: Production line A (mean 100g, SD 2g) has CV = 2%. Line B (mean 500g, SD 8g) has CV = 1.6%. Line B is more consistent despite higher absolute variation.",
+          "Biology: Mouse weights (mean 25g, SD 5g) have CV = 20%. Elephant weights (mean 5000kg, SD 500kg) have CV = 10%. Elephants are relatively less variable."
+        ],
+        "comparison": "CV complements SD rather than replacing it. SD describes absolute spread in original units—essential for understanding actual data ranges. CV describes relative spread as a percentage—essential for comparisons across different scales. When comparing within a single dataset or similar datasets, SD suffices. When comparing across different variables, products, or contexts, CV is necessary. In finance, the Sharpe ratio (excess return / SD) is related but uses excess return rather than mean. In laboratory science, CV is standard for reporting assay precision. CV has limitations: it's undefined when mean = 0, misleading when mean is near zero, and only appropriate for ratio-scale data. For interval data (temperature, dates), other relative measures may be needed.",
+        "prosAndCons": {
+          "pros": [
+            "Enables comparison across different scales and units",
+            "Dimensionless percentage is universally interpretable",
+            "Scale-invariant (unaffected by unit changes)",
+            "Standard measure in many scientific fields",
+            "Reveals which process/variable is relatively more variable"
+          ],
+          "cons": [
+            "Meaningless when mean is zero or near zero",
+            "Only valid for ratio scale (not interval) data",
+            "Can be misleading when comparing very different distributions",
+            "Sensitive to outliers affecting both SD and mean",
+            "Not appropriate for data with negative values"
+          ]
+        }
+      }
     }
   ],
   "sources": [

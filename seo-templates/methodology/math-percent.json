@@ -18,7 +18,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Discounts, tips, portions",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The concept of percentages (from Latin 'per centum' meaning 'by the hundred') developed alongside the decimal system. Ancient Romans used fractions with denominators of 100 for taxation purposes, but the modern percent symbol (%) emerged in Italian commercial documents in the 15th century. The symbol evolved from 'per cento' abbreviations through 'pc' and 'p 100' to eventually become %. By the 17th century, percentage calculations were standard in European commerce and finance. The 'X% of Y' calculation became the most common percentage operation because of its practical applications: calculating interest (what is 5% of $1,000?), discounts (what is 20% off $50?), and proportions (what is 15% of 200 people?). Today, percentages are so ingrained in society that we encounter them dozens of times daily—from battery levels to nutrition labels to weather forecasts.",
+        "scientificBasis": "The 'X% of Y' formula rests on the fundamental definition of percentage as a ratio to 100. Mathematically, 'percent' is a scalar multiplier: X% = X/100. The operation 'X% of Y' means X/100 × Y, which extracts that proportion of Y. This calculation is linear and commutative: 20% of $50 = $10, and 50% of $20 = $10 (same result, different interpretation). The formula can be rearranged to solve for any variable: if Part = (Percentage/100) × Whole, then Whole = Part/(Percentage/100) and Percentage = (Part/Whole) × 100. Understanding this algebraic relationship enables solving all three types of percentage problems with one conceptual framework. The 'of' in English translates to multiplication in mathematics—this linguistic-mathematical connection helps students grasp the operation.",
+        "examples": [
+          "Restaurant tip: 18% of $75 bill = 0.18 × $75 = $13.50. Mental shortcut: 10% = $7.50, double for 20% = $15, subtract 10% of that (~$1.50) = $13.50.",
+          "Sale discount: 30% off $120 item. Discount = 0.30 × $120 = $36. Sale price = $120 - $36 = $84. Or directly: $120 × (1 - 0.30) = $120 × 0.70 = $84.",
+          "Tax calculation: 8.25% sales tax on $45 purchase. Tax = 0.0825 × $45 = $3.71. Total = $48.71."
+        ],
+        "comparison": "'X% of Y' is the most common percentage operation, but it's one of three fundamental percentage problems. 'What percent is X of Y?' (finding the percentage) reverses the operation: (X/Y) × 100. 'X is P% of what?' (finding the whole) solves for the base: X/(P/100). Confusion often arises because the same numbers can appear in different roles depending on the question. A key distinction: 'percent of' calculates a portion, while 'percent change' compares two values. 20% of 100 is 20, but 100 increased by 20% is 120—different operations with different meanings. Clarity about which operation is needed prevents common calculation errors.",
+        "prosAndCons": {
+          "pros": [
+            "Most intuitive percentage operation",
+            "Directly applicable to everyday situations",
+            "Simple mental math shortcuts available",
+            "Linear calculation with predictable results",
+            "Foundation for understanding other percentage operations"
+          ],
+          "cons": [
+            "Easy to confuse with percentage change calculations",
+            "Rounding can accumulate errors in chained calculations",
+            "May require clarification of the 'whole' in complex contexts",
+            "Mental math can be challenging for unusual percentages",
+            "Common source of errors when rushed"
+          ]
+        }
+      }
     },
     {
       "id": "find-percent",
@@ -34,7 +60,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Statistics, comparisons, grades",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The need to express parts relative to wholes as percentages arose from commerce and governance. Ancient tax collectors needed to communicate how much revenue came from different sources. Medieval merchants compared profit margins across trade goods. As statistical thinking developed in the 17th-19th centuries, expressing data as percentages became standard practice. Florence Nightingale's famous pie charts (1858) used percentages to show causes of death in military hospitals, demonstrating the power of percentage communication for non-technical audiences. Today, this calculation underlies virtually all data presentation—from election results to sports statistics to scientific research. The phrase 'what percentage' is so common that search engines process millions of such queries daily.",
+        "scientificBasis": "This operation converts a ratio to a percentage by multiplying by 100. The formula Percentage = (Part/Whole) × 100 standardizes any ratio to a base-100 scale, enabling direct comparison. If 15 of 60 students are seniors, the calculation 15/60 × 100 = 25% expresses this proportion on a universal scale. The key insight: the denominator (whole) serves as the reference point—changing the reference changes the percentage. 15 of 60 is 25%, but 15 of 30 is 50%. This operation preserves the mathematical properties of ratios: the percentage is dimensionless (the units cancel), allowing comparison of disparate quantities. The calculation can exceed 100% when the part exceeds the whole (legitimate in some contexts like growth rates) or can be negative when comparing changes.",
+        "examples": [
+          "Test score: 42 correct out of 50 questions. Percentage = (42/50) × 100 = 84%.",
+          "Market share: Company sells 3.2 million units in a market of 20 million total. Share = (3.2/20) × 100 = 16%.",
+          "Budget analysis: Spending $450 on rent from $2,500 monthly income. Rent percentage = (450/2,500) × 100 = 18% of income."
+        ],
+        "comparison": "Finding the percentage is the inverse of 'X% of Y.' While 'X% of Y' takes a known percentage and finds the corresponding amount, this operation takes two known amounts and finds the percentage relationship. The calculation is essential for standardizing comparisons: raw numbers (42 correct vs 38 correct) mean little without context (out of 50 vs out of 40). Converting to percentages (84% vs 95%) enables fair comparison. This operation differs from percentage change in that it compares a part to its whole at a single point in time, while percentage change compares the same quantity at two different points in time. Clarity about what constitutes the 'whole' is essential—in market share, is it total market, company revenue, or units sold?",
+        "prosAndCons": {
+          "pros": [
+            "Standardizes comparisons across different scales",
+            "Essential for data analysis and statistics",
+            "Intuitive interpretation (X out of 100)",
+            "Enables fair comparison of disparate quantities",
+            "Foundation for statistical literacy"
+          ],
+          "cons": [
+            "Requires clear definition of the 'whole'",
+            "Percentages can be misleading with small sample sizes",
+            "Different reference points produce different percentages",
+            "Can obscure absolute magnitude differences",
+            "Precision may create false sense of accuracy"
+          ]
+        }
+      }
     },
     {
       "id": "percent-change",
@@ -54,7 +106,33 @@
         "Not symmetric (50% increase ≠ 50% decrease to return)"
       ],
       "bestFor": "Growth rates, inflation, performance tracking",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Percentage change calculations became critical with the development of financial markets and economic statistics. The concept of tracking growth rates emerged in 17th-century England with early economic measurements. William Petty and others began quantifying national wealth changes over time. By the 19th century, percentage change was standard for reporting stock market movements, economic growth, and population changes. The Federal Reserve and central banks worldwide use percentage change as the primary communication tool for interest rate decisions. Today, virtually all time-series comparisons—from quarterly earnings to year-over-year sales to monthly inflation—are expressed as percentage changes. The ubiquity of this metric in business, investing, and economics makes it one of the most practically important mathematical operations.",
+        "scientificBasis": "Percentage change measures relative movement from a reference point. The formula ((New - Old)/Old) × 100 expresses the absolute change (New - Old) relative to the starting value (Old). This produces a dimensionless ratio enabling comparison across different scales. Critical mathematical property: percentage changes are not symmetric. A 50% increase followed by a 50% decrease does not return to the original value: $100 → $150 → $75. This asymmetry arises because the base changes between calculations. To return from an X% increase requires a decrease of X/(1+X/100) percent. From 50% up, returning requires 33.3% down. This non-intuitive result frequently causes errors in financial planning and analysis. Compound percentage changes multiply: (1 + r₁/100)(1 + r₂/100) - 1 represents total change, not r₁ + r₂.",
+        "examples": [
+          "Stock performance: Share price rose from $45 to $54. Change = ((54-45)/45) × 100 = 20% increase.",
+          "Price reduction: Item reduced from $80 to $68. Change = ((68-80)/80) × 100 = -15% (15% decrease).",
+          "Salary negotiation: Current salary $65,000, seeking $75,000. Required increase = ((75,000-65,000)/65,000) × 100 = 15.4% raise."
+        ],
+        "comparison": "Percentage change differs fundamentally from 'X% of Y' calculations. 'X% of Y' operates on a single value; percentage change compares two values over time or conditions. Percentage change also differs from percentage point change: if interest rates rise from 3% to 5%, that's a 2 percentage point increase but a 66.7% percentage change. This distinction matters greatly in policy discussions—'inflation fell by half' (percentage change) means something different from 'inflation fell by 2 points' (percentage point change). Percentage change can exceed 100% (tripling is +200%) or be undefined (division by zero when old value is zero). Year-over-year (YoY) and compound annual growth rate (CAGR) are extensions of basic percentage change for multi-period analysis.",
+        "prosAndCons": {
+          "pros": [
+            "Universal standard for expressing growth and decline",
+            "Enables comparison across different base values",
+            "Intuitive interpretation for relative change",
+            "Essential for financial and economic analysis",
+            "Works for any measurable quantity"
+          ],
+          "cons": [
+            "Asymmetric: increases and decreases don't cancel evenly",
+            "Undefined when original value is zero",
+            "Can be misleading with small base values (small to larger = huge %)",
+            "Often confused with percentage point changes",
+            "Requires clear specification of time period"
+          ]
+        }
+      }
     },
     {
       "id": "reverse-percentage",
@@ -67,7 +145,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Finding pre-discount prices, original values",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Reverse percentage calculations arose from commercial necessity. Merchants needed to verify that discounts were applied correctly, tax authorities needed to determine pre-tax prices, and accountants needed to work backwards from final figures. The operation became formalized as algebraic methods developed. In retail, the practice of marking up from cost to selling price, then discounting from selling price, creates situations where reverse calculations are essential for understanding actual margins. The rise of value-added taxes (VAT) in Europe made reverse percentage calculations routine—extracting the VAT-exclusive price from a VAT-inclusive receipt. Today, reverse percentage is commonly needed for: extracting tip from total bill, finding original prices from sale prices, and calculating pre-tax amounts from after-tax figures.",
+        "scientificBasis": "Reverse percentage solves for the original value in the equation Final = Original × (1 ± Change/100). Rearranging: Original = Final / (1 ± Change/100). The ± depends on whether the change was an increase (+) or decrease (-). This is algebraic inversion of the percentage change operation. Key insight: the divisor represents the multiplier that was applied. If something increased by 25%, it was multiplied by 1.25, so divide by 1.25 to find the original. If it decreased by 20%, it was multiplied by 0.80, so divide by 0.80. Common error: dividing by the percentage itself rather than the multiplier. Finding the pre-discount price after 20% off is NOT $80 × 0.20 = $16, then adding back—it's $80 / 0.80 = $100. The formula handles the non-symmetric nature of percentage changes correctly.",
+        "examples": [
+          "Sale price: Item is $76 after 20% off. Original = $76 / (1 - 0.20) = $76 / 0.80 = $95.",
+          "After tip: Total bill with 18% tip is $59. Pre-tip amount = $59 / 1.18 = $50.",
+          "Investment: Portfolio is now $130,000 after 30% gain. Original investment = $130,000 / 1.30 = $100,000."
+        ],
+        "comparison": "Reverse percentage is the inverse operation of percentage change. While percentage change calculates (New - Old)/Old, reverse percentage solves for Old given New and the percentage. This operation is often confused with direct percentage calculations. If an item is 20% off and now costs $80, the discount is NOT $80 × 0.20 = $16. That would give an original of $96, but 20% of $96 is $19.20, not $16. The correct approach divides by the multiplier: $80 / 0.80 = $100, and 20% of $100 is indeed $20, making the sale price $80. Understanding this distinction prevents errors in financial calculations, tax computations, and pricing analysis.",
+        "prosAndCons": {
+          "pros": [
+            "Essential for verifying discounts and markups",
+            "Enables calculation of pre-tax amounts",
+            "Useful for investment analysis",
+            "Handles both increases and decreases",
+            "Algebraically exact when correctly applied"
+          ],
+          "cons": [
+            "Commonly confused with direct percentage calculations",
+            "Counterintuitive to many people",
+            "Easy to make errors with the formula",
+            "Requires knowing direction of change (up or down)",
+            "Mental math is difficult"
+          ]
+        }
+      }
     }
   ],
   "sources": [

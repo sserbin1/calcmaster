@@ -19,7 +19,33 @@
         "Requires discipline without quick wins"
       ],
       "bestFor": "Financially disciplined, focused on minimizing cost",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The debt avalanche method represents the mathematically optimal approach that financial advisors have recommended for decades. The strategy gained its 'avalanche' name in the personal finance blogging community of the 2000s-2010s as a counterpoint to Dave Ramsey's popularized 'snowball' method. The avalanche approach aligns with classical economics: minimize total cost by attacking the most expensive debt first. Before consumer debt became widespread in the late 20th century, formal debt payoff strategies weren't necessary—most families either had no debt or only a mortgage. The proliferation of credit cards in the 1980s-1990s and the normalization of consumer debt created the need for systematic payoff strategies. Financial mathematics unambiguously supports avalanche: reducing high-interest balances first minimizes total interest, period. The debate isn't about math—it's about human behavior.",
+        "scientificBasis": "The avalanche method is mathematically optimal because interest accrues as a percentage of balance. Reducing a $5,000 balance at 24% APR saves $100/month in interest; reducing a $5,000 balance at 6% saves only $25/month. By directing extra payments to the highest-rate debt, you eliminate the most expensive interest first. The formula is straightforward: Total Interest = Σ(Balance_i × Rate_i × Time_i). Minimizing this sum requires reducing high-rate balances before low-rate ones. In practice, the savings can be substantial: with $30,000 in debt across five cards ranging from 12-24% APR, avalanche might save $2,000-5,000 compared to snowball, depending on balance distribution. The advantage compounds: money saved on interest becomes additional principal payments, accelerating payoff further. From a pure optimization standpoint, avalanche is always superior to snowball when rates differ meaningfully.",
+        "examples": [
+          "Credit cards: Card A: $8,000 at 24%. Card B: $3,000 at 18%. Card C: $2,000 at 15%. Avalanche order: A → B → C. Put all extra money to Card A despite it being largest. Saves ~$1,200 vs snowball over payoff period.",
+          "Mixed debt types: Credit card: $10,000 at 22%. Car loan: $15,000 at 6%. Student loan: $25,000 at 5%. Avalanche focuses entirely on credit card first, then car, then student. The $15,000 car loan waits despite being 'medium' sized.",
+          "Rate difference impact: If all debts are within 2% of each other (e.g., all 18-20%), avalanche and snowball produce similar results. The strategy matters most when rate spread is large (e.g., 24% credit card vs 5% student loan)."
+        ],
+        "comparison": "Avalanche saves money; snowball saves people. Research by Kellogg School of Management found that people are more likely to complete debt payoff using snowball despite its higher cost, because the psychological wins of eliminating accounts matter more than mathematical optimization. Avalanche is better for: highly disciplined individuals, large rate differences between debts, those tracking progress by total balance rather than account count. Snowball is better for: those who have tried and failed before, when highest-rate debt is also largest, those who need visible progress to stay motivated. Hybrid approaches start with one or two snowball wins, then switch to avalanche. Neither strategy works if spending isn't controlled—both assume no new debt is added.",
+        "prosAndCons": {
+          "pros": [
+            "Mathematically optimal—minimizes total interest paid",
+            "Fastest total debt elimination when followed perfectly",
+            "Rational approach that appeals to analytical thinkers",
+            "Savings can be substantial with large rate differences",
+            "Extra money freed from interest goes to principal"
+          ],
+          "cons": [
+            "May take months or years to eliminate first debt",
+            "No psychological wins if highest-rate debt is largest",
+            "Requires discipline without visible account closures",
+            "Research shows lower completion rates than snowball",
+            "Can feel like no progress when balance drops slowly"
+          ]
+        }
+      }
     },
     {
       "id": "snowball",
@@ -36,7 +62,33 @@
         "Small debts may have low rates anyway"
       ],
       "bestFor": "Those who need motivation, prone to giving up",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Dave Ramsey popularized the debt snowball method through his books 'The Total Money Makeover' (2003) and 'Financial Peace University' curriculum. Ramsey, who declared bankruptcy in his 20s before becoming a personal finance guru, developed the method based on his experience helping thousands of people get out of debt. His insight: personal finance is '80% behavior and 20% head knowledge.' The snowball metaphor suggests momentum building—each paid-off debt adds its payment to the next, creating an ever-larger payment attacking remaining debts. Ramsey's approach was initially controversial among financial professionals who criticized its mathematical suboptimality. However, research increasingly supports Ramsey's behavioral insight: Harvard Business Review, Kellogg School of Management, and Consumer Financial Protection Bureau studies all found that debt elimination momentum—closing accounts—predicts payoff success better than interest rate optimization.",
+        "scientificBasis": "The snowball method leverages several psychological principles documented in behavioral economics. First, 'small wins' theory: completing goals, even small ones, releases dopamine and builds motivation for larger goals. Eliminating a $500 credit card in two months feels like progress; paying down a $15,000 balance to $14,500 doesn't. Second, 'goal gradient effect': people accelerate effort as they approach a goal. With 6 debts, eliminating one quickly means you're already 17% done with the count (even if not the balance). Third, 'sunk cost' psychology: once you've paid off two accounts, abandoning the strategy feels like wasting that effort. Research by Remi Trudel at Boston University found that people with more accounts paid off (regardless of amount) had higher probability of becoming debt-free. The number of accounts closed, not dollars paid, predicted success.",
+        "examples": [
+          "Snowball in action: Medical: $750. Store card: $1,200. Credit card A: $5,000. Credit card B: $8,000. With $400/month extra, pay off medical in 2 months, then store card in 4 months. Six months in, 2 accounts closed, momentum building.",
+          "Psychological math: Same debts, avalanche saves $800 total interest. But snowball user who finishes beats avalanche user who quits at month 8 from frustration. $800 saved < $14,950 still owed.",
+          "Rate vs balance conflict: $3,000 at 8% (car loan) vs $8,000 at 22% (credit card). Snowball says car first (smaller). Avalanche says credit card (higher rate). The 'wrong' choice (car first) costs ~$600 extra interest—but only if you finish both."
+        ],
+        "comparison": "Snowball vs avalanche debates often miss the point: both strategies work better than minimum payments, and completion rates matter more than interest optimization. Snowball's mathematical cost is often smaller than critics suggest—if your smallest debts also have lower rates (common with retail cards, medical debt), the strategies converge. The real question: are you more likely to finish with quick wins (snowball) or lowest cost (avalanche)? For naturally disciplined people, avalanche makes sense. For those who've started and stopped debt payoff before, snowball's psychological benefits likely outweigh its financial costs. Both strategies share the 'rollover' mechanic: each paid-off debt's payment adds to the next, accelerating payoff. This acceleration means the strategy matters most at the beginning; by the end, you're attacking final debts with large combined payments regardless of original method.",
+        "prosAndCons": {
+          "pros": [
+            "Quick wins build motivation and momentum",
+            "Research shows higher completion rates than avalanche",
+            "Reduces number of accounts to manage",
+            "Psychological progress more visible than balance progress",
+            "Effective for those who've tried and failed before"
+          ],
+          "cons": [
+            "Pays more total interest than avalanche",
+            "Mathematically suboptimal by design",
+            "May attack low-rate debts while high-rate debts grow",
+            "Interest cost can be substantial if rate spread is large",
+            "Not rational from pure financial optimization view"
+          ]
+        }
+      }
     },
     {
       "id": "hybrid",
@@ -53,7 +105,33 @@
         "No single clear rule to follow"
       ],
       "bestFor": "Those who want both motivation and efficiency",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The hybrid approach emerged from the practical recognition that neither pure snowball nor pure avalanche works for everyone. Financial planners and personal finance bloggers in the 2010s began recommending variations: 'debt tsunami' (factor in emotional weight of each debt), 'debt fireball' (prioritize high-rate debt above a threshold, snowball below), and simple hybrids that start snowball then switch to avalanche. The Consumer Financial Protection Bureau's research supports flexibility: what matters most is consistent extra payments toward any debt, not the precise order. The hybrid acknowledges that humans aren't purely rational (avalanche) or purely emotional (snowball)—we're both. Starting with a quick win addresses the emotional need for progress, while switching to avalanche respects the rational goal of minimizing cost once momentum is established.",
+        "scientificBasis": "Hybrid strategies attempt to capture benefits of both approaches while minimizing drawbacks. The psychological research supporting snowball shows that early wins are disproportionately important—the first account closed matters more for motivation than the fourth. This suggests front-loading snowball wins, then switching to avalanche once momentum is established. Mathematically, paying off one small debt 'wrong' (by balance instead of rate) costs relatively little; the interest cost accumulates more significantly later when larger balances are involved. By switching to avalanche after initial wins, the hybrid captures most of avalanche's savings while gaining snowball's motivational kickstart. The optimal switch point is debatable: some recommend after first debt, others after two, others after total balance is down 25%.",
+        "examples": [
+          "Practical hybrid: Store card $400 (12%), Medical $1,000 (0%), Credit card A $6,000 (21%), Credit card B $10,000 (19%). Start with store card (small, quick win). Then medical (small, no interest so no cost to delay). Now motivated: attack credit card A (highest rate) then B.",
+          "Threshold hybrid: Attack any debt under $1,000 first regardless of rate. Then switch to pure avalanche. This ensures quick wins without complex analysis, then optimizes for larger debts.",
+          "Review-based hybrid: Start with snowball for 6 months. Evaluate: if motivated and on track, switch to avalanche. If struggling, stick with snowball. Adjust strategy to actual behavior, not theoretical optimization."
+        ],
+        "comparison": "Hybrid strategies sacrifice the simplicity of single rules (always smallest, always highest rate) for potentially better outcomes. They work best for people who: understand both strategies and can evaluate trade-offs, are willing to manage their debt payoff actively, and want to balance emotional and financial optimization. They work worst for people who need simple, clear rules and would be confused by 'switch after two debts.' The risk of hybrid: decision fatigue. Constantly evaluating 'should I switch now?' can lead to paralysis or quitting. If you're prone to overthinking, pick one method (snowball or avalanche) and stick with it rather than optimizing endlessly. Perfection is the enemy of good in debt payoff—any consistent strategy beats inconsistent optimization.",
+        "prosAndCons": {
+          "pros": [
+            "Captures quick wins of snowball with efficiency of avalanche",
+            "Flexible to individual psychology and debt mix",
+            "Can optimize for specific situations (very small debts first)",
+            "Adapts as motivation and discipline develop",
+            "Potentially better outcomes than either pure strategy"
+          ],
+          "cons": [
+            "No simple rule—requires active decision-making",
+            "Can lead to analysis paralysis",
+            "Harder to automate or set-and-forget",
+            "May second-guess and switch approaches repeatedly",
+            "Complexity may cause some people to give up"
+          ]
+        }
+      }
     },
     {
       "id": "consolidation",
@@ -71,7 +149,33 @@
         "Secured consolidation risks collateral"
       ],
       "bestFor": "High-rate credit cards, good credit score",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Debt consolidation has existed as long as debt itself—combining multiple obligations into one is a natural simplification. Modern consumer debt consolidation emerged in the 1980s-1990s alongside credit card proliferation. Home equity loans and lines of credit became popular consolidation vehicles in the 1990s-2000s, allowing homeowners to replace 18-24% credit card debt with 6-8% home-secured debt. This approach contributed to the 2008 financial crisis when falling home values left borrowers underwater on consolidated debt. Post-2008, unsecured personal loans and balance transfer credit cards became the primary consolidation tools. Fintech lenders (SoFi, LendingClub, Upgrade) disrupted traditional bank consolidation loans with streamlined online applications. The 2020s saw renewed interest in consolidation as credit card rates rose above 20%, making even 10-12% personal loans attractive.",
+        "scientificBasis": "Consolidation's financial benefit depends on: (1) rate reduction, (2) term length, and (3) fees. Rate reduction is straightforward: replacing 22% debt with 10% debt saves 12% annually on the balance. However, extending the term can eliminate or reverse savings. $20,000 at 22% for 3 years costs ~$8,000 interest. Consolidating to 10% for 3 years costs ~$3,200—savings of ~$4,800. But consolidating to 10% for 7 years costs ~$7,800—minimal savings, and you're in debt 4 years longer. Fees (origination fees of 1-8%, balance transfer fees of 3-5%) must be added to total cost. The break-even calculation: Fee / (Monthly Interest Savings) = Months to recoup fee. If fee is $600 and you save $100/month in interest, breakeven is 6 months. Consolidation only makes sense if you'll hold the loan beyond breakeven and if you won't run up new debt on now-empty credit cards.",
+        "examples": [
+          "Good consolidation: $25,000 in credit cards at average 21%, consolidate to 10% personal loan for 4 years. Old path: ~$9,000 interest. New path: ~$5,400 interest + $750 origination fee = $6,150. Savings: ~$2,850.",
+          "Bad consolidation: Same $25,000, consolidate to 10% for 7 years. Interest: ~$9,750 + $750 fee = $10,500. You paid MORE than the original cards and stayed in debt 3-4 extra years.",
+          "Balance transfer alternative: $10,000 credit card debt, 22% APR. Transfer to 0% APR card for 18 months (3% fee = $300). Pay $556/month. Total cost: $10,300. Same debt without transfer at 22% for 18 months: ~$11,800. Savings: ~$1,500."
+        ],
+        "comparison": "Consolidation vs payoff strategies (avalanche/snowball): they're not mutually exclusive. You can consolidate to lower rates, then use avalanche or snowball to pay off consolidated and any remaining unconsolidated debts. Consolidation addresses rate; payoff strategies address order. The key risk of consolidation: 'starting over' psychology. Paying off credit cards feels like progress; consolidating feels like moving debt around. Some people consolidate, feel relief, then run up credit cards again—ending up with both the consolidation loan and new card debt. Consolidation should be paired with cutting up cards or freezing spending, not treated as a solution to spending problems. The best candidates for consolidation: those with good credit (to get low rates), high-rate debt, stable income, and demonstrated spending control.",
+        "prosAndCons": {
+          "pros": [
+            "Can significantly reduce interest rate",
+            "Simplifies multiple payments into one",
+            "Fixed payment and payoff date (with personal loan)",
+            "May lower monthly payment (but watch term length)",
+            "Psychological relief from simplification"
+          ],
+          "cons": [
+            "Doesn't address underlying spending behavior",
+            "Extended terms can increase total cost despite lower rate",
+            "Origination fees and balance transfer fees add cost",
+            "Secured consolidation (home equity) risks your home",
+            "Empty credit cards are tempting to use again"
+          ]
+        }
+      }
     }
   ],
   "sources": [

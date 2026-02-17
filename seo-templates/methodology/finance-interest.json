@@ -25,7 +25,33 @@
         "Real returns affected by inflation"
       ],
       "bestFor": "Savings, CDs, investments",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Compound interest has ancient origins, with evidence of its use in Babylonian mathematics around 2000-1700 BCE on clay tablets. However, the mathematical formalization came much later. The first published compound interest tables appeared in 1613, produced by Richard Witt in England. Jacob Bernoulli discovered the mathematical constant e (approximately 2.71828) in 1683 while studying compound interest, specifically the limit of (1 + 1/n)^n as n approaches infinity—the foundation of continuous compounding. Albert Einstein allegedly called compound interest the 'eighth wonder of the world,' though this attribution is disputed. Regardless, the power of compound interest has been recognized for centuries. Benjamin Franklin famously demonstrated it with a bequest: he left £1,000 each to Boston and Philadelphia in 1790, with instructions to invest for 200 years. By 1990, the Boston fund had grown to $4.5 million. This practical demonstration of compound growth over long periods remains one of the most compelling examples of the concept's power.",
+        "scientificBasis": "The compound interest formula A = P(1 + r/n)^(nt) emerges from the principle that earned interest becomes part of the principal for subsequent periods. Each compounding period, the new principal equals the previous principal plus earned interest. With n compounding periods per year at rate r/n per period for t years, the multiplication factor becomes (1 + r/n)^(nt). The frequency of compounding affects final value: higher frequency yields more growth because interest begins earning interest sooner. At 10% annual rate on $10,000 for 10 years: annual compounding yields $25,937; monthly yields $27,070; daily yields $27,181. The difference between daily and continuous is negligible (~$2), but the difference between annual and monthly is substantial ($1,133). This is why APY (Annual Percentage Yield) was developed—it converts any compounding frequency to an equivalent annual rate, allowing apples-to-apples comparison. APY = (1 + r/n)^n - 1.",
+        "examples": [
+          "$10,000 at 7% annually for 20 years, compounded monthly: A = 10,000(1 + 0.07/12)^(12×20) = $40,387. The investment quadruples. Simple interest would yield only $24,000.",
+          "$5,000 at 5% for 30 years (retirement savings): Annually compounded = $21,610. Monthly = $22,397. Daily = $22,408. Start early—time is the biggest factor.",
+          "Credit card debt: $5,000 at 18% APR compounded daily, minimum payments only: After 15 years, you'd pay over $8,000 in interest. Compound interest works against you with debt."
+        ],
+        "comparison": "Compound interest dramatically outperforms simple interest over time due to the exponential growth pattern. After 30 years at 7%, compound interest yields 7.6× your original investment; simple interest yields only 3.1×. The Rule of 72 provides a quick estimate: divide 72 by the interest rate to approximate doubling time (72 ÷ 7 ≈ 10.3 years to double at 7%). Continuous compounding (the mathematical limit) yields slightly more than daily compounding but the difference is negligible in practice. The real comparison that matters is compound interest versus inflation: if your savings earn 3% but inflation is 4%, your purchasing power decreases despite nominal growth. Real return = nominal return - inflation. For long-term wealth building, investments must at minimum outpace inflation, preferably by several percentage points.",
+        "prosAndCons": {
+          "pros": [
+            "Exponential growth rewards long-term saving",
+            "Time is the most powerful factor—start early",
+            "Works automatically once established",
+            "Higher compounding frequency yields slightly more",
+            "Foundation of all investment growth calculations"
+          ],
+          "cons": [
+            "Works against you on debt (credit cards, loans)",
+            "Requires patience—early years show modest growth",
+            "Inflation erodes real purchasing power",
+            "Assumes constant rate (unrealistic for market investments)",
+            "Taxes may be due on earnings, reducing effective return"
+          ]
+        }
+      }
     },
     {
       "id": "simple-interest",
@@ -48,7 +74,33 @@
         "Less common in practice"
       ],
       "bestFor": "Short-term loans, some bonds",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Simple interest is the original and most intuitive form of interest, traceable to the earliest civilizations with monetary systems. Ancient Sumerian and Babylonian records from 3000-2000 BCE show grain loans with simple interest charges. The Code of Hammurabi (1754 BCE) regulated interest rates at 33.33% for grain loans and 20% for silver loans—calculated as simple interest. The distinction between simple and compound interest became important as banking systems evolved. Many religious traditions, including early Christianity, Judaism, and Islam, historically prohibited compound interest (usury) while sometimes permitting simple interest, viewing the 'interest on interest' aspect of compounding as exploitative. This religious and ethical dimension influenced the development of financial systems for centuries. Today, simple interest remains in specific applications: Treasury bills, some corporate bonds, short-term commercial lending, and certain consumer loans use simple interest calculations because of their transparency and historical precedent.",
+        "scientificBasis": "The simple interest formula I = Prt calculates interest as a linear function of principal, rate, and time. Unlike compound interest's exponential growth, simple interest grows linearly—the graph is a straight line, not a curve. Total amount A = P + I = P + Prt = P(1 + rt). This linear growth means that each year adds the same dollar amount of interest: $10,000 at 5% earns $500 every year, regardless of how long the investment has been earning. After 10 years: simple interest yields $15,000 (original + $5,000 interest); compound interest yields $16,289. The gap widens dramatically over time. After 30 years: simple interest yields $25,000; compound interest yields $43,219. The mathematical relationship between simple and compound is: simple interest equals the first-order Taylor expansion of compound interest, accurate for small rt products but increasingly divergent as time or rate increases.",
+        "examples": [
+          "$10,000 at 5% simple interest for 3 years: I = $10,000 × 0.05 × 3 = $1,500. Total = $11,500. Compound would yield $11,576—$76 more.",
+          "Treasury Bill: $50,000 T-Bill at 4.5% for 182 days (6 months): I = $50,000 × 0.045 × (182/365) = $1,123.29. T-Bills use simple interest based on actual days.",
+          "Short-term business loan: $100,000 at 8% for 90 days: I = $100,000 × 0.08 × (90/360) = $2,000. Many commercial loans use 360-day year convention."
+        ],
+        "comparison": "Simple interest is most advantageous to borrowers and least advantageous to savers. For borrowers, simple interest means paying only on the original principal—early payoff directly reduces total interest owed. For savers, compound interest is always superior because earned interest begins generating its own returns. The gap between simple and compound grows with both time and interest rate: at 2% for 5 years, compound yields only 2.3% more than simple; at 10% for 30 years, compound yields 72% more. Treasury securities, commercial paper, and some bonds use simple interest because these are typically short-term instruments where the difference is minimal and the calculation is simpler. For any investment horizon over 1 year, compound interest becomes the relevant framework.",
+        "prosAndCons": {
+          "pros": [
+            "Simple, transparent calculation",
+            "Predictable, linear growth",
+            "Favorable for borrowers (lower total cost)",
+            "Easy to calculate mentally or on paper",
+            "Standard for Treasury securities and some bonds"
+          ],
+          "cons": [
+            "Lower returns than compound interest for savers",
+            "Increasingly inferior over longer time horizons",
+            "Interest doesn't generate additional returns",
+            "Less common in modern financial products",
+            "Inadequate for long-term wealth building"
+          ]
+        }
+      }
     },
     {
       "id": "continuous-compounding",
@@ -70,7 +122,33 @@
         "Difference from daily compounding is minimal"
       ],
       "bestFor": "Financial modeling, theoretical calculations",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Continuous compounding emerged from Jacob Bernoulli's investigation in 1683 into the behavior of compound interest as compounding frequency increases without bound. Bernoulli studied the expression (1 + 1/n)^n as n approaches infinity, discovering that it converges to a specific value we now call e (Euler's number, approximately 2.71828). This mathematical constant, formalized by Leonhard Euler in the 1730s, became one of the most important numbers in mathematics, appearing throughout calculus, physics, and finance. The formula A = Pe^(rt) represents the theoretical maximum growth achievable through compounding. While no real financial product compounds truly continuously, the formula provides an upper bound and is essential in derivatives pricing, options valuation (the Black-Scholes model uses continuous compounding), and other advanced financial applications. The discovery also connects finance to exponential growth and decay in natural phenomena—population growth, radioactive decay, and countless other processes follow the same mathematical pattern.",
+        "scientificBasis": "Continuous compounding represents the limit of the discrete compounding formula as n → ∞. Starting from A = P(1 + r/n)^(nt), let m = n/r, so the formula becomes A = P(1 + 1/m)^(mrt). As n → ∞, m → ∞, and (1 + 1/m)^m → e. Therefore, A → Pe^(rt). The number e = lim(n→∞)(1 + 1/n)^n ≈ 2.71828... is irrational and transcendental. The continuous compounding formula has elegant mathematical properties: the instantaneous rate of growth at any moment equals r times the current value (dA/dt = rA), making it a solution to the fundamental differential equation of exponential growth. This mathematical elegance makes continuous compounding the preferred framework for theoretical finance, even though practical applications use discrete compounding. The difference between continuous and daily compounding is typically less than 0.01% annually—mathematically interesting but practically negligible.",
+        "examples": [
+          "$10,000 at 8% continuous for 10 years: A = 10,000 × e^(0.08×10) = 10,000 × e^0.8 = 10,000 × 2.2255 = $22,255. Daily compounding yields $22,253—just $2 less.",
+          "Effective annual rate: Continuous 6% = e^0.06 - 1 = 6.184%. This is the APY equivalent, allowing comparison with discrete compounding products.",
+          "Options pricing: Black-Scholes uses continuous compounding to discount future values. A $100 option value in 1 year at 5% continuous discounts to 100 × e^(-0.05×1) = $95.12 present value."
+        ],
+        "comparison": "Continuous compounding yields the theoretical maximum return but the practical difference from daily compounding is negligible. At 10% for 20 years: annual compounding yields 6.73× initial; monthly yields 7.33×; daily yields 7.39×; continuous yields 7.39×. The jump from annual to monthly is significant (0.6×); from daily to continuous is imperceptible (0.003×). For consumer financial products, daily compounding is effectively equivalent to continuous. The real value of continuous compounding is in mathematical modeling: it simplifies calculations, produces closed-form solutions for complex problems, and connects finance to broader mathematical principles. If you're comparing savings accounts, the difference between daily and continuous compounding is not worth considering—focus instead on the stated APY and any fees.",
+        "prosAndCons": {
+          "pros": [
+            "Represents theoretical maximum growth",
+            "Mathematically elegant—simplifies advanced calculations",
+            "Essential for derivatives pricing and financial modeling",
+            "Connects finance to exponential mathematics",
+            "Provides upper bound benchmark for comparisons"
+          ],
+          "cons": [
+            "No consumer products truly compound continuously",
+            "Practical difference from daily compounding is negligible",
+            "Requires understanding of exponential functions",
+            "Can mislead if compared unfairly to discrete rates",
+            "Academic interest exceeds practical application for consumers"
+          ]
+        }
+      }
     },
     {
       "id": "rule-of-72",
@@ -87,7 +165,34 @@
         "Less accurate at extreme rates"
       ],
       "bestFor": "Quick mental calculations",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The Rule of 72 first appeared in print in Luca Pacioli's 'Summa de Arithmetica' published in 1494—the same work that introduced double-entry bookkeeping to Europe. Pacioli presented the rule as practical knowledge for merchants, suggesting it was already in common use among Italian traders. The rule likely evolved from practical experience rather than mathematical derivation. The number 72 was chosen over mathematically closer alternatives (like 69.3) because 72 has many convenient divisors (2, 3, 4, 6, 8, 9, 12) making mental arithmetic easier. Over five centuries, the Rule of 72 has remained in active use, appearing in investing textbooks, financial literacy curricula, and conversations between financial advisors and clients. Warren Buffett has frequently cited it when explaining compound growth. Its endurance reflects both its practical accuracy and the difficulty humans have intuitively grasping exponential growth—the rule provides a concrete, memorable way to understand compounding power.",
+        "scientificBasis": "The Rule of 72 approximates the solution to the equation 2 = (1 + r)^t, where r is the interest rate (as a decimal) and t is time to double. Taking natural logarithms: ln(2) = t × ln(1 + r). For small r, ln(1 + r) ≈ r, so t ≈ ln(2)/r ≈ 0.693/r. Converting r to percentage: t ≈ 69.3/rate%. The number 72 is used instead of 69.3 because it provides better approximations in the 6-10% range commonly used in investing, and because 72 has more integer divisors. At exactly 8%: Rule of 72 predicts 9.0 years; actual is 9.01 years. At 6%: predicts 12.0 years; actual is 11.90 years. At 12%: predicts 6.0 years; actual is 6.12 years. The rule's accuracy degrades at extreme rates: at 2%, it predicts 36 years vs actual 35.0; at 24%, it predicts 3 years vs actual 3.22. For rates significantly above 10%, the Rule of 70 or even Rule of 69 may be more accurate.",
+        "examples": [
+          "At 8% return: 72 ÷ 8 = 9 years to double. Starting with $10,000, you'd have $20,000 in 9 years, $40,000 in 18 years, $80,000 in 27 years.",
+          "At 12% return: 72 ÷ 12 = 6 years to double. High-growth investments can accelerate wealth building significantly.",
+          "Inflation impact: At 3% inflation, prices double in 72 ÷ 3 = 24 years. Your savings must grow faster than inflation to maintain purchasing power.",
+          "Reverse use: If you want to double money in 10 years, you need 72 ÷ 10 = 7.2% return."
+        ],
+        "comparison": "The Rule of 72 trades precision for accessibility. Compared to exact calculation, it's accurate within 0.5 years for typical investment returns (5-10%). For quick comparison of investment options or explaining compound growth to clients or students, it's invaluable. Financial calculators and spreadsheets provide exact answers instantly, making the rule less necessary for precise planning, but it remains useful for sanity-checking calculations and quick mental estimation. Variants include: Rule of 69.3 (more accurate mathematically but harder to divide), Rule of 70 (compromise between accuracy and convenience), and Rule of 114/115 for tripling time. For most practical purposes in the 5-12% range that encompasses typical investment returns, the Rule of 72 is sufficiently accurate and significantly easier to compute mentally.",
+        "prosAndCons": {
+          "pros": [
+            "Enables quick mental calculation of doubling time",
+            "72 divides evenly by 2, 3, 4, 6, 8, 9, 12",
+            "Highly accurate in the 6-10% range typical for investments",
+            "Works in reverse to find required return rate",
+            "Excellent for communicating compound growth concepts"
+          ],
+          "cons": [
+            "Approximation—not precise for exact planning",
+            "Accuracy decreases at very low or very high rates",
+            "Assumes constant rate (unrealistic for market returns)",
+            "Doesn't account for taxes or fees",
+            "May oversimplify complex investment decisions"
+          ]
+        }
+      }
     }
   ],
   "sources": [

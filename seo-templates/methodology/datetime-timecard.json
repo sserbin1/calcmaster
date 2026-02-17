@@ -14,7 +14,33 @@
       },
       "accuracy": "Depends on rounding method",
       "bestFor": "Weekly payroll processing",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The weekly timecard system evolved from the mechanical time clocks introduced in the late 19th century. The Bundy Manufacturing Company, founded in 1889, mass-produced time recording clocks that stamped employee arrival and departure times on paper cards. These cards were collected weekly for payroll processing, establishing the weekly pay cycle that remains dominant in the United States. The Fair Labor Standards Act of 1938 mandated that employers maintain accurate records of hours worked, formalizing the timecard as a legal document. IBM introduced computerized time and attendance systems in the 1960s, and cloud-based solutions emerged in the 2000s. Despite technological advances, the fundamental weekly aggregation of daily hours into regular and overtime categories has remained consistent for over 80 years, driven by the FLSA's weekly overtime threshold of 40 hours.",
+        "scientificBasis": "Weekly timecard calculation aggregates daily work periods into a weekly total, then partitions that total into regular and overtime hours. The algorithm processes each day's entries: for each clock-in/clock-out pair, the duration is calculated by subtracting start time from end time and deducting break periods. Daily totals are summed across the workweek, which the FLSA defines as any fixed, recurring 168-hour (7 consecutive 24-hour) period. The employer may designate any day and time as the workweek start. Regular hours equal the minimum of the weekly total and 40. Overtime hours equal the maximum of zero and the weekly total minus 40. In states with daily overtime rules, the calculation is more complex: each day's hours are first partitioned into regular and overtime at the daily threshold (8 hours in California), and then the weekly total of regular hours is checked against the 40-hour weekly threshold. The daily and weekly overtime calculations may interact, requiring careful ordering to avoid double-counting overtime hours.",
+        "examples": [
+          "Example 1: An employee works Monday through Friday with the following daily hours: 8.5, 9.0, 8.0, 8.5, 8.0. Weekly total = 42.0 hours. Regular = 40.0 hours. Overtime = 2.0 hours at 1.5x rate.",
+          "Example 2: A restaurant worker's schedule: Monday 6h, Tuesday 10h, Wednesday 8h, Thursday 10h, Friday 8h, Saturday 6h. Weekly total = 48.0 hours. Regular = 40.0 hours. Overtime = 8.0 hours at 1.5x rate.",
+          "Example 3: California employee works four 10-hour days (Monday-Thursday). Daily overtime: 4 days x 2 hours = 8 overtime hours. Weekly total = 40 hours, no weekly overtime. Total: 32 regular hours + 8 daily overtime hours."
+        ],
+        "comparison": "Weekly timecard totals provide the most complete picture of an employee's work hours for payroll purposes compared to daily hour tracking alone. While daily tracking captures individual shift durations, it cannot determine overtime eligibility without weekly aggregation. Biweekly or monthly timecard systems exist but are less common because the FLSA mandates weekly overtime calculation regardless of pay frequency. Compared to project-based time tracking, timecards focus on total hours for compensation rather than hours allocated to specific tasks or clients. Many organizations use both systems in parallel: timecards for payroll compliance and project tracking for billing and productivity analysis.",
+        "prosAndCons": {
+          "pros": [
+            "Provides complete weekly picture needed for FLSA overtime compliance",
+            "Standard format understood by all payroll systems and accountants",
+            "Creates an auditable paper trail for labor law compliance",
+            "Supports both simple and complex overtime rule calculations",
+            "Easily integrated with digital time clocks and HR information systems"
+          ],
+          "cons": [
+            "The FLSA workweek definition is rigid and may not align with natural work patterns",
+            "Daily and weekly overtime rules can interact in complex and confusing ways",
+            "Manual timecard entry is prone to errors and time theft",
+            "Does not capture how time is allocated across projects or tasks",
+            "Different pay periods (biweekly, semi-monthly) require additional aggregation logic"
+          ]
+        }
+      }
     },
     {
       "id": "rounding-rules",
@@ -27,7 +53,33 @@
       },
       "accuracy": "Approximate, but legal",
       "bestFor": "Simplifying payroll calculations",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Time rounding for payroll purposes has been practiced since the earliest days of mechanical time clocks. Early punch clocks recorded exact times, but calculating wages from irregular clock-in times (like 8:03 or 8:07) was tedious with manual arithmetic. Employers began rounding to the nearest quarter hour to simplify calculations, and this practice was eventually recognized by the US Department of Labor as legally acceptable under the FLSA, provided the rounding is neutral over time and does not systematically favor the employer. The 7-minute rule emerged as the specific implementation: in a 15-minute rounding window, minutes 1-7 round down and minutes 8-14 round up, creating a mathematically neutral split point. Federal court rulings, including Corbin v. Time Warner (2016), have upheld rounding policies as long as they do not result in systematic underpayment. Some states, notably California after the Donohue v. AMN Services ruling in 2021, have moved toward requiring exact time tracking.",
+        "scientificBasis": "Quarter-hour rounding applies a nearest-neighbor rounding function to clock times using 15-minute intervals. The rounding boundaries are 0, 15, 30, and 45 minutes past the hour. For any clock time, the minutes component is evaluated: 0-7 minutes round down to the lower boundary, 8-14 round up to the upper boundary, 15-22 round down to 15, 23-29 round up to 30, 30-37 round down to 30, 38-44 round up to 45, and 45-52 round down to 45, 53-59 round up to the next hour. Mathematically, this is equivalent to: Rounded = round(Minutes / 15) times 15, using standard rounding (0.5 rounds up). The 7-minute rule specifically sets the midpoint at 7.5 minutes, rounding 1-7 down and 8-14 up. Over a large number of clock events, assuming random arrival times uniformly distributed within each 15-minute window, the rounding errors cancel out, making the system statistically neutral. Some employers use 6-minute (tenth-of-an-hour) rounding or 5-minute rounding, each with its own midpoint rule, but quarter-hour rounding remains the most common due to its FLSA endorsement.",
+        "examples": [
+          "Example 1: An employee clocks in at 8:07 AM. Under the 7-minute rule, 7 minutes rounds down, so the recorded start time is 8:00 AM. If they had clocked in at 8:08, it would round up to 8:15 AM.",
+          "Example 2: An employee clocks out at 5:22 PM. Minutes = 22. Since 22 is in the 15-29 range, and 22-15 = 7, it rounds down to 5:15 PM. If they clocked out at 5:23 PM, 23-15 = 8, so it rounds up to 5:30 PM.",
+          "Example 3: Weekly impact: An employee consistently arrives 5 minutes early (rounds to on-time, losing 5 minutes) and leaves 5 minutes late (rounds to on-time, losing 5 minutes). Over 5 days, they lose 50 minutes of paid time. This demonstrates how rounding can systematically disadvantage punctual employees."
+        ],
+        "comparison": "Quarter-hour rounding with the 7-minute rule is simpler than exact time tracking but less precise. Exact time tracking, now feasible with digital systems, eliminates rounding disputes and is increasingly required by courts in employee-favorable jurisdictions like California. Sixth-of-an-hour (6-minute) rounding offers finer granularity while still simplifying calculations, and is common in legal billing where attorneys track time in 0.1-hour increments. Five-minute rounding provides a middle ground but is less commonly endorsed by labor regulators. The trend in payroll is moving toward exact time tracking as digital systems make the computational simplification argument for rounding obsolete.",
+        "prosAndCons": {
+          "pros": [
+            "Simplifies payroll calculations by working with clean 15-minute increments",
+            "Federally recognized as legal under FLSA when applied neutrally",
+            "Reduces disputes over minor clock-in time differences",
+            "Statistically neutral when employees arrive randomly within rounding windows",
+            "Easy to implement in both manual and automated payroll systems"
+          ],
+          "cons": [
+            "Can systematically disadvantage employees who are consistently punctual or early",
+            "Some state courts (California) have ruled against rounding in favor of exact tracking",
+            "Employees may perceive rounding as unfair even when statistically neutral",
+            "Modern digital time systems make rounding unnecessary for computational simplification",
+            "Class action lawsuits over rounding policies have resulted in significant employer liability"
+          ]
+        }
+      }
     }
   ],
   "sources": [

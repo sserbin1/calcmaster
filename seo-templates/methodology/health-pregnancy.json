@@ -21,7 +21,33 @@
         "Assumes conception 2 weeks after LMP"
       ],
       "bestFor": "Clinical pregnancy dating",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Gestational age dating from the last menstrual period became the standard convention in obstetrics during the 19th century, well before the hormonal and ovulatory mechanisms of conception were understood. The choice of LMP as the starting point was practical: it was the most recent observable event that most women could identify with certainty, whereas ovulation and conception are invisible. Franz Naegele formalized this convention in his 1812 obstetric textbook, and it has remained the global standard ever since. The result is a somewhat counterintuitive system where 'week 1' of pregnancy occurs before conception, and a woman is already '2 weeks pregnant' at the moment of fertilization. This convention persists because it provides a consistent reference point across all pregnancies regardless of whether ovulation timing is known. International organizations including ACOG, WHO, and FIGO all use LMP-based gestational dating as the standard, with ultrasound adjustment when available.",
+        "scientificBasis": "Standard gestational dating reflects a practical convention rather than biological reality. The designation of 40 weeks (280 days) from LMP represents an average that encompasses both the pre-conception follicular phase (approximately 14 days in a textbook 28-day cycle) and the actual embryonic/fetal development period (approximately 266 days, or 38 weeks). During 'weeks 1-2' of pregnancy, no embryo exists—this period covers the final days of the previous cycle and the follicular phase leading to ovulation. Conception occurs around 'week 2' by this dating system, implantation around 'week 3-4', and the embryo becomes detectable on ultrasound around 'week 5-6'. The system's value lies in standardization: all prenatal care protocols, developmental milestones, and screening test timing are calibrated to this gestational age scale. Converting between gestational age and fetal age (actual time since conception) requires subtracting approximately 2 weeks, though this offset varies with individual ovulation timing.",
+        "examples": [
+          "LMP was 6 weeks ago today: Gestational age = 6 weeks 0 days. However, the embryo itself is only about 4 weeks old (fetal age), having been conceived around 'week 2'.",
+          "Woman at 20 weeks gestation: Her baby has been developing for approximately 18 weeks since conception. This is the typical timing for the anatomy scan ultrasound.",
+          "Full-term pregnancy at 40 weeks: The fetus has developed for about 38 weeks. Term is defined as 37-42 weeks gestational age, or 35-40 weeks fetal age."
+        ],
+        "comparison": "Standard gestational dating provides universal consistency but can confuse patients who expect 'pregnancy weeks' to reflect actual embryonic age. The fetal age calculation (gestational age minus 2 weeks) gives a more accurate picture of embryonic development but is not used clinically. For women who conceived through IVF, clinical protocols convert the known conception date back to an LMP-equivalent date for documentation—adding 14 days to the conception date to create a fictional LMP that aligns with standard dating conventions. This ensures all prenatal care timing remains consistent regardless of how pregnancy was achieved. Understanding both systems helps pregnant individuals make sense of developmental information, which is often presented in both gestational and fetal age terms depending on the source.",
+        "prosAndCons": {
+          "pros": [
+            "Universal standard used by all healthcare providers",
+            "LMP is easily identifiable reference point for most women",
+            "All prenatal protocols calibrated to this system",
+            "Provides consistent framework across pregnancies",
+            "Easy calculation requiring only one date"
+          ],
+          "cons": [
+            "Weeks 1-2 occur before conception (confusing)",
+            "Fetal development is actually 2 weeks behind gestational age",
+            "Assumes ovulation on day 14 (varies significantly)",
+            "Can be inaccurate for irregular cycles",
+            "May overstate or understate true pregnancy progress"
+          ]
+        }
+      }
     },
     {
       "id": "trimester-definition",
@@ -38,7 +64,33 @@
         "WHO defines first trimester as weeks 1-14"
       ],
       "bestFor": "General pregnancy tracking",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The division of pregnancy into three trimesters evolved gradually in obstetric practice during the 19th and 20th centuries as physicians sought to organize the dramatic physiological changes of pregnancy into clinically meaningful periods. The trimester system gained standardization with the development of prenatal care protocols in the mid-20th century, when it became clear that different pregnancy stages required different monitoring approaches and carried different risks. The first trimester was recognized as the period of organogenesis (organ formation) with highest miscarriage risk and sensitivity to teratogens. The second trimester emerged as typically the most comfortable period with visible fetal movement and major anatomical development. The third trimester was characterized by rapid fetal growth and preparation for birth. While the exact week boundaries vary slightly between organizations (ACOG uses 0-13, 14-27, 28-40 while WHO uses 1-14, 15-28, 29-42), the three-period framework remains universal. Modern prenatal care schedules, screening tests, and patient education all follow the trimester structure.",
+        "scientificBasis": "Trimester divisions correspond roughly to major transitions in embryonic and fetal development. The first trimester (weeks 1-12/13) encompasses the entire period of embryogenesis—the transformation from fertilized egg to recognizable human form with all major organs present. By week 12, the embryo (now called a fetus) has developed all organ systems in primitive form, the risk of structural birth defects from teratogen exposure drops dramatically, and the miscarriage rate falls from approximately 15-20% to less than 1%. The second trimester (weeks 13-26) is characterized by rapid fetal growth, maturation of organ systems, development of sensory capabilities, and the beginning of fetal movement perceptible to the mother (quickening, typically 18-22 weeks). The boundary between second and third trimesters (around 26-28 weeks) roughly corresponds to the threshold of viability—the point at which survival outside the womb becomes possible with intensive care, though with significant risk of complications. The third trimester focuses on fetal growth, lung maturation, and positioning for birth.",
+        "examples": [
+          "Week 8 (First Trimester): All major organs are forming. Heart is beating. High miscarriage risk. First prenatal visit typically occurs. Embryo is about 1.6cm.",
+          "Week 20 (Second Trimester): Anatomy scan ultrasound. Mother begins feeling movement. Fetus is about 25cm. Risk of loss much lower. Often considered the 'comfortable' period.",
+          "Week 32 (Third Trimester): Rapid weight gain. Lungs maturing. Fetus is about 42cm. Increased monitoring frequency. Position for delivery becoming important."
+        ],
+        "comparison": "The trimester system provides a useful organizational framework, but the week boundaries are somewhat arbitrary and vary between sources. ACOG defines the first trimester as through week 13, while WHO extends it through week 14. The viability threshold dividing second and third trimesters has shifted earlier over decades as neonatal intensive care has improved—from approximately 28 weeks historically to 22-24 weeks in advanced medical centers today. Some researchers propose a four-period division that separates early and late first trimester due to distinct risk profiles, or that uses fetal weight milestones rather than time. For practical purposes, the standard three-trimester division remains valuable for organizing prenatal care, counseling patients about expected changes, and timing screening tests. The developmental milestones within each trimester are more clinically relevant than the exact boundary dates.",
+        "prosAndCons": {
+          "pros": [
+            "Universal framework for organizing pregnancy",
+            "Corresponds roughly to developmental transitions",
+            "Guides prenatal care scheduling and screening",
+            "Helps patients understand pregnancy stages",
+            "Standardized across medical literature"
+          ],
+          "cons": [
+            "Exact week boundaries vary between organizations",
+            "Viability threshold (2nd/3rd boundary) shifts with medical advances",
+            "Oversimplifies continuous developmental process",
+            "Same week number can fall in different trimesters by different definitions",
+            "Cultural/historical rather than strictly biological divisions"
+          ]
+        }
+      }
     },
     {
       "id": "fetal-age",
@@ -57,7 +109,33 @@
         "Not commonly used in clinical settings"
       ],
       "bestFor": "Understanding true fetal development stage",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Fetal age, also called conceptional age, embryonic age, or developmental age, represents the actual time elapsed since fertilization created a new organism. This measurement system predates the standardized LMP-based gestational age system and was the original way embryologists discussed development. The Carnegie Stages of human embryonic development, established in the early 20th century and refined through the Carnegie Institution's collections of embryo specimens, are all indexed to fetal age rather than gestational age. Similarly, most embryology textbooks and research literature describe developmental events in fetal age terms. However, because conception timing is usually unknown in natural pregnancies, clinical medicine adopted the LMP convention. The persistence of both systems creates a consistent 2-week discrepancy: when clinical sources say 'at 8 weeks,' they mean 8 weeks gestational age (6 weeks fetal age), while embryology sources mean 8 weeks since conception. Understanding this distinction is essential for interpreting developmental information correctly.",
+        "scientificBasis": "Fetal age directly measures the time since the biological beginning of a new organism—the moment when a sperm fertilizes an egg and creates a unique genetic combination. This occurs approximately 14 days after the first day of the last menstrual period in a textbook 28-day cycle, but can range from day 10 to day 21 or beyond depending on cycle length and individual variation. From a developmental biology perspective, fetal age is the only meaningful timeline: embryonic structures form on specific days after fertilization regardless of when the mother's last period occurred. The heart begins beating around fetal day 21-22 (gestational week 5-6), limb buds appear around fetal day 28 (gestational week 6), and embryogenesis completes around fetal week 8 (gestational week 10). Using fetal age eliminates the confusing 2-week period where a woman is 'pregnant' before conception and aligns pregnancy duration with actual biological development.",
+        "examples": [
+          "Gestational age 10 weeks = Fetal age 8 weeks: At this point, the embryo has just completed organogenesis. All major structures are present. The pregnancy is entering the fetal period.",
+          "Gestational age 20 weeks = Fetal age 18 weeks: The fetus has been developing for 4.5 months. The anatomy scan examines structures that formed during the first 8 weeks of fetal development.",
+          "Gestational age 40 weeks (due date) = Fetal age 38 weeks: The baby has developed for approximately 266 days, or 38 weeks, since conception—the true duration of embryonic and fetal development."
+        ],
+        "comparison": "Fetal age provides a more intuitive understanding of actual development but creates practical difficulties. If a woman reports being '8 weeks pregnant' using fetal age (8 weeks since she believes conception occurred), healthcare providers using gestational age would interpret this as 10 weeks and provide different care recommendations. The 2-week discrepancy can cause confusion when comparing information from medical sources (gestational age) versus embryology or popular sources (sometimes fetal age). IVF pregnancies highlight this clearly: a woman might know she conceived exactly 6 weeks ago (fetal age 6 weeks), but her medical records will list her as 8 weeks pregnant (gestational age). For developmental milestones, embryology resources are more accurate when using fetal age, while clinical guidelines assume gestational age. This calculator displays both to help bridge the terminology gap.",
+        "prosAndCons": {
+          "pros": [
+            "Represents actual time since embryo began developing",
+            "Aligns with embryological literature and Carnegie Stages",
+            "More intuitive understanding of development timeline",
+            "Essential for research and precise developmental tracking",
+            "Eliminates confusing 'pregnant before conception' period"
+          ],
+          "cons": [
+            "Not used in standard clinical practice",
+            "Conception date rarely known precisely",
+            "Can cause dangerous confusion if mistaken for gestational age",
+            "All medical protocols calibrated to gestational age",
+            "Popular resources inconsistently use both systems"
+          ]
+        }
+      }
     }
   ],
   "sources": [

@@ -19,7 +19,33 @@
         "Different calculators give different results"
       ],
       "bestFor": "Party games, entertainment",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Love calculators emerged as a popular novelty in the early days of the internet during the late 1990s and early 2000s. The concept of name-based compatibility, however, traces back much further to numerology traditions practiced in ancient Greece, China, and the Middle East, where letters were assigned numerical values to divine meaning. The popular schoolyard game FLAMES (Friends, Lovers, Affectionate, Marriage, Enemies, Siblings) used a similar name-letter-counting technique long before digital versions appeared. Early websites like LoveCalculator.com launched around 1999 and attracted millions of visitors during the Web 1.0 era. The format proved enduringly popular on social media platforms, with love calculator apps regularly going viral on Facebook and mobile app stores throughout the 2010s.",
+        "scientificBasis": "Name-based love calculators have no scientific basis whatsoever and are purely entertainment tools. The algorithms typically use string manipulation techniques such as counting specific letter occurrences, computing hash values, or performing arithmetic on character codes to produce a deterministic output between 0 and 100. The output is consistent for the same input pair, creating an illusion of meaningfulness, but the mapping is entirely arbitrary. Actual relationship compatibility research in psychology identifies factors such as attachment style compatibility (Bowlby, 1969), the Big Five personality trait similarity and complementarity, shared values and life goals, communication patterns studied by John Gottman, and emotional intelligence. The Gottman Institute's research, spanning over 40 years and thousands of couples, identified specific behavioral ratios (the 5:1 positive-to-negative interaction ratio) as predictive of relationship success, none of which can be derived from names. Neuroscience research has identified that romantic attachment involves complex interactions between oxytocin, dopamine, and serotonin systems in the brain, processes that are entirely independent of the alphabetic composition of a person's name. The deterministic nature of these algorithms means the same name pair always produces the same result, which creates a convincing illusion of validity but reflects only mathematical consistency, not predictive accuracy.",
+        "examples": [
+          "Example 1: Names 'Alice' and 'Bob' are entered. The algorithm counts L=1, O=1, V=0, E=1, S=0 across both names, yielding digits 1,1,0,1,0 which are iteratively summed to produce a final percentage of 86%.",
+          "Example 2: A group of friends at a party enters different name combinations to see who gets the highest compatibility score, generating laughs when unexpected pairings score higher than real couples.",
+          "Example 3: A user enters their name with a celebrity crush and gets 94% compatibility, shares the screenshot on social media for humor, understanding it has no real predictive value."
+        ],
+        "comparison": "Unlike evidence-based relationship assessment tools such as the Gottman Relationship Checkup or the PREPARE/ENRICH premarital inventory used by counselors, love calculators use no psychological data and have zero predictive validity. Personality-based matching systems used by dating apps like eHarmony employ questionnaires based on psychological research, though their effectiveness is also debated. Astrological compatibility charts, while also lacking scientific evidence, at least use a more complex symbolic system. Love calculators are the simplest and most transparently arbitrary of all compatibility tools, which is part of their charm as entertainment.",
+        "prosAndCons": {
+          "pros": [
+            "Entertaining and fun for social gatherings and parties",
+            "Deterministic results create shareable and memorable moments",
+            "Completely harmless when understood as entertainment",
+            "Simple interface accessible to all ages and technical levels",
+            "Can spark conversations and laughter among friends"
+          ],
+          "cons": [
+            "No scientific validity or predictive power whatsoever",
+            "May be taken seriously by impressionable or young users",
+            "Different calculators produce different results for the same names",
+            "Could reinforce unhealthy ideas about fate-based relationships",
+            "Oversimplifies the complex nature of human relationships"
+          ]
+        }
+      }
     }
   ],
   "sources": [

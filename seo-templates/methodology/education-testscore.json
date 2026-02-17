@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Standard test scoring",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Percentage-based scoring is one of the oldest quantitative assessment methods in education, dating back to the late 18th century. Cambridge University used a numerical marking system as early as 1792. In the United States, percentage grading became widespread in the late 1800s as public schooling expanded and standardized evaluation became necessary for managing large numbers of students. By 1897, Mount Holyoke College had mapped percentage ranges to letter grades, establishing the familiar A (95-100), B (85-94) pattern. The specific cutoff percentages for letter grades have varied significantly across institutions and eras: some use 90-80-70-60 breaks, while others use 93-85-77-70. Research by Starch and Elliott in 1912-1913 demonstrated that teachers grading the same paper varied by as much as 40 percentage points, revealing significant subjectivity even within this seemingly objective system.",
+        "scientificBasis": "Percentage scoring is a ratio measurement that expresses the proportion of correct or earned points relative to the total possible. The formula is straightforward: (Points Earned / Total Possible Points) x 100. This yields a value on a 0-100 scale that is intuitively understood as a proportion of mastery. From a psychometric perspective, raw percentage scores are criterion-referenced measures, meaning they compare a student's performance to an absolute standard rather than to other students. Classical test theory decomposes an observed score into a true score plus measurement error, recognizing that any single test score is an imperfect estimate of actual knowledge. Percentage scores assume that all questions or points are equally valuable, which may not reflect the difficulty or importance of individual items. Item Response Theory (IRT) addresses this limitation by modeling the probability of correct responses based on item difficulty and student ability, but IRT is primarily used in large-scale standardized testing rather than classroom assessments.",
+        "examples": [
+          "Example 1: A student answers 38 out of 50 multiple-choice questions correctly. Percentage = (38/50) x 100 = 76%. On a standard scale, this is a C+ or B- depending on the institution's grading policy.",
+          "Example 2: An essay exam is worth 100 points across four criteria: Thesis (25), Evidence (30), Analysis (25), Writing (20). A student earns 22, 25, 20, and 18 respectively. Total = 85/100 = 85%, a B.",
+          "Example 3: A lab report is graded on a 40-point rubric. A student earns 34 points. Percentage = (34/40) x 100 = 85%. This converts to the same letter grade regardless of the raw point total."
+        ],
+        "comparison": "Percentage scoring is the most intuitive method but has notable limitations compared to alternatives. Standards-based grading evaluates mastery of specific learning objectives rather than aggregating points, providing more actionable feedback. Rubric-based scoring with descriptive levels (Exceeds, Meets, Approaching, Below) communicates qualitative performance better than a single number. Norm-referenced scoring (percentile rank) shows where a student stands relative to peers, which can be more meaningful when test difficulty varies. Pass/fail grading eliminates fine distinctions but reduces anxiety and competition. Percentage scoring remains dominant because of its simplicity and widespread understanding across educational contexts.",
+        "prosAndCons": {
+          "pros": [
+            "Universally understood and intuitive for students parents and educators",
+            "Easy to calculate and verify with simple arithmetic",
+            "Provides a clear criterion-referenced measure of performance",
+            "Converts readily to letter grades using established scales",
+            "Allows precise tracking of performance changes over time"
+          ],
+          "cons": [
+            "Does not account for varying difficulty levels among questions or assignments",
+            "Percentage cutoffs for letter grades are arbitrary and vary between institutions",
+            "Creates a false sense of precision when measurement error is not considered",
+            "May not distinguish between surface-level recall and deep understanding",
+            "Assumes all points are equally valuable which is often not pedagogically accurate"
+          ]
+        }
+      }
     },
     {
       "id": "curve",
@@ -31,7 +57,33 @@
         "May inflate or deflate grades"
       ],
       "bestFor": "Difficult tests, normalizing across sections",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Grade curving has been practiced in American education since the early 20th century, influenced by the statistical revolution in social sciences. The application of the normal distribution (bell curve) to grading was popularized after Carl Friedrich Gauss described the distribution in the early 1800s, though its formal application to education came later. In the 1900s, some institutions mandated that grades follow a predetermined distribution (e.g., 10% A, 20% B, 40% C, 20% D, 10% F), assuming that student ability is normally distributed. This strict curving fell out of favor at many institutions by the 1970s and 1980s as critics argued it was arbitrary and pitted students against each other. However, informal curving methods such as adding points or using square root scaling persist widely. Some competitive professional schools and law schools still enforce mandatory curves to maintain grade distribution consistency.",
+        "scientificBasis": "Curved scoring adjusts raw scores to account for test difficulty, scoring variations between sections, or to achieve a desired grade distribution. The additive curve simply adds a constant to all scores, equivalent to reducing the test's effective difficulty. The square root curve applies a nonlinear transformation: adjusted score equals the square root of (raw score times 100), which compresses the top of the distribution and expands the bottom, helping lower scores more than higher scores. Normal distribution curving uses z-scores: z = (raw score - mean) / standard deviation, then maps z-scores to grade cutoffs. This is a norm-referenced approach grounded in the Central Limit Theorem, which suggests that large samples of student performance tend toward normality. However, research by Schinske and Tanner (2014) argues that mandated curves can undermine collaborative learning and create a zero-sum competitive environment. The validity of curving depends on whether the test was appropriately calibrated: curving a poorly designed test can mask fundamental instructional problems.",
+        "examples": [
+          "Example 1: An exam has a class average of 62%. The instructor adds 15 points to all scores (additive curve). A student who scored 72% now has 87%. The class average becomes 77%.",
+          "Example 2: Using the square root curve on a score of 64%: adjusted = sqrt(64 x 100) = sqrt(6400) = 80%. A score of 49% becomes sqrt(4900) = 70%. Lower scores receive proportionally larger boosts.",
+          "Example 3: A law school mandates a B median. After calculating raw scores, the instructor sets grade cutoffs so that 50% of students receive B or B+, with the remaining distributed above and below according to school policy."
+        ],
+        "comparison": "Curving serves a different purpose than straight percentage scoring. While percentage scoring is criterion-referenced (how much did you learn?), curving is norm-referenced (how did you compare to others?). Additive curves are the simplest but do not change the distribution shape. Square root curves favor lower-performing students. Normal distribution curves enforce a predetermined grade distribution regardless of actual performance. Some instructors prefer to set the highest score to 100% and scale others proportionally, which rewards the top performer while adjusting for test difficulty. Standards-based grading avoids curving entirely by defining fixed mastery thresholds. Each approach reflects different philosophies about what grades should represent.",
+        "prosAndCons": {
+          "pros": [
+            "Compensates for unexpectedly difficult tests that would otherwise unfairly penalize students",
+            "Normalizes grades across different sections taught by different instructors",
+            "Can improve student morale when raw scores are universally low",
+            "Flexible methods allow instructors to choose the most appropriate adjustment",
+            "Maintains grade distributions consistent with departmental expectations"
+          ],
+          "cons": [
+            "Can mask poor test design or ineffective instruction",
+            "Normal distribution curving creates zero-sum competition among students",
+            "Different curving methods produce different results making comparison difficult",
+            "May inflate grades beyond what student knowledge warrants",
+            "Students may rely on the expectation of a curve rather than studying thoroughly"
+          ]
+        }
+      }
     }
   ],
   "sources": [

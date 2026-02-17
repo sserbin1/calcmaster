@@ -22,7 +22,33 @@
         "Assumes fixed rate"
       ],
       "bestFor": "Personal loans, auto loans, standard financing",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The standard amortizing loan structure evolved from the same mathematical principles as mortgage amortization, developed during the 17th and 18th centuries as modern banking emerged. The term 'amortization' comes from the Latin 'amortire' meaning 'to kill'—in this context, 'killing' or reducing the debt over time. Consumer installment lending became widespread in the United States during the early 20th century, particularly with the rise of automobile financing. General Motors Acceptance Corporation (GMAC), founded in 1919, pioneered auto financing and helped establish the installment loan as a standard consumer product. Before this, automobiles were luxury items purchased with cash. By making cars affordable through monthly payments, installment loans transformed American consumer culture. The Federal Reserve's Regulation Z, implementing the Truth in Lending Act of 1968, standardized loan disclosures and made the amortization structure transparent to consumers. Today, the standard amortizing loan remains the dominant structure for auto loans, personal loans, and most consumer financing.",
+        "scientificBasis": "The amortizing loan formula derives from the time value of money and the concept of an ordinary annuity. Each monthly payment P satisfies the equation where the present value of all payments (discounted at the monthly interest rate) equals the original principal. Within each payment, the interest component equals the outstanding balance times the monthly rate, while the remainder reduces principal. This creates the characteristic amortization pattern: early payments are mostly interest, later payments mostly principal. For a $30,000 auto loan at 8% for 60 months, the first payment of $608.29 includes $200 interest and $408.29 principal. By payment 60, it's $4.01 interest and $604.28 principal. The cumulative interest paid depends heavily on rate and term. The same $30,000 loan at 8% costs $6,497 in total interest over 5 years, but $10,392 over 7 years. Extending the term reduces payment but substantially increases total cost—a critical consideration in loan decisions.",
+        "examples": [
+          "$30,000 auto loan at 7.5% for 60 months: Payment = $600.98/month. Total payments: $36,058.80. Total interest: $6,058.80. In month 1: $187.50 interest, $413.48 principal.",
+          "$15,000 personal loan at 12% for 36 months: Payment = $498.21/month. Total: $17,935.56. Interest: $2,935.56. High rate means 20% of amount borrowed goes to interest.",
+          "Same $25,000 car at 6%: 48 months = $587.13/mo, $3,182 interest. 72 months = $414.32/mo, $4,831 interest. You pay $1,649 more interest for the longer term despite lower payment."
+        ],
+        "comparison": "Standard amortization produces fixed, predictable payments—a major advantage for budgeting. Simple interest loans (common for auto loans) calculate interest daily on the remaining balance, making early payoff more beneficial. Balloon loans offer lower monthly payments but require a large final payment, creating refinancing risk. Buy Here Pay Here (BHPH) financing often uses Rule of 78 or other methods that front-load interest, making early payoff less advantageous. When comparing loan offers, calculate total interest paid, not just monthly payment. A 72-month loan might seem affordable with a low payment, but it costs significantly more than a 48-month loan and leaves you underwater (owing more than the vehicle's worth) longer. Credit unions typically offer the best auto loan rates, followed by banks, then dealer financing, then BHPH lots.",
+        "prosAndCons": {
+          "pros": [
+            "Fixed, predictable monthly payments for easy budgeting",
+            "Interest portion decreases over time (builds equity)",
+            "Can pay off early to save interest on most loans",
+            "Transparent calculation understood by all parties",
+            "Standard structure enables easy comparison shopping"
+          ],
+          "cons": [
+            "Early payments mostly interest (slow equity building)",
+            "Extending term for lower payment increases total cost",
+            "Payment doesn't change if rates drop (unlike credit cards)",
+            "Upside-down risk: may owe more than asset's value",
+            "Prepayment penalties may apply on some loans"
+          ]
+        }
+      }
     },
     {
       "id": "simple-interest",
@@ -43,7 +69,33 @@
         "Less common than amortizing"
       ],
       "bestFor": "Short-term loans, some auto financing",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Simple interest is the oldest and most intuitive form of interest calculation, used since ancient Mesopotamia around 3000 BCE. The Code of Hammurabi (circa 1754 BCE) regulated interest rates on grain and silver loans using simple interest concepts. Unlike compound interest, which was developed later and initially considered usurious by many religions and legal systems, simple interest charges only on the original principal. In modern consumer lending, simple interest auto loans became prevalent because they benefit borrowers who pay early—a feature that builds customer goodwill and reduces default risk. Most auto loans from banks and credit unions are structured as simple interest loans, though the monthly payment is still calculated using the amortization formula. The distinction matters primarily for early payoff: with simple interest, paying extra goes directly to principal, immediately reducing future interest charges. This structure incentivizes responsible borrowing behavior and gives consumers control over their total cost.",
+        "scientificBasis": "The simple interest formula I = Prt calculates interest as a linear function of principal, rate, and time. Unlike compound interest where interest earns interest, simple interest accumulates at a constant rate. For a simple interest auto loan, daily interest accrues as: (Principal Balance × Annual Rate) / 365. Each payment first covers accrued interest, then reduces principal. If you pay early in the billing cycle, less interest has accrued, so more of your payment reduces principal. Conversely, late payments allow more interest to accumulate. This daily interest calculation means your payment timing affects total cost. Paying biweekly (every 2 weeks = 26 payments/year) instead of monthly (12 payments/year) effectively makes 13 monthly payments per year and reduces total interest. For a $25,000 auto loan at 6% for 60 months, paying biweekly saves approximately $250 in interest and pays off the loan 3-4 months early.",
+        "examples": [
+          "$20,000 loan at 5% simple interest for 4 years: Total interest = $20,000 × 0.05 × 4 = $4,000. Total repayment = $24,000. Monthly payment ≈ $500 (actual may vary slightly due to daily accrual).",
+          "Daily interest calculation: $15,000 balance at 8%. Daily interest = ($15,000 × 0.08) / 365 = $3.29/day. If payment is 5 days late, extra interest = $16.44.",
+          "Early payoff benefit: $25,000 auto loan at 7%, 60 months. Normal total interest: ~$4,700. Pay $100 extra/month: payoff in 50 months, total interest ~$3,800. Savings: $900."
+        ],
+        "comparison": "Simple interest loans differ from precomputed interest loans (Rule of 78) and compound interest loans in how early payoff is handled. With simple interest, paying early always benefits you—interest stops accruing immediately when the loan is paid off. Precomputed interest loans (still legal in some states) front-load interest, so early payoff saves less than expected. Compound interest is rare in installment loans but standard in credit cards and revolving credit. For auto loans, verify that yours uses simple interest (sometimes called 'simple interest with amortization') rather than precomputed interest. The Truth in Lending disclosure should indicate the calculation method. Credit union auto loans almost universally use simple interest, while some captive finance companies (manufacturer financing arms) may use precomputed interest, especially on subprime loans.",
+        "prosAndCons": {
+          "pros": [
+            "Early payoff directly reduces future interest charges",
+            "Payment timing matters—pay early to save money",
+            "Biweekly payment strategy is effective",
+            "Transparent daily interest accrual",
+            "Extra payments go straight to principal"
+          ],
+          "cons": [
+            "Late payments cost more than scheduled amount",
+            "Monthly payment may vary slightly due to daily accrual",
+            "Requires understanding of when interest accrues",
+            "Less predictable total cost than precomputed",
+            "Some lenders add complexity with fees"
+          ]
+        }
+      }
     },
     {
       "id": "balloon-payment",
@@ -61,7 +113,33 @@
         "Higher total cost if refinanced"
       ],
       "bestFor": "Short-term ownership, business financing",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Balloon payment loans were the standard mortgage structure in the United States before the Great Depression. Borrowers would make interest-only payments (or interest plus partial principal) for 5-10 years, then face a large balloon payment that they typically planned to refinance. When the banking system collapsed in the 1930s, refinancing became impossible, and millions of homeowners lost their properties. This catastrophe led to the creation of the FHA and the development of fully-amortizing long-term mortgages. Balloon loans returned for business financing and, controversially, in subprime lending before the 2008 crisis. In auto financing, balloon loans (sometimes called 'residual value' loans or 'balloon financing') remain common, particularly in lease-like purchase structures where the balloon represents the vehicle's expected residual value. Some buyers prefer this structure because it mimics lease payments while building equity, but the balloon payment risk remains significant.",
+        "scientificBasis": "A balloon loan is mathematically structured by calculating payments based on a longer amortization period than the actual loan term. For example, payments might be calculated for a 30-year amortization schedule, but the loan matures in 5 years. After 5 years of payments on a 30-year schedule, substantial principal remains—this becomes the balloon. The payment formula uses the same PMT calculation as a fully amortizing loan, just with a mismatched term. If the balloon represents residual value (as in auto financing), the calculation is: Monthly Payment = [(Purchase Price - Balloon) × r × (1+r)^n] / [(1+r)^n - 1]. The balloon amount is set based on expected depreciation. If a $40,000 car has an expected 40% residual value after 4 years, the balloon is $16,000, and payments amortize only the $24,000 expected depreciation. This produces lower payments but leaves significant risk if the actual value is less than the balloon.",
+        "examples": [
+          "$35,000 auto with $10,000 balloon after 48 months at 6%: Payments on $25,000 = $587.13/month. At month 48, pay $10,000 balloon or refinance/sell. If car worth only $8,000, you're $2,000 underwater.",
+          "$300,000 mortgage balloon: Payments calculated at 6% for 30 years = $1,799/month. After 7-year balloon term, remaining balance ≈ $268,000 due. Must refinance at whatever rates exist in 7 years.",
+          "Business equipment: $100,000 equipment, 60-month term, 50% balloon. Payments on $50,000 at 8% = $1,013/month. Balloon of $50,000 due at end. Equipment may be worth more or less than balloon."
+        ],
+        "comparison": "Balloon loans offer significantly lower monthly payments than fully amortizing loans but shift risk to the end of the term. A fully amortizing $30,000 auto loan at 6% for 60 months costs $580/month with no balloon. With a $10,000 balloon, payments drop to about $430/month—but you face refinancing risk or must sell/trade the vehicle. Leasing is similar in structure but doesn't build equity; at lease end, you return the car with nothing. Balloon financing at least builds some equity during the term. The key comparison: fully amortizing loans cost more monthly but are risk-free at term end; balloon loans cost less monthly but carry significant end-of-term risk. Choose balloon only if you have a clear exit strategy (selling the asset, planned refinancing, or cash reserves for the balloon).",
+        "prosAndCons": {
+          "pros": [
+            "Significantly lower monthly payments than full amortization",
+            "Useful when planning to sell or trade before balloon due",
+            "Can match cash flow expectations (e.g., expected bonus)",
+            "Common in business financing where asset generates revenue",
+            "Provides lease-like payments with equity building"
+          ],
+          "cons": [
+            "Large payment due at end creates refinancing risk",
+            "May owe more than asset value when balloon due",
+            "Refinancing at balloon may be at worse terms",
+            "Higher total interest if balloon is refinanced",
+            "Risk of default if unable to pay or refinance balloon"
+          ]
+        }
+      }
     }
   ],
   "sources": [

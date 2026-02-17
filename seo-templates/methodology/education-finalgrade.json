@@ -17,7 +17,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Calculating current standing",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Weighted averaging in education evolved from the simple arithmetic mean used in early American schooling. The concept of weighting different assessment categories emerged in the late 19th century as universities began differentiating between examination types. Harvard introduced weighted grading categories in the 1870s, assigning greater importance to final examinations compared to daily recitations. By the mid-20th century, the syllabus-based weighted grading system became standard in American higher education, with instructors explicitly stating category weights. The rise of learning management systems like Blackboard (1997) and Canvas (2011) automated weighted grade calculations, making the process transparent to students and enabling real-time grade tracking throughout the semester.",
+        "scientificBasis": "The weighted average is a fundamental statistical concept where each value contributes proportionally to the overall result based on its assigned weight. Mathematically, it extends the arithmetic mean by incorporating importance coefficients. In educational contexts, weights reflect the relative importance an instructor assigns to different assessment types. Research in educational measurement supports differential weighting because different assessment types measure different learning outcomes: exams test retention and application, homework reinforces practice and procedural fluency, and projects assess synthesis and creativity. Bloom's Taxonomy (1956, revised 2001) provides a framework for why higher-order assessments like projects and exams might receive greater weight than lower-order activities. The weighted average assumes that category scores are on comparable scales (typically percentages) and that the weights sum to 100%, creating a valid composite score that reflects overall course mastery. The mathematical validity of this approach depends on the assumption that scores within each category are reliable measures of the learning objectives they represent. When weights are properly calibrated to reflect instructional priorities, the resulting composite score provides a meaningful summary of a student's demonstrated knowledge and skills across all assessed dimensions of the course.",
+        "examples": [
+          "Example 1: A course weights Homework at 20%, Midterm at 30%, and Final Exam at 50%. A student scores 95%, 82%, and 78% respectively. Final Grade = (95 x 0.20) + (82 x 0.30) + (78 x 0.50) = 19 + 24.6 + 39 = 82.6%.",
+          "Example 2: A course has four categories: Participation (10%), Quizzes (15%), Papers (35%), Final (40%). Scoring 100%, 88%, 91%, and 85% yields: (100 x 0.10) + (88 x 0.15) + (91 x 0.35) + (85 x 0.40) = 10 + 13.2 + 31.85 + 34 = 89.05%.",
+          "Example 3: A lab science course: Lab Reports (25%), Lab Practical (25%), Written Exam (50%). Scores of 92%, 88%, 76% produce: (92 x 0.25) + (88 x 0.25) + (76 x 0.50) = 23 + 22 + 38 = 83%."
+        ],
+        "comparison": "Weighted averaging provides more nuanced grading than simple averaging, where all assignments count equally regardless of difficulty or importance. Total points systems (where each assignment has a point value and the final grade is total earned divided by total possible) achieve similar results but make it harder for students to understand category importance. Standards-based grading, increasingly popular in K-12 education, evaluates mastery of specific learning objectives rather than aggregating scores. Contract grading specifies requirements for each grade level. Weighted averaging remains the dominant method in higher education due to its transparency and mathematical simplicity.",
+        "prosAndCons": {
+          "pros": [
+            "Transparent and easy for students to understand and predict their grade",
+            "Allows instructors to emphasize the most important assessments",
+            "Mathematically straightforward and universally understood",
+            "Compatible with learning management systems for automatic calculation",
+            "Enables students to strategize study effort based on category weights"
+          ],
+          "cons": [
+            "A single heavily weighted exam can disproportionately affect the final grade",
+            "Does not account for improvement over time or growth trajectories",
+            "Students may neglect lightly weighted categories entirely",
+            "Assumes all scores within a category are equally reliable measures",
+            "Cannot capture qualitative aspects of learning like engagement or effort"
+          ]
+        }
+      }
     },
     {
       "id": "needed-score",
@@ -33,7 +59,33 @@
         "Cannot exceed 100% (or extra credit limit)"
       ],
       "bestFor": "Planning study effort",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The concept of calculating required scores to achieve a target grade became practical with the widespread adoption of transparent weighted grading systems in the 1970s and 1980s. Before this, students often had little insight into how their final grade would be computed. The publication of course syllabi with explicit grading breakdowns, mandated by many universities starting in the 1980s, gave students the information needed to perform these calculations. The first online 'what do I need on my final' calculators appeared in the early 2000s, becoming among the most popular educational tools on the internet, particularly during finals weeks. Roger Hub's Final Grade Calculator, launched around 2012, became one of the most visited educational websites, demonstrating the enormous demand for this simple algebraic tool.",
+        "scientificBasis": "The required score calculation is a straightforward algebraic rearrangement of the weighted average formula. Given a target final grade T, current weighted score C (from completed work with total weight W_c), and remaining weight W_r, the needed score N is: N = (T - C x W_c) / W_r. This assumes linearity and that all weights sum to 1.0. The calculation becomes particularly useful when students must decide how to allocate limited study time across multiple courses. Research on academic self-regulation by Zimmerman (2002) shows that goal-setting and self-monitoring, which this calculation enables, are among the strongest predictors of academic success. The calculation can also reveal when a target grade is mathematically impossible (requiring over 100%), helping students make realistic decisions about course withdrawal or effort reallocation. Edge cases include extra credit allowances, dropped lowest scores, and late penalties that modify the effective weights. Understanding these boundary conditions is essential for accurate planning, as many students fail to account for policies like dropping the lowest quiz score, which effectively redistributes weight among remaining assessments.",
+        "examples": [
+          "Example 1: A student has 85% on homework (30% weight) and 78% on the midterm (30% weight). They want a 90% final grade. Remaining weight is 40% (final exam). Needed = (90 - 85x0.30 - 78x0.30) / 0.40 = (90 - 25.5 - 23.4) / 0.40 = 41.1 / 0.40 = 102.75%. This is impossible without extra credit.",
+          "Example 2: A student has 92% in homework (20%) and 88% on the midterm (30%). They want an A (93%). Needed on final (50%): (93 - 92x0.20 - 88x0.30) / 0.50 = (93 - 18.4 - 26.4) / 0.50 = 48.2 / 0.50 = 96.4% needed on the final.",
+          "Example 3: A student has 75% overall on 60% of coursework and wants to pass with 70%. Needed on remaining 40%: (70 - 75x0.60) / 0.40 = (70 - 45) / 0.40 = 62.5%. A manageable target."
+        ],
+        "comparison": "The required score calculation complements the weighted average by working backward from a goal. While the weighted average tells you where you stand, the needed score tells you where you need to go. Some advanced grade calculators incorporate Monte Carlo simulations to estimate the probability of achieving various grades based on historical performance distributions. GPA calculators serve a similar planning purpose at the multi-course level. Unlike standards-based grading systems where mastery of specific objectives determines the grade, the required score calculation is specific to points-based weighted grading systems.",
+        "prosAndCons": {
+          "pros": [
+            "Helps students set realistic and specific study goals",
+            "Reveals early when a target grade is mathematically impossible",
+            "Enables strategic allocation of study time across multiple courses",
+            "Simple algebra that produces exact actionable results",
+            "Reduces anxiety by converting uncertainty into concrete numbers"
+          ],
+          "cons": [
+            "May encourage minimum-effort mentality rather than deep learning",
+            "Does not account for performance variability or test anxiety effects",
+            "Assumes remaining assessments are independent of past performance",
+            "Can be discouraging when required scores are very high",
+            "Does not consider instructor policies like dropping lowest scores"
+          ]
+        }
+      }
     }
   ],
   "sources": [

@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Scientific, international use",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The metric system originated during the French Revolution in 1795, when the need for a universal, rational measurement system became apparent. The French Academy of Sciences developed a decimal-based system anchored to natural constants, replacing the chaotic patchwork of regional units that hindered trade and science. In 1960, the General Conference on Weights and Measures formally established the International System of Units (SI), building on the earlier metric system. The SI system defined seven base units: meter, kilogram, second, ampere, kelvin, mole, and candela. Major redefinitions occurred in 2019 when all base units were tied to fundamental physical constants, ensuring permanence and reproducibility across all laboratories worldwide. Today, SI is the official measurement system of virtually every nation.",
+        "scientificBasis": "The SI system is founded on dimensional analysis and the principle that all physical quantities can be expressed as combinations of base units. Each prefix represents a power of ten, making conversions straightforward multiplication or division. The meter is defined by the speed of light in vacuum (299,792,458 m/s), the kilogram by Planck's constant (6.626 x 10^-34 J*s), and the second by cesium-133 atomic transitions at 9,192,631,770 Hz. This anchoring to physical constants means SI units are reproducible anywhere in the universe without reference to a physical artifact. The decimal structure eliminates complex conversion factors, reducing computational errors significantly in scientific and engineering work. Dimensional homogeneity ensures that equations remain valid across unit scales, which is foundational to physics, engineering, and chemistry. The coherent nature of SI means derived units like newtons, joules, and watts are direct products of base units without additional numerical factors. Furthermore, the metric prefixes span from yocto (10^-24) to yotta (10^24), covering an enormous range of magnitudes essential for expressing quantities from subatomic particles to astronomical distances.",
+        "examples": [
+          "Example 1: Converting 5.2 kilometers to meters: 5.2 km x 1000 = 5,200 meters. Simply multiply by the prefix value (kilo = 1000).",
+          "Example 2: Converting 350 milliliters to liters: 350 mL / 1000 = 0.35 liters. Move the decimal three places left (milli = 0.001).",
+          "Example 3: Converting 2.5 megabytes to kilobytes: 2.5 MB x 1000 = 2,500 KB. Each SI prefix step represents a factor of 1000."
+        ],
+        "comparison": "SI conversions are significantly simpler than imperial system conversions because they use a consistent base-10 structure. While imperial conversions require memorizing arbitrary factors (12 inches per foot, 5,280 feet per mile, 16 ounces per pound), SI conversions only require moving decimal points. This makes SI the preferred system for science, medicine, and international commerce. However, the imperial system remains deeply embedded in American daily life, construction, and some industries.",
+        "prosAndCons": {
+          "pros": [
+            "Consistent decimal-based prefixes make mental math easy",
+            "Universally adopted in science and by most countries worldwide",
+            "Units are anchored to physical constants ensuring long-term stability",
+            "Coherent system where derived units follow naturally from base units",
+            "Simplified unit conversion reduces errors in calculations"
+          ],
+          "cons": [
+            "Not intuitive for populations raised with imperial measurements",
+            "Transition costs can be high for industries using legacy systems",
+            "Some everyday quantities feel less natural (body temperature in Celsius vs Fahrenheit)",
+            "Binary prefixes for computing (kibi, mebi) cause confusion with SI prefixes",
+            "Historical artifacts and older engineering documents may use non-SI units"
+          ]
+        }
+      }
     },
     {
       "id": "imperial-metric",
@@ -27,7 +53,33 @@
       },
       "accuracy": "Exact with defined factors",
       "bestFor": "US to international conversions",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The imperial system evolved from centuries of English customary units, many rooted in Roman and Anglo-Saxon measurements. The British Weights and Measures Act of 1824 standardized imperial units across the British Empire. The United States adopted a variant (US customary units) based on pre-1824 English measures, which is why US gallons differ from imperial gallons. Throughout the 20th century, most countries transitioned to metric, but the US, Myanmar, and Liberia retained their traditional systems. In 1959, English-speaking nations agreed on exact metric equivalents for the yard and pound, creating the international yard (0.9144 meters exactly) and avoirdupois pound (0.45359237 kg exactly), enabling precise cross-system conversions.",
+        "scientificBasis": "Imperial-to-metric conversions rely on internationally agreed conversion factors, most of which are defined exactly by treaty or standard. The inch is defined as exactly 2.54 centimeters, making length conversions precise and traceable. Mass conversions use the avoirdupois pound defined as exactly 0.45359237 kilograms. Temperature conversion between Fahrenheit and Celsius uses a linear transformation: F = C x 9/5 + 32, where the scales intersect at -40 degrees. Volume conversions are more complex because the US gallon (231 cubic inches, approximately 3.785 liters) differs from the imperial gallon (approximately 4.546 liters), a legacy of different historical standardization paths. These exact definitions mean that while the conversion factors appear irrational, the conversions themselves introduce no rounding error when sufficient decimal places are maintained. The challenge lies in the non-decimal relationships within the imperial system itself, where 12 inches make a foot, 3 feet make a yard, and 1,760 yards make a mile. This inconsistency is why dimensional analysis, the systematic tracking of units through calculations, is essential when working across measurement systems to prevent costly errors.",
+        "examples": [
+          "Example 1: Converting 6 feet 2 inches to centimeters: (6 x 12 + 2) x 2.54 = 74 x 2.54 = 187.96 cm. First convert to inches, then multiply by the exact factor.",
+          "Example 2: Converting 72 degrees Fahrenheit to Celsius: (72 - 32) x 5/9 = 40 x 5/9 = 22.22 degrees C. Subtract 32, then multiply by 5/9.",
+          "Example 3: Converting 150 pounds to kilograms: 150 x 0.453592 = 68.04 kg. Multiply by the defined conversion factor."
+        ],
+        "comparison": "Imperial-to-metric conversion is inherently more complex than metric-to-metric conversion because imperial units lack a consistent base. Converting miles to feet requires multiplying by 5,280, while converting kilometers to meters requires multiplying by 1,000. However, imperial units sometimes offer more human-scale granularity, such as Fahrenheit degrees being smaller than Celsius degrees, providing finer temperature resolution without decimals. For cooking, imperial volume measures (cups, tablespoons) are widely understood in the US, while metric weight-based measurements are more precise for baking.",
+        "prosAndCons": {
+          "pros": [
+            "Exact conversion factors are internationally standardized and legally defined",
+            "Enables communication between metric and imperial-using countries",
+            "Many conversion factors are simple enough for quick mental estimation",
+            "Digital tools make precise conversion instantaneous",
+            "Imperial units are deeply familiar in everyday American life"
+          ],
+          "cons": [
+            "Non-decimal relationships make mental math difficult",
+            "US customary and British imperial units differ for volume measurements",
+            "Conversion errors have caused serious incidents (NASA Mars Climate Orbiter crash)",
+            "Requires memorizing multiple arbitrary conversion factors",
+            "Mixing systems in calculations increases the risk of mistakes"
+          ]
+        }
+      }
     }
   ],
   "sources": [

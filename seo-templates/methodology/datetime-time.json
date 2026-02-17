@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Duration calculations, time tracking",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Time arithmetic has roots in ancient Babylonian mathematics, where the sexagesimal (base-60) system was developed around 2000 BC. This is why we still use 60 seconds in a minute and 60 minutes in an hour. The Babylonians needed precise time calculations for astronomical observations and religious calendar management. Greek astronomers, particularly Hipparchus in the 2nd century BC, refined these methods for celestial navigation. During the medieval period, mechanical clocks introduced the need for standardized time arithmetic in daily life. The Industrial Revolution made precise time calculation essential for coordinating factory shifts, train schedules, and telegraph communications. Today, time arithmetic underlies everything from payroll systems to scientific experiments and athletic timing.",
+        "scientificBasis": "Time arithmetic operates within a mixed-radix number system: base-60 for seconds and minutes, base-24 for hours, with potential carry-over into days. The fundamental approach converts all time values to a single base unit (typically seconds) before performing operations, then converts back. Addition: convert both times to total seconds, add, then decompose using integer division and modulo operations. Subtraction: similarly convert, subtract, and handle negative results by borrowing from larger units. The conversion formulas are: Total Seconds = Hours times 3600 plus Minutes times 60 plus Seconds. To decompose: Hours = floor(Total / 3600), Minutes = floor((Total mod 3600) / 60), Seconds = Total mod 60. When the result crosses midnight (exceeds 86,400 seconds or goes negative), day boundaries must be handled. Some implementations use modular arithmetic (mod 86400) to wrap around, while others track the day offset separately. This approach ensures exact results with no floating-point precision issues since all operations use integer arithmetic.",
+        "examples": [
+          "Example 1: Adding 2 hours 45 minutes to 10:30 AM. Convert: 10:30 = 37,800 seconds. Add: 2h45m = 9,900 seconds. Total = 47,700 seconds = 13 hours 15 minutes 0 seconds = 1:15 PM.",
+          "Example 2: Subtracting a start time of 8:15 AM from an end time of 5:45 PM to find work duration. Convert: 17:45 = 63,900 seconds, 8:15 = 29,700 seconds. Difference = 34,200 seconds = 9 hours 30 minutes.",
+          "Example 3: Adding three time intervals: 1:20:30 + 2:45:50 + 0:55:40. Total seconds: 4,830 + 9,950 + 3,340 = 18,120 seconds = 5 hours 2 minutes 0 seconds."
+        ],
+        "comparison": "Time arithmetic using seconds as the base unit is the most reliable approach compared to decimal hour conversion or direct manipulation of hours and minutes separately. Decimal hours (e.g., 1.5 hours = 1 hour 30 minutes) simplify multiplication for payroll but introduce rounding errors with odd minute values. Direct manipulation of hours and minutes requires manual carry-over logic that is error-prone. The seconds-based conversion method is universally exact and is the approach used internally by all major programming languages and operating systems.",
+        "prosAndCons": {
+          "pros": [
+            "Produces exact results with no rounding or floating-point errors",
+            "Handles carry-over between seconds, minutes, and hours automatically",
+            "Works for any combination of addition and subtraction operations",
+            "Standard approach used by all major programming languages and systems",
+            "Easily extended to handle day boundaries and multi-day durations"
+          ],
+          "cons": [
+            "Requires conversion steps that are not intuitive for mental math",
+            "The sexagesimal system is unfamiliar compared to decimal arithmetic",
+            "Crossing midnight introduces day-change complexity",
+            "Large time values can exceed integer limits in some older systems",
+            "Does not inherently account for timezone changes or DST transitions"
+          ]
+        }
+      }
     },
     {
       "id": "12-24-conversion",
@@ -27,7 +53,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "International communication, military/aviation",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The 12-hour clock system originated in ancient Egypt around 1500 BC, where sundials divided daylight into 12 segments. The Romans adopted this convention, using 'ante meridiem' (before midday) and 'post meridiem' (after midday) to distinguish halves of the day. The 24-hour clock system was used in ancient Egypt alongside the 12-hour system for astronomical purposes. Modern 24-hour timekeeping was adopted by the Italian and later European railways in the 19th century to prevent scheduling confusion. The US military adopted the 24-hour clock during World War I, following European allies, leading to the common term 'military time' in American English. The International Organization for Standardization formalized 24-hour time in ISO 8601, making it the global standard for unambiguous time notation in computing, aviation, and international communication.",
+        "scientificBasis": "The conversion between 12-hour and 24-hour formats is a bijective mapping between two representations of the same 24-hour cycle. The 24-hour system maps hours 0 through 23 directly, while the 12-hour system uses 12, 1-11 for AM and 12, 1-11 for PM. The conversion rules are: For 12h to 24h, if AM and hour is 12, the result is 0; if AM and hour is 1-11, keep as is; if PM and hour is 12, keep as 12; if PM and hour is 1-11, add 12. For 24h to 12h, if hour is 0, the result is 12 AM; if hour is 1-11, keep with AM; if hour is 12, the result is 12 PM; if hour is 13-23, subtract 12 and add PM. Minutes and seconds remain unchanged in both systems. The 24-hour system eliminates the ambiguity inherent in the 12-hour system at the noon and midnight boundaries, where 12:00 AM and 12:00 PM are frequently confused. This is why safety-critical industries universally mandate 24-hour notation.",
+        "examples": [
+          "Example 1: Converting 3:45 PM to 24-hour format. Since PM and hour is not 12, add 12: 3 + 12 = 15. Result: 15:45.",
+          "Example 2: Converting 00:30 (24-hour) to 12-hour format. Since hour is 0, it becomes 12:30 AM.",
+          "Example 3: Converting 12:00 PM (noon) to 24-hour format. Since PM and hour is 12, keep as 12:00. Converting 12:00 AM (midnight) to 24-hour: since AM and hour is 12, result is 00:00."
+        ],
+        "comparison": "The 12-hour format is predominant in everyday use in the United States, Canada, Australia, and a few other countries, while the 24-hour format is standard in most of the world, all military organizations, aviation, healthcare, and computing. The 24-hour format eliminates AM/PM ambiguity entirely, preventing errors that have caused real-world incidents in healthcare (medication timing) and transportation (scheduling). The 12-hour format is considered more natural for casual conversation in cultures accustomed to it. Neither format affects the underlying time value; the choice is purely one of representation.",
+        "prosAndCons": {
+          "pros": [
+            "24-hour format eliminates all AM/PM ambiguity",
+            "Conversion rules are simple and deterministic",
+            "24-hour format is the international ISO 8601 standard",
+            "Essential skill for international travel and communication",
+            "Prevents potentially dangerous confusion in medical and aviation contexts"
+          ],
+          "cons": [
+            "12-hour to 24-hour conversion requires memorizing special cases for 12 AM/PM",
+            "Cultural familiarity varies, causing confusion for users of the less familiar system",
+            "Midnight representation is inconsistent: some use 24:00 end-of-day vs 00:00 start-of-day",
+            "12-hour format lacks a universally agreed notation for noon and midnight",
+            "Software implementations may handle edge cases at 12:00 boundaries differently"
+          ]
+        }
+      }
     }
   ],
   "sources": [

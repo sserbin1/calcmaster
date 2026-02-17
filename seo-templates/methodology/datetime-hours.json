@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Daily time tracking",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Tracking work hours became necessary during the Industrial Revolution, when factory owners needed to calculate wages for hourly workers. Before the mid-18th century, most labor was task-based or seasonal, and precise hour tracking was rare. The first mechanical time clocks appeared in the 1880s, with Willard Bundy patenting the first employee time recorder in 1888. This invention enabled consistent and auditable work hour tracking for the first time. The Fair Labor Standards Act of 1938 in the United States mandated record-keeping of employee hours, making accurate hour calculation a legal requirement. Modern digital timekeeping systems replaced punch cards in the 1990s, but the fundamental calculation of subtracting start time from end time and deducting breaks has remained unchanged for over a century.",
+        "scientificBasis": "Standard hours calculation converts clock-in and clock-out times into a decimal duration suitable for payroll multiplication. The process involves three steps. First, both start and end times are converted to minutes past midnight: Hours times 60 plus Minutes. Second, the difference is computed: End Minutes minus Start Minutes. Third, break time (also in minutes) is subtracted. The result is converted to decimal hours by dividing by 60. For payroll, decimal hours are essential because wages are calculated as Hours times Rate. The conversion from minutes to decimal hours maps cleanly: 15 minutes equals 0.25, 30 minutes equals 0.50, 45 minutes equals 0.75. Some payroll systems use rounding to the nearest quarter hour or sixth of an hour (10-minute increments) to simplify calculations. When shifts cross midnight, the end time must be adjusted by adding 1440 minutes (24 hours) before subtraction to produce a positive result. This method produces exact results for any single-day or overnight shift.",
+        "examples": [
+          "Example 1: An employee clocks in at 8:00 AM and out at 4:30 PM with a 30-minute lunch break. Hours = (16:30 - 8:00) - 0:30 = 8:30 - 0:30 = 8.0 hours worked.",
+          "Example 2: A night shift worker starts at 10:00 PM (22:00) and ends at 6:30 AM (6:30 + 24:00 = 30:30). Hours = 30:30 - 22:00 = 8:30 = 8.5 hours, minus 15-minute break = 8.25 decimal hours.",
+          "Example 3: An employee works 9:15 AM to 5:45 PM with a 1-hour lunch. Total span = 8 hours 30 minutes. Minus 1-hour break = 7 hours 30 minutes = 7.5 decimal hours at $20/hr = $150 gross pay."
+        ],
+        "comparison": "Standard hours calculation focuses on individual daily shifts, making it simpler than weekly timecard totals or overtime-aware calculations. It does not consider weekly accumulation or overtime thresholds, so it is best used as a building block within a larger payroll system. Compared to project-based time tracking (which allocates hours to tasks), standard hours calculation only tracks total hours worked without categorization. For freelancers billing by the hour, this basic calculation is often sufficient, while employees subject to labor laws typically need the overtime-aware method layered on top.",
+        "prosAndCons": {
+          "pros": [
+            "Simple and straightforward calculation requiring only start, end, and break times",
+            "Produces exact decimal hours suitable for direct payroll multiplication",
+            "Works for any shift pattern including overnight and split shifts",
+            "Easy to verify manually by employees and supervisors",
+            "Universal method that works across all industries and jurisdictions"
+          ],
+          "cons": [
+            "Does not account for overtime thresholds or premium pay rates",
+            "Requires manual break time input which may be inaccurate",
+            "Cannot distinguish between regular and premium hours",
+            "Overnight shifts require special handling to avoid negative results",
+            "Does not track how hours are allocated across projects or tasks"
+          ]
+        }
+      }
     },
     {
       "id": "overtime",
@@ -31,7 +57,33 @@
         "Exempt employees not covered"
       ],
       "bestFor": "Payroll calculations",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Overtime regulation in the United States began with the Fair Labor Standards Act (FLSA) of 1938, signed by President Franklin D. Roosevelt as part of New Deal legislation. The Act established the 40-hour workweek and mandated time-and-a-half pay for hours exceeding that threshold. Before the FLSA, there were no federal limits on working hours, and 60-80 hour weeks were common in manufacturing. The labor movement's 'Eight-Hour Day' campaign, which began in the 1860s, laid the groundwork for this legislation. Over the decades, the FLSA has been amended multiple times to expand coverage, adjust salary thresholds for exempt employees, and clarify which workers qualify for overtime protection. California introduced daily overtime rules requiring premium pay after 8 hours per day, adding another layer of complexity to overtime calculations.",
+        "scientificBasis": "Overtime calculation partitions total hours worked into regular and overtime categories based on legal thresholds. The FLSA uses a weekly threshold of 40 hours for non-exempt employees. The formulas are: Regular Pay equals the minimum of (Total Hours, 40) multiplied by the Regular Rate. Overtime Pay equals the maximum of (0, Total Hours minus 40) multiplied by the Regular Rate multiplied by 1.5. Total Pay equals Regular Pay plus Overtime Pay. Some jurisdictions add additional tiers: California mandates 1.5x pay after 8 hours per day and 2x pay after 12 hours per day, as well as 1.5x after 40 hours per week. The 'regular rate' itself requires careful calculation when employees receive non-hourly compensation such as bonuses, commissions, or shift differentials, as these must be factored into the base rate before applying the overtime multiplier. Weighted overtime calculations apply when an employee works at different pay rates during the same week, using the weighted average of all rates as the overtime base.",
+        "examples": [
+          "Example 1: An employee earning $25/hour works 48 hours in one week. Regular pay = 40 x $25 = $1,000. Overtime = 8 x $25 x 1.5 = $300. Total weekly pay = $1,300.",
+          "Example 2: A California employee works 10 hours on Monday at $20/hour. First 8 hours at regular rate = $160. Next 2 hours at 1.5x = 2 x $30 = $60. Monday total = $220.",
+          "Example 3: An employee works two jobs at different rates: 25 hours at $15/hr and 20 hours at $18/hr. Total = 45 hours. Weighted average = (25x15 + 20x18) / 45 = $16.33/hr. Overtime = 5 x $16.33 x 1.5 = $122.50."
+        ],
+        "comparison": "FLSA overtime calculation is the federal baseline in the United States, but it is only one of several overtime systems worldwide. The European Working Time Directive caps weekly hours at 48 including overtime, with member states setting their own premium rates. Japanese labor law requires 25% premium for overtime, 35% for holiday work, and 50% for late-night overtime. Unlike the simple standard hours calculation, overtime computation requires tracking cumulative weekly or daily totals and applying tiered multipliers. For businesses operating across jurisdictions, automated payroll systems that can apply multiple overtime rules simultaneously are essential.",
+        "prosAndCons": {
+          "pros": [
+            "Ensures legal compliance with federal and state labor laws",
+            "Protects workers from exploitation through mandatory premium pay",
+            "Clear mathematical formula that is auditable and verifiable",
+            "Widely supported by payroll software and time tracking systems",
+            "Encourages employers to manage scheduling efficiently to minimize overtime costs"
+          ],
+          "cons": [
+            "Rules vary significantly by state, country, and industry, complicating multi-jurisdiction payroll",
+            "Exempt employee classification creates confusion and frequent misclassification disputes",
+            "Weighted overtime calculations for multiple pay rates are complex and error-prone",
+            "Daily vs weekly overtime rules can conflict, requiring careful priority resolution",
+            "Does not apply to independent contractors, creating incentive for misclassification"
+          ]
+        }
+      }
     }
   ],
   "sources": [

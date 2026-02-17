@@ -31,6 +31,13 @@ export default function ResultChart({ result, calculatorType }: ResultChartProps
     if (result.chartData && result.chartData.length > 0) {
       const hasTimeSeries = result.chartData.some(d => d.name?.includes('Year') || d.name?.includes('Month'))
 
+      // Detect multi-series: objects have numeric keys beyond 'value' and 'name'
+      const sampleItem = result.chartData[0]
+      const numericKeys = Object.keys(sampleItem).filter(k => k !== 'name' && k !== 'value' && k !== 'color' && typeof sampleItem[k] === 'number')
+      if (hasTimeSeries && numericKeys.length >= 2) {
+        return { type: 'multiline' as const, data: result.chartData, seriesKeys: numericKeys }
+      }
+
       if (hasTimeSeries) {
         return { type: 'line' as const, data: result.chartData }
       }
@@ -109,6 +116,32 @@ export default function ResultChart({ result, calculatorType }: ResultChartProps
                 }}
               />
             </PieChart>
+          ) : chartConfig.type === 'multiline' ? (
+            <LineChart data={chartConfig.data}>
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+              <XAxis dataKey="name" stroke="var(--secondary)" fontSize={12} />
+              <YAxis stroke="var(--secondary)" fontSize={12} tickFormatter={(v: number) => v >= 1000 ? `$${(v / 1000).toFixed(0)}k` : `$${v}`} />
+              <Tooltip
+                formatter={(value: number, name: string) => ['$' + value.toLocaleString(), name.replace(/([A-Z])/g, ' $1').trim()]}
+                contentStyle={{
+                  backgroundColor: 'var(--background)',
+                  border: '1px solid var(--border)',
+                  borderRadius: '8px',
+                }}
+              />
+              <Legend formatter={(value: string) => value.replace(/([A-Z])/g, ' $1').trim()} />
+              {chartConfig.seriesKeys.map((key: string, i: number) => (
+                <Line
+                  key={key}
+                  type="monotone"
+                  dataKey={key}
+                  stroke={COLORS[i % COLORS.length]}
+                  strokeWidth={2}
+                  dot={{ fill: COLORS[i % COLORS.length], r: 3 }}
+                  name={key}
+                />
+              ))}
+            </LineChart>
           ) : chartConfig.type === 'line' ? (
             <LineChart data={chartConfig.data}>
               <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />

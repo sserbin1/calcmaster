@@ -17,23 +17,101 @@
       },
       "accuracy": "Exact",
       "bestFor": "Rooms, lots, rectangular spaces",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The measurement of rectangular areas is one of the oldest mathematical concepts in human civilization. Ancient Egyptians used rope-stretching techniques to re-establish farm boundaries after annual Nile floods as early as 3000 BCE. The Rhind Papyrus, dating to approximately 1650 BCE, contains problems involving rectangular area calculations for land allocation. Roman surveyors called agrimensores formalized these measurements for property taxation and military camp layouts. The modern square foot as a standardized unit emerged in England during the medieval period alongside the standardization of the foot as twelve inches. Today, the ANSI Z765 standard governs square footage measurement in real estate transactions across the United States.",
+        "scientificBasis": "Rectangular area calculation is founded on the mathematical principle that a rectangle's area equals the product of its two perpendicular dimensions. This derives from Euclidean geometry's axioms about plane figures, where area represents the quantity of two-dimensional space enclosed by a boundary. The formula A = L x W is a direct application of the definition of multiplication as repeated addition: a rectangle of length L and width W can be decomposed into L rows of W unit squares, yielding L x W total unit squares. In construction, this geometric principle is extended to account for real-world irregularities. Most rooms are not perfect rectangles, so practitioners break complex floor plans into multiple rectangular sections, calculate each area independently, and sum them. The ANSI Z765-2021 standard specifies that measurements should be taken at floor level and that finished square footage excludes areas with ceiling heights below seven feet. This mathematical decomposition approach maintains accuracy while accommodating the imperfect geometry of built environments.",
+        "examples": [
+          "Example 1: A bedroom measures 12 ft by 14 ft. Area = 12 x 14 = 168 sq ft. For flooring at $4.50/sq ft, the material cost would be 168 x $4.50 = $756, plus 10% waste = $831.60 total.",
+          "Example 2: A commercial office space is 50 ft by 80 ft = 4,000 sq ft gross area. After deducting hallways (400 sq ft) and restrooms (200 sq ft), the usable area is 3,400 sq ft, yielding an 85% efficiency ratio.",
+          "Example 3: A homeowner needs to calculate their property's total living space for an appraisal. The main floor has rooms of 168, 200, 120, and 144 sq ft, plus a 60 sq ft hallway, totaling 692 sq ft per floor across two stories = 1,384 sq ft."
+        ],
+        "comparison": "The rectangle method is the simplest and most widely used area calculation. Compared to the triangle method, it requires fewer measurements (just two dimensions vs. base and height) and produces exact results without intermediate steps. Compared to the circle method, it avoids the irrational number pi and its inherent rounding. For irregular spaces, the rectangle method can be applied by decomposing shapes into multiple rectangles, though this introduces more measurements and potential for cumulative error. The trade-off is that forcing non-rectangular spaces into rectangular approximations may over- or under-estimate area by 5-15%.",
+        "prosAndCons": {
+          "pros": [
+            "Simplest formula requiring only two measurements",
+            "Produces exact results with no rounding or approximation",
+            "Universally understood by contractors, realtors, and homeowners",
+            "Can be composed to handle complex floor plans by summing rectangles",
+            "Directly supported by all construction estimation software"
+          ],
+          "cons": [
+            "Assumes perfectly perpendicular walls, which is rarely true in older buildings",
+            "Cannot directly handle curved, angled, or irregular boundaries",
+            "Decomposing complex shapes into rectangles introduces cumulative measurement error",
+            "Does not account for vertical surfaces or three-dimensional features",
+            "May overestimate usable space if obstructions like columns are present"
+          ]
+        }
+      }
     },
     {
       "id": "triangle",
       "name": "Triangle Area",
       "description": "Half of base times height.",
-      "formula": { "name": "Triangle", "expression": "Area = ½ × Base × Height" },
+      "formula": { "name": "Triangle", "expression": "Area = 1/2 x Base x Height" },
       "bestFor": "Gabled areas, odd corners",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Triangle area calculation traces its origins to ancient Greek mathematics. Euclid's Elements, compiled around 300 BCE, formally proved that a triangle's area equals half the product of its base and height by demonstrating that any triangle is exactly half of a parallelogram sharing the same base and height. Hero of Alexandria, in the first century CE, developed an alternative formula using only side lengths, eliminating the need to measure height directly. In construction, triangular area calculations became essential during the Gothic architecture period of the 12th-15th centuries, when steeply pitched gabled roofs and pointed arches required precise triangular measurements. Modern construction still relies heavily on triangular calculations for roof framing, where gable ends, dormers, and hip intersections all form triangular surfaces requiring accurate material estimates.",
+        "scientificBasis": "The triangle area formula A = 1/2 x b x h is derived from the fundamental relationship between triangles and parallelograms in Euclidean geometry. Any triangle can be duplicated and rotated to form a parallelogram with the same base and height, whose area equals base times height. Since the triangle is exactly half the parallelogram, its area is half that product. This proof holds for all triangle types: acute, right, and obtuse. The height must be measured perpendicular to the chosen base, which is critical in construction applications where roof pitch angles determine the perpendicular height of gable triangles. For obtuse triangles, the perpendicular height falls outside the base, requiring the base line to be extended. In practice, Heron's formula provides an alternative when the perpendicular height is difficult to measure directly. It computes area from the three side lengths using the semi-perimeter: A = sqrt(s(s-a)(s-b)(s-c)), where s = (a+b+c)/2. Both approaches yield identical results, giving practitioners flexibility based on which measurements are more accessible on site.",
+        "examples": [
+          "Example 1: A gable end of a house has a base of 30 ft and a peak height of 8 ft. Area = 1/2 x 30 x 8 = 120 sq ft. This is the area of siding needed for one gable end. With two matching gables, total gable siding = 240 sq ft.",
+          "Example 2: An odd corner in an L-shaped room forms a triangle with a base of 6 ft and height of 4 ft. Area = 1/2 x 6 x 4 = 12 sq ft. At $8.00/sq ft for hardwood flooring plus 15% waste = 12 x 1.15 x $8.00 = $110.40.",
+          "Example 3: A triangular dormer window area has sides measuring 5 ft, 5 ft, and 6 ft. Using Heron's formula: s = (5+5+6)/2 = 8, Area = sqrt(8 x 3 x 3 x 2) = sqrt(144) = 12 sq ft of roofing material needed."
+        ],
+        "comparison": "The triangle method handles shapes that cannot be measured as rectangles, making it essential for rooflines, gables, and irregular corners. Compared to the rectangle method, it requires identifying the correct perpendicular height, which can be challenging in field conditions. Compared to the circle method, triangles are more common in residential construction since very few built structures use circular elements. The triangle method can also be combined with rectangles to approximate almost any polygon, offering more geometric flexibility than using rectangles alone. However, for complex curved surfaces, neither triangles nor rectangles are ideal, and segmented or calculus-based approaches may be needed.",
+        "prosAndCons": {
+          "pros": [
+            "Accurately measures gable ends, dormers, and pitched roof sections",
+            "Can be combined with rectangles to measure any polygonal shape",
+            "Heron's formula alternative eliminates the need to measure height directly",
+            "Essential for accurate roofing and siding material estimates",
+            "Simple formula that is easy to calculate in the field"
+          ],
+          "cons": [
+            "Requires identifying the correct perpendicular height, which can be difficult on site",
+            "More prone to measurement error than simple length-times-width calculations",
+            "Cannot handle curved boundaries without segmentation",
+            "Obtuse triangles require extending the base line to find the height drop point",
+            "Less intuitive for non-technical homeowners to verify"
+          ]
+        }
+      }
     },
     {
       "id": "circle",
       "name": "Circle Area",
       "description": "Pi times radius squared.",
-      "formula": { "name": "Circle", "expression": "Area = π × r² ≈ 3.14159 × radius²" },
+      "formula": { "name": "Circle", "expression": "Area = pi x r^2 (approximately 3.14159 x radius^2)" },
       "bestFor": "Round rooms, pools, tanks",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The quest to calculate circular area spans millennia. The Babylonians approximated circle area around 1900 BCE using a factor of 3 for pi. The Rhind Papyrus shows Egyptians using (256/81) or roughly 3.16 as their approximation. Archimedes of Syracuse, around 250 BCE, established rigorous bounds for pi between 223/71 and 22/7 by inscribing and circumscribing polygons with up to 96 sides around a circle. This approach remained the gold standard for centuries. In construction, circular calculations gained practical importance with Roman engineering, which extensively used arches, domes, and circular amphitheaters. The Pantheon in Rome, completed around 125 CE, required precise circular area calculations for its 142-foot diameter dome. Modern construction applies circular area formulas for swimming pools, storage tanks, circular driveways, and architectural features like turrets and rotundas.",
+        "scientificBasis": "The formula A = pi x r^2 represents the area enclosed by a circle of radius r. Its derivation can be understood through the method of exhaustion, formalized by Eudoxus and refined by Archimedes, where a circle is approximated by inscribed regular polygons with increasing numbers of sides. As the polygon's side count approaches infinity, its area converges to pi x r^2. Modern calculus provides a rigorous proof through integration: integrating the equation of a circle y = sqrt(r^2 - x^2) from -r to r and doubling yields pi x r^2. The constant pi is an irrational, transcendental number approximately equal to 3.14159265, meaning circular area calculations always involve some rounding. In construction practice, this rounding is insignificant compared to measurement tolerances. For pools and tanks, the radius is typically measured from the center to the inside wall, and practitioners must decide whether to calculate based on inside or outside dimensions depending on whether they need surface area (for lining) or footprint area (for excavation). Partial circles such as semicircles and quarter-circles, common in architectural features, simply multiply the full circle area by the appropriate fraction.",
+        "examples": [
+          "Example 1: A circular swimming pool has a diameter of 24 ft, so radius = 12 ft. Area = 3.14159 x 12^2 = 3.14159 x 144 = 452.4 sq ft. For a pool cover at $2.50/sq ft = $1,131 in material costs.",
+          "Example 2: A round concrete patio has a radius of 8 ft and is 4 inches (0.333 ft) thick. Area = 3.14159 x 64 = 201.1 sq ft. Volume = 201.1 x 0.333 = 66.9 cu ft = 2.48 cu yd of concrete needed, plus 10% waste = 2.73 cu yd.",
+          "Example 3: A semicircular window alcove has a diameter of 10 ft. Full circle area = 3.14159 x 25 = 78.5 sq ft. Semicircle area = 78.5 / 2 = 39.3 sq ft of additional floor space to account for in flooring estimates."
+        ],
+        "comparison": "The circle method is the only accurate approach for truly round features. Compared to approximating a circle as a square (using the diameter as a side length), the circle formula is about 21.5% smaller, which means a square approximation would waste significant material. Compared to polygonal approximation (treating a circle as, say, an octagon), the circle formula is simpler and more accurate. However, when dealing with irregularly curved shapes that are not true circles, breaking the area into measurable segments or using CAD software may be more practical. For semi-circular or quarter-circular shapes, the circle formula simply uses the appropriate fraction, making it versatile for architectural features.",
+        "prosAndCons": {
+          "pros": [
+            "Only accurate method for truly circular features like pools, tanks, and rotundas",
+            "Simple formula requiring only one measurement (radius or diameter)",
+            "Easily adapted for semicircles, quarter-circles, and other arc-based shapes",
+            "Well-supported by construction calculators and CAD software",
+            "Eliminates the significant error (21.5%) of square-based approximations"
+          ],
+          "cons": [
+            "Involves the irrational number pi, meaning results are always approximations",
+            "Finding the exact center point for radius measurement can be challenging in the field",
+            "Does not work for elliptical or irregular curves without modification",
+            "Small errors in radius measurement are squared, amplifying their effect on area",
+            "Less commonly needed in typical residential construction compared to rectangular calculations"
+          ]
+        }
+      }
     }
   ],
   "sources": [

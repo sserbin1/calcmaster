@@ -22,7 +22,33 @@
         "Building equity is slow initially"
       ],
       "bestFor": "Standard mortgages and loans",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The term 'French amortization' derives from its widespread use in French banking during the 19th century, though the mathematics of level-payment loans dates to early compound interest calculations. The system became the global standard because it solved a practical problem: borrowers wanted predictable monthly payments for budgeting, while lenders wanted guaranteed returns. The formula creates equal payments by front-loading interest—a consequence of charging interest on the outstanding balance. In the United States, French amortization became ubiquitous after the Federal Housing Administration (FHA) standardized the 30-year fixed-rate mortgage in 1934. Before this, mortgages were typically short-term balloon loans requiring refinancing every 5-10 years, which proved disastrous during the Great Depression when banks failed and refinancing became impossible. The level-payment, fully-amortizing mortgage became the foundation of American homeownership.",
+        "scientificBasis": "French amortization derives from the ordinary annuity formula. Given principal P, monthly rate r, and n payments, the payment amount M satisfies the present value equation: P = M × [(1-(1+r)^(-n))/r]. Rearranging yields the standard formula. Each month, interest accrues on the remaining balance (Interest = Balance × r), and the remainder of the payment reduces principal (Principal = M - Interest). This creates the characteristic pattern: Month 1 of a $300,000, 30-year, 6% mortgage ($1,799 payment) shows $1,500 interest and only $299 principal. By Month 180 (halfway), it's $1,100 interest and $699 principal. By Month 360, it's $9 interest and $1,790 principal. The borrower pays $647,515 total—$347,515 in interest—but gets stable, predictable payments. The front-loaded interest structure reflects the mathematics of charging interest on declining balances; it's not a choice but a consequence of the formula.",
+        "examples": [
+          "$400,000 mortgage at 7% for 30 years: Payment = $2,661. Month 1: $2,333 interest, $328 principal. After 5 years: paid $159,660, but only $22,000 went to principal. Balance: $378,000. After 15 years: balance $287,000.",
+          "Impact of extra payments: Same loan, add $200/month extra to principal. Total interest drops from $558,000 to $418,000 (saves $140,000). Payoff accelerates from 30 years to 23 years.",
+          "Amortization reset warning: $400,000 loan, 10 years in ($330,000 balance). Refinancing to new 30-year loan restarts the clock—next 10 years of payments will again be mostly interest, even if rate is lower."
+        ],
+        "comparison": "French amortization produces the most predictable cash flow but the highest total interest cost compared to German (constant principal) or accelerated payment strategies. The difference is significant: on a $300,000, 30-year, 6% loan, French amortization costs $347,515 in interest; German amortization with same average payment would save approximately $30,000. However, German amortization starts with higher payments ($2,250 vs $1,799), which many borrowers can't afford. Biweekly payment strategies under French amortization (26 half-payments = 13 monthly payments annually) effectively add one extra payment per year, reducing a 30-year mortgage to approximately 24 years and saving substantial interest. The front-loading of interest is often misunderstood—it's not a bank trick but a mathematical consequence of compound interest on declining balances.",
+        "prosAndCons": {
+          "pros": [
+            "Predictable, level payments for easy budgeting",
+            "Lower initial payments than German method",
+            "Standard structure means wide availability and understanding",
+            "Full amortization—no balloon payment or refinancing required",
+            "Extra principal payments directly reduce future interest"
+          ],
+          "cons": [
+            "Most interest paid in early years (slow equity building)",
+            "Refinancing resets the amortization clock",
+            "Higher total interest cost than German method",
+            "Selling early means most payments went to interest",
+            "Can create illusion of progress while balance drops slowly"
+          ]
+        }
+      }
     },
     {
       "id": "german-amortization",
@@ -39,7 +65,33 @@
         "Less predictable budgeting early on"
       ],
       "bestFor": "Borrowers who can afford higher initial payments",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "German amortization, also called constant principal or linear amortization, has deep roots in European banking traditions. The method reflects a more conservative lending philosophy: borrowers pay down principal at a steady, visible rate from day one. This approach dominated German and Northern European lending before World War II and remains common in commercial real estate, agricultural lending, and some European residential mortgages. The system appeals to borrowers who prioritize building equity and minimizing total interest cost over payment stability. In developing countries' microfinance, German amortization is often preferred because it ensures steady principal reduction, reducing lender risk of borrowers remaining highly indebted throughout the term. The declining payment structure also suits borrowers expecting income to decrease over time (approaching retirement) or wanting to front-load debt service during peak earning years.",
+        "scientificBasis": "German amortization is mathematically simpler than French: divide principal by number of payments to get constant principal portion, then add interest on the remaining balance. For a $300,000, 30-year, 6% loan: Principal per payment = $300,000 / 360 = $833.33. Month 1 interest = $300,000 × 0.005 = $1,500. Total Month 1 payment = $2,333.33. Month 2: Principal still $833.33. Balance now $299,167. Interest = $299,167 × 0.005 = $1,496. Total = $2,329. This continues until Month 360: $833.33 principal + $4.17 interest = $837.50 total. Total interest paid: approximately $270,750—compared to $347,515 with French amortization, a savings of $77,000. The trade-off: first-year payments average $2,300 vs $1,799 with French method. The declining payment curve is linear for interest, making total payments predictably decreasing.",
+        "examples": [
+          "$300,000 at 6% for 30 years (German): Month 1 = $2,333, Month 180 = $1,583, Month 360 = $838. Total interest: ~$271,000 (saves ~$77,000 vs French).",
+          "Commercial loan application: $1M equipment loan, 7 years, 8%. Monthly principal = $11,905. Month 1: $6,667 interest + $11,905 = $18,572. Final month: $79 interest + $11,905 = $11,984. Equipment depreciates while payments decrease.",
+          "Early payoff advantage: After 5 years of German amortization, you've paid $50,000 principal (16.7%). After 5 years of French amortization on same loan, you've paid only $22,000 principal (7.3%). German builds equity faster."
+        ],
+        "comparison": "German vs French amortization represents a trade-off between payment stability and total cost. French wins on affordability (lower initial payments) and predictability (constant payment). German wins on total cost (lower interest), equity building (faster principal reduction), and declining payments (easier in later years). For a borrower who can afford the higher initial payment, German amortization is strictly superior financially. However, most residential lenders in the US don't offer German amortization for mortgages—the French method is so entrenched that alternatives aren't marketed. Borrowers seeking German-like benefits within the French system can make extra principal payments, essentially creating a hybrid where base payment is level but total payment declines as debt is paid ahead of schedule.",
+        "prosAndCons": {
+          "pros": [
+            "Lower total interest cost than French method",
+            "Faster equity building from constant principal payments",
+            "Payments decrease over time (easier in later years)",
+            "Simpler math: principal portion always the same",
+            "Better for borrowers expecting income to decline"
+          ],
+          "cons": [
+            "Higher initial payments may strain budget",
+            "Less predictable total payment amount",
+            "Rarely offered for US residential mortgages",
+            "Harder to qualify (income must support higher initial payment)",
+            "Variable cash flow complicates budgeting"
+          ]
+        }
+      }
     },
     {
       "id": "american-bullet",
@@ -57,7 +109,33 @@
         "Refinancing risk"
       ],
       "bestFor": "Short-term financing, bridge loans",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Interest-only or 'bullet' loans represent the oldest form of lending—the original model before amortization was developed. In ancient and medieval commerce, loans were typically repaid in full at maturity after periodic interest payments. This structure persisted in mortgage lending until the 1930s Great Depression, when widespread refinancing failures and foreclosures led to the development of fully-amortizing mortgages. Bullet loans resurfaced in the 2000s housing boom as 'interest-only mortgages' and '80/20 loans,' contributing to the 2008 financial crisis when borrowers couldn't refinance balloon payments. Today, bullet loans remain common in commercial real estate (where properties generate income and can be sold to repay principal), corporate bonds (most bonds pay interest then return principal at maturity), and bridge financing (short-term loans expecting repayment from another source). Consumer interest-only mortgages, while still available, are subject to much stricter qualification requirements post-2008.",
+        "scientificBasis": "Bullet loan mathematics are the simplest: monthly payment = Principal × Monthly Rate. No principal is reduced, so the interest payment remains constant throughout. For a $500,000 bullet loan at 6%: Monthly payment = $500,000 × 0.005 = $2,500 (interest only). After 5 years: paid $150,000 in interest, still owe $500,000 principal. Compare to French amortization: $2,998 monthly payment, but after 5 years balance is $459,000 ($41,000 principal paid) with $139,880 total interest paid. The bullet loan has lower payments but no equity building. Total interest over the full term is maximized in bullet structures because the principal never declines. The risk is concentrated at maturity: the borrower must have funds or refinancing ability to repay the entire principal at once.",
+        "examples": [
+          "Bridge loan: Buying new house before selling old. $200,000 bullet loan at 7% for 12 months. Payment: $1,167/month interest. When old house sells, pay off $200,000 principal plus final interest. Total cost: $14,000 interest for 12-month bridge.",
+          "Commercial real estate: $2M property loan, 5-year bullet, 6.5%. Monthly payment: $10,833. After 5 years, either refinance the $2M or sell property. Cash flow during term is maximized for renovation/repositioning.",
+          "Risky residential scenario: $400,000 interest-only mortgage at 5%, 10-year term. Payment: $1,667/month (vs $2,147 fully amortizing). After 10 years, still owe $400,000. Must refinance—if rates rose or home value fell, borrower is stuck."
+        ],
+        "comparison": "Bullet loans maximize short-term cash flow at the cost of principal reduction and maturity risk. They make sense when: (1) the borrower has a definite repayment source (asset sale, business exit, inheritance), (2) the loan term is short, (3) the borrower needs maximum cash flow during the term, or (4) the asset will be sold before maturity anyway. They're dangerous when: (1) the borrower has no repayment plan beyond 'refinance later,' (2) the term is long (more time for adverse events), (3) the borrower is counting on asset appreciation to cover the gap, or (4) the borrower doesn't understand they're building no equity. Post-2008 regulations require lenders to verify borrowers' ability to repay principal, not just interest, making bullet loans primarily a commercial and sophisticated-borrower product.",
+        "prosAndCons": {
+          "pros": [
+            "Lowest possible monthly payment (interest only)",
+            "Maximizes cash flow during loan term",
+            "Simple calculation and predictable payments",
+            "Useful for short-term bridge financing",
+            "Appropriate when asset will be sold before maturity"
+          ],
+          "cons": [
+            "No equity built during entire loan term",
+            "Full principal due at maturity creates crisis risk",
+            "Refinancing required unless borrower has repayment funds",
+            "Maximizes total interest cost over loan term",
+            "Contributed to 2008 financial crisis when widely used"
+          ]
+        }
+      }
     }
   ],
   "sources": [

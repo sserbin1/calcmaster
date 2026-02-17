@@ -18,7 +18,33 @@
         "Not suitable for cryptography or gambling"
       ],
       "bestFor": "Games, simulations, non-security applications",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Pseudo-random number generation has roots in the mid-20th century when John von Neumann proposed the middle-square method in 1946 for the ENIAC computer. He famously remarked that 'anyone who considers arithmetical methods of producing random digits is, of course, in a state of sin.' Derrick Henry Lehmer introduced the Linear Congruential Generator (LCG) in 1951, which became the foundation for most early PRNGs. The Mersenne Twister, developed by Makoto Matsumoto and Takuji Nishimura in 1998, became the gold standard for non-cryptographic random number generation with its massive period of 2^19937-1. Modern PRNGs like xoshiro256 and PCG, developed in the 2010s, offer improved statistical properties and performance.",
+        "scientificBasis": "PRNGs are deterministic algorithms that produce sequences of numbers approximating the properties of random numbers. They operate by maintaining an internal state that is transformed through mathematical operations at each step. The quality of a PRNG is evaluated through statistical test suites such as TestU01 and the NIST Statistical Test Suite, which check for uniformity, independence, and absence of detectable patterns. The Linear Congruential Generator uses modular arithmetic: X(n+1) = (aX(n) + c) mod m, where the choice of parameters a, c, and m determines the period length and statistical quality. The Mersenne Twister maintains a 624-dimensional state vector and uses bitwise operations and matrix transformations to achieve an extremely long period. Newer algorithms like PCG (Permuted Congruential Generator) combine a simple LCG state transition with a permutation output function, achieving excellent statistical properties with minimal state. The key limitation is that all PRNGs are periodic and fully determined by their seed value.",
+        "examples": [
+          "Example 1: Generating a random dice roll (1-6) for a board game using JavaScript Math.random(): Math.floor(Math.random() * 6) + 1. The PRNG provides sufficient randomness for casual gaming.",
+          "Example 2: Running a Monte Carlo simulation with 10 million iterations to estimate pi by generating random points in a unit square and checking if they fall within a quarter circle. PRNG speed is critical here.",
+          "Example 3: Shuffling a playlist of 500 songs using Fisher-Yates shuffle with PRNG. Each call to the PRNG selects a random index to swap, producing a uniformly random permutation."
+        ],
+        "comparison": "PRNGs trade true randomness for speed and reproducibility. Compared to CSPRNGs, PRNGs are typically 10-100 times faster because they use simpler mathematical operations. Unlike true random number generators (hardware-based), PRNGs require no special hardware and produce repeatable sequences when given the same seed, which is essential for debugging simulations. However, PRNGs should never be used for security applications because their output is predictable if the internal state is discovered. The Mersenne Twister, while excellent statistically, can be fully predicted after observing just 624 consecutive outputs.",
+        "prosAndCons": {
+          "pros": [
+            "Extremely fast generation suitable for high-throughput applications",
+            "Reproducible sequences when seeded identically enabling debugging",
+            "No special hardware required and works on any computing platform",
+            "Well-studied algorithms with proven statistical properties",
+            "Sufficient quality for simulations games and most non-security uses"
+          ],
+          "cons": [
+            "Deterministic and predictable if seed or state is known",
+            "Not suitable for cryptographic applications or security tokens",
+            "Finite period length means sequences eventually repeat",
+            "Poor seed selection can lead to correlated sequences",
+            "Some older PRNGs have detectable patterns in lower bits"
+          ]
+        }
+      }
     },
     {
       "id": "csprng",
@@ -31,7 +57,33 @@
       },
       "accuracy": "Cryptographically secure",
       "bestFor": "Security keys, gambling, anything requiring true unpredictability",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The need for cryptographically secure random numbers emerged alongside modern cryptography in the 1970s. Early systems relied on hardware random number generators, but software-based CSPRNGs became essential as internet security grew. The Blum Blum Shub generator, proposed in 1986, was among the first with a formal security proof based on the difficulty of integer factorization. In 2006, a critical flaw was discovered in the Debian OpenSSL PRNG that reduced SSH key entropy to only 15 bits, compromising thousands of servers. The 2013 Snowden revelations exposed that the NSA had allegedly backdoored the Dual_EC_DRBG standard, leading NIST to withdraw it in 2014. These incidents underscored the critical importance of transparent, well-vetted CSPRNG implementations in all security infrastructure.",
+        "scientificBasis": "CSPRNGs must satisfy three properties beyond statistical randomness: next-bit unpredictability (knowing all previous bits gives no advantage in predicting the next), state compromise recovery (if internal state is leaked, future outputs become unpredictable after reseeding), and backtracking resistance (past outputs cannot be reconstructed from current state). Modern CSPRNGs combine entropy collection from hardware sources (CPU timing jitter, interrupt timing, thermal noise) with deterministic expansion algorithms. ChaCha20-based CSPRNGs use a 256-bit key and 64-bit nonce with 20 rounds of quarter-round operations mixing addition, XOR, and rotation. The Linux kernel's random number generator collects entropy from device drivers and interrupt timing into an entropy pool, then uses cryptographic mixing functions to produce output. The security of CSPRNGs is reducible to the hardness of underlying cryptographic primitives, meaning breaking the CSPRNG requires breaking AES or similar algorithms. Formal security proofs demonstrate that no polynomial-time adversary can distinguish CSPRNG output from truly random bits with non-negligible probability. Regular reseeding from hardware entropy sources ensures forward secrecy, meaning that even if the current state is compromised, past outputs remain secure.",
+        "examples": [
+          "Example 1: Generating a 256-bit AES encryption key using window.crypto.getRandomValues() in a browser. The CSPRNG ensures the key cannot be predicted by an attacker.",
+          "Example 2: An online poker platform uses a CSPRNG seeded with hardware entropy to shuffle the deck, ensuring no player or observer can predict upcoming cards even with knowledge of past deals.",
+          "Example 3: Generating a cryptographic nonce for an OAuth 2.0 authentication flow using Python's secrets.token_hex(32), which internally uses the OS CSPRNG (/dev/urandom on Linux)."
+        ],
+        "comparison": "CSPRNGs are fundamentally different from standard PRNGs in their security guarantees. While a Mersenne Twister can be fully predicted after 624 outputs, a CSPRNG remains unpredictable even after observing millions of outputs. This security comes at a performance cost: CSPRNGs are typically 5-50 times slower than PRNGs due to cryptographic operations. True hardware random number generators (using radioactive decay or quantum effects) provide genuine randomness but are too slow for most applications and are primarily used to seed CSPRNGs. For most security applications, a well-implemented CSPRNG is considered equivalent to true randomness.",
+        "prosAndCons": {
+          "pros": [
+            "Output is computationally indistinguishable from true randomness",
+            "Suitable for all security applications including key generation",
+            "Available in all modern operating systems and browsers",
+            "Resistant to state compromise through periodic reseeding",
+            "Security is backed by formal cryptographic proofs"
+          ],
+          "cons": [
+            "Significantly slower than non-cryptographic PRNGs",
+            "Requires a source of genuine entropy for initial seeding",
+            "Overkill for non-security applications like games or simulations",
+            "Implementation bugs can catastrophically compromise security",
+            "May block on systems with insufficient entropy (older Linux /dev/random)"
+          ]
+        }
+      }
     }
   ],
   "sources": [

@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Countdowns, milestones",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Counting days until or since significant events is one of humanity's oldest practices. Ancient Mesopotamians counted days between celestial events to predict eclipses and seasonal changes as early as the 3rd millennium BC. The Maya developed the Long Count calendar, a continuous day count starting from a mythological creation date in 3114 BC, demonstrating sophisticated day-counting mathematics. In medieval Europe, computus calculations determined the date of Easter by counting days from fixed astronomical references. The modern practice of personal day counting gained popularity with the rise of digital technology in the late 20th century, when countdown applications became ubiquitous on websites and mobile devices. Today, day counters serve purposes ranging from pregnancy tracking and retirement planning to product launch countdowns and sobriety milestone tracking.",
+        "scientificBasis": "Day counting computes the signed difference between two dates expressed as calendar days. The calculation converts both dates to a common serial day number (ordinal representation), then subtracts. The most common approach uses the Gregorian calendar's rules to compute a serial day number from year, month, and day components. One widely used algorithm is the Rata Die system, which counts days from January 1 of year 1. The conversion involves: adjusting the year and month for the March-start convention (months 1-2 are treated as months 13-14 of the previous year), computing days from complete years (accounting for leap years), adding days from complete months, and adding the day of the month. The result is a positive integer for future dates and negative for past dates, with zero representing today. This O(1) calculation avoids iterating through individual days and handles all Gregorian calendar irregularities, including the leap year rules for century years. The sign of the result indicates temporal direction: positive values mean the target is in the future.",
+        "examples": [
+          "Example 1: Days until New Year's Day 2026 from March 15, 2025. Remaining in March: 16 days. April through December: 30+31+30+31+31+30+31+30+31 = 275 days. Plus January 1 = 1 day. Total = 292 days until the target.",
+          "Example 2: Days since a wedding anniversary on June 20, 2015, checked on February 3, 2025. Total elapsed: approximately 3,516 days (9 years, 7 months, 14 days). This milestone counter helps track relationship duration.",
+          "Example 3: A pregnancy due date counter. Last menstrual period: November 1, 2024. Due date (40 weeks = 280 days later): August 8, 2025. Checked on February 3, 2025: 94 days elapsed, 186 days remaining."
+        ],
+        "comparison": "Simple day counting from today to a target date is the most intuitive method for everyday use compared to Julian Day Numbers or Modified Julian Day calculations. While Julian Day Numbers provide a universal astronomical reference spanning millennia, they are unnecessarily complex for personal countdowns and milestones. The simple method uses the familiar Gregorian calendar directly and produces results in a unit (days) that people intuitively understand. For scientific and astronomical applications requiring dates across different calendar systems or spanning thousands of years, Julian Day Numbers are superior. For computing and database applications, Unix timestamps or ISO 8601 date strings offer better interoperability.",
+        "prosAndCons": {
+          "pros": [
+            "Intuitive result that anyone can understand without technical knowledge",
+            "Works directly with the Gregorian calendar used in daily life",
+            "Computationally simple with O(1) time complexity",
+            "Useful for both future countdowns and past elapsed-time tracking",
+            "Can be easily extended to include weeks, months, or years alongside days"
+          ],
+          "cons": [
+            "Does not account for time of day, only whole calendar days",
+            "Timezone differences can cause off-by-one errors near midnight",
+            "Cannot handle dates before the Gregorian calendar adoption without conversion",
+            "Large day counts are hard to conceptualize without conversion to years/months",
+            "Does not distinguish between business days and calendar days"
+          ]
+        }
+      }
     },
     {
       "id": "julian-day",
@@ -27,7 +53,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Astronomical calculations, database timestamps",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The Julian Day Number system was proposed by Joseph Justus Scaliger in 1583, shortly after the Gregorian calendar reform. Scaliger named it after his father, Julius Caesar Scaliger, not after the Julian calendar, though the naming coincidence has caused lasting confusion. Scaliger chose the epoch of January 1, 4713 BC because it was the convergence point of three calendar cycles: the 28-year solar cycle, the 19-year Metonic cycle, and the 15-year Roman indiction cycle. This placed the epoch before any recorded historical date, ensuring all astronomical observations would have positive day numbers. The system was adopted by astronomers including John Herschel in the 19th century and became the standard reference system for astronomical calculations. NASA and other space agencies use Julian dates for mission planning. The Modified Julian Day (MJD), introduced by the Smithsonian Astrophysical Observatory in 1957, shifts the epoch to November 17, 1858, producing smaller numbers more convenient for modern use.",
+        "scientificBasis": "The Julian Day Number (JDN) assigns a unique integer to every day in a continuous count, providing a calendar-independent reference system. The conversion formula from Gregorian date to JDN uses integer arithmetic to account for the irregular month lengths and leap year rules. The algorithm adjusts months January and February to be months 13 and 14 of the previous year, simplifying the calculation. The standard formula is: JD = 367Y - INT(7(Y + INT((M+9)/12))/4) + INT(275M/9) + D + 1721013.5 + UT/24, where Y is the year, M is the month, D is the day, and UT is Universal Time in hours. A key property of Julian Day Numbers is that they start at noon UTC, not midnight, because astronomers wanted to avoid date changes during a night's observation session. The Modified Julian Day (MJD = JD - 2400000.5) shifts the epoch and starts at midnight, aligning with civil timekeeping conventions. The continuous nature of JDN makes date arithmetic trivial: the difference between any two dates is simply the difference of their Julian Day Numbers.",
+        "examples": [
+          "Example 1: Converting January 1, 2025, to Julian Day Number. Using the formula: JD = 2460677.5 at midnight UTC. This number uniquely identifies this day in the continuous astronomical day count.",
+          "Example 2: Finding the number of days between two historical dates using JDN. The signing of the Declaration of Independence (July 4, 1776, JD = 2369916) to the Moon landing (July 20, 1969, JD = 2440423). Difference = 70,507 days or approximately 193 years.",
+          "Example 3: Converting Modified Julian Day to calendar date. MJD 60677 corresponds to JD 2460677.5, which is January 1, 2025. Databases often store MJD values because they require fewer digits than full JDN."
+        ],
+        "comparison": "Julian Day Numbers provide a universal, calendar-independent day counting system, making them superior to calendar-specific day counts for astronomical and cross-calendar applications. Unlike Unix timestamps (which count seconds from 1970 and cannot represent dates before that epoch without negative numbers), JDN handles dates spanning thousands of years with positive integers. Unlike the simple days-until method, JDN provides an absolute reference frame, making it possible to compute intervals between dates in different calendar systems (Julian, Gregorian, Islamic) by converting each to JDN first. However, for everyday use, JDN values are large and unintuitive, making simple calendar day counting preferable for personal and business applications.",
+        "prosAndCons": {
+          "pros": [
+            "Provides a universal calendar-independent reference system for any date in history",
+            "Makes date arithmetic trivial by reducing it to simple integer subtraction",
+            "Standard in astronomy, space science, and historical chronology",
+            "Can bridge different calendar systems through a common numerical representation",
+            "Modified Julian Day variant offers a more compact and midnight-aligned alternative"
+          ],
+          "cons": [
+            "Julian Day Numbers are large and unintuitive for everyday use",
+            "The noon-start convention conflicts with civil midnight-start days",
+            "Easily confused with Julian calendar dates due to similar naming",
+            "Requires knowledge of a specific conversion formula to use",
+            "Not commonly supported in consumer-facing applications or simple calculators"
+          ]
+        }
+      }
     }
   ],
   "sources": [

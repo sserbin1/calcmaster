@@ -18,7 +18,33 @@
         "Colleges often recalculate on their own scale"
       ],
       "bestFor": "High school class rank, rigor recognition",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Weighted GPA systems emerged in American high schools during the 1980s as Advanced Placement (AP) programs expanded rapidly following the College Board's efforts to increase access to college-level coursework. Before weighted GPAs, students who took challenging AP and Honors courses risked lowering their class rank compared to peers who chose easier classes. The National Association of Secondary School Principals began recommending weighted scales in the mid-1980s to incentivize academic rigor. The International Baccalaureate (IB) program, established in 1968 but growing significantly in the US during the 1990s, added another category of weighted courses. By the 2000s, the majority of American high schools used some form of weighted GPA, though the specific weighting systems varied dramatically between districts, creating challenges for college admissions offices comparing applicants.",
+        "scientificBasis": "Weighted GPA addresses a fundamental problem in measurement theory known as construct underrepresentation: an unweighted 4.0 scale fails to distinguish between students taking courses of vastly different difficulty levels. By adding bonus points for advanced courses, the weighted scale captures an additional dimension of academic performance, namely course rigor. Research by Adelman (1999, 2006) for the US Department of Education found that the intensity and quality of high school curriculum was the strongest predictor of bachelor's degree completion, stronger even than test scores or GPA. The typical weighting scheme adds 0.5 points for Honors and 1.0 for AP/IB courses, reflecting a judgment that these courses demand approximately 50-100% more effort and demonstrate higher achievement. However, the specific bonus values are conventions rather than empirically derived quantities, and they vary across school districts. The weighted GPA is calculated as a credit-hour-weighted mean: sum of (weighted grade points times credits) divided by total credits. This mathematical approach ensures that courses carrying more credit hours have proportionally greater influence on the final GPA, reflecting the additional time and effort invested in those courses.",
+        "examples": [
+          "Example 1: A student takes 5 courses: AP Chemistry (A, 1.0 credit), Honors English (B+, 1.0), Regular Math (A, 1.0), AP History (B, 1.0), Regular Art (A, 1.0). Weighted GPA = (5.0 + 3.8 + 4.0 + 4.0 + 4.0) / 5 = 4.16. Unweighted = (4.0 + 3.3 + 4.0 + 3.0 + 4.0) / 5 = 3.66.",
+          "Example 2: A student with all A grades in 4 regular courses and 2 AP courses: Weighted GPA = (4x4.0 + 2x5.0) / 6 = 26/6 = 4.33. This exceeds the 4.0 maximum of unweighted scales.",
+          "Example 3: Comparing two students: Student A has a 3.8 unweighted / 4.5 weighted GPA taking 6 AP classes. Student B has a 4.0 unweighted / 4.0 weighted taking all regular classes. The weighted GPA reveals Student A's more challenging courseload."
+        ],
+        "comparison": "Weighted GPA differs from unweighted GPA by incorporating course difficulty, allowing GPAs above 4.0. Some schools use a 5.0 scale (adding 1.0 for AP/IB), while others use a 6.0 scale or different increments. Many colleges recalculate GPAs on their own internal scale regardless of the high school's system, focusing on core academic courses and ignoring electives. The UC system, for example, caps weighted GPA bonuses and only counts courses from grades 10-11. Some schools have moved to a 100-point numerical scale with weighted additions to avoid the ambiguity of letter-grade conversions. Standards-based transcripts, which report mastery levels rather than grades, represent an alternative approach that some progressive schools are adopting.",
+        "prosAndCons": {
+          "pros": [
+            "Incentivizes students to take more challenging coursework",
+            "Provides a more complete picture of academic achievement than unweighted GPA",
+            "Helps distinguish students who excel in rigorous programs",
+            "Aligns with research showing course rigor predicts college success",
+            "Widely understood by colleges and scholarship committees"
+          ],
+          "cons": [
+            "Weighting systems vary widely between schools making comparison difficult",
+            "Students may take AP/Honors courses solely for GPA boost rather than interest",
+            "Penalizes schools that offer fewer advanced course options",
+            "Colleges often recalculate GPA anyway diminishing the weighted GPA value",
+            "Can create unhealthy competition and excessive course loads for students"
+          ]
+        }
+      }
     }
   ],
   "sources": [

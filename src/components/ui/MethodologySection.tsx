@@ -16,6 +16,17 @@ export interface Source {
   type: 'organization' | 'study' | 'standard' | 'book' | 'government'
 }
 
+export interface ExpandedContent {
+  history: string
+  scientificBasis: string
+  examples: string[]
+  comparison?: string
+  prosAndCons?: {
+    pros: string[]
+    cons: string[]
+  }
+}
+
 export interface Method {
   name: string
   description: string
@@ -24,6 +35,7 @@ export interface Method {
   limitations?: string[]
   bestFor?: string
   isDefault?: boolean
+  expandedContent?: ExpandedContent
 }
 
 export interface MethodologySectionProps {
@@ -145,6 +157,92 @@ export default function MethodologySection({
                       </ul>
                     </div>
                   )}
+
+                  {/* Expanded Content */}
+                  {method.expandedContent && (
+                    <div className="space-y-4 mt-4 pt-4 border-t border-[var(--border)]">
+                      {/* History */}
+                      <div>
+                        <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
+                          <span>📜</span> Historical Background
+                        </h4>
+                        <p className="text-sm text-[var(--secondary)] leading-relaxed">
+                          {method.expandedContent.history}
+                        </p>
+                      </div>
+
+                      {/* Scientific Basis */}
+                      <div>
+                        <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
+                          <span>🔬</span> Scientific Basis
+                        </h4>
+                        <p className="text-sm text-[var(--secondary)] leading-relaxed">
+                          {method.expandedContent.scientificBasis}
+                        </p>
+                      </div>
+
+                      {/* Examples */}
+                      {method.expandedContent.examples.length > 0 && (
+                        <div>
+                          <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
+                            <span>💡</span> Practical Examples
+                          </h4>
+                          <ul className="space-y-2">
+                            {method.expandedContent.examples.map((example, i) => (
+                              <li key={i} className="text-sm text-[var(--secondary)] leading-relaxed pl-4 border-l-2 border-[var(--primary)]">
+                                {example}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Comparison */}
+                      {method.expandedContent.comparison && (
+                        <div>
+                          <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
+                            <span>⚖️</span> Comparison with Other Methods
+                          </h4>
+                          <p className="text-sm text-[var(--secondary)] leading-relaxed">
+                            {method.expandedContent.comparison}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Pros and Cons */}
+                      {method.expandedContent.prosAndCons && (
+                        <div>
+                          <h4 className="text-sm font-semibold mb-2 flex items-center gap-2">
+                            <span>⚡</span> Pros & Cons
+                          </h4>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div className="p-3 rounded-lg bg-green-500/10 border border-green-500/20">
+                              <p className="text-xs font-semibold text-green-600 dark:text-green-400 mb-2">Advantages</p>
+                              <ul className="space-y-1">
+                                {method.expandedContent.prosAndCons.pros.map((pro, i) => (
+                                  <li key={i} className="text-xs text-[var(--secondary)] flex gap-1.5">
+                                    <span className="text-green-500 shrink-0">+</span>
+                                    {pro}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="p-3 rounded-lg bg-red-500/10 border border-red-500/20">
+                              <p className="text-xs font-semibold text-red-600 dark:text-red-400 mb-2">Limitations</p>
+                              <ul className="space-y-1">
+                                {method.expandedContent.prosAndCons.cons.map((con, i) => (
+                                  <li key={i} className="text-xs text-[var(--secondary)] flex gap-1.5">
+                                    <span className="text-red-500 shrink-0">-</span>
+                                    {con}
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               )}
             </div>
@@ -168,9 +266,9 @@ export default function MethodologySection({
                 {getSourceIcon(source.type)}
                 {source.url ? (
                   <a
-                    href={source.url}
+                    href={`/api/redirect?url=${encodeURIComponent(source.url)}`}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener nofollow"
                     className="text-[var(--primary)] hover:underline"
                   >
                     {source.name}

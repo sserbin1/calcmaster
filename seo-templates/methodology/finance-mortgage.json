@@ -24,7 +24,33 @@
         "Assumes fixed interest rate"
       ],
       "bestFor": "Principal and interest calculation",
-      "isDefault": true
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The PMT (payment) formula traces its roots to the mathematics of annuities, which were first rigorously analyzed by European mathematicians in the 17th century. Edmond Halley (of comet fame) and Abraham de Moivre made significant contributions to annuity theory in the early 1700s. The modern amortization formula emerged as banking systems formalized during the Industrial Revolution, when standardized lending practices became necessary for economic growth. In the United States, the 30-year fixed-rate mortgage became standard after the Great Depression when the Federal Housing Administration (FHA) was established in 1934. Before this, most mortgages were short-term (5-10 years) with balloon payments, which contributed to the wave of foreclosures during the Depression. The FHA introduced long-term, fixed-payment mortgages to stabilize the housing market. The formula itself is derived from the present value of an ordinary annuity—the mathematical principle that equal periodic payments can amortize a loan if each payment covers the interest accrued plus a portion of principal.",
+        "scientificBasis": "The PMT formula is derived from the time value of money principle, which recognizes that a dollar today is worth more than a dollar in the future due to its potential earning capacity. Mathematically, the formula solves for the payment amount that, when applied to the present value of all future payments (discounted at the interest rate), equals the original loan principal. Each payment in an amortizing loan consists of two components: interest on the outstanding balance and principal reduction. In the early years, most of the payment goes toward interest because the balance is high. As the principal decreases, the interest portion shrinks and more of each payment reduces principal. This creates the characteristic amortization curve. The formula M = P × [r(1+r)^n] / [(1+r)^n - 1] ensures that after exactly n payments, the remaining balance reaches zero. The denominator represents the future value of an annuity factor, while the numerator scales it by the interest rate.",
+        "examples": [
+          "$300,000 mortgage at 7% for 30 years: r = 0.07/12 = 0.00583, n = 360. M = 300,000 × [0.00583(1.00583)^360] / [(1.00583)^360 - 1] = $1,995.91/month. Total payments: $718,527. Total interest: $418,527.",
+          "$300,000 at 7% for 15 years: Same principal, r = 0.00583, n = 180. M = $2,696.48/month. Total payments: $485,366. Total interest: $185,366. You save $233,161 by choosing the 15-year term.",
+          "$250,000 at 6.5% for 30 years: r = 0.00542, n = 360. M = $1,580.17/month. In month 1: Interest = $1,354.17, Principal = $225.99. In month 360: Interest = $8.51, Principal = $1,571.66."
+        ],
+        "comparison": "The PMT formula calculates only principal and interest (P&I), which is the core mortgage payment. PITI (Principal, Interest, Taxes, Insurance) adds escrow components for a complete housing cost picture. Adjustable-rate mortgages (ARMs) use the same formula but recalculate periodically when rates adjust. Interest-only loans use a simpler formula (I = P × r) during the interest-only period, then the PMT formula kicks in for the amortization period with a higher payment. Negative amortization loans, now rare after the 2008 crisis, allowed payments below the interest-only amount, causing the loan balance to grow. For standard fixed-rate mortgages, the PMT formula provides exact payment calculations that match lender quotes to the penny.",
+        "prosAndCons": {
+          "pros": [
+            "Provides exact payment calculation for fixed-rate loans",
+            "Results match lender disclosures precisely",
+            "Enables accurate amortization schedule generation",
+            "Universal formula used by all financial institutions",
+            "Supports 'what-if' analysis for different scenarios"
+          ],
+          "cons": [
+            "Excludes property taxes and insurance from payment",
+            "Does not account for PMI on low down payment loans",
+            "Assumes fixed rate (not applicable to ARMs)",
+            "Does not include HOA fees, maintenance, or other costs",
+            "Total payment understates true monthly housing expense"
+          ]
+        }
+      }
     },
     {
       "id": "piti",
@@ -47,7 +73,33 @@
         "Maintenance costs not included"
       ],
       "bestFor": "Budget planning",
-      "isDefault": false
+      "isDefault": true,
+      "expandedContent": {
+        "history": "PITI became standard terminology in the U.S. mortgage industry during the mid-20th century as lenders and regulators sought clearer ways to communicate total housing costs. The practice of escrowing taxes and insurance (collecting them monthly along with the mortgage payment, then paying the bills on behalf of the borrower) developed because lenders discovered that borrowers sometimes failed to save for these large annual bills, putting properties at risk of tax liens or insurance lapses. The Federal Housing Administration formalized escrow requirements for FHA loans in the 1930s, and the practice spread to conventional lending. Today, most mortgages with less than 20% down payment require escrow accounts, while those with larger down payments sometimes make escrow optional. The Consumer Financial Protection Bureau (CFPB), established after the 2008 financial crisis, mandated that PITI be prominently disclosed in loan estimates and closing disclosures to prevent payment shock.",
+        "scientificBasis": "PITI represents the complete cash flow obligation of homeownership that must be sustained monthly for the life of the mortgage. Lenders use PITI in debt-to-income (DTI) calculations because it captures the true housing burden. The front-end DTI ratio (also called housing ratio) divides PITI by gross monthly income—conventional loans typically require this ratio to be 28% or less, though FHA allows up to 31%. Property taxes are ad valorem taxes assessed by local governments based on property value, typically ranging from 0.5% to 2.5% of home value annually depending on location. Homeowners insurance covers dwelling replacement and liability, averaging $1,500-$3,000 annually for most homes. PMI (required when down payment is below 20%) typically costs 0.5%-1.5% of the loan amount annually, added to protect the lender against default risk. Understanding PITI is essential for accurate budget planning because P&I alone significantly understates the actual monthly housing cost—often by $500-$1,000 or more.",
+        "examples": [
+          "$300,000 loan, $1,996 P&I, $4,800 annual taxes, $1,800 insurance, $150/mo PMI: PITI = $1,996 + $400 + $150 + $150 = $2,696/month. The true payment is 35% higher than P&I alone.",
+          "$400,000 home in high-tax area (2% rate): P&I at 7% = $2,661. Taxes = $8,000/year = $667/month. Insurance = $2,400 = $200/month. PITI = $3,528. Taxes alone add $667 to monthly payment.",
+          "20% down vs 5% down on $350,000: With 20% ($70k) down: P&I on $280k = $1,863, no PMI. With 5% ($17.5k) down: P&I on $332.5k = $2,212 + PMI ~$277 = $2,489/month—$626 higher."
+        ],
+        "comparison": "PITI gives a much more accurate picture of housing costs than P&I alone but still excludes several real expenses. HOA fees (ranging from $200-$1,000+ monthly in some communities) are not included in PITI but must be added for condos and planned communities. Utility costs, maintenance (typically budgeted at 1% of home value annually), and repairs are also separate. For budget planning, financial advisors recommend calculating your 'all-in' housing cost: PITI + HOA + estimated utilities + maintenance reserve. When comparing renting vs buying, remember that rent typically includes more of these costs while PITI is just the starting point. Lenders qualify borrowers on PITI, not total housing cost, which is why some buyers experience 'payment shock' when other expenses materialize.",
+        "prosAndCons": {
+          "pros": [
+            "Reflects actual monthly payment to lender",
+            "Used in official DTI qualification calculations",
+            "Includes escrow components for realistic budgeting",
+            "Accounts for PMI on low down payment loans",
+            "Matches what appears on mortgage statements"
+          ],
+          "cons": [
+            "Property tax estimates may be inaccurate (especially for new construction)",
+            "Insurance costs can change annually",
+            "Excludes HOA fees, utilities, and maintenance",
+            "PMI calculations are estimates until lender confirms",
+            "Still understates total cost of homeownership"
+          ]
+        }
+      }
     },
     {
       "id": "apr-vs-apy",
@@ -64,7 +116,33 @@
         "Assumes loan is held full term"
       ],
       "bestFor": "Comparing loan offers",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The APR disclosure requirement was established by the Truth in Lending Act (TILA) of 1968, a landmark consumer protection law sponsored by Senator Paul Douglas. Before TILA, lenders could advertise low interest rates while hiding substantial fees, making comparison shopping nearly impossible. The law required lenders to disclose the APR—a single number incorporating both the interest rate and most financing costs—allowing consumers to compare offers on equal footing. The Federal Reserve Board (and later the CFPB) defined which fees must be included in APR calculations through Regulation Z. Mortgage APR typically includes points, origination fees, mortgage insurance premiums, and certain closing costs. The APR concept revolutionized consumer lending by exposing predatory practices and enabling informed decision-making. However, critics note that APR's usefulness is limited because most borrowers don't hold mortgages to term—the average mortgage is paid off or refinanced within 7-10 years.",
+        "scientificBasis": "APR represents the annualized cost of borrowing expressed as a percentage, calculated using the internal rate of return (IRR) methodology. It answers the question: 'What interest rate, if applied to the net loan proceeds (principal minus fees), would result in the same payment schedule?' This calculation effectively spreads upfront costs over the loan's lifetime. For example, paying 2 points ($6,000 on a $300,000 loan) for a 0.5% rate reduction makes the APR only slightly higher than the note rate if held to term, but significantly higher if refinanced in 3 years. APY, by contrast, measures the effective annual rate accounting for compounding and is primarily used for savings products. For mortgages, APR is the required disclosure; APY isn't typically shown. The mathematical distinction: APR ignores intra-year compounding while APY incorporates it. With monthly mortgage payments, the difference is typically small (a 7% APR on a mortgage corresponds to roughly 7.23% APY), but the conceptual difference matters for accurate financial analysis.",
+        "examples": [
+          "Loan A: 6.75% rate, $8,000 in fees on $300,000. Loan B: 7.00% rate, $2,000 in fees. Loan A's APR ≈ 6.95%. Loan B's APR ≈ 7.05%. Despite higher fees, Loan A may be better if held long-term.",
+          "2 points to reduce rate from 7% to 6.5% on $400,000: Points cost $8,000. Monthly savings: ~$135. Break-even: ~59 months (5 years). If you'll sell in 3 years, don't pay points. If staying 10+ years, points make sense.",
+          "Same loan, different disclosure: 7.0% rate, $5,000 fees, 30 years. APR ≈ 7.13%. If loan term were 15 years, same fees would yield APR ≈ 7.27% because costs spread over fewer years."
+        ],
+        "comparison": "APR is mandated for mortgage disclosure and enables apples-to-apples comparison of different loan offers. However, it has significant limitations. First, APR assumes the loan is held to maturity, but average mortgage duration is only 7-10 years. Second, not all fees are included—title insurance, appraisal, and some closing costs are excluded. Third, APR doesn't capture the time value of upfront fees versus ongoing costs. A sophisticated comparison would calculate the total cost of each loan option over your expected holding period. Many financial advisors recommend comparing both the monthly payment and total costs at various time horizons (3, 5, 7, 10 years) rather than relying solely on APR. Online mortgage calculators that show 'break-even point' for paying points are more useful than APR alone for most borrowers.",
+        "prosAndCons": {
+          "pros": [
+            "Standardized disclosure required by law",
+            "Enables comparison of different loan structures",
+            "Incorporates most financing costs into single number",
+            "Helps identify loans with hidden fees",
+            "Universal metric understood by industry"
+          ],
+          "cons": [
+            "Assumes loan held to maturity (rarely true)",
+            "Not all fees included in calculation",
+            "Doesn't account for expected holding period",
+            "Can be manipulated by structuring fees differently",
+            "Less useful than total cost analysis at various time horizons"
+          ]
+        }
+      }
     }
   ],
   "sources": [

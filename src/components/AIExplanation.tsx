@@ -8,6 +8,7 @@ interface AIExplanationProps {
   calculatorName: string
   inputs: CalculatorInput
   result: CalculatorOutput
+  onExplanationReady?: (explanation: string) => void
 }
 
 export default function AIExplanation({
@@ -15,6 +16,7 @@ export default function AIExplanation({
   calculatorName,
   inputs,
   result,
+  onExplanationReady,
 }: AIExplanationProps) {
   const [explanation, setExplanation] = useState<string | null>(null)
   const [loading, setLoading] = useState(false)
@@ -42,6 +44,7 @@ export default function AIExplanation({
 
       const data = await response.json()
       setExplanation(data.explanation)
+      onExplanationReady?.(data.explanation)
     } catch (err) {
       setError('Could not generate explanation. Please try again.')
       console.error('AI Explanation error:', err)
@@ -92,12 +95,30 @@ export default function AIExplanation({
       <h3 className="font-bold mb-3 flex items-center gap-2">
         <span>🤖</span> AI Explanation
       </h3>
-      <div className="prose prose-sm max-w-none text-[var(--foreground)]">
-        {explanation?.split('\n').map((paragraph, i) => (
-          <p key={i} className="mb-2 last:mb-0">
-            {paragraph}
-          </p>
-        ))}
+      <div className="max-w-none text-[var(--foreground)] space-y-2">
+        {explanation?.split('\n').map((paragraph, i) => {
+          if (!paragraph.trim()) return null
+          // Bold section headers like **What This Means**
+          const headerMatch = paragraph.match(/^\*\*(.+?)\*\*$/)
+          if (headerMatch) {
+            return (
+              <h4 key={i} className="text-sm font-bold mt-4 mb-1 text-[var(--primary)]">
+                {headerMatch[1]}
+              </h4>
+            )
+          }
+          // Inline bold within paragraphs
+          const parts = paragraph.split(/\*\*(.+?)\*\*/g)
+          return (
+            <p key={i} className="text-sm text-[var(--secondary)] leading-relaxed">
+              {parts.map((part, j) => (
+                j % 2 === 1
+                  ? <strong key={j} className="text-[var(--foreground)]">{part}</strong>
+                  : <span key={j}>{part}</span>
+              ))}
+            </p>
+          )
+        })}
       </div>
       <button
         onClick={fetchExplanation}

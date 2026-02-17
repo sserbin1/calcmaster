@@ -21,7 +21,33 @@
         "Primer may be needed separately"
       ],
       "bestFor": "Standard interior walls",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Paint coverage estimation has evolved significantly since the earliest recorded use of decorative paints in ancient Egypt around 3000 BCE, where natural pigments mixed with binders were applied by hand without standardized measurements. Industrial paint manufacturing began in the 1700s in Boston, and by the mid-1800s, companies like Sherwin-Williams started publishing coverage rate guidelines for their products. The concept of a standardized coverage rate per gallon emerged in the early 20th century as paint formulations became more consistent. The Paint Quality Institute, established in 1989, further standardized testing methodologies for measuring coverage rates. Modern paint labels now consistently list coverage rates, typically 350-400 sq ft per gallon for interior latex paint, allowing consumers and professionals to estimate material needs with reasonable accuracy before purchasing.",
+        "scientificBasis": "Paint coverage rate is determined by the relationship between the paint's volume, its solid content, and the desired dry film thickness. When paint is applied, the volatile components (water in latex paint, solvents in oil-based) evaporate, leaving behind the solid film. A paint with 40% solids by volume will leave a film that is 40% of the wet film thickness. The coverage rate depends on the dry film thickness specification, typically 1.0-1.5 mils (thousandths of an inch) per coat for interior wall paint. Using the formula: Coverage = (Volume x Percent Solids x 1604) / DFT, where 1604 converts gallons to square feet per mil, a gallon of paint with 40% solids applied at 1.5 mils DFT covers approximately 427 sq ft theoretically. In practice, application losses from roller absorption, overlap, edges, and drips reduce this by 10-15%, yielding the industry-standard 350-400 sq ft per gallon range. Surface porosity is another critical factor: unpainted drywall absorbs more paint than previously painted surfaces, reducing first-coat coverage by up to 50%. Textured surfaces like stucco or knockdown increase the actual surface area beyond the measured flat area, requiring 20-30% more paint. These scientific principles underpin the adjustment factors that experienced painters apply intuitively.",
+        "examples": [
+          "Example 1: A 12 ft x 14 ft bedroom with 8 ft ceilings has a perimeter of 52 ft. Wall area = 52 x 8 = 416 sq ft. Subtract one door (21 sq ft) and two windows (24 sq ft) = 371 sq ft. For 2 coats at 375 sq ft/gal: (371 x 2) / 375 = 1.98 gallons, so purchase 2 gallons.",
+          "Example 2: A living room with textured walls measures 20 ft x 18 ft with 9 ft ceilings. Perimeter = 76 ft. Wall area = 76 x 9 = 684 sq ft minus openings (60 sq ft) = 624 sq ft. With 25% texture adjustment: 624 x 1.25 = 780 sq ft effective area. For 2 coats: (780 x 2) / 350 = 4.46 gallons, round up to 5 gallons.",
+          "Example 3: An exterior project involves painting a house with 2,400 sq ft of siding. Exterior paint covers 250-350 sq ft/gal. Using 300 sq ft/gal average with 2 coats: (2,400 x 2) / 300 = 16 gallons. At $45/gallon for quality exterior paint = $720 in paint costs."
+        ],
+        "comparison": "The standard coverage rate method is the most widely used approach for residential paint estimation. Compared to the spread rate method used by commercial painters (which calculates based on wet film thickness and percent solids), the standard method is simpler but less precise for specialty coatings. Compared to manufacturer-specific digital tools that account for exact product formulations, the standard method provides a universal estimate that works across most paint brands. Professional painters often adjust the standard rate based on experience with specific surface conditions, effectively creating a hybrid approach. For very large commercial projects, detailed takeoff software that models each wall surface individually provides greater accuracy but requires significantly more time to set up.",
+        "prosAndCons": {
+          "pros": [
+            "Simple calculation accessible to homeowners and professionals alike",
+            "Coverage rates are printed on every paint can for easy reference",
+            "Accounts for multiple coats which is the primary driver of paint quantity",
+            "Industry-standard 350-400 sq ft range works reliably for most interior latex paints",
+            "Easy to adjust for known variables like texture or surface porosity"
+          ],
+          "cons": [
+            "Does not account for painter skill level and application method differences",
+            "Standard rates assume previously painted, smooth surfaces which may not apply",
+            "Cannot accurately predict needs for dramatic color changes requiring extra coats",
+            "Openings deduction is estimated and may not match actual window and door sizes",
+            "Does not separately calculate primer needs which can be a significant additional cost"
+          ]
+        }
+      }
     }
   ],
   "sources": [

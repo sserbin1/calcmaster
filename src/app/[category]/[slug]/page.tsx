@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCalculator, getAllCalculatorPaths, getRelatedCalculators, categories, type CategorySlug } from '@/data/calculators'
 import { loadMethodology } from '@/data/methodology-loader'
+import { generateCalculatorSchema, generateFAQSchema, generateHowToSchema, generateBreadcrumbSchema } from '@/lib/schema-generators'
 import GenericCalculator from '@/components/calculators/GenericCalculator'
 import MethodologySection from '@/components/ui/MethodologySection'
 import Link from 'next/link'
@@ -76,7 +77,18 @@ export default async function CalculatorPage({ params }: PageProps) {
 
       {/* Calculator Component */}
       <div className="mb-12">
-        <GenericCalculator type={slug} name={calculator.name} category={category} />
+        <GenericCalculator
+          type={slug}
+          name={calculator.name}
+          category={category}
+          methods={methodology?.methods?.map(m => ({
+            id: m.id,
+            name: m.name,
+            description: m.description,
+            accuracy: m.accuracy,
+            isDefault: m.isDefault,
+          }))}
+        />
       </div>
 
       {/* Methodology Section */}
@@ -159,32 +171,15 @@ export default async function CalculatorPage({ params }: PageProps) {
           __html: JSON.stringify({
             '@context': 'https://schema.org',
             '@graph': [
-              {
-                '@type': 'WebApplication',
-                name: calculator.heroTitle,
-                url: `https://calcmaster.io/${category}/${slug}/`,
-                description: calculator.metaDescription,
-                applicationCategory: 'UtilityApplication',
-                operatingSystem: 'Any',
-                offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-              },
-              {
-                '@type': 'FAQPage',
-                mainEntity: calculator.faqs.map((faq) => ({
-                  '@type': 'Question',
-                  name: faq.question,
-                  acceptedAnswer: { '@type': 'Answer', text: faq.answer },
-                })),
-              },
-              {
-                '@type': 'BreadcrumbList',
-                itemListElement: [
-                  { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://calcmaster.io/' },
-                  { '@type': 'ListItem', position: 2, name: categoryInfo?.name, item: `https://calcmaster.io/${category}/` },
-                  { '@type': 'ListItem', position: 3, name: calculator.heroTitle, item: `https://calcmaster.io/${category}/${slug}/` },
-                ],
-              },
-            ],
+              generateCalculatorSchema(calculator, categoryInfo?.name || category),
+              generateFAQSchema(calculator.faqs),
+              generateHowToSchema(calculator),
+              generateBreadcrumbSchema([
+                { name: 'Home', url: 'https://calcmaster.vercel.app/' },
+                { name: categoryInfo?.name || category, url: `https://calcmaster.vercel.app/${category}/` },
+                { name: calculator.name, url: `https://calcmaster.vercel.app/${category}/${slug}/` },
+              ]),
+            ].filter(Boolean),
           }),
         }}
       />

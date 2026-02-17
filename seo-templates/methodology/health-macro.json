@@ -23,7 +23,33 @@
         "Individual response varies"
       ],
       "bestFor": "General fitness, sustainable dieting",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The 'If It Fits Your Macros' (IIFYM) approach emerged from online bodybuilding and fitness communities in the early 2000s, developed as a reaction against overly restrictive 'clean eating' diets that classified foods as strictly 'good' or 'bad.' The philosophy was popularized through fitness forums and social media, with proponents arguing that for body composition purposes, the macronutrient breakdown matters more than food source—a 'pop-tart' and 'oatmeal' providing the same carbs would have similar metabolic effects. The approach gained mainstream traction around 2012-2015, particularly through YouTube fitness influencers and the bodybuilding community. While critics argued it promoted nutritionally void food choices, supporters emphasized that IIFYM never advocated eating poorly—it simply allowed flexibility within macro targets. The methodology aligned with research showing that for weight management, total energy balance and adequate protein intake were the primary drivers, with food source being secondary for body composition (though important for overall health and micronutrients).",
+        "scientificBasis": "IIFYM is grounded in the principle of energy balance and the thermic effect of food. Each macronutrient provides a specific caloric value: protein and carbohydrates yield approximately 4 calories per gram, while fat provides 9 calories per gram. The protein recommendation of 25-30% of calories ensures adequate intake for muscle protein synthesis, typically achieving the research-supported 1.6-2.2 g/kg range for active individuals. Carbohydrates fuel high-intensity exercise through glycolysis and are the preferred fuel for the brain. Fats are essential for hormone production (particularly steroid hormones like testosterone and estrogen), cell membrane integrity, and absorption of fat-soluble vitamins (A, D, E, K). The flexibility in ranges allows individuals to adjust based on preference, activity level, and individual response. Research supports that when protein is equated, the specific ratio of carbs to fat has minimal impact on body composition changes, though it may affect performance, satiety, and long-term adherence differently across individuals.",
+        "examples": [
+          "For 2000 calories/day at 30% protein, 45% carbs, 25% fat: Protein = 150g (600 cal), Carbs = 225g (900 cal), Fat = 56g (500 cal).",
+          "For 2500 calories/day at 25% protein, 50% carbs, 25% fat: Protein = 156g (625 cal), Carbs = 313g (1250 cal), Fat = 69g (625 cal).",
+          "A 75 kg individual eating 2200 cal with 30/40/30 split gets 165g protein (2.2 g/kg), 220g carbs, 73g fat—suitable for muscle building."
+        ],
+        "comparison": "IIFYM differs from ketogenic approaches in that it does not restrict any macronutrient to induce metabolic shifts like ketosis. Compared to USDA guidelines, IIFYM typically prescribes higher protein (25-30% vs 10-35%) for satiety and muscle preservation during fat loss. The athletic high-protein approach overlaps with IIFYM but uses body weight rather than percentage-based calculations for protein, which may be more precise for individuals at caloric extremes. IIFYM's key advantage is psychological flexibility—research suggests dietary adherence is the strongest predictor of long-term success, and IIFYM's flexibility improves adherence for many people.",
+        "prosAndCons": {
+          "pros": [
+            "Highly sustainable due to food flexibility",
+            "Prevents the binge-restrict cycle common with rigid diets",
+            "Focuses on the most important factors for body composition",
+            "Allows social eating and dining out while staying on track",
+            "Teaches intuitive understanding of food macronutrient content"
+          ],
+          "cons": [
+            "Can be used to justify nutrient-poor food choices",
+            "Requires tracking apps and food measuring—not for everyone",
+            "Does not address micronutrient needs or food quality directly",
+            "May not optimize performance for elite athletes",
+            "Individual metabolic and digestive responses to foods vary"
+          ]
+        }
+      }
     },
     {
       "id": "high-protein",
@@ -42,7 +68,33 @@
         "Higher cost due to protein sources"
       ],
       "bestFor": "Athletes, bodybuilders, strength trainers",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The high-protein athletic approach is codified in the International Society of Sports Nutrition (ISSN) position stands, which represent the consensus of sports nutrition researchers worldwide. The ISSN published its first protein position stand in 2007 and has updated it multiple times as research accumulated. The recommendations reflect decades of research on nitrogen balance, muscle protein synthesis, and athletic performance. The shift toward higher protein recommendations for athletes began in the 1990s when researchers like Peter Lemon demonstrated that athletes had higher protein requirements than sedentary individuals—challenging the prevailing view that the RDA of 0.8 g/kg was sufficient for everyone. Subsequent research by Stuart Phillips, Kevin Tipton, and others refined the understanding of protein timing, distribution, and optimal amounts for different types of athletes. The current recommendations (1.6-2.2 g/kg) emerged from meta-analyses and systematic reviews that identified the range where benefits were maximized without excess.",
+        "scientificBasis": "The high-protein athletic approach is grounded in the physiology of muscle protein synthesis (MPS) and muscle protein breakdown (MPB). Resistance training increases muscle protein turnover, and adequate protein intake tips the balance toward net protein accretion. The 1.6 g/kg lower bound represents the threshold where most studies observe maximal muscle protein synthesis response to resistance training. The upper bound of 2.2 g/kg provides a margin of safety and may be beneficial during caloric restriction (when protein needs increase to preserve lean mass) or for very high-volume training. Carbohydrate recommendations scale with activity because glycogen is the primary fuel for high-intensity exercise; endurance athletes need more (5-7 g/kg) while strength athletes may function on less (3-5 g/kg). Fat intake must remain above 20% of calories to support hormone production, particularly testosterone which is suppressed by very-low-fat diets. The per-kilogram basis ensures recommendations scale appropriately with body size.",
+        "examples": [
+          "An 80 kg strength athlete at 2800 calories: Protein = 160g (2.0 g/kg), Carbs = 320g (4 g/kg), Fat = 93g (~30% calories).",
+          "A 60 kg female runner at 2400 calories: Protein = 96g (1.6 g/kg), Carbs = 360g (6 g/kg), Fat = 53g (~20% calories).",
+          "A 90 kg bodybuilder during cutting at 2200 calories: Protein = 200g (2.2 g/kg), Carbs = 165g, Fat = 60g—high protein preserves muscle in deficit."
+        ],
+        "comparison": "The athletic approach differs from IIFYM primarily in using absolute body-weight-based calculations rather than percentage of calories. This is important because an athlete eating 3500 calories has different protein needs than one eating 2000—percentage-based approaches would give vastly different absolute amounts. Compared to keto, the athletic approach includes substantial carbohydrates to support high-intensity training and glycogen replenishment. The USDA's broad 10-35% protein range is far less precise than the athletic 1.6-2.2 g/kg recommendation, which is specifically calibrated for active populations seeking body composition improvements.",
+        "prosAndCons": {
+          "pros": [
+            "Evidence-based recommendations from peer-reviewed research",
+            "Optimized for athletic performance and muscle building",
+            "Scales appropriately with body weight",
+            "Accounts for activity level in carbohydrate prescription",
+            "Higher protein supports satiety and metabolic rate during dieting"
+          ],
+          "cons": [
+            "Higher protein intake is more expensive",
+            "May be unnecessarily high for sedentary individuals",
+            "Requires tracking to hit specific targets",
+            "Carbohydrate timing around training adds complexity",
+            "Not all protein sources are equally effective (leucine content matters)"
+          ]
+        }
+      }
     },
     {
       "id": "keto",
@@ -63,7 +115,33 @@
         "Not suitable for everyone"
       ],
       "bestFor": "Weight loss, epilepsy management, metabolic conditions",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The ketogenic diet was developed in the 1920s at Johns Hopkins Hospital as a treatment for pediatric epilepsy, building on the observation that fasting reduced seizure frequency. Researchers discovered that the metabolic state of ketosis—achieved through severe carbohydrate restriction—could mimic the anti-epileptic effects of fasting without actual starvation. For decades, the diet remained a medical therapy administered under physician supervision. Its revival as a weight loss approach began in the 1970s with the Atkins diet, which popularized very-low-carb eating, though Atkins was not strictly ketogenic. The ketogenic diet's modern resurgence for weight loss and performance began around 2010, driven by research on its potential benefits for metabolic health, type 2 diabetes, and certain neurological conditions. The diet became mainstream through social media and books, though it remains controversial among nutrition scientists regarding its long-term sustainability and superiority over other approaches.",
+        "scientificBasis": "Ketosis is a metabolic state where the body shifts from relying primarily on glucose to using fatty acids and ketone bodies (acetone, acetoacetate, beta-hydroxybutyrate) as its main fuel source. This occurs when carbohydrate intake drops below approximately 50g per day (individual threshold varies), depleting liver glycogen and reducing insulin levels. The liver then converts fatty acids into ketones, which can cross the blood-brain barrier and fuel the brain—a critical adaptation since the brain cannot directly use fatty acids. The high fat intake (70-75% of calories) provides the substrate for ketone production and satiety. Protein is kept moderate (20-25%) because excess protein can be converted to glucose through gluconeogenesis, potentially disrupting ketosis. Benefits observed in research include appetite suppression (ketones themselves may reduce hunger), stable energy levels without blood sugar fluctuations, and improved insulin sensitivity in some populations. However, high-intensity exercise performance typically suffers because glycolytic pathways cannot function optimally without glucose.",
+        "examples": [
+          "For 2000 calories at 75% fat, 20% protein, 5% carbs: Fat = 167g (1500 cal), Protein = 100g (400 cal), Carbs = 25g (100 cal).",
+          "For 1800 calories at 70% fat, 25% protein, 5% carbs: Fat = 140g (1260 cal), Protein = 113g (450 cal), Carbs = 22g (90 cal).",
+          "A 70 kg person getting 1.4 g/kg protein (98g) with 30g carbs and filling remaining calories with fat at 2200 cal intake = 175g fat."
+        ],
+        "comparison": "Keto is the most extreme carbohydrate-restricted approach among mainstream diets. While IIFYM typically allows 45-55% carbs and the athletic approach recommends 3-7 g/kg, keto restricts to 5-10% (20-50g). This fundamental difference means keto achieves a different metabolic state (ketosis) that other approaches do not. For weight loss, meta-analyses show keto produces faster initial weight loss (largely water and glycogen) but similar long-term fat loss to other calorie-equated diets. Keto's advantage is strong appetite suppression for some people; its disadvantage is strict requirements, social difficulty, and potential performance impairment for athletes.",
+        "prosAndCons": {
+          "pros": [
+            "Strong appetite suppression for many individuals",
+            "Stable energy levels without blood sugar crashes",
+            "May improve insulin sensitivity in type 2 diabetics",
+            "Therapeutic for epilepsy and potentially other neurological conditions",
+            "Can produce rapid initial weight loss (motivating for some)"
+          ],
+          "cons": [
+            "Extremely difficult to sustain long-term for most people",
+            "Impairs high-intensity exercise performance",
+            "Initial 'keto flu' during adaptation (1-2 weeks)",
+            "Eliminates many nutritious foods (fruits, legumes, whole grains)",
+            "May increase LDL cholesterol in some individuals"
+          ]
+        }
+      }
     },
     {
       "id": "usda",
@@ -81,7 +159,33 @@
         "One-size-fits-all approach"
       ],
       "bestFor": "General health maintenance",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The Acceptable Macronutrient Distribution Ranges (AMDRs) were established by the Institute of Medicine (now the National Academy of Medicine) as part of the Dietary Reference Intakes (DRIs) published between 2002 and 2005. These ranges represent the percentage of energy intake from each macronutrient associated with reduced risk of chronic disease while providing adequate essential nutrients. The USDA incorporates these ranges into the Dietary Guidelines for Americans, which are updated every five years based on the latest nutrition science. The ranges are intentionally broad to accommodate diverse dietary patterns, cultural preferences, and individual variation. The development process involves systematic reviews of research on macronutrient intake and health outcomes, including cardiovascular disease, diabetes, cancer, and all-cause mortality. Critics argue the ranges are too broad to be actionable, while supporters note they allow for flexibility in achieving a healthy diet through various approaches.",
+        "scientificBasis": "The AMDRs are set based on evidence linking macronutrient intake to chronic disease risk and essential nutrient adequacy. The protein range (10-35%) has a lower bound set to prevent deficiency and an upper bound where evidence of harm is limited but precaution is warranted. The carbohydrate range (45-65%) is anchored by the brain's glucose requirement (~130g/day) at the lower end and evidence linking very high carbohydrate intake to unfavorable blood lipid profiles at the upper end. The fat range (20-35%) has a lower bound ensuring adequate essential fatty acid and fat-soluble vitamin intake, while the upper bound reflects associations between very high fat intake and increased cardiovascular disease risk in some studies. Within these ranges, the guidelines emphasize quality: whole grains over refined, unsaturated fats over saturated, and lean proteins. The broad ranges acknowledge that healthy diets can be achieved through different macronutrient distributions.",
+        "examples": [
+          "For 2000 calories at mid-ranges (20% protein, 55% carbs, 25% fat): Protein = 100g, Carbs = 275g, Fat = 56g.",
+          "For 2400 calories with higher protein (30% protein, 45% carbs, 25% fat): Protein = 180g, Carbs = 270g, Fat = 67g.",
+          "For 1800 calories with lower carbs (25% protein, 45% carbs, 30% fat): Protein = 113g, Carbs = 203g, Fat = 60g."
+        ],
+        "comparison": "USDA guidelines are far broader than other approaches, providing a 'tent' under which IIFYM, athletic, and even moderate low-carb approaches can fit. The protein range (10-35%) encompasses both the RDA's 0.8 g/kg and the athletic 2.0 g/kg for most people. The carb range (45-65%) is higher than keto but lower than what some high-carb athletes consume. The fat range (20-35%) is more moderate than keto's 70-75% but includes room for higher-fat Mediterranean-style patterns. The guidelines prioritize food quality and overall dietary patterns over precise macronutrient targets.",
+        "prosAndCons": {
+          "pros": [
+            "Evidence-based, developed by expert committees",
+            "Flexible enough to accommodate diverse dietary preferences",
+            "Emphasizes food quality alongside macros",
+            "Appropriate for general population health maintenance",
+            "No foods or food groups are forbidden"
+          ],
+          "cons": [
+            "Too broad to provide actionable guidance for specific goals",
+            "Not optimized for athletic performance or body composition",
+            "May be too carbohydrate-focused for metabolically unhealthy individuals",
+            "Subject to food industry influence in guideline development",
+            "Does not address individual variation in macronutrient tolerance"
+          ]
+        }
+      }
     }
   ],
   "sources": [

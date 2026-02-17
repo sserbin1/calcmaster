@@ -21,7 +21,33 @@
         "Doesn't account for party size"
       ],
       "bestFor": "Standard restaurant dining",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The practice of tipping originated in 17th-century English coffeehouses and taverns, where patrons would offer gratuities 'To Insure Promptness' (TIP—though this etymology is likely folk legend). Tipping spread to the United States in the mid-19th century as wealthy Americans returned from European travels, adopting what they saw as a sophisticated custom. Initially controversial—many Americans viewed tipping as undemocratic and reminiscent of aristocratic Europe—the practice became entrenched during Prohibition (1920-1933) when restaurants lost alcohol revenue and relied on tips to supplement wages. The Fair Labor Standards Act of 1938 established a lower minimum wage for tipped workers, cementing the two-tiered wage system that persists today. Currently, the federal tipped minimum wage is just $2.13/hour (unchanged since 1991), with tips expected to bring earnings to the standard minimum. This history explains why tipping is more culturally embedded in the US than in countries with higher base wages for service workers.",
+        "scientificBasis": "The percentage-based tip calculation reflects the economic principle that gratuity should scale with the size and complexity of the order. A larger bill typically indicates more work: more dishes, more courses, more time at the table, more attention required. The 15-20% range has become standard through social convention rather than formal economic analysis. Behavioral economics research shows that tip amounts are influenced by many factors beyond service quality: payment method (credit cards yield higher tips than cash), weather, dining companions, and even the server's appearance. Studies in the Journal of Applied Social Psychology found that personalization (writing 'thank you' or drawing a smiley face on the check) can increase tips by 2-5%. The pre-tax versus post-tax debate reflects about a 7-10% difference in tip amount in most states (based on sales tax rates), which is meaningful for servers but often negligible for individual diners.",
+        "examples": [
+          "$80 dinner bill, 20% tip: Tip = $80 × 0.20 = $16. Total = $96. Simple mental math: move decimal left ($8.00) and double ($16).",
+          "Pre-tax vs post-tax: $100 pre-tax, 8% sales tax = $108 total. 18% pre-tax tip = $18. 18% post-tax tip = $19.44. Difference: $1.44.",
+          "Quick mental math for 15%: Calculate 10% (move decimal), then add half. For $67 bill: 10% = $6.70, half = $3.35, total = $10.05 ≈ $10."
+        ],
+        "comparison": "Standard percentage tipping is universal in US restaurants but varies significantly by service type. Sit-down restaurants expect 15-25%; counter service or takeout traditionally received no tip, though this has shifted post-2020 with tablet payment systems prompting tips. Delivery services (food delivery, grocery delivery) typically expect 15-20% or $5 minimum. Ride-sharing norms have settled around 15-20%. Outside the US, tipping norms differ dramatically: in Japan and South Korea, tipping is unnecessary and may even be considered rude; in much of Europe, 5-10% or rounding up is sufficient; in Australia, tipping is uncommon due to higher service wages. When traveling, researching local norms prevents both over-tipping (wasting money) and under-tipping (social embarrassment or poor treatment).",
+        "prosAndCons": {
+          "pros": [
+            "Simple calculation understood by everyone",
+            "Scales naturally with bill size",
+            "Allows reward for exceptional service",
+            "Flexible based on personal assessment",
+            "Supports service worker income"
+          ],
+          "cons": [
+            "Pre-tax vs post-tax creates confusion",
+            "Doesn't account for party size directly",
+            "Same percentage might feel insufficient for small bills",
+            "Reinforces low base wages for service workers",
+            "Creates income uncertainty for workers"
+          ]
+        }
+      }
     },
     {
       "id": "service-based",
@@ -38,7 +64,33 @@
         "Regional variations"
       ],
       "bestFor": "Adjusting for service quality",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Service-based tipping guidelines evolved alongside the American restaurant industry's growth throughout the 20th century. Early etiquette guides from the 1920s-1950s suggested 10-15% as standard, with the range shifting upward over decades. By the 1980s, 15% became the baseline for adequate service, with 20% reserved for exceptional experiences. The 21st century has seen further inflation: many etiquette experts now consider 18-20% the baseline, with 20%+ for good service. This 'tip creep' reflects both informal inflation and increased awareness of server wages. The 2020-2022 pandemic accelerated the shift, with many customers tipping more generously to support struggling service workers. Industry-specific norms also emerged: fine dining traditionally expects higher percentages; buffets and counter service expect less. These distinctions reflect the labor involved and the customary expectations within each service category.",
+        "scientificBasis": "The service-quality framework attempts to align compensation with performance, but research shows tip amounts correlate weakly with service quality. A meta-analysis by Michael Lynn at Cornell found that service quality explains only about 2% of the variation in tip percentages. Factors like server attractiveness, customer mood, payment method, and weather have measurable effects. This disconnect exists because tipping serves multiple functions beyond incentivizing good service: social conformity, relationship maintenance, and self-image management. Most diners tip within a narrow range regardless of service quality because they don't want to appear cheap (undertipping) or don't see dramatic differences in service (overtipping). The guidelines remain useful as social anchors rather than precision instruments. They provide a shared framework for what constitutes 'normal' tipping in various situations.",
+        "examples": [
+          "Excellent service (attentive, friendly, accommodated requests): $75 bill × 22% = $16.50. Rounding to $17 or $20 shows appreciation.",
+          "Poor service (long waits, mistakes, inattentive): $60 bill × 12% = $7.20. Tipping something acknowledges effort while signaling dissatisfaction.",
+          "Fine dining with sommelier/captain service: Consider 20-25% base, with additional tips to wine service or captains who provided extra attention."
+        ],
+        "comparison": "Service-based guidelines provide nuance that flat percentage methods lack, but their subjectivity creates challenges. What constitutes 'good' versus 'average' service varies by individual expectation, mood, and restaurant type. A customer accustomed to fine dining may rate casual restaurant service poorly, while someone rarely eating out might find the same service impressive. Cultural background also affects expectations. Rather than precise calibration, service-based guidelines are best used as a framework for reflection: Did the server enhance my experience? Did they handle problems professionally? Was I treated with respect? Answering these questions honestly should shift the tip up or down from the customer's baseline, which is itself influenced by habits, income, and social values.",
+        "prosAndCons": {
+          "pros": [
+            "Provides framework for adjusting based on experience",
+            "Theoretically incentivizes good service",
+            "Feels more fair than fixed percentages",
+            "Allows recognition of exceptional effort",
+            "Gives recourse for genuinely poor experiences"
+          ],
+          "cons": [
+            "Highly subjective assessment criteria",
+            "Research shows weak link between service and tips",
+            "Same 'good' service might be 18% or 22% to different people",
+            "Can reflect biases rather than actual service quality",
+            "Most people tip within narrow range anyway"
+          ]
+        }
+      }
     },
     {
       "id": "split-bill",
@@ -59,7 +111,33 @@
         "Doesn't account for who ordered what"
       ],
       "bestFor": "Group dining with similar orders",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The practice of splitting restaurant bills has evolved significantly with changing social dynamics and payment technologies. Historically, one person often paid the entire bill (typically the host, senior member, or in gendered contexts, the man). The shift toward individual or split payments accelerated in the 1960s-1970s with second-wave feminism and changing social norms around money and relationships. Payment technology caught up: restaurants began accepting multiple credit cards in the 1990s, and modern POS systems make arbitrary splits routine. Mobile payment apps (Venmo, PayPal, Cash App) that emerged in the 2010s further simplified settling up later. Cultural norms around splitting vary globally: in China and parts of East Asia, fighting to pay the entire bill is customary; in Northern Europe, precise splitting is normal and expected; American norms fall in between, with context determining expectations.",
+        "scientificBasis": "Even bill splitting creates economic efficiency in group dining but can lead to perverse incentives. A phenomenon called 'the unscrupulous diner problem' in behavioral economics demonstrates that when splitting evenly, individuals have an incentive to order more expensive items because they bear only a fraction of the marginal cost. Research shows this effect is measurable: diners order slightly more expensively when splitting evenly versus paying for their own items. The fairness perception of even splitting depends heavily on group composition and relationship. Among close friends with similar incomes ordering similar items, even splitting feels natural and avoids awkward itemization. Among acquaintances, strangers, or when orders differ significantly, it can create resentment. Some evidence suggests that splitting evenly (and sometimes overpaying) can actually strengthen relationships by signaling generosity and trust.",
+        "examples": [
+          "4 people, $180 bill + 20% tip ($36) = $216 total. Per person: $216 / 4 = $54 each.",
+          "Uneven orders, 3 people: Person A ordered $40, Person B $25, Person C $35 = $100. Fair split: calculate tip on each subtotal (20%): A pays $48, B pays $30, C pays $42. Total with tip: $120.",
+          "Large party with auto-gratuity: $500 bill + 18% auto-gratuity ($90) = $590. Among 10 people: $59 each. If additional tip desired, add before dividing."
+        ],
+        "comparison": "Even splitting offers simplicity but potential unfairness; itemized splitting offers fairness but complexity. The right choice depends on context. Even splitting works best when: orders are similar in value, the group dines together frequently (imbalances average out), relationships are close, or the amounts are small enough that differences don't matter. Itemized splitting is preferable when: there's wide variation in orders, someone didn't drink alcohol while others did, there are dietary restrictions limiting options, or individuals are budget-conscious. Modern payment apps and restaurant POS systems make both methods feasible. Some groups adopt hybrid approaches: split evenly but the non-drinker pays less, or split evenly but the birthday person doesn't pay. The social dynamics often matter more than the exact numbers.",
+        "prosAndCons": {
+          "pros": [
+            "Quick and simple calculation",
+            "Avoids awkward itemization",
+            "Balances out over repeated dinners with same group",
+            "Promotes communal dining experience",
+            "Reduces time spent settling the bill"
+          ],
+          "cons": [
+            "Can feel unfair when orders differ significantly",
+            "Non-drinkers subsidize drinkers",
+            "Creates adverse incentives to order expensive items",
+            "May cause resentment among budget-conscious diners",
+            "Assumes equal ability to pay (income differences exist)"
+          ]
+        }
+      }
     }
   ],
   "sources": [

@@ -18,7 +18,33 @@
         "Must know current DST status"
       ],
       "bestFor": "One-time conversions",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Before time zones, every city set its clocks to local solar noon, creating thousands of slightly different local times. This became untenable with the expansion of railroads in the 19th century, when train schedules required standardized time across regions. Sir Sandford Fleming, a Canadian railway engineer, proposed a worldwide system of standard time zones at the International Meridian Conference in 1884. The conference established the Prime Meridian at Greenwich, England, as the reference point for Universal Time (then called Greenwich Mean Time). The 24 time zones, each spanning 15 degrees of longitude and offset by whole hours from GMT, were gradually adopted worldwide. The United States adopted standard time zones in 1883, and most countries followed by the early 20th century. Today, UTC (Coordinated Universal Time) has replaced GMT as the reference standard, maintained by atomic clocks.",
+        "scientificBasis": "UTC offset conversion is a linear transformation applied to time values. Each time zone is defined by its offset from Coordinated Universal Time (UTC), expressed in hours and sometimes minutes. The conversion formula is: Target Time = Source Time + (Target UTC Offset - Source UTC Offset). For example, converting from UTC-5 (EST) to UTC+1 (CET) involves adding +1 - (-5) = +6 hours. The offsets range from UTC-12 to UTC+14, with some zones using fractional offsets: India uses UTC+5:30, Nepal uses UTC+5:45, and the Chatham Islands use UTC+12:45. The conversion must handle day boundary crossings: if the result exceeds 24:00, the date advances by one day; if it goes below 00:00, the date goes back one day. UTC itself is maintained by a weighted average of over 400 atomic clocks worldwide, coordinated by the International Bureau of Weights and Measures (BIPM), with occasional leap seconds inserted to keep it aligned with Earth's rotation.",
+        "examples": [
+          "Example 1: A video call is scheduled for 3:00 PM EST (UTC-5). To find the time in London (GMT/UTC+0): 15:00 + (0 - (-5)) = 15:00 + 5 = 20:00 or 8:00 PM GMT.",
+          "Example 2: Converting 9:00 AM Tokyo time (JST, UTC+9) to Los Angeles time (PST, UTC-8): 9:00 + (-8 - 9) = 9:00 - 17 = -8:00, which wraps to 16:00 previous day = 4:00 PM the day before.",
+          "Example 3: Converting 2:30 PM Mumbai (IST, UTC+5:30) to New York (EST, UTC-5): 14:30 + (-5 - 5.5) = 14:30 - 10:30 = 4:00 AM same day in New York."
+        ],
+        "comparison": "UTC offset conversion is simpler and more deterministic than DST-aware conversion because it uses fixed offsets at a given point in time. It is ideal for one-time conversions where the current offset is known. However, it cannot handle recurring events or future scheduling accurately because offsets change with Daylight Saving Time transitions. For those use cases, DST-aware conversion using the IANA timezone database is necessary. Named timezone identifiers like 'America/New_York' automatically resolve the correct offset for any given date, while raw UTC offsets like 'UTC-5' do not. For real-time applications such as clock displays and log timestamps, UTC offset conversion is sufficient and preferred for its simplicity.",
+        "prosAndCons": {
+          "pros": [
+            "Simple linear arithmetic that is easy to compute mentally or on paper",
+            "Deterministic result for any given pair of offsets at a known point in time",
+            "No external database or data dependency required",
+            "Universally applicable regardless of location or political timezone decisions",
+            "Fast computation suitable for real-time applications and embedded systems"
+          ],
+          "cons": [
+            "Does not account for Daylight Saving Time transitions automatically",
+            "Requires the user to know the current UTC offset, which changes seasonally",
+            "Cannot reliably convert future or past times without knowing historical offsets",
+            "Fractional offsets (30 and 45 minute) add unexpected complexity",
+            "Day and date boundary crossings can lead to errors if not handled carefully"
+          ]
+        }
+      }
     },
     {
       "id": "dst-aware",
@@ -31,7 +57,33 @@
       },
       "accuracy": "Requires current timezone database",
       "bestFor": "Scheduling across time zones",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Daylight Saving Time was first proposed by New Zealand entomologist George Hudson in 1895, who wanted more daylight hours for collecting insects after work. Germany became the first country to implement DST in 1916 during World War I to conserve coal. The United States adopted it in 1918, repealed it after the war, reinstated it during World War II as 'War Time,' and finally standardized it with the Uniform Time Act of 1966. The rules have changed multiple times: the US Energy Policy Act of 2005 extended DST by four weeks starting in 2007. The European Union harmonized DST rules across member states in 1996 but voted to abolish seasonal clock changes in 2019, though implementation has been delayed. Today, about 70 countries observe some form of DST, while many tropical and equatorial nations do not, as their day length varies little throughout the year.",
+        "scientificBasis": "DST-aware timezone conversion requires a database of historical and current timezone rules, the most authoritative being the IANA Time Zone Database (also called the Olson database or tz database). This database maps timezone identifiers like 'America/New_York' to their UTC offset for every point in time, incorporating all historical DST rule changes. The conversion algorithm first determines the applicable UTC offset for the source timezone at the given date and time, then determines the offset for the target timezone at the corresponding UTC time, and finally applies the difference. The complexity arises during DST transitions: when clocks 'spring forward,' one hour is skipped (e.g., 2:00 AM becomes 3:00 AM), creating a gap where local times do not exist. When clocks 'fall back,' one hour is repeated, creating ambiguity where a local time maps to two different UTC times. Robust implementations must handle these edge cases by either rejecting invalid times, choosing the earlier or later interpretation for ambiguous times, or flagging them for user resolution.",
+        "examples": [
+          "Example 1: Scheduling a call for March 15, 2025 at 10:00 AM New York time with a participant in London. New York is in EDT (UTC-4) since DST started March 9. London is in GMT (UTC+0) until March 30. Difference = 4 hours. London time: 2:00 PM.",
+          "Example 2: A flight departs Los Angeles at 11:00 PM PDT (UTC-7) on November 1, 2025, arriving in Chicago 4 hours later. Chicago falls back on November 2 at 2:00 AM. Arrival clock time: 5:00 AM CST (UTC-6), not 6:00 AM CDT, because DST ended during the flight.",
+          "Example 3: Scheduling a recurring weekly meeting at 9:00 AM Eastern time for participants in Arizona (no DST). In winter, Eastern is UTC-5 and Arizona is UTC-7, so Arizona joins at 7:00 AM. In summer, Eastern is UTC-4 and Arizona stays UTC-7, so Arizona joins at 6:00 AM. The meeting time shifts for Arizona participants."
+        ],
+        "comparison": "DST-aware conversion is more complex but significantly more reliable than simple UTC offset conversion for any application involving scheduling, recurring events, or future dates. While UTC offset conversion works for instantaneous conversions, it fails when the same conversion must be valid across DST boundaries. The IANA timezone database approach is the industry standard used by all major operating systems, programming languages, and cloud services. The trade-off is a dependency on an external database that must be updated whenever governments change their DST rules, which happens with increasing frequency as more countries consider abolishing or modifying DST.",
+        "prosAndCons": {
+          "pros": [
+            "Accurately handles all DST transitions past, present, and future (with updated data)",
+            "Uses authoritative IANA timezone database maintained by a global community",
+            "Supports named timezone identifiers that resolve ambiguity automatically",
+            "Essential for reliable scheduling of meetings and events across time zones",
+            "Handles historical timezone changes for accurate past date conversions"
+          ],
+          "cons": [
+            "Requires an up-to-date timezone database that must be regularly maintained",
+            "DST transition edge cases (gaps and overlaps) create ambiguous or invalid times",
+            "Governments can change DST rules with short notice, invalidating scheduled events",
+            "Significantly more complex to implement correctly than simple offset arithmetic",
+            "Different software libraries may use different versions of the timezone database, causing inconsistencies"
+          ]
+        }
+      }
     }
   ],
   "sources": [

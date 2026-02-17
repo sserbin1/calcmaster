@@ -6,6 +6,22 @@ import { getCalculatorFields, calculate, type CalculatorInput, type CalculatorOu
 import { useHistoryStore } from '@/store/history'
 import CalculationHistory from '@/components/CalculationHistory'
 import AIExplanation from '@/components/AIExplanation'
+import MethodSelector, { type MethodOption } from '@/components/ui/MethodSelector'
+import type { ReportData } from '@/components/pdf/ReportDocument'
+
+const ExportReportButton = dynamic(() => import('@/components/ui/ExportReportButton'), {
+  ssr: false,
+  loading: () => (
+    <button disabled className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[var(--muted)] text-[var(--secondary)] opacity-50">
+      Loading...
+    </button>
+  ),
+})
+
+const AmortizationTable = dynamic(() => import('@/components/ui/AmortizationTable'), {
+  ssr: false,
+  loading: () => <div className="h-32 animate-pulse bg-[var(--muted)] rounded-2xl" />,
+})
 
 // Dynamic import for charts (client-only)
 const ResultChart = dynamic(() => import('@/components/charts/ResultChart'), {
@@ -17,10 +33,11 @@ interface GenericCalculatorProps {
   type: string
   name?: string
   category?: string
+  methods?: MethodOption[]
   onResult?: (result: CalculatorOutput) => void
 }
 
-export default function GenericCalculator({ type, name, category, onResult }: GenericCalculatorProps) {
+export default function GenericCalculator({ type, name, category, methods, onResult }: GenericCalculatorProps) {
   const fields = getCalculatorFields(type)
   const [values, setValues] = useState<CalculatorInput>(() => {
     const initial: CalculatorInput = {}
@@ -30,6 +47,10 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
     return initial
   })
   const [result, setResult] = useState<CalculatorOutput | null>(null)
+  const [aiExplanation, setAiExplanation] = useState<string | null>(null)
+  const [selectedMethod, setSelectedMethod] = useState<string>(
+    methods?.find(m => m.isDefault)?.id || methods?.[0]?.id || 'default'
+  )
   const addHistoryEntry = useHistoryStore((state) => state.addEntry)
 
   const handleChange = useCallback((name: string, value: string | number) => {
@@ -37,7 +58,7 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
   }, [])
 
   const handleCalculate = useCallback(() => {
-    const output = calculate(type, values)
+    const output = calculate(type, values, selectedMethod)
     setResult(output)
     onResult?.(output)
 
@@ -49,7 +70,17 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
       inputs: values,
       result: output,
     })
-  }, [type, values, onResult, addHistoryEntry, name, category])
+  }, [type, values, selectedMethod, onResult, addHistoryEntry, name, category])
+
+  const handleMethodChange = useCallback((methodId: string) => {
+    setSelectedMethod(methodId)
+    // Auto-recalculate when method changes if we have a result
+    if (result) {
+      const output = calculate(type, values, methodId)
+      setResult(output)
+      onResult?.(output)
+    }
+  }, [type, values, result, onResult])
 
   const handleRestoreInputs = useCallback((inputs: CalculatorInput) => {
     setValues(inputs)
@@ -158,6 +189,15 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
         onRestore={handleRestoreInputs}
       />
 
+      {/* Method Selector */}
+      {methods && methods.length > 1 && (
+        <MethodSelector
+          methods={methods}
+          selectedMethod={selectedMethod}
+          onMethodChange={handleMethodChange}
+        />
+      )}
+
       {/* Input Fields */}
       <div className={`grid gap-4 ${fields.length > 2 ? 'md:grid-cols-2' : ''}`}>
         {fields.map(renderField)}
@@ -201,6 +241,11 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
           {/* Interactive Chart */}
           <ResultChart result={result} calculatorType={type} />
 
+          {/* Amortization Schedule */}
+          {result.schedule && (
+            <AmortizationTable headers={result.schedule.headers} rows={result.schedule.rows} />
+          )}
+
           {/* Breakdown */}
           {result.breakdown && result.breakdown.length > 0 && (
             <div className="p-6 rounded-2xl border-2 border-[var(--border)]">
@@ -237,6 +282,45 @@ export default function GenericCalculator({ type, name, category, onResult }: Ge
             calculatorName={name || type}
             inputs={values}
             result={result}
+            onExplanationReady={setAiExplanation}
+          />
+
+          {/* Export PDF */}
+          <ExportReportButton
+            data={{
+              calculatorName: name || type,
+              calculatorType: type,
+              category: category || 'other',
+              result: {
+                primary: {
+                  value: result.primary.value,
+                  label: result.primary.label,
+                  unit: result.primary.unit,
+                },
+                secondary: result.secondary?.map(s => ({
+                  label: s.label,
+                  value: s.value,
+                  unit: s.unit,
+                })),
+                breakdown: result.breakdown?.map(b => ({
+                  label: b.label,
+                  value: b.value,
+                })),
+                advice: result.advice,
+              },
+              inputs: Object.entries(values).map(([key, val]) => ({
+                label: key,
+                value: String(val),
+              })),
+              aiExplanation: aiExplanation || undefined,
+              generatedAt: new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+              }),
+            } satisfies ReportData}
           />
         </div>
       )}

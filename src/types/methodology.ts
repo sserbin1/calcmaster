@@ -21,6 +21,17 @@ export interface Source {
   citation?: string
 }
 
+export interface ExpandedContent {
+  history: string          // 100+ words on historical background
+  scientificBasis: string  // 150+ words on scientific foundation
+  examples: string[]       // 2-3 practical usage examples
+  comparison?: string      // How this method compares to others
+  prosAndCons?: {
+    pros: string[]
+    cons: string[]
+  }
+}
+
 export interface Method {
   id: string
   name: string
@@ -32,6 +43,8 @@ export interface Method {
   isDefault?: boolean
   yearIntroduced?: number
   author?: string
+  // Expanded content fields for 500+ words per method
+  expandedContent?: ExpandedContent
 }
 
 export interface VisualScaleConfig {

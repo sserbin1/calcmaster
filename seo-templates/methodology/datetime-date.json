@@ -14,7 +14,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "General date counting, rental periods",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Calendar day counting is one of the oldest mathematical operations in human history. Ancient Egyptians tracked the number of days between Nile flood events as early as 3000 BC, using a 365-day calendar. The Babylonians maintained detailed astronomical diaries counting days between celestial events. Roman jurists developed precise day-counting rules for legal contracts, establishing the distinction between inclusive and exclusive counting that persists in modern law. The Julian calendar, introduced by Julius Caesar in 46 BC, standardized day counting across the Roman Empire. When the Gregorian calendar replaced it in 1582, the mathematical foundation of day differences remained unchanged, with the reform only correcting accumulated drift by skipping 10 days.",
+        "scientificBasis": "Calendar day difference calculation is fundamentally a subtraction operation on dates represented as ordinal values. Modern computing typically converts dates to a serial day number, a continuous integer count from a fixed epoch. The most common epoch is the Unix epoch (January 1, 1970), where each date maps to a unique integer representing days since that reference point. The calculation handles the Gregorian calendar's irregular structure: months of 28-31 days, leap years every 4 years (except centuries not divisible by 400), and the varying position of leap day. The algorithm first converts both dates to their serial day numbers using a formula that accounts for year, month, and day contributions, then subtracts to find the difference. This approach is computationally O(1) and avoids iterating through individual days. An important consideration is boundary handling: whether to count the start date, end date, both, or neither, which depends on the application context and can cause off-by-one errors if not handled explicitly.",
+        "examples": [
+          "Example 1: Counting days in a rental agreement from March 1 to March 31, 2025. Days = 31 - 1 = 30 calendar days (excluding start date). If the landlord counts inclusively, it would be 31 days.",
+          "Example 2: Calculating days between two project milestones: January 15, 2025 to April 10, 2025. Days = 16 (remaining Jan) + 28 (Feb) + 31 (Mar) + 10 (Apr) = 85 calendar days.",
+          "Example 3: Finding the number of days in a pregnancy from last menstrual period September 1, 2024 to due date June 8, 2025. Days = 280 calendar days (standard 40-week gestation)."
+        ],
+        "comparison": "Calendar day counting includes all days regardless of type, making it the simplest and most predictable date difference method. Business day counting excludes weekends and optionally holidays, yielding smaller numbers for the same period but requiring more complex logic and regional holiday data. Calendar days are preferred for natural phenomena, medical timelines, and any context where every day counts equally. Business days are preferred for work-related timelines, shipping estimates, and financial settlement periods.",
+        "prosAndCons": {
+          "pros": [
+            "Simple and unambiguous calculation with no external data dependencies",
+            "Universally applicable regardless of region or industry",
+            "Computationally efficient with O(1) time complexity",
+            "No need for holiday calendars or weekend definitions",
+            "Consistent results across all implementations and platforms"
+          ],
+          "cons": [
+            "Does not distinguish between weekdays, weekends, and holidays",
+            "Off-by-one errors common due to inclusive vs exclusive counting ambiguity",
+            "Not suitable for work-related scheduling without additional context",
+            "Cannot account for business closures or non-working periods",
+            "May overestimate effective working time available in a period"
+          ]
+        }
+      }
     },
     {
       "id": "business-days",
@@ -31,7 +57,33 @@
         "Some industries have different working days"
       ],
       "bestFor": "Shipping estimates, project timelines",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The concept of business days emerged during the Industrial Revolution as factory schedules standardized around a six-day workweek. The five-day workweek became widespread in the early 20th century, with Henry Ford adopting it at Ford Motor Company in 1926. The US government followed in 1932 during the Great Depression to distribute work more broadly. Financial markets formalized business day counting through settlement rules: the New York Stock Exchange adopted T+3 (trade date plus three business days) settlement in 1995, later shortened to T+2 in 2017 and T+1 in 2024. Legal systems codified business day definitions for filing deadlines, notice periods, and contract performance. Today, business day calculations are embedded in payroll software, project management tools, and shipping logistics systems worldwide.",
+        "scientificBasis": "Business day calculation requires determining which days in a date range are working days. The basic algorithm iterates through each day in the range and checks whether it falls on a weekend (Saturday or Sunday in most Western countries). The approximate formula uses the ratio of weekdays to total days: Business Days equals Total Days times 5/7, adjusted for the start day of the week. However, the exact calculation must iterate or use a mathematical formula based on complete weeks and partial week remainders. For a range of N calendar days starting on weekday W (Monday=1 to Friday=5), complete weeks contribute 5 business days each, and the remaining days are counted individually. Holiday exclusion adds another layer: holiday databases store dates by country and region, and each holiday is subtracted from the business day count if it falls on a weekday within the range. Some holidays are fixed dates (Christmas, Independence Day) while others are relative (Thanksgiving: 4th Thursday of November), requiring rule-based calculation.",
+        "examples": [
+          "Example 1: Shipping estimate from Monday, March 3 to Friday, March 14, 2025. Calendar days = 11. Business days = 2 complete weeks minus weekends = 10 business days (assuming no holidays).",
+          "Example 2: Legal filing deadline of 30 business days from January 2, 2025. Counting forward, excluding weekends and Martin Luther King Jr. Day (Jan 20) and Presidents Day (Feb 17), the deadline falls on approximately February 18, 2025.",
+          "Example 3: Project timeline: 15 business days starting April 14, 2025. Counting weekdays only, this extends to May 2, 2025 (3 complete weeks = 15 business days), assuming no holidays in the period."
+        ],
+        "comparison": "Business day counting provides work-relevant timelines compared to calendar day counting. While calendar days are simpler and faster to compute, business days more accurately reflect productive time. The trade-off is increased complexity: business day calculations require knowledge of the applicable weekend convention (Friday-Saturday in some Middle Eastern countries) and access to a holiday database for the relevant jurisdiction. For international contexts, multiple holiday calendars may need to be intersected. Calendar days remain preferable for medical, scientific, and personal planning contexts.",
+        "prosAndCons": {
+          "pros": [
+            "Accurately reflects actual working time for project and shipping estimates",
+            "Standard in legal and financial systems for deadline calculations",
+            "Widely supported in spreadsheet software and programming libraries",
+            "More realistic for workforce planning and resource allocation",
+            "Can incorporate regional holidays for jurisdiction-specific accuracy"
+          ],
+          "cons": [
+            "Requires knowledge of applicable weekend and holiday conventions",
+            "Holiday databases must be maintained and updated annually",
+            "Different countries and regions have different holiday calendars",
+            "Some industries operate on weekends, making the calculation irrelevant",
+            "Approximate formulas can produce off-by-one errors at week boundaries"
+          ]
+        }
+      }
     }
   ],
   "sources": [

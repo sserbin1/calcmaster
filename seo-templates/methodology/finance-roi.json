@@ -23,7 +23,33 @@
         "Doesn't account for cash flows"
       ],
       "bestFor": "Quick, single-period calculations",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The concept of return on investment has ancient roots in commercial ventures—merchants have always calculated profit relative to capital risked. The formal ROI calculation became standardized in the early 20th century as corporations sought metrics to evaluate capital allocation. DuPont Corporation pioneered ROI analysis in the 1910s through what became known as the 'DuPont Analysis,' decomposing ROI into profit margin and asset turnover. This framework spread throughout American industry as a primary performance metric. In personal investing, ROI became the common language for comparing investment performance, though its simplicity—dividing profit by cost—masks important nuances like time value of money and intermediate cash flows. The metric's persistence reflects its intuitive appeal: everyone understands 'I made 25% on my investment.'",
+        "scientificBasis": "Simple ROI represents the percentage change in value from initial investment to current value. Mathematically, it's identical to 'holding period return' when no intermediate cash flows exist. The formula (End - Start) / Start × 100 produces a dimensionless percentage that allows comparison of different-sized investments. However, the time dimension is critically missing. A 100% return over 1 year is excellent; over 20 years, it's mediocre (roughly 3.5% annually). Simple ROI also ignores reinvestment: if dividends were paid, were they reinvested or spent? The metric works well for single-period, lump-sum investments with no intermediate cash flows—a relatively rare scenario in practice. For anything more complex, annualized returns or IRR are more appropriate.",
+        "examples": [
+          "Stock purchase: Bought $10,000 of stock, now worth $12,500. ROI = ($12,500 - $10,000) / $10,000 × 100 = 25%. Simple and clear, but no time context.",
+          "Real estate: Bought rental property for $200,000, sold for $280,000 after 5 years. ROI = ($280,000 - $200,000) / $200,000 × 100 = 40%. Sounds good, but that's only ~7% annually.",
+          "Comparing investments: Investment A: 50% ROI over 2 years. Investment B: 30% ROI over 1 year. B is actually better—annualized, A is ~22% while B is 30%. Simple ROI masks this."
+        ],
+        "comparison": "Simple ROI is the most intuitive but least sophisticated return measure. Annualized return (CAGR) normalizes for time, allowing fair comparison across different holding periods. IRR handles complex cash flows (dividends, additional investments). Total return includes income plus price appreciation. For a stock held 1 year with no dividends, all measures converge to the same answer. Differences emerge with time (CAGR adjusts), cash flows (IRR adjusts), or income (total return includes). Use simple ROI for quick mental math and communication; use more sophisticated measures for actual investment decisions. Note that ROI can be negative—losing money produces negative returns. A complete loss (-100% ROI) is possible; gains are theoretically unlimited.",
+        "prosAndCons": {
+          "pros": [
+            "Intuitive and universally understood",
+            "Simple calculation requiring only two numbers",
+            "Good for communicating results to non-experts",
+            "Useful for quick mental math",
+            "Works well for single-period, lump-sum scenarios"
+          ],
+          "cons": [
+            "Ignores time period (can't compare different durations)",
+            "Doesn't account for intermediate cash flows",
+            "May overstate long-term investment attractiveness",
+            "No consideration of risk or volatility",
+            "Can be manipulated by cherry-picking time periods"
+          ]
+        }
+      }
     },
     {
       "id": "annualized-roi",
@@ -45,7 +71,33 @@
         "Ignores intermediate cash flows"
       ],
       "bestFor": "Comparing investments over different periods",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Compound Annual Growth Rate emerged from compound interest mathematics, which dates to Babylonian times but was formalized by Jacob Bernoulli in the 17th century. The CAGR formula reverses compound interest: given starting value, ending value, and time, what constant annual growth rate would produce that result? The metric gained prominence in finance during the 20th century as investors sought standardized ways to compare investment performance across different time periods. Warren Buffett popularized CAGR in his annual letters to Berkshire Hathaway shareholders, consistently comparing his compound returns to the S&P 500. Mutual fund industry adopted CAGR for reporting, though SEC regulations require showing actual annual returns to reveal volatility that CAGR masks. Today, CAGR is the standard for expressing long-term investment performance.",
+        "scientificBasis": "CAGR answers the question: 'What constant annual growth rate, compounded, produces the observed total return?' The formula derives from the compound interest equation: End = Start × (1 + r)^n. Solving for r gives CAGR = (End/Start)^(1/n) - 1. CAGR 'smooths' volatile returns into a constant rate, making comparison possible. If Investment A grew $100 to $200 over 5 years, CAGR = (200/100)^(1/5) - 1 = 14.87%, meaning 14.87% annual compound return produces the same result. Importantly, CAGR assumes all returns are reinvested at the same rate—the 'compound' in compound annual growth. Real investments experience varying annual returns; CAGR is a summary statistic, not a description of actual experience. Two investments with identical CAGR could have vastly different volatility profiles.",
+        "examples": [
+          "$10,000 → $25,000 over 10 years: CAGR = (25,000/10,000)^(1/10) - 1 = 9.6% annual return. This is the steady rate that compounds to the actual result.",
+          "S&P 500 comparison: 2014-2024, $10,000 → $29,000 (including reinvested dividends). CAGR = ~11.2%. Your investment at 9.6% underperformed the market index.",
+          "Reality check: An investment with 50% gain year 1, 50% loss year 2 has CAGR of -13.4% over 2 years (you end with 75% of start), despite average annual return of 0%. CAGR reflects compounding reality."
+        ],
+        "comparison": "CAGR normalizes for time, fixing simple ROI's main limitation. However, CAGR still ignores volatility and path. Two investments—one steady, one volatile—can have the same CAGR but very different risk profiles. Risk-adjusted metrics like Sharpe ratio penalize volatility. CAGR also ignores cash flows: for investments with dividends, contributions, or withdrawals, Internal Rate of Return (IRR) is more appropriate. CAGR works best for lump-sum investments held without additions or withdrawals. For retirement accounts with regular contributions, money-weighted return (IRR) better reflects actual performance. Mutual funds report both time-weighted return (CAGR-like) and money-weighted return to show fund performance versus investor experience.",
+        "prosAndCons": {
+          "pros": [
+            "Enables fair comparison across different time periods",
+            "Reflects compounding reality (average doesn't)",
+            "Industry-standard metric for long-term performance",
+            "Simple formula with intuitive interpretation",
+            "Good for benchmarking against indices"
+          ],
+          "cons": [
+            "Masks volatility (two investments with same CAGR can have different risk)",
+            "Assumes reinvestment at same rate",
+            "Ignores intermediate cash flows",
+            "Smooths reality: actual yearly returns vary",
+            "Doesn't account for contributions or withdrawals"
+          ]
+        }
+      }
     },
     {
       "id": "irr",
@@ -63,7 +115,33 @@
         "Complex to calculate manually"
       ],
       "bestFor": "Real estate, business investments with cash flows",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Internal Rate of Return has roots in present value calculations developed by 19th-century economists, but the specific IRR formulation emerged in the 1930s-1940s as a capital budgeting tool. Kenneth Boulding is credited with formalizing IRR in his 1935 paper 'The Theory of a Single Investment.' John Burr Williams' 'The Theory of Investment Value' (1938) and Dean Joel's 'Capital Budgeting' (1951) popularized IRR for corporate finance. The metric became central to real estate investment analysis, where multiple cash flows (rent, expenses, sale proceeds) are the norm. Before computers, IRR required tedious trial-and-error calculation; spreadsheet functions (IRR in Excel) made it accessible. Private equity and venture capital adopted IRR as their primary return metric, though this choice has faced criticism for potential manipulation through timing of cash flows.",
+        "scientificBasis": "IRR is the discount rate that makes the Net Present Value (NPV) of an investment exactly zero. For an initial investment C0 followed by cash flows C1, C2, ... Cn, IRR satisfies: C0 + C1/(1+IRR) + C2/(1+IRR)² + ... + Cn/(1+IRR)^n = 0. This can't be solved algebraically for n > 2, requiring numerical methods (Newton-Raphson or trial-and-error). IRR represents the 'internal' return generated by the investment itself, useful for comparing opportunities with different cash flow patterns. Critically, IRR assumes all intermediate cash flows can be reinvested at the IRR rate—often unrealistic. If IRR is 25%, but you can only reinvest dividends at 5%, actual return will be lower. Modified IRR (MIRR) addresses this by specifying separate reinvestment and finance rates.",
+        "examples": [
+          "Rental property: Buy for $200,000, receive $15,000/year net rent for 10 years, sell for $250,000. Cash flows: -200,000, +15,000 (×10), +265,000 (final year rent + sale). IRR ≈ 10.8% annually.",
+          "Private equity investment: Invest $100,000, receive nothing for 4 years, then $250,000. IRR = (250/100)^(1/4) - 1 = 25.7%. Equivalent to CAGR when there's only initial and final cash flow.",
+          "Monthly cash flows: $10,000 investment paying $200/month for 5 years, then $8,000 return of capital. Use monthly IRR, then annualize: if monthly IRR = 1.2%, annual IRR ≈ (1.012)^12 - 1 = 15.4%."
+        ],
+        "comparison": "IRR handles complex cash flows that CAGR cannot—regular income, partial sales, additional investments. In real estate analysis, IRR is the standard metric because properties generate rental income. In private equity, IRR measures fund performance including capital calls and distributions. The main criticism: IRR assumes reinvestment at the IRR rate. A 30% IRR doesn't mean you'll actually earn 30% unless you can reinvest all distributions at 30%—unlikely for most investors. XIRR (in Excel) handles irregular cash flow timing. MIRR (Modified IRR) lets you specify realistic reinvestment rate. For comparing investments with similar cash flow patterns, IRR works well; for different patterns, NPV at your actual required return may be better.",
+        "prosAndCons": {
+          "pros": [
+            "Handles multiple, irregular cash flows",
+            "Industry standard for real estate and private equity",
+            "Compares investments with different structures",
+            "Considers time value of money precisely",
+            "Single metric summarizing complex investment"
+          ],
+          "cons": [
+            "Assumes reinvestment at IRR rate (often unrealistic)",
+            "Multiple solutions possible for non-conventional cash flows",
+            "Can be manipulated by timing (early distributions boost IRR)",
+            "Complex to calculate without spreadsheet",
+            "Doesn't indicate scale (10% on $1M vs $10K)"
+          ]
+        }
+      }
     },
     {
       "id": "total-return",
@@ -82,7 +160,33 @@
         "Tax treatment varies by income type"
       ],
       "bestFor": "Dividend stocks, bonds, REITs",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The concept of total return emerged as investors recognized that price-only returns dramatically understated bond and dividend stock performance. Bond indices in the early 20th century tracked prices but not coupon payments, creating misleading performance records. Roger Ibbotson's 'Stocks, Bonds, Bills, and Inflation' (SBBI) yearbook, first published in 1976, established total return as the standard for historical asset class comparison. The study showed that dividends comprised roughly 40% of stock market total return historically—ignoring them fundamentally misrepresents equity investing. Modern index providers (S&P, MSCI) publish both price-only and total return versions of indices. The S&P 500's frequently quoted level is price-only; the S&P 500 Total Return Index includes reinvested dividends and tells a different story—$10,000 invested in 1990 grew to roughly $120,000 price-only but over $180,000 total return.",
+        "scientificBasis": "Total return captures all sources of investment value: capital appreciation (price change) plus income (dividends, interest, distributions). For an investment bought at P0, sold at P1, receiving income D: Total Return = (P1 - P0 + D) / P0. This can be annualized using CAGR methodology. 'Total return with dividends reinvested' assumes income is used to purchase additional shares at the time received, compounding growth. This reflects actual investor experience better than price-only return. For bonds, total return is essential: a 5% coupon bond might trade at price discount or premium, but total return combines price change with coupon payments. Comparing stock price appreciation to bond total return is an apples-to-oranges mistake that disadvantages bonds.",
+        "examples": [
+          "Dividend stock: Buy at $100, sell at $110, received $4 dividends during holding. Total return = ($110 - $100 + $4) / $100 = 14%. Price-only return was only 10%—dividends added 4 percentage points.",
+          "Bond investment: Buy $10,000 face value bond at $9,500, receive $400 annual coupon for 3 years, sell at $9,800. Total gain = $9,800 - $9,500 + ($400 × 3) = $1,500. Total return = $1,500 / $9,500 = 15.8% over 3 years, or ~5% annually.",
+          "REIT comparison: REIT A: +15% price, 3% yield = 18% total. REIT B: +5% price, 10% yield = 15% total. Price-only comparison misleads—A still wins but the gap is smaller than price suggests."
+        ],
+        "comparison": "Total return is the 'true' measure of investment performance but requires tracking income. Price-only return is easier to see (just compare prices) but incomplete. For growth stocks paying minimal dividends, the difference is small. For high-yield investments (REITs, utilities, bonds), ignoring income dramatically understates return. When comparing index returns, always verify whether dividends are included—'S&P 500 returned 10%' might mean price-only or total return, a meaningful difference over time. Tax considerations add complexity: qualified dividends are taxed at capital gains rates, interest at ordinary income rates. After-tax total return is the ultimate measure but requires individual tax situation analysis.",
+        "prosAndCons": {
+          "pros": [
+            "Most complete measure of investment performance",
+            "Essential for fair comparison of income vs growth investments",
+            "Reveals true performance of dividend stocks and bonds",
+            "Standard for academic and professional analysis",
+            "Shows actual wealth accumulation"
+          ],
+          "cons": [
+            "Requires tracking all income received",
+            "Reinvestment assumption may not match reality",
+            "Tax treatment of income varies (complicates after-tax analysis)",
+            "Dividend dates, amounts require careful record-keeping",
+            "Published index returns may be price-only"
+          ]
+        }
+      }
     }
   ],
   "sources": [

@@ -23,7 +23,33 @@
         "First cycles have more deep sleep, later have more REM"
       ],
       "bestFor": "Planning optimal bedtime",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The concept of sleep cycles emerged from the pioneering work of sleep researchers in the 1950s and 1960s. In 1953, Eugene Aserinsky and Nathaniel Kleitman at the University of Chicago discovered rapid eye movement (REM) sleep while studying infant sleep patterns. Their work, using early electroencephalography (EEG), revealed that sleep was not a uniform state but consisted of distinct stages that cycled throughout the night. Subsequent research by William Dement (often called the father of sleep medicine) and others mapped the architecture of sleep: each cycle progresses from light sleep (Stages 1-2) through deep slow-wave sleep (Stages 3-4, now combined as N3) and then REM sleep, where most dreaming occurs. The approximately 90-minute cycle duration was established through polysomnographic studies conducted in sleep laboratories worldwide. The sleep cycle calculator concept emerged as a practical application of this research, popularized by sleep hygiene advocates and later by consumer sleep tracking devices. The '15 minutes to fall asleep' assumption reflects average sleep onset latency in healthy adults without sleep disorders.",
+        "scientificBasis": "Sleep architecture follows a predictable pattern driven by the interaction of two biological processes: the circadian rhythm (the body's ~24-hour internal clock) and sleep homeostasis (the accumulation of sleep pressure during waking hours). Each 90-minute sleep cycle contains distinct stages with different physiological functions. N1 (light sleep) is transitional, lasting only a few minutes. N2 (light sleep) comprises about 50% of total sleep time and features sleep spindles and K-complexes on EEG—important for memory consolidation. N3 (deep/slow-wave sleep) is when the body repairs tissues, builds muscle, and strengthens immune function; it predominates in earlier cycles. REM sleep, characterized by rapid eye movements, paralysis of voluntary muscles, and dreaming, increases in duration through the night and is crucial for emotional processing and memory. The rationale for waking at cycle completion is that emerging from N3 deep sleep causes 'sleep inertia'—grogginess and cognitive impairment that can persist for 30 minutes or more. Waking during lighter N1/N2 or after REM completion feels more natural.",
+        "examples": [
+          "To wake at 7:00 AM after 5 cycles: 7:00 - (5 × 90) - 15 = 7:00 - 7h30m - 15m = 11:15 PM bedtime. This provides 7.5 hours of sleep.",
+          "To wake at 6:30 AM after 6 cycles: 6:30 - (6 × 90) - 15 = 6:30 - 9h - 15m = 9:15 PM bedtime. This provides 9 hours of sleep.",
+          "To wake at 8:00 AM after 4 cycles (minimum recommended): 8:00 - (4 × 90) - 15 = 8:00 - 6h - 15m = 1:45 AM bedtime. Only 6 hours—not recommended long-term."
+        ],
+        "comparison": "The 90-minute cycle method is more precise than simply targeting '8 hours' because it accounts for sleep architecture. The NSF recommendations (7-9 hours for adults) align with 5-6 cycles but don't address the timing of waking. The chronotype consideration adds another layer—an early chronotype might achieve better sleep quality with an earlier bedtime and wake time, even if the cycle count is the same. Smart alarm apps attempt to detect optimal wake timing through movement sensing, though their accuracy is debated. The 90-minute method is a useful starting framework, but individual cycle length varies (75-120 minutes), so personal experimentation is recommended.",
+        "prosAndCons": {
+          "pros": [
+            "Based on established sleep architecture research",
+            "Helps avoid waking during deep sleep (reducing grogginess)",
+            "Simple calculation for planning bedtime",
+            "Can improve subjective morning alertness",
+            "Provides specific timing rather than vague hour ranges"
+          ],
+          "cons": [
+            "Individual cycle length varies significantly (75-120 min)",
+            "Assumes 15-minute sleep onset latency—varies widely",
+            "Doesn't account for sleep fragmentation or disorders",
+            "First and last cycles differ in composition",
+            "May create anxiety about hitting 'perfect' timing"
+          ]
+        }
+      }
     },
     {
       "id": "nsf-recommendations",
@@ -41,7 +67,33 @@
         "Some rare individuals are 'short sleepers'"
       ],
       "bestFor": "Understanding recommended sleep amounts",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The National Sleep Foundation's sleep duration recommendations were published in 2015 following a rigorous two-year review process. An expert panel of 18 scientists and researchers from organizations including the American Academy of Pediatrics, American Geriatrics Society, and American Psychiatric Association reviewed over 300 scientific publications on sleep duration and health outcomes. This was the first time a multidisciplinary expert panel conducted such a comprehensive review using a formal evidence-grading system. The resulting recommendations updated and refined previous guidelines, adding nuance to age-specific ranges and expanding the categories to include newborns, infants, toddlers, preschoolers, school-age children, teenagers, young adults, adults, and older adults. The guidelines distinguished between 'recommended,' 'may be appropriate,' and 'not recommended' sleep durations for each age group, acknowledging individual variation while establishing evidence-based boundaries.",
+        "scientificBasis": "The NSF recommendations synthesize evidence from epidemiological studies linking sleep duration to health outcomes including cardiovascular disease, obesity, diabetes, mental health, cognitive function, and mortality. The research consistently shows a U-shaped relationship: both short sleep (typically <6 hours) and long sleep (>10 hours) are associated with adverse health outcomes, though the causal direction with long sleep is debated (long sleep may be a marker of underlying illness rather than a cause). The 7-9 hour recommendation for adults represents the range where health outcomes are optimized for most people. The age-specific variations reflect developmental needs: children and adolescents require more sleep for growth hormone release, brain development, and learning consolidation. Older adults' slightly lower recommendation (7-8 hours) reflects changes in sleep architecture with aging—reduced deep sleep, more fragmentation, and shifted circadian timing—though the actual need for sleep may not decrease substantially. Sleep quality factors (continuity, depth, timing) are increasingly recognized as important alongside duration.",
+        "examples": [
+          "A 35-year-old adult should aim for 7-9 hours. At 8 hours, they complete approximately 5-6 sleep cycles per night.",
+          "A 16-year-old teenager needs 8-10 hours—more than adults due to ongoing brain development and the natural circadian delay during adolescence.",
+          "A 70-year-old may find 7-8 hours appropriate, though they may achieve this through nighttime sleep plus a brief daytime nap."
+        ],
+        "comparison": "The NSF guidelines provide total duration targets, while the 90-minute cycle method addresses timing within those targets. Someone aiming for the NSF-recommended 7-9 hours would target 5-6 complete cycles. The chronotype approach adds timing considerations—a night owl teenager might need 8-10 hours but struggle with early school start times that conflict with their biology. All three approaches are complementary: NSF provides the 'how much,' cycles provide the 'when to wake,' and chronotype provides the 'optimal timing window.'",
+        "prosAndCons": {
+          "pros": [
+            "Based on comprehensive systematic review by expert panel",
+            "Age-specific recommendations address developmental differences",
+            "Links sleep duration to health outcomes",
+            "Widely recognized and cited by health organizations",
+            "Provides clear boundaries for what constitutes inadequate sleep"
+          ],
+          "cons": [
+            "Individual variation means some people thrive outside the ranges",
+            "Does not address sleep quality or continuity",
+            "Rare 'short sleepers' (genetic variant) may not need 7+ hours",
+            "Social and work constraints make recommendations difficult to follow",
+            "Long sleep association with poor outcomes is correlational, not necessarily causal"
+          ]
+        }
+      }
     },
     {
       "id": "chronotype",
@@ -58,7 +110,33 @@
         "Chronotype can shift with age"
       ],
       "bestFor": "Aligning sleep with natural rhythm",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The concept of chronotypes—individual differences in preferred timing of sleep and wakefulness—was formalized through research beginning in the 1970s. Swedish researchers Olov Östberg and James Horne developed the Morningness-Eveningness Questionnaire (MEQ) in 1976, which became the standard tool for assessing chronotype. Research by Till Roenneberg and colleagues in the 2000s introduced the concept of 'social jetlag'—the misalignment between an individual's biological clock and social obligations—and developed the Munich Chronotype Questionnaire (MCTQ). Their work, involving hundreds of thousands of participants, revealed that chronotype follows a roughly normal distribution, with most people being intermediate types and smaller percentages being extreme morning larks or night owls. Chronotype shifts predictably with age: children tend toward morningness, adolescents shift dramatically toward eveningness (explaining teenagers' difficulty with early school times), and chronotype gradually shifts back toward morningness throughout adulthood. Recent genetic studies have identified clock genes (PER, CRY, CLOCK, BMAL1) that influence chronotype, confirming its biological basis.",
+        "scientificBasis": "Chronotype reflects individual variation in circadian rhythm timing, controlled by the suprachiasmatic nucleus (SCN) in the hypothalamus—the body's master clock. The SCN generates approximately 24-hour rhythms in gene expression that influence melatonin secretion, cortisol release, body temperature, and alertness. Genetic variations in clock genes cause the circadian period to run slightly faster (morning types) or slower (evening types) than 24 hours, affecting preferred sleep timing. Morning types experience melatonin onset and cortisol awakening response earlier, making them naturally sleepy and alert at earlier times. Evening types have delayed biological rhythms, making early bedtimes difficult and morning wake times unpleasant. Importantly, chronotype affects performance timing: morning types perform better on cognitive tasks in the morning, while evening types peak later in the day. Forcing individuals to work against their chronotype—as occurs with early school and work start times for evening types—leads to chronic sleep deprivation, reduced performance, and health consequences collectively termed 'social jetlag.'",
+        "examples": [
+          "An extreme morning type (10% of population) might naturally wake at 5 AM feeling refreshed and feel sleepy by 9 PM, regardless of work schedule.",
+          "An extreme evening type (10% of population) struggles to fall asleep before midnight and, left to their natural schedule, would wake around 9-10 AM.",
+          "An adolescent's biology shifts toward evening type; a teen who could wake easily at 7 AM as a child may now struggle until this phase passes in their early 20s."
+        ],
+        "comparison": "Chronotype adds a personalization layer to sleep recommendations. While NSF guidelines suggest 7-9 hours for adults, a night owl achieving those hours from 1 AM to 9 AM may feel better than if they forced themselves to sleep from 10 PM to 6 AM. The 90-minute cycle method can be applied within any chronotype's preferred window. Social constraints often prevent individuals from sleeping according to their chronotype, making these recommendations aspirational for many. Sleep tracking and experimentation can help individuals identify their natural sleep window when schedules permit.",
+        "prosAndCons": {
+          "pros": [
+            "Acknowledges biological variation in sleep timing",
+            "Based on solid circadian rhythm research",
+            "Explains why some people struggle with conventional schedules",
+            "Can improve sleep quality by aligning with natural rhythms",
+            "Validated through genetic and physiological studies"
+          ],
+          "cons": [
+            "Social and work schedules often conflict with chronotype",
+            "Complete alignment with chronotype may be impractical",
+            "Chronotype can be used as an excuse rather than a guide",
+            "Light exposure and habits can partially shift chronotype",
+            "Extreme chronotypes face persistent social jetlag regardless of awareness"
+          ]
+        }
+      }
     }
   ],
   "sources": [

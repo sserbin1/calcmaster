@@ -14,7 +14,33 @@
       },
       "accuracy": "Standard social convention",
       "bestFor": "Legal age, social contexts",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The concept of counting age by completed years traces back to ancient civilizations. The Romans used a system based on calendar years, and this convention spread throughout Europe during the Roman Empire. In many Asian cultures, a different tradition emerged where newborns are considered one year old at birth. The Western standard of incrementing age on each birthday anniversary became codified in legal systems during the medieval period, when birth records began to be kept systematically by churches. By the 18th century, civil registration of births made precise age tracking universal across Europe and the Americas, cementing the birthday-based system as the global legal standard.",
+        "scientificBasis": "Standard age calculation relies on the Gregorian calendar system, which was introduced by Pope Gregory XIII in 1582 to correct the drift in the Julian calendar. The Gregorian calendar has an average year length of 365.2425 days, achieved through a leap year rule: years divisible by 4 are leap years, except century years, which must be divisible by 400. This system accurately tracks the tropical year (365.24219 days), the time it takes Earth to complete one orbit around the Sun. Standard age calculation simply counts complete revolutions of the Earth around the Sun since birth, making it an astronomically grounded measure. The calculation uses integer arithmetic: subtract the birth year from the current year, then adjust by one if the birthday has not yet occurred in the current calendar year. This method is deterministic and unambiguous, making it ideal for legal and administrative use where consistency across jurisdictions is essential.",
+        "examples": [
+          "Example 1: A person born on March 15, 1990, checked on January 10, 2025. Since the birthday has not occurred yet in 2025, the age is 2025 - 1990 - 1 = 34 years old.",
+          "Example 2: A person born on June 1, 2000, checked on September 20, 2025. Since the birthday has passed in 2025, the age is 2025 - 2000 = 25 years old.",
+          "Example 3: A person born on December 31, 1999, checked on December 31, 2025. Since the birthday is today, they turn 2025 - 1999 = 26 years old."
+        ],
+        "comparison": "Compared to exact age (years/months/days) and decimal age methods, standard age calculation is the simplest and most widely understood. It sacrifices granularity for clarity and social convention. While exact age provides more detail and decimal age offers precision for scientific use, standard age is the only method universally accepted in legal contexts such as voting eligibility, drinking age, and retirement qualifications.",
+        "prosAndCons": {
+          "pros": [
+            "Universally understood and accepted in legal and social contexts",
+            "Simple to calculate with no special tools required",
+            "Deterministic and unambiguous for any given date",
+            "Consistent across all calendar implementations",
+            "Aligns with how people naturally think about and communicate their age"
+          ],
+          "cons": [
+            "Lacks precision for medical or scientific applications",
+            "Does not account for time of day of birth",
+            "Cannot express partial years or fine-grained differences",
+            "Leap year birthdays (Feb 29) create edge cases in some legal systems",
+            "Different cultural age systems (e.g., East Asian) can cause confusion"
+          ]
+        }
+      }
     },
     {
       "id": "exact-age",
@@ -31,7 +57,33 @@
         "Feb 29 birthdays have special handling"
       ],
       "bestFor": "Detailed age breakdowns",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The need for exact age breakdowns emerged with the development of actuarial science in the 17th century. Early life insurance companies in London, such as the Amicable Society founded in 1706, required precise age calculations to set premium rates. As medical science advanced in the 19th and 20th centuries, pediatricians began tracking child development against age milestones measured in months and days. Immigration authorities also adopted exact age calculations to enforce age-dependent policies. The modern practice of expressing age as years, months, and days became standard in healthcare, insurance, and government administration, where granular age data informs policy decisions and eligibility determinations.",
+        "scientificBasis": "Exact age calculation decomposes the time interval between two dates into years, months, and remaining days. Unlike simple subtraction, this method must account for the irregular structure of the Gregorian calendar: months range from 28 to 31 days, and February gains a day in leap years. The algorithm works by first counting complete years (using the birthday method), then counting complete months from the last birthday to the current date, and finally counting remaining days. When the current day is less than the birth day, the algorithm borrows from the previous month, using that month's actual length. This approach mirrors how humans naturally think about age periods. The average year is 365.2425 days and the average month is approximately 30.44 days, but the exact calculation uses actual calendar month lengths rather than averages, producing results that are calendar-accurate though occasionally yielding different month counts depending on which months are traversed.",
+        "examples": [
+          "Example 1: Born January 15, 1990, current date April 10, 2025. Complete years: 35. From Jan 15 to Apr 10: 2 complete months (Feb 15 to Mar 15, Mar 15 to Apr 10 is not complete). Remaining days from Mar 15 to Apr 10 = 26 days. Result: 35 years, 2 months, 26 days.",
+          "Example 2: Born February 29, 2000 (leap year), current date March 1, 2025 (non-leap year). Complete years: 24 (last birthday was Feb 28, 2025 or Mar 1, 2025 depending on convention). Result: approximately 25 years, 0 months, 1 day.",
+          "Example 3: Born August 30, 1985, current date February 28, 2025. Complete years: 39. From Aug 30 to Feb 28: 5 complete months (Sep 30 to Jan 30), remaining days from Jan 30 to Feb 28 = 29 days. Result: 39 years, 5 months, 29 days."
+        ],
+        "comparison": "Exact age provides more detail than standard age but less computational convenience than decimal age. It is the preferred method when human-readable precision is needed, such as in pediatric medicine where developmental milestones are tracked by month. Standard age loses the month/day detail, while decimal age converts everything into a single number that is less intuitive for non-technical users. Exact age strikes a balance between precision and readability.",
+        "prosAndCons": {
+          "pros": [
+            "Provides human-readable precision with years, months, and days",
+            "Essential for pediatric development tracking and medical records",
+            "Accounts for actual calendar month lengths rather than averages",
+            "Useful for legal contexts requiring age down to the day",
+            "Intuitive format that most people can understand easily"
+          ],
+          "cons": [
+            "Month counts can vary depending on which months are traversed",
+            "February 29 birthdays require special handling and conventions",
+            "More complex to calculate than simple year-based age",
+            "Results can differ slightly between implementations due to edge cases",
+            "Not suitable for mathematical operations like averaging across populations"
+          ]
+        }
+      }
     },
     {
       "id": "decimal-age",
@@ -44,7 +96,33 @@
       },
       "accuracy": "Precise for calculations",
       "bestFor": "Scientific applications, pediatric growth charts",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Decimal age representation gained prominence in the mid-20th century with the rise of quantitative methods in medicine and social sciences. The Centers for Disease Control and Prevention (CDC) adopted decimal age for pediatric growth charts in the 1970s, enabling precise plotting of children's height and weight against statistical percentiles. Epidemiologists and demographers began using decimal age extensively to calculate mortality rates, fertility rates, and other population statistics where fractional years improve analytical accuracy. The method also found adoption in actuarial science, where insurance calculations require continuous age variables rather than discrete year-based values. Today, decimal age is a standard input format for many medical calculators and statistical software packages.",
+        "scientificBasis": "Decimal age converts the discrete calendar-based age into a continuous numerical value by dividing the total number of days lived by the average number of days in a year (365.25, accounting for leap years). This transformation is mathematically important because it allows age to be used as a continuous variable in regression models, growth curve fitting, and survival analysis. The formula is straightforward: Decimal Age = (Current Date - Birth Date) in days / 365.25. The divisor of 365.25 accounts for the leap year cycle (three common years of 365 days plus one leap year of 366 days every four years). For higher precision, 365.2425 can be used to account for the Gregorian calendar's century rule, which skips leap years in century years not divisible by 400. Decimal age enables interpolation between annual data points, making it invaluable for growth velocity calculations where the rate of change between measurements matters more than the absolute value. This continuous representation also simplifies statistical comparisons across cohorts of different ages.",
+        "examples": [
+          "Example 1: A child born on January 1, 2020, measured on July 1, 2025. Total days = 2,008 days. Decimal age = 2008 / 365.25 = 5.494 years. This allows precise plotting on a CDC growth chart.",
+          "Example 2: A patient born on March 15, 1985, visiting on October 3, 2025. Total days = 14,812 days. Decimal age = 14812 / 365.25 = 40.554 years. Used for age-adjusted medical reference ranges.",
+          "Example 3: An infant born on September 10, 2024, checked on March 10, 2025. Total days = 181 days. Decimal age = 181 / 365.25 = 0.495 years. Critical for tracking rapid early development milestones."
+        ],
+        "comparison": "Decimal age offers the highest computational precision among age calculation methods. Unlike standard age (integer years only) or exact age (years/months/days), decimal age produces a single continuous number suitable for mathematical operations such as averaging, regression, and interpolation. However, it is less intuitive for everyday communication. Standard age is better for social and legal contexts, while exact age is better for human-readable precision. Decimal age excels in any scenario requiring age as a numerical variable in formulas or statistical models.",
+        "prosAndCons": {
+          "pros": [
+            "Provides a single continuous value ideal for mathematical computations",
+            "Essential for plotting growth charts and statistical percentiles",
+            "Enables precise interpolation between measurement points",
+            "Standard format for epidemiological and actuarial calculations",
+            "Easily comparable across individuals without ambiguity"
+          ],
+          "cons": [
+            "Not intuitive for everyday communication or social contexts",
+            "The choice of divisor (365.25 vs 365.2425) introduces minor variation",
+            "Loses the calendar context of months and specific dates",
+            "Cannot represent cultural or legal age conventions accurately",
+            "Precision may imply false accuracy when exact birth time is unknown"
+          ]
+        }
+      }
     }
   ],
   "sources": [

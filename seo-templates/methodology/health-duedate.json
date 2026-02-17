@@ -25,7 +25,33 @@
       "bestFor": "Standard clinical estimation with regular cycles",
       "isDefault": true,
       "yearIntroduced": 1812,
-      "author": "Franz Naegele"
+      "author": "Franz Naegele",
+      "expandedContent": {
+        "history": "Naegele's Rule is named after Franz Karl Naegele (1778-1851), a German obstetrician who served as director of the lying-in hospital at Heidelberg University. He published this method in his influential 1812 textbook 'Lehrbuch der Geburtshilfe' (Textbook of Obstetrics). However, Naegele himself credited the calculation to his colleague Hermann Boerhaave, a Dutch botanist and physician, who had proposed a similar method decades earlier. The rule quickly became the standard for pregnancy dating throughout Europe and eventually worldwide. Its elegance lies in its simplicity—requiring only one piece of information (LMP date) and producing an easy-to-remember calculation. Despite being over 200 years old and predating any understanding of hormonal physiology or modern embryology, Naegele's Rule remains the primary method for initial due date estimation in clinical practice today. Its longevity speaks to its reasonable accuracy for the average pregnancy, though modern ultrasound has revealed its limitations for individual cases.",
+        "scientificBasis": "Naegele's Rule is based on the observation that human pregnancy averages 280 days (40 weeks) from the first day of the last menstrual period. This accounts for the approximately 2 weeks between LMP and ovulation/conception (assuming a 28-day cycle with day-14 ovulation) plus 266 days of actual embryonic/fetal development. The 280-day figure was derived from population-level observations in the 18th and 19th centuries. Modern studies have largely confirmed this average: a 1990 study in Obstetrics & Gynecology found median pregnancy length of 280 days from LMP for first pregnancies and 279 days for subsequent pregnancies. However, the distribution around this mean is substantial—about 80% of babies are born within 2 weeks of their due date, but the actual birth can occur anywhere from 37-42 weeks and still be considered full-term. The rule's assumptions about cycle length and ovulation timing are its key limitations, as only about 10-15% of women have textbook 28-day cycles with day-14 ovulation.",
+        "examples": [
+          "LMP of January 1st: January 1 + 280 days = October 8th due date. Using the shortcut: January + 9 months + 7 days = October 8th.",
+          "LMP of April 15th: April 15 - 3 months = January 15, + 1 year + 7 days = January 22nd of next year. This demonstrates the alternative calculation method.",
+          "LMP of October 20th: Using 280-day addition = July 27th. The pregnancy spans two calendar years, which the formula handles automatically."
+        ],
+        "comparison": "Naegele's Rule provides the simplest and most widely used due date calculation, but its accuracy depends heavily on having a regular 28-day cycle. Compared to the cycle-adjusted method, standard Naegele's can be off by several days for women with longer or shorter cycles—a 35-day cycle means Naegele's prediction is about a week early, since ovulation occurred later. The conception-based method, when applicable, eliminates the LMP assumption entirely and is more accurate for women who know their ovulation date through IVF or tracking. First-trimester ultrasound has become the gold standard for clinical dating, accurate to ±3-5 days compared to Naegele's ±14 days. Current ACOG guidelines recommend that if ultrasound dating differs from LMP-based dating by more than 7 days in the first trimester (or 10-14 days later), the ultrasound date should be used. Despite these alternatives, Naegele's remains valuable as an immediate estimate requiring no technology.",
+        "prosAndCons": {
+          "pros": [
+            "Simple calculation requiring only LMP date",
+            "No equipment or technology needed",
+            "Universally understood by healthcare providers",
+            "Provides immediate estimate at first prenatal visit",
+            "Reasonably accurate for women with regular 28-day cycles"
+          ],
+          "cons": [
+            "Assumes 28-day menstrual cycle (only ~10-15% of women)",
+            "Assumes ovulation on day 14 (variable in reality)",
+            "Inaccurate for irregular cycles",
+            "Cannot account for late or early ovulation",
+            "Only 5% of babies born on calculated due date"
+          ]
+        }
+      }
     },
     {
       "id": "cycle-adjusted",
@@ -45,7 +71,33 @@
         "Still assumes consistent cycles"
       ],
       "bestFor": "Those with cycles longer or shorter than 28 days",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The cycle-adjusted calculation emerged as clinicians recognized that Naegele's Rule's 28-day assumption created systematic errors for women with different cycle lengths. Research throughout the 20th century documented that menstrual cycles normally range from 21-35 days, with the variation occurring primarily in the follicular phase (before ovulation) rather than the luteal phase (after ovulation). The luteal phase remains relatively constant at 12-16 days regardless of overall cycle length. This insight led to the adjusted formula: if a woman has a 35-day cycle, she likely ovulates around day 21 rather than day 14, meaning conception occurs about a week later than Naegele's assumes. Adding this week to the due date produces a more accurate estimate. Modern fertility awareness research, particularly studies using ultrasound confirmation of ovulation, validated this adjustment. The cycle-adjusted method became increasingly popular as women began tracking their cycles more carefully and healthcare providers recognized the importance of individualized care.",
+        "scientificBasis": "The cycle-adjusted method rests on the biological principle that luteal phase length (time from ovulation to menstruation) is relatively constant at approximately 14 days (range 10-16), while follicular phase length (menstruation to ovulation) varies significantly between women and even between cycles in the same woman. This asymmetry means that longer cycles indicate later ovulation, not longer pregnancies. A woman with a 35-day cycle ovulates around day 21 (35 - 14 = 21), not day 14. Since conception can only occur around ovulation, her pregnancy begins about 7 days later than the standard formula assumes. The adjustment (Cycle Length - 28) adds or subtracts days to account for this timing difference. Studies comparing cycle-adjusted calculations to ultrasound dating show improved accuracy, particularly for cycles outside the 26-30 day range. The adjustment becomes especially important for women with cycles over 35 days or under 25 days, where standard Naegele's can be off by more than a week.",
+        "examples": [
+          "35-day cycle with LMP June 1st: Standard Naegele's = March 8th. Cycle-adjusted = June 1 + 280 + (35-28) = June 1 + 287 days = March 15th. The due date shifts a full week later.",
+          "24-day cycle with LMP August 10th: Standard = May 17th. Cycle-adjusted = August 10 + 280 + (24-28) = August 10 + 276 days = May 13th. Shorter cycles mean earlier due dates.",
+          "32-day cycle with LMP November 15th: Standard = August 22nd. Cycle-adjusted = November 15 + 280 + 4 = November 15 + 284 days = August 26th. A 4-day difference that could affect clinical decisions."
+        ],
+        "comparison": "The cycle-adjusted calculation offers meaningful improvement over standard Naegele's for women who know their typical cycle length. For a woman with a 35-day cycle, the 7-day adjustment could mean the difference between considering her 'overdue' at 41 weeks versus recognizing she's actually at 40 weeks. This has real clinical implications for decisions about labor induction. However, the method still assumes cycles are consistent, which isn't always true—stress, illness, travel, and other factors can shift ovulation timing. For this reason, ultrasound dating remains more accurate for individual pregnancies. The cycle-adjusted method is most valuable when cycle length is well-documented (through tracking) and fairly consistent. For women with highly irregular cycles (varying by more than 7 days), even the adjusted calculation may be unreliable, and ultrasound dating becomes essential.",
+        "prosAndCons": {
+          "pros": [
+            "Accounts for individual cycle length variation",
+            "More accurate than Naegele's for non-28-day cycles",
+            "Still simple to calculate",
+            "Reduces systematic bias in women with longer or shorter cycles",
+            "Particularly valuable for cycles over 32 or under 26 days"
+          ],
+          "cons": [
+            "Requires knowing typical cycle length",
+            "Assumes cycles are consistent (not always true)",
+            "Still can't account for unusual cycles or mistimed ovulation",
+            "Less accurate than ultrasound dating",
+            "May not be valid for women with PCOS or other cycle disorders"
+          ]
+        }
+      }
     },
     {
       "id": "conception-based",
@@ -65,7 +117,33 @@
         "Usually only available with IVF or careful tracking"
       ],
       "bestFor": "IVF pregnancies, tracked ovulation",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The conception-based method represents the most physiologically accurate approach to due date calculation, as it measures from the actual start of embryonic development rather than a calendar convention. Historically, conception dates were rarely known with certainty outside of clinical settings. However, two developments made this method increasingly relevant: the growth of in vitro fertilization (IVF) since the first successful birth in 1978, where conception timing is precisely controlled, and the proliferation of ovulation tracking methods including basal body temperature, ovulation predictor kits, and digital fertility monitors. For IVF pregnancies, conception timing is documented to the day (or even hour for ICSI procedures). For naturally conceived pregnancies with confirmed ovulation, the conception window can be narrowed to 24-48 hours—far more precise than LMP-based estimates. This precision has made conception-based dating the preferred method for IVF pregnancies and has influenced clinical recommendations for dating high-risk pregnancies.",
+        "scientificBasis": "Human gestation from conception to birth averages 266 days (38 weeks), derived from studies correlating known ovulation or conception dates with spontaneous delivery timing. This is 14 days shorter than the LMP-based 280 days because it eliminates the approximately 2-week follicular phase. The conception-based method eliminates the primary source of error in LMP-based calculations: uncertainty about ovulation timing. When conception date is precisely known, as in IVF, the resulting due date has significantly reduced variance. Studies comparing IVF conception dating to first-trimester ultrasound show excellent correlation, validating the 266-day average. For natural conception with confirmed ovulation (via temperature shift, LH surge, or ultrasound), the likely fertilization window is within 12-24 hours of ovulation, since the egg remains viable for only one day. This precision makes conception-based dating the most accurate available method, though it's accessible to only a subset of pregnancies.",
+        "examples": [
+          "IVF embryo transfer on March 15th (Day 3 embryo): Conception occurred approximately March 12th (3 days before transfer). Due date = March 12 + 266 days = December 3rd. Clinical records provide exact timing.",
+          "Confirmed ovulation via positive OPK on July 8th: Conception occurred July 8-9th. Due date = July 8 + 266 days = March 31st. The LH surge predicts ovulation within 24-36 hours.",
+          "Known intercourse timing with temperature shift: A woman tracking BBT sees a temperature rise on Day 16, confirming ovulation on Day 15 (September 20th). Due date = September 20 + 266 = June 13th."
+        ],
+        "comparison": "The conception-based method offers the highest theoretical accuracy because it eliminates the main source of error in other methods—uncertainty about ovulation timing. For IVF pregnancies, where conception is precisely documented, this method's accuracy approaches that of first-trimester ultrasound. For naturally conceived pregnancies with confirmed ovulation, it outperforms both Naegele's and cycle-adjusted calculations. However, the method's limitation is its applicability: only about 5-10% of pregnant women know their conception date with confidence. For the majority who conceive naturally without detailed tracking, LMP-based methods remain the starting point. Even for women who track cycles, uncertainty remains—sperm can survive up to 5 days, so intercourse on day 10 could result in conception on day 14. The conception-based method is most valuable when combined with clinical documentation (IVF) or prospective tracking (OPKs, BBT charts showing clear temperature shift).",
+        "prosAndCons": {
+          "pros": [
+            "Most accurate method when conception date is known",
+            "Eliminates LMP/ovulation timing uncertainty",
+            "Standard method for IVF pregnancies",
+            "Provides consistent reference point for gestational age",
+            "Particularly valuable for women with irregular cycles"
+          ],
+          "cons": [
+            "Requires knowing conception date (rarely available naturally)",
+            "Primarily useful for IVF or carefully tracked pregnancies",
+            "Sperm survival means conception may not match intercourse date",
+            "Less practical for routine clinical use",
+            "Most women cannot provide this information"
+          ]
+        }
+      }
     },
     {
       "id": "ultrasound",
@@ -82,7 +160,33 @@
         "Accuracy decreases after first trimester"
       ],
       "bestFor": "Clinical confirmation of dates",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Ultrasound dating revolutionized obstetric care when it became widely available in the 1970s and 1980s. Ian Donald and Tom Brown developed practical obstetric ultrasound in Glasgow in the late 1950s, with Donald publishing landmark work on fetal measurement in 1958. Early researchers recognized that embryonic and fetal growth follows remarkably consistent patterns in the first trimester, making measurements highly predictive of gestational age. Crown-rump length (CRL) measurement became standard by the 1980s, with multiple research groups developing regression equations relating CRL to gestational age. The most widely used are Robinson's 1975 formula and Hadlock's 1992 revision. First-trimester dating ultrasound is now recommended by ACOG, WHO, and other major organizations for all pregnancies when available, as it has been shown to reduce the rate of labor induction for post-term pregnancy and improve accuracy of prenatal screening tests. Modern 3D/4D ultrasound provides even more detailed assessment, though 2D measurements remain the standard for dating.",
+        "scientificBasis": "First-trimester ultrasound dating achieves high accuracy because embryonic growth is tightly controlled by genetic programming and relatively unaffected by maternal factors during this period. Between 6-12 weeks, embryos grow at approximately 1mm per day in crown-rump length regardless of maternal nutrition, health, or demographics. This biological consistency means that measuring the embryo provides a reliable 'biological clock' of pregnancy duration. The commonly cited formula (gestational age in days ≈ CRL in mm + 42) is a simplified approximation of more complex regression equations. After the first trimester, genetic and environmental factors begin to influence growth rate, reducing the accuracy of size-based dating. This is why ACOG recommends that if ultrasound dating differs from LMP dating by more than 7 days in the first trimester, the ultrasound date should be used. The ±3-5 day accuracy of first-trimester ultrasound significantly exceeds any calculation-based method.",
+        "examples": [
+          "CRL of 25mm at first ultrasound: Gestational age ≈ 25 + 42 = 67 days ≈ 9 weeks 4 days. Due date calculated from this dating. If LMP suggested 10 weeks 2 days, the ultrasound date would be used.",
+          "CRL of 45mm: Gestational age ≈ 87 days ≈ 12 weeks 3 days. This represents the upper range of optimal dating accuracy.",
+          "Discrepancy resolution: LMP suggests 8 weeks, ultrasound CRL of 10mm suggests 6 weeks 5 days. Since the difference exceeds 7 days, the due date is adjusted based on ultrasound, pushing the due date later by about 9 days."
+        ],
+        "comparison": "First-trimester ultrasound represents the clinical gold standard for pregnancy dating, with accuracy approximately 3-4 times better than LMP-based methods. While Naegele's Rule has ±14 day uncertainty and even cycle-adjusted calculations have ±7-10 day ranges, ultrasound at 8-12 weeks achieves ±3-5 day accuracy. This precision has significant clinical implications: proper dating affects the interpretation of prenatal screening tests (which are gestational age-dependent), decisions about timing of delivery, and the diagnosis of preterm or post-term pregnancy. However, ultrasound is not always available or affordable globally, and LMP-based calculations remain essential for initial estimates and resource-limited settings. This calculator provides calculation-based estimates that should be verified by ultrasound when possible. In clinical practice, the ultrasound date supersedes calculated dates when there is meaningful discrepancy.",
+        "prosAndCons": {
+          "pros": [
+            "Highest accuracy (±3-5 days in first trimester)",
+            "Independent of menstrual history",
+            "Clinical gold standard for dating confirmation",
+            "Reduces post-term labor inductions when used for dating",
+            "Improves accuracy of prenatal screening tests"
+          ],
+          "cons": [
+            "Requires ultrasound equipment and trained sonographer",
+            "Accuracy decreases after first trimester",
+            "Not available in all settings globally",
+            "Cost may be a barrier in some healthcare systems",
+            "Provides dating only—cannot calculate without equipment"
+          ]
+        }
+      }
     }
   ],
   "sources": [

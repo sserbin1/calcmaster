@@ -17,7 +17,33 @@
       },
       "accuracy": "±5%",
       "bestFor": "Standard floor/wall installations",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Straight-laid tile patterns date back to ancient Mesopotamia around 4000 BCE, where sun-dried clay tiles were arranged in simple grid formations to cover floors and walls. The Romans advanced tile manufacturing with consistent sizing, enabling standardized grid layouts in public baths and villas. Islamic architecture from the 8th century onward elevated tile work into an art form while maintaining geometric grid foundations. In Europe, encaustic tiles laid in straight patterns became popular in medieval churches and monasteries. The modern ceramic tile industry standardized tile sizes in the 20th century, with the Tile Council of North America (TCNA) establishing installation guidelines including waste factors. The 10% waste allowance for straight layouts became an industry standard based on decades of field data showing that edge cuts, breakage during cutting, and occasional manufacturing defects consistently account for approximately this percentage of additional material.",
+        "scientificBasis": "The straight layout tile calculation is based on the principle of area tessellation, where identical rectangular units tile a plane without gaps or overlaps. The formula divides the total surface area by the area of a single tile to determine the theoretical minimum number of tiles needed for complete coverage. The 10% waste factor is an empirically derived adjustment that accounts for several unavoidable material losses. First, perimeter cuts: tiles along walls and edges must be cut to fit, and the offcuts are often too small to reuse elsewhere. For a rectangular room, the number of perimeter cuts is proportional to the room's perimeter divided by the tile dimension, and each cut wastes a fraction of a tile. Second, breakage during cutting averages 2-3% for porcelain tiles cut with a wet saw and higher for brittle natural stone. Third, manufacturing variation means some tiles may have chips, color inconsistencies, or dimensional defects that make them unusable. The 10% factor has been validated by industry data from thousands of installations and represents a balance between minimizing excess and preventing shortages. For very small rooms or rooms with many obstacles, a 15% factor is more appropriate because the ratio of perimeter cuts to total tiles increases as room size decreases.",
+        "examples": [
+          "Example 1: A bathroom floor is 8 ft x 10 ft = 80 sq ft. Using 12 in x 12 in (1 sq ft) tiles: 80 / 1 = 80 tiles. With 10% waste: 80 x 1.10 = 88 tiles. Tiles are sold in boxes of 10, so purchase 9 boxes (90 tiles) for $54 at $6/box.",
+          "Example 2: A kitchen backsplash area is 30 sq ft using 4 in x 4 in subway tiles (0.111 sq ft each). Tiles needed: 30 / 0.111 = 270 tiles. With 10% waste: 270 x 1.10 = 297 tiles. At $0.75/tile = $222.75 in tile costs plus adhesive and grout.",
+          "Example 3: A large living room floor is 20 ft x 25 ft = 500 sq ft. Using 18 in x 18 in porcelain tiles (2.25 sq ft each): 500 / 2.25 = 222.2, round up to 223 tiles. With 10% waste: 223 x 1.10 = 245 tiles needed."
+        ],
+        "comparison": "Straight layout is the most material-efficient tile pattern, using approximately 10% waste compared to 15% for diagonal and 20% or more for herringbone or chevron patterns. Compared to diagonal layout, straight layout produces fewer cuts per row because tiles align with walls, meaning most edge tiles only need one straight cut rather than an angled cut. Compared to herringbone or chevron patterns, straight layout requires less skilled labor and can be installed more quickly, typically 20-30% faster by square foot. However, straight layout is visually simpler and can emphasize wall irregularities because the grid lines create strong visual references. Diagonal and offset patterns can disguise rooms that are slightly out of square.",
+        "prosAndCons": {
+          "pros": [
+            "Lowest waste factor (10%) of any common tile pattern",
+            "Simplest layout requiring the least skilled labor to install",
+            "Fastest installation time, reducing labor costs by 20-30% vs complex patterns",
+            "Easy to calculate material needs with straightforward area division",
+            "Works well with all tile sizes from small mosaics to large format tiles"
+          ],
+          "cons": [
+            "Visually simpler and may appear less decorative than diagonal or herringbone patterns",
+            "Emphasizes any out-of-square walls since grid lines create strong visual reference lines",
+            "Grout lines running in straight rows can make a room look narrower",
+            "More susceptible to visible lippage (uneven tile edges) if subfloor is not perfectly flat",
+            "Limited design flexibility compared to patterns that mix tile sizes or orientations"
+          ]
+        }
+      }
     },
     {
       "id": "diagonal",
@@ -29,7 +55,33 @@
         "description": "15% waste for diagonal cuts"
       },
       "bestFor": "Decorative patterns",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Diagonal tile laying has been a decorative technique since antiquity. Roman mosaics frequently employed diagonal arrangements, known as opus reticulatum when used in masonry, creating diamond-shaped patterns that added visual interest to floors and walls. During the Renaissance, Italian craftsmen refined diagonal tile work in grand palaces and cathedrals, where the 45-degree angle created an illusion of greater space in narrow corridors and small rooms. Victorian-era homes in the 19th century popularized diagonal tile patterns in entryways and kitchens as a mark of craftsmanship. The technique spread widely in the 20th century as manufactured tiles became more affordable and consistent in size, making diagonal installation accessible beyond luxury projects. The 15% waste factor for diagonal patterns was established through industry practice as installers documented the additional material needed for the angled edge cuts that this layout requires along every wall and perimeter.",
+        "scientificBasis": "Diagonal tile layout rotates the standard grid by 45 degrees relative to the room walls. This rotation means that every tile touching a wall or edge must be cut at a 45-degree angle, creating triangular waste pieces. The geometry explains the higher waste factor: in a straight layout, only tiles at two edges of each row need cutting, while in a diagonal layout, tiles at all four edges of the room require angled cuts. Mathematically, the number of perimeter tiles in a diagonal layout increases by a factor of approximately the square root of 2 (1.414) compared to straight layout, because the diagonal of a square tile is 1.414 times its side length, meaning more tiles intersect the perimeter per linear foot of wall. The half-tiles created by diagonal cuts have a triangular shape that rarely fits elsewhere in the layout, increasing true waste. Additionally, diagonal cuts place more stress on tiles during cutting, leading to a slightly higher breakage rate of 3-5% compared to 2-3% for straight cuts. These geometric and practical factors combine to justify the 15% waste allowance. For rooms with many corners, alcoves, or protrusions, the waste can reach 18-20% because each inside and outside corner requires additional custom cuts.",
+        "examples": [
+          "Example 1: A 10 ft x 12 ft foyer = 120 sq ft with 12 in x 12 in tiles. Tiles needed: 120 / 1 = 120 tiles. With 15% diagonal waste: 120 x 1.15 = 138 tiles. The extra 18 tiles account for the angled cuts at all four walls.",
+          "Example 2: A powder room floor is 5 ft x 6 ft = 30 sq ft using 8 in x 8 in tiles (0.444 sq ft each). Tiles needed: 30 / 0.444 = 67.6, round to 68. With 15% waste: 68 x 1.15 = 78 tiles. The small room size means proportionally more edge cuts.",
+          "Example 3: A diagonal tile accent area in a larger room covers 200 sq ft using 16 in x 16 in tiles (1.778 sq ft each). Tiles needed: 200 / 1.778 = 112.5, round to 113. With 15% waste: 113 x 1.15 = 130 tiles. Cost at $3.50/tile = $455 vs $396 for straight layout."
+        ],
+        "comparison": "Diagonal layout offers a middle ground between the simplicity of straight layout and the complexity of herringbone or chevron patterns. Compared to straight layout, it uses approximately 5% more material but creates a visually dynamic result that makes rooms appear larger and disguises out-of-square walls. Compared to herringbone, diagonal layout requires less cutting skill and wastes less material (15% vs 20%+), while still providing visual interest. The 45-degree angle makes diagonal layout particularly effective in narrow hallways and small rooms where it draws the eye along the longer diagonal dimension. However, for very large open areas, the visual impact of diagonal layout diminishes and the extra cost may not be justified compared to a straight layout.",
+        "prosAndCons": {
+          "pros": [
+            "Creates a visually dynamic diamond pattern that makes spaces appear larger",
+            "Effectively disguises walls and corners that are slightly out of square",
+            "Draws the eye along the room diagonal, enhancing the sense of spaciousness",
+            "More decorative than straight layout without the extreme complexity of herringbone",
+            "Works particularly well in small rooms, foyers, and narrow hallways"
+          ],
+          "cons": [
+            "Requires 15% waste factor compared to 10% for straight layout, increasing material cost",
+            "Every wall edge requires angled cuts, increasing installation time and labor cost",
+            "Higher breakage rate during cutting due to the stress of 45-degree angle cuts",
+            "Requires more skill to maintain consistent alignment across the full floor area",
+            "Small triangular offcuts from edge pieces are rarely reusable, creating more waste"
+          ]
+        }
+      }
     }
   ],
   "sources": [

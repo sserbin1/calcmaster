@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { generateOrganizationSchema, generateWebSiteSchema } from '@/lib/schema-generators'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -25,6 +26,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              generateOrganizationSchema(),
+              generateWebSiteSchema(),
+            ]),
+          }}
+        />
         <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur-sm">
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <a href="/" className="text-2xl font-bold text-[var(--primary)]">

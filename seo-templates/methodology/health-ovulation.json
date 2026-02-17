@@ -23,7 +23,33 @@
         "Not recommended for contraception"
       ],
       "bestFor": "Planning conception with regular cycles",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "The calendar method, also known as the rhythm method, emerged from early 20th-century research into the female reproductive cycle. In 1930, two physicians working independently—Japanese gynecologist Kyusaku Ogino and Austrian Hermann Knaus—simultaneously discovered that ovulation occurs at a predictable time before menstruation. Ogino studied surgical patients to determine that ovulation occurs 12-16 days before the next period, while Knaus refined this to 14-15 days through similar research. Their combined findings, known as the Ogino-Knaus method, were first promoted as a natural family planning technique by the Catholic Church in the 1930s as an acceptable alternative to artificial contraception. The method gained widespread use but also criticism due to high failure rates when used for contraception. For pregnancy achievement, however, the calendar method provides useful baseline estimates. Modern understanding confirms the 14-day luteal phase approximation while acknowledging significant individual variation.",
+        "scientificBasis": "The calendar method rests on two fundamental reproductive biology principles: the relative consistency of the luteal phase and the survival times of gametes. The luteal phase—the time between ovulation and menstruation—is controlled by the corpus luteum's lifespan and progesterone production, making it relatively constant at 12-16 days (average 14) regardless of overall cycle length. In contrast, the follicular phase (menstruation to ovulation) varies widely based on hormonal fluctuations, stress, illness, and other factors. The fertile window calculation accounts for sperm survival (up to 5 days in optimal cervical mucus) and egg viability (12-24 hours post-ovulation). The landmark 1995 Wilcox study in the New England Journal of Medicine demonstrated that virtually all pregnancies result from intercourse within a 6-day window ending on ovulation day, with peak fertility in the 2 days preceding ovulation. The calendar method approximates this window using only cycle length data.",
+        "examples": [
+          "A woman with a 28-day cycle: Ovulation Day = 28 - 14 = Day 14. Fertile window = Days 9-15. This is the 'textbook' cycle used in most educational materials.",
+          "A woman with a 32-day cycle: Ovulation Day = 32 - 14 = Day 18. Fertile window = Days 13-19. Her later ovulation means peak fertility occurs almost a week later than the 28-day average.",
+          "A woman with a 26-day cycle: Ovulation Day = 26 - 14 = Day 12. Fertile window = Days 7-13. She ovulates earlier, so fertility tracking should begin shortly after her period ends."
+        ],
+        "comparison": "The calendar method offers simplicity but lacks precision compared to other fertility awareness methods. While it requires no equipment or training, its reliance on statistical averages rather than biological signals limits accuracy. The symptothermal method, which combines calendar calculations with temperature and mucus monitoring, achieves 95-99% effectiveness for family planning with proper training. Ovulation predictor kits (OPKs) detect the LH surge 24-36 hours before ovulation with about 99% accuracy but cost money and only confirm impending ovulation. For conception purposes, the calendar method provides a reasonable starting point, but combining it with other signs improves timing significantly. Studies show that couples using multiple fertility indicators conceive faster than those using calendar calculations alone.",
+        "prosAndCons": {
+          "pros": [
+            "No cost or equipment required",
+            "Easy to understand and implement",
+            "Works reasonably well for regular 26-32 day cycles",
+            "Provides baseline estimate for planning",
+            "Can be combined with other methods for better accuracy"
+          ],
+          "cons": [
+            "Assumes all women ovulate 14 days before their period",
+            "Does not detect actual ovulation occurrence",
+            "Highly unreliable for irregular cycles",
+            "Not accurate enough for contraception (failure rate 12-24%)",
+            "Cannot account for cycle-to-cycle variation in the same woman"
+          ]
+        }
+      }
     },
     {
       "id": "variable-luteal",
@@ -32,7 +58,11 @@
       "formula": {
         "name": "Variable Calculation",
         "expression": "Earliest Ovulation = Cycle Length - 16\nLatest Ovulation = Cycle Length - 10\nExtended Fertile Window = Earliest - 5 to Latest + 1",
-        "description": "Creates wider window for more conservative estimate"
+        "variables": [
+          { "symbol": "Cycle Length", "meaning": "Days from first day of period to next period", "unit": "days" },
+          { "symbol": "16", "meaning": "Maximum typical luteal phase length", "unit": "days" },
+          { "symbol": "10", "meaning": "Minimum typical luteal phase length", "unit": "days" }
+        ]
       },
       "accuracy": "More conservative but captures actual ovulation better",
       "limitations": [
@@ -40,7 +70,33 @@
         "Still statistical, not biological detection"
       ],
       "bestFor": "Conservative family planning",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The variable luteal phase method evolved as researchers accumulated evidence that the 14-day luteal phase assumption was overly simplistic. Studies throughout the 1970s and 1980s demonstrated luteal phase variation between 10-17 days across different women, with individual women sometimes showing variation of 1-3 days between cycles. The World Health Organization's multinational fertility awareness studies in the 1980s documented this variability across diverse populations. This led fertility awareness educators to recommend wider windows when using calendar-based methods alone. The variable method became particularly important for contraceptive applications, where missing the actual fertile window has significant consequences. Modern fertility awareness-based methods (FABMs) typically use the variable calculation as a starting point, then narrow the fertile window using prospective indicators like basal body temperature and cervical mucus. For conception purposes, the wider window ensures couples don't miss their fertile days due to individual variation.",
+        "scientificBasis": "The luteal phase, while more consistent than the follicular phase, still shows meaningful biological variation. Research by the National Institutes of Health found luteal phases ranging from 10-17 days in healthy women, with a mean of 13.6 days rather than exactly 14. Factors affecting luteal phase length include age (shorter in older women), BMI, stress levels, and subtle hormonal variations. Importantly, luteal phase length can also vary within the same woman across different cycles. A 2020 study in npj Digital Medicine analyzing over 600,000 menstrual cycles from fertility tracking apps found that only 13% of cycles had textbook 28-day lengths, and luteal phases varied from 7-19 days. The variable method acknowledges this reality by creating a window that captures 95% or more of actual ovulation days. When combined with the 5-day sperm survival window and 1-day egg viability, this creates an extended fertile window that, while wider, is more likely to include the actual fertile days.",
+        "examples": [
+          "A woman with a 28-day cycle: Earliest ovulation = 28 - 16 = Day 12. Latest ovulation = 28 - 10 = Day 18. Extended fertile window = Days 7-19 (13 days total). Much wider than the standard method's 6-day window.",
+          "A woman with a 35-day cycle: Earliest ovulation = Day 19. Latest ovulation = Day 25. Extended fertile window = Days 14-26. This accounts for uncertainty in longer cycles.",
+          "A woman with variable cycles (26-32 days): Use the shortest cycle for earliest (26 - 16 = Day 10) and longest for latest (32 - 10 = Day 22). Extended window = Days 5-23. Very wide, but conservative."
+        ],
+        "comparison": "The variable luteal phase method represents a middle ground between the simplistic standard calendar method and more intensive tracking approaches. It's significantly more conservative than the standard method, often producing fertile windows twice as long. This makes it less useful for timing conception precisely but more appropriate for those wanting to avoid unprotected intercourse during potentially fertile days. Compared to the symptothermal method, the variable calculation requires no daily tracking or interpretation skills but provides lower confidence. For couples trying to conceive, the variable method might suggest more days of intercourse than necessary, which could be counterproductive for some. However, for couples combining calendar awareness with other methods, understanding the potential range of ovulation days helps interpret ambiguous temperature or mucus patterns.",
+        "prosAndCons": {
+          "pros": [
+            "Accounts for real-world luteal phase variation",
+            "Less likely to miss actual fertile days",
+            "More appropriate for women who haven't confirmed their luteal phase length",
+            "Provides conservative estimate for family planning",
+            "No additional tracking required beyond cycle length"
+          ],
+          "cons": [
+            "Creates very wide fertile window (often 12-15 days)",
+            "Less precise for conception timing",
+            "May cause unnecessary abstinence or conception attempts",
+            "Still doesn't detect actual ovulation",
+            "Wide window can be discouraging for regular tracking"
+          ]
+        }
+      }
     },
     {
       "id": "symptothermal",
@@ -58,7 +114,35 @@
         "This calculator provides calendar only"
       ],
       "bestFor": "Fertility awareness with full tracking",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The symptothermal method synthesizes three independent fertility indicators developed over decades of research. Basal body temperature (BBT) tracking originated with Dutch gynecologist Theodoor Hendrik van de Velde, who documented the biphasic temperature pattern in 1904. He observed that body temperature rises 0.3-0.6°C after ovulation due to progesterone's thermogenic effect. Cervical mucus observation was systematically developed by Australian physicians John and Evelyn Billings in the 1960s and 1970s, leading to the Billings Ovulation Method. Their research demonstrated that mucus changes from tacky and opaque to clear, stretchy, and 'egg-white' consistency at peak fertility due to rising estrogen. The symptothermal method, combining these approaches with calendar calculations, was formalized in the 1970s and has been refined through extensive research. A landmark 2007 German study published in Human Reproduction followed 900 women using the symptothermal method over 19,000 cycles, finding a method effectiveness of 99.6% when rules were followed perfectly, rivaling hormonal contraception.",
+        "scientificBasis": "The symptothermal method leverages three physiologically distinct fertility markers. Calendar calculations provide a prospective estimate based on cycle history. Cervical mucus changes reflect rising estrogen levels that precede ovulation—the mucus thins and becomes more alkaline to facilitate sperm transport and survival. This 'fertile-quality' mucus can appear 1-5 days before ovulation. After ovulation, the corpus luteum produces progesterone, which has a thermogenic effect on the hypothalamus, raising basal body temperature by 0.2-0.5°C for the remainder of the cycle. This temperature shift, measured first thing in the morning before any activity, confirms that ovulation has occurred. By combining prospective indicators (calendar, mucus) with retrospective confirmation (temperature), the symptothermal method achieves accuracy comparable to biomedical tests. Studies using urinary hormone analysis have validated that properly interpreted mucus and temperature patterns correlate closely with actual hormonal ovulation markers.",
+        "examples": [
+          "Identifying fertile window: A woman notes watery, stretchy mucus on Day 11 of a 28-day cycle. Her calendar suggested Day 9-15 as fertile. The mucus confirms fertility has begun. She tracks for 3 days of wet mucus, then notes dry mucus and a temperature rise of 0.4°C on Day 15, sustained for 3 days. This confirms ovulation occurred around Day 14.",
+          "Using BBT to confirm ovulation: A woman trying to conceive sees her temperature rise from 36.3°C to 36.7°C and stay elevated. Three days of elevated temperatures following a mucus peak confirms ovulation. If conception occurred, temperatures typically remain elevated; a drop suggests the next cycle is beginning.",
+          "Irregular cycle tracking: A woman with 25-35 day cycles cannot rely on calendar alone. She monitors mucus daily and notes fertile patterns starting on Day 10 of one cycle and Day 18 of another. Combined with temperature confirmation, she accurately identifies her fertile window despite cycle variation."
+        ],
+        "comparison": "The symptothermal method offers the highest accuracy among fertility awareness methods, approaching the effectiveness of hormonal contraception when used correctly. Unlike calendar-only methods (12-24% typical failure rate), symptothermal achieves 0.4-2% failure rates with perfect use and 2-14% with typical use—comparable to condoms. Compared to ovulation predictor kits, symptothermal requires no ongoing expense and provides more contextual information about cycle health, though OPKs offer convenience and require less interpretation skill. Versus fertility monitors that track hormonal metabolites in urine (like Clearblue), symptothermal is free but requires more user engagement. The method's learning curve (typically 1-3 months to gain confidence) and daily tracking requirement are its main barriers. This calculator provides the calendar component only; full symptothermal practice requires separate temperature and mucus logging.",
+        "prosAndCons": {
+          "pros": [
+            "Highest accuracy among fertility awareness methods (99.6% perfect use)",
+            "Detects actual biological fertility indicators",
+            "No ongoing cost after initial learning",
+            "Provides valuable information about cycle health",
+            "Can identify issues like anovulation or short luteal phase",
+            "Works for irregular cycles when interpreted correctly"
+          ],
+          "cons": [
+            "Requires daily temperature measurement before rising",
+            "Learning curve of 1-3 months for confident interpretation",
+            "Daily tracking commitment can feel burdensome",
+            "Temperature can be affected by illness, alcohol, poor sleep",
+            "Mucus interpretation is subjective and requires practice",
+            "Not all women produce easily observable mucus patterns"
+          ]
+        }
+      }
     }
   ],
   "sources": [

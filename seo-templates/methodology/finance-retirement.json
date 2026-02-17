@@ -24,7 +24,33 @@
       ],
       "bestFor": "Traditional retirement age (60-65)",
       "isDefault": true,
-      "yearIntroduced": 1998
+      "yearIntroduced": 1998,
+      "expandedContent": {
+        "history": "The 4% rule originated from financial planner William Bengen's 1994 paper 'Determining Withdrawal Rates Using Historical Data,' published in the Journal of Financial Planning. Bengen analyzed rolling 30-year periods from 1926-1992 and found that a 4% initial withdrawal rate (adjusted for inflation annually) had never depleted a portfolio. The 1998 'Trinity Study' (officially 'Retirement Savings: Choosing a Withdrawal Rate That Is Sustainable') by professors Philip Cooley, Carl Hubbard, and Daniel Walz at Trinity University validated and popularized Bengen's findings with expanded analysis. The study became canonical in retirement planning, spawning the '25x rule' (save 25 times annual expenses, the inverse of 4%). Bengen later updated his research, suggesting 4.5% might be sustainable, but the more conservative 4% became the standard. The rule dominated retirement advice for two decades, though the post-2008 low-yield environment and longer lifespans have prompted reconsideration.",
+        "scientificBasis": "The Trinity Study analyzed historical returns for portfolios of US stocks (S&P 500) and intermediate-term government bonds from 1926-1995. For a 75/25 stock/bond allocation over 30 years, a 4% initial withdrawal rate succeeded (didn't deplete the portfolio) in 98% of rolling periods. The methodology: Year 1 withdrawal is 4% of initial portfolio; subsequent years adjust that dollar amount for inflation regardless of portfolio performance. The 'sequence of returns' risk is crucial: bad returns early in retirement are far more damaging than later because you're selling more shares at lower prices. The 4% rate builds in a margin of safety for adverse sequences. Critics note: the study used US data during America's exceptional economic century; international and future returns may differ. Recent research by Wade Pfau and Michael Finke suggests that current low bond yields and high stock valuations might warrant 3-3.5% for new retirees.",
+        "examples": [
+          "Target calculation: Annual expenses = $50,000. Required portfolio = $50,000 × 25 = $1,250,000. Year 1 withdrawal = $1,250,000 × 4% = $50,000. Year 2 (with 3% inflation) = $50,000 × 1.03 = $51,500, regardless of portfolio value.",
+          "Early retiree concern: Retiring at 40 means potentially 50+ years of withdrawals. 30-year success rate doesn't apply. Consider 3.5% or 3% withdrawal rate for longer horizons, requiring $1,428,571 or $1,666,667 for $50,000 expenses.",
+          "Social Security impact: $50,000 needed but $24,000 expected from Social Security at 67. Only $26,000 must come from portfolio. Required savings = $26,000 × 25 = $650,000, plus bridge strategy for early retirement years."
+        ],
+        "comparison": "The 4% rule provides a simple, research-backed benchmark but isn't personalized. Variable withdrawal strategies (adjusting spending based on market conditions) may allow higher average withdrawals with similar safety. Monte Carlo simulations provide probability distributions rather than binary success/failure. The 4% rule assumes constant real spending, but actual retirement spending often follows a 'smile' pattern (high early, low mid-retirement, high late due to healthcare). Bucketing strategies (keeping 2-3 years expenses in cash/bonds) address sequence risk differently than a single withdrawal rate. For early retirees (FIRE community), 3.25-3.5% is often recommended; for those with pensions or Social Security, higher rates may be acceptable because the 'floor' of guaranteed income reduces sequence risk on the portfolio portion.",
+        "prosAndCons": {
+          "pros": [
+            "Simple rule that's easy to understand and implement",
+            "Historically robust with 95%+ success rate",
+            "Provides clear savings target (25x expenses)",
+            "Inflation adjustment maintains purchasing power",
+            "Well-documented in peer-reviewed research"
+          ],
+          "cons": [
+            "Based on historical US data that may not repeat",
+            "Current low yields may warrant lower rate",
+            "30-year horizon may be too short for early retirees",
+            "Doesn't account for individual tax situations",
+            "Rigid: doesn't adjust for market conditions"
+          ]
+        }
+      }
     },
     {
       "id": "variable-withdrawal",
@@ -42,7 +68,33 @@
         "More complex to implement"
       ],
       "bestFor": "Flexible retirees willing to adjust spending",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Variable withdrawal strategies emerged as researchers sought to improve upon the rigidity of the 4% rule. Jonathan Guyton's 'Decision Rules' (2004) introduced the first systematic approach: maintain constant real withdrawals unless the portfolio drops significantly, then cut spending by 10%. The 'Guyton-Klinger guardrails' refined this with upper and lower bounds triggering increases or decreases. William Bengen himself, in updates to his original research, suggested flexibility could safely increase average withdrawals to 4.5-5%. The 2010s saw proliferation of variable strategies: Vanguard's dynamic spending approach, Michael Kitces's 'Ratcheting' strategy (only increase, never decrease, based on gains), and various 'bucket' approaches that separate spending reserves from growth assets. These strategies acknowledge that retirees can and do adjust spending in response to market conditions—a reality the fixed 4% rule ignores.",
+        "scientificBasis": "Variable withdrawal strategies exploit the insight that most 4% rule failures occurred because of sequence risk early in retirement. If retirees reduce spending during downturns, they sell fewer shares at low prices, preserving more capital for recovery. Research by Kitces and Pfau found that variable strategies could support 5-6% average withdrawal rates with similar failure rates as fixed 4%. The key mechanism is counter-cyclical spending: spend less when portfolio is down, more when it's up. This mimics how pension funds and endowments operate. The trade-off is income volatility—10-20% swings between good and bad years. Behaviorally, many retirees find this natural: they cut back during recessions and splurge after gains. For those with Social Security or pensions providing a 'floor,' variable withdrawals from the investment portfolio become the discretionary component.",
+        "examples": [
+          "Guardrail approach: Start at 5%. If current withdrawal exceeds 6% of portfolio (portfolio dropped), cut by 10%. If below 4% of portfolio (portfolio grew), increase by 10%. This keeps withdrawals between 4-6% of current value.",
+          "Ratcheting strategy: $1M portfolio, $40,000 initial withdrawal. After good year, portfolio is $1.2M. Ratchet up to $48,000 (4% of new high). In down years, maintain $48,000—only ratchet up, never down.",
+          "Floor-and-ceiling: Minimum withdrawal = $35,000 (cover essentials). Maximum = $60,000 (prevent over-withdrawal). Between floor and ceiling, withdraw 4.5% of current portfolio. Market dictates travel and discretionary spending."
+        ],
+        "comparison": "Variable strategies sacrifice income predictability for portfolio longevity. The fixed 4% rule provides stable income but may leave significant assets at death (median terminal wealth is 2-3x initial) or fail in worst cases. Variable strategies aim to 'right-size' spending to portfolio performance. Retirees with guaranteed income (Social Security, pension) covering basic needs are ideal candidates—the variable portfolio withdrawal funds discretionary spending that can genuinely flex. Those relying entirely on portfolio for necessities may find income volatility stressful. The psychological component matters: some retirees would rather maintain lifestyle with some failure risk than definitely cut spending. Couples may have different risk tolerances requiring compromise approaches.",
+        "prosAndCons": {
+          "pros": [
+            "Higher average withdrawals than fixed strategies",
+            "Naturally addresses sequence of returns risk",
+            "Matches actual retiree behavior (adjust spending)",
+            "Lower probability of running out of money",
+            "Better 'utilizes' portfolio (less unspent at death)"
+          ],
+          "cons": [
+            "Income uncertainty can be stressful",
+            "Requires genuine spending flexibility",
+            "More complex to plan and implement",
+            "May require cutting spending during already-difficult times",
+            "Harder to budget with unpredictable income"
+          ]
+        }
+      }
     },
     {
       "id": "monte-carlo",
@@ -60,7 +112,33 @@
         "May give false precision"
       ],
       "bestFor": "Detailed retirement planning",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Monte Carlo simulation methods, named after the famous casino, were developed during the Manhattan Project in the 1940s by scientists Stanislaw Ulam and John von Neumann to model nuclear chain reactions. Financial applications emerged in the 1960s-1970s for options pricing and portfolio analysis. Monte Carlo entered mainstream retirement planning in the 1990s-2000s as computing power made thousands of simulations feasible on personal computers. Companies like Financial Engines (founded by Nobel laureate William Sharpe) brought Monte Carlo to 401(k) participants. Today, most financial planning software (eMoney, MoneyGuidePro, Vanguard's tools) uses Monte Carlo as the primary retirement analysis method. The approach addressed a key limitation of historical analysis: the past has only one sequence of returns, but the future could unfold in infinite ways. Monte Carlo explores those possibilities probabilistically.",
+        "scientificBasis": "Monte Carlo simulation generates random return sequences based on assumed distributions (mean return, standard deviation, correlations between asset classes). Typically, 1,000-10,000 scenarios are run, each simulating a complete retirement period with random returns drawn for each year. The output is a probability distribution: 'You have an 87% chance of not running out of money over 30 years.' This addresses sequence risk by testing many different orderings of good and bad years. The method allows modeling of complex scenarios: variable spending, Social Security claiming strategies, Roth conversions, part-time work. However, results are highly sensitive to assumptions. Using historical US average returns (10% stocks, 5% bonds) produces different results than forward-looking estimates (7% stocks, 3% bonds). The 'garbage in, garbage out' principle applies—sophisticated methodology can't overcome unrealistic assumptions.",
+        "examples": [
+          "Baseline analysis: $1M portfolio, 60/40 allocation, $40,000 annual withdrawal, 30 years. Monte Carlo with 10,000 simulations shows 89% success rate (890 scenarios never depleted).",
+          "Sensitivity testing: Same scenario but returns reduced by 2% (forward-looking adjustment). Success rate drops to 72%. This illustrates sensitivity to assumptions about future returns.",
+          "Scenario analysis: Include Social Security at 67 ($24,000/year), reduce portfolio withdrawal to $16,000 post-67. Success rate jumps to 97%—Social Security significantly reduces portfolio strain."
+        ],
+        "comparison": "Monte Carlo provides more information than simple rules but can create false confidence. Showing '93% success' feels precise, but that number depends entirely on assumptions that are inherently uncertain. The Trinity Study's historical analysis has a different limitation: only one historical sequence exists, so it can't test scenarios that haven't occurred. Monte Carlo tests many scenarios but assumes future returns will resemble past distribution. Neither can predict black swan events or regime changes. In practice, Monte Carlo is useful for comparing strategies (Roth conversion vs. not) or testing sensitivity (what if returns are 2% lower?), even if the absolute probability shouldn't be taken literally. The best approach combines multiple methods and focuses on controllable factors: savings rate, spending flexibility, asset allocation.",
+        "prosAndCons": {
+          "pros": [
+            "Tests thousands of potential return sequences",
+            "Provides probability of success, not just pass/fail",
+            "Can model complex scenarios (Social Security, Roth, part-time work)",
+            "Enables 'what if' sensitivity analysis",
+            "Addresses sequence of returns risk systematically"
+          ],
+          "cons": [
+            "Results highly sensitive to input assumptions",
+            "Past return distributions may not predict future",
+            "Can create false precision (93% sounds exact but isn't)",
+            "Doesn't account for behavioral adjustments",
+            "Requires sophisticated software and understanding"
+          ]
+        }
+      }
     },
     {
       "id": "fire-method",
@@ -78,7 +156,33 @@
         "Assumes no other income sources"
       ],
       "bestFor": "Early retirement (before 50)",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The FIRE (Financial Independence, Retire Early) movement emerged from Vicki Robin and Joe Dominguez's 1992 book 'Your Money or Your Life,' but gained mainstream attention in the 2010s through blogs like Mr. Money Mustache, Early Retirement Extreme, and the ChooseFI podcast. The movement distinguished between 'financial independence' (having enough to never work again) and early retirement (actually stopping work), recognizing that many FIRE adherents continue working on passion projects. The '4% rule' underpins FIRE mathematics, but practitioners recognized that retiring at 30-40 meant 50-60+ year horizons—far beyond the Trinity Study's 30-year analysis. This led to more conservative withdrawal rates (3-3.5%), higher savings targets (28-33x expenses), and strategies like 'coast FIRE' (saving enough that compound growth covers traditional retirement even if you stop contributing) and 'barista FIRE' (part-time work covering living expenses while portfolio grows).",
+        "scientificBasis": "FIRE's conservative withdrawal rates address the 'tail risk' of very long retirements. The original Trinity Study tested 30-year periods; early retirees may need 50-60 years. Extended backtesting shows that 4% fails more often over 40-50 year periods—particularly for those retiring into bear markets. The 3.25-3.5% rates advocated by researchers like Wade Pfau maintain 95%+ success over 50+ years. The mathematics: 3.5% = 28.6x expenses (round to 28-30x); 3% = 33.3x expenses. However, FIRE also incorporates behavioral advantages: extreme savers typically have flexible spending habits and can cut back significantly during downturns. Many FIRE retirees also generate some income from hobbies, consulting, or part-time work—what's called 'side FIRE' or 'barista FIRE'—which dramatically reduces portfolio dependence. Social Security, though decades away for early retirees, also eventually kicks in, reducing the required withdrawal rate.",
+        "examples": [
+          "Traditional FIRE: $40,000 annual expenses × 30 = $1,200,000 target (3.33% withdrawal). Retire at 35 with $1.2M portfolio. Withdraw $40,000/year. At 67, Social Security adds $24,000/year, reducing portfolio need to $16,000.",
+          "Coast FIRE: At 35 with $400,000 saved, stop contributing. At 7% real return, $400,000 grows to $2.9M by 65. Work lower-stress jobs covering expenses now, retire traditionally at 65 with substantial portfolio.",
+          "Barista FIRE: $30,000 annual expenses, $500,000 portfolio. Part-time work earns $15,000/year. Only need $15,000 from portfolio (3% withdrawal). Flexible schedule while preserving portfolio for eventual full retirement."
+        ],
+        "comparison": "FIRE differs from traditional retirement planning primarily in timeline and lifestyle. Traditional advice assumes working until 65, Social Security replacing significant income, and a 25-30 year retirement. FIRE assumes working until 35-50, no Social Security for decades, and 40-60+ year retirement. This shifts the mathematics toward lower withdrawal rates and higher savings multiples. The FIRE community also emphasizes expense reduction as much as income growth—cutting spending from $60,000 to $40,000 reduces savings target by $500,000-$600,000. Critics argue that FIRE underestimates healthcare costs (a major concern before Medicare eligibility at 65), lifecycle spending changes (children, aging parents), and the psychological challenges of decades without traditional work structure. Proponents counter that flexibility and low spending habits make FIRE more resilient than it appears.",
+        "prosAndCons": {
+          "pros": [
+            "Higher safety margin for very long retirements",
+            "Accounts for no Social Security for decades",
+            "Emphasizes expense reduction, providing flexibility",
+            "Community provides support and accountability",
+            "Integrates with flexible work and side income"
+          ],
+          "cons": [
+            "Requires very high savings rate (often 50-70%)",
+            "May underestimate healthcare costs before Medicare",
+            "3-3.5% rate may be overly conservative for many",
+            "Decades without structure can be psychologically challenging",
+            "Lifestyle inflation after FIRE can derail plans"
+          ]
+        }
+      }
     }
   ],
   "sources": [

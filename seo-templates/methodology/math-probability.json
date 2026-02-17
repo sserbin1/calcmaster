@@ -20,7 +20,33 @@
         "Outcomes must be mutually exclusive"
       ],
       "bestFor": "Dice, cards, simple random events",
-      "isDefault": true
+      "isDefault": true,
+      "expandedContent": {
+        "history": "Probability theory emerged from gambling questions posed to mathematicians in the 17th century. In 1654, the Chevalier de Méré asked Blaise Pascal about fair division of stakes in an interrupted dice game. Pascal's correspondence with Pierre de Fermat laid the foundations of probability theory. Their 'problem of points' introduced expected value calculations. Jacob Bernoulli's 'Ars Conjectandi' (1713) formalized the law of large numbers. Abraham de Moivre developed the normal approximation to the binomial distribution. The classical definition of probability—favorable outcomes over total outcomes—dominated until Andrey Kolmogorov's axiomatic approach in 1933 unified probability theory using measure theory. Today, probability underlies statistics, machine learning, finance, physics, and virtually every quantitative field.",
+        "scientificBasis": "Classical probability defines P(A) = |A|/|S|, where |A| is the count of favorable outcomes and |S| is the size of the sample space. This requires: finite sample space, equally likely outcomes, and complete enumeration. The probability axioms (Kolmogorov, 1933) generalize this: (1) P(A) ≥ 0 for all events A, (2) P(S) = 1 for the entire sample space, (3) P(A ∪ B) = P(A) + P(B) for mutually exclusive events. These axioms enable rigorous mathematical treatment while accommodating both discrete (dice) and continuous (time until event) random variables. The 'equally likely' assumption is crucial—a biased coin violates it. When outcomes aren't equally likely, we use frequentist (observed proportion over many trials) or Bayesian (updated belief) interpretations instead.",
+        "examples": [
+          "Single die roll: P(rolling 6) = 1/6 ≈ 0.167 or 16.7%. One favorable outcome among six equally likely outcomes.",
+          "Deck of cards: P(drawing an ace) = 4/52 = 1/13 ≈ 0.077 or 7.7%. Four aces among 52 equally likely cards.",
+          "Two dice sum: P(sum = 7) = 6/36 = 1/6 ≈ 16.7%. Six favorable combinations: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) out of 36 total."
+        ],
+        "comparison": "Classical probability works perfectly for idealized random devices (fair dice, shuffled decks) where outcomes are clearly equally likely. It fails when outcomes are unequal (loaded die), continuous (exact height), or when the sample space is unknown (complex systems). Frequentist probability defines probability as the long-run relative frequency—flip a coin millions of times and observe 50% heads. Bayesian probability represents degree of belief, updated with evidence via Bayes' theorem. For everyday calculations involving dice, cards, and simple games, classical probability is ideal. For real-world applications with uncertain assumptions, frequentist or Bayesian approaches may be more appropriate. Understanding all three interpretations strengthens probabilistic reasoning.",
+        "prosAndCons": {
+          "pros": [
+            "Intuitive counting approach",
+            "Exact answers for idealized situations",
+            "Foundation for understanding more complex probability",
+            "Natural for games and symmetric random devices",
+            "Easy to explain and visualize"
+          ],
+          "cons": [
+            "Requires equally likely outcomes (often unrealistic)",
+            "Fails for continuous random variables",
+            "Cannot handle unknown or infinite sample spaces",
+            "Circular definition ('equally likely' presupposes probability)",
+            "Real-world devices may have subtle biases"
+          ]
+        }
+      }
     },
     {
       "id": "combinations",
@@ -41,7 +67,33 @@
         "Requires n ≥ r ≥ 0"
       ],
       "bestFor": "Lottery odds, committee selection, card hands",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Combinatorics, the mathematics of counting arrangements, has ancient roots but was formalized alongside probability theory. The formula for combinations appears in Indian mathematical texts (12th century) and was systematically developed by Pascal in his 'Traité du triangle arithmétique' (1654). Pascal's triangle, known earlier to Chinese and Islamic mathematicians, displays combination values: row n contains C(n,0), C(n,1), ..., C(n,n). The term 'combination' distinguishes unordered selections from ordered 'permutations.' Lottery systems, emerging in 15th-century Europe, drove practical interest in computing combinations. Modern notation C(n,r) or ⁿCᵣ or (n choose r) became standard in the 20th century. Today, combinations are fundamental to probability theory, statistics (binomial coefficients), computer science (algorithm analysis), and cryptography.",
+        "scientificBasis": "Combinations count selections where order doesn't matter. The formula C(n,r) = n!/(r!(n-r)!) derives from: n! ways to arrange n items, divided by r! (arrangements within the chosen group, which don't matter) and (n-r)! (arrangements among the unchosen). Equivalently, C(n,r) counts the number of r-element subsets of an n-element set. Key properties: C(n,r) = C(n, n-r) (choosing r is equivalent to leaving n-r); C(n,0) = C(n,n) = 1; sum of row n in Pascal's triangle equals 2ⁿ (total subsets). For probability, if there are C(n,r) equally likely ways to choose r items from n, and f of them are 'favorable,' the probability is f/C(n,r). This underlies lottery odds, card hand probabilities, and sampling without replacement.",
+        "examples": [
+          "Lottery (6 from 49): C(49,6) = 49!/(6!×43!) = 13,983,816 possible tickets. Odds of winning: 1 in ~14 million.",
+          "Poker full house: Choose one rank for three-of-a-kind: C(13,1). Choose 3 suits: C(4,3). Choose pair rank: C(12,1). Choose 2 suits: C(4,2). Total: 13 × 4 × 12 × 6 = 3,744. Probability: 3,744/2,598,960 ≈ 0.144%.",
+          "Committee selection: Choose 3 people from 10 for a committee. C(10,3) = 120 possible committees."
+        ],
+        "comparison": "Combinations differ from permutations in that order doesn't matter. Choosing members {Alice, Bob, Carol} for a committee is one combination; as president-VP-secretary, it's 3! = 6 permutations. The relationship: P(n,r) = C(n,r) × r! (permutations equal combinations times arrangements of the chosen items). When to use which: lottery tickets (combination—order of numbers doesn't matter), race finishes (permutation—1st, 2nd, 3rd are distinct), password characters (permutation if order matters, combination if checking anagram). A common error is using permutations when combinations are needed, or vice versa, yielding answers off by a factor of r!. The key question: does rearranging the selection create something different?",
+        "prosAndCons": {
+          "pros": [
+            "Exact counting for unordered selections",
+            "Pascal's triangle provides efficient computation",
+            "Foundation for binomial probability calculations",
+            "Well-understood mathematical properties",
+            "Direct application to real-world selection problems"
+          ],
+          "cons": [
+            "Factorials grow extremely fast (overflow issues)",
+            "Easy to confuse with permutations",
+            "Formula can be non-intuitive to beginners",
+            "Requires understanding factorial notation",
+            "Complex scenarios may require products of combinations"
+          ]
+        }
+      }
     },
     {
       "id": "permutations",
@@ -57,7 +109,33 @@
       },
       "accuracy": "Exact",
       "bestFor": "Rankings, arrangements, passwords",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "Permutations—ordered arrangements—were studied in ancient civilizations for divination and games. The Sefer Yetzirah (Jewish mystical text, 3rd-6th century) discusses permutations of Hebrew letters. Indian mathematicians Mahāvīra (9th century) and Bhāskara II (12th century) developed systematic counting methods. In Europe, permutation theory advanced with Mersenne, Fermat, and Pascal in the 17th century. Leibniz's 'Dissertatio de Arte Combinatoria' (1666) treated permutations algebraically. The term 'permutation' comes from Latin 'permutare' (to change thoroughly). Group theory, developed in the 19th century by Galois, Cayley, and others, provided abstract framework where permutations form groups under composition. Today, permutations are central to algebra, cryptography, algorithm analysis, and probability.",
+        "scientificBasis": "Permutations count ordered arrangements. P(n,r) = n!/(n-r)! counts ways to arrange r items from n distinct items where order matters. The derivation: n choices for first position, (n-1) for second, ..., (n-r+1) for the rth position. The product n(n-1)(n-2)...(n-r+1) = n!/(n-r)!. When r = n, we arrange all items: P(n,n) = n! (n factorial). For probability, if there are P(n,r) equally likely arrangements and f are favorable, probability = f/P(n,r). Permutations with repetition (like digits in a PIN where repetition is allowed) use nʳ instead. The mathematical structure of permutations—as bijections from a set to itself—forms the symmetric group Sₙ, fundamental to abstract algebra.",
+        "examples": [
+          "Race finishing order: 8 runners, top 3 positions. P(8,3) = 8!/(8-3)! = 8×7×6 = 336 possible finish orders for gold-silver-bronze.",
+          "PIN code (no repetition): 4-digit PIN from digits 0-9, no repetition. P(10,4) = 10×9×8×7 = 5,040 possible PINs.",
+          "Password (with repetition): 4-character password using 26 letters, repetition allowed. 26⁴ = 456,976 possible passwords."
+        ],
+        "comparison": "Permutations vs combinations: permutations count when order matters, combinations when it doesn't. P(n,r) = C(n,r) × r!, so permutations always exceed combinations (except when r ≤ 1). Permutations with repetition (nʳ) vs without (P(n,r)): use with-repetition when items can be reused (like PIN digits), without when each item is used at most once (like race positions—same runner can't finish both 1st and 2nd). A key skill is recognizing which formula applies: 'arrange' and 'order' suggest permutations; 'choose' and 'select' suggest combinations. Real problems often combine both: arranging a subset (permutation) or selecting then arranging (combination then factorial).",
+        "prosAndCons": {
+          "pros": [
+            "Exact counting for ordered arrangements",
+            "Clear formulas for with/without repetition cases",
+            "Foundation for permutation groups in algebra",
+            "Direct application to rankings, sequences, codes",
+            "Relationship to combinations clarifies when each applies"
+          ],
+          "cons": [
+            "Factorials grow extremely fast (computational limits)",
+            "Easy to confuse with combinations (common error)",
+            "With vs without repetition requires careful analysis",
+            "Formula requires understanding when order matters",
+            "Large n or r can make exact calculation impractical"
+          ]
+        }
+      }
     },
     {
       "id": "probability-rules",
@@ -72,7 +150,34 @@
       },
       "accuracy": "Exact",
       "bestFor": "Compound events, sequential events",
-      "isDefault": false
+      "isDefault": false,
+      "expandedContent": {
+        "history": "The rules for combining probabilities developed alongside probability theory itself. The addition rule for mutually exclusive events was implicit in early probability work by Pascal and Fermat. The general addition rule (accounting for overlap) emerged as problems involving non-exclusive events arose. The multiplication rule for independent events came from analyzing sequential games of chance. Conditional probability and the multiplication rule for dependent events were formalized through Bayes' theorem (1763). Kolmogorov's axioms (1933) provided rigorous foundations: probabilities are non-negative, the certain event has probability 1, and probabilities of mutually exclusive events add. These simple rules generate all of probability theory, enabling analysis of arbitrarily complex scenarios.",
+        "scientificBasis": "The addition rule handles 'or' (union): P(A ∪ B) = P(A) + P(B) - P(A ∩ B). The subtraction corrects for double-counting outcomes in both A and B. For mutually exclusive events (A ∩ B = ∅), this simplifies to P(A) + P(B). The multiplication rule handles 'and' (intersection): P(A ∩ B) = P(A) × P(B|A), where P(B|A) is the conditional probability of B given A. For independent events (where knowing A doesn't change B's probability), P(B|A) = P(B), giving P(A ∩ B) = P(A) × P(B). These rules combine: P(A or B) for three events needs inclusion-exclusion; P(A and B and C) for independent events is P(A) × P(B) × P(C). Bayes' theorem, P(A|B) = P(B|A)P(A)/P(B), reverses conditional probabilities and underlies much of statistical inference.",
+        "examples": [
+          "Addition (mutually exclusive): P(rolling 2 or 5) = P(2) + P(5) = 1/6 + 1/6 = 1/3. They can't both occur on one roll.",
+          "Addition (not exclusive): P(heart or king) = P(heart) + P(king) - P(heart king) = 13/52 + 4/52 - 1/52 = 16/52 ≈ 30.8%.",
+          "Multiplication (independent): P(two heads in row) = P(head) × P(head) = 0.5 × 0.5 = 0.25 or 25%.",
+          "Multiplication (dependent): P(two aces without replacement) = P(1st ace) × P(2nd ace | 1st ace) = 4/52 × 3/51 ≈ 0.45%."
+        ],
+        "comparison": "Choosing the right rule depends on the relationship between events. 'Or' problems use addition; 'and' problems use multiplication. The key questions: Are the events mutually exclusive? (Can both occur?) If yes, use simple addition. Are they independent? (Does one affect the other's probability?) If yes, multiply probabilities directly. Common errors: adding probabilities for 'and' problems, forgetting to subtract overlap for non-exclusive 'or' problems, and assuming independence when events are dependent (like drawing without replacement). The complement rule, P(not A) = 1 - P(A), often simplifies 'at least one' problems: P(at least one head in 3 flips) = 1 - P(no heads) = 1 - (0.5)³ = 87.5%.",
+        "prosAndCons": {
+          "pros": [
+            "Handles complex compound events systematically",
+            "Clear rules for 'or' and 'and' combinations",
+            "Enables calculation of multi-step probability problems",
+            "Foundation for all probability analysis",
+            "Complement rule simplifies 'at least' problems"
+          ],
+          "cons": [
+            "Requires correct identification of event relationships",
+            "Independence assumption often made incorrectly",
+            "Conditional probability can be counterintuitive",
+            "Multiple events require careful tracking of cases",
+            "Easy to double-count or miss cases without systematic approach"
+          ]
+        }
+      }
     }
   ],
   "sources": [
