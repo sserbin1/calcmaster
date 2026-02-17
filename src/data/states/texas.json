@@ -1,0 +1,3472 @@
+{
+  "state": {
+    "name": "Texas",
+    "slug": "texas",
+    "abbreviation": "TX",
+    "capital": "Austin",
+    "population": 30503301,
+    "region": "Southwest",
+    "hasIncomeTax": false,
+    "hasSalesTax": true,
+    "hasPropertyTax": true
+  },
+  "calculators": [
+    {
+      "slug": "income-tax-texas",
+      "baseType": "income-tax",
+      "name": "Texas Income Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas income tax calculator",
+      "secondaryKeywords": [
+        "texas state tax",
+        "texas tax brackets",
+        "texas tax rate"
+      ],
+      "metaTitle": "Texas Income Tax Calculator 2025 | TX Tax Rates",
+      "metaDescription": "Calculate your Texas state income tax. See current tax brackets, rates, and deductions. Free Texas income tax calculator.",
+      "heroTitle": "Texas Income Tax Calculator",
+      "heroSubtitle": "Calculate your Texas state income tax liability with current rates and brackets",
+      "introText": "Texas is one of the few states with no state income tax. Residents keep 100% of their income from state taxation, though federal taxes still apply.",
+      "formula": "No state income tax applies.",
+      "stateData": {
+        "hasIncomeTax": false,
+        "incomeTaxType": "none",
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Accurate Brackets",
+          "description": "Uses current Texas tax brackets and rates"
+        },
+        {
+          "icon": "💰",
+          "title": "Deduction Support",
+          "description": "Accounts for standard and common deductions"
+        },
+        {
+          "icon": "📱",
+          "title": "Instant Results",
+          "description": "See your tax liability calculated in real-time"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the Texas income tax rate?",
+          "answer": "Texas has no state income tax."
+        },
+        {
+          "question": "Does Texas tax Social Security?",
+          "answer": "Texas does not tax Social Security benefits at the state level."
+        },
+        {
+          "question": "How do I file Texas state taxes?",
+          "answer": "You can file Texas state taxes online through the state's Department of Revenue website, or use tax preparation software."
+        },
+        {
+          "question": "What deductions are available in Texas?",
+          "answer": "Texas offers standard deductions and may allow itemized deductions. Check the state tax authority for current amounts."
+        },
+        {
+          "question": "When are Texas state taxes due?",
+          "answer": "Texas state income taxes are typically due April 15, the same date as federal taxes, unless an extension is filed."
+        }
+      ],
+      "relatedCalculators": [
+        "property-tax-texas",
+        "sales-tax-texas",
+        "paycheck-texas"
+      ]
+    },
+    {
+      "slug": "property-tax-texas",
+      "baseType": "property-tax",
+      "name": "Texas Property Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas property tax calculator",
+      "secondaryKeywords": [
+        "texas property tax rate",
+        "texas home tax",
+        "texas real estate tax"
+      ],
+      "metaTitle": "Texas Property Tax Calculator 2025 | TX Rates",
+      "metaDescription": "Calculate your Texas property tax based on home value and local rates. See county-level rates and exemptions.",
+      "heroTitle": "Texas Property Tax Calculator",
+      "heroSubtitle": "Estimate your annual Texas property tax based on home value and local rates",
+      "introText": "The average property tax rate in Texas is 1.68%. With a median home value of $290 000, this means an average annual property tax of $4872.",
+      "formula": "Annual Property Tax = Assessed Home Value × Tax Rate",
+      "stateData": {
+        "avgPropertyTaxRate": 1.68,
+        "medianHomeValue": 290000,
+        "homesteadExemption": 100000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Local Rates",
+          "description": "Based on Texas county-level tax rates"
+        },
+        {
+          "icon": "📉",
+          "title": "Exemption Check",
+          "description": "See available homestead exemptions"
+        },
+        {
+          "icon": "📅",
+          "title": "Monthly Estimate",
+          "description": "Get monthly property tax payment estimates"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How is property tax calculated in Texas?",
+          "answer": "Property tax is calculated by multiplying your home's assessed value by the local tax rate. Rates vary by county and municipality."
+        },
+        {
+          "question": "Are there property tax exemptions in Texas?",
+          "answer": "Texas offers various exemptions including homestead, senior, veteran, and disability exemptions. Check with your county assessor."
+        },
+        {
+          "question": "When are Texas property taxes due?",
+          "answer": "Property tax due dates vary by county but are typically due in one or two installments per year."
+        },
+        {
+          "question": "Can I appeal my Texas property tax assessment?",
+          "answer": "Yes, you can appeal your property assessment through your county's board of equalization or tax appeal process."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "home-affordability-texas",
+        "homestead-exemption-texas"
+      ]
+    },
+    {
+      "slug": "sales-tax-texas",
+      "baseType": "sales-tax",
+      "name": "Texas Sales Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas sales tax calculator",
+      "secondaryKeywords": [
+        "texas sales tax rate",
+        "texas tax on purchases"
+      ],
+      "metaTitle": "Texas Sales Tax Calculator 2025 | TX Rates",
+      "metaDescription": "Calculate Texas sales tax on any purchase. See state and local combined rates.",
+      "heroTitle": "Texas Sales Tax Calculator",
+      "heroSubtitle": "Calculate total sales tax including state and local rates in Texas",
+      "introText": "Texas has a state sales tax rate of 6.25%. Combined with local taxes, the total rate can vary by city and county.",
+      "formula": "Total Sales Tax = Purchase Amount × (6.25% state + local rate)",
+      "stateData": {
+        "salesTaxRate": 6.25,
+        "hasSalesTax": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛒",
+          "title": "Purchase Calculator",
+          "description": "Calculate exact tax on any Texas purchase"
+        },
+        {
+          "icon": "📍",
+          "title": "Local Rates",
+          "description": "Includes city and county tax rates"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Exemptions Listed",
+          "description": "See what items are tax-exempt"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the Texas sales tax rate?",
+          "answer": "The Texas state sales tax rate is 6.25%. Local jurisdictions may add additional tax."
+        },
+        {
+          "question": "What items are exempt from Texas sales tax?",
+          "answer": "Common exemptions include groceries, prescription medications, and certain clothing items, though specifics vary by state."
+        },
+        {
+          "question": "Does Texas tax online purchases?",
+          "answer": "Yes, Texas requires sales tax on online purchases from retailers with nexus in the state."
+        },
+        {
+          "question": "What is the highest sales tax in Texas?",
+          "answer": "Combined state and local sales tax rates vary. Check your specific city or county for the exact combined rate."
+        },
+        {
+          "question": "Are there sales tax holidays in Texas?",
+          "answer": "Some states offer sales tax holidays for back-to-school or hurricane preparedness. Check the state's revenue department for current offerings."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-texas",
+        "cost-of-living-texas",
+        "property-tax-texas"
+      ]
+    },
+    {
+      "slug": "capital-gains-tax-texas",
+      "baseType": "capital-gains-tax",
+      "name": "Texas Capital Gains Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas capital gains tax",
+      "secondaryKeywords": [
+        "texas investment tax",
+        "texas stock tax",
+        "capital gains texas"
+      ],
+      "metaTitle": "Texas Capital Gains Tax Calculator | TX",
+      "metaDescription": "Calculate capital gains tax in Texas. See state rates for short-term and long-term gains on investments.",
+      "heroTitle": "Texas Capital Gains Tax Calculator",
+      "heroSubtitle": "Estimate your state capital gains tax liability in Texas",
+      "introText": "Texas does not impose a state capital gains tax. Investment profits are not subject to state taxation.",
+      "formula": "No state capital gains tax applies.",
+      "stateData": {
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "capitalGainsRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📈",
+          "title": "Investment Analysis",
+          "description": "Calculate Texas tax on stock and property gains"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Holding Period",
+          "description": "Compare short-term vs long-term impact"
+        },
+        {
+          "icon": "💡",
+          "title": "Tax Strategies",
+          "description": "Learn ways to minimize your tax burden"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Texas tax capital gains?",
+          "answer": "No, Texas does not tax capital gains at the state level."
+        },
+        {
+          "question": "Are long-term and short-term gains taxed differently in Texas?",
+          "answer": "At the state level, most states tax both types as ordinary income. The federal government offers lower rates for long-term gains."
+        },
+        {
+          "question": "How can I reduce capital gains tax in Texas?",
+          "answer": "Strategies include holding investments for over a year, tax-loss harvesting, using retirement accounts, and utilizing the primary residence exclusion."
+        },
+        {
+          "question": "Is there a capital gains exemption in Texas?",
+          "answer": "Texas follows federal exemptions for primary residence sales ($250K single, $500K married) and may offer additional deductions."
+        },
+        {
+          "question": "When do I owe Texas capital gains tax?",
+          "answer": "Capital gains tax is due when you file your annual state tax return, typically by April 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-texas",
+        "investment-tax-texas",
+        "retirement-tax-texas"
+      ]
+    },
+    {
+      "slug": "estate-tax-texas",
+      "baseType": "estate-tax",
+      "name": "Texas Estate Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas estate tax",
+      "secondaryKeywords": [
+        "texas inheritance tax",
+        "texas estate planning"
+      ],
+      "metaTitle": "Texas Estate Tax Calculator 2025 | TX",
+      "metaDescription": "Calculate Texas estate tax. See exemptions, rates, and planning strategies for Texas estates.",
+      "heroTitle": "Texas Estate Tax Calculator",
+      "heroSubtitle": "Estimate state estate tax liability and exemptions in Texas",
+      "introText": "Texas does not impose a separate state estate tax or inheritance tax. However, the federal estate tax still applies to estates above the federal exemption threshold.",
+      "formula": "No state estate tax applies.",
+      "stateData": {
+        "hasEstateTax": false,
+        "estateExemption": 0,
+        "estateTopRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏦",
+          "title": "Estate Planning",
+          "description": "Texas-specific estate tax analysis"
+        },
+        {
+          "icon": "📋",
+          "title": "Exemption Check",
+          "description": "See if your estate exceeds the threshold"
+        },
+        {
+          "icon": "🔮",
+          "title": "Planning Strategies",
+          "description": "Learn tax-saving estate strategies"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Texas have an estate tax?",
+          "answer": "No, Texas does not have a state estate tax."
+        },
+        {
+          "question": "What is the Texas estate tax exemption?",
+          "answer": "Texas has no estate tax, so no exemption is needed."
+        },
+        {
+          "question": "Does Texas have an inheritance tax?",
+          "answer": "Check with the state's Department of Revenue for current inheritance tax laws, as they differ from estate taxes."
+        },
+        {
+          "question": "How can I reduce estate taxes in Texas?",
+          "answer": "Common strategies include gifting, trusts, life insurance, and charitable donations. Consult an estate planning attorney."
+        },
+        {
+          "question": "Is the federal estate tax different from Texas's?",
+          "answer": "Yes, the federal estate tax is separate with its own exemption ($13.61M in 2024). You may owe both if applicable."
+        }
+      ],
+      "relatedCalculators": [
+        "retirement-tax-texas",
+        "income-tax-texas",
+        "capital-gains-tax-texas"
+      ]
+    },
+    {
+      "slug": "effective-tax-rate-texas",
+      "baseType": "effective-tax-rate",
+      "name": "Texas Effective Tax Rate Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas effective tax rate",
+      "secondaryKeywords": [
+        "texas total tax burden",
+        "texas tax percentage"
+      ],
+      "metaTitle": "Texas Effective Tax Rate Calculator | TX",
+      "metaDescription": "Calculate your total effective tax rate in Texas including state, federal, and FICA taxes.",
+      "heroTitle": "Texas Effective Tax Rate Calculator",
+      "heroSubtitle": "See your true tax burden combining all Texas and federal taxes",
+      "introText": "Your effective tax rate in Texas combines state income tax (0%), federal income tax, and FICA taxes (7.65%). This calculator shows your combined rate.",
+      "formula": "Effective Rate = Total Tax Paid / Gross Income × 100%",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎯",
+          "title": "True Tax Rate",
+          "description": "See your real Texas tax burden"
+        },
+        {
+          "icon": "📊",
+          "title": "All Taxes Combined",
+          "description": "State, federal, and FICA in one view"
+        },
+        {
+          "icon": "💡",
+          "title": "Optimization Tips",
+          "description": "Learn how to reduce your rate"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the effective tax rate in Texas?",
+          "answer": "It depends on your income level. Texas state taxes are 0%, plus federal taxes and FICA."
+        },
+        {
+          "question": "How is effective tax rate different from marginal rate?",
+          "answer": "Marginal rate is the tax on your last dollar of income. Effective rate is your total tax divided by total income — typically lower."
+        },
+        {
+          "question": "What taxes are included in the effective rate?",
+          "answer": "Federal income tax, state income tax, Social Security tax (6.2%), and Medicare tax (1.45%)."
+        },
+        {
+          "question": "How can I lower my effective tax rate?",
+          "answer": "Maximize pre-tax deductions (401k, HSA), itemize deductions, use tax credits, and consider tax-loss harvesting."
+        },
+        {
+          "question": "Does Texas have local income taxes too?",
+          "answer": "Some Texas localities may impose additional income taxes. Check with your city or county."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-texas",
+        "paycheck-texas",
+        "salary-after-tax-texas"
+      ]
+    },
+    {
+      "slug": "self-employment-tax-texas",
+      "baseType": "self-employment-tax",
+      "name": "Texas Self-Employment Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas self-employment tax",
+      "secondaryKeywords": [
+        "texas freelance tax",
+        "texas 1099 tax",
+        "self-employed tax texas"
+      ],
+      "metaTitle": "Texas Self-Employment Tax Calculator | TX",
+      "metaDescription": "Calculate self-employment tax in Texas. See SE tax, state income tax, and quarterly payment estimates.",
+      "heroTitle": "Texas Self-Employment Tax Calculator",
+      "heroSubtitle": "Estimate your total self-employment tax burden in Texas",
+      "introText": "Self-employed workers in Texas pay 15.3% in SE tax (Social Security 12.4% + Medicare 2.9%) on 92.35% of net earnings, plus no state income tax.",
+      "formula": "SE Tax = Net Earnings × 92.35% × 15.3% (SS capped at $168,600)",
+      "stateData": {
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💼",
+          "title": "SE Tax Estimate",
+          "description": "Calculate your Texas self-employment tax"
+        },
+        {
+          "icon": "📅",
+          "title": "Quarterly Payments",
+          "description": "Get estimated quarterly amounts"
+        },
+        {
+          "icon": "✂️",
+          "title": "Deduction Finder",
+          "description": "See available business deductions"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much is self-employment tax in Texas?",
+          "answer": "The federal SE tax rate is 15.3% on 92.35% of net earnings. Texas adds no state income tax."
+        },
+        {
+          "question": "Do I need to pay quarterly taxes in Texas?",
+          "answer": "Yes, self-employed individuals must make estimated quarterly payments if they expect to owe $1,000+ in taxes."
+        },
+        {
+          "question": "Can I deduct half of SE tax?",
+          "answer": "Yes, you can deduct 50% of your self-employment tax when calculating your adjusted gross income."
+        },
+        {
+          "question": "What expenses can I deduct in Texas?",
+          "answer": "Common deductions include home office, vehicle, health insurance, supplies, and professional services."
+        },
+        {
+          "question": "When are quarterly payments due?",
+          "answer": "Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-texas",
+        "effective-tax-rate-texas",
+        "llc-cost-texas"
+      ]
+    },
+    {
+      "slug": "retirement-tax-texas",
+      "baseType": "retirement-tax",
+      "name": "Texas Retirement Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "texas retirement tax",
+      "secondaryKeywords": [
+        "texas pension tax",
+        "texas 401k tax",
+        "retirement income texas"
+      ],
+      "metaTitle": "Texas Retirement Tax Calculator | TX",
+      "metaDescription": "Calculate taxes on retirement income in Texas. See how Social Security, pensions, and 401k withdrawals are taxed.",
+      "heroTitle": "Texas Retirement Tax Calculator",
+      "heroSubtitle": "See how Texas taxes your retirement income sources",
+      "introText": "Texas has no state income tax, so retirement income is not taxed at the state level.",
+      "formula": "State Tax on Retirement = Taxable Retirement Income × State Rate",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "taxesSocialSecurity": false,
+        "taxesPension": false
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏖️",
+          "title": "Retirement Planning",
+          "description": "Plan your Texas retirement income strategy"
+        },
+        {
+          "icon": "🔍",
+          "title": "Source Analysis",
+          "description": "See tax impact by income source"
+        },
+        {
+          "icon": "🗺️",
+          "title": "State Comparison",
+          "description": "Compare retirement tax friendliness"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Texas tax Social Security?",
+          "answer": "No, Texas does not tax Social Security benefits."
+        },
+        {
+          "question": "Are pensions taxed in Texas?",
+          "answer": "No, Texas does not tax pension income."
+        },
+        {
+          "question": "Is Texas a good state for retirees?",
+          "answer": "Texas has no income tax, making it tax-friendly for retirees. Consider cost of living (index: 93) as well."
+        },
+        {
+          "question": "Are 401k withdrawals taxed in Texas?",
+          "answer": "No, Texas has no state income tax on any income source."
+        },
+        {
+          "question": "What is the best state for retirement taxes?",
+          "answer": "States with no income tax (like FL, TX, NV) are popular, but consider overall cost of living, healthcare, and quality of life."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-texas",
+        "cost-of-living-texas",
+        "estate-tax-texas"
+      ]
+    },
+    {
+      "slug": "mortgage-texas",
+      "baseType": "mortgage",
+      "name": "Texas Mortgage Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas mortgage calculator",
+      "secondaryKeywords": [
+        "mortgage calculator texas",
+        "texas mortgage"
+      ],
+      "metaTitle": "Texas Mortgage Calculator 2025 | TX",
+      "metaDescription": "Calculate monthly mortgage payments including PMI, taxes, and insurance in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Mortgage Calculator",
+      "heroSubtitle": "Calculate monthly mortgage payments including PMI, taxes, and insurance in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding mortgage costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for mortgage formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized mortgage analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different mortgage scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical mortgage in Texas?",
+          "answer": "Mortgage costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "rent-vs-buy-texas",
+        "closing-costs-texas",
+        "homestead-exemption-texas"
+      ]
+    },
+    {
+      "slug": "rent-vs-buy-texas",
+      "baseType": "rent-vs-buy",
+      "name": "Texas Rent vs Buy Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas rent vs buy calculator",
+      "secondaryKeywords": [
+        "rent vs buy calculator texas",
+        "texas rent vs buy"
+      ],
+      "metaTitle": "Texas Rent vs Buy Calculator 2025 | TX",
+      "metaDescription": "Calculate whether it's better to rent or buy a home in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Rent vs Buy Calculator",
+      "heroSubtitle": "Calculate whether it's better to rent or buy a home in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding rent vs buy costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for rent vs buy formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent vs buy analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent vs buy scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical rent vs buy in Texas?",
+          "answer": "Rent vs Buy costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "closing-costs-texas",
+        "homestead-exemption-texas"
+      ]
+    },
+    {
+      "slug": "closing-costs-texas",
+      "baseType": "closing-costs",
+      "name": "Texas Closing Costs Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas closing costs calculator",
+      "secondaryKeywords": [
+        "closing costs calculator texas",
+        "texas closing costs"
+      ],
+      "metaTitle": "Texas Closing Costs Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated closing costs for buying or selling a home in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Closing Costs Calculator",
+      "heroSubtitle": "Calculate estimated closing costs for buying or selling a home in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding closing costs costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for closing costs formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized closing costs analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different closing costs scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical closing costs in Texas?",
+          "answer": "Closing Costs costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "homestead-exemption-texas"
+      ]
+    },
+    {
+      "slug": "homestead-exemption-texas",
+      "baseType": "homestead-exemption",
+      "name": "Texas Homestead Exemption Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas homestead exemption calculator",
+      "secondaryKeywords": [
+        "homestead exemption calculator texas",
+        "texas homestead exemption"
+      ],
+      "metaTitle": "Texas Homestead Exemption Calculator 2025 | TX",
+      "metaDescription": "Calculate property tax savings from your homestead exemption in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Homestead Exemption Calculator",
+      "heroSubtitle": "Calculate property tax savings from your homestead exemption in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding homestead exemption costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for homestead exemption formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized homestead exemption analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different homestead exemption scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical homestead exemption in Texas?",
+          "answer": "Homestead Exemption costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "home-affordability-texas",
+      "baseType": "home-affordability",
+      "name": "Texas Home Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas home affordability calculator",
+      "secondaryKeywords": [
+        "home affordability calculator texas",
+        "texas home affordability"
+      ],
+      "metaTitle": "Texas Home Affordability Calculator 2025 | TX",
+      "metaDescription": "Calculate how much house you can afford based on income in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Home Affordability Calculator",
+      "heroSubtitle": "Calculate how much house you can afford based on income in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding home affordability costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for home affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical home affordability in Texas?",
+          "answer": "Home Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "rent-affordability-texas",
+      "baseType": "rent-affordability",
+      "name": "Texas Rent Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas rent affordability calculator",
+      "secondaryKeywords": [
+        "rent affordability calculator texas",
+        "texas rent affordability"
+      ],
+      "metaTitle": "Texas Rent Affordability Calculator 2025 | TX",
+      "metaDescription": "Calculate how much rent you can afford based on income in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Rent Affordability Calculator",
+      "heroSubtitle": "Calculate how much rent you can afford based on income in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding rent affordability costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for rent affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical rent affordability in Texas?",
+          "answer": "Rent Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "down-payment-texas",
+      "baseType": "down-payment",
+      "name": "Texas Down Payment Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas down payment calculator",
+      "secondaryKeywords": [
+        "down payment calculator texas",
+        "texas down payment"
+      ],
+      "metaTitle": "Texas Down Payment Calculator 2025 | TX",
+      "metaDescription": "Calculate how long to save for a down payment in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Down Payment Calculator",
+      "heroSubtitle": "Calculate how long to save for a down payment in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding down payment costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for down payment formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized down payment analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different down payment scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical down payment in Texas?",
+          "answer": "Down Payment costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "home-equity-texas",
+      "baseType": "home-equity",
+      "name": "Texas Home Equity Loan Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas home equity calculator",
+      "secondaryKeywords": [
+        "home equity calculator texas",
+        "texas home equity loan"
+      ],
+      "metaTitle": "Texas Home Equity Loan Calculator 2025 | TX",
+      "metaDescription": "Calculate how much you can borrow against your home equity in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Home Equity Loan Calculator",
+      "heroSubtitle": "Calculate how much you can borrow against your home equity in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding home equity loan costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for home equity loan formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home equity loan analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home equity loan scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical home equity loan in Texas?",
+          "answer": "Home Equity Loan costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "refinance-texas",
+      "baseType": "refinance",
+      "name": "Texas Refinance Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas refinance calculator",
+      "secondaryKeywords": [
+        "refinance calculator texas",
+        "texas refinance"
+      ],
+      "metaTitle": "Texas Refinance Calculator 2025 | TX",
+      "metaDescription": "Calculate whether refinancing your mortgage saves money in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas Refinance Calculator",
+      "heroSubtitle": "Calculate whether refinancing your mortgage saves money in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding refinance costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for refinance formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized refinance analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different refinance scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical refinance in Texas?",
+          "answer": "Refinance costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "adu-roi-texas",
+      "baseType": "adu-roi",
+      "name": "Texas ADU ROI Calculator",
+      "category": "housing",
+      "primaryKeyword": "texas adu calculator",
+      "secondaryKeywords": [
+        "adu calculator texas",
+        "texas adu roi"
+      ],
+      "metaTitle": "Texas ADU ROI Calculator 2025 | TX",
+      "metaDescription": "Calculate the return on investment for an accessory dwelling unit in Texas. Free online calculator with Texas-specific data.",
+      "heroTitle": "Texas ADU ROI Calculator",
+      "heroSubtitle": "Calculate the return on investment for an accessory dwelling unit in Texas",
+      "introText": "With a median home value of $290 000 and property tax rate of 1.68%, understanding adu roi costs in Texas is essential for homeowners and buyers.",
+      "formula": "See calculator for adu roi formula details.",
+      "stateData": {
+        "medianHomeValue": 290000,
+        "avgPropertyTaxRate": 1.68,
+        "homesteadExemption": 100000,
+        "avgClosingCostRate": 1.4,
+        "transferTaxRate": 0,
+        "avgRent": 1350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Texas Data",
+          "description": "Uses current Texas housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized adu roi analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different adu roi scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Texas?",
+          "answer": "The median home value in Texas is approximately $290 000."
+        },
+        {
+          "question": "What is the average property tax rate in Texas?",
+          "answer": "The average effective property tax rate in Texas is 1.68%."
+        },
+        {
+          "question": "How much is a typical adu roi in Texas?",
+          "answer": "ADU ROI costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Texas a good state to buy a home?",
+          "answer": "Texas has a cost of living index of 93 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Texas?",
+          "answer": "Housing markets vary across Texas. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-texas",
+        "rent-vs-buy-texas",
+        "closing-costs-texas"
+      ]
+    },
+    {
+      "slug": "salary-after-tax-texas",
+      "baseType": "salary-after-tax",
+      "name": "Texas Salary After Tax Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas salary after tax",
+      "secondaryKeywords": [
+        "salary after tax texas",
+        "texas salary after tax"
+      ],
+      "metaTitle": "Texas Salary After Tax Calculator 2025 | TX",
+      "metaDescription": "Calculate your take-home pay after all taxes in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Salary After Tax Calculator",
+      "heroSubtitle": "Calculate your take-home pay after all taxes in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate salary after tax in Texas.",
+      "formula": "See calculator for detailed salary after tax formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is salary after tax calculated in Texas?",
+          "answer": "Salary After Tax in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "minimum-wage-texas",
+        "overtime-texas",
+        "workers-comp-texas"
+      ]
+    },
+    {
+      "slug": "minimum-wage-texas",
+      "baseType": "minimum-wage",
+      "name": "Texas Minimum Wage Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas minimum wage calculator",
+      "secondaryKeywords": [
+        "minimum wage calculator texas",
+        "texas minimum wage"
+      ],
+      "metaTitle": "Texas Minimum Wage Calculator 2025 | TX",
+      "metaDescription": "Calculate earnings at minimum wage including tipped rates in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Minimum Wage Calculator",
+      "heroSubtitle": "Calculate earnings at minimum wage including tipped rates in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate minimum wage in Texas.",
+      "formula": "See calculator for detailed minimum wage formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is minimum wage calculated in Texas?",
+          "answer": "Minimum Wage in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-texas",
+        "overtime-texas",
+        "workers-comp-texas"
+      ]
+    },
+    {
+      "slug": "overtime-texas",
+      "baseType": "overtime",
+      "name": "Texas Overtime Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas overtime calculator",
+      "secondaryKeywords": [
+        "overtime calculator texas",
+        "texas overtime"
+      ],
+      "metaTitle": "Texas Overtime Calculator 2025 | TX",
+      "metaDescription": "Calculate overtime pay with state-specific rules in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Overtime Calculator",
+      "heroSubtitle": "Calculate overtime pay with state-specific rules in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate overtime in Texas.",
+      "formula": "See calculator for detailed overtime formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is overtime calculated in Texas?",
+          "answer": "Overtime in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-texas",
+        "minimum-wage-texas",
+        "workers-comp-texas"
+      ]
+    },
+    {
+      "slug": "workers-comp-texas",
+      "baseType": "workers-comp",
+      "name": "Texas Workers Comp Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas workers compensation calculator",
+      "secondaryKeywords": [
+        "workers compensation calculator texas",
+        "texas workers comp"
+      ],
+      "metaTitle": "Texas Workers Comp Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated workers compensation insurance costs in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Workers Comp Calculator",
+      "heroSubtitle": "Calculate estimated workers compensation insurance costs in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate workers comp in Texas.",
+      "formula": "See calculator for detailed workers comp formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is workers comp calculated in Texas?",
+          "answer": "Workers Comp in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-texas",
+        "minimum-wage-texas",
+        "overtime-texas"
+      ]
+    },
+    {
+      "slug": "hourly-to-salary-texas",
+      "baseType": "hourly-to-salary",
+      "name": "Texas Hourly to Salary Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas hourly to salary",
+      "secondaryKeywords": [
+        "hourly to salary texas",
+        "texas hourly to salary"
+      ],
+      "metaTitle": "Texas Hourly to Salary Calculator 2025 | TX",
+      "metaDescription": "Calculate the salary equivalent of an hourly wage in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Hourly to Salary Calculator",
+      "heroSubtitle": "Calculate the salary equivalent of an hourly wage in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate hourly to salary in Texas.",
+      "formula": "See calculator for detailed hourly to salary formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is hourly to salary calculated in Texas?",
+          "answer": "Hourly to Salary in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-texas",
+        "minimum-wage-texas",
+        "overtime-texas"
+      ]
+    },
+    {
+      "slug": "take-home-pay-texas",
+      "baseType": "take-home-pay",
+      "name": "Texas Take Home Pay Calculator",
+      "category": "employment",
+      "primaryKeyword": "texas take home pay calculator",
+      "secondaryKeywords": [
+        "take home pay calculator texas",
+        "texas take home pay"
+      ],
+      "metaTitle": "Texas Take Home Pay Calculator 2025 | TX",
+      "metaDescription": "Calculate your net pay after deductions in Texas. Free calculator with current Texas tax rates and rules.",
+      "heroTitle": "Texas Take Home Pay Calculator",
+      "heroSubtitle": "Calculate your net pay after deductions in Texas",
+      "introText": "Texas has a minimum wage of $7.25/hr and no state income tax. Use this calculator to estimate take home pay in Texas.",
+      "formula": "See calculator for detailed take home pay formula.",
+      "stateData": {
+        "minimumWage": 7.25,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 2.13,
+        "avgWorkerCompRate": 0.86
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Texas Rates",
+          "description": "Current Texas tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Texas?",
+          "answer": "The Texas minimum wage is $7.25 per hour."
+        },
+        {
+          "question": "Does Texas have a state income tax?",
+          "answer": "No, Texas has no state income tax."
+        },
+        {
+          "question": "How is take home pay calculated in Texas?",
+          "answer": "Take Home Pay in Texas accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Texas paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Texas compare to other states for workers?",
+          "answer": "Texas has a cost of living index of 93 and minimum wage of $7.25, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-texas",
+        "minimum-wage-texas",
+        "overtime-texas"
+      ]
+    },
+    {
+      "slug": "health-insurance-texas",
+      "baseType": "health-insurance",
+      "name": "Texas Health Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas health insurance cost",
+      "secondaryKeywords": [
+        "health insurance cost texas",
+        "average health insurance cost texas"
+      ],
+      "metaTitle": "Texas Health Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated health insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Health Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated health insurance premiums based on Texas averages",
+      "introText": "The average annual health insurance cost in Texas is $520. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does health insurance cost in Texas?",
+          "answer": "Health Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is health insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my health insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect health insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for health insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "auto-insurance-texas",
+        "homeowners-insurance-texas",
+        "flood-insurance-texas"
+      ]
+    },
+    {
+      "slug": "auto-insurance-texas",
+      "baseType": "auto-insurance",
+      "name": "Texas Auto Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas car insurance cost",
+      "secondaryKeywords": [
+        "car insurance cost texas",
+        "average car insurance cost texas"
+      ],
+      "metaTitle": "Texas Auto Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated car insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Auto Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated car insurance premiums based on Texas averages",
+      "introText": "The average annual auto insurance cost in Texas is $2150. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does auto insurance cost in Texas?",
+          "answer": "Auto Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is auto insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my auto insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect auto insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for auto insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-texas",
+        "homeowners-insurance-texas",
+        "flood-insurance-texas"
+      ]
+    },
+    {
+      "slug": "homeowners-insurance-texas",
+      "baseType": "homeowners-insurance",
+      "name": "Texas Homeowners Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas homeowners insurance cost",
+      "secondaryKeywords": [
+        "homeowners insurance cost texas",
+        "average homeowners insurance cost texas"
+      ],
+      "metaTitle": "Texas Homeowners Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated homeowners insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Homeowners Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated homeowners insurance premiums based on Texas averages",
+      "introText": "Homeowners Insurance costs in Texas vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does homeowners insurance cost in Texas?",
+          "answer": "Homeowners Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is homeowners insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my homeowners insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect homeowners insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for homeowners insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-texas",
+        "auto-insurance-texas",
+        "flood-insurance-texas"
+      ]
+    },
+    {
+      "slug": "flood-insurance-texas",
+      "baseType": "flood-insurance",
+      "name": "Texas Flood Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas flood insurance cost",
+      "secondaryKeywords": [
+        "flood insurance cost texas",
+        "average flood insurance cost texas"
+      ],
+      "metaTitle": "Texas Flood Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated flood insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Flood Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated flood insurance premiums based on Texas averages",
+      "introText": "Flood Insurance costs in Texas vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does flood insurance cost in Texas?",
+          "answer": "Flood Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is flood insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my flood insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect flood insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for flood insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-texas",
+        "auto-insurance-texas",
+        "homeowners-insurance-texas"
+      ]
+    },
+    {
+      "slug": "renters-insurance-texas",
+      "baseType": "renters-insurance",
+      "name": "Texas Renters Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas renters insurance cost",
+      "secondaryKeywords": [
+        "renters insurance cost texas",
+        "average renters insurance cost texas"
+      ],
+      "metaTitle": "Texas Renters Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated renters insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Renters Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated renters insurance premiums based on Texas averages",
+      "introText": "Renters Insurance costs in Texas vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does renters insurance cost in Texas?",
+          "answer": "Renters Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is renters insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my renters insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect renters insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for renters insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-texas",
+        "auto-insurance-texas",
+        "homeowners-insurance-texas"
+      ]
+    },
+    {
+      "slug": "life-insurance-texas",
+      "baseType": "life-insurance",
+      "name": "Texas Life Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "texas life insurance cost",
+      "secondaryKeywords": [
+        "life insurance cost texas",
+        "average life insurance cost texas"
+      ],
+      "metaTitle": "Texas Life Insurance Calculator 2025 | TX",
+      "metaDescription": "Estimate estimated life insurance premiums in Texas. Compare plans and find the best rates for Texas residents.",
+      "heroTitle": "Texas Life Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated life insurance premiums based on Texas averages",
+      "introText": "Life Insurance costs in Texas vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgAutoInsurance": 2150,
+        "avgHealthInsurance": 520,
+        "avgHomeInsurance": 3875
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Texas Rates",
+          "description": "Based on current Texas insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does life insurance cost in Texas?",
+          "answer": "Life Insurance costs in Texas depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is life insurance required in Texas?",
+          "answer": "Requirements vary by insurance type and state law. Check Texas's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my life insurance in Texas?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect life insurance rates in Texas?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for life insurance in Texas?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-texas",
+        "auto-insurance-texas",
+        "homeowners-insurance-texas"
+      ]
+    },
+    {
+      "slug": "college-cost-texas",
+      "baseType": "college-cost",
+      "name": "Texas College Cost Calculator",
+      "category": "education",
+      "primaryKeyword": "texas college cost",
+      "secondaryKeywords": [
+        "college cost texas",
+        "texas college cost"
+      ],
+      "metaTitle": "Texas College Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate total cost of college including tuition, room, and board in Texas. Free calculator with Texas-specific education data.",
+      "heroTitle": "Texas College Cost Calculator",
+      "heroSubtitle": "Estimate total cost of college including tuition, room, and board for Texas residents",
+      "introText": "Texas offers in-state tuition averaging $10 584 at public universities. The average student debt is $32 990.",
+      "formula": "See calculator for detailed college cost formula.",
+      "stateData": {
+        "avgInStateTuition": 10584,
+        "avgOutStateTuition": 24048,
+        "avgRoomBoard": 11500,
+        "avgTeacherSalary": 57641,
+        "avgStudentDebt": 32990
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Texas Data",
+          "description": "Based on current Texas education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized college cost analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Texas?",
+          "answer": "The average in-state tuition at Texas public universities is approximately $10 584 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Texas?",
+          "answer": "The average teacher salary in Texas is approximately $57 641 per year."
+        },
+        {
+          "question": "How much student debt do Texas graduates have?",
+          "answer": "The average student debt for Texas graduates is approximately $32 990."
+        },
+        {
+          "question": "Does Texas offer a 529 plan?",
+          "answer": "Yes, Texas offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Texas?",
+          "answer": "Texas offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "student-loan-texas",
+        "teacher-salary-texas",
+        "education-savings-texas"
+      ]
+    },
+    {
+      "slug": "student-loan-texas",
+      "baseType": "student-loan",
+      "name": "Texas Student Loan Repayment Calculator",
+      "category": "education",
+      "primaryKeyword": "texas student loan calculator",
+      "secondaryKeywords": [
+        "student loan calculator texas",
+        "texas student loan repayment"
+      ],
+      "metaTitle": "Texas Student Loan Repayment Calculator 2025 | TX",
+      "metaDescription": "Calculate monthly student loan payments and total interest in Texas. Free calculator with Texas-specific education data.",
+      "heroTitle": "Texas Student Loan Repayment Calculator",
+      "heroSubtitle": "Estimate monthly student loan payments and total interest for Texas residents",
+      "introText": "Texas offers in-state tuition averaging $10 584 at public universities. The average student debt is $32 990.",
+      "formula": "See calculator for detailed student loan repayment formula.",
+      "stateData": {
+        "avgInStateTuition": 10584,
+        "avgOutStateTuition": 24048,
+        "avgRoomBoard": 11500,
+        "avgTeacherSalary": 57641,
+        "avgStudentDebt": 32990
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Texas Data",
+          "description": "Based on current Texas education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized student loan repayment analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Texas?",
+          "answer": "The average in-state tuition at Texas public universities is approximately $10 584 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Texas?",
+          "answer": "The average teacher salary in Texas is approximately $57 641 per year."
+        },
+        {
+          "question": "How much student debt do Texas graduates have?",
+          "answer": "The average student debt for Texas graduates is approximately $32 990."
+        },
+        {
+          "question": "Does Texas offer a 529 plan?",
+          "answer": "Yes, Texas offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Texas?",
+          "answer": "Texas offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-texas",
+        "teacher-salary-texas",
+        "education-savings-texas"
+      ]
+    },
+    {
+      "slug": "teacher-salary-texas",
+      "baseType": "teacher-salary",
+      "name": "Texas Teacher Salary Calculator",
+      "category": "education",
+      "primaryKeyword": "texas teacher salary",
+      "secondaryKeywords": [
+        "teacher salary texas",
+        "texas teacher salary"
+      ],
+      "metaTitle": "Texas Teacher Salary Calculator 2025 | TX",
+      "metaDescription": "Calculate expected teacher salary based on experience and education in Texas. Free calculator with Texas-specific education data.",
+      "heroTitle": "Texas Teacher Salary Calculator",
+      "heroSubtitle": "Estimate expected teacher salary based on experience and education for Texas residents",
+      "introText": "Texas offers in-state tuition averaging $10 584 at public universities. The average student debt is $32 990.",
+      "formula": "See calculator for detailed teacher salary formula.",
+      "stateData": {
+        "avgInStateTuition": 10584,
+        "avgOutStateTuition": 24048,
+        "avgRoomBoard": 11500,
+        "avgTeacherSalary": 57641,
+        "avgStudentDebt": 32990
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Texas Data",
+          "description": "Based on current Texas education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized teacher salary analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Texas?",
+          "answer": "The average in-state tuition at Texas public universities is approximately $10 584 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Texas?",
+          "answer": "The average teacher salary in Texas is approximately $57 641 per year."
+        },
+        {
+          "question": "How much student debt do Texas graduates have?",
+          "answer": "The average student debt for Texas graduates is approximately $32 990."
+        },
+        {
+          "question": "Does Texas offer a 529 plan?",
+          "answer": "Yes, Texas offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Texas?",
+          "answer": "Texas offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-texas",
+        "student-loan-texas",
+        "education-savings-texas"
+      ]
+    },
+    {
+      "slug": "education-savings-texas",
+      "baseType": "education-savings",
+      "name": "Texas 529 Plan Savings Calculator",
+      "category": "education",
+      "primaryKeyword": "texas 529 plan calculator",
+      "secondaryKeywords": [
+        "529 plan calculator texas",
+        "texas 529 plan savings"
+      ],
+      "metaTitle": "Texas 529 Plan Savings Calculator 2025 | TX",
+      "metaDescription": "Calculate how a 529 plan investment grows over time in Texas. Free calculator with Texas-specific education data.",
+      "heroTitle": "Texas 529 Plan Savings Calculator",
+      "heroSubtitle": "Estimate how a 529 plan investment grows over time for Texas residents",
+      "introText": "Texas offers in-state tuition averaging $10 584 at public universities. The average student debt is $32 990.",
+      "formula": "See calculator for detailed 529 plan savings formula.",
+      "stateData": {
+        "avgInStateTuition": 10584,
+        "avgOutStateTuition": 24048,
+        "avgRoomBoard": 11500,
+        "avgTeacherSalary": 57641,
+        "avgStudentDebt": 32990
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Texas Data",
+          "description": "Based on current Texas education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized 529 plan savings analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Texas?",
+          "answer": "The average in-state tuition at Texas public universities is approximately $10 584 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Texas?",
+          "answer": "The average teacher salary in Texas is approximately $57 641 per year."
+        },
+        {
+          "question": "How much student debt do Texas graduates have?",
+          "answer": "The average student debt for Texas graduates is approximately $32 990."
+        },
+        {
+          "question": "Does Texas offer a 529 plan?",
+          "answer": "Yes, Texas offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Texas?",
+          "answer": "Texas offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-texas",
+        "student-loan-texas",
+        "teacher-salary-texas"
+      ]
+    },
+    {
+      "slug": "in-state-tuition-texas",
+      "baseType": "in-state-tuition",
+      "name": "Texas In-State Tuition Calculator",
+      "category": "education",
+      "primaryKeyword": "texas in-state tuition cost",
+      "secondaryKeywords": [
+        "in-state tuition cost texas",
+        "texas in-state tuition"
+      ],
+      "metaTitle": "Texas In-State Tuition Calculator 2025 | TX",
+      "metaDescription": "Calculate in-state vs out-of-state tuition costs in Texas. Free calculator with Texas-specific education data.",
+      "heroTitle": "Texas In-State Tuition Calculator",
+      "heroSubtitle": "Estimate in-state vs out-of-state tuition costs for Texas residents",
+      "introText": "Texas offers in-state tuition averaging $10 584 at public universities. The average student debt is $32 990.",
+      "formula": "See calculator for detailed in-state tuition formula.",
+      "stateData": {
+        "avgInStateTuition": 10584,
+        "avgOutStateTuition": 24048,
+        "avgRoomBoard": 11500,
+        "avgTeacherSalary": 57641,
+        "avgStudentDebt": 32990
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Texas Data",
+          "description": "Based on current Texas education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized in-state tuition analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Texas?",
+          "answer": "The average in-state tuition at Texas public universities is approximately $10 584 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Texas?",
+          "answer": "The average teacher salary in Texas is approximately $57 641 per year."
+        },
+        {
+          "question": "How much student debt do Texas graduates have?",
+          "answer": "The average student debt for Texas graduates is approximately $32 990."
+        },
+        {
+          "question": "Does Texas offer a 529 plan?",
+          "answer": "Yes, Texas offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Texas?",
+          "answer": "Texas offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-texas",
+        "student-loan-texas",
+        "teacher-salary-texas"
+      ]
+    },
+    {
+      "slug": "cost-of-living-texas",
+      "baseType": "cost-of-living",
+      "name": "Texas Cost of Living Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "texas cost of living",
+      "secondaryKeywords": [
+        "cost of living texas",
+        "texas cost of living"
+      ],
+      "metaTitle": "Texas Cost of Living Calculator 2025 | TX",
+      "metaDescription": "Calculate the overall cost of living and salary equivalency in Texas. Compare to national averages and other states.",
+      "heroTitle": "Texas Cost of Living Calculator",
+      "heroSubtitle": "Estimate the overall cost of living and salary equivalency in Texas",
+      "introText": "Texas has a cost of living index of 93 (100 = national average). This means living in Texas is 7% below the national average.",
+      "formula": "See calculator for detailed cost of living formula.",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgRent": 1350,
+        "avgGasPrice": 2.95,
+        "avgUtilityCost": 175,
+        "avgGroceryCost": 340
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Texas Index",
+          "description": "Based on Texas cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Texas?",
+          "answer": "Texas's cost of living index is 93 (100 = US average). It's below average."
+        },
+        {
+          "question": "How much does cost of living cost in Texas?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Texas."
+        },
+        {
+          "question": "Is Texas expensive to live in?",
+          "answer": "Texas has a cost of living index of 93. It is below the national average."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "The national average cost of living index is 100. Texas is at 93, making it more affordable than average."
+        },
+        {
+          "question": "What is the average rent in Texas?",
+          "answer": "Average rent varies significantly by city and region within Texas. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "grocery-cost-texas",
+        "utility-cost-texas",
+        "gas-price-texas"
+      ]
+    },
+    {
+      "slug": "grocery-cost-texas",
+      "baseType": "grocery-cost",
+      "name": "Texas Grocery Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "texas grocery cost",
+      "secondaryKeywords": [
+        "grocery cost texas",
+        "texas grocery cost"
+      ],
+      "metaTitle": "Texas Grocery Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated monthly grocery costs in Texas. Compare to national averages and other states.",
+      "heroTitle": "Texas Grocery Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly grocery costs in Texas",
+      "introText": "Texas has a cost of living index of 93 (100 = national average). This means living in Texas is 7% below the national average.",
+      "formula": "See calculator for detailed grocery cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgRent": 1350,
+        "avgGasPrice": 2.95,
+        "avgUtilityCost": 175,
+        "avgGroceryCost": 340
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Texas Index",
+          "description": "Based on Texas cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Texas?",
+          "answer": "Texas's cost of living index is 93 (100 = US average). It's below average."
+        },
+        {
+          "question": "How much does grocery cost cost in Texas?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Texas."
+        },
+        {
+          "question": "Is Texas expensive to live in?",
+          "answer": "Texas has a cost of living index of 93. It is below the national average."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "The national average cost of living index is 100. Texas is at 93, making it more affordable than average."
+        },
+        {
+          "question": "What is the average rent in Texas?",
+          "answer": "Average rent varies significantly by city and region within Texas. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "utility-cost-texas",
+        "gas-price-texas"
+      ]
+    },
+    {
+      "slug": "utility-cost-texas",
+      "baseType": "utility-cost",
+      "name": "Texas Utility Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "texas utility bills",
+      "secondaryKeywords": [
+        "utility bills texas",
+        "texas utility cost"
+      ],
+      "metaTitle": "Texas Utility Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated monthly utility bills in Texas. Compare to national averages and other states.",
+      "heroTitle": "Texas Utility Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly utility bills in Texas",
+      "introText": "Texas has a cost of living index of 93 (100 = national average). This means living in Texas is 7% below the national average.",
+      "formula": "See calculator for detailed utility cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgRent": 1350,
+        "avgGasPrice": 2.95,
+        "avgUtilityCost": 175,
+        "avgGroceryCost": 340
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Texas Index",
+          "description": "Based on Texas cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Texas?",
+          "answer": "Texas's cost of living index is 93 (100 = US average). It's below average."
+        },
+        {
+          "question": "How much does utility cost cost in Texas?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Texas."
+        },
+        {
+          "question": "Is Texas expensive to live in?",
+          "answer": "Texas has a cost of living index of 93. It is below the national average."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "The national average cost of living index is 100. Texas is at 93, making it more affordable than average."
+        },
+        {
+          "question": "What is the average rent in Texas?",
+          "answer": "Average rent varies significantly by city and region within Texas. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "grocery-cost-texas",
+        "gas-price-texas"
+      ]
+    },
+    {
+      "slug": "gas-price-texas",
+      "baseType": "gas-price",
+      "name": "Texas Gas Price Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "texas gas cost",
+      "secondaryKeywords": [
+        "gas cost texas",
+        "texas gas price"
+      ],
+      "metaTitle": "Texas Gas Price Calculator 2025 | TX",
+      "metaDescription": "Calculate fuel costs and driving expenses in Texas. Compare to national averages and other states.",
+      "heroTitle": "Texas Gas Price Calculator",
+      "heroSubtitle": "Estimate fuel costs and driving expenses in Texas",
+      "introText": "Texas has a cost of living index of 93 (100 = national average). This means living in Texas is 7% below the national average.",
+      "formula": "See calculator for detailed gas price formula.",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgRent": 1350,
+        "avgGasPrice": 2.95,
+        "avgUtilityCost": 175,
+        "avgGroceryCost": 340
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Texas Index",
+          "description": "Based on Texas cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Texas?",
+          "answer": "Texas's cost of living index is 93 (100 = US average). It's below average."
+        },
+        {
+          "question": "How much does gas price cost in Texas?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Texas."
+        },
+        {
+          "question": "Is Texas expensive to live in?",
+          "answer": "Texas has a cost of living index of 93. It is below the national average."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "The national average cost of living index is 100. Texas is at 93, making it more affordable than average."
+        },
+        {
+          "question": "What is the average rent in Texas?",
+          "answer": "Average rent varies significantly by city and region within Texas. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "grocery-cost-texas",
+        "utility-cost-texas"
+      ]
+    },
+    {
+      "slug": "relocation-cost-texas",
+      "baseType": "relocation-cost",
+      "name": "Texas Relocation Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "texas moving cost",
+      "secondaryKeywords": [
+        "moving cost texas",
+        "texas relocation cost"
+      ],
+      "metaTitle": "Texas Relocation Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated costs of relocating in Texas. Compare to national averages and other states.",
+      "heroTitle": "Texas Relocation Cost Calculator",
+      "heroSubtitle": "Estimate estimated costs of relocating in Texas",
+      "introText": "Texas has a cost of living index of 93 (100 = national average). This means living in Texas is 7% below the national average.",
+      "formula": "See calculator for detailed relocation cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 93,
+        "avgRent": 1350,
+        "avgGasPrice": 2.95,
+        "avgUtilityCost": 175,
+        "avgGroceryCost": 340
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Texas Index",
+          "description": "Based on Texas cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Texas?",
+          "answer": "Texas's cost of living index is 93 (100 = US average). It's below average."
+        },
+        {
+          "question": "How much does relocation cost cost in Texas?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Texas."
+        },
+        {
+          "question": "Is Texas expensive to live in?",
+          "answer": "Texas has a cost of living index of 93. It is below the national average."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "The national average cost of living index is 100. Texas is at 93, making it more affordable than average."
+        },
+        {
+          "question": "What is the average rent in Texas?",
+          "answer": "Average rent varies significantly by city and region within Texas. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "grocery-cost-texas",
+        "utility-cost-texas"
+      ]
+    },
+    {
+      "slug": "llc-cost-texas",
+      "baseType": "llc-cost",
+      "name": "Texas LLC Cost Calculator",
+      "category": "legal",
+      "primaryKeyword": "texas LLC cost",
+      "secondaryKeywords": [
+        "LLC cost texas",
+        "texas llc cost"
+      ],
+      "metaTitle": "Texas LLC Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate the cost of forming and maintaining an LLC in Texas. See Texas-specific penalties, fees, and costs.",
+      "heroTitle": "Texas LLC Cost Calculator",
+      "heroSubtitle": "Estimate the cost of forming and maintaining an LLC in Texas",
+      "introText": "Understanding llc cost in Texas helps you plan and budget. Filing an LLC in Texas costs $300.",
+      "formula": "See calculator for detailed llc cost calculations.",
+      "stateData": {
+        "avgLLCFiling": 300,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 200,
+        "dui1stFine": 2000,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Texas Laws",
+          "description": "Based on current Texas regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized llc cost costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does llc cost cost in Texas?",
+          "answer": "Filing an LLC in Texas costs approximately $300."
+        },
+        {
+          "question": "What are the penalties in Texas?",
+          "answer": "Texas has specific penalties and fee structures. This calculator includes current Texas data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Texas?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Texas-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Texas?",
+          "answer": "Processing times vary. Check with the relevant Texas state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Texas?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Texas's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "speeding-ticket-texas",
+        "dui-penalty-texas",
+        "traffic-fine-texas"
+      ]
+    },
+    {
+      "slug": "speeding-ticket-texas",
+      "baseType": "speeding-ticket",
+      "name": "Texas Speeding Ticket Calculator",
+      "category": "legal",
+      "primaryKeyword": "texas speeding ticket cost",
+      "secondaryKeywords": [
+        "speeding ticket cost texas",
+        "texas speeding ticket"
+      ],
+      "metaTitle": "Texas Speeding Ticket Calculator 2025 | TX",
+      "metaDescription": "Calculate speeding ticket fines and insurance impact in Texas. See Texas-specific penalties, fees, and costs.",
+      "heroTitle": "Texas Speeding Ticket Calculator",
+      "heroSubtitle": "Estimate speeding ticket fines and insurance impact in Texas",
+      "introText": "Understanding speeding ticket in Texas helps you plan and budget. Fines and penalties in Texas vary by violation type and history.",
+      "formula": "See calculator for detailed speeding ticket calculations.",
+      "stateData": {
+        "avgLLCFiling": 300,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 200,
+        "dui1stFine": 2000,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Texas Laws",
+          "description": "Based on current Texas regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized speeding ticket costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does speeding ticket cost in Texas?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Texas?",
+          "answer": "Texas has specific penalties and fee structures. This calculator includes current Texas data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Texas?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Texas-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Texas?",
+          "answer": "Processing times vary. Check with the relevant Texas state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Texas?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Texas's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-texas",
+        "dui-penalty-texas",
+        "traffic-fine-texas"
+      ]
+    },
+    {
+      "slug": "dui-penalty-texas",
+      "baseType": "dui-penalty",
+      "name": "Texas DUI Penalty Calculator",
+      "category": "legal",
+      "primaryKeyword": "texas DUI cost",
+      "secondaryKeywords": [
+        "DUI cost texas",
+        "texas dui penalty"
+      ],
+      "metaTitle": "Texas DUI Penalty Calculator 2025 | TX",
+      "metaDescription": "Calculate total costs and penalties for a DUI in Texas. See Texas-specific penalties, fees, and costs.",
+      "heroTitle": "Texas DUI Penalty Calculator",
+      "heroSubtitle": "Estimate total costs and penalties for a DUI in Texas",
+      "introText": "Understanding dui penalty in Texas helps you plan and budget. Fines and penalties in Texas vary by violation type and history.",
+      "formula": "See calculator for detailed dui penalty calculations.",
+      "stateData": {
+        "avgLLCFiling": 300,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 200,
+        "dui1stFine": 2000,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Texas Laws",
+          "description": "Based on current Texas regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized dui penalty costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does dui penalty cost in Texas?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Texas?",
+          "answer": "Texas has specific penalties and fee structures. This calculator includes current Texas data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Texas?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Texas-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Texas?",
+          "answer": "Processing times vary. Check with the relevant Texas state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Texas?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Texas's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-texas",
+        "speeding-ticket-texas",
+        "traffic-fine-texas"
+      ]
+    },
+    {
+      "slug": "traffic-fine-texas",
+      "baseType": "traffic-fine",
+      "name": "Texas Traffic Fine Calculator",
+      "category": "legal",
+      "primaryKeyword": "texas traffic fine",
+      "secondaryKeywords": [
+        "traffic fine texas",
+        "texas traffic fine"
+      ],
+      "metaTitle": "Texas Traffic Fine Calculator 2025 | TX",
+      "metaDescription": "Calculate traffic violation fines and point penalties in Texas. See Texas-specific penalties, fees, and costs.",
+      "heroTitle": "Texas Traffic Fine Calculator",
+      "heroSubtitle": "Estimate traffic violation fines and point penalties in Texas",
+      "introText": "Understanding traffic fine in Texas helps you plan and budget. Fines and penalties in Texas vary by violation type and history.",
+      "formula": "See calculator for detailed traffic fine calculations.",
+      "stateData": {
+        "avgLLCFiling": 300,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 200,
+        "dui1stFine": 2000,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Texas Laws",
+          "description": "Based on current Texas regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized traffic fine costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does traffic fine cost in Texas?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Texas?",
+          "answer": "Texas has specific penalties and fee structures. This calculator includes current Texas data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Texas?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Texas-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Texas?",
+          "answer": "Processing times vary. Check with the relevant Texas state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Texas?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Texas's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-texas",
+        "speeding-ticket-texas",
+        "dui-penalty-texas"
+      ]
+    },
+    {
+      "slug": "business-registration-texas",
+      "baseType": "business-registration",
+      "name": "Texas Business Registration Calculator",
+      "category": "legal",
+      "primaryKeyword": "texas business registration cost",
+      "secondaryKeywords": [
+        "business registration cost texas",
+        "texas business registration"
+      ],
+      "metaTitle": "Texas Business Registration Calculator 2025 | TX",
+      "metaDescription": "Calculate costs of registering a business in Texas. See Texas-specific penalties, fees, and costs.",
+      "heroTitle": "Texas Business Registration Calculator",
+      "heroSubtitle": "Estimate costs of registering a business in Texas",
+      "introText": "Understanding business registration in Texas helps you plan and budget. Fines and penalties in Texas vary by violation type and history.",
+      "formula": "See calculator for detailed business registration calculations.",
+      "stateData": {
+        "avgLLCFiling": 300,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 200,
+        "dui1stFine": 2000,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Texas Laws",
+          "description": "Based on current Texas regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized business registration costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does business registration cost in Texas?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Texas?",
+          "answer": "Texas has specific penalties and fee structures. This calculator includes current Texas data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Texas?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Texas-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Texas?",
+          "answer": "Processing times vary. Check with the relevant Texas state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Texas?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Texas's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-texas",
+        "speeding-ticket-texas",
+        "dui-penalty-texas"
+      ]
+    },
+    {
+      "slug": "solar-panel-roi-texas",
+      "baseType": "solar-panel-roi",
+      "name": "Texas Solar Panel ROI Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "texas solar panel calculator",
+      "secondaryKeywords": [
+        "solar panel calculator texas",
+        "texas solar panel roi"
+      ],
+      "metaTitle": "Texas Solar Panel ROI Calculator 2025 | TX",
+      "metaDescription": "Calculate the return on investment for solar panels in Texas. Free calculator with Texas-specific data and rates.",
+      "heroTitle": "Texas Solar Panel ROI Calculator",
+      "heroSubtitle": "Estimate the return on investment for solar panels in Texas",
+      "introText": "Texas averages 5.2 peak sun hours per day. With an average solar installation cost of $22 500 and the 30% federal ITC, solar can be a great investment.",
+      "formula": "See calculator for detailed solar panel roi formula.",
+      "stateData": {
+        "avgSolarInstallCost": 22500,
+        "avgSunHours": 5.2,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 2.95,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 93
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Texas Specific",
+          "description": "Uses current Texas rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete solar panel roi breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does solar panel roi work in Texas?",
+          "answer": "Solar Panel ROI in Texas follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect solar panel roi in Texas?",
+          "answer": "Key factors include location within Texas, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a solar panel roi benefit in Texas?",
+          "answer": "Texas may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "Texas's cost of living is below the national average, which affects solar panel roi costs."
+        },
+        {
+          "question": "Where can I learn more about solar panel roi in Texas?",
+          "answer": "Check the Texas state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "income-tax-texas",
+        "property-tax-texas"
+      ]
+    },
+    {
+      "slug": "ev-savings-texas",
+      "baseType": "ev-savings",
+      "name": "Texas EV Savings Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "texas EV savings calculator",
+      "secondaryKeywords": [
+        "EV savings calculator texas",
+        "texas ev savings"
+      ],
+      "metaTitle": "Texas EV Savings Calculator 2025 | TX",
+      "metaDescription": "Calculate savings from switching to an electric vehicle in Texas. Free calculator with Texas-specific data and rates.",
+      "heroTitle": "Texas EV Savings Calculator",
+      "heroSubtitle": "Estimate savings from switching to an electric vehicle in Texas",
+      "introText": "With Texas electricity averaging $0.13/kWh vs gas at $2.95/gallon, switching to an EV can yield significant savings.",
+      "formula": "See calculator for detailed ev savings formula.",
+      "stateData": {
+        "avgSolarInstallCost": 22500,
+        "avgSunHours": 5.2,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 2.95,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 93
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Texas Specific",
+          "description": "Uses current Texas rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete ev savings breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does ev savings work in Texas?",
+          "answer": "EV Savings in Texas follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect ev savings in Texas?",
+          "answer": "Key factors include location within Texas, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a ev savings benefit in Texas?",
+          "answer": "Texas may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "Texas's cost of living is below the national average, which affects ev savings costs."
+        },
+        {
+          "question": "Where can I learn more about ev savings in Texas?",
+          "answer": "Check the Texas state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "income-tax-texas",
+        "property-tax-texas"
+      ]
+    },
+    {
+      "slug": "commute-cost-texas",
+      "baseType": "commute-cost",
+      "name": "Texas Commute Cost Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "texas commute cost calculator",
+      "secondaryKeywords": [
+        "commute cost calculator texas",
+        "texas commute cost"
+      ],
+      "metaTitle": "Texas Commute Cost Calculator 2025 | TX",
+      "metaDescription": "Calculate your daily commuting costs in Texas. Free calculator with Texas-specific data and rates.",
+      "heroTitle": "Texas Commute Cost Calculator",
+      "heroSubtitle": "Estimate your daily commuting costs in Texas",
+      "introText": "Calculate commute cost specific to Texas residents using current state data and rates.",
+      "formula": "See calculator for detailed commute cost formula.",
+      "stateData": {
+        "avgSolarInstallCost": 22500,
+        "avgSunHours": 5.2,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 2.95,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 93
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Texas Specific",
+          "description": "Uses current Texas rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete commute cost breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does commute cost work in Texas?",
+          "answer": "Commute Cost in Texas follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect commute cost in Texas?",
+          "answer": "Key factors include location within Texas, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a commute cost benefit in Texas?",
+          "answer": "Texas may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "Texas's cost of living is below the national average, which affects commute cost costs."
+        },
+        {
+          "question": "Where can I learn more about commute cost in Texas?",
+          "answer": "Check the Texas state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "income-tax-texas",
+        "property-tax-texas"
+      ]
+    },
+    {
+      "slug": "lottery-tax-texas",
+      "baseType": "lottery-tax",
+      "name": "Texas Lottery Tax Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "texas lottery tax calculator",
+      "secondaryKeywords": [
+        "lottery tax calculator texas",
+        "texas lottery tax"
+      ],
+      "metaTitle": "Texas Lottery Tax Calculator 2025 | TX",
+      "metaDescription": "Calculate taxes on lottery winnings in Texas. Free calculator with Texas-specific data and rates.",
+      "heroTitle": "Texas Lottery Tax Calculator",
+      "heroSubtitle": "Estimate taxes on lottery winnings in Texas",
+      "introText": "Lottery winnings in Texas are subject to federal tax (24-37%) but no state income tax.",
+      "formula": "See calculator for detailed lottery tax formula.",
+      "stateData": {
+        "avgSolarInstallCost": 22500,
+        "avgSunHours": 5.2,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 2.95,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 93
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Texas Specific",
+          "description": "Uses current Texas rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete lottery tax breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does lottery tax work in Texas?",
+          "answer": "Lottery Tax in Texas follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect lottery tax in Texas?",
+          "answer": "Key factors include location within Texas, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a lottery tax benefit in Texas?",
+          "answer": "Texas may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "Texas's cost of living is below the national average, which affects lottery tax costs."
+        },
+        {
+          "question": "Where can I learn more about lottery tax in Texas?",
+          "answer": "Check the Texas state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "income-tax-texas",
+        "property-tax-texas"
+      ]
+    },
+    {
+      "slug": "child-support-texas",
+      "baseType": "child-support",
+      "name": "Texas Child Support Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "texas child support calculator",
+      "secondaryKeywords": [
+        "child support calculator texas",
+        "texas child support"
+      ],
+      "metaTitle": "Texas Child Support Calculator 2025 | TX",
+      "metaDescription": "Calculate estimated child support payments in Texas. Free calculator with Texas-specific data and rates.",
+      "heroTitle": "Texas Child Support Calculator",
+      "heroSubtitle": "Estimate estimated child support payments in Texas",
+      "introText": "Calculate child support specific to Texas residents using current state data and rates.",
+      "formula": "See calculator for detailed child support formula.",
+      "stateData": {
+        "avgSolarInstallCost": 22500,
+        "avgSunHours": 5.2,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 2.95,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 93
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Texas Specific",
+          "description": "Uses current Texas rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete child support breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does child support work in Texas?",
+          "answer": "Child Support in Texas follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect child support in Texas?",
+          "answer": "Key factors include location within Texas, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a child support benefit in Texas?",
+          "answer": "Texas may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Texas compare to other states?",
+          "answer": "Texas's cost of living is below the national average, which affects child support costs."
+        },
+        {
+          "question": "Where can I learn more about child support in Texas?",
+          "answer": "Check the Texas state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-texas",
+        "income-tax-texas",
+        "property-tax-texas"
+      ]
+    }
+  ]
+}

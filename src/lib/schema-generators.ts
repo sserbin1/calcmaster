@@ -1,6 +1,7 @@
 // JSON-LD Schema.org generators for CalcMaster SEO
 
 import type { CalculatorData, CalculatorFAQ } from '@/data/calculators'
+import type { StateInfo, StateCalculatorConfig, StateCalculatorFAQ } from '@/types/state-calculator'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://calcmaster.vercel.app'
 
@@ -144,6 +145,89 @@ export function generateCollectionPageSchema(
       '@type': 'WebSite',
       name: 'CalcMaster',
       url: BASE_URL,
+    },
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: calculators.map((calc, index) => ({
+        '@type': 'ListItem',
+        position: index + 1,
+        name: calc.name,
+        url: `${BASE_URL}/${calc.category}/${calc.slug}`,
+      })),
+    },
+  }
+}
+
+// --- State-specific schema generators ---
+
+export function generateStateCalculatorSchema(calc: StateCalculatorConfig, stateInfo: StateInfo) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: calc.name,
+    url: `${BASE_URL}/${calc.category}/${calc.slug}`,
+    description: calc.metaDescription,
+    applicationCategory: 'CalculatorApplication',
+    operatingSystem: 'Any',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+    featureList: [
+      `${stateInfo.name}-specific calculations`,
+      'Real state tax rates and laws',
+      'AI-powered explanations',
+      'PDF export',
+    ],
+    browserRequirements: 'Requires JavaScript',
+    contentLocation: {
+      '@type': 'State',
+      name: stateInfo.name,
+      containedInPlace: {
+        '@type': 'Country',
+        name: 'United States',
+      },
+    },
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'CalcMaster',
+      url: BASE_URL,
+    },
+  }
+}
+
+export function generateStateFAQSchema(faqs: StateCalculatorFAQ[]) {
+  if (!faqs || faqs.length === 0) return null
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  }
+}
+
+export function generateStateLandingSchema(stateInfo: StateInfo, calculators: StateCalculatorConfig[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: `${stateInfo.name} Calculators`,
+    url: `${BASE_URL}/state/${stateInfo.slug}`,
+    description: `Free ${stateInfo.name} calculators with state-specific tax rates, laws, and data. ${calculators.length} calculators built for ${stateInfo.abbreviation} residents.`,
+    about: {
+      '@type': 'State',
+      name: stateInfo.name,
+      containedInPlace: {
+        '@type': 'Country',
+        name: 'United States',
+      },
     },
     mainEntity: {
       '@type': 'ItemList',

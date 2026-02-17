@@ -49,9 +49,12 @@ import { getDateTimeFields, calculateDateTime } from './calculators/datetime'
 import { getConstructionFields, calculateConstruction } from './calculators/construction'
 import { getFunFields, calculateFun } from './calculators/fun'
 import { getEducationFields, calculateEducation } from './calculators/education'
+// State calculator router — checked FIRST (more specific match via lookup table)
+import { getStateFields, calculateState } from './calculators/state-router'
 
-// Field routers
+// Field routers — state router first for priority matching
 const fieldRouters = [
+  getStateFields,
   getHealthFields,
   getFinanceFields,
   getMathFields,
@@ -61,8 +64,9 @@ const fieldRouters = [
   getEducationFields,
 ]
 
-// Calculate routers
+// Calculate routers — state router first
 const calculateRouters = [
+  calculateState,
   calculateHealth,
   calculateFinance,
   calculateMath,

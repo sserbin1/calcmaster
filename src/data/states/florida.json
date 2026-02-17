@@ -1,0 +1,3472 @@
+{
+  "state": {
+    "name": "Florida",
+    "slug": "florida",
+    "abbreviation": "FL",
+    "capital": "Tallahassee",
+    "population": 22610726,
+    "region": "Southeast",
+    "hasIncomeTax": false,
+    "hasSalesTax": true,
+    "hasPropertyTax": true
+  },
+  "calculators": [
+    {
+      "slug": "income-tax-florida",
+      "baseType": "income-tax",
+      "name": "Florida Income Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida income tax calculator",
+      "secondaryKeywords": [
+        "florida state tax",
+        "florida tax brackets",
+        "florida tax rate"
+      ],
+      "metaTitle": "Florida Income Tax Calculator 2025 | FL Tax Rates",
+      "metaDescription": "Calculate your Florida state income tax. See current tax brackets, rates, and deductions. Free Florida income tax calculator.",
+      "heroTitle": "Florida Income Tax Calculator",
+      "heroSubtitle": "Calculate your Florida state income tax liability with current rates and brackets",
+      "introText": "Florida is one of the few states with no state income tax. Residents keep 100% of their income from state taxation, though federal taxes still apply.",
+      "formula": "No state income tax applies.",
+      "stateData": {
+        "hasIncomeTax": false,
+        "incomeTaxType": "none",
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Accurate Brackets",
+          "description": "Uses current Florida tax brackets and rates"
+        },
+        {
+          "icon": "💰",
+          "title": "Deduction Support",
+          "description": "Accounts for standard and common deductions"
+        },
+        {
+          "icon": "📱",
+          "title": "Instant Results",
+          "description": "See your tax liability calculated in real-time"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the Florida income tax rate?",
+          "answer": "Florida has no state income tax."
+        },
+        {
+          "question": "Does Florida tax Social Security?",
+          "answer": "Florida does not tax Social Security benefits at the state level."
+        },
+        {
+          "question": "How do I file Florida state taxes?",
+          "answer": "You can file Florida state taxes online through the state's Department of Revenue website, or use tax preparation software."
+        },
+        {
+          "question": "What deductions are available in Florida?",
+          "answer": "Florida offers standard deductions and may allow itemized deductions. Check the state tax authority for current amounts."
+        },
+        {
+          "question": "When are Florida state taxes due?",
+          "answer": "Florida state income taxes are typically due April 15, the same date as federal taxes, unless an extension is filed."
+        }
+      ],
+      "relatedCalculators": [
+        "property-tax-florida",
+        "sales-tax-florida",
+        "paycheck-florida"
+      ]
+    },
+    {
+      "slug": "property-tax-florida",
+      "baseType": "property-tax",
+      "name": "Florida Property Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida property tax calculator",
+      "secondaryKeywords": [
+        "florida property tax rate",
+        "florida home tax",
+        "florida real estate tax"
+      ],
+      "metaTitle": "Florida Property Tax Calculator 2025 | FL Rates",
+      "metaDescription": "Calculate your Florida property tax based on home value and local rates. See county-level rates and exemptions.",
+      "heroTitle": "Florida Property Tax Calculator",
+      "heroSubtitle": "Estimate your annual Florida property tax based on home value and local rates",
+      "introText": "The average property tax rate in Florida is 0.86%. With a median home value of $392 000, this means an average annual property tax of $3371.",
+      "formula": "Annual Property Tax = Assessed Home Value × Tax Rate",
+      "stateData": {
+        "avgPropertyTaxRate": 0.86,
+        "medianHomeValue": 392000,
+        "homesteadExemption": 50000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Local Rates",
+          "description": "Based on Florida county-level tax rates"
+        },
+        {
+          "icon": "📉",
+          "title": "Exemption Check",
+          "description": "See available homestead exemptions"
+        },
+        {
+          "icon": "📅",
+          "title": "Monthly Estimate",
+          "description": "Get monthly property tax payment estimates"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How is property tax calculated in Florida?",
+          "answer": "Property tax is calculated by multiplying your home's assessed value by the local tax rate. Rates vary by county and municipality."
+        },
+        {
+          "question": "Are there property tax exemptions in Florida?",
+          "answer": "Florida offers various exemptions including homestead, senior, veteran, and disability exemptions. Check with your county assessor."
+        },
+        {
+          "question": "When are Florida property taxes due?",
+          "answer": "Property tax due dates vary by county but are typically due in one or two installments per year."
+        },
+        {
+          "question": "Can I appeal my Florida property tax assessment?",
+          "answer": "Yes, you can appeal your property assessment through your county's board of equalization or tax appeal process."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "home-affordability-florida",
+        "homestead-exemption-florida"
+      ]
+    },
+    {
+      "slug": "sales-tax-florida",
+      "baseType": "sales-tax",
+      "name": "Florida Sales Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida sales tax calculator",
+      "secondaryKeywords": [
+        "florida sales tax rate",
+        "florida tax on purchases"
+      ],
+      "metaTitle": "Florida Sales Tax Calculator 2025 | FL Rates",
+      "metaDescription": "Calculate Florida sales tax on any purchase. See state and local combined rates.",
+      "heroTitle": "Florida Sales Tax Calculator",
+      "heroSubtitle": "Calculate total sales tax including state and local rates in Florida",
+      "introText": "Florida has a state sales tax rate of 6%. Combined with local taxes, the total rate can vary by city and county.",
+      "formula": "Total Sales Tax = Purchase Amount × (6% state + local rate)",
+      "stateData": {
+        "salesTaxRate": 6,
+        "hasSalesTax": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛒",
+          "title": "Purchase Calculator",
+          "description": "Calculate exact tax on any Florida purchase"
+        },
+        {
+          "icon": "📍",
+          "title": "Local Rates",
+          "description": "Includes city and county tax rates"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Exemptions Listed",
+          "description": "See what items are tax-exempt"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the Florida sales tax rate?",
+          "answer": "The Florida state sales tax rate is 6%. Local jurisdictions may add additional tax."
+        },
+        {
+          "question": "What items are exempt from Florida sales tax?",
+          "answer": "Common exemptions include groceries, prescription medications, and certain clothing items, though specifics vary by state."
+        },
+        {
+          "question": "Does Florida tax online purchases?",
+          "answer": "Yes, Florida requires sales tax on online purchases from retailers with nexus in the state."
+        },
+        {
+          "question": "What is the highest sales tax in Florida?",
+          "answer": "Combined state and local sales tax rates vary. Check your specific city or county for the exact combined rate."
+        },
+        {
+          "question": "Are there sales tax holidays in Florida?",
+          "answer": "Some states offer sales tax holidays for back-to-school or hurricane preparedness. Check the state's revenue department for current offerings."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-florida",
+        "cost-of-living-florida",
+        "property-tax-florida"
+      ]
+    },
+    {
+      "slug": "capital-gains-tax-florida",
+      "baseType": "capital-gains-tax",
+      "name": "Florida Capital Gains Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida capital gains tax",
+      "secondaryKeywords": [
+        "florida investment tax",
+        "florida stock tax",
+        "capital gains florida"
+      ],
+      "metaTitle": "Florida Capital Gains Tax Calculator | FL",
+      "metaDescription": "Calculate capital gains tax in Florida. See state rates for short-term and long-term gains on investments.",
+      "heroTitle": "Florida Capital Gains Tax Calculator",
+      "heroSubtitle": "Estimate your state capital gains tax liability in Florida",
+      "introText": "Florida does not impose a state capital gains tax. Investment profits are not subject to state taxation.",
+      "formula": "No state capital gains tax applies.",
+      "stateData": {
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "capitalGainsRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📈",
+          "title": "Investment Analysis",
+          "description": "Calculate Florida tax on stock and property gains"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Holding Period",
+          "description": "Compare short-term vs long-term impact"
+        },
+        {
+          "icon": "💡",
+          "title": "Tax Strategies",
+          "description": "Learn ways to minimize your tax burden"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Florida tax capital gains?",
+          "answer": "No, Florida does not tax capital gains at the state level."
+        },
+        {
+          "question": "Are long-term and short-term gains taxed differently in Florida?",
+          "answer": "At the state level, most states tax both types as ordinary income. The federal government offers lower rates for long-term gains."
+        },
+        {
+          "question": "How can I reduce capital gains tax in Florida?",
+          "answer": "Strategies include holding investments for over a year, tax-loss harvesting, using retirement accounts, and utilizing the primary residence exclusion."
+        },
+        {
+          "question": "Is there a capital gains exemption in Florida?",
+          "answer": "Florida follows federal exemptions for primary residence sales ($250K single, $500K married) and may offer additional deductions."
+        },
+        {
+          "question": "When do I owe Florida capital gains tax?",
+          "answer": "Capital gains tax is due when you file your annual state tax return, typically by April 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-florida",
+        "investment-tax-florida",
+        "retirement-tax-florida"
+      ]
+    },
+    {
+      "slug": "estate-tax-florida",
+      "baseType": "estate-tax",
+      "name": "Florida Estate Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida estate tax",
+      "secondaryKeywords": [
+        "florida inheritance tax",
+        "florida estate planning"
+      ],
+      "metaTitle": "Florida Estate Tax Calculator 2025 | FL",
+      "metaDescription": "Calculate Florida estate tax. See exemptions, rates, and planning strategies for Florida estates.",
+      "heroTitle": "Florida Estate Tax Calculator",
+      "heroSubtitle": "Estimate state estate tax liability and exemptions in Florida",
+      "introText": "Florida does not impose a separate state estate tax or inheritance tax. However, the federal estate tax still applies to estates above the federal exemption threshold.",
+      "formula": "No state estate tax applies.",
+      "stateData": {
+        "hasEstateTax": false,
+        "estateExemption": 0,
+        "estateTopRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏦",
+          "title": "Estate Planning",
+          "description": "Florida-specific estate tax analysis"
+        },
+        {
+          "icon": "📋",
+          "title": "Exemption Check",
+          "description": "See if your estate exceeds the threshold"
+        },
+        {
+          "icon": "🔮",
+          "title": "Planning Strategies",
+          "description": "Learn tax-saving estate strategies"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Florida have an estate tax?",
+          "answer": "No, Florida does not have a state estate tax."
+        },
+        {
+          "question": "What is the Florida estate tax exemption?",
+          "answer": "Florida has no estate tax, so no exemption is needed."
+        },
+        {
+          "question": "Does Florida have an inheritance tax?",
+          "answer": "Check with the state's Department of Revenue for current inheritance tax laws, as they differ from estate taxes."
+        },
+        {
+          "question": "How can I reduce estate taxes in Florida?",
+          "answer": "Common strategies include gifting, trusts, life insurance, and charitable donations. Consult an estate planning attorney."
+        },
+        {
+          "question": "Is the federal estate tax different from Florida's?",
+          "answer": "Yes, the federal estate tax is separate with its own exemption ($13.61M in 2024). You may owe both if applicable."
+        }
+      ],
+      "relatedCalculators": [
+        "retirement-tax-florida",
+        "income-tax-florida",
+        "capital-gains-tax-florida"
+      ]
+    },
+    {
+      "slug": "effective-tax-rate-florida",
+      "baseType": "effective-tax-rate",
+      "name": "Florida Effective Tax Rate Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida effective tax rate",
+      "secondaryKeywords": [
+        "florida total tax burden",
+        "florida tax percentage"
+      ],
+      "metaTitle": "Florida Effective Tax Rate Calculator | FL",
+      "metaDescription": "Calculate your total effective tax rate in Florida including state, federal, and FICA taxes.",
+      "heroTitle": "Florida Effective Tax Rate Calculator",
+      "heroSubtitle": "See your true tax burden combining all Florida and federal taxes",
+      "introText": "Your effective tax rate in Florida combines state income tax (0%), federal income tax, and FICA taxes (7.65%). This calculator shows your combined rate.",
+      "formula": "Effective Rate = Total Tax Paid / Gross Income × 100%",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎯",
+          "title": "True Tax Rate",
+          "description": "See your real Florida tax burden"
+        },
+        {
+          "icon": "📊",
+          "title": "All Taxes Combined",
+          "description": "State, federal, and FICA in one view"
+        },
+        {
+          "icon": "💡",
+          "title": "Optimization Tips",
+          "description": "Learn how to reduce your rate"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the effective tax rate in Florida?",
+          "answer": "It depends on your income level. Florida state taxes are 0%, plus federal taxes and FICA."
+        },
+        {
+          "question": "How is effective tax rate different from marginal rate?",
+          "answer": "Marginal rate is the tax on your last dollar of income. Effective rate is your total tax divided by total income — typically lower."
+        },
+        {
+          "question": "What taxes are included in the effective rate?",
+          "answer": "Federal income tax, state income tax, Social Security tax (6.2%), and Medicare tax (1.45%)."
+        },
+        {
+          "question": "How can I lower my effective tax rate?",
+          "answer": "Maximize pre-tax deductions (401k, HSA), itemize deductions, use tax credits, and consider tax-loss harvesting."
+        },
+        {
+          "question": "Does Florida have local income taxes too?",
+          "answer": "Some Florida localities may impose additional income taxes. Check with your city or county."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-florida",
+        "paycheck-florida",
+        "salary-after-tax-florida"
+      ]
+    },
+    {
+      "slug": "self-employment-tax-florida",
+      "baseType": "self-employment-tax",
+      "name": "Florida Self-Employment Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida self-employment tax",
+      "secondaryKeywords": [
+        "florida freelance tax",
+        "florida 1099 tax",
+        "self-employed tax florida"
+      ],
+      "metaTitle": "Florida Self-Employment Tax Calculator | FL",
+      "metaDescription": "Calculate self-employment tax in Florida. See SE tax, state income tax, and quarterly payment estimates.",
+      "heroTitle": "Florida Self-Employment Tax Calculator",
+      "heroSubtitle": "Estimate your total self-employment tax burden in Florida",
+      "introText": "Self-employed workers in Florida pay 15.3% in SE tax (Social Security 12.4% + Medicare 2.9%) on 92.35% of net earnings, plus no state income tax.",
+      "formula": "SE Tax = Net Earnings × 92.35% × 15.3% (SS capped at $168,600)",
+      "stateData": {
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💼",
+          "title": "SE Tax Estimate",
+          "description": "Calculate your Florida self-employment tax"
+        },
+        {
+          "icon": "📅",
+          "title": "Quarterly Payments",
+          "description": "Get estimated quarterly amounts"
+        },
+        {
+          "icon": "✂️",
+          "title": "Deduction Finder",
+          "description": "See available business deductions"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much is self-employment tax in Florida?",
+          "answer": "The federal SE tax rate is 15.3% on 92.35% of net earnings. Florida adds no state income tax."
+        },
+        {
+          "question": "Do I need to pay quarterly taxes in Florida?",
+          "answer": "Yes, self-employed individuals must make estimated quarterly payments if they expect to owe $1,000+ in taxes."
+        },
+        {
+          "question": "Can I deduct half of SE tax?",
+          "answer": "Yes, you can deduct 50% of your self-employment tax when calculating your adjusted gross income."
+        },
+        {
+          "question": "What expenses can I deduct in Florida?",
+          "answer": "Common deductions include home office, vehicle, health insurance, supplies, and professional services."
+        },
+        {
+          "question": "When are quarterly payments due?",
+          "answer": "Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-florida",
+        "effective-tax-rate-florida",
+        "llc-cost-florida"
+      ]
+    },
+    {
+      "slug": "retirement-tax-florida",
+      "baseType": "retirement-tax",
+      "name": "Florida Retirement Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "florida retirement tax",
+      "secondaryKeywords": [
+        "florida pension tax",
+        "florida 401k tax",
+        "retirement income florida"
+      ],
+      "metaTitle": "Florida Retirement Tax Calculator | FL",
+      "metaDescription": "Calculate taxes on retirement income in Florida. See how Social Security, pensions, and 401k withdrawals are taxed.",
+      "heroTitle": "Florida Retirement Tax Calculator",
+      "heroSubtitle": "See how Florida taxes your retirement income sources",
+      "introText": "Florida has no state income tax, so retirement income is not taxed at the state level.",
+      "formula": "State Tax on Retirement = Taxable Retirement Income × State Rate",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "taxesSocialSecurity": false,
+        "taxesPension": false
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏖️",
+          "title": "Retirement Planning",
+          "description": "Plan your Florida retirement income strategy"
+        },
+        {
+          "icon": "🔍",
+          "title": "Source Analysis",
+          "description": "See tax impact by income source"
+        },
+        {
+          "icon": "🗺️",
+          "title": "State Comparison",
+          "description": "Compare retirement tax friendliness"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Florida tax Social Security?",
+          "answer": "No, Florida does not tax Social Security benefits."
+        },
+        {
+          "question": "Are pensions taxed in Florida?",
+          "answer": "No, Florida does not tax pension income."
+        },
+        {
+          "question": "Is Florida a good state for retirees?",
+          "answer": "Florida has no income tax, making it tax-friendly for retirees. Consider cost of living (index: 103) as well."
+        },
+        {
+          "question": "Are 401k withdrawals taxed in Florida?",
+          "answer": "No, Florida has no state income tax on any income source."
+        },
+        {
+          "question": "What is the best state for retirement taxes?",
+          "answer": "States with no income tax (like FL, TX, NV) are popular, but consider overall cost of living, healthcare, and quality of life."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-florida",
+        "cost-of-living-florida",
+        "estate-tax-florida"
+      ]
+    },
+    {
+      "slug": "mortgage-florida",
+      "baseType": "mortgage",
+      "name": "Florida Mortgage Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida mortgage calculator",
+      "secondaryKeywords": [
+        "mortgage calculator florida",
+        "florida mortgage"
+      ],
+      "metaTitle": "Florida Mortgage Calculator 2025 | FL",
+      "metaDescription": "Calculate monthly mortgage payments including PMI, taxes, and insurance in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Mortgage Calculator",
+      "heroSubtitle": "Calculate monthly mortgage payments including PMI, taxes, and insurance in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding mortgage costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for mortgage formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized mortgage analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different mortgage scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical mortgage in Florida?",
+          "answer": "Mortgage costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "rent-vs-buy-florida",
+        "closing-costs-florida",
+        "homestead-exemption-florida"
+      ]
+    },
+    {
+      "slug": "rent-vs-buy-florida",
+      "baseType": "rent-vs-buy",
+      "name": "Florida Rent vs Buy Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida rent vs buy calculator",
+      "secondaryKeywords": [
+        "rent vs buy calculator florida",
+        "florida rent vs buy"
+      ],
+      "metaTitle": "Florida Rent vs Buy Calculator 2025 | FL",
+      "metaDescription": "Calculate whether it's better to rent or buy a home in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Rent vs Buy Calculator",
+      "heroSubtitle": "Calculate whether it's better to rent or buy a home in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding rent vs buy costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for rent vs buy formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent vs buy analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent vs buy scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical rent vs buy in Florida?",
+          "answer": "Rent vs Buy costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "closing-costs-florida",
+        "homestead-exemption-florida"
+      ]
+    },
+    {
+      "slug": "closing-costs-florida",
+      "baseType": "closing-costs",
+      "name": "Florida Closing Costs Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida closing costs calculator",
+      "secondaryKeywords": [
+        "closing costs calculator florida",
+        "florida closing costs"
+      ],
+      "metaTitle": "Florida Closing Costs Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated closing costs for buying or selling a home in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Closing Costs Calculator",
+      "heroSubtitle": "Calculate estimated closing costs for buying or selling a home in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding closing costs costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for closing costs formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized closing costs analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different closing costs scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical closing costs in Florida?",
+          "answer": "Closing Costs costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "homestead-exemption-florida"
+      ]
+    },
+    {
+      "slug": "homestead-exemption-florida",
+      "baseType": "homestead-exemption",
+      "name": "Florida Homestead Exemption Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida homestead exemption calculator",
+      "secondaryKeywords": [
+        "homestead exemption calculator florida",
+        "florida homestead exemption"
+      ],
+      "metaTitle": "Florida Homestead Exemption Calculator 2025 | FL",
+      "metaDescription": "Calculate property tax savings from your homestead exemption in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Homestead Exemption Calculator",
+      "heroSubtitle": "Calculate property tax savings from your homestead exemption in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding homestead exemption costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for homestead exemption formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized homestead exemption analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different homestead exemption scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical homestead exemption in Florida?",
+          "answer": "Homestead Exemption costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "home-affordability-florida",
+      "baseType": "home-affordability",
+      "name": "Florida Home Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida home affordability calculator",
+      "secondaryKeywords": [
+        "home affordability calculator florida",
+        "florida home affordability"
+      ],
+      "metaTitle": "Florida Home Affordability Calculator 2025 | FL",
+      "metaDescription": "Calculate how much house you can afford based on income in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Home Affordability Calculator",
+      "heroSubtitle": "Calculate how much house you can afford based on income in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding home affordability costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for home affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical home affordability in Florida?",
+          "answer": "Home Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "rent-affordability-florida",
+      "baseType": "rent-affordability",
+      "name": "Florida Rent Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida rent affordability calculator",
+      "secondaryKeywords": [
+        "rent affordability calculator florida",
+        "florida rent affordability"
+      ],
+      "metaTitle": "Florida Rent Affordability Calculator 2025 | FL",
+      "metaDescription": "Calculate how much rent you can afford based on income in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Rent Affordability Calculator",
+      "heroSubtitle": "Calculate how much rent you can afford based on income in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding rent affordability costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for rent affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical rent affordability in Florida?",
+          "answer": "Rent Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "down-payment-florida",
+      "baseType": "down-payment",
+      "name": "Florida Down Payment Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida down payment calculator",
+      "secondaryKeywords": [
+        "down payment calculator florida",
+        "florida down payment"
+      ],
+      "metaTitle": "Florida Down Payment Calculator 2025 | FL",
+      "metaDescription": "Calculate how long to save for a down payment in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Down Payment Calculator",
+      "heroSubtitle": "Calculate how long to save for a down payment in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding down payment costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for down payment formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized down payment analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different down payment scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical down payment in Florida?",
+          "answer": "Down Payment costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "home-equity-florida",
+      "baseType": "home-equity",
+      "name": "Florida Home Equity Loan Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida home equity calculator",
+      "secondaryKeywords": [
+        "home equity calculator florida",
+        "florida home equity loan"
+      ],
+      "metaTitle": "Florida Home Equity Loan Calculator 2025 | FL",
+      "metaDescription": "Calculate how much you can borrow against your home equity in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Home Equity Loan Calculator",
+      "heroSubtitle": "Calculate how much you can borrow against your home equity in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding home equity loan costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for home equity loan formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home equity loan analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home equity loan scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical home equity loan in Florida?",
+          "answer": "Home Equity Loan costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "refinance-florida",
+      "baseType": "refinance",
+      "name": "Florida Refinance Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida refinance calculator",
+      "secondaryKeywords": [
+        "refinance calculator florida",
+        "florida refinance"
+      ],
+      "metaTitle": "Florida Refinance Calculator 2025 | FL",
+      "metaDescription": "Calculate whether refinancing your mortgage saves money in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida Refinance Calculator",
+      "heroSubtitle": "Calculate whether refinancing your mortgage saves money in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding refinance costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for refinance formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized refinance analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different refinance scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical refinance in Florida?",
+          "answer": "Refinance costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "adu-roi-florida",
+      "baseType": "adu-roi",
+      "name": "Florida ADU ROI Calculator",
+      "category": "housing",
+      "primaryKeyword": "florida adu calculator",
+      "secondaryKeywords": [
+        "adu calculator florida",
+        "florida adu roi"
+      ],
+      "metaTitle": "Florida ADU ROI Calculator 2025 | FL",
+      "metaDescription": "Calculate the return on investment for an accessory dwelling unit in Florida. Free online calculator with Florida-specific data.",
+      "heroTitle": "Florida ADU ROI Calculator",
+      "heroSubtitle": "Calculate the return on investment for an accessory dwelling unit in Florida",
+      "introText": "With a median home value of $392 000 and property tax rate of 0.86%, understanding adu roi costs in Florida is essential for homeowners and buyers.",
+      "formula": "See calculator for adu roi formula details.",
+      "stateData": {
+        "medianHomeValue": 392000,
+        "avgPropertyTaxRate": 0.86,
+        "homesteadExemption": 50000,
+        "avgClosingCostRate": 1.6,
+        "transferTaxRate": 0.7,
+        "avgRent": 1650
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Florida Data",
+          "description": "Uses current Florida housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized adu roi analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different adu roi scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in Florida?",
+          "answer": "The median home value in Florida is approximately $392 000."
+        },
+        {
+          "question": "What is the average property tax rate in Florida?",
+          "answer": "The average effective property tax rate in Florida is 0.86%."
+        },
+        {
+          "question": "How much is a typical adu roi in Florida?",
+          "answer": "ADU ROI costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is Florida a good state to buy a home?",
+          "answer": "Florida has a cost of living index of 103 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in Florida?",
+          "answer": "Housing markets vary across Florida. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-florida",
+        "rent-vs-buy-florida",
+        "closing-costs-florida"
+      ]
+    },
+    {
+      "slug": "salary-after-tax-florida",
+      "baseType": "salary-after-tax",
+      "name": "Florida Salary After Tax Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida salary after tax",
+      "secondaryKeywords": [
+        "salary after tax florida",
+        "florida salary after tax"
+      ],
+      "metaTitle": "Florida Salary After Tax Calculator 2025 | FL",
+      "metaDescription": "Calculate your take-home pay after all taxes in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Salary After Tax Calculator",
+      "heroSubtitle": "Calculate your take-home pay after all taxes in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate salary after tax in Florida.",
+      "formula": "See calculator for detailed salary after tax formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is salary after tax calculated in Florida?",
+          "answer": "Salary After Tax in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "minimum-wage-florida",
+        "overtime-florida",
+        "workers-comp-florida"
+      ]
+    },
+    {
+      "slug": "minimum-wage-florida",
+      "baseType": "minimum-wage",
+      "name": "Florida Minimum Wage Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida minimum wage calculator",
+      "secondaryKeywords": [
+        "minimum wage calculator florida",
+        "florida minimum wage"
+      ],
+      "metaTitle": "Florida Minimum Wage Calculator 2025 | FL",
+      "metaDescription": "Calculate earnings at minimum wage including tipped rates in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Minimum Wage Calculator",
+      "heroSubtitle": "Calculate earnings at minimum wage including tipped rates in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate minimum wage in Florida.",
+      "formula": "See calculator for detailed minimum wage formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is minimum wage calculated in Florida?",
+          "answer": "Minimum Wage in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-florida",
+        "overtime-florida",
+        "workers-comp-florida"
+      ]
+    },
+    {
+      "slug": "overtime-florida",
+      "baseType": "overtime",
+      "name": "Florida Overtime Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida overtime calculator",
+      "secondaryKeywords": [
+        "overtime calculator florida",
+        "florida overtime"
+      ],
+      "metaTitle": "Florida Overtime Calculator 2025 | FL",
+      "metaDescription": "Calculate overtime pay with state-specific rules in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Overtime Calculator",
+      "heroSubtitle": "Calculate overtime pay with state-specific rules in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate overtime in Florida.",
+      "formula": "See calculator for detailed overtime formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is overtime calculated in Florida?",
+          "answer": "Overtime in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-florida",
+        "minimum-wage-florida",
+        "workers-comp-florida"
+      ]
+    },
+    {
+      "slug": "workers-comp-florida",
+      "baseType": "workers-comp",
+      "name": "Florida Workers Comp Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida workers compensation calculator",
+      "secondaryKeywords": [
+        "workers compensation calculator florida",
+        "florida workers comp"
+      ],
+      "metaTitle": "Florida Workers Comp Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated workers compensation insurance costs in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Workers Comp Calculator",
+      "heroSubtitle": "Calculate estimated workers compensation insurance costs in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate workers comp in Florida.",
+      "formula": "See calculator for detailed workers comp formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is workers comp calculated in Florida?",
+          "answer": "Workers Comp in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-florida",
+        "minimum-wage-florida",
+        "overtime-florida"
+      ]
+    },
+    {
+      "slug": "hourly-to-salary-florida",
+      "baseType": "hourly-to-salary",
+      "name": "Florida Hourly to Salary Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida hourly to salary",
+      "secondaryKeywords": [
+        "hourly to salary florida",
+        "florida hourly to salary"
+      ],
+      "metaTitle": "Florida Hourly to Salary Calculator 2025 | FL",
+      "metaDescription": "Calculate the salary equivalent of an hourly wage in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Hourly to Salary Calculator",
+      "heroSubtitle": "Calculate the salary equivalent of an hourly wage in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate hourly to salary in Florida.",
+      "formula": "See calculator for detailed hourly to salary formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is hourly to salary calculated in Florida?",
+          "answer": "Hourly to Salary in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-florida",
+        "minimum-wage-florida",
+        "overtime-florida"
+      ]
+    },
+    {
+      "slug": "take-home-pay-florida",
+      "baseType": "take-home-pay",
+      "name": "Florida Take Home Pay Calculator",
+      "category": "employment",
+      "primaryKeyword": "florida take home pay calculator",
+      "secondaryKeywords": [
+        "take home pay calculator florida",
+        "florida take home pay"
+      ],
+      "metaTitle": "Florida Take Home Pay Calculator 2025 | FL",
+      "metaDescription": "Calculate your net pay after deductions in Florida. Free calculator with current Florida tax rates and rules.",
+      "heroTitle": "Florida Take Home Pay Calculator",
+      "heroSubtitle": "Calculate your net pay after deductions in Florida",
+      "introText": "Florida has a minimum wage of $13.00/hr and no state income tax. Use this calculator to estimate take home pay in Florida.",
+      "formula": "See calculator for detailed take home pay formula.",
+      "stateData": {
+        "minimumWage": 13,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 0,
+        "minWageTipped": 8.98,
+        "avgWorkerCompRate": 1.01
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "Florida Rates",
+          "description": "Current Florida tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in Florida?",
+          "answer": "The Florida minimum wage is $13.00 per hour."
+        },
+        {
+          "question": "Does Florida have a state income tax?",
+          "answer": "No, Florida has no state income tax."
+        },
+        {
+          "question": "How is take home pay calculated in Florida?",
+          "answer": "Take Home Pay in Florida accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to Florida paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does Florida compare to other states for workers?",
+          "answer": "Florida has a cost of living index of 103 and minimum wage of $13.00, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-florida",
+        "minimum-wage-florida",
+        "overtime-florida"
+      ]
+    },
+    {
+      "slug": "health-insurance-florida",
+      "baseType": "health-insurance",
+      "name": "Florida Health Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida health insurance cost",
+      "secondaryKeywords": [
+        "health insurance cost florida",
+        "average health insurance cost florida"
+      ],
+      "metaTitle": "Florida Health Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated health insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Health Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated health insurance premiums based on Florida averages",
+      "introText": "The average annual health insurance cost in Florida is $540. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does health insurance cost in Florida?",
+          "answer": "Health Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is health insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my health insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect health insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for health insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "auto-insurance-florida",
+        "homeowners-insurance-florida",
+        "flood-insurance-florida"
+      ]
+    },
+    {
+      "slug": "auto-insurance-florida",
+      "baseType": "auto-insurance",
+      "name": "Florida Auto Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida car insurance cost",
+      "secondaryKeywords": [
+        "car insurance cost florida",
+        "average car insurance cost florida"
+      ],
+      "metaTitle": "Florida Auto Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated car insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Auto Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated car insurance premiums based on Florida averages",
+      "introText": "The average annual auto insurance cost in Florida is $2560. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does auto insurance cost in Florida?",
+          "answer": "Auto Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is auto insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my auto insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect auto insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for auto insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-florida",
+        "homeowners-insurance-florida",
+        "flood-insurance-florida"
+      ]
+    },
+    {
+      "slug": "homeowners-insurance-florida",
+      "baseType": "homeowners-insurance",
+      "name": "Florida Homeowners Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida homeowners insurance cost",
+      "secondaryKeywords": [
+        "homeowners insurance cost florida",
+        "average homeowners insurance cost florida"
+      ],
+      "metaTitle": "Florida Homeowners Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated homeowners insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Homeowners Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated homeowners insurance premiums based on Florida averages",
+      "introText": "Homeowners Insurance costs in Florida vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does homeowners insurance cost in Florida?",
+          "answer": "Homeowners Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is homeowners insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my homeowners insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect homeowners insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for homeowners insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-florida",
+        "auto-insurance-florida",
+        "flood-insurance-florida"
+      ]
+    },
+    {
+      "slug": "flood-insurance-florida",
+      "baseType": "flood-insurance",
+      "name": "Florida Flood Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida flood insurance cost",
+      "secondaryKeywords": [
+        "flood insurance cost florida",
+        "average flood insurance cost florida"
+      ],
+      "metaTitle": "Florida Flood Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated flood insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Flood Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated flood insurance premiums based on Florida averages",
+      "introText": "The average annual flood insurance cost in Florida is $780. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does flood insurance cost in Florida?",
+          "answer": "Flood Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is flood insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my flood insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect flood insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for flood insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-florida",
+        "auto-insurance-florida",
+        "homeowners-insurance-florida"
+      ]
+    },
+    {
+      "slug": "renters-insurance-florida",
+      "baseType": "renters-insurance",
+      "name": "Florida Renters Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida renters insurance cost",
+      "secondaryKeywords": [
+        "renters insurance cost florida",
+        "average renters insurance cost florida"
+      ],
+      "metaTitle": "Florida Renters Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated renters insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Renters Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated renters insurance premiums based on Florida averages",
+      "introText": "Renters Insurance costs in Florida vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does renters insurance cost in Florida?",
+          "answer": "Renters Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is renters insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my renters insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect renters insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for renters insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-florida",
+        "auto-insurance-florida",
+        "homeowners-insurance-florida"
+      ]
+    },
+    {
+      "slug": "life-insurance-florida",
+      "baseType": "life-insurance",
+      "name": "Florida Life Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "florida life insurance cost",
+      "secondaryKeywords": [
+        "life insurance cost florida",
+        "average life insurance cost florida"
+      ],
+      "metaTitle": "Florida Life Insurance Calculator 2025 | FL",
+      "metaDescription": "Estimate estimated life insurance premiums in Florida. Compare plans and find the best rates for Florida residents.",
+      "heroTitle": "Florida Life Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated life insurance premiums based on Florida averages",
+      "introText": "Life Insurance costs in Florida vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgAutoInsurance": 2560,
+        "avgHealthInsurance": 540,
+        "avgHomeInsurance": 4231
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "Florida Rates",
+          "description": "Based on current Florida insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does life insurance cost in Florida?",
+          "answer": "Life Insurance costs in Florida depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is life insurance required in Florida?",
+          "answer": "Requirements vary by insurance type and state law. Check Florida's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my life insurance in Florida?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect life insurance rates in Florida?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for life insurance in Florida?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-florida",
+        "auto-insurance-florida",
+        "homeowners-insurance-florida"
+      ]
+    },
+    {
+      "slug": "college-cost-florida",
+      "baseType": "college-cost",
+      "name": "Florida College Cost Calculator",
+      "category": "education",
+      "primaryKeyword": "florida college cost",
+      "secondaryKeywords": [
+        "college cost florida",
+        "florida college cost"
+      ],
+      "metaTitle": "Florida College Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate total cost of college including tuition, room, and board in Florida. Free calculator with Florida-specific education data.",
+      "heroTitle": "Florida College Cost Calculator",
+      "heroSubtitle": "Estimate total cost of college including tuition, room, and board for Florida residents",
+      "introText": "Florida offers in-state tuition averaging $6380 at public universities. The average student debt is $24 890.",
+      "formula": "See calculator for detailed college cost formula.",
+      "stateData": {
+        "avgInStateTuition": 6380,
+        "avgOutStateTuition": 21150,
+        "avgRoomBoard": 12580,
+        "avgTeacherSalary": 51009,
+        "avgStudentDebt": 24890
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Florida Data",
+          "description": "Based on current Florida education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized college cost analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Florida?",
+          "answer": "The average in-state tuition at Florida public universities is approximately $6380 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Florida?",
+          "answer": "The average teacher salary in Florida is approximately $51 009 per year."
+        },
+        {
+          "question": "How much student debt do Florida graduates have?",
+          "answer": "The average student debt for Florida graduates is approximately $24 890."
+        },
+        {
+          "question": "Does Florida offer a 529 plan?",
+          "answer": "Yes, Florida offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Florida?",
+          "answer": "Florida offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "student-loan-florida",
+        "teacher-salary-florida",
+        "education-savings-florida"
+      ]
+    },
+    {
+      "slug": "student-loan-florida",
+      "baseType": "student-loan",
+      "name": "Florida Student Loan Repayment Calculator",
+      "category": "education",
+      "primaryKeyword": "florida student loan calculator",
+      "secondaryKeywords": [
+        "student loan calculator florida",
+        "florida student loan repayment"
+      ],
+      "metaTitle": "Florida Student Loan Repayment Calculator 2025 | FL",
+      "metaDescription": "Calculate monthly student loan payments and total interest in Florida. Free calculator with Florida-specific education data.",
+      "heroTitle": "Florida Student Loan Repayment Calculator",
+      "heroSubtitle": "Estimate monthly student loan payments and total interest for Florida residents",
+      "introText": "Florida offers in-state tuition averaging $6380 at public universities. The average student debt is $24 890.",
+      "formula": "See calculator for detailed student loan repayment formula.",
+      "stateData": {
+        "avgInStateTuition": 6380,
+        "avgOutStateTuition": 21150,
+        "avgRoomBoard": 12580,
+        "avgTeacherSalary": 51009,
+        "avgStudentDebt": 24890
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Florida Data",
+          "description": "Based on current Florida education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized student loan repayment analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Florida?",
+          "answer": "The average in-state tuition at Florida public universities is approximately $6380 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Florida?",
+          "answer": "The average teacher salary in Florida is approximately $51 009 per year."
+        },
+        {
+          "question": "How much student debt do Florida graduates have?",
+          "answer": "The average student debt for Florida graduates is approximately $24 890."
+        },
+        {
+          "question": "Does Florida offer a 529 plan?",
+          "answer": "Yes, Florida offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Florida?",
+          "answer": "Florida offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-florida",
+        "teacher-salary-florida",
+        "education-savings-florida"
+      ]
+    },
+    {
+      "slug": "teacher-salary-florida",
+      "baseType": "teacher-salary",
+      "name": "Florida Teacher Salary Calculator",
+      "category": "education",
+      "primaryKeyword": "florida teacher salary",
+      "secondaryKeywords": [
+        "teacher salary florida",
+        "florida teacher salary"
+      ],
+      "metaTitle": "Florida Teacher Salary Calculator 2025 | FL",
+      "metaDescription": "Calculate expected teacher salary based on experience and education in Florida. Free calculator with Florida-specific education data.",
+      "heroTitle": "Florida Teacher Salary Calculator",
+      "heroSubtitle": "Estimate expected teacher salary based on experience and education for Florida residents",
+      "introText": "Florida offers in-state tuition averaging $6380 at public universities. The average student debt is $24 890.",
+      "formula": "See calculator for detailed teacher salary formula.",
+      "stateData": {
+        "avgInStateTuition": 6380,
+        "avgOutStateTuition": 21150,
+        "avgRoomBoard": 12580,
+        "avgTeacherSalary": 51009,
+        "avgStudentDebt": 24890
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Florida Data",
+          "description": "Based on current Florida education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized teacher salary analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Florida?",
+          "answer": "The average in-state tuition at Florida public universities is approximately $6380 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Florida?",
+          "answer": "The average teacher salary in Florida is approximately $51 009 per year."
+        },
+        {
+          "question": "How much student debt do Florida graduates have?",
+          "answer": "The average student debt for Florida graduates is approximately $24 890."
+        },
+        {
+          "question": "Does Florida offer a 529 plan?",
+          "answer": "Yes, Florida offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Florida?",
+          "answer": "Florida offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-florida",
+        "student-loan-florida",
+        "education-savings-florida"
+      ]
+    },
+    {
+      "slug": "education-savings-florida",
+      "baseType": "education-savings",
+      "name": "Florida 529 Plan Savings Calculator",
+      "category": "education",
+      "primaryKeyword": "florida 529 plan calculator",
+      "secondaryKeywords": [
+        "529 plan calculator florida",
+        "florida 529 plan savings"
+      ],
+      "metaTitle": "Florida 529 Plan Savings Calculator 2025 | FL",
+      "metaDescription": "Calculate how a 529 plan investment grows over time in Florida. Free calculator with Florida-specific education data.",
+      "heroTitle": "Florida 529 Plan Savings Calculator",
+      "heroSubtitle": "Estimate how a 529 plan investment grows over time for Florida residents",
+      "introText": "Florida offers in-state tuition averaging $6380 at public universities. The average student debt is $24 890.",
+      "formula": "See calculator for detailed 529 plan savings formula.",
+      "stateData": {
+        "avgInStateTuition": 6380,
+        "avgOutStateTuition": 21150,
+        "avgRoomBoard": 12580,
+        "avgTeacherSalary": 51009,
+        "avgStudentDebt": 24890
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Florida Data",
+          "description": "Based on current Florida education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized 529 plan savings analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Florida?",
+          "answer": "The average in-state tuition at Florida public universities is approximately $6380 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Florida?",
+          "answer": "The average teacher salary in Florida is approximately $51 009 per year."
+        },
+        {
+          "question": "How much student debt do Florida graduates have?",
+          "answer": "The average student debt for Florida graduates is approximately $24 890."
+        },
+        {
+          "question": "Does Florida offer a 529 plan?",
+          "answer": "Yes, Florida offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Florida?",
+          "answer": "Florida offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-florida",
+        "student-loan-florida",
+        "teacher-salary-florida"
+      ]
+    },
+    {
+      "slug": "in-state-tuition-florida",
+      "baseType": "in-state-tuition",
+      "name": "Florida In-State Tuition Calculator",
+      "category": "education",
+      "primaryKeyword": "florida in-state tuition cost",
+      "secondaryKeywords": [
+        "in-state tuition cost florida",
+        "florida in-state tuition"
+      ],
+      "metaTitle": "Florida In-State Tuition Calculator 2025 | FL",
+      "metaDescription": "Calculate in-state vs out-of-state tuition costs in Florida. Free calculator with Florida-specific education data.",
+      "heroTitle": "Florida In-State Tuition Calculator",
+      "heroSubtitle": "Estimate in-state vs out-of-state tuition costs for Florida residents",
+      "introText": "Florida offers in-state tuition averaging $6380 at public universities. The average student debt is $24 890.",
+      "formula": "See calculator for detailed in-state tuition formula.",
+      "stateData": {
+        "avgInStateTuition": 6380,
+        "avgOutStateTuition": 21150,
+        "avgRoomBoard": 12580,
+        "avgTeacherSalary": 51009,
+        "avgStudentDebt": 24890
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "Florida Data",
+          "description": "Based on current Florida education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized in-state tuition analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in Florida?",
+          "answer": "The average in-state tuition at Florida public universities is approximately $6380 per year."
+        },
+        {
+          "question": "What is the average teacher salary in Florida?",
+          "answer": "The average teacher salary in Florida is approximately $51 009 per year."
+        },
+        {
+          "question": "How much student debt do Florida graduates have?",
+          "answer": "The average student debt for Florida graduates is approximately $24 890."
+        },
+        {
+          "question": "Does Florida offer a 529 plan?",
+          "answer": "Yes, Florida offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in Florida?",
+          "answer": "Florida offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-florida",
+        "student-loan-florida",
+        "teacher-salary-florida"
+      ]
+    },
+    {
+      "slug": "cost-of-living-florida",
+      "baseType": "cost-of-living",
+      "name": "Florida Cost of Living Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "florida cost of living",
+      "secondaryKeywords": [
+        "cost of living florida",
+        "florida cost of living"
+      ],
+      "metaTitle": "Florida Cost of Living Calculator 2025 | FL",
+      "metaDescription": "Calculate the overall cost of living and salary equivalency in Florida. Compare to national averages and other states.",
+      "heroTitle": "Florida Cost of Living Calculator",
+      "heroSubtitle": "Estimate the overall cost of living and salary equivalency in Florida",
+      "introText": "Florida has a cost of living index of 103 (100 = national average). This means living in Florida is 3% above the national average.",
+      "formula": "See calculator for detailed cost of living formula.",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgRent": 1650,
+        "avgGasPrice": 3.35,
+        "avgUtilityCost": 190,
+        "avgGroceryCost": 350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Florida Index",
+          "description": "Based on Florida cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Florida?",
+          "answer": "Florida's cost of living index is 103 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does cost of living cost in Florida?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Florida."
+        },
+        {
+          "question": "Is Florida expensive to live in?",
+          "answer": "Florida has a cost of living index of 103. It is close to the national average."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "The national average cost of living index is 100. Florida is at 103, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in Florida?",
+          "answer": "Average rent varies significantly by city and region within Florida. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "grocery-cost-florida",
+        "utility-cost-florida",
+        "gas-price-florida"
+      ]
+    },
+    {
+      "slug": "grocery-cost-florida",
+      "baseType": "grocery-cost",
+      "name": "Florida Grocery Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "florida grocery cost",
+      "secondaryKeywords": [
+        "grocery cost florida",
+        "florida grocery cost"
+      ],
+      "metaTitle": "Florida Grocery Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated monthly grocery costs in Florida. Compare to national averages and other states.",
+      "heroTitle": "Florida Grocery Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly grocery costs in Florida",
+      "introText": "Florida has a cost of living index of 103 (100 = national average). This means living in Florida is 3% above the national average.",
+      "formula": "See calculator for detailed grocery cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgRent": 1650,
+        "avgGasPrice": 3.35,
+        "avgUtilityCost": 190,
+        "avgGroceryCost": 350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Florida Index",
+          "description": "Based on Florida cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Florida?",
+          "answer": "Florida's cost of living index is 103 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does grocery cost cost in Florida?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Florida."
+        },
+        {
+          "question": "Is Florida expensive to live in?",
+          "answer": "Florida has a cost of living index of 103. It is close to the national average."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "The national average cost of living index is 100. Florida is at 103, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in Florida?",
+          "answer": "Average rent varies significantly by city and region within Florida. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "utility-cost-florida",
+        "gas-price-florida"
+      ]
+    },
+    {
+      "slug": "utility-cost-florida",
+      "baseType": "utility-cost",
+      "name": "Florida Utility Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "florida utility bills",
+      "secondaryKeywords": [
+        "utility bills florida",
+        "florida utility cost"
+      ],
+      "metaTitle": "Florida Utility Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated monthly utility bills in Florida. Compare to national averages and other states.",
+      "heroTitle": "Florida Utility Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly utility bills in Florida",
+      "introText": "Florida has a cost of living index of 103 (100 = national average). This means living in Florida is 3% above the national average.",
+      "formula": "See calculator for detailed utility cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgRent": 1650,
+        "avgGasPrice": 3.35,
+        "avgUtilityCost": 190,
+        "avgGroceryCost": 350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Florida Index",
+          "description": "Based on Florida cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Florida?",
+          "answer": "Florida's cost of living index is 103 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does utility cost cost in Florida?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Florida."
+        },
+        {
+          "question": "Is Florida expensive to live in?",
+          "answer": "Florida has a cost of living index of 103. It is close to the national average."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "The national average cost of living index is 100. Florida is at 103, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in Florida?",
+          "answer": "Average rent varies significantly by city and region within Florida. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "grocery-cost-florida",
+        "gas-price-florida"
+      ]
+    },
+    {
+      "slug": "gas-price-florida",
+      "baseType": "gas-price",
+      "name": "Florida Gas Price Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "florida gas cost",
+      "secondaryKeywords": [
+        "gas cost florida",
+        "florida gas price"
+      ],
+      "metaTitle": "Florida Gas Price Calculator 2025 | FL",
+      "metaDescription": "Calculate fuel costs and driving expenses in Florida. Compare to national averages and other states.",
+      "heroTitle": "Florida Gas Price Calculator",
+      "heroSubtitle": "Estimate fuel costs and driving expenses in Florida",
+      "introText": "Florida has a cost of living index of 103 (100 = national average). This means living in Florida is 3% above the national average.",
+      "formula": "See calculator for detailed gas price formula.",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgRent": 1650,
+        "avgGasPrice": 3.35,
+        "avgUtilityCost": 190,
+        "avgGroceryCost": 350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Florida Index",
+          "description": "Based on Florida cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Florida?",
+          "answer": "Florida's cost of living index is 103 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does gas price cost in Florida?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Florida."
+        },
+        {
+          "question": "Is Florida expensive to live in?",
+          "answer": "Florida has a cost of living index of 103. It is close to the national average."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "The national average cost of living index is 100. Florida is at 103, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in Florida?",
+          "answer": "Average rent varies significantly by city and region within Florida. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "grocery-cost-florida",
+        "utility-cost-florida"
+      ]
+    },
+    {
+      "slug": "relocation-cost-florida",
+      "baseType": "relocation-cost",
+      "name": "Florida Relocation Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "florida moving cost",
+      "secondaryKeywords": [
+        "moving cost florida",
+        "florida relocation cost"
+      ],
+      "metaTitle": "Florida Relocation Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated costs of relocating in Florida. Compare to national averages and other states.",
+      "heroTitle": "Florida Relocation Cost Calculator",
+      "heroSubtitle": "Estimate estimated costs of relocating in Florida",
+      "introText": "Florida has a cost of living index of 103 (100 = national average). This means living in Florida is 3% above the national average.",
+      "formula": "See calculator for detailed relocation cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 103,
+        "avgRent": 1650,
+        "avgGasPrice": 3.35,
+        "avgUtilityCost": 190,
+        "avgGroceryCost": 350
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Florida Index",
+          "description": "Based on Florida cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in Florida?",
+          "answer": "Florida's cost of living index is 103 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does relocation cost cost in Florida?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within Florida."
+        },
+        {
+          "question": "Is Florida expensive to live in?",
+          "answer": "Florida has a cost of living index of 103. It is close to the national average."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "The national average cost of living index is 100. Florida is at 103, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in Florida?",
+          "answer": "Average rent varies significantly by city and region within Florida. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "grocery-cost-florida",
+        "utility-cost-florida"
+      ]
+    },
+    {
+      "slug": "llc-cost-florida",
+      "baseType": "llc-cost",
+      "name": "Florida LLC Cost Calculator",
+      "category": "legal",
+      "primaryKeyword": "florida LLC cost",
+      "secondaryKeywords": [
+        "LLC cost florida",
+        "florida llc cost"
+      ],
+      "metaTitle": "Florida LLC Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate the cost of forming and maintaining an LLC in Florida. See Florida-specific penalties, fees, and costs.",
+      "heroTitle": "Florida LLC Cost Calculator",
+      "heroSubtitle": "Estimate the cost of forming and maintaining an LLC in Florida",
+      "introText": "Understanding llc cost in Florida helps you plan and budget. Filing an LLC in Florida costs $125.",
+      "formula": "See calculator for detailed llc cost calculations.",
+      "stateData": {
+        "avgLLCFiling": 125,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 277,
+        "dui1stFine": 1500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Florida Laws",
+          "description": "Based on current Florida regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized llc cost costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does llc cost cost in Florida?",
+          "answer": "Filing an LLC in Florida costs approximately $125."
+        },
+        {
+          "question": "What are the penalties in Florida?",
+          "answer": "Florida has specific penalties and fee structures. This calculator includes current Florida data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Florida?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Florida-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Florida?",
+          "answer": "Processing times vary. Check with the relevant Florida state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Florida?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Florida's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "speeding-ticket-florida",
+        "dui-penalty-florida",
+        "traffic-fine-florida"
+      ]
+    },
+    {
+      "slug": "speeding-ticket-florida",
+      "baseType": "speeding-ticket",
+      "name": "Florida Speeding Ticket Calculator",
+      "category": "legal",
+      "primaryKeyword": "florida speeding ticket cost",
+      "secondaryKeywords": [
+        "speeding ticket cost florida",
+        "florida speeding ticket"
+      ],
+      "metaTitle": "Florida Speeding Ticket Calculator 2025 | FL",
+      "metaDescription": "Calculate speeding ticket fines and insurance impact in Florida. See Florida-specific penalties, fees, and costs.",
+      "heroTitle": "Florida Speeding Ticket Calculator",
+      "heroSubtitle": "Estimate speeding ticket fines and insurance impact in Florida",
+      "introText": "Understanding speeding ticket in Florida helps you plan and budget. Fines and penalties in Florida vary by violation type and history.",
+      "formula": "See calculator for detailed speeding ticket calculations.",
+      "stateData": {
+        "avgLLCFiling": 125,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 277,
+        "dui1stFine": 1500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Florida Laws",
+          "description": "Based on current Florida regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized speeding ticket costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does speeding ticket cost in Florida?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Florida?",
+          "answer": "Florida has specific penalties and fee structures. This calculator includes current Florida data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Florida?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Florida-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Florida?",
+          "answer": "Processing times vary. Check with the relevant Florida state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Florida?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Florida's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-florida",
+        "dui-penalty-florida",
+        "traffic-fine-florida"
+      ]
+    },
+    {
+      "slug": "dui-penalty-florida",
+      "baseType": "dui-penalty",
+      "name": "Florida DUI Penalty Calculator",
+      "category": "legal",
+      "primaryKeyword": "florida DUI cost",
+      "secondaryKeywords": [
+        "DUI cost florida",
+        "florida dui penalty"
+      ],
+      "metaTitle": "Florida DUI Penalty Calculator 2025 | FL",
+      "metaDescription": "Calculate total costs and penalties for a DUI in Florida. See Florida-specific penalties, fees, and costs.",
+      "heroTitle": "Florida DUI Penalty Calculator",
+      "heroSubtitle": "Estimate total costs and penalties for a DUI in Florida",
+      "introText": "Understanding dui penalty in Florida helps you plan and budget. Fines and penalties in Florida vary by violation type and history.",
+      "formula": "See calculator for detailed dui penalty calculations.",
+      "stateData": {
+        "avgLLCFiling": 125,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 277,
+        "dui1stFine": 1500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Florida Laws",
+          "description": "Based on current Florida regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized dui penalty costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does dui penalty cost in Florida?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Florida?",
+          "answer": "Florida has specific penalties and fee structures. This calculator includes current Florida data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Florida?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Florida-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Florida?",
+          "answer": "Processing times vary. Check with the relevant Florida state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Florida?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Florida's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-florida",
+        "speeding-ticket-florida",
+        "traffic-fine-florida"
+      ]
+    },
+    {
+      "slug": "traffic-fine-florida",
+      "baseType": "traffic-fine",
+      "name": "Florida Traffic Fine Calculator",
+      "category": "legal",
+      "primaryKeyword": "florida traffic fine",
+      "secondaryKeywords": [
+        "traffic fine florida",
+        "florida traffic fine"
+      ],
+      "metaTitle": "Florida Traffic Fine Calculator 2025 | FL",
+      "metaDescription": "Calculate traffic violation fines and point penalties in Florida. See Florida-specific penalties, fees, and costs.",
+      "heroTitle": "Florida Traffic Fine Calculator",
+      "heroSubtitle": "Estimate traffic violation fines and point penalties in Florida",
+      "introText": "Understanding traffic fine in Florida helps you plan and budget. Fines and penalties in Florida vary by violation type and history.",
+      "formula": "See calculator for detailed traffic fine calculations.",
+      "stateData": {
+        "avgLLCFiling": 125,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 277,
+        "dui1stFine": 1500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Florida Laws",
+          "description": "Based on current Florida regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized traffic fine costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does traffic fine cost in Florida?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Florida?",
+          "answer": "Florida has specific penalties and fee structures. This calculator includes current Florida data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Florida?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Florida-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Florida?",
+          "answer": "Processing times vary. Check with the relevant Florida state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Florida?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Florida's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-florida",
+        "speeding-ticket-florida",
+        "dui-penalty-florida"
+      ]
+    },
+    {
+      "slug": "business-registration-florida",
+      "baseType": "business-registration",
+      "name": "Florida Business Registration Calculator",
+      "category": "legal",
+      "primaryKeyword": "florida business registration cost",
+      "secondaryKeywords": [
+        "business registration cost florida",
+        "florida business registration"
+      ],
+      "metaTitle": "Florida Business Registration Calculator 2025 | FL",
+      "metaDescription": "Calculate costs of registering a business in Florida. See Florida-specific penalties, fees, and costs.",
+      "heroTitle": "Florida Business Registration Calculator",
+      "heroSubtitle": "Estimate costs of registering a business in Florida",
+      "introText": "Understanding business registration in Florida helps you plan and budget. Fines and penalties in Florida vary by violation type and history.",
+      "formula": "See calculator for detailed business registration calculations.",
+      "stateData": {
+        "avgLLCFiling": 125,
+        "avgFranchiseTax": 0,
+        "avgSpeedingFine": 277,
+        "dui1stFine": 1500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "Florida Laws",
+          "description": "Based on current Florida regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized business registration costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does business registration cost in Florida?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in Florida?",
+          "answer": "Florida has specific penalties and fee structures. This calculator includes current Florida data."
+        },
+        {
+          "question": "Do I need a lawyer for this in Florida?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a Florida-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in Florida?",
+          "answer": "Processing times vary. Check with the relevant Florida state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in Florida?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check Florida's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-florida",
+        "speeding-ticket-florida",
+        "dui-penalty-florida"
+      ]
+    },
+    {
+      "slug": "solar-panel-roi-florida",
+      "baseType": "solar-panel-roi",
+      "name": "Florida Solar Panel ROI Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "florida solar panel calculator",
+      "secondaryKeywords": [
+        "solar panel calculator florida",
+        "florida solar panel roi"
+      ],
+      "metaTitle": "Florida Solar Panel ROI Calculator 2025 | FL",
+      "metaDescription": "Calculate the return on investment for solar panels in Florida. Free calculator with Florida-specific data and rates.",
+      "heroTitle": "Florida Solar Panel ROI Calculator",
+      "heroSubtitle": "Estimate the return on investment for solar panels in Florida",
+      "introText": "Florida averages 5.7 peak sun hours per day. With an average solar installation cost of $21 000 and the 30% federal ITC, solar can be a great investment.",
+      "formula": "See calculator for detailed solar panel roi formula.",
+      "stateData": {
+        "avgSolarInstallCost": 21000,
+        "avgSunHours": 5.7,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 3.35,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 103
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Florida Specific",
+          "description": "Uses current Florida rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete solar panel roi breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does solar panel roi work in Florida?",
+          "answer": "Solar Panel ROI in Florida follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect solar panel roi in Florida?",
+          "answer": "Key factors include location within Florida, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a solar panel roi benefit in Florida?",
+          "answer": "Florida may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "Florida's cost of living is above the national average, which affects solar panel roi costs."
+        },
+        {
+          "question": "Where can I learn more about solar panel roi in Florida?",
+          "answer": "Check the Florida state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "income-tax-florida",
+        "property-tax-florida"
+      ]
+    },
+    {
+      "slug": "ev-savings-florida",
+      "baseType": "ev-savings",
+      "name": "Florida EV Savings Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "florida EV savings calculator",
+      "secondaryKeywords": [
+        "EV savings calculator florida",
+        "florida ev savings"
+      ],
+      "metaTitle": "Florida EV Savings Calculator 2025 | FL",
+      "metaDescription": "Calculate savings from switching to an electric vehicle in Florida. Free calculator with Florida-specific data and rates.",
+      "heroTitle": "Florida EV Savings Calculator",
+      "heroSubtitle": "Estimate savings from switching to an electric vehicle in Florida",
+      "introText": "With Florida electricity averaging $0.13/kWh vs gas at $3.35/gallon, switching to an EV can yield significant savings.",
+      "formula": "See calculator for detailed ev savings formula.",
+      "stateData": {
+        "avgSolarInstallCost": 21000,
+        "avgSunHours": 5.7,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 3.35,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 103
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Florida Specific",
+          "description": "Uses current Florida rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete ev savings breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does ev savings work in Florida?",
+          "answer": "EV Savings in Florida follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect ev savings in Florida?",
+          "answer": "Key factors include location within Florida, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a ev savings benefit in Florida?",
+          "answer": "Florida may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "Florida's cost of living is above the national average, which affects ev savings costs."
+        },
+        {
+          "question": "Where can I learn more about ev savings in Florida?",
+          "answer": "Check the Florida state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "income-tax-florida",
+        "property-tax-florida"
+      ]
+    },
+    {
+      "slug": "commute-cost-florida",
+      "baseType": "commute-cost",
+      "name": "Florida Commute Cost Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "florida commute cost calculator",
+      "secondaryKeywords": [
+        "commute cost calculator florida",
+        "florida commute cost"
+      ],
+      "metaTitle": "Florida Commute Cost Calculator 2025 | FL",
+      "metaDescription": "Calculate your daily commuting costs in Florida. Free calculator with Florida-specific data and rates.",
+      "heroTitle": "Florida Commute Cost Calculator",
+      "heroSubtitle": "Estimate your daily commuting costs in Florida",
+      "introText": "Calculate commute cost specific to Florida residents using current state data and rates.",
+      "formula": "See calculator for detailed commute cost formula.",
+      "stateData": {
+        "avgSolarInstallCost": 21000,
+        "avgSunHours": 5.7,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 3.35,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 103
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Florida Specific",
+          "description": "Uses current Florida rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete commute cost breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does commute cost work in Florida?",
+          "answer": "Commute Cost in Florida follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect commute cost in Florida?",
+          "answer": "Key factors include location within Florida, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a commute cost benefit in Florida?",
+          "answer": "Florida may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "Florida's cost of living is above the national average, which affects commute cost costs."
+        },
+        {
+          "question": "Where can I learn more about commute cost in Florida?",
+          "answer": "Check the Florida state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "income-tax-florida",
+        "property-tax-florida"
+      ]
+    },
+    {
+      "slug": "lottery-tax-florida",
+      "baseType": "lottery-tax",
+      "name": "Florida Lottery Tax Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "florida lottery tax calculator",
+      "secondaryKeywords": [
+        "lottery tax calculator florida",
+        "florida lottery tax"
+      ],
+      "metaTitle": "Florida Lottery Tax Calculator 2025 | FL",
+      "metaDescription": "Calculate taxes on lottery winnings in Florida. Free calculator with Florida-specific data and rates.",
+      "heroTitle": "Florida Lottery Tax Calculator",
+      "heroSubtitle": "Estimate taxes on lottery winnings in Florida",
+      "introText": "Lottery winnings in Florida are subject to federal tax (24-37%) but no state income tax.",
+      "formula": "See calculator for detailed lottery tax formula.",
+      "stateData": {
+        "avgSolarInstallCost": 21000,
+        "avgSunHours": 5.7,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 3.35,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 103
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Florida Specific",
+          "description": "Uses current Florida rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete lottery tax breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does lottery tax work in Florida?",
+          "answer": "Lottery Tax in Florida follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect lottery tax in Florida?",
+          "answer": "Key factors include location within Florida, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a lottery tax benefit in Florida?",
+          "answer": "Florida may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "Florida's cost of living is above the national average, which affects lottery tax costs."
+        },
+        {
+          "question": "Where can I learn more about lottery tax in Florida?",
+          "answer": "Check the Florida state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "income-tax-florida",
+        "property-tax-florida"
+      ]
+    },
+    {
+      "slug": "child-support-florida",
+      "baseType": "child-support",
+      "name": "Florida Child Support Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "florida child support calculator",
+      "secondaryKeywords": [
+        "child support calculator florida",
+        "florida child support"
+      ],
+      "metaTitle": "Florida Child Support Calculator 2025 | FL",
+      "metaDescription": "Calculate estimated child support payments in Florida. Free calculator with Florida-specific data and rates.",
+      "heroTitle": "Florida Child Support Calculator",
+      "heroSubtitle": "Estimate estimated child support payments in Florida",
+      "introText": "Calculate child support specific to Florida residents using current state data and rates.",
+      "formula": "See calculator for detailed child support formula.",
+      "stateData": {
+        "avgSolarInstallCost": 21000,
+        "avgSunHours": 5.7,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.13,
+        "avgGasPrice": 3.35,
+        "topIncomeTaxRate": 0,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 103
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "Florida Specific",
+          "description": "Uses current Florida rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete child support breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does child support work in Florida?",
+          "answer": "Child Support in Florida follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect child support in Florida?",
+          "answer": "Key factors include location within Florida, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a child support benefit in Florida?",
+          "answer": "Florida may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does Florida compare to other states?",
+          "answer": "Florida's cost of living is above the national average, which affects child support costs."
+        },
+        {
+          "question": "Where can I learn more about child support in Florida?",
+          "answer": "Check the Florida state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-florida",
+        "income-tax-florida",
+        "property-tax-florida"
+      ]
+    }
+  ]
+}

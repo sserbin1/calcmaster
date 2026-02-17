@@ -1,0 +1,3524 @@
+{
+  "state": {
+    "name": "California",
+    "slug": "california",
+    "abbreviation": "CA",
+    "capital": "Sacramento",
+    "population": 38965193,
+    "region": "Pacific",
+    "hasIncomeTax": true,
+    "hasSalesTax": true,
+    "hasPropertyTax": true
+  },
+  "calculators": [
+    {
+      "slug": "income-tax-california",
+      "baseType": "income-tax",
+      "name": "California Income Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california income tax calculator",
+      "secondaryKeywords": [
+        "california state tax",
+        "california tax brackets",
+        "california tax rate"
+      ],
+      "metaTitle": "California Income Tax Calculator 2025 | CA Tax Rates",
+      "metaDescription": "Calculate your California state income tax. See current tax brackets, rates, and deductions. Free California income tax calculator.",
+      "heroTitle": "California Income Tax Calculator",
+      "heroSubtitle": "Calculate your California state income tax liability with current rates and brackets",
+      "introText": "California uses a progressive income tax system with rates ranging from the lowest bracket up to 13.3%. Higher earners pay more on income above each threshold.",
+      "formula": "State Tax = Sum of (Income in each bracket × Bracket rate)",
+      "stateData": {
+        "hasIncomeTax": true,
+        "incomeTaxType": "progressive",
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "taxBrackets": [
+          {
+            "min": 0,
+            "max": 10412,
+            "rate": 1
+          },
+          {
+            "min": 10412,
+            "max": 24684,
+            "rate": 2
+          },
+          {
+            "min": 24684,
+            "max": 38959,
+            "rate": 4
+          },
+          {
+            "min": 38959,
+            "max": 54081,
+            "rate": 6
+          },
+          {
+            "min": 54081,
+            "max": 68350,
+            "rate": 8
+          },
+          {
+            "min": 68350,
+            "max": 349137,
+            "rate": 9.3
+          },
+          {
+            "min": 349137,
+            "max": 418961,
+            "rate": 10.3
+          },
+          {
+            "min": 418961,
+            "max": 698271,
+            "rate": 11.3
+          },
+          {
+            "min": 698271,
+            "max": 1000000,
+            "rate": 12.3
+          },
+          {
+            "min": 1000000,
+            "max": null,
+            "rate": 13.3
+          }
+        ]
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Accurate Brackets",
+          "description": "Uses current California tax brackets and rates"
+        },
+        {
+          "icon": "💰",
+          "title": "Deduction Support",
+          "description": "Accounts for standard and common deductions"
+        },
+        {
+          "icon": "📱",
+          "title": "Instant Results",
+          "description": "See your tax liability calculated in real-time"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the California income tax rate?",
+          "answer": "California has progressive tax rates up to 13.3%."
+        },
+        {
+          "question": "Does California tax Social Security?",
+          "answer": "California does not tax Social Security benefits at the state level."
+        },
+        {
+          "question": "How do I file California state taxes?",
+          "answer": "You can file California state taxes online through the state's Department of Revenue website, or use tax preparation software."
+        },
+        {
+          "question": "What deductions are available in California?",
+          "answer": "California offers standard deductions and may allow itemized deductions. Check the state tax authority for current amounts."
+        },
+        {
+          "question": "When are California state taxes due?",
+          "answer": "California state income taxes are typically due April 15, the same date as federal taxes, unless an extension is filed."
+        }
+      ],
+      "relatedCalculators": [
+        "property-tax-california",
+        "sales-tax-california",
+        "paycheck-california"
+      ]
+    },
+    {
+      "slug": "property-tax-california",
+      "baseType": "property-tax",
+      "name": "California Property Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california property tax calculator",
+      "secondaryKeywords": [
+        "california property tax rate",
+        "california home tax",
+        "california real estate tax"
+      ],
+      "metaTitle": "California Property Tax Calculator 2025 | CA Rates",
+      "metaDescription": "Calculate your California property tax based on home value and local rates. See county-level rates and exemptions.",
+      "heroTitle": "California Property Tax Calculator",
+      "heroSubtitle": "Estimate your annual California property tax based on home value and local rates",
+      "introText": "The average property tax rate in California is 0.71%. With a median home value of $750 000, this means an average annual property tax of $5325.",
+      "formula": "Annual Property Tax = Assessed Home Value × Tax Rate",
+      "stateData": {
+        "avgPropertyTaxRate": 0.71,
+        "medianHomeValue": 750000,
+        "homesteadExemption": 300000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Local Rates",
+          "description": "Based on California county-level tax rates"
+        },
+        {
+          "icon": "📉",
+          "title": "Exemption Check",
+          "description": "See available homestead exemptions"
+        },
+        {
+          "icon": "📅",
+          "title": "Monthly Estimate",
+          "description": "Get monthly property tax payment estimates"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How is property tax calculated in California?",
+          "answer": "Property tax is calculated by multiplying your home's assessed value by the local tax rate. Rates vary by county and municipality."
+        },
+        {
+          "question": "Are there property tax exemptions in California?",
+          "answer": "California offers various exemptions including homestead, senior, veteran, and disability exemptions. Check with your county assessor."
+        },
+        {
+          "question": "When are California property taxes due?",
+          "answer": "Property tax due dates vary by county but are typically due in one or two installments per year."
+        },
+        {
+          "question": "Can I appeal my California property tax assessment?",
+          "answer": "Yes, you can appeal your property assessment through your county's board of equalization or tax appeal process."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "home-affordability-california",
+        "homestead-exemption-california"
+      ]
+    },
+    {
+      "slug": "sales-tax-california",
+      "baseType": "sales-tax",
+      "name": "California Sales Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california sales tax calculator",
+      "secondaryKeywords": [
+        "california sales tax rate",
+        "california tax on purchases"
+      ],
+      "metaTitle": "California Sales Tax Calculator 2025 | CA Rates",
+      "metaDescription": "Calculate California sales tax on any purchase. See state and local combined rates.",
+      "heroTitle": "California Sales Tax Calculator",
+      "heroSubtitle": "Calculate total sales tax including state and local rates in California",
+      "introText": "California has a state sales tax rate of 7.25%. Combined with local taxes, the total rate can vary by city and county.",
+      "formula": "Total Sales Tax = Purchase Amount × (7.25% state + local rate)",
+      "stateData": {
+        "salesTaxRate": 7.25,
+        "hasSalesTax": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛒",
+          "title": "Purchase Calculator",
+          "description": "Calculate exact tax on any California purchase"
+        },
+        {
+          "icon": "📍",
+          "title": "Local Rates",
+          "description": "Includes city and county tax rates"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Exemptions Listed",
+          "description": "See what items are tax-exempt"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the California sales tax rate?",
+          "answer": "The California state sales tax rate is 7.25%. Local jurisdictions may add additional tax."
+        },
+        {
+          "question": "What items are exempt from California sales tax?",
+          "answer": "Common exemptions include groceries, prescription medications, and certain clothing items, though specifics vary by state."
+        },
+        {
+          "question": "Does California tax online purchases?",
+          "answer": "Yes, California requires sales tax on online purchases from retailers with nexus in the state."
+        },
+        {
+          "question": "What is the highest sales tax in California?",
+          "answer": "Combined state and local sales tax rates vary. Check your specific city or county for the exact combined rate."
+        },
+        {
+          "question": "Are there sales tax holidays in California?",
+          "answer": "Some states offer sales tax holidays for back-to-school or hurricane preparedness. Check the state's revenue department for current offerings."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-california",
+        "cost-of-living-california",
+        "property-tax-california"
+      ]
+    },
+    {
+      "slug": "capital-gains-tax-california",
+      "baseType": "capital-gains-tax",
+      "name": "California Capital Gains Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california capital gains tax",
+      "secondaryKeywords": [
+        "california investment tax",
+        "california stock tax",
+        "capital gains california"
+      ],
+      "metaTitle": "California Capital Gains Tax Calculator | CA",
+      "metaDescription": "Calculate capital gains tax in California. See state rates for short-term and long-term gains on investments.",
+      "heroTitle": "California Capital Gains Tax Calculator",
+      "heroSubtitle": "Estimate your state capital gains tax liability in California",
+      "introText": "California taxes capital gains as regular income at rates up to 13.3%. Both short-term and long-term gains are subject to state tax.",
+      "formula": "State Capital Gains Tax = Gain × State Tax Rate (up to 13.3%)",
+      "stateData": {
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "capitalGainsRate": 13.3
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📈",
+          "title": "Investment Analysis",
+          "description": "Calculate California tax on stock and property gains"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Holding Period",
+          "description": "Compare short-term vs long-term impact"
+        },
+        {
+          "icon": "💡",
+          "title": "Tax Strategies",
+          "description": "Learn ways to minimize your tax burden"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does California tax capital gains?",
+          "answer": "Yes, California taxes capital gains at rates up to 13.3%."
+        },
+        {
+          "question": "Are long-term and short-term gains taxed differently in California?",
+          "answer": "At the state level, most states tax both types as ordinary income. The federal government offers lower rates for long-term gains."
+        },
+        {
+          "question": "How can I reduce capital gains tax in California?",
+          "answer": "Strategies include holding investments for over a year, tax-loss harvesting, using retirement accounts, and utilizing the primary residence exclusion."
+        },
+        {
+          "question": "Is there a capital gains exemption in California?",
+          "answer": "California follows federal exemptions for primary residence sales ($250K single, $500K married) and may offer additional deductions."
+        },
+        {
+          "question": "When do I owe California capital gains tax?",
+          "answer": "Capital gains tax is due when you file your annual state tax return, typically by April 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-california",
+        "investment-tax-california",
+        "retirement-tax-california"
+      ]
+    },
+    {
+      "slug": "estate-tax-california",
+      "baseType": "estate-tax",
+      "name": "California Estate Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california estate tax",
+      "secondaryKeywords": [
+        "california inheritance tax",
+        "california estate planning"
+      ],
+      "metaTitle": "California Estate Tax Calculator 2025 | CA",
+      "metaDescription": "Calculate California estate tax. See exemptions, rates, and planning strategies for California estates.",
+      "heroTitle": "California Estate Tax Calculator",
+      "heroSubtitle": "Estimate state estate tax liability and exemptions in California",
+      "introText": "California does not impose a separate state estate tax or inheritance tax. However, the federal estate tax still applies to estates above the federal exemption threshold.",
+      "formula": "No state estate tax applies.",
+      "stateData": {
+        "hasEstateTax": false,
+        "estateExemption": 0,
+        "estateTopRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏦",
+          "title": "Estate Planning",
+          "description": "California-specific estate tax analysis"
+        },
+        {
+          "icon": "📋",
+          "title": "Exemption Check",
+          "description": "See if your estate exceeds the threshold"
+        },
+        {
+          "icon": "🔮",
+          "title": "Planning Strategies",
+          "description": "Learn tax-saving estate strategies"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does California have an estate tax?",
+          "answer": "No, California does not have a state estate tax."
+        },
+        {
+          "question": "What is the California estate tax exemption?",
+          "answer": "California has no estate tax, so no exemption is needed."
+        },
+        {
+          "question": "Does California have an inheritance tax?",
+          "answer": "Check with the state's Department of Revenue for current inheritance tax laws, as they differ from estate taxes."
+        },
+        {
+          "question": "How can I reduce estate taxes in California?",
+          "answer": "Common strategies include gifting, trusts, life insurance, and charitable donations. Consult an estate planning attorney."
+        },
+        {
+          "question": "Is the federal estate tax different from California's?",
+          "answer": "Yes, the federal estate tax is separate with its own exemption ($13.61M in 2024). You may owe both if applicable."
+        }
+      ],
+      "relatedCalculators": [
+        "retirement-tax-california",
+        "income-tax-california",
+        "capital-gains-tax-california"
+      ]
+    },
+    {
+      "slug": "effective-tax-rate-california",
+      "baseType": "effective-tax-rate",
+      "name": "California Effective Tax Rate Calculator",
+      "category": "finance",
+      "primaryKeyword": "california effective tax rate",
+      "secondaryKeywords": [
+        "california total tax burden",
+        "california tax percentage"
+      ],
+      "metaTitle": "California Effective Tax Rate Calculator | CA",
+      "metaDescription": "Calculate your total effective tax rate in California including state, federal, and FICA taxes.",
+      "heroTitle": "California Effective Tax Rate Calculator",
+      "heroSubtitle": "See your true tax burden combining all California and federal taxes",
+      "introText": "Your effective tax rate in California combines state income tax (up to 13.3%), federal income tax, and FICA taxes (7.65%). This calculator shows your combined rate.",
+      "formula": "Effective Rate = Total Tax Paid / Gross Income × 100%",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎯",
+          "title": "True Tax Rate",
+          "description": "See your real California tax burden"
+        },
+        {
+          "icon": "📊",
+          "title": "All Taxes Combined",
+          "description": "State, federal, and FICA in one view"
+        },
+        {
+          "icon": "💡",
+          "title": "Optimization Tips",
+          "description": "Learn how to reduce your rate"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the effective tax rate in California?",
+          "answer": "It depends on your income level. California state taxes are up to 13.3%, plus federal taxes and FICA."
+        },
+        {
+          "question": "How is effective tax rate different from marginal rate?",
+          "answer": "Marginal rate is the tax on your last dollar of income. Effective rate is your total tax divided by total income — typically lower."
+        },
+        {
+          "question": "What taxes are included in the effective rate?",
+          "answer": "Federal income tax, state income tax, Social Security tax (6.2%), and Medicare tax (1.45%)."
+        },
+        {
+          "question": "How can I lower my effective tax rate?",
+          "answer": "Maximize pre-tax deductions (401k, HSA), itemize deductions, use tax credits, and consider tax-loss harvesting."
+        },
+        {
+          "question": "Does California have local income taxes too?",
+          "answer": "Some California localities may impose additional income taxes. Check with your city or county."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-california",
+        "paycheck-california",
+        "salary-after-tax-california"
+      ]
+    },
+    {
+      "slug": "self-employment-tax-california",
+      "baseType": "self-employment-tax",
+      "name": "California Self-Employment Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california self-employment tax",
+      "secondaryKeywords": [
+        "california freelance tax",
+        "california 1099 tax",
+        "self-employed tax california"
+      ],
+      "metaTitle": "California Self-Employment Tax Calculator | CA",
+      "metaDescription": "Calculate self-employment tax in California. See SE tax, state income tax, and quarterly payment estimates.",
+      "heroTitle": "California Self-Employment Tax Calculator",
+      "heroSubtitle": "Estimate your total self-employment tax burden in California",
+      "introText": "Self-employed workers in California pay 15.3% in SE tax (Social Security 12.4% + Medicare 2.9%) on 92.35% of net earnings, plus state income tax up to 13.3%.",
+      "formula": "SE Tax = Net Earnings × 92.35% × 15.3% (SS capped at $168,600)",
+      "stateData": {
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💼",
+          "title": "SE Tax Estimate",
+          "description": "Calculate your California self-employment tax"
+        },
+        {
+          "icon": "📅",
+          "title": "Quarterly Payments",
+          "description": "Get estimated quarterly amounts"
+        },
+        {
+          "icon": "✂️",
+          "title": "Deduction Finder",
+          "description": "See available business deductions"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much is self-employment tax in California?",
+          "answer": "The federal SE tax rate is 15.3% on 92.35% of net earnings. Plus California state income tax."
+        },
+        {
+          "question": "Do I need to pay quarterly taxes in California?",
+          "answer": "Yes, self-employed individuals must make estimated quarterly payments if they expect to owe $1,000+ in taxes."
+        },
+        {
+          "question": "Can I deduct half of SE tax?",
+          "answer": "Yes, you can deduct 50% of your self-employment tax when calculating your adjusted gross income."
+        },
+        {
+          "question": "What expenses can I deduct in California?",
+          "answer": "Common deductions include home office, vehicle, health insurance, supplies, and professional services."
+        },
+        {
+          "question": "When are quarterly payments due?",
+          "answer": "Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-california",
+        "effective-tax-rate-california",
+        "llc-cost-california"
+      ]
+    },
+    {
+      "slug": "retirement-tax-california",
+      "baseType": "retirement-tax",
+      "name": "California Retirement Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "california retirement tax",
+      "secondaryKeywords": [
+        "california pension tax",
+        "california 401k tax",
+        "retirement income california"
+      ],
+      "metaTitle": "California Retirement Tax Calculator | CA",
+      "metaDescription": "Calculate taxes on retirement income in California. See how Social Security, pensions, and 401k withdrawals are taxed.",
+      "heroTitle": "California Retirement Tax Calculator",
+      "heroSubtitle": "See how California taxes your retirement income sources",
+      "introText": "California taxes retirement income at rates up to 13.3%. Social Security is not taxed, pensions are taxed.",
+      "formula": "State Tax on Retirement = Taxable Retirement Income × State Rate",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "taxesSocialSecurity": false,
+        "taxesPension": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏖️",
+          "title": "Retirement Planning",
+          "description": "Plan your California retirement income strategy"
+        },
+        {
+          "icon": "🔍",
+          "title": "Source Analysis",
+          "description": "See tax impact by income source"
+        },
+        {
+          "icon": "🗺️",
+          "title": "State Comparison",
+          "description": "Compare retirement tax friendliness"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does California tax Social Security?",
+          "answer": "No, California does not tax Social Security benefits."
+        },
+        {
+          "question": "Are pensions taxed in California?",
+          "answer": "Yes, pension income is subject to California state income tax."
+        },
+        {
+          "question": "Is California a good state for retirees?",
+          "answer": "California has income tax rates up to 13.3%. Consider cost of living (index: 142) as well."
+        },
+        {
+          "question": "Are 401k withdrawals taxed in California?",
+          "answer": "Yes, 401k and IRA withdrawals are taxed as regular income in California."
+        },
+        {
+          "question": "What is the best state for retirement taxes?",
+          "answer": "States with no income tax (like FL, TX, NV) are popular, but consider overall cost of living, healthcare, and quality of life."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-california",
+        "cost-of-living-california",
+        "estate-tax-california"
+      ]
+    },
+    {
+      "slug": "mortgage-california",
+      "baseType": "mortgage",
+      "name": "California Mortgage Calculator",
+      "category": "housing",
+      "primaryKeyword": "california mortgage calculator",
+      "secondaryKeywords": [
+        "mortgage calculator california",
+        "california mortgage"
+      ],
+      "metaTitle": "California Mortgage Calculator 2025 | CA",
+      "metaDescription": "Calculate monthly mortgage payments including PMI, taxes, and insurance in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Mortgage Calculator",
+      "heroSubtitle": "Calculate monthly mortgage payments including PMI, taxes, and insurance in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding mortgage costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for mortgage formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized mortgage analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different mortgage scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical mortgage in California?",
+          "answer": "Mortgage costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "rent-vs-buy-california",
+        "closing-costs-california",
+        "homestead-exemption-california"
+      ]
+    },
+    {
+      "slug": "rent-vs-buy-california",
+      "baseType": "rent-vs-buy",
+      "name": "California Rent vs Buy Calculator",
+      "category": "housing",
+      "primaryKeyword": "california rent vs buy calculator",
+      "secondaryKeywords": [
+        "rent vs buy calculator california",
+        "california rent vs buy"
+      ],
+      "metaTitle": "California Rent vs Buy Calculator 2025 | CA",
+      "metaDescription": "Calculate whether it's better to rent or buy a home in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Rent vs Buy Calculator",
+      "heroSubtitle": "Calculate whether it's better to rent or buy a home in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding rent vs buy costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for rent vs buy formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent vs buy analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent vs buy scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical rent vs buy in California?",
+          "answer": "Rent vs Buy costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "closing-costs-california",
+        "homestead-exemption-california"
+      ]
+    },
+    {
+      "slug": "closing-costs-california",
+      "baseType": "closing-costs",
+      "name": "California Closing Costs Calculator",
+      "category": "housing",
+      "primaryKeyword": "california closing costs calculator",
+      "secondaryKeywords": [
+        "closing costs calculator california",
+        "california closing costs"
+      ],
+      "metaTitle": "California Closing Costs Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated closing costs for buying or selling a home in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Closing Costs Calculator",
+      "heroSubtitle": "Calculate estimated closing costs for buying or selling a home in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding closing costs costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for closing costs formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized closing costs analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different closing costs scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical closing costs in California?",
+          "answer": "Closing Costs costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "homestead-exemption-california"
+      ]
+    },
+    {
+      "slug": "homestead-exemption-california",
+      "baseType": "homestead-exemption",
+      "name": "California Homestead Exemption Calculator",
+      "category": "housing",
+      "primaryKeyword": "california homestead exemption calculator",
+      "secondaryKeywords": [
+        "homestead exemption calculator california",
+        "california homestead exemption"
+      ],
+      "metaTitle": "California Homestead Exemption Calculator 2025 | CA",
+      "metaDescription": "Calculate property tax savings from your homestead exemption in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Homestead Exemption Calculator",
+      "heroSubtitle": "Calculate property tax savings from your homestead exemption in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding homestead exemption costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for homestead exemption formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized homestead exemption analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different homestead exemption scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical homestead exemption in California?",
+          "answer": "Homestead Exemption costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "home-affordability-california",
+      "baseType": "home-affordability",
+      "name": "California Home Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "california home affordability calculator",
+      "secondaryKeywords": [
+        "home affordability calculator california",
+        "california home affordability"
+      ],
+      "metaTitle": "California Home Affordability Calculator 2025 | CA",
+      "metaDescription": "Calculate how much house you can afford based on income in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Home Affordability Calculator",
+      "heroSubtitle": "Calculate how much house you can afford based on income in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding home affordability costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for home affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical home affordability in California?",
+          "answer": "Home Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "rent-affordability-california",
+      "baseType": "rent-affordability",
+      "name": "California Rent Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "california rent affordability calculator",
+      "secondaryKeywords": [
+        "rent affordability calculator california",
+        "california rent affordability"
+      ],
+      "metaTitle": "California Rent Affordability Calculator 2025 | CA",
+      "metaDescription": "Calculate how much rent you can afford based on income in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Rent Affordability Calculator",
+      "heroSubtitle": "Calculate how much rent you can afford based on income in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding rent affordability costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for rent affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical rent affordability in California?",
+          "answer": "Rent Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "down-payment-california",
+      "baseType": "down-payment",
+      "name": "California Down Payment Calculator",
+      "category": "housing",
+      "primaryKeyword": "california down payment calculator",
+      "secondaryKeywords": [
+        "down payment calculator california",
+        "california down payment"
+      ],
+      "metaTitle": "California Down Payment Calculator 2025 | CA",
+      "metaDescription": "Calculate how long to save for a down payment in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Down Payment Calculator",
+      "heroSubtitle": "Calculate how long to save for a down payment in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding down payment costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for down payment formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized down payment analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different down payment scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical down payment in California?",
+          "answer": "Down Payment costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "home-equity-california",
+      "baseType": "home-equity",
+      "name": "California Home Equity Loan Calculator",
+      "category": "housing",
+      "primaryKeyword": "california home equity calculator",
+      "secondaryKeywords": [
+        "home equity calculator california",
+        "california home equity loan"
+      ],
+      "metaTitle": "California Home Equity Loan Calculator 2025 | CA",
+      "metaDescription": "Calculate how much you can borrow against your home equity in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Home Equity Loan Calculator",
+      "heroSubtitle": "Calculate how much you can borrow against your home equity in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding home equity loan costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for home equity loan formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home equity loan analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home equity loan scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical home equity loan in California?",
+          "answer": "Home Equity Loan costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "refinance-california",
+      "baseType": "refinance",
+      "name": "California Refinance Calculator",
+      "category": "housing",
+      "primaryKeyword": "california refinance calculator",
+      "secondaryKeywords": [
+        "refinance calculator california",
+        "california refinance"
+      ],
+      "metaTitle": "California Refinance Calculator 2025 | CA",
+      "metaDescription": "Calculate whether refinancing your mortgage saves money in California. Free online calculator with California-specific data.",
+      "heroTitle": "California Refinance Calculator",
+      "heroSubtitle": "Calculate whether refinancing your mortgage saves money in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding refinance costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for refinance formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized refinance analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different refinance scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical refinance in California?",
+          "answer": "Refinance costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "adu-roi-california",
+      "baseType": "adu-roi",
+      "name": "California ADU ROI Calculator",
+      "category": "housing",
+      "primaryKeyword": "california adu calculator",
+      "secondaryKeywords": [
+        "adu calculator california",
+        "california adu roi"
+      ],
+      "metaTitle": "California ADU ROI Calculator 2025 | CA",
+      "metaDescription": "Calculate the return on investment for an accessory dwelling unit in California. Free online calculator with California-specific data.",
+      "heroTitle": "California ADU ROI Calculator",
+      "heroSubtitle": "Calculate the return on investment for an accessory dwelling unit in California",
+      "introText": "With a median home value of $750 000 and property tax rate of 0.71%, understanding adu roi costs in California is essential for homeowners and buyers.",
+      "formula": "See calculator for adu roi formula details.",
+      "stateData": {
+        "medianHomeValue": 750000,
+        "avgPropertyTaxRate": 0.71,
+        "homesteadExemption": 300000,
+        "avgClosingCostRate": 1,
+        "transferTaxRate": 0.11,
+        "avgRent": 2100
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "California Data",
+          "description": "Uses current California housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized adu roi analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different adu roi scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in California?",
+          "answer": "The median home value in California is approximately $750 000."
+        },
+        {
+          "question": "What is the average property tax rate in California?",
+          "answer": "The average effective property tax rate in California is 0.71%."
+        },
+        {
+          "question": "How much is a typical adu roi in California?",
+          "answer": "ADU ROI costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is California a good state to buy a home?",
+          "answer": "California has a cost of living index of 142 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in California?",
+          "answer": "Housing markets vary across California. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-california",
+        "rent-vs-buy-california",
+        "closing-costs-california"
+      ]
+    },
+    {
+      "slug": "salary-after-tax-california",
+      "baseType": "salary-after-tax",
+      "name": "California Salary After Tax Calculator",
+      "category": "employment",
+      "primaryKeyword": "california salary after tax",
+      "secondaryKeywords": [
+        "salary after tax california",
+        "california salary after tax"
+      ],
+      "metaTitle": "California Salary After Tax Calculator 2025 | CA",
+      "metaDescription": "Calculate your take-home pay after all taxes in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Salary After Tax Calculator",
+      "heroSubtitle": "Calculate your take-home pay after all taxes in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate salary after tax in California.",
+      "formula": "See calculator for detailed salary after tax formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is salary after tax calculated in California?",
+          "answer": "Salary After Tax in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "minimum-wage-california",
+        "overtime-california",
+        "workers-comp-california"
+      ]
+    },
+    {
+      "slug": "minimum-wage-california",
+      "baseType": "minimum-wage",
+      "name": "California Minimum Wage Calculator",
+      "category": "employment",
+      "primaryKeyword": "california minimum wage calculator",
+      "secondaryKeywords": [
+        "minimum wage calculator california",
+        "california minimum wage"
+      ],
+      "metaTitle": "California Minimum Wage Calculator 2025 | CA",
+      "metaDescription": "Calculate earnings at minimum wage including tipped rates in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Minimum Wage Calculator",
+      "heroSubtitle": "Calculate earnings at minimum wage including tipped rates in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate minimum wage in California.",
+      "formula": "See calculator for detailed minimum wage formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is minimum wage calculated in California?",
+          "answer": "Minimum Wage in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-california",
+        "overtime-california",
+        "workers-comp-california"
+      ]
+    },
+    {
+      "slug": "overtime-california",
+      "baseType": "overtime",
+      "name": "California Overtime Calculator",
+      "category": "employment",
+      "primaryKeyword": "california overtime calculator",
+      "secondaryKeywords": [
+        "overtime calculator california",
+        "california overtime"
+      ],
+      "metaTitle": "California Overtime Calculator 2025 | CA",
+      "metaDescription": "Calculate overtime pay with state-specific rules in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Overtime Calculator",
+      "heroSubtitle": "Calculate overtime pay with state-specific rules in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate overtime in California.",
+      "formula": "See calculator for detailed overtime formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is overtime calculated in California?",
+          "answer": "Overtime in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-california",
+        "minimum-wage-california",
+        "workers-comp-california"
+      ]
+    },
+    {
+      "slug": "workers-comp-california",
+      "baseType": "workers-comp",
+      "name": "California Workers Comp Calculator",
+      "category": "employment",
+      "primaryKeyword": "california workers compensation calculator",
+      "secondaryKeywords": [
+        "workers compensation calculator california",
+        "california workers comp"
+      ],
+      "metaTitle": "California Workers Comp Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated workers compensation insurance costs in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Workers Comp Calculator",
+      "heroSubtitle": "Calculate estimated workers compensation insurance costs in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate workers comp in California.",
+      "formula": "See calculator for detailed workers comp formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is workers comp calculated in California?",
+          "answer": "Workers Comp in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-california",
+        "minimum-wage-california",
+        "overtime-california"
+      ]
+    },
+    {
+      "slug": "hourly-to-salary-california",
+      "baseType": "hourly-to-salary",
+      "name": "California Hourly to Salary Calculator",
+      "category": "employment",
+      "primaryKeyword": "california hourly to salary",
+      "secondaryKeywords": [
+        "hourly to salary california",
+        "california hourly to salary"
+      ],
+      "metaTitle": "California Hourly to Salary Calculator 2025 | CA",
+      "metaDescription": "Calculate the salary equivalent of an hourly wage in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Hourly to Salary Calculator",
+      "heroSubtitle": "Calculate the salary equivalent of an hourly wage in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate hourly to salary in California.",
+      "formula": "See calculator for detailed hourly to salary formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is hourly to salary calculated in California?",
+          "answer": "Hourly to Salary in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-california",
+        "minimum-wage-california",
+        "overtime-california"
+      ]
+    },
+    {
+      "slug": "take-home-pay-california",
+      "baseType": "take-home-pay",
+      "name": "California Take Home Pay Calculator",
+      "category": "employment",
+      "primaryKeyword": "california take home pay calculator",
+      "secondaryKeywords": [
+        "take home pay calculator california",
+        "california take home pay"
+      ],
+      "metaTitle": "California Take Home Pay Calculator 2025 | CA",
+      "metaDescription": "Calculate your net pay after deductions in California. Free calculator with current California tax rates and rules.",
+      "heroTitle": "California Take Home Pay Calculator",
+      "heroSubtitle": "Calculate your net pay after deductions in California",
+      "introText": "California has a minimum wage of $16.50/hr and income tax rates up to 13.3%. Use this calculator to estimate take home pay in California.",
+      "formula": "See calculator for detailed take home pay formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 13.3,
+        "minWageTipped": 16.5,
+        "avgWorkerCompRate": 1.34
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "California Rates",
+          "description": "Current California tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in California?",
+          "answer": "The California minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does California have a state income tax?",
+          "answer": "Yes, California has income tax rates up to 13.3%."
+        },
+        {
+          "question": "How is take home pay calculated in California?",
+          "answer": "Take Home Pay in California accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to California paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does California compare to other states for workers?",
+          "answer": "California has a cost of living index of 142 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-california",
+        "minimum-wage-california",
+        "overtime-california"
+      ]
+    },
+    {
+      "slug": "health-insurance-california",
+      "baseType": "health-insurance",
+      "name": "California Health Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california health insurance cost",
+      "secondaryKeywords": [
+        "health insurance cost california",
+        "average health insurance cost california"
+      ],
+      "metaTitle": "California Health Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated health insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Health Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated health insurance premiums based on California averages",
+      "introText": "The average annual health insurance cost in California is $580. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does health insurance cost in California?",
+          "answer": "Health Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is health insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my health insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect health insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for health insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "auto-insurance-california",
+        "homeowners-insurance-california",
+        "flood-insurance-california"
+      ]
+    },
+    {
+      "slug": "auto-insurance-california",
+      "baseType": "auto-insurance",
+      "name": "California Auto Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california car insurance cost",
+      "secondaryKeywords": [
+        "car insurance cost california",
+        "average car insurance cost california"
+      ],
+      "metaTitle": "California Auto Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated car insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Auto Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated car insurance premiums based on California averages",
+      "introText": "The average annual auto insurance cost in California is $2290. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does auto insurance cost in California?",
+          "answer": "Auto Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is auto insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my auto insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect auto insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for auto insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-california",
+        "homeowners-insurance-california",
+        "flood-insurance-california"
+      ]
+    },
+    {
+      "slug": "homeowners-insurance-california",
+      "baseType": "homeowners-insurance",
+      "name": "California Homeowners Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california homeowners insurance cost",
+      "secondaryKeywords": [
+        "homeowners insurance cost california",
+        "average homeowners insurance cost california"
+      ],
+      "metaTitle": "California Homeowners Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated homeowners insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Homeowners Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated homeowners insurance premiums based on California averages",
+      "introText": "Homeowners Insurance costs in California vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does homeowners insurance cost in California?",
+          "answer": "Homeowners Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is homeowners insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my homeowners insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect homeowners insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for homeowners insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-california",
+        "auto-insurance-california",
+        "flood-insurance-california"
+      ]
+    },
+    {
+      "slug": "flood-insurance-california",
+      "baseType": "flood-insurance",
+      "name": "California Flood Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california flood insurance cost",
+      "secondaryKeywords": [
+        "flood insurance cost california",
+        "average flood insurance cost california"
+      ],
+      "metaTitle": "California Flood Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated flood insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Flood Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated flood insurance premiums based on California averages",
+      "introText": "Flood Insurance costs in California vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does flood insurance cost in California?",
+          "answer": "Flood Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is flood insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my flood insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect flood insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for flood insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-california",
+        "auto-insurance-california",
+        "homeowners-insurance-california"
+      ]
+    },
+    {
+      "slug": "renters-insurance-california",
+      "baseType": "renters-insurance",
+      "name": "California Renters Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california renters insurance cost",
+      "secondaryKeywords": [
+        "renters insurance cost california",
+        "average renters insurance cost california"
+      ],
+      "metaTitle": "California Renters Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated renters insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Renters Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated renters insurance premiums based on California averages",
+      "introText": "Renters Insurance costs in California vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does renters insurance cost in California?",
+          "answer": "Renters Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is renters insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my renters insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect renters insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for renters insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-california",
+        "auto-insurance-california",
+        "homeowners-insurance-california"
+      ]
+    },
+    {
+      "slug": "life-insurance-california",
+      "baseType": "life-insurance",
+      "name": "California Life Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "california life insurance cost",
+      "secondaryKeywords": [
+        "life insurance cost california",
+        "average life insurance cost california"
+      ],
+      "metaTitle": "California Life Insurance Calculator 2025 | CA",
+      "metaDescription": "Estimate estimated life insurance premiums in California. Compare plans and find the best rates for California residents.",
+      "heroTitle": "California Life Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated life insurance premiums based on California averages",
+      "introText": "Life Insurance costs in California vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgAutoInsurance": 2290,
+        "avgHealthInsurance": 580,
+        "avgHomeInsurance": 1520
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "California Rates",
+          "description": "Based on current California insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does life insurance cost in California?",
+          "answer": "Life Insurance costs in California depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is life insurance required in California?",
+          "answer": "Requirements vary by insurance type and state law. Check California's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my life insurance in California?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect life insurance rates in California?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for life insurance in California?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-california",
+        "auto-insurance-california",
+        "homeowners-insurance-california"
+      ]
+    },
+    {
+      "slug": "college-cost-california",
+      "baseType": "college-cost",
+      "name": "California College Cost Calculator",
+      "category": "education",
+      "primaryKeyword": "california college cost",
+      "secondaryKeywords": [
+        "college cost california",
+        "california college cost"
+      ],
+      "metaTitle": "California College Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate total cost of college including tuition, room, and board in California. Free calculator with California-specific education data.",
+      "heroTitle": "California College Cost Calculator",
+      "heroSubtitle": "Estimate total cost of college including tuition, room, and board for California residents",
+      "introText": "California offers in-state tuition averaging $9084 at public universities. The average student debt is $36 950.",
+      "formula": "See calculator for detailed college cost formula.",
+      "stateData": {
+        "avgInStateTuition": 9084,
+        "avgOutStateTuition": 42184,
+        "avgRoomBoard": 17556,
+        "avgTeacherSalary": 87275,
+        "avgStudentDebt": 36950
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "California Data",
+          "description": "Based on current California education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized college cost analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in California?",
+          "answer": "The average in-state tuition at California public universities is approximately $9084 per year."
+        },
+        {
+          "question": "What is the average teacher salary in California?",
+          "answer": "The average teacher salary in California is approximately $87 275 per year."
+        },
+        {
+          "question": "How much student debt do California graduates have?",
+          "answer": "The average student debt for California graduates is approximately $36 950."
+        },
+        {
+          "question": "Does California offer a 529 plan?",
+          "answer": "Yes, California offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in California?",
+          "answer": "California offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "student-loan-california",
+        "teacher-salary-california",
+        "education-savings-california"
+      ]
+    },
+    {
+      "slug": "student-loan-california",
+      "baseType": "student-loan",
+      "name": "California Student Loan Repayment Calculator",
+      "category": "education",
+      "primaryKeyword": "california student loan calculator",
+      "secondaryKeywords": [
+        "student loan calculator california",
+        "california student loan repayment"
+      ],
+      "metaTitle": "California Student Loan Repayment Calculator 2025 | CA",
+      "metaDescription": "Calculate monthly student loan payments and total interest in California. Free calculator with California-specific education data.",
+      "heroTitle": "California Student Loan Repayment Calculator",
+      "heroSubtitle": "Estimate monthly student loan payments and total interest for California residents",
+      "introText": "California offers in-state tuition averaging $9084 at public universities. The average student debt is $36 950.",
+      "formula": "See calculator for detailed student loan repayment formula.",
+      "stateData": {
+        "avgInStateTuition": 9084,
+        "avgOutStateTuition": 42184,
+        "avgRoomBoard": 17556,
+        "avgTeacherSalary": 87275,
+        "avgStudentDebt": 36950
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "California Data",
+          "description": "Based on current California education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized student loan repayment analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in California?",
+          "answer": "The average in-state tuition at California public universities is approximately $9084 per year."
+        },
+        {
+          "question": "What is the average teacher salary in California?",
+          "answer": "The average teacher salary in California is approximately $87 275 per year."
+        },
+        {
+          "question": "How much student debt do California graduates have?",
+          "answer": "The average student debt for California graduates is approximately $36 950."
+        },
+        {
+          "question": "Does California offer a 529 plan?",
+          "answer": "Yes, California offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in California?",
+          "answer": "California offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-california",
+        "teacher-salary-california",
+        "education-savings-california"
+      ]
+    },
+    {
+      "slug": "teacher-salary-california",
+      "baseType": "teacher-salary",
+      "name": "California Teacher Salary Calculator",
+      "category": "education",
+      "primaryKeyword": "california teacher salary",
+      "secondaryKeywords": [
+        "teacher salary california",
+        "california teacher salary"
+      ],
+      "metaTitle": "California Teacher Salary Calculator 2025 | CA",
+      "metaDescription": "Calculate expected teacher salary based on experience and education in California. Free calculator with California-specific education data.",
+      "heroTitle": "California Teacher Salary Calculator",
+      "heroSubtitle": "Estimate expected teacher salary based on experience and education for California residents",
+      "introText": "California offers in-state tuition averaging $9084 at public universities. The average student debt is $36 950.",
+      "formula": "See calculator for detailed teacher salary formula.",
+      "stateData": {
+        "avgInStateTuition": 9084,
+        "avgOutStateTuition": 42184,
+        "avgRoomBoard": 17556,
+        "avgTeacherSalary": 87275,
+        "avgStudentDebt": 36950
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "California Data",
+          "description": "Based on current California education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized teacher salary analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in California?",
+          "answer": "The average in-state tuition at California public universities is approximately $9084 per year."
+        },
+        {
+          "question": "What is the average teacher salary in California?",
+          "answer": "The average teacher salary in California is approximately $87 275 per year."
+        },
+        {
+          "question": "How much student debt do California graduates have?",
+          "answer": "The average student debt for California graduates is approximately $36 950."
+        },
+        {
+          "question": "Does California offer a 529 plan?",
+          "answer": "Yes, California offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in California?",
+          "answer": "California offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-california",
+        "student-loan-california",
+        "education-savings-california"
+      ]
+    },
+    {
+      "slug": "education-savings-california",
+      "baseType": "education-savings",
+      "name": "California 529 Plan Savings Calculator",
+      "category": "education",
+      "primaryKeyword": "california 529 plan calculator",
+      "secondaryKeywords": [
+        "529 plan calculator california",
+        "california 529 plan savings"
+      ],
+      "metaTitle": "California 529 Plan Savings Calculator 2025 | CA",
+      "metaDescription": "Calculate how a 529 plan investment grows over time in California. Free calculator with California-specific education data.",
+      "heroTitle": "California 529 Plan Savings Calculator",
+      "heroSubtitle": "Estimate how a 529 plan investment grows over time for California residents",
+      "introText": "California offers in-state tuition averaging $9084 at public universities. The average student debt is $36 950.",
+      "formula": "See calculator for detailed 529 plan savings formula.",
+      "stateData": {
+        "avgInStateTuition": 9084,
+        "avgOutStateTuition": 42184,
+        "avgRoomBoard": 17556,
+        "avgTeacherSalary": 87275,
+        "avgStudentDebt": 36950
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "California Data",
+          "description": "Based on current California education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized 529 plan savings analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in California?",
+          "answer": "The average in-state tuition at California public universities is approximately $9084 per year."
+        },
+        {
+          "question": "What is the average teacher salary in California?",
+          "answer": "The average teacher salary in California is approximately $87 275 per year."
+        },
+        {
+          "question": "How much student debt do California graduates have?",
+          "answer": "The average student debt for California graduates is approximately $36 950."
+        },
+        {
+          "question": "Does California offer a 529 plan?",
+          "answer": "Yes, California offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in California?",
+          "answer": "California offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-california",
+        "student-loan-california",
+        "teacher-salary-california"
+      ]
+    },
+    {
+      "slug": "in-state-tuition-california",
+      "baseType": "in-state-tuition",
+      "name": "California In-State Tuition Calculator",
+      "category": "education",
+      "primaryKeyword": "california in-state tuition cost",
+      "secondaryKeywords": [
+        "in-state tuition cost california",
+        "california in-state tuition"
+      ],
+      "metaTitle": "California In-State Tuition Calculator 2025 | CA",
+      "metaDescription": "Calculate in-state vs out-of-state tuition costs in California. Free calculator with California-specific education data.",
+      "heroTitle": "California In-State Tuition Calculator",
+      "heroSubtitle": "Estimate in-state vs out-of-state tuition costs for California residents",
+      "introText": "California offers in-state tuition averaging $9084 at public universities. The average student debt is $36 950.",
+      "formula": "See calculator for detailed in-state tuition formula.",
+      "stateData": {
+        "avgInStateTuition": 9084,
+        "avgOutStateTuition": 42184,
+        "avgRoomBoard": 17556,
+        "avgTeacherSalary": 87275,
+        "avgStudentDebt": 36950
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "California Data",
+          "description": "Based on current California education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized in-state tuition analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in California?",
+          "answer": "The average in-state tuition at California public universities is approximately $9084 per year."
+        },
+        {
+          "question": "What is the average teacher salary in California?",
+          "answer": "The average teacher salary in California is approximately $87 275 per year."
+        },
+        {
+          "question": "How much student debt do California graduates have?",
+          "answer": "The average student debt for California graduates is approximately $36 950."
+        },
+        {
+          "question": "Does California offer a 529 plan?",
+          "answer": "Yes, California offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in California?",
+          "answer": "California offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-california",
+        "student-loan-california",
+        "teacher-salary-california"
+      ]
+    },
+    {
+      "slug": "cost-of-living-california",
+      "baseType": "cost-of-living",
+      "name": "California Cost of Living Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "california cost of living",
+      "secondaryKeywords": [
+        "cost of living california",
+        "california cost of living"
+      ],
+      "metaTitle": "California Cost of Living Calculator 2025 | CA",
+      "metaDescription": "Calculate the overall cost of living and salary equivalency in California. Compare to national averages and other states.",
+      "heroTitle": "California Cost of Living Calculator",
+      "heroSubtitle": "Estimate the overall cost of living and salary equivalency in California",
+      "introText": "California has a cost of living index of 142 (100 = national average). This means living in California is 42% above the national average.",
+      "formula": "See calculator for detailed cost of living formula.",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgRent": 2100,
+        "avgGasPrice": 4.85,
+        "avgUtilityCost": 220,
+        "avgGroceryCost": 400
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "California Index",
+          "description": "Based on California cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in California?",
+          "answer": "California's cost of living index is 142 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does cost of living cost in California?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within California."
+        },
+        {
+          "question": "Is California expensive to live in?",
+          "answer": "California has a cost of living index of 142. It is above the national average."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "The national average cost of living index is 100. California is at 142, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in California?",
+          "answer": "Average rent varies significantly by city and region within California. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "grocery-cost-california",
+        "utility-cost-california",
+        "gas-price-california"
+      ]
+    },
+    {
+      "slug": "grocery-cost-california",
+      "baseType": "grocery-cost",
+      "name": "California Grocery Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "california grocery cost",
+      "secondaryKeywords": [
+        "grocery cost california",
+        "california grocery cost"
+      ],
+      "metaTitle": "California Grocery Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated monthly grocery costs in California. Compare to national averages and other states.",
+      "heroTitle": "California Grocery Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly grocery costs in California",
+      "introText": "California has a cost of living index of 142 (100 = national average). This means living in California is 42% above the national average.",
+      "formula": "See calculator for detailed grocery cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgRent": 2100,
+        "avgGasPrice": 4.85,
+        "avgUtilityCost": 220,
+        "avgGroceryCost": 400
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "California Index",
+          "description": "Based on California cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in California?",
+          "answer": "California's cost of living index is 142 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does grocery cost cost in California?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within California."
+        },
+        {
+          "question": "Is California expensive to live in?",
+          "answer": "California has a cost of living index of 142. It is above the national average."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "The national average cost of living index is 100. California is at 142, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in California?",
+          "answer": "Average rent varies significantly by city and region within California. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "utility-cost-california",
+        "gas-price-california"
+      ]
+    },
+    {
+      "slug": "utility-cost-california",
+      "baseType": "utility-cost",
+      "name": "California Utility Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "california utility bills",
+      "secondaryKeywords": [
+        "utility bills california",
+        "california utility cost"
+      ],
+      "metaTitle": "California Utility Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated monthly utility bills in California. Compare to national averages and other states.",
+      "heroTitle": "California Utility Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly utility bills in California",
+      "introText": "California has a cost of living index of 142 (100 = national average). This means living in California is 42% above the national average.",
+      "formula": "See calculator for detailed utility cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgRent": 2100,
+        "avgGasPrice": 4.85,
+        "avgUtilityCost": 220,
+        "avgGroceryCost": 400
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "California Index",
+          "description": "Based on California cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in California?",
+          "answer": "California's cost of living index is 142 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does utility cost cost in California?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within California."
+        },
+        {
+          "question": "Is California expensive to live in?",
+          "answer": "California has a cost of living index of 142. It is above the national average."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "The national average cost of living index is 100. California is at 142, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in California?",
+          "answer": "Average rent varies significantly by city and region within California. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "grocery-cost-california",
+        "gas-price-california"
+      ]
+    },
+    {
+      "slug": "gas-price-california",
+      "baseType": "gas-price",
+      "name": "California Gas Price Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "california gas cost",
+      "secondaryKeywords": [
+        "gas cost california",
+        "california gas price"
+      ],
+      "metaTitle": "California Gas Price Calculator 2025 | CA",
+      "metaDescription": "Calculate fuel costs and driving expenses in California. Compare to national averages and other states.",
+      "heroTitle": "California Gas Price Calculator",
+      "heroSubtitle": "Estimate fuel costs and driving expenses in California",
+      "introText": "California has a cost of living index of 142 (100 = national average). This means living in California is 42% above the national average.",
+      "formula": "See calculator for detailed gas price formula.",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgRent": 2100,
+        "avgGasPrice": 4.85,
+        "avgUtilityCost": 220,
+        "avgGroceryCost": 400
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "California Index",
+          "description": "Based on California cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in California?",
+          "answer": "California's cost of living index is 142 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does gas price cost in California?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within California."
+        },
+        {
+          "question": "Is California expensive to live in?",
+          "answer": "California has a cost of living index of 142. It is above the national average."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "The national average cost of living index is 100. California is at 142, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in California?",
+          "answer": "Average rent varies significantly by city and region within California. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "grocery-cost-california",
+        "utility-cost-california"
+      ]
+    },
+    {
+      "slug": "relocation-cost-california",
+      "baseType": "relocation-cost",
+      "name": "California Relocation Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "california moving cost",
+      "secondaryKeywords": [
+        "moving cost california",
+        "california relocation cost"
+      ],
+      "metaTitle": "California Relocation Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated costs of relocating in California. Compare to national averages and other states.",
+      "heroTitle": "California Relocation Cost Calculator",
+      "heroSubtitle": "Estimate estimated costs of relocating in California",
+      "introText": "California has a cost of living index of 142 (100 = national average). This means living in California is 42% above the national average.",
+      "formula": "See calculator for detailed relocation cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 142,
+        "avgRent": 2100,
+        "avgGasPrice": 4.85,
+        "avgUtilityCost": 220,
+        "avgGroceryCost": 400
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "California Index",
+          "description": "Based on California cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in California?",
+          "answer": "California's cost of living index is 142 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does relocation cost cost in California?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within California."
+        },
+        {
+          "question": "Is California expensive to live in?",
+          "answer": "California has a cost of living index of 142. It is above the national average."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "The national average cost of living index is 100. California is at 142, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in California?",
+          "answer": "Average rent varies significantly by city and region within California. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "grocery-cost-california",
+        "utility-cost-california"
+      ]
+    },
+    {
+      "slug": "llc-cost-california",
+      "baseType": "llc-cost",
+      "name": "California LLC Cost Calculator",
+      "category": "legal",
+      "primaryKeyword": "california LLC cost",
+      "secondaryKeywords": [
+        "LLC cost california",
+        "california llc cost"
+      ],
+      "metaTitle": "California LLC Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate the cost of forming and maintaining an LLC in California. See California-specific penalties, fees, and costs.",
+      "heroTitle": "California LLC Cost Calculator",
+      "heroSubtitle": "Estimate the cost of forming and maintaining an LLC in California",
+      "introText": "Understanding llc cost in California helps you plan and budget. Filing an LLC in California costs $70.",
+      "formula": "See calculator for detailed llc cost calculations.",
+      "stateData": {
+        "avgLLCFiling": 70,
+        "avgFranchiseTax": 800,
+        "avgSpeedingFine": 238,
+        "dui1stFine": 2500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "California Laws",
+          "description": "Based on current California regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized llc cost costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does llc cost cost in California?",
+          "answer": "Filing an LLC in California costs approximately $70."
+        },
+        {
+          "question": "What are the penalties in California?",
+          "answer": "California has specific penalties and fee structures. This calculator includes current California data."
+        },
+        {
+          "question": "Do I need a lawyer for this in California?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a California-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in California?",
+          "answer": "Processing times vary. Check with the relevant California state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in California?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check California's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "speeding-ticket-california",
+        "dui-penalty-california",
+        "traffic-fine-california"
+      ]
+    },
+    {
+      "slug": "speeding-ticket-california",
+      "baseType": "speeding-ticket",
+      "name": "California Speeding Ticket Calculator",
+      "category": "legal",
+      "primaryKeyword": "california speeding ticket cost",
+      "secondaryKeywords": [
+        "speeding ticket cost california",
+        "california speeding ticket"
+      ],
+      "metaTitle": "California Speeding Ticket Calculator 2025 | CA",
+      "metaDescription": "Calculate speeding ticket fines and insurance impact in California. See California-specific penalties, fees, and costs.",
+      "heroTitle": "California Speeding Ticket Calculator",
+      "heroSubtitle": "Estimate speeding ticket fines and insurance impact in California",
+      "introText": "Understanding speeding ticket in California helps you plan and budget. Fines and penalties in California vary by violation type and history.",
+      "formula": "See calculator for detailed speeding ticket calculations.",
+      "stateData": {
+        "avgLLCFiling": 70,
+        "avgFranchiseTax": 800,
+        "avgSpeedingFine": 238,
+        "dui1stFine": 2500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "California Laws",
+          "description": "Based on current California regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized speeding ticket costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does speeding ticket cost in California?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in California?",
+          "answer": "California has specific penalties and fee structures. This calculator includes current California data."
+        },
+        {
+          "question": "Do I need a lawyer for this in California?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a California-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in California?",
+          "answer": "Processing times vary. Check with the relevant California state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in California?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check California's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-california",
+        "dui-penalty-california",
+        "traffic-fine-california"
+      ]
+    },
+    {
+      "slug": "dui-penalty-california",
+      "baseType": "dui-penalty",
+      "name": "California DUI Penalty Calculator",
+      "category": "legal",
+      "primaryKeyword": "california DUI cost",
+      "secondaryKeywords": [
+        "DUI cost california",
+        "california dui penalty"
+      ],
+      "metaTitle": "California DUI Penalty Calculator 2025 | CA",
+      "metaDescription": "Calculate total costs and penalties for a DUI in California. See California-specific penalties, fees, and costs.",
+      "heroTitle": "California DUI Penalty Calculator",
+      "heroSubtitle": "Estimate total costs and penalties for a DUI in California",
+      "introText": "Understanding dui penalty in California helps you plan and budget. Fines and penalties in California vary by violation type and history.",
+      "formula": "See calculator for detailed dui penalty calculations.",
+      "stateData": {
+        "avgLLCFiling": 70,
+        "avgFranchiseTax": 800,
+        "avgSpeedingFine": 238,
+        "dui1stFine": 2500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "California Laws",
+          "description": "Based on current California regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized dui penalty costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does dui penalty cost in California?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in California?",
+          "answer": "California has specific penalties and fee structures. This calculator includes current California data."
+        },
+        {
+          "question": "Do I need a lawyer for this in California?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a California-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in California?",
+          "answer": "Processing times vary. Check with the relevant California state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in California?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check California's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-california",
+        "speeding-ticket-california",
+        "traffic-fine-california"
+      ]
+    },
+    {
+      "slug": "traffic-fine-california",
+      "baseType": "traffic-fine",
+      "name": "California Traffic Fine Calculator",
+      "category": "legal",
+      "primaryKeyword": "california traffic fine",
+      "secondaryKeywords": [
+        "traffic fine california",
+        "california traffic fine"
+      ],
+      "metaTitle": "California Traffic Fine Calculator 2025 | CA",
+      "metaDescription": "Calculate traffic violation fines and point penalties in California. See California-specific penalties, fees, and costs.",
+      "heroTitle": "California Traffic Fine Calculator",
+      "heroSubtitle": "Estimate traffic violation fines and point penalties in California",
+      "introText": "Understanding traffic fine in California helps you plan and budget. Fines and penalties in California vary by violation type and history.",
+      "formula": "See calculator for detailed traffic fine calculations.",
+      "stateData": {
+        "avgLLCFiling": 70,
+        "avgFranchiseTax": 800,
+        "avgSpeedingFine": 238,
+        "dui1stFine": 2500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "California Laws",
+          "description": "Based on current California regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized traffic fine costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does traffic fine cost in California?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in California?",
+          "answer": "California has specific penalties and fee structures. This calculator includes current California data."
+        },
+        {
+          "question": "Do I need a lawyer for this in California?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a California-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in California?",
+          "answer": "Processing times vary. Check with the relevant California state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in California?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check California's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-california",
+        "speeding-ticket-california",
+        "dui-penalty-california"
+      ]
+    },
+    {
+      "slug": "business-registration-california",
+      "baseType": "business-registration",
+      "name": "California Business Registration Calculator",
+      "category": "legal",
+      "primaryKeyword": "california business registration cost",
+      "secondaryKeywords": [
+        "business registration cost california",
+        "california business registration"
+      ],
+      "metaTitle": "California Business Registration Calculator 2025 | CA",
+      "metaDescription": "Calculate costs of registering a business in California. See California-specific penalties, fees, and costs.",
+      "heroTitle": "California Business Registration Calculator",
+      "heroSubtitle": "Estimate costs of registering a business in California",
+      "introText": "Understanding business registration in California helps you plan and budget. Fines and penalties in California vary by violation type and history.",
+      "formula": "See calculator for detailed business registration calculations.",
+      "stateData": {
+        "avgLLCFiling": 70,
+        "avgFranchiseTax": 800,
+        "avgSpeedingFine": 238,
+        "dui1stFine": 2500,
+        "dui2ndFine": 4000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "California Laws",
+          "description": "Based on current California regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized business registration costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does business registration cost in California?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in California?",
+          "answer": "California has specific penalties and fee structures. This calculator includes current California data."
+        },
+        {
+          "question": "Do I need a lawyer for this in California?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a California-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in California?",
+          "answer": "Processing times vary. Check with the relevant California state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in California?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check California's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-california",
+        "speeding-ticket-california",
+        "dui-penalty-california"
+      ]
+    },
+    {
+      "slug": "solar-panel-roi-california",
+      "baseType": "solar-panel-roi",
+      "name": "California Solar Panel ROI Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "california solar panel calculator",
+      "secondaryKeywords": [
+        "solar panel calculator california",
+        "california solar panel roi"
+      ],
+      "metaTitle": "California Solar Panel ROI Calculator 2025 | CA",
+      "metaDescription": "Calculate the return on investment for solar panels in California. Free calculator with California-specific data and rates.",
+      "heroTitle": "California Solar Panel ROI Calculator",
+      "heroSubtitle": "Estimate the return on investment for solar panels in California",
+      "introText": "California averages 5.5 peak sun hours per day. With an average solar installation cost of $25 000 and the 30% federal ITC, solar can be a great investment.",
+      "formula": "See calculator for detailed solar panel roi formula.",
+      "stateData": {
+        "avgSolarInstallCost": 25000,
+        "avgSunHours": 5.5,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.27,
+        "avgGasPrice": 4.85,
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 142
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "California Specific",
+          "description": "Uses current California rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete solar panel roi breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does solar panel roi work in California?",
+          "answer": "Solar Panel ROI in California follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect solar panel roi in California?",
+          "answer": "Key factors include location within California, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a solar panel roi benefit in California?",
+          "answer": "California may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "California's cost of living is above the national average, which affects solar panel roi costs."
+        },
+        {
+          "question": "Where can I learn more about solar panel roi in California?",
+          "answer": "Check the California state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "income-tax-california",
+        "property-tax-california"
+      ]
+    },
+    {
+      "slug": "ev-savings-california",
+      "baseType": "ev-savings",
+      "name": "California EV Savings Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "california EV savings calculator",
+      "secondaryKeywords": [
+        "EV savings calculator california",
+        "california ev savings"
+      ],
+      "metaTitle": "California EV Savings Calculator 2025 | CA",
+      "metaDescription": "Calculate savings from switching to an electric vehicle in California. Free calculator with California-specific data and rates.",
+      "heroTitle": "California EV Savings Calculator",
+      "heroSubtitle": "Estimate savings from switching to an electric vehicle in California",
+      "introText": "With California electricity averaging $0.27/kWh vs gas at $4.85/gallon, switching to an EV can yield significant savings.",
+      "formula": "See calculator for detailed ev savings formula.",
+      "stateData": {
+        "avgSolarInstallCost": 25000,
+        "avgSunHours": 5.5,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.27,
+        "avgGasPrice": 4.85,
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 142
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "California Specific",
+          "description": "Uses current California rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete ev savings breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does ev savings work in California?",
+          "answer": "EV Savings in California follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect ev savings in California?",
+          "answer": "Key factors include location within California, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a ev savings benefit in California?",
+          "answer": "California may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "California's cost of living is above the national average, which affects ev savings costs."
+        },
+        {
+          "question": "Where can I learn more about ev savings in California?",
+          "answer": "Check the California state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "income-tax-california",
+        "property-tax-california"
+      ]
+    },
+    {
+      "slug": "commute-cost-california",
+      "baseType": "commute-cost",
+      "name": "California Commute Cost Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "california commute cost calculator",
+      "secondaryKeywords": [
+        "commute cost calculator california",
+        "california commute cost"
+      ],
+      "metaTitle": "California Commute Cost Calculator 2025 | CA",
+      "metaDescription": "Calculate your daily commuting costs in California. Free calculator with California-specific data and rates.",
+      "heroTitle": "California Commute Cost Calculator",
+      "heroSubtitle": "Estimate your daily commuting costs in California",
+      "introText": "Calculate commute cost specific to California residents using current state data and rates.",
+      "formula": "See calculator for detailed commute cost formula.",
+      "stateData": {
+        "avgSolarInstallCost": 25000,
+        "avgSunHours": 5.5,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.27,
+        "avgGasPrice": 4.85,
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 142
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "California Specific",
+          "description": "Uses current California rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete commute cost breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does commute cost work in California?",
+          "answer": "Commute Cost in California follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect commute cost in California?",
+          "answer": "Key factors include location within California, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a commute cost benefit in California?",
+          "answer": "California may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "California's cost of living is above the national average, which affects commute cost costs."
+        },
+        {
+          "question": "Where can I learn more about commute cost in California?",
+          "answer": "Check the California state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "income-tax-california",
+        "property-tax-california"
+      ]
+    },
+    {
+      "slug": "lottery-tax-california",
+      "baseType": "lottery-tax",
+      "name": "California Lottery Tax Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "california lottery tax calculator",
+      "secondaryKeywords": [
+        "lottery tax calculator california",
+        "california lottery tax"
+      ],
+      "metaTitle": "California Lottery Tax Calculator 2025 | CA",
+      "metaDescription": "Calculate taxes on lottery winnings in California. Free calculator with California-specific data and rates.",
+      "heroTitle": "California Lottery Tax Calculator",
+      "heroSubtitle": "Estimate taxes on lottery winnings in California",
+      "introText": "Lottery winnings in California are subject to federal tax (24-37%) plus California state tax up to 13.3%.",
+      "formula": "See calculator for detailed lottery tax formula.",
+      "stateData": {
+        "avgSolarInstallCost": 25000,
+        "avgSunHours": 5.5,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.27,
+        "avgGasPrice": 4.85,
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 142
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "California Specific",
+          "description": "Uses current California rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete lottery tax breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does lottery tax work in California?",
+          "answer": "Lottery Tax in California follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect lottery tax in California?",
+          "answer": "Key factors include location within California, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a lottery tax benefit in California?",
+          "answer": "California may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "California's cost of living is above the national average, which affects lottery tax costs."
+        },
+        {
+          "question": "Where can I learn more about lottery tax in California?",
+          "answer": "Check the California state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "income-tax-california",
+        "property-tax-california"
+      ]
+    },
+    {
+      "slug": "child-support-california",
+      "baseType": "child-support",
+      "name": "California Child Support Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "california child support calculator",
+      "secondaryKeywords": [
+        "child support calculator california",
+        "california child support"
+      ],
+      "metaTitle": "California Child Support Calculator 2025 | CA",
+      "metaDescription": "Calculate estimated child support payments in California. Free calculator with California-specific data and rates.",
+      "heroTitle": "California Child Support Calculator",
+      "heroSubtitle": "Estimate estimated child support payments in California",
+      "introText": "Calculate child support specific to California residents using current state data and rates.",
+      "formula": "See calculator for detailed child support formula.",
+      "stateData": {
+        "avgSolarInstallCost": 25000,
+        "avgSunHours": 5.5,
+        "stateSolarCredit": 0,
+        "avgElectricRate": 0.27,
+        "avgGasPrice": 4.85,
+        "topIncomeTaxRate": 13.3,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 142
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "California Specific",
+          "description": "Uses current California rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete child support breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does child support work in California?",
+          "answer": "Child Support in California follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect child support in California?",
+          "answer": "Key factors include location within California, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a child support benefit in California?",
+          "answer": "California may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does California compare to other states?",
+          "answer": "California's cost of living is above the national average, which affects child support costs."
+        },
+        {
+          "question": "Where can I learn more about child support in California?",
+          "answer": "Check the California state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-california",
+        "income-tax-california",
+        "property-tax-california"
+      ]
+    }
+  ]
+}

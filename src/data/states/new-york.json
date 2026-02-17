@@ -1,0 +1,3519 @@
+{
+  "state": {
+    "name": "New York",
+    "slug": "new-york",
+    "abbreviation": "NY",
+    "capital": "Albany",
+    "population": 19571216,
+    "region": "Northeast",
+    "hasIncomeTax": true,
+    "hasSalesTax": true,
+    "hasPropertyTax": true
+  },
+  "calculators": [
+    {
+      "slug": "income-tax-new-york",
+      "baseType": "income-tax",
+      "name": "New York Income Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york income tax calculator",
+      "secondaryKeywords": [
+        "new york state tax",
+        "new york tax brackets",
+        "new york tax rate"
+      ],
+      "metaTitle": "New York Income Tax Calculator 2025 | NY Tax Rates",
+      "metaDescription": "Calculate your New York state income tax. See current tax brackets, rates, and deductions. Free New York income tax calculator.",
+      "heroTitle": "New York Income Tax Calculator",
+      "heroSubtitle": "Calculate your New York state income tax liability with current rates and brackets",
+      "introText": "New York uses a progressive income tax system with rates ranging from the lowest bracket up to 10.9%. Higher earners pay more on income above each threshold.",
+      "formula": "State Tax = Sum of (Income in each bracket × Bracket rate)",
+      "stateData": {
+        "hasIncomeTax": true,
+        "incomeTaxType": "progressive",
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "taxBrackets": [
+          {
+            "min": 0,
+            "max": 8500,
+            "rate": 4
+          },
+          {
+            "min": 8500,
+            "max": 11700,
+            "rate": 4.5
+          },
+          {
+            "min": 11700,
+            "max": 13900,
+            "rate": 5.25
+          },
+          {
+            "min": 13900,
+            "max": 80650,
+            "rate": 5.5
+          },
+          {
+            "min": 80650,
+            "max": 215400,
+            "rate": 6
+          },
+          {
+            "min": 215400,
+            "max": 1077550,
+            "rate": 6.85
+          },
+          {
+            "min": 1077550,
+            "max": 5000000,
+            "rate": 9.65
+          },
+          {
+            "min": 5000000,
+            "max": 25000000,
+            "rate": 10.3
+          },
+          {
+            "min": 25000000,
+            "max": null,
+            "rate": 10.9
+          }
+        ]
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "Accurate Brackets",
+          "description": "Uses current New York tax brackets and rates"
+        },
+        {
+          "icon": "💰",
+          "title": "Deduction Support",
+          "description": "Accounts for standard and common deductions"
+        },
+        {
+          "icon": "📱",
+          "title": "Instant Results",
+          "description": "See your tax liability calculated in real-time"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the New York income tax rate?",
+          "answer": "New York has progressive tax rates up to 10.9%."
+        },
+        {
+          "question": "Does New York tax Social Security?",
+          "answer": "New York does not tax Social Security benefits at the state level."
+        },
+        {
+          "question": "How do I file New York state taxes?",
+          "answer": "You can file New York state taxes online through the state's Department of Revenue website, or use tax preparation software."
+        },
+        {
+          "question": "What deductions are available in New York?",
+          "answer": "New York offers standard deductions and may allow itemized deductions. Check the state tax authority for current amounts."
+        },
+        {
+          "question": "When are New York state taxes due?",
+          "answer": "New York state income taxes are typically due April 15, the same date as federal taxes, unless an extension is filed."
+        }
+      ],
+      "relatedCalculators": [
+        "property-tax-new-york",
+        "sales-tax-new-york",
+        "paycheck-new-york"
+      ]
+    },
+    {
+      "slug": "property-tax-new-york",
+      "baseType": "property-tax",
+      "name": "New York Property Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york property tax calculator",
+      "secondaryKeywords": [
+        "new york property tax rate",
+        "new york home tax",
+        "new york real estate tax"
+      ],
+      "metaTitle": "New York Property Tax Calculator 2025 | NY Rates",
+      "metaDescription": "Calculate your New York property tax based on home value and local rates. See county-level rates and exemptions.",
+      "heroTitle": "New York Property Tax Calculator",
+      "heroSubtitle": "Estimate your annual New York property tax based on home value and local rates",
+      "introText": "The average property tax rate in New York is 1.72%. With a median home value of $380 000, this means an average annual property tax of $6536.",
+      "formula": "Annual Property Tax = Assessed Home Value × Tax Rate",
+      "stateData": {
+        "avgPropertyTaxRate": 1.72,
+        "medianHomeValue": 380000,
+        "homesteadExemption": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "Local Rates",
+          "description": "Based on New York county-level tax rates"
+        },
+        {
+          "icon": "📉",
+          "title": "Exemption Check",
+          "description": "See available homestead exemptions"
+        },
+        {
+          "icon": "📅",
+          "title": "Monthly Estimate",
+          "description": "Get monthly property tax payment estimates"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How is property tax calculated in New York?",
+          "answer": "Property tax is calculated by multiplying your home's assessed value by the local tax rate. Rates vary by county and municipality."
+        },
+        {
+          "question": "Are there property tax exemptions in New York?",
+          "answer": "New York offers various exemptions including homestead, senior, veteran, and disability exemptions. Check with your county assessor."
+        },
+        {
+          "question": "When are New York property taxes due?",
+          "answer": "Property tax due dates vary by county but are typically due in one or two installments per year."
+        },
+        {
+          "question": "Can I appeal my New York property tax assessment?",
+          "answer": "Yes, you can appeal your property assessment through your county's board of equalization or tax appeal process."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "home-affordability-new-york",
+        "homestead-exemption-new-york"
+      ]
+    },
+    {
+      "slug": "sales-tax-new-york",
+      "baseType": "sales-tax",
+      "name": "New York Sales Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york sales tax calculator",
+      "secondaryKeywords": [
+        "new york sales tax rate",
+        "new york tax on purchases"
+      ],
+      "metaTitle": "New York Sales Tax Calculator 2025 | NY Rates",
+      "metaDescription": "Calculate New York sales tax on any purchase. See state and local combined rates.",
+      "heroTitle": "New York Sales Tax Calculator",
+      "heroSubtitle": "Calculate total sales tax including state and local rates in New York",
+      "introText": "New York has a state sales tax rate of 4%. Combined with local taxes, the total rate can vary by city and county.",
+      "formula": "Total Sales Tax = Purchase Amount × (4% state + local rate)",
+      "stateData": {
+        "salesTaxRate": 4,
+        "hasSalesTax": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛒",
+          "title": "Purchase Calculator",
+          "description": "Calculate exact tax on any New York purchase"
+        },
+        {
+          "icon": "📍",
+          "title": "Local Rates",
+          "description": "Includes city and county tax rates"
+        },
+        {
+          "icon": "🏷️",
+          "title": "Exemptions Listed",
+          "description": "See what items are tax-exempt"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the New York sales tax rate?",
+          "answer": "The New York state sales tax rate is 4%. Local jurisdictions may add additional tax."
+        },
+        {
+          "question": "What items are exempt from New York sales tax?",
+          "answer": "Common exemptions include groceries, prescription medications, and certain clothing items, though specifics vary by state."
+        },
+        {
+          "question": "Does New York tax online purchases?",
+          "answer": "Yes, New York requires sales tax on online purchases from retailers with nexus in the state."
+        },
+        {
+          "question": "What is the highest sales tax in New York?",
+          "answer": "Combined state and local sales tax rates vary. Check your specific city or county for the exact combined rate."
+        },
+        {
+          "question": "Are there sales tax holidays in New York?",
+          "answer": "Some states offer sales tax holidays for back-to-school or hurricane preparedness. Check the state's revenue department for current offerings."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-new-york",
+        "cost-of-living-new-york",
+        "property-tax-new-york"
+      ]
+    },
+    {
+      "slug": "capital-gains-tax-new-york",
+      "baseType": "capital-gains-tax",
+      "name": "New York Capital Gains Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york capital gains tax",
+      "secondaryKeywords": [
+        "new york investment tax",
+        "new york stock tax",
+        "capital gains new york"
+      ],
+      "metaTitle": "New York Capital Gains Tax Calculator | NY",
+      "metaDescription": "Calculate capital gains tax in New York. See state rates for short-term and long-term gains on investments.",
+      "heroTitle": "New York Capital Gains Tax Calculator",
+      "heroSubtitle": "Estimate your state capital gains tax liability in New York",
+      "introText": "New York taxes capital gains as regular income at rates up to 10.9%. Both short-term and long-term gains are subject to state tax.",
+      "formula": "State Capital Gains Tax = Gain × State Tax Rate (up to 10.9%)",
+      "stateData": {
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "capitalGainsRate": 10.9
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📈",
+          "title": "Investment Analysis",
+          "description": "Calculate New York tax on stock and property gains"
+        },
+        {
+          "icon": "⏱️",
+          "title": "Holding Period",
+          "description": "Compare short-term vs long-term impact"
+        },
+        {
+          "icon": "💡",
+          "title": "Tax Strategies",
+          "description": "Learn ways to minimize your tax burden"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does New York tax capital gains?",
+          "answer": "Yes, New York taxes capital gains at rates up to 10.9%."
+        },
+        {
+          "question": "Are long-term and short-term gains taxed differently in New York?",
+          "answer": "At the state level, most states tax both types as ordinary income. The federal government offers lower rates for long-term gains."
+        },
+        {
+          "question": "How can I reduce capital gains tax in New York?",
+          "answer": "Strategies include holding investments for over a year, tax-loss harvesting, using retirement accounts, and utilizing the primary residence exclusion."
+        },
+        {
+          "question": "Is there a capital gains exemption in New York?",
+          "answer": "New York follows federal exemptions for primary residence sales ($250K single, $500K married) and may offer additional deductions."
+        },
+        {
+          "question": "When do I owe New York capital gains tax?",
+          "answer": "Capital gains tax is due when you file your annual state tax return, typically by April 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-new-york",
+        "investment-tax-new-york",
+        "retirement-tax-new-york"
+      ]
+    },
+    {
+      "slug": "estate-tax-new-york",
+      "baseType": "estate-tax",
+      "name": "New York Estate Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york estate tax",
+      "secondaryKeywords": [
+        "new york inheritance tax",
+        "new york estate planning"
+      ],
+      "metaTitle": "New York Estate Tax Calculator 2025 | NY",
+      "metaDescription": "Calculate New York estate tax. See exemptions, rates, and planning strategies for New York estates.",
+      "heroTitle": "New York Estate Tax Calculator",
+      "heroSubtitle": "Estimate state estate tax liability and exemptions in New York",
+      "introText": "New York imposes a state estate tax with an exemption of $6 940 000 and a top rate of 16%. Estates above the exemption threshold owe state tax in addition to any federal estate tax.",
+      "formula": "Estate Tax = (Estate Value - $6 940 000 exemption) × Rate (up to 16%)",
+      "stateData": {
+        "hasEstateTax": true,
+        "estateExemption": 6940000,
+        "estateTopRate": 16
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏦",
+          "title": "Estate Planning",
+          "description": "New York-specific estate tax analysis"
+        },
+        {
+          "icon": "📋",
+          "title": "Exemption Check",
+          "description": "See if your estate exceeds the threshold"
+        },
+        {
+          "icon": "🔮",
+          "title": "Planning Strategies",
+          "description": "Learn tax-saving estate strategies"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does New York have an estate tax?",
+          "answer": "Yes, New York has an estate tax with an exemption of $6 940 000."
+        },
+        {
+          "question": "What is the New York estate tax exemption?",
+          "answer": "The New York estate tax exemption is $6 940 000."
+        },
+        {
+          "question": "Does New York have an inheritance tax?",
+          "answer": "Check with the state's Department of Revenue for current inheritance tax laws, as they differ from estate taxes."
+        },
+        {
+          "question": "How can I reduce estate taxes in New York?",
+          "answer": "Common strategies include gifting, trusts, life insurance, and charitable donations. Consult an estate planning attorney."
+        },
+        {
+          "question": "Is the federal estate tax different from New York's?",
+          "answer": "Yes, the federal estate tax is separate with its own exemption ($13.61M in 2024). You may owe both if applicable."
+        }
+      ],
+      "relatedCalculators": [
+        "retirement-tax-new-york",
+        "income-tax-new-york",
+        "capital-gains-tax-new-york"
+      ]
+    },
+    {
+      "slug": "effective-tax-rate-new-york",
+      "baseType": "effective-tax-rate",
+      "name": "New York Effective Tax Rate Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york effective tax rate",
+      "secondaryKeywords": [
+        "new york total tax burden",
+        "new york tax percentage"
+      ],
+      "metaTitle": "New York Effective Tax Rate Calculator | NY",
+      "metaDescription": "Calculate your total effective tax rate in New York including state, federal, and FICA taxes.",
+      "heroTitle": "New York Effective Tax Rate Calculator",
+      "heroSubtitle": "See your true tax burden combining all New York and federal taxes",
+      "introText": "Your effective tax rate in New York combines state income tax (up to 10.9%), federal income tax, and FICA taxes (7.65%). This calculator shows your combined rate.",
+      "formula": "Effective Rate = Total Tax Paid / Gross Income × 100%",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎯",
+          "title": "True Tax Rate",
+          "description": "See your real New York tax burden"
+        },
+        {
+          "icon": "📊",
+          "title": "All Taxes Combined",
+          "description": "State, federal, and FICA in one view"
+        },
+        {
+          "icon": "💡",
+          "title": "Optimization Tips",
+          "description": "Learn how to reduce your rate"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the effective tax rate in New York?",
+          "answer": "It depends on your income level. New York state taxes are up to 10.9%, plus federal taxes and FICA."
+        },
+        {
+          "question": "How is effective tax rate different from marginal rate?",
+          "answer": "Marginal rate is the tax on your last dollar of income. Effective rate is your total tax divided by total income — typically lower."
+        },
+        {
+          "question": "What taxes are included in the effective rate?",
+          "answer": "Federal income tax, state income tax, Social Security tax (6.2%), and Medicare tax (1.45%)."
+        },
+        {
+          "question": "How can I lower my effective tax rate?",
+          "answer": "Maximize pre-tax deductions (401k, HSA), itemize deductions, use tax credits, and consider tax-loss harvesting."
+        },
+        {
+          "question": "Does New York have local income taxes too?",
+          "answer": "Some New York localities may impose additional income taxes. Check with your city or county."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-new-york",
+        "paycheck-new-york",
+        "salary-after-tax-new-york"
+      ]
+    },
+    {
+      "slug": "self-employment-tax-new-york",
+      "baseType": "self-employment-tax",
+      "name": "New York Self-Employment Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york self-employment tax",
+      "secondaryKeywords": [
+        "new york freelance tax",
+        "new york 1099 tax",
+        "self-employed tax new york"
+      ],
+      "metaTitle": "New York Self-Employment Tax Calculator | NY",
+      "metaDescription": "Calculate self-employment tax in New York. See SE tax, state income tax, and quarterly payment estimates.",
+      "heroTitle": "New York Self-Employment Tax Calculator",
+      "heroSubtitle": "Estimate your total self-employment tax burden in New York",
+      "introText": "Self-employed workers in New York pay 15.3% in SE tax (Social Security 12.4% + Medicare 2.9%) on 92.35% of net earnings, plus state income tax up to 10.9%.",
+      "formula": "SE Tax = Net Earnings × 92.35% × 15.3% (SS capped at $168,600)",
+      "stateData": {
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💼",
+          "title": "SE Tax Estimate",
+          "description": "Calculate your New York self-employment tax"
+        },
+        {
+          "icon": "📅",
+          "title": "Quarterly Payments",
+          "description": "Get estimated quarterly amounts"
+        },
+        {
+          "icon": "✂️",
+          "title": "Deduction Finder",
+          "description": "See available business deductions"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much is self-employment tax in New York?",
+          "answer": "The federal SE tax rate is 15.3% on 92.35% of net earnings. Plus New York state income tax."
+        },
+        {
+          "question": "Do I need to pay quarterly taxes in New York?",
+          "answer": "Yes, self-employed individuals must make estimated quarterly payments if they expect to owe $1,000+ in taxes."
+        },
+        {
+          "question": "Can I deduct half of SE tax?",
+          "answer": "Yes, you can deduct 50% of your self-employment tax when calculating your adjusted gross income."
+        },
+        {
+          "question": "What expenses can I deduct in New York?",
+          "answer": "Common deductions include home office, vehicle, health insurance, supplies, and professional services."
+        },
+        {
+          "question": "When are quarterly payments due?",
+          "answer": "Quarterly estimated tax payments are due April 15, June 15, September 15, and January 15."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-new-york",
+        "effective-tax-rate-new-york",
+        "llc-cost-new-york"
+      ]
+    },
+    {
+      "slug": "retirement-tax-new-york",
+      "baseType": "retirement-tax",
+      "name": "New York Retirement Tax Calculator",
+      "category": "finance",
+      "primaryKeyword": "new york retirement tax",
+      "secondaryKeywords": [
+        "new york pension tax",
+        "new york 401k tax",
+        "retirement income new york"
+      ],
+      "metaTitle": "New York Retirement Tax Calculator | NY",
+      "metaDescription": "Calculate taxes on retirement income in New York. See how Social Security, pensions, and 401k withdrawals are taxed.",
+      "heroTitle": "New York Retirement Tax Calculator",
+      "heroSubtitle": "See how New York taxes your retirement income sources",
+      "introText": "New York taxes retirement income at rates up to 10.9%. Social Security is not taxed, pensions are taxed.",
+      "formula": "State Tax on Retirement = Taxable Retirement Income × State Rate",
+      "stateData": {
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "taxesSocialSecurity": false,
+        "taxesPension": true
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏖️",
+          "title": "Retirement Planning",
+          "description": "Plan your New York retirement income strategy"
+        },
+        {
+          "icon": "🔍",
+          "title": "Source Analysis",
+          "description": "See tax impact by income source"
+        },
+        {
+          "icon": "🗺️",
+          "title": "State Comparison",
+          "description": "Compare retirement tax friendliness"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does New York tax Social Security?",
+          "answer": "No, New York does not tax Social Security benefits."
+        },
+        {
+          "question": "Are pensions taxed in New York?",
+          "answer": "Yes, pension income is subject to New York state income tax."
+        },
+        {
+          "question": "Is New York a good state for retirees?",
+          "answer": "New York has income tax rates up to 10.9%. Consider cost of living (index: 123) as well."
+        },
+        {
+          "question": "Are 401k withdrawals taxed in New York?",
+          "answer": "Yes, 401k and IRA withdrawals are taxed as regular income in New York."
+        },
+        {
+          "question": "What is the best state for retirement taxes?",
+          "answer": "States with no income tax (like FL, TX, NV) are popular, but consider overall cost of living, healthcare, and quality of life."
+        }
+      ],
+      "relatedCalculators": [
+        "income-tax-new-york",
+        "cost-of-living-new-york",
+        "estate-tax-new-york"
+      ]
+    },
+    {
+      "slug": "mortgage-new-york",
+      "baseType": "mortgage",
+      "name": "New York Mortgage Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york mortgage calculator",
+      "secondaryKeywords": [
+        "mortgage calculator new york",
+        "new york mortgage"
+      ],
+      "metaTitle": "New York Mortgage Calculator 2025 | NY",
+      "metaDescription": "Calculate monthly mortgage payments including PMI, taxes, and insurance in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Mortgage Calculator",
+      "heroSubtitle": "Calculate monthly mortgage payments including PMI, taxes, and insurance in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding mortgage costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for mortgage formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized mortgage analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different mortgage scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical mortgage in New York?",
+          "answer": "Mortgage costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york",
+        "homestead-exemption-new-york"
+      ]
+    },
+    {
+      "slug": "rent-vs-buy-new-york",
+      "baseType": "rent-vs-buy",
+      "name": "New York Rent vs Buy Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york rent vs buy calculator",
+      "secondaryKeywords": [
+        "rent vs buy calculator new york",
+        "new york rent vs buy"
+      ],
+      "metaTitle": "New York Rent vs Buy Calculator 2025 | NY",
+      "metaDescription": "Calculate whether it's better to rent or buy a home in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Rent vs Buy Calculator",
+      "heroSubtitle": "Calculate whether it's better to rent or buy a home in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding rent vs buy costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for rent vs buy formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent vs buy analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent vs buy scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical rent vs buy in New York?",
+          "answer": "Rent vs Buy costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "closing-costs-new-york",
+        "homestead-exemption-new-york"
+      ]
+    },
+    {
+      "slug": "closing-costs-new-york",
+      "baseType": "closing-costs",
+      "name": "New York Closing Costs Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york closing costs calculator",
+      "secondaryKeywords": [
+        "closing costs calculator new york",
+        "new york closing costs"
+      ],
+      "metaTitle": "New York Closing Costs Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated closing costs for buying or selling a home in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Closing Costs Calculator",
+      "heroSubtitle": "Calculate estimated closing costs for buying or selling a home in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding closing costs costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for closing costs formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized closing costs analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different closing costs scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical closing costs in New York?",
+          "answer": "Closing Costs costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "homestead-exemption-new-york"
+      ]
+    },
+    {
+      "slug": "homestead-exemption-new-york",
+      "baseType": "homestead-exemption",
+      "name": "New York Homestead Exemption Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york homestead exemption calculator",
+      "secondaryKeywords": [
+        "homestead exemption calculator new york",
+        "new york homestead exemption"
+      ],
+      "metaTitle": "New York Homestead Exemption Calculator 2025 | NY",
+      "metaDescription": "Calculate property tax savings from your homestead exemption in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Homestead Exemption Calculator",
+      "heroSubtitle": "Calculate property tax savings from your homestead exemption in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding homestead exemption costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for homestead exemption formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized homestead exemption analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different homestead exemption scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical homestead exemption in New York?",
+          "answer": "Homestead Exemption costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "home-affordability-new-york",
+      "baseType": "home-affordability",
+      "name": "New York Home Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york home affordability calculator",
+      "secondaryKeywords": [
+        "home affordability calculator new york",
+        "new york home affordability"
+      ],
+      "metaTitle": "New York Home Affordability Calculator 2025 | NY",
+      "metaDescription": "Calculate how much house you can afford based on income in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Home Affordability Calculator",
+      "heroSubtitle": "Calculate how much house you can afford based on income in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding home affordability costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for home affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical home affordability in New York?",
+          "answer": "Home Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "rent-affordability-new-york",
+      "baseType": "rent-affordability",
+      "name": "New York Rent Affordability Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york rent affordability calculator",
+      "secondaryKeywords": [
+        "rent affordability calculator new york",
+        "new york rent affordability"
+      ],
+      "metaTitle": "New York Rent Affordability Calculator 2025 | NY",
+      "metaDescription": "Calculate how much rent you can afford based on income in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Rent Affordability Calculator",
+      "heroSubtitle": "Calculate how much rent you can afford based on income in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding rent affordability costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for rent affordability formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized rent affordability analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different rent affordability scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical rent affordability in New York?",
+          "answer": "Rent Affordability costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "down-payment-new-york",
+      "baseType": "down-payment",
+      "name": "New York Down Payment Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york down payment calculator",
+      "secondaryKeywords": [
+        "down payment calculator new york",
+        "new york down payment"
+      ],
+      "metaTitle": "New York Down Payment Calculator 2025 | NY",
+      "metaDescription": "Calculate how long to save for a down payment in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Down Payment Calculator",
+      "heroSubtitle": "Calculate how long to save for a down payment in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding down payment costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for down payment formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized down payment analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different down payment scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical down payment in New York?",
+          "answer": "Down Payment costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "home-equity-new-york",
+      "baseType": "home-equity",
+      "name": "New York Home Equity Loan Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york home equity calculator",
+      "secondaryKeywords": [
+        "home equity calculator new york",
+        "new york home equity loan"
+      ],
+      "metaTitle": "New York Home Equity Loan Calculator 2025 | NY",
+      "metaDescription": "Calculate how much you can borrow against your home equity in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Home Equity Loan Calculator",
+      "heroSubtitle": "Calculate how much you can borrow against your home equity in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding home equity loan costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for home equity loan formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized home equity loan analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different home equity loan scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical home equity loan in New York?",
+          "answer": "Home Equity Loan costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "refinance-new-york",
+      "baseType": "refinance",
+      "name": "New York Refinance Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york refinance calculator",
+      "secondaryKeywords": [
+        "refinance calculator new york",
+        "new york refinance"
+      ],
+      "metaTitle": "New York Refinance Calculator 2025 | NY",
+      "metaDescription": "Calculate whether refinancing your mortgage saves money in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York Refinance Calculator",
+      "heroSubtitle": "Calculate whether refinancing your mortgage saves money in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding refinance costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for refinance formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized refinance analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different refinance scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical refinance in New York?",
+          "answer": "Refinance costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "adu-roi-new-york",
+      "baseType": "adu-roi",
+      "name": "New York ADU ROI Calculator",
+      "category": "housing",
+      "primaryKeyword": "new york adu calculator",
+      "secondaryKeywords": [
+        "adu calculator new york",
+        "new york adu roi"
+      ],
+      "metaTitle": "New York ADU ROI Calculator 2025 | NY",
+      "metaDescription": "Calculate the return on investment for an accessory dwelling unit in New York. Free online calculator with New York-specific data.",
+      "heroTitle": "New York ADU ROI Calculator",
+      "heroSubtitle": "Calculate the return on investment for an accessory dwelling unit in New York",
+      "introText": "With a median home value of $380 000 and property tax rate of 1.72%, understanding adu roi costs in New York is essential for homeowners and buyers.",
+      "formula": "See calculator for adu roi formula details.",
+      "stateData": {
+        "medianHomeValue": 380000,
+        "avgPropertyTaxRate": 1.72,
+        "homesteadExemption": 0,
+        "avgClosingCostRate": 2.8,
+        "transferTaxRate": 0.4,
+        "avgRent": 1750
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🏠",
+          "title": "New York Data",
+          "description": "Uses current New York housing market data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Breakdown",
+          "description": "Itemized adu roi analysis"
+        },
+        {
+          "icon": "🔄",
+          "title": "Compare Options",
+          "description": "Compare different adu roi scenarios"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the median home price in New York?",
+          "answer": "The median home value in New York is approximately $380 000."
+        },
+        {
+          "question": "What is the average property tax rate in New York?",
+          "answer": "The average effective property tax rate in New York is 1.72%."
+        },
+        {
+          "question": "How much is a typical adu roi in New York?",
+          "answer": "ADU ROI costs vary by location and property value. Use this calculator for a personalized estimate."
+        },
+        {
+          "question": "Is New York a good state to buy a home?",
+          "answer": "New York has a cost of living index of 123 (100 = national average). Consider property taxes, insurance, and local market conditions."
+        },
+        {
+          "question": "What are the housing trends in New York?",
+          "answer": "Housing markets vary across New York. Research specific cities and counties for current trends and forecasts."
+        }
+      ],
+      "relatedCalculators": [
+        "mortgage-new-york",
+        "rent-vs-buy-new-york",
+        "closing-costs-new-york"
+      ]
+    },
+    {
+      "slug": "salary-after-tax-new-york",
+      "baseType": "salary-after-tax",
+      "name": "New York Salary After Tax Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york salary after tax",
+      "secondaryKeywords": [
+        "salary after tax new york",
+        "new york salary after tax"
+      ],
+      "metaTitle": "New York Salary After Tax Calculator 2025 | NY",
+      "metaDescription": "Calculate your take-home pay after all taxes in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Salary After Tax Calculator",
+      "heroSubtitle": "Calculate your take-home pay after all taxes in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate salary after tax in New York.",
+      "formula": "See calculator for detailed salary after tax formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is salary after tax calculated in New York?",
+          "answer": "Salary After Tax in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "minimum-wage-new-york",
+        "overtime-new-york",
+        "workers-comp-new-york"
+      ]
+    },
+    {
+      "slug": "minimum-wage-new-york",
+      "baseType": "minimum-wage",
+      "name": "New York Minimum Wage Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york minimum wage calculator",
+      "secondaryKeywords": [
+        "minimum wage calculator new york",
+        "new york minimum wage"
+      ],
+      "metaTitle": "New York Minimum Wage Calculator 2025 | NY",
+      "metaDescription": "Calculate earnings at minimum wage including tipped rates in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Minimum Wage Calculator",
+      "heroSubtitle": "Calculate earnings at minimum wage including tipped rates in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate minimum wage in New York.",
+      "formula": "See calculator for detailed minimum wage formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is minimum wage calculated in New York?",
+          "answer": "Minimum Wage in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-new-york",
+        "overtime-new-york",
+        "workers-comp-new-york"
+      ]
+    },
+    {
+      "slug": "overtime-new-york",
+      "baseType": "overtime",
+      "name": "New York Overtime Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york overtime calculator",
+      "secondaryKeywords": [
+        "overtime calculator new york",
+        "new york overtime"
+      ],
+      "metaTitle": "New York Overtime Calculator 2025 | NY",
+      "metaDescription": "Calculate overtime pay with state-specific rules in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Overtime Calculator",
+      "heroSubtitle": "Calculate overtime pay with state-specific rules in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate overtime in New York.",
+      "formula": "See calculator for detailed overtime formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is overtime calculated in New York?",
+          "answer": "Overtime in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-new-york",
+        "minimum-wage-new-york",
+        "workers-comp-new-york"
+      ]
+    },
+    {
+      "slug": "workers-comp-new-york",
+      "baseType": "workers-comp",
+      "name": "New York Workers Comp Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york workers compensation calculator",
+      "secondaryKeywords": [
+        "workers compensation calculator new york",
+        "new york workers comp"
+      ],
+      "metaTitle": "New York Workers Comp Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated workers compensation insurance costs in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Workers Comp Calculator",
+      "heroSubtitle": "Calculate estimated workers compensation insurance costs in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate workers comp in New York.",
+      "formula": "See calculator for detailed workers comp formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is workers comp calculated in New York?",
+          "answer": "Workers Comp in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-new-york",
+        "minimum-wage-new-york",
+        "overtime-new-york"
+      ]
+    },
+    {
+      "slug": "hourly-to-salary-new-york",
+      "baseType": "hourly-to-salary",
+      "name": "New York Hourly to Salary Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york hourly to salary",
+      "secondaryKeywords": [
+        "hourly to salary new york",
+        "new york hourly to salary"
+      ],
+      "metaTitle": "New York Hourly to Salary Calculator 2025 | NY",
+      "metaDescription": "Calculate the salary equivalent of an hourly wage in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Hourly to Salary Calculator",
+      "heroSubtitle": "Calculate the salary equivalent of an hourly wage in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate hourly to salary in New York.",
+      "formula": "See calculator for detailed hourly to salary formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is hourly to salary calculated in New York?",
+          "answer": "Hourly to Salary in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-new-york",
+        "minimum-wage-new-york",
+        "overtime-new-york"
+      ]
+    },
+    {
+      "slug": "take-home-pay-new-york",
+      "baseType": "take-home-pay",
+      "name": "New York Take Home Pay Calculator",
+      "category": "employment",
+      "primaryKeyword": "new york take home pay calculator",
+      "secondaryKeywords": [
+        "take home pay calculator new york",
+        "new york take home pay"
+      ],
+      "metaTitle": "New York Take Home Pay Calculator 2025 | NY",
+      "metaDescription": "Calculate your net pay after deductions in New York. Free calculator with current New York tax rates and rules.",
+      "heroTitle": "New York Take Home Pay Calculator",
+      "heroSubtitle": "Calculate your net pay after deductions in New York",
+      "introText": "New York has a minimum wage of $16.50/hr and income tax rates up to 10.9%. Use this calculator to estimate take home pay in New York.",
+      "formula": "See calculator for detailed take home pay formula.",
+      "stateData": {
+        "minimumWage": 16.5,
+        "flatTaxRate": 0,
+        "topIncomeTaxRate": 10.9,
+        "minWageTipped": 10.65,
+        "avgWorkerCompRate": 1.54
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "💵",
+          "title": "New York Rates",
+          "description": "Current New York tax rates and minimum wage"
+        },
+        {
+          "icon": "📱",
+          "title": "Quick Results",
+          "description": "Instant calculation with all deductions"
+        },
+        {
+          "icon": "📊",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the minimum wage in New York?",
+          "answer": "The New York minimum wage is $16.50 per hour."
+        },
+        {
+          "question": "Does New York have a state income tax?",
+          "answer": "Yes, New York has income tax rates up to 10.9%."
+        },
+        {
+          "question": "How is take home pay calculated in New York?",
+          "answer": "Take Home Pay in New York accounts for federal and state taxes, FICA, and any applicable deductions."
+        },
+        {
+          "question": "What deductions apply to New York paychecks?",
+          "answer": "Common deductions include federal tax, state tax, Social Security (6.2%), Medicare (1.45%), and voluntary deductions like 401k."
+        },
+        {
+          "question": "How does New York compare to other states for workers?",
+          "answer": "New York has a cost of living index of 123 and minimum wage of $16.50, compared to the federal minimum of $7.25."
+        }
+      ],
+      "relatedCalculators": [
+        "salary-after-tax-new-york",
+        "minimum-wage-new-york",
+        "overtime-new-york"
+      ]
+    },
+    {
+      "slug": "health-insurance-new-york",
+      "baseType": "health-insurance",
+      "name": "New York Health Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york health insurance cost",
+      "secondaryKeywords": [
+        "health insurance cost new york",
+        "average health insurance cost new york"
+      ],
+      "metaTitle": "New York Health Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated health insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Health Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated health insurance premiums based on New York averages",
+      "introText": "The average annual health insurance cost in New York is $620. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does health insurance cost in New York?",
+          "answer": "Health Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is health insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my health insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect health insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for health insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "auto-insurance-new-york",
+        "homeowners-insurance-new-york",
+        "flood-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "auto-insurance-new-york",
+      "baseType": "auto-insurance",
+      "name": "New York Auto Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york car insurance cost",
+      "secondaryKeywords": [
+        "car insurance cost new york",
+        "average car insurance cost new york"
+      ],
+      "metaTitle": "New York Auto Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated car insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Auto Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated car insurance premiums based on New York averages",
+      "introText": "The average annual auto insurance cost in New York is $2600. Rates vary based on coverage, location, and personal factors.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does auto insurance cost in New York?",
+          "answer": "Auto Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is auto insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my auto insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect auto insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for auto insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-new-york",
+        "homeowners-insurance-new-york",
+        "flood-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "homeowners-insurance-new-york",
+      "baseType": "homeowners-insurance",
+      "name": "New York Homeowners Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york homeowners insurance cost",
+      "secondaryKeywords": [
+        "homeowners insurance cost new york",
+        "average homeowners insurance cost new york"
+      ],
+      "metaTitle": "New York Homeowners Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated homeowners insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Homeowners Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated homeowners insurance premiums based on New York averages",
+      "introText": "Homeowners Insurance costs in New York vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does homeowners insurance cost in New York?",
+          "answer": "Homeowners Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is homeowners insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my homeowners insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect homeowners insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for homeowners insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-new-york",
+        "auto-insurance-new-york",
+        "flood-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "flood-insurance-new-york",
+      "baseType": "flood-insurance",
+      "name": "New York Flood Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york flood insurance cost",
+      "secondaryKeywords": [
+        "flood insurance cost new york",
+        "average flood insurance cost new york"
+      ],
+      "metaTitle": "New York Flood Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated flood insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Flood Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated flood insurance premiums based on New York averages",
+      "introText": "Flood Insurance costs in New York vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does flood insurance cost in New York?",
+          "answer": "Flood Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is flood insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my flood insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect flood insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for flood insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-new-york",
+        "auto-insurance-new-york",
+        "homeowners-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "renters-insurance-new-york",
+      "baseType": "renters-insurance",
+      "name": "New York Renters Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york renters insurance cost",
+      "secondaryKeywords": [
+        "renters insurance cost new york",
+        "average renters insurance cost new york"
+      ],
+      "metaTitle": "New York Renters Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated renters insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Renters Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated renters insurance premiums based on New York averages",
+      "introText": "Renters Insurance costs in New York vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does renters insurance cost in New York?",
+          "answer": "Renters Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is renters insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my renters insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect renters insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for renters insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-new-york",
+        "auto-insurance-new-york",
+        "homeowners-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "life-insurance-new-york",
+      "baseType": "life-insurance",
+      "name": "New York Life Insurance Calculator",
+      "category": "insurance",
+      "primaryKeyword": "new york life insurance cost",
+      "secondaryKeywords": [
+        "life insurance cost new york",
+        "average life insurance cost new york"
+      ],
+      "metaTitle": "New York Life Insurance Calculator 2025 | NY",
+      "metaDescription": "Estimate estimated life insurance premiums in New York. Compare plans and find the best rates for New York residents.",
+      "heroTitle": "New York Life Insurance Cost Calculator",
+      "heroSubtitle": "Estimate estimated life insurance premiums based on New York averages",
+      "introText": "Life Insurance costs in New York vary based on coverage level, location, and personal factors. Use this calculator for a personalized estimate.",
+      "formula": "Premium = Base Rate × Coverage Factor × Personal Factors",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgAutoInsurance": 2600,
+        "avgHealthInsurance": 620,
+        "avgHomeInsurance": 1560
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🛡️",
+          "title": "New York Rates",
+          "description": "Based on current New York insurance data"
+        },
+        {
+          "icon": "📊",
+          "title": "Coverage Options",
+          "description": "Compare different coverage levels"
+        },
+        {
+          "icon": "💰",
+          "title": "Save Money",
+          "description": "Find opportunities to reduce premiums"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does life insurance cost in New York?",
+          "answer": "Life Insurance costs in New York depend on coverage level, location, and personal factors. Use this calculator for an estimate."
+        },
+        {
+          "question": "Is life insurance required in New York?",
+          "answer": "Requirements vary by insurance type and state law. Check New York's Department of Insurance for specific mandates."
+        },
+        {
+          "question": "How can I lower my life insurance in New York?",
+          "answer": "Compare quotes from multiple providers, increase your deductible, bundle policies, and maintain a clean record."
+        },
+        {
+          "question": "What factors affect life insurance rates in New York?",
+          "answer": "Key factors include location, coverage level, deductible amount, age, credit score, and claims history."
+        },
+        {
+          "question": "When should I shop for life insurance in New York?",
+          "answer": "Compare rates annually at renewal time, or after major life changes like moving, buying a home, or getting married."
+        }
+      ],
+      "relatedCalculators": [
+        "health-insurance-new-york",
+        "auto-insurance-new-york",
+        "homeowners-insurance-new-york"
+      ]
+    },
+    {
+      "slug": "college-cost-new-york",
+      "baseType": "college-cost",
+      "name": "New York College Cost Calculator",
+      "category": "education",
+      "primaryKeyword": "new york college cost",
+      "secondaryKeywords": [
+        "college cost new york",
+        "new york college cost"
+      ],
+      "metaTitle": "New York College Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate total cost of college including tuition, room, and board in New York. Free calculator with New York-specific education data.",
+      "heroTitle": "New York College Cost Calculator",
+      "heroSubtitle": "Estimate total cost of college including tuition, room, and board for New York residents",
+      "introText": "New York offers in-state tuition averaging $7070 at public universities. The average student debt is $35 045.",
+      "formula": "See calculator for detailed college cost formula.",
+      "stateData": {
+        "avgInStateTuition": 7070,
+        "avgOutStateTuition": 18090,
+        "avgRoomBoard": 16250,
+        "avgTeacherSalary": 92222,
+        "avgStudentDebt": 35045
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "New York Data",
+          "description": "Based on current New York education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized college cost analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in New York?",
+          "answer": "The average in-state tuition at New York public universities is approximately $7070 per year."
+        },
+        {
+          "question": "What is the average teacher salary in New York?",
+          "answer": "The average teacher salary in New York is approximately $92 222 per year."
+        },
+        {
+          "question": "How much student debt do New York graduates have?",
+          "answer": "The average student debt for New York graduates is approximately $35 045."
+        },
+        {
+          "question": "Does New York offer a 529 plan?",
+          "answer": "Yes, New York offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in New York?",
+          "answer": "New York offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "student-loan-new-york",
+        "teacher-salary-new-york",
+        "education-savings-new-york"
+      ]
+    },
+    {
+      "slug": "student-loan-new-york",
+      "baseType": "student-loan",
+      "name": "New York Student Loan Repayment Calculator",
+      "category": "education",
+      "primaryKeyword": "new york student loan calculator",
+      "secondaryKeywords": [
+        "student loan calculator new york",
+        "new york student loan repayment"
+      ],
+      "metaTitle": "New York Student Loan Repayment Calculator 2025 | NY",
+      "metaDescription": "Calculate monthly student loan payments and total interest in New York. Free calculator with New York-specific education data.",
+      "heroTitle": "New York Student Loan Repayment Calculator",
+      "heroSubtitle": "Estimate monthly student loan payments and total interest for New York residents",
+      "introText": "New York offers in-state tuition averaging $7070 at public universities. The average student debt is $35 045.",
+      "formula": "See calculator for detailed student loan repayment formula.",
+      "stateData": {
+        "avgInStateTuition": 7070,
+        "avgOutStateTuition": 18090,
+        "avgRoomBoard": 16250,
+        "avgTeacherSalary": 92222,
+        "avgStudentDebt": 35045
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "New York Data",
+          "description": "Based on current New York education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized student loan repayment analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in New York?",
+          "answer": "The average in-state tuition at New York public universities is approximately $7070 per year."
+        },
+        {
+          "question": "What is the average teacher salary in New York?",
+          "answer": "The average teacher salary in New York is approximately $92 222 per year."
+        },
+        {
+          "question": "How much student debt do New York graduates have?",
+          "answer": "The average student debt for New York graduates is approximately $35 045."
+        },
+        {
+          "question": "Does New York offer a 529 plan?",
+          "answer": "Yes, New York offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in New York?",
+          "answer": "New York offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-new-york",
+        "teacher-salary-new-york",
+        "education-savings-new-york"
+      ]
+    },
+    {
+      "slug": "teacher-salary-new-york",
+      "baseType": "teacher-salary",
+      "name": "New York Teacher Salary Calculator",
+      "category": "education",
+      "primaryKeyword": "new york teacher salary",
+      "secondaryKeywords": [
+        "teacher salary new york",
+        "new york teacher salary"
+      ],
+      "metaTitle": "New York Teacher Salary Calculator 2025 | NY",
+      "metaDescription": "Calculate expected teacher salary based on experience and education in New York. Free calculator with New York-specific education data.",
+      "heroTitle": "New York Teacher Salary Calculator",
+      "heroSubtitle": "Estimate expected teacher salary based on experience and education for New York residents",
+      "introText": "New York offers in-state tuition averaging $7070 at public universities. The average student debt is $35 045.",
+      "formula": "See calculator for detailed teacher salary formula.",
+      "stateData": {
+        "avgInStateTuition": 7070,
+        "avgOutStateTuition": 18090,
+        "avgRoomBoard": 16250,
+        "avgTeacherSalary": 92222,
+        "avgStudentDebt": 35045
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "New York Data",
+          "description": "Based on current New York education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized teacher salary analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in New York?",
+          "answer": "The average in-state tuition at New York public universities is approximately $7070 per year."
+        },
+        {
+          "question": "What is the average teacher salary in New York?",
+          "answer": "The average teacher salary in New York is approximately $92 222 per year."
+        },
+        {
+          "question": "How much student debt do New York graduates have?",
+          "answer": "The average student debt for New York graduates is approximately $35 045."
+        },
+        {
+          "question": "Does New York offer a 529 plan?",
+          "answer": "Yes, New York offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in New York?",
+          "answer": "New York offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-new-york",
+        "student-loan-new-york",
+        "education-savings-new-york"
+      ]
+    },
+    {
+      "slug": "education-savings-new-york",
+      "baseType": "education-savings",
+      "name": "New York 529 Plan Savings Calculator",
+      "category": "education",
+      "primaryKeyword": "new york 529 plan calculator",
+      "secondaryKeywords": [
+        "529 plan calculator new york",
+        "new york 529 plan savings"
+      ],
+      "metaTitle": "New York 529 Plan Savings Calculator 2025 | NY",
+      "metaDescription": "Calculate how a 529 plan investment grows over time in New York. Free calculator with New York-specific education data.",
+      "heroTitle": "New York 529 Plan Savings Calculator",
+      "heroSubtitle": "Estimate how a 529 plan investment grows over time for New York residents",
+      "introText": "New York offers in-state tuition averaging $7070 at public universities. The average student debt is $35 045.",
+      "formula": "See calculator for detailed 529 plan savings formula.",
+      "stateData": {
+        "avgInStateTuition": 7070,
+        "avgOutStateTuition": 18090,
+        "avgRoomBoard": 16250,
+        "avgTeacherSalary": 92222,
+        "avgStudentDebt": 35045
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "New York Data",
+          "description": "Based on current New York education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized 529 plan savings analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in New York?",
+          "answer": "The average in-state tuition at New York public universities is approximately $7070 per year."
+        },
+        {
+          "question": "What is the average teacher salary in New York?",
+          "answer": "The average teacher salary in New York is approximately $92 222 per year."
+        },
+        {
+          "question": "How much student debt do New York graduates have?",
+          "answer": "The average student debt for New York graduates is approximately $35 045."
+        },
+        {
+          "question": "Does New York offer a 529 plan?",
+          "answer": "Yes, New York offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in New York?",
+          "answer": "New York offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-new-york",
+        "student-loan-new-york",
+        "teacher-salary-new-york"
+      ]
+    },
+    {
+      "slug": "in-state-tuition-new-york",
+      "baseType": "in-state-tuition",
+      "name": "New York In-State Tuition Calculator",
+      "category": "education",
+      "primaryKeyword": "new york in-state tuition cost",
+      "secondaryKeywords": [
+        "in-state tuition cost new york",
+        "new york in-state tuition"
+      ],
+      "metaTitle": "New York In-State Tuition Calculator 2025 | NY",
+      "metaDescription": "Calculate in-state vs out-of-state tuition costs in New York. Free calculator with New York-specific education data.",
+      "heroTitle": "New York In-State Tuition Calculator",
+      "heroSubtitle": "Estimate in-state vs out-of-state tuition costs for New York residents",
+      "introText": "New York offers in-state tuition averaging $7070 at public universities. The average student debt is $35 045.",
+      "formula": "See calculator for detailed in-state tuition formula.",
+      "stateData": {
+        "avgInStateTuition": 7070,
+        "avgOutStateTuition": 18090,
+        "avgRoomBoard": 16250,
+        "avgTeacherSalary": 92222,
+        "avgStudentDebt": 35045
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🎓",
+          "title": "New York Data",
+          "description": "Based on current New York education costs"
+        },
+        {
+          "icon": "📊",
+          "title": "Full Breakdown",
+          "description": "Itemized in-state tuition analysis"
+        },
+        {
+          "icon": "💡",
+          "title": "Planning Tools",
+          "description": "Plan for education expenses"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the average in-state tuition in New York?",
+          "answer": "The average in-state tuition at New York public universities is approximately $7070 per year."
+        },
+        {
+          "question": "What is the average teacher salary in New York?",
+          "answer": "The average teacher salary in New York is approximately $92 222 per year."
+        },
+        {
+          "question": "How much student debt do New York graduates have?",
+          "answer": "The average student debt for New York graduates is approximately $35 045."
+        },
+        {
+          "question": "Does New York offer a 529 plan?",
+          "answer": "Yes, New York offers a 529 education savings plan with potential state tax deductions. Check the state plan for current benefits."
+        },
+        {
+          "question": "What financial aid is available in New York?",
+          "answer": "New York offers various grants, scholarships, and aid programs. Complete the FAFSA and check the state's higher education agency."
+        }
+      ],
+      "relatedCalculators": [
+        "college-cost-new-york",
+        "student-loan-new-york",
+        "teacher-salary-new-york"
+      ]
+    },
+    {
+      "slug": "cost-of-living-new-york",
+      "baseType": "cost-of-living",
+      "name": "New York Cost of Living Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "new york cost of living",
+      "secondaryKeywords": [
+        "cost of living new york",
+        "new york cost of living"
+      ],
+      "metaTitle": "New York Cost of Living Calculator 2025 | NY",
+      "metaDescription": "Calculate the overall cost of living and salary equivalency in New York. Compare to national averages and other states.",
+      "heroTitle": "New York Cost of Living Calculator",
+      "heroSubtitle": "Estimate the overall cost of living and salary equivalency in New York",
+      "introText": "New York has a cost of living index of 123 (100 = national average). This means living in New York is 23% above the national average.",
+      "formula": "See calculator for detailed cost of living formula.",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgRent": 1750,
+        "avgGasPrice": 3.65,
+        "avgUtilityCost": 250,
+        "avgGroceryCost": 390
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "New York Index",
+          "description": "Based on New York cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in New York?",
+          "answer": "New York's cost of living index is 123 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does cost of living cost in New York?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within New York."
+        },
+        {
+          "question": "Is New York expensive to live in?",
+          "answer": "New York has a cost of living index of 123. It is above the national average."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "The national average cost of living index is 100. New York is at 123, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in New York?",
+          "answer": "Average rent varies significantly by city and region within New York. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "grocery-cost-new-york",
+        "utility-cost-new-york",
+        "gas-price-new-york"
+      ]
+    },
+    {
+      "slug": "grocery-cost-new-york",
+      "baseType": "grocery-cost",
+      "name": "New York Grocery Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "new york grocery cost",
+      "secondaryKeywords": [
+        "grocery cost new york",
+        "new york grocery cost"
+      ],
+      "metaTitle": "New York Grocery Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated monthly grocery costs in New York. Compare to national averages and other states.",
+      "heroTitle": "New York Grocery Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly grocery costs in New York",
+      "introText": "New York has a cost of living index of 123 (100 = national average). This means living in New York is 23% above the national average.",
+      "formula": "See calculator for detailed grocery cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgRent": 1750,
+        "avgGasPrice": 3.65,
+        "avgUtilityCost": 250,
+        "avgGroceryCost": 390
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "New York Index",
+          "description": "Based on New York cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in New York?",
+          "answer": "New York's cost of living index is 123 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does grocery cost cost in New York?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within New York."
+        },
+        {
+          "question": "Is New York expensive to live in?",
+          "answer": "New York has a cost of living index of 123. It is above the national average."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "The national average cost of living index is 100. New York is at 123, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in New York?",
+          "answer": "Average rent varies significantly by city and region within New York. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "utility-cost-new-york",
+        "gas-price-new-york"
+      ]
+    },
+    {
+      "slug": "utility-cost-new-york",
+      "baseType": "utility-cost",
+      "name": "New York Utility Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "new york utility bills",
+      "secondaryKeywords": [
+        "utility bills new york",
+        "new york utility cost"
+      ],
+      "metaTitle": "New York Utility Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated monthly utility bills in New York. Compare to national averages and other states.",
+      "heroTitle": "New York Utility Cost Calculator",
+      "heroSubtitle": "Estimate estimated monthly utility bills in New York",
+      "introText": "New York has a cost of living index of 123 (100 = national average). This means living in New York is 23% above the national average.",
+      "formula": "See calculator for detailed utility cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgRent": 1750,
+        "avgGasPrice": 3.65,
+        "avgUtilityCost": 250,
+        "avgGroceryCost": 390
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "New York Index",
+          "description": "Based on New York cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in New York?",
+          "answer": "New York's cost of living index is 123 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does utility cost cost in New York?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within New York."
+        },
+        {
+          "question": "Is New York expensive to live in?",
+          "answer": "New York has a cost of living index of 123. It is above the national average."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "The national average cost of living index is 100. New York is at 123, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in New York?",
+          "answer": "Average rent varies significantly by city and region within New York. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "grocery-cost-new-york",
+        "gas-price-new-york"
+      ]
+    },
+    {
+      "slug": "gas-price-new-york",
+      "baseType": "gas-price",
+      "name": "New York Gas Price Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "new york gas cost",
+      "secondaryKeywords": [
+        "gas cost new york",
+        "new york gas price"
+      ],
+      "metaTitle": "New York Gas Price Calculator 2025 | NY",
+      "metaDescription": "Calculate fuel costs and driving expenses in New York. Compare to national averages and other states.",
+      "heroTitle": "New York Gas Price Calculator",
+      "heroSubtitle": "Estimate fuel costs and driving expenses in New York",
+      "introText": "New York has a cost of living index of 123 (100 = national average). This means living in New York is 23% above the national average.",
+      "formula": "See calculator for detailed gas price formula.",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgRent": 1750,
+        "avgGasPrice": 3.65,
+        "avgUtilityCost": 250,
+        "avgGroceryCost": 390
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "New York Index",
+          "description": "Based on New York cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in New York?",
+          "answer": "New York's cost of living index is 123 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does gas price cost in New York?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within New York."
+        },
+        {
+          "question": "Is New York expensive to live in?",
+          "answer": "New York has a cost of living index of 123. It is above the national average."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "The national average cost of living index is 100. New York is at 123, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in New York?",
+          "answer": "Average rent varies significantly by city and region within New York. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "grocery-cost-new-york",
+        "utility-cost-new-york"
+      ]
+    },
+    {
+      "slug": "relocation-cost-new-york",
+      "baseType": "relocation-cost",
+      "name": "New York Relocation Cost Calculator",
+      "category": "cost-of-living",
+      "primaryKeyword": "new york moving cost",
+      "secondaryKeywords": [
+        "moving cost new york",
+        "new york relocation cost"
+      ],
+      "metaTitle": "New York Relocation Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated costs of relocating in New York. Compare to national averages and other states.",
+      "heroTitle": "New York Relocation Cost Calculator",
+      "heroSubtitle": "Estimate estimated costs of relocating in New York",
+      "introText": "New York has a cost of living index of 123 (100 = national average). This means living in New York is 23% above the national average.",
+      "formula": "See calculator for detailed relocation cost formula.",
+      "stateData": {
+        "costOfLivingIndex": 123,
+        "avgRent": 1750,
+        "avgGasPrice": 3.65,
+        "avgUtilityCost": 250,
+        "avgGroceryCost": 390
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "📊",
+          "title": "New York Index",
+          "description": "Based on New York cost of living data"
+        },
+        {
+          "icon": "🔄",
+          "title": "Comparison",
+          "description": "Compare to national averages"
+        },
+        {
+          "icon": "📱",
+          "title": "Personalized",
+          "description": "Customize for your situation"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What is the cost of living in New York?",
+          "answer": "New York's cost of living index is 123 (100 = US average). It's above average."
+        },
+        {
+          "question": "How much does relocation cost cost in New York?",
+          "answer": "Use this calculator for a personalized estimate based on your specific situation and location within New York."
+        },
+        {
+          "question": "Is New York expensive to live in?",
+          "answer": "New York has a cost of living index of 123. It is above the national average."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "The national average cost of living index is 100. New York is at 123, making it more expensive than average."
+        },
+        {
+          "question": "What is the average rent in New York?",
+          "answer": "Average rent varies significantly by city and region within New York. Check local listings for current rates in your area."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "grocery-cost-new-york",
+        "utility-cost-new-york"
+      ]
+    },
+    {
+      "slug": "llc-cost-new-york",
+      "baseType": "llc-cost",
+      "name": "New York LLC Cost Calculator",
+      "category": "legal",
+      "primaryKeyword": "new york LLC cost",
+      "secondaryKeywords": [
+        "LLC cost new york",
+        "new york llc cost"
+      ],
+      "metaTitle": "New York LLC Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate the cost of forming and maintaining an LLC in New York. See New York-specific penalties, fees, and costs.",
+      "heroTitle": "New York LLC Cost Calculator",
+      "heroSubtitle": "Estimate the cost of forming and maintaining an LLC in New York",
+      "introText": "Understanding llc cost in New York helps you plan and budget. Filing an LLC in New York costs $200.",
+      "formula": "See calculator for detailed llc cost calculations.",
+      "stateData": {
+        "avgLLCFiling": 200,
+        "avgFranchiseTax": 25,
+        "avgSpeedingFine": 300,
+        "dui1stFine": 2500,
+        "dui2ndFine": 5000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "New York Laws",
+          "description": "Based on current New York regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized llc cost costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does llc cost cost in New York?",
+          "answer": "Filing an LLC in New York costs approximately $200."
+        },
+        {
+          "question": "What are the penalties in New York?",
+          "answer": "New York has specific penalties and fee structures. This calculator includes current New York data."
+        },
+        {
+          "question": "Do I need a lawyer for this in New York?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a New York-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in New York?",
+          "answer": "Processing times vary. Check with the relevant New York state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in New York?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check New York's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "speeding-ticket-new-york",
+        "dui-penalty-new-york",
+        "traffic-fine-new-york"
+      ]
+    },
+    {
+      "slug": "speeding-ticket-new-york",
+      "baseType": "speeding-ticket",
+      "name": "New York Speeding Ticket Calculator",
+      "category": "legal",
+      "primaryKeyword": "new york speeding ticket cost",
+      "secondaryKeywords": [
+        "speeding ticket cost new york",
+        "new york speeding ticket"
+      ],
+      "metaTitle": "New York Speeding Ticket Calculator 2025 | NY",
+      "metaDescription": "Calculate speeding ticket fines and insurance impact in New York. See New York-specific penalties, fees, and costs.",
+      "heroTitle": "New York Speeding Ticket Calculator",
+      "heroSubtitle": "Estimate speeding ticket fines and insurance impact in New York",
+      "introText": "Understanding speeding ticket in New York helps you plan and budget. Fines and penalties in New York vary by violation type and history.",
+      "formula": "See calculator for detailed speeding ticket calculations.",
+      "stateData": {
+        "avgLLCFiling": 200,
+        "avgFranchiseTax": 25,
+        "avgSpeedingFine": 300,
+        "dui1stFine": 2500,
+        "dui2ndFine": 5000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "New York Laws",
+          "description": "Based on current New York regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized speeding ticket costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does speeding ticket cost in New York?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in New York?",
+          "answer": "New York has specific penalties and fee structures. This calculator includes current New York data."
+        },
+        {
+          "question": "Do I need a lawyer for this in New York?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a New York-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in New York?",
+          "answer": "Processing times vary. Check with the relevant New York state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in New York?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check New York's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-new-york",
+        "dui-penalty-new-york",
+        "traffic-fine-new-york"
+      ]
+    },
+    {
+      "slug": "dui-penalty-new-york",
+      "baseType": "dui-penalty",
+      "name": "New York DUI Penalty Calculator",
+      "category": "legal",
+      "primaryKeyword": "new york DUI cost",
+      "secondaryKeywords": [
+        "DUI cost new york",
+        "new york dui penalty"
+      ],
+      "metaTitle": "New York DUI Penalty Calculator 2025 | NY",
+      "metaDescription": "Calculate total costs and penalties for a DUI in New York. See New York-specific penalties, fees, and costs.",
+      "heroTitle": "New York DUI Penalty Calculator",
+      "heroSubtitle": "Estimate total costs and penalties for a DUI in New York",
+      "introText": "Understanding dui penalty in New York helps you plan and budget. Fines and penalties in New York vary by violation type and history.",
+      "formula": "See calculator for detailed dui penalty calculations.",
+      "stateData": {
+        "avgLLCFiling": 200,
+        "avgFranchiseTax": 25,
+        "avgSpeedingFine": 300,
+        "dui1stFine": 2500,
+        "dui2ndFine": 5000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "New York Laws",
+          "description": "Based on current New York regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized dui penalty costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does dui penalty cost in New York?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in New York?",
+          "answer": "New York has specific penalties and fee structures. This calculator includes current New York data."
+        },
+        {
+          "question": "Do I need a lawyer for this in New York?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a New York-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in New York?",
+          "answer": "Processing times vary. Check with the relevant New York state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in New York?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check New York's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-new-york",
+        "speeding-ticket-new-york",
+        "traffic-fine-new-york"
+      ]
+    },
+    {
+      "slug": "traffic-fine-new-york",
+      "baseType": "traffic-fine",
+      "name": "New York Traffic Fine Calculator",
+      "category": "legal",
+      "primaryKeyword": "new york traffic fine",
+      "secondaryKeywords": [
+        "traffic fine new york",
+        "new york traffic fine"
+      ],
+      "metaTitle": "New York Traffic Fine Calculator 2025 | NY",
+      "metaDescription": "Calculate traffic violation fines and point penalties in New York. See New York-specific penalties, fees, and costs.",
+      "heroTitle": "New York Traffic Fine Calculator",
+      "heroSubtitle": "Estimate traffic violation fines and point penalties in New York",
+      "introText": "Understanding traffic fine in New York helps you plan and budget. Fines and penalties in New York vary by violation type and history.",
+      "formula": "See calculator for detailed traffic fine calculations.",
+      "stateData": {
+        "avgLLCFiling": 200,
+        "avgFranchiseTax": 25,
+        "avgSpeedingFine": 300,
+        "dui1stFine": 2500,
+        "dui2ndFine": 5000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "New York Laws",
+          "description": "Based on current New York regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized traffic fine costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does traffic fine cost in New York?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in New York?",
+          "answer": "New York has specific penalties and fee structures. This calculator includes current New York data."
+        },
+        {
+          "question": "Do I need a lawyer for this in New York?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a New York-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in New York?",
+          "answer": "Processing times vary. Check with the relevant New York state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in New York?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check New York's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-new-york",
+        "speeding-ticket-new-york",
+        "dui-penalty-new-york"
+      ]
+    },
+    {
+      "slug": "business-registration-new-york",
+      "baseType": "business-registration",
+      "name": "New York Business Registration Calculator",
+      "category": "legal",
+      "primaryKeyword": "new york business registration cost",
+      "secondaryKeywords": [
+        "business registration cost new york",
+        "new york business registration"
+      ],
+      "metaTitle": "New York Business Registration Calculator 2025 | NY",
+      "metaDescription": "Calculate costs of registering a business in New York. See New York-specific penalties, fees, and costs.",
+      "heroTitle": "New York Business Registration Calculator",
+      "heroSubtitle": "Estimate costs of registering a business in New York",
+      "introText": "Understanding business registration in New York helps you plan and budget. Fines and penalties in New York vary by violation type and history.",
+      "formula": "See calculator for detailed business registration calculations.",
+      "stateData": {
+        "avgLLCFiling": 200,
+        "avgFranchiseTax": 25,
+        "avgSpeedingFine": 300,
+        "dui1stFine": 2500,
+        "dui2ndFine": 5000
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "⚖️",
+          "title": "New York Laws",
+          "description": "Based on current New York regulations"
+        },
+        {
+          "icon": "💰",
+          "title": "Cost Breakdown",
+          "description": "Itemized business registration costs"
+        },
+        {
+          "icon": "📋",
+          "title": "Full Picture",
+          "description": "All fees and penalties included"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How much does business registration cost in New York?",
+          "answer": "Costs vary by specifics. Use this calculator for a detailed estimate."
+        },
+        {
+          "question": "What are the penalties in New York?",
+          "answer": "New York has specific penalties and fee structures. This calculator includes current New York data."
+        },
+        {
+          "question": "Do I need a lawyer for this in New York?",
+          "answer": "It depends on the complexity. For significant legal matters, consulting a New York-licensed attorney is recommended."
+        },
+        {
+          "question": "How long does the process take in New York?",
+          "answer": "Processing times vary. Check with the relevant New York state agency for current timelines."
+        },
+        {
+          "question": "Are there ways to reduce costs in New York?",
+          "answer": "Some options include online filing, payment plans, and eligibility for fee waivers. Check New York's specific programs."
+        }
+      ],
+      "relatedCalculators": [
+        "llc-cost-new-york",
+        "speeding-ticket-new-york",
+        "dui-penalty-new-york"
+      ]
+    },
+    {
+      "slug": "solar-panel-roi-new-york",
+      "baseType": "solar-panel-roi",
+      "name": "New York Solar Panel ROI Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "new york solar panel calculator",
+      "secondaryKeywords": [
+        "solar panel calculator new york",
+        "new york solar panel roi"
+      ],
+      "metaTitle": "New York Solar Panel ROI Calculator 2025 | NY",
+      "metaDescription": "Calculate the return on investment for solar panels in New York. Free calculator with New York-specific data and rates.",
+      "heroTitle": "New York Solar Panel ROI Calculator",
+      "heroSubtitle": "Estimate the return on investment for solar panels in New York",
+      "introText": "New York averages 3.8 peak sun hours per day. With an average solar installation cost of $23 000 and the 30% federal ITC, solar can be a great investment.",
+      "formula": "See calculator for detailed solar panel roi formula.",
+      "stateData": {
+        "avgSolarInstallCost": 23000,
+        "avgSunHours": 3.8,
+        "stateSolarCredit": 5000,
+        "avgElectricRate": 0.21,
+        "avgGasPrice": 3.65,
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 123
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "New York Specific",
+          "description": "Uses current New York rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete solar panel roi breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does solar panel roi work in New York?",
+          "answer": "Solar Panel ROI in New York follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect solar panel roi in New York?",
+          "answer": "Key factors include location within New York, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a solar panel roi benefit in New York?",
+          "answer": "New York may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "New York's cost of living is above the national average, which affects solar panel roi costs."
+        },
+        {
+          "question": "Where can I learn more about solar panel roi in New York?",
+          "answer": "Check the New York state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "income-tax-new-york",
+        "property-tax-new-york"
+      ]
+    },
+    {
+      "slug": "ev-savings-new-york",
+      "baseType": "ev-savings",
+      "name": "New York EV Savings Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "new york EV savings calculator",
+      "secondaryKeywords": [
+        "EV savings calculator new york",
+        "new york ev savings"
+      ],
+      "metaTitle": "New York EV Savings Calculator 2025 | NY",
+      "metaDescription": "Calculate savings from switching to an electric vehicle in New York. Free calculator with New York-specific data and rates.",
+      "heroTitle": "New York EV Savings Calculator",
+      "heroSubtitle": "Estimate savings from switching to an electric vehicle in New York",
+      "introText": "With New York electricity averaging $0.21/kWh vs gas at $3.65/gallon, switching to an EV can yield significant savings.",
+      "formula": "See calculator for detailed ev savings formula.",
+      "stateData": {
+        "avgSolarInstallCost": 23000,
+        "avgSunHours": 3.8,
+        "stateSolarCredit": 5000,
+        "avgElectricRate": 0.21,
+        "avgGasPrice": 3.65,
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 123
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "New York Specific",
+          "description": "Uses current New York rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete ev savings breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does ev savings work in New York?",
+          "answer": "EV Savings in New York follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect ev savings in New York?",
+          "answer": "Key factors include location within New York, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a ev savings benefit in New York?",
+          "answer": "New York may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "New York's cost of living is above the national average, which affects ev savings costs."
+        },
+        {
+          "question": "Where can I learn more about ev savings in New York?",
+          "answer": "Check the New York state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "income-tax-new-york",
+        "property-tax-new-york"
+      ]
+    },
+    {
+      "slug": "commute-cost-new-york",
+      "baseType": "commute-cost",
+      "name": "New York Commute Cost Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "new york commute cost calculator",
+      "secondaryKeywords": [
+        "commute cost calculator new york",
+        "new york commute cost"
+      ],
+      "metaTitle": "New York Commute Cost Calculator 2025 | NY",
+      "metaDescription": "Calculate your daily commuting costs in New York. Free calculator with New York-specific data and rates.",
+      "heroTitle": "New York Commute Cost Calculator",
+      "heroSubtitle": "Estimate your daily commuting costs in New York",
+      "introText": "Calculate commute cost specific to New York residents using current state data and rates.",
+      "formula": "See calculator for detailed commute cost formula.",
+      "stateData": {
+        "avgSolarInstallCost": 23000,
+        "avgSunHours": 3.8,
+        "stateSolarCredit": 5000,
+        "avgElectricRate": 0.21,
+        "avgGasPrice": 3.65,
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 123
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "New York Specific",
+          "description": "Uses current New York rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete commute cost breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does commute cost work in New York?",
+          "answer": "Commute Cost in New York follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect commute cost in New York?",
+          "answer": "Key factors include location within New York, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a commute cost benefit in New York?",
+          "answer": "New York may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "New York's cost of living is above the national average, which affects commute cost costs."
+        },
+        {
+          "question": "Where can I learn more about commute cost in New York?",
+          "answer": "Check the New York state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "income-tax-new-york",
+        "property-tax-new-york"
+      ]
+    },
+    {
+      "slug": "lottery-tax-new-york",
+      "baseType": "lottery-tax",
+      "name": "New York Lottery Tax Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "new york lottery tax calculator",
+      "secondaryKeywords": [
+        "lottery tax calculator new york",
+        "new york lottery tax"
+      ],
+      "metaTitle": "New York Lottery Tax Calculator 2025 | NY",
+      "metaDescription": "Calculate taxes on lottery winnings in New York. Free calculator with New York-specific data and rates.",
+      "heroTitle": "New York Lottery Tax Calculator",
+      "heroSubtitle": "Estimate taxes on lottery winnings in New York",
+      "introText": "Lottery winnings in New York are subject to federal tax (24-37%) plus New York state tax up to 10.9%.",
+      "formula": "See calculator for detailed lottery tax formula.",
+      "stateData": {
+        "avgSolarInstallCost": 23000,
+        "avgSunHours": 3.8,
+        "stateSolarCredit": 5000,
+        "avgElectricRate": 0.21,
+        "avgGasPrice": 3.65,
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 123
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "New York Specific",
+          "description": "Uses current New York rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete lottery tax breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does lottery tax work in New York?",
+          "answer": "Lottery Tax in New York follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect lottery tax in New York?",
+          "answer": "Key factors include location within New York, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a lottery tax benefit in New York?",
+          "answer": "New York may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "New York's cost of living is above the national average, which affects lottery tax costs."
+        },
+        {
+          "question": "Where can I learn more about lottery tax in New York?",
+          "answer": "Check the New York state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "income-tax-new-york",
+        "property-tax-new-york"
+      ]
+    },
+    {
+      "slug": "child-support-new-york",
+      "baseType": "child-support",
+      "name": "New York Child Support Calculator",
+      "category": "state-specific",
+      "primaryKeyword": "new york child support calculator",
+      "secondaryKeywords": [
+        "child support calculator new york",
+        "new york child support"
+      ],
+      "metaTitle": "New York Child Support Calculator 2025 | NY",
+      "metaDescription": "Calculate estimated child support payments in New York. Free calculator with New York-specific data and rates.",
+      "heroTitle": "New York Child Support Calculator",
+      "heroSubtitle": "Estimate estimated child support payments in New York",
+      "introText": "Calculate child support specific to New York residents using current state data and rates.",
+      "formula": "See calculator for detailed child support formula.",
+      "stateData": {
+        "avgSolarInstallCost": 23000,
+        "avgSunHours": 3.8,
+        "stateSolarCredit": 5000,
+        "avgElectricRate": 0.21,
+        "avgGasPrice": 3.65,
+        "topIncomeTaxRate": 10.9,
+        "flatTaxRate": 0,
+        "costOfLivingIndex": 123
+      },
+      "fields": [],
+      "benefits": [
+        {
+          "icon": "🔧",
+          "title": "New York Specific",
+          "description": "Uses current New York rates and data"
+        },
+        {
+          "icon": "📊",
+          "title": "Detailed Analysis",
+          "description": "Complete child support breakdown"
+        },
+        {
+          "icon": "💡",
+          "title": "Actionable",
+          "description": "Clear results you can use"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How does child support work in New York?",
+          "answer": "Child Support in New York follows state-specific rules and rates. Use this calculator for details."
+        },
+        {
+          "question": "What factors affect child support in New York?",
+          "answer": "Key factors include location within New York, current rates, and personal circumstances."
+        },
+        {
+          "question": "Is there a child support benefit in New York?",
+          "answer": "New York may offer incentives or benefits. Check the state's official resources for current programs."
+        },
+        {
+          "question": "How does New York compare to other states?",
+          "answer": "New York's cost of living is above the national average, which affects child support costs."
+        },
+        {
+          "question": "Where can I learn more about child support in New York?",
+          "answer": "Check the New York state government website or consult with a local professional for current information."
+        }
+      ],
+      "relatedCalculators": [
+        "cost-of-living-new-york",
+        "income-tax-new-york",
+        "property-tax-new-york"
+      ]
+    }
+  ]
+}
