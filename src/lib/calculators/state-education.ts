@@ -85,8 +85,208 @@ export function getStateEducationFields(baseType: string, stateData: StateData):
   }
 }
 
+// ═══════════════════════════════════════════════════════════════════
+// NY EDUCATION — Custom calculation functions
+// ═══════════════════════════════════════════════════════════════════
+
+const fmt = (n: number) => '$' + Math.round(n).toLocaleString()
+
+/** #47 SUNY/CUNY Tuition — Excelsior Scholarship, TAP, Pell */
+function calcNYSunyCuny(input: CalculatorInput, _sd: StateData): CalculatorOutput {
+  const system = String(input.system || 'suny_4yr')
+  const residency = String(input.residency || 'in_state')
+  const householdIncome = Number(input.householdIncome || 90000)
+  const livingArrangement = String(input.livingArrangement || 'on_campus')
+
+  // 2024-2025 tuition rates
+  const tuitionRates: Record<string, number> = {
+    suny_4yr: 7070, suny_2yr: 5480, cuny_4yr: 6930, cuny_2yr: 4800,
+  }
+  const outOfStateMult = residency === 'out_state' ? 2.5 : 1.0
+  const baseTuition = (tuitionRates[system] || 7070) * outOfStateMult
+
+  // Fees
+  const fees: Record<string, number> = {
+    suny_4yr: 3200, suny_2yr: 1800, cuny_4yr: 850, cuny_2yr: 400,
+  }
+  const annualFees = fees[system] || 3200
+
+  // Room & board
+  const roomBoard: Record<string, Record<string, number>> = {
+    on_campus: { suny_4yr: 15500, suny_2yr: 12000, cuny_4yr: 18000, cuny_2yr: 0 },
+    off_campus: { suny_4yr: 12000, suny_2yr: 10000, cuny_4yr: 16000, cuny_2yr: 14000 },
+    commuter: { suny_4yr: 5000, suny_2yr: 5000, cuny_4yr: 5000, cuny_2yr: 5000 },
+  }
+  const annualRoomBoard = roomBoard[livingArrangement]?.[system] || 15500
+
+  const totalCOA = baseTuition + annualFees + annualRoomBoard + 1200 // + books/supplies
+
+  // Excelsior Scholarship: household income ≤ $125K, in-state, full-time
+  const excelsiorEligible = residency === 'in_state' && householdIncome <= 125000
+  const excelsiorAmount = excelsiorEligible ? baseTuition : 0
+
+  // TAP (Tuition Assistance Program): NY residents, income-based
+  let tapAmount = 0
+  if (residency === 'in_state') {
+    if (householdIncome <= 10000) tapAmount = 5665
+    else if (householdIncome <= 20000) tapAmount = 4500
+    else if (householdIncome <= 40000) tapAmount = 3000
+    else if (householdIncome <= 60000) tapAmount = 1500
+    else if (householdIncome <= 80000) tapAmount = 500
+  }
+  // TAP cannot exceed tuition
+  tapAmount = Math.min(tapAmount, baseTuition)
+
+  // Pell Grant (federal): income-based
+  let pellAmount = 0
+  if (householdIncome <= 30000) pellAmount = 7395
+  else if (householdIncome <= 45000) pellAmount = 5500
+  else if (householdIncome <= 60000) pellAmount = 3500
+  else if (householdIncome <= 70000) pellAmount = 1500
+
+  // Total aid — Excelsior is "last dollar" (fills gap after TAP + Pell applied to tuition)
+  const tuitionAid = Math.min(baseTuition, tapAmount + pellAmount)
+  const excelsiorGap = excelsiorEligible ? Math.max(0, baseTuition - tuitionAid) : 0
+  const totalAid = tuitionAid + excelsiorGap + (pellAmount > baseTuition ? pellAmount - baseTuition : 0)
+
+  const netCost = Math.max(0, totalCOA - tapAmount - pellAmount - excelsiorGap)
+  const fourYearCost = netCost * 4 * 1.03 // ~3% annual increase
+
+  const systemNames: Record<string, string> = {
+    suny_4yr: 'SUNY 4-Year', suny_2yr: 'SUNY Community College',
+    cuny_4yr: 'CUNY Senior College', cuny_2yr: 'CUNY Community College',
+  }
+
+  return {
+    primary: { value: Math.round(netCost), label: 'Annual Net Cost', unit: '$/yr' },
+    secondary: [
+      { label: 'Sticker Price (COA)', value: fmt(Math.round(totalCOA)), unit: '' },
+      { label: 'Tuition', value: fmt(Math.round(baseTuition)), unit: '' },
+      { label: 'Excelsior', value: excelsiorEligible ? `-${fmt(excelsiorGap)}` : 'Ineligible', unit: '' },
+      { label: 'TAP Award', value: tapAmount > 0 ? `-${fmt(tapAmount)}` : 'N/A', unit: '' },
+      { label: 'Pell Grant', value: pellAmount > 0 ? `-${fmt(pellAmount)}` : 'N/A', unit: '' },
+      { label: '4-Year Total', value: fmt(Math.round(fourYearCost)), unit: '' },
+    ],
+    breakdown: [
+      { label: 'Tuition', value: Math.round(baseTuition), color: '#1E3A8A' },
+      { label: 'Fees', value: annualFees, color: '#059669' },
+      { label: 'Room & Board', value: Math.round(annualRoomBoard), color: '#CA8A04' },
+      { label: 'Books/Supplies', value: 1200, color: '#DC2626' },
+    ],
+    chartData: [
+      { name: 'SUNY 4yr', value: tuitionRates.suny_4yr },
+      { name: 'SUNY 2yr', value: tuitionRates.suny_2yr },
+      { name: 'CUNY 4yr', value: tuitionRates.cuny_4yr },
+      { name: 'CUNY 2yr', value: tuitionRates.cuny_2yr },
+    ],
+    schedule: {
+      headers: ['Aid Program', 'Amount', 'Eligibility', 'Status'],
+      rows: [
+        ['Excelsior Scholarship', excelsiorEligible ? fmt(excelsiorGap) : '$0', '≤$125K income, in-state', excelsiorEligible ? 'Eligible' : 'Not eligible'],
+        ['TAP (NY)', fmt(tapAmount), 'NY residents, income-based', tapAmount > 0 ? 'Eligible' : 'Over income limit'],
+        ['Pell Grant (Federal)', fmt(pellAmount), 'Federal, income-based', pellAmount > 0 ? 'Eligible' : 'Over income limit'],
+        ['Total Tuition Aid', fmt(Math.round(tapAmount + pellAmount + excelsiorGap)), '—', '—'],
+      ],
+    },
+    advice: excelsiorEligible
+      ? `At ${fmt(householdIncome)} household income, you qualify for Excelsior Scholarship — making ${systemNames[system]} tuition effectively FREE. Room and board (${fmt(Math.round(annualRoomBoard))}/yr) is your main cost. ${system.includes('cuny') ? 'CUNY students: consider commuting to save further.' : 'Consider off-campus housing to save vs dorms.'}`
+      : residency === 'out_state'
+        ? `Out-of-state tuition is ${fmt(Math.round(baseTuition))} — 2.5x the in-state rate. After one year of NY residency, you can apply for in-state rates and Excelsior/TAP eligibility.`
+        : `Your income of ${fmt(householdIncome)} exceeds the $125K Excelsior threshold. ${tapAmount > 0 ? `You still qualify for ${fmt(tapAmount)} in TAP.` : 'Consider community college for 2 years then transfer to save ~$10K.'} ${pellAmount > 0 ? `Plus ${fmt(pellAmount)} Pell Grant.` : ''}`,
+  }
+}
+
+/** #36 Private School NYC — K-12 tuition */
+function calcNYPrivateSchool(input: CalculatorInput, _sd: StateData): CalculatorOutput {
+  const gradeLevel = String(input.gradeLevel || 'elementary')
+  const schoolTier = String(input.schoolTier || 'mid')
+  const children = Number(input.children || 1)
+  const yearsRemaining = Number(input.yearsRemaining || 8)
+
+  // NYC private school tuition (2024 — NYC has most expensive private schools in US)
+  const tuition: Record<string, Record<string, number>> = {
+    budget: { pre_k: 18000, elementary: 25000, middle: 30000, high: 35000 },
+    mid: { pre_k: 28000, elementary: 40000, middle: 48000, high: 55000 },
+    elite: { pre_k: 38000, elementary: 55000, middle: 58000, high: 62000 },
+  }
+
+  const baseTuition = tuition[schoolTier]?.[gradeLevel] || 40000
+  const annualPerChild = baseTuition
+
+  // Additional costs
+  const booksMaterials = 1500
+  const uniformExtra = schoolTier === 'elite' ? 800 : 400
+  const extracurriculars = gradeLevel === 'high' ? 3000 : 1500
+  const transportation = 2000 // school bus or MetroCard
+  const annualExtras = booksMaterials + uniformExtra + extracurriculars + transportation
+
+  const annualTotal = (annualPerChild + annualExtras) * children
+  const monthlyTotal = annualTotal / 10 // 10-month payment plan typical
+
+  // Sibling discount (many schools offer 10-15% for second child)
+  const siblingDiscount = children > 1 ? annualPerChild * 0.10 * (children - 1) : 0
+  const netAnnual = annualTotal - siblingDiscount
+
+  // Total through graduation
+  let totalThroughGrad = 0
+  for (let y = 0; y < yearsRemaining; y++) {
+    totalThroughGrad += netAnnual * Math.pow(1.04, y) // 4% annual tuition inflation
+  }
+
+  // Public school comparison
+  const publicSchoolCost = 0 // free
+  const savingsVsPrivate = netAnnual
+
+  const tierNames: Record<string, string> = { budget: 'Budget', mid: 'Mid-Range', elite: 'Elite (Top-Tier)' }
+  const gradeNames: Record<string, string> = { pre_k: 'Pre-K', elementary: 'Elementary', middle: 'Middle School', high: 'High School' }
+
+  return {
+    primary: { value: Math.round(netAnnual), label: 'Annual Cost', unit: '$/yr' },
+    secondary: [
+      { label: 'Monthly (10-mo plan)', value: fmt(netAnnual / 10), unit: '' },
+      { label: 'Per Child Tuition', value: fmt(annualPerChild), unit: '/yr' },
+      { label: 'Extras (per child)', value: fmt(annualExtras), unit: '/yr' },
+      { label: 'Tier', value: tierNames[schoolTier] || schoolTier, unit: '' },
+      { label: 'Level', value: gradeNames[gradeLevel] || gradeLevel, unit: '' },
+      ...(siblingDiscount > 0 ? [{ label: 'Sibling Discount', value: fmt(-siblingDiscount), unit: '/yr' }] : []),
+      { label: 'Through Graduation', value: fmt(totalThroughGrad), unit: '' },
+    ],
+    breakdown: [
+      { label: 'Tuition', value: Math.round(annualPerChild * children), color: '#1E3A8A' },
+      { label: 'Books & Materials', value: booksMaterials * children, color: '#CA8A04' },
+      { label: 'Extracurriculars', value: extracurriculars * children, color: '#059669' },
+      { label: 'Transportation', value: transportation * children, color: '#7C3AED' },
+      { label: 'Uniforms', value: uniformExtra * children, color: '#DC2626' },
+    ],
+    chartData: [
+      { name: 'Budget', value: Math.round((tuition.budget[gradeLevel] || 25000) + annualExtras) },
+      { name: 'Mid-Range', value: Math.round((tuition.mid[gradeLevel] || 40000) + annualExtras) },
+      { name: 'Elite', value: Math.round((tuition.elite[gradeLevel] || 55000) + annualExtras) },
+    ],
+    schedule: {
+      headers: ['Grade Level', 'Budget', 'Mid-Range', 'Elite'],
+      rows: ['pre_k', 'elementary', 'middle', 'high'].map(g => [
+        gradeNames[g] || g,
+        fmt(tuition.budget[g] || 0),
+        fmt(tuition.mid[g] || 0),
+        fmt(tuition.elite[g] || 0),
+      ]),
+    },
+    advice: schoolTier === 'elite'
+      ? `Elite NYC private schools (Dalton, Trinity, Horace Mann) run ${fmt(annualPerChild)}/year — comparable to Ivy League tuition. Over ${yearsRemaining} years with 4% inflation, total cost reaches ${fmt(totalThroughGrad)}.`
+      : `${tierNames[schoolTier]} private schools cost ${fmt(annualPerChild)}/year for ${gradeNames[gradeLevel]}. NYC public schools spend ~$28K per pupil — consider that many public schools offer excellent education, especially screened programs.`,
+  }
+}
+
 export function calculateStateEducation(baseType: string, input: CalculatorInput, stateData: StateData, method?: string): CalculatorOutput | null {
   if (!educationBaseTypes.includes(baseType)) return null
+
+  // Custom calculation handlers (NY education)
+  const customCalc = stateData.customCalc as string | undefined
+  switch (customCalc) {
+    case 'ny-private-school': return calcNYPrivateSchool(input, stateData)
+    case 'ny-suny-cuny': return calcNYSunyCuny(input, stateData)
+  }
 
   switch (baseType) {
     case 'college-cost':

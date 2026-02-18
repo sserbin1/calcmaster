@@ -92,7 +92,15 @@ export function getCalculatorFields(type: string): CalculatorField[] {
 }
 
 // Calculate result based on calculator type
-export function calculate(type: string, input: CalculatorInput, method?: string): CalculatorOutput {
+// stateContext is optional — when provided (from SSR), it's used directly for state calculators
+// bypassing the lookup table which may not be initialized on the client
+export function calculate(type: string, input: CalculatorInput, method?: string, stateContext?: { baseType: string; stateData: Record<string, unknown> }): CalculatorOutput {
+  // If stateContext provided, calculate directly via state routers
+  if (stateContext) {
+    const result = calculateState(type, input, method, stateContext)
+    if (result) return result
+  }
+
   for (const calc of calculateRouters) {
     const result = calc(type, input, method)
     if (result) return result

@@ -35,27 +35,47 @@ export default function RootLayout({
             ]),
           }}
         />
-        <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/80 backdrop-blur-sm">
+        {/* Decorative mesh gradient */}
+        <div className="mesh-gradient" aria-hidden="true" />
+
+        <header className="sticky top-0 z-50 glass-card-strong" style={{ borderRadius: 0, borderTop: 'none', borderLeft: 'none', borderRight: 'none' }}>
           <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="/" className="text-2xl font-bold text-[var(--primary)]">
-              CalcMaster
+            <a href="/" className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--navy)] to-[var(--primary)] flex items-center justify-center">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <span className="text-xl font-bold" style={{ fontFamily: "'Poppins', sans-serif", color: 'var(--navy)' }}>CalcMaster</span>
             </a>
-            <div className="hidden md:flex items-center gap-6">
-              <a href="/health" className="text-[var(--secondary)] hover:text-[var(--foreground)] transition-colors">Health</a>
-              <a href="/finance" className="text-[var(--secondary)] hover:text-[var(--foreground)] transition-colors">Finance</a>
-              <a href="/math" className="text-[var(--secondary)] hover:text-[var(--foreground)] transition-colors">Math</a>
-              <a href="/date-time" className="text-[var(--secondary)] hover:text-[var(--foreground)] transition-colors">Date & Time</a>
+            <div className="hidden md:flex items-center gap-1">
+              <a href="/health" className="px-3 py-2 rounded-lg text-sm font-medium text-[var(--secondary)] hover:text-[var(--foreground)] hover:bg-[var(--muted)] transition-all">Health</a>
+              <a href="/finance" className="px-3 py-2 rounded-lg text-sm font-medium text-[var(--secondary)] hover:text-[var(--foreground)] hover:bg-[var(--muted)] transition-all">Finance</a>
+              <a href="/math" className="px-3 py-2 rounded-lg text-sm font-medium text-[var(--secondary)] hover:text-[var(--foreground)] hover:bg-[var(--muted)] transition-all">Math</a>
+              <a href="/date-time" className="px-3 py-2 rounded-lg text-sm font-medium text-[var(--secondary)] hover:text-[var(--foreground)] hover:bg-[var(--muted)] transition-all">Date & Time</a>
             </div>
           </nav>
         </header>
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           {children}
         </main>
-        <footer className="border-t border-[var(--border)] mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <p className="text-center text-[var(--secondary)] text-sm">
-              &copy; {new Date().getFullYear()} CalcMaster. Free calculators with AI-powered insights.
-            </p>
+        <footer className="relative z-10 border-t border-[var(--border)] mt-16 bg-[var(--navy)]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-md bg-gradient-to-br from-white/20 to-white/5 flex items-center justify-center">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23" />
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                  </svg>
+                </div>
+                <span className="text-white/60 text-sm" style={{ fontFamily: "'Poppins', sans-serif" }}>CalcMaster</span>
+              </div>
+              <p className="text-white/40 text-sm">
+                &copy; {new Date().getFullYear()} CalcMaster. Free calculators with AI-powered insights.
+              </p>
+            </div>
           </div>
         </footer>
       </body>

@@ -34,26 +34,32 @@ export default function CalculationHistory({ calculatorType, onRestore }: Calcul
   }
 
   return (
-    <div className="p-4 rounded-xl border-2 border-[var(--border)] bg-[var(--muted)]">
+    <div className="p-4 rounded-xl bg-[var(--muted)] border border-[var(--border)]">
       <button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full flex items-center justify-between"
+        className="w-full flex items-center justify-between cursor-pointer"
       >
-        <h3 className="font-medium flex items-center gap-2">
-          <span>📋</span> Recent Calculations ({relevantEntries.length})
+        <h3 className="font-medium flex items-center gap-2 text-sm text-[var(--foreground)]" style={{ fontFamily: "'Poppins', sans-serif" }}>
+          <svg className="w-4 h-4 text-[var(--secondary)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          Recent Calculations ({relevantEntries.length})
         </h3>
-        <span className={`transition-transform ${isExpanded ? 'rotate-180' : ''}`}>▼</span>
+        <svg className={`w-4 h-4 text-[var(--secondary)] transition-transform ${isExpanded ? 'rotate-180' : ''}`} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
       </button>
 
       {isExpanded && (
-        <div className="mt-4 space-y-2">
+        <div className="mt-3 space-y-2">
           {relevantEntries.slice(0, 5).map((entry) => (
             <div
               key={entry.id}
-              className="p-3 rounded-lg bg-[var(--background)] flex items-center justify-between gap-4"
+              className="p-3 rounded-lg bg-[var(--background)] border border-[var(--border)]/50 flex items-center justify-between gap-4"
             >
               <div className="flex-1 min-w-0">
-                <p className="font-medium text-sm truncate">
+                <p className="font-medium text-sm truncate text-[var(--foreground)]">
                   {entry.result.primary.label}: {entry.result.primary.value}
                   {entry.result.primary.unit && ` ${entry.result.primary.unit}`}
                 </p>
@@ -63,16 +69,20 @@ export default function CalculationHistory({ calculatorType, onRestore }: Calcul
                 {onRestore && (
                   <button
                     onClick={() => onRestore(entry.inputs)}
-                    className="text-xs px-2 py-1 rounded bg-[var(--primary)] text-white hover:bg-[var(--primary-hover)] transition-colors"
+                    className="text-xs px-3 py-1.5 rounded-lg bg-[var(--primary)] text-white font-medium hover:bg-[var(--primary-hover)] transition-colors cursor-pointer"
+                    style={{ fontFamily: "'Poppins', sans-serif" }}
                   >
                     Restore
                   </button>
                 )}
                 <button
                   onClick={() => removeEntry(entry.id)}
-                  className="text-xs text-[var(--secondary)] hover:text-red-500 transition-colors"
+                  className="text-xs text-[var(--secondary)] hover:text-[var(--danger)] transition-colors p-1 cursor-pointer"
                 >
-                  ✕
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                  </svg>
                 </button>
               </div>
             </div>
@@ -86,7 +96,8 @@ export default function CalculationHistory({ calculatorType, onRestore }: Calcul
 
           <button
             onClick={() => clearHistory()}
-            className="w-full text-xs text-center text-[var(--secondary)] hover:text-red-500 transition-colors py-2"
+            className="w-full text-xs text-center text-[var(--secondary)] hover:text-[var(--danger)] transition-colors py-2 cursor-pointer"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
           >
             Clear all history
           </button>

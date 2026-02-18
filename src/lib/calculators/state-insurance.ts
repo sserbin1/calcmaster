@@ -124,8 +124,211 @@ export function getStateInsuranceFields(baseType: string, stateData: StateData):
   }
 }
 
+// ═══════════════════════════════════════════════════════════════════
+// NY INSURANCE — Custom calculation functions
+// ═══════════════════════════════════════════════════════════════════
+
+const fmt = (n: number) => '$' + Math.round(n).toLocaleString()
+
+/** #46 Health Insurance NYC — Essential Plan, NY State of Health Marketplace */
+function calcNYHealthInsurance(input: CalculatorInput, _sd: StateData): CalculatorOutput {
+  const age = Number(input.age || 35)
+  const planType = String(input.planType || 'silver')
+  const householdSize = Number(input.householdSize || 1)
+  const income = Number(input.income || 50000)
+  const smoker = String(input.smoker || 'no') === 'yes'
+
+  // NY ACA base premiums (2024, second-lowest Silver benchmark — NYC region)
+  const ageBands: Record<string, number> = {
+    '21': 450, '25': 465, '30': 520, '35': 580, '40': 650, '45': 740,
+    '50': 880, '55': 1050, '60': 1300, '64': 1400,
+  }
+  const ageKey = String(Math.min(64, Math.max(21, Math.floor(age / 5) * 5)))
+  const baseMonthly = ageBands[ageKey] || 580
+
+  // Plan type actuarial values
+  const planMult: Record<string, number> = {
+    bronze: 0.75, silver: 1.0, gold: 1.2, platinum: 1.45,
+  }
+  const planMonthly = baseMonthly * (planMult[planType] || 1.0)
+
+  // Household size multiplier
+  const hhMult: Record<number, number> = { 1: 1.0, 2: 2.0, 3: 2.85, 4: 3.4 }
+  const totalMonthly = planMonthly * (hhMult[householdSize] || 1.0)
+
+  // NY does NOT allow tobacco rating (one of few states)
+  const smokerNote = smoker ? 'NY law prohibits tobacco surcharges — no extra cost.' : ''
+
+  // Federal Premium Tax Credit (ACA subsidy) — based on FPL
+  const fpl2024: Record<number, number> = { 1: 15060, 2: 20440, 3: 25820, 4: 31200 }
+  const fplThreshold = fpl2024[householdSize] || 15060
+  const fplPercent = (income / fplThreshold) * 100
+
+  // NY Essential Plan: <250% FPL → $0-$15/mo comprehensive coverage
+  const essentialPlanEligible = fplPercent <= 250
+  const essentialPlanCost = fplPercent <= 150 ? 0 : fplPercent <= 200 ? 1 : 15
+
+  // Subsidy calculation (simplified ACA benchmark)
+  let subsidy = 0
+  if (fplPercent <= 150) subsidy = totalMonthly * 0.95
+  else if (fplPercent <= 200) subsidy = totalMonthly * 0.80
+  else if (fplPercent <= 250) subsidy = totalMonthly * 0.65
+  else if (fplPercent <= 300) subsidy = totalMonthly * 0.45
+  else if (fplPercent <= 400) subsidy = totalMonthly * 0.25
+  else subsidy = 0
+
+  const afterSubsidy = Math.max(0, totalMonthly - subsidy)
+  const annualCost = afterSubsidy * 12
+  const annualFull = totalMonthly * 12
+
+  // Deductibles and OOP max by plan tier
+  const deductibles: Record<string, number> = { bronze: 7500, silver: 4500, gold: 1500, platinum: 0 }
+  const oopMax: Record<string, number> = { bronze: 9100, silver: 8700, gold: 8700, platinum: 4500 }
+  const deductible = deductibles[planType] || 4500
+  const oop = oopMax[planType] || 8700
+
+  const planNames: Record<string, string> = { bronze: 'Bronze', silver: 'Silver', gold: 'Gold', platinum: 'Platinum' }
+
+  return {
+    primary: { value: Math.round(afterSubsidy), label: 'Monthly Premium (After Subsidy)', unit: '$/mo' },
+    secondary: [
+      { label: 'Full Monthly Premium', value: fmt(Math.round(totalMonthly)), unit: '' },
+      { label: 'Monthly Subsidy', value: fmt(Math.round(subsidy)), unit: '' },
+      { label: 'Annual Cost', value: fmt(Math.round(annualCost)), unit: '' },
+      { label: 'Deductible', value: fmt(deductible), unit: '' },
+      { label: 'Out-of-Pocket Max', value: fmt(oop), unit: '' },
+      { label: 'FPL %', value: `${fplPercent.toFixed(0)}%`, unit: '' },
+      { label: 'Essential Plan?', value: essentialPlanEligible ? `Yes — ${fmt(essentialPlanCost)}/mo` : 'No', unit: '' },
+    ],
+    breakdown: [
+      { label: 'Your Premium', value: Math.round(annualCost), color: '#1E3A8A' },
+      { label: 'Subsidy Covers', value: Math.round(subsidy * 12), color: '#059669' },
+      { label: 'Deductible Risk', value: deductible, color: '#CA8A04' },
+    ],
+    chartData: [
+      { name: 'Bronze', value: Math.round(baseMonthly * 0.75 * (hhMult[householdSize] || 1)) },
+      { name: 'Silver', value: Math.round(baseMonthly * 1.0 * (hhMult[householdSize] || 1)) },
+      { name: 'Gold', value: Math.round(baseMonthly * 1.2 * (hhMult[householdSize] || 1)) },
+      { name: 'Platinum', value: Math.round(baseMonthly * 1.45 * (hhMult[householdSize] || 1)) },
+    ],
+    schedule: {
+      headers: ['Plan', 'Monthly', 'Deductible', 'OOP Max', 'Actuarial Value'],
+      rows: [
+        ['Bronze', fmt(Math.round(baseMonthly * 0.75)), '$7,500', '$9,100', '60%'],
+        ['Silver', fmt(Math.round(baseMonthly * 1.0)), '$4,500', '$8,700', '70%'],
+        ['Gold', fmt(Math.round(baseMonthly * 1.2)), '$1,500', '$8,700', '80%'],
+        ['Platinum', fmt(Math.round(baseMonthly * 1.45)), '$0', '$4,500', '90%'],
+        ...(essentialPlanEligible ? [['Essential Plan', `${fmt(essentialPlanCost)}/mo`, '$0', '$200', '~95%']] : []),
+      ],
+    },
+    advice: essentialPlanEligible
+      ? `At ${fplPercent.toFixed(0)}% FPL, you qualify for NY's Essential Plan at just ${fmt(essentialPlanCost)}/month — far better than any ACA plan. This covers medical, dental, vision, and prescriptions with no deductible. ${smokerNote}`
+      : `Your ${planNames[planType]} plan costs ${fmt(Math.round(afterSubsidy))}/month after ${fmt(Math.round(subsidy))}/month in subsidies. NY bans tobacco surcharges and has guaranteed issue — no pre-existing condition exclusions. Consider Gold if you use healthcare frequently; the higher premium saves on deductibles.`,
+  }
+}
+
+/** #29 Auto Insurance NYC — highest premiums by borough */
+function calcNYAutoInsurance(input: CalculatorInput, _sd: StateData): CalculatorOutput {
+  const borough = String(input.borough || 'manhattan')
+  const driverAge = Number(input.driverAge || 30)
+  const coverage = String(input.coverage || 'full')
+  const drivingRecord = String(input.drivingRecord || 'clean')
+  const vehicleType = String(input.vehicleType || 'sedan')
+
+  // NYC base premiums by borough (2024 averages — NYC is #1 or #2 most expensive in US)
+  const boroughBase: Record<string, number> = {
+    manhattan: 3200, brooklyn: 3800, queens: 3100, bronx: 4200, staten_island: 2600,
+    nassau: 2200, westchester: 2100, suffolk: 2000,
+  }
+  const basePremium = boroughBase[borough] || 3200
+
+  // Coverage multiplier
+  const coverageMult: Record<string, number> = {
+    minimum: 0.55, // 25/50/25 NY minimum
+    standard: 0.85, // 100/300/100
+    full: 1.0, // full coverage + comprehensive + collision
+    premium: 1.3, // full + low deductibles + extras
+  }
+  const covMult = coverageMult[coverage] || 1.0
+
+  // Age factor: under 25 = +60%, 25-65 = base, 65+ = +15%
+  const ageMult = driverAge < 21 ? 2.0 : driverAge < 25 ? 1.6 : driverAge < 65 ? 1.0 : 1.15
+
+  // Driving record
+  const recordMult: Record<string, number> = {
+    clean: 1.0, minor: 1.35, accident: 1.6, dui: 2.2,
+  }
+  const recMult = recordMult[drivingRecord] || 1.0
+
+  // Vehicle type
+  const vehMult: Record<string, number> = {
+    economy: 0.8, sedan: 1.0, suv: 1.15, luxury: 1.45, sports: 1.55,
+  }
+  const vMult = vehMult[vehicleType] || 1.0
+
+  const annualPremium = basePremium * covMult * ageMult * recMult * vMult
+  const monthlyPremium = annualPremium / 12
+  const sixMonth = annualPremium / 2
+
+  // NY minimum requirements
+  const nyMinimums = '25/50/25 (Bodily Injury $25K/$50K, Property $25K)'
+  const noPIPRequirement = 'No-Fault PIP required ($50K minimum)'
+
+  // State average comparison
+  const stateAvg = 2800
+  const vsAvg = ((annualPremium / stateAvg) - 1) * 100
+
+  // Savings tips
+  const multiPolicyDiscount = annualPremium * 0.15
+  const goodDriverDiscount = drivingRecord === 'clean' ? annualPremium * 0.10 : 0
+  const defensiveDriving = annualPremium * 0.10 // NY mandates 10% discount for approved course
+
+  return {
+    primary: { value: Math.round(annualPremium), label: 'Annual Premium Estimate', unit: '$/yr' },
+    secondary: [
+      { label: 'Monthly', value: fmt(monthlyPremium), unit: '' },
+      { label: '6-Month', value: fmt(sixMonth), unit: '' },
+      { label: 'Borough', value: borough.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()), unit: '' },
+      { label: 'vs NY Average', value: `${vsAvg >= 0 ? '+' : ''}${vsAvg.toFixed(0)}%`, unit: '' },
+      { label: 'NY Minimum', value: nyMinimums, unit: '' },
+      { label: 'No-Fault PIP', value: noPIPRequirement, unit: '' },
+    ],
+    breakdown: [
+      { label: 'Base Premium', value: basePremium, color: '#1E3A8A' },
+      { label: 'Age Factor', value: Math.round(basePremium * (ageMult - 1)), color: '#CA8A04' },
+      { label: 'Record Factor', value: Math.round(basePremium * (recMult - 1)), color: '#DC2626' },
+      { label: 'Vehicle Factor', value: Math.round(basePremium * (vMult - 1)), color: '#7C3AED' },
+      { label: 'Coverage Level', value: Math.round(basePremium * Math.abs(covMult - 1)), color: '#059669' },
+    ],
+    chartData: Object.entries(boroughBase).map(([b, rate]) => ({
+      name: b.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
+      value: Math.round(rate * covMult),
+    })),
+    schedule: {
+      headers: ['Discount Type', 'Potential Savings', 'Requirements'],
+      rows: [
+        ['Defensive Driving (NY mandated)', fmt(defensiveDriving), 'Complete approved 6-hr course'],
+        ['Multi-Policy Bundle', fmt(multiPolicyDiscount), 'Bundle home/renters + auto'],
+        ['Good Driver', fmt(goodDriverDiscount), '3+ years clean record'],
+        ['Pay in Full', fmt(annualPremium * 0.05), 'Pay 6-mo or annual upfront'],
+        ['Low Mileage', fmt(annualPremium * 0.08), 'Drive < 7,500 mi/year'],
+      ],
+    },
+    advice: borough === 'bronx' || borough === 'brooklyn'
+      ? `${borough === 'bronx' ? 'The Bronx' : 'Brooklyn'} has the highest auto insurance rates in NYC due to accident frequency and theft rates. A defensive driving course saves 10% (NY Insurance Law Section 2336).`
+      : `NYC auto insurance is ${vsAvg > 0 ? Math.round(vsAvg) + '% above' : 'near'} the state average. Take a NY-approved defensive driving course for a guaranteed 10% discount — it's state law.`,
+  }
+}
+
 export function calculateStateInsurance(baseType: string, input: CalculatorInput, stateData: StateData, method?: string): CalculatorOutput | null {
   if (!insuranceBaseTypes.includes(baseType)) return null
+
+  // Custom calculation handlers (NY insurance)
+  const customCalc = stateData.customCalc as string | undefined
+  switch (customCalc) {
+    case 'ny-auto-insurance': return calcNYAutoInsurance(input, stateData)
+    case 'ny-health-insurance': return calcNYHealthInsurance(input, stateData)
+  }
 
   switch (baseType) {
     case 'health-insurance': {

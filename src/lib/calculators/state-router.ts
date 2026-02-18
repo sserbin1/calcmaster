@@ -62,15 +62,27 @@ export function getStateFields(type: string): CalculatorField[] | null {
 }
 
 // Calculate result for a state calculator
-export function calculateState(type: string, input: CalculatorInput, method?: string): CalculatorOutput | null {
-  if (!isStateCalculator(type)) return null
+// directContext: optional bypass for client-side where lookup tables aren't initialized
+export function calculateState(type: string, input: CalculatorInput, method?: string, directContext?: { baseType: string; stateData: Record<string, unknown> }): CalculatorOutput | null {
+  let baseType: string
+  let stateData: StateData
 
-  const entry = getStateRouterEntry(type)
-  if (!entry) return null
+  if (directContext) {
+    // Use directly provided context (from SSR props)
+    baseType = directContext.baseType
+    stateData = directContext.stateData as StateData
+  } else {
+    // Use lookup table (works on server / after init)
+    if (!isStateCalculator(type)) return null
+    const entry = getStateRouterEntry(type)
+    if (!entry) return null
+    baseType = entry.baseType
+    stateData = entry.stateData
+  }
 
   // Delegate to category-specific calculator
   for (const calc of stateCalcRouters) {
-    const result = calc(entry.baseType, input, entry.stateData, method)
+    const result = calc(baseType, input, stateData, method)
     if (result) return result
   }
 
